@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'microeconomie'
+project = 'Microeconomie avec Python'
 copyright = '2020, Pierre-Carl Michaud'
 author = 'Pierre-Carl Michaud'
 
@@ -52,7 +52,6 @@ exclude_patterns = []
 #
 
 import sphinx_rtd_theme
-
 html_theme = "sphinx_rtd_theme"
 
 # Add any paths that contain custom static files (such as style sheets) here,
