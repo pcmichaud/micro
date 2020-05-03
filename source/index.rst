@@ -10,6 +10,7 @@ Apprendre la microéconomie par la programmation
    :maxdepth: 2
    :caption: Menu:
 
+   overview.rst
 
 
 Indices and tables
