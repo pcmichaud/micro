@@ -11,6 +11,7 @@ Apprendre la microéconomie par la programmation
    :caption: Menu:
 
    overview.rst
+   intro.rst
 
 
 Indices and tables
