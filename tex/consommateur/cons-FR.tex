@@ -1,0 +1,308 @@
+% !TEX encoding = utf-8
+\documentclass[handout]{beamer}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+% functions to plot
+\def\func(#1){(#1)*(1-(#1))}
+\hypersetup{colorlinks = true,linkcolor = blue,urlcolor  = blue}
+
+\newenvironment{iPar}[1]{\textbf{#1} \begin{itemize}}{\end{itemize}}
+
+\addtobeamertemplate{navigation symbols}{}{%
+    \usebeamerfont{footline}%
+    \usebeamercolor[fg]{footline}%
+    \hspace{1em}%
+    \insertframenumber/\inserttotalframenumber
+}
+
+\title{Choix du consommateur}
+\author{Microéconomie \\ 20851}
+\date{}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\section[Outline]{}
+\frame{\tableofcontents}
+
+\section{Les préférences}
+
+\begin{frame}\frametitle{Préférences}
+\textbf{Préférences définies sur des paniers de biens et services}
+\begin{itemize} \item Panier: vecteur de quantités $x = (x_1, x_2,\cdots,x_n)$.
+\item Pour deux paniers $A$ and $B$, préférences dictent lequel est préféré
+\item Préférences sont comme liste de souhait (hierarchisée): ignore les prix et les ressources. Viendra plus tard. 
+\item Les relations de préférences sont dénotées par $\succ,\succeq,\sim$. 
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{Hypothèses importantes sur les préférences}
+
+\textbf{Exhaustive: Pour tous paniers A et B soit le consommateur}
+\begin{itemize}
+\item  préfère \textbf{toujours} A à B ($A\succ B$)
+\item  préfère \textbf{toujours} B à A ($B\succ A$)
+\item est indifférent entre A et B ($A \sim B$) \end{itemize}
+
+\textbf{Est-ce restrictif?}
+\begin{itemize}
+\item Oui, e.g.: crème glacée vs. soupe
+\item On peut inclure les circonstances dans les paniers
+\item Les paniers sont alors (crème glacée, chaleur), (crème glacée, froid), (soupe, chaleur), (soupe, froid).
+\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Hypothèses importantes sur les préférences (II)}
+\textbf{Transitivité}
+\begin{itemize}
+\item Si trois paniers A, B, C  tels que  $A\succ B$, $B \succ C$, 
+alors le consommateur préfère A à C ($A \succ C$).
+\end{itemize}
+
+\textbf{Non-satiation}\begin{itemize}
+\item Si A contient au moins autant que le panier B, strictement plus d'au moins un bien dans le panier,
+alors $A \succ B$.
+\item Version faible ($A \succeq B$,indifférence ou préférence) est raisonnable  
+\item Étiquette des biens: les biens sont désirables (qualité air vs. pollution). 
+\end{itemize}
+
+
+\end{frame}
+
+\begin{frame}\frametitle{Courbes d'indifférence}
+\textbf{Deux biens $X,Y$}:
+\begin{itemize}
+\item Pour tout panier $(X_0,Y_0)$, combinaisons $(X,Y)$ tel que consommateur indifférent entre $(X,Y)$ and $(X_0,Y_0)$
+\item Courbe indifférence vers nord-est indique niveau utilité plus élevé (non-satiation)
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{Les courbes d'indifférence ne se croisent pas}
+
+\textbf{Exercice A}: Montrer que des courbes d'indifférence qui se croisent ne respectent pas la transitivité.
+\end{frame}
+
+
+\begin{frame}\frametitle{Taux marginal de substitution (TMS)}
+\textbf{Definition}
+\begin{itemize}
+\item Biens:  $X$ et $Y$
+\item Pour un panier $(X_0, Y_0)$, TMS de $X$ en fonction de $Y$: Quantité de chauffage ($Y$) que le consommateur est prêt à sacrifier pour avoir une unité de plus de nourriture ($X$)
+\item Valeur que le consommateur porte sur un bien $X$ en termes d'unité d'un autre bien $Y$.
+\item Correspond à la pente de la courbe d'indifférence à $(X_0,Y_0)$.
+\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Convexité des courbes d'indifférences}
+\begin{itemize}
+\item Si la quantité de nourriture ($X$) augmente comment le TMS de $X$ en fonction de $Y$ change?
+\end{itemize}
+
+Correspond à la convexité des courbes d'indifférences. 
+\end{frame}
+
+\begin{frame}\frametitle{Utilité}
+
+\textbf{Représentation des préférences}
+\begin{itemize}
+\item  Fonction d'utilité: assigne un nombre à chaque panier
+\item $U$ représente les préférences si et seulement si $ A \succ B \Rightarrow U(A) > U(B)$ et 
+$ U(A) > U(B)   \Rightarrow A \succ B$
+\end{itemize}
+\vfill
+\end{frame}
+
+\begin{frame}{Utilité}
+\textbf{Les préférences sont ordinales (hiérarchiques)}
+\begin{itemize}
+\item Si $f$ est une fonction strictement croissance et $U$ représente des préférences, alors $V(X) = f(U(X))$ représente les même préférences.
+
+$$ U(X) > U(Y) \iff f(U(X)) > f(U(Y))$$
+\item La valeur de l'utilité n'a pas de signification, l'ordonnancement des paniers est important.
+\item $U(X,Y) = \ln X + \ln Y$ et $V(X,Y) = XY$ représente les mêmes préférences
+\end{itemize}
+\textbf{Exercice B}: Montrer que $U$ et $V$ ont les mêmes préférences. 
+\end{frame}
+
+
+\begin{frame}{Retour vers le TMS}
+\textbf{Contexte}
+\begin{itemize}
+\item Deux biens, $X$, $Y$.  Préférences représentées par la fonction d'utilité $U(X,Y)$
+\item e.g. $U(X,Y) = \ln X + \ln Y$
+\end{itemize}
+\textbf{TMS de $X$ en fonction de $Y$} \pause
+\begin{itemize}
+\item Combien de $Y$ sacrifié pour davantage de $X$\pause
+\item Formellement: augmente $X$ de $\Delta X$: quel est le changement $\Delta Y $ qui conserve indifférence?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Calculer le TMS}
+\textbf{TMS de $X$ en fonction de $Y$} \pause
+\begin{itemize}
+\item On doit avoir $\Delta Y$ tel que $U(X + \Delta X, Y + \Delta Y) = U(X,Y)$
+\item Approximation de premier ordre: $$U(X+\Delta X, Y+ \Delta Y) \simeq  U(X,Y)+  \Delta X  \frac{\partial U}{\partial X} + \Delta Y \frac{\partial U}{\partial Y}$$\pause
+$$ \Rightarrow \;\; TMS = \Delta Y/ \Delta X =  -\frac{\partial U}{\partial X}/ \frac{\partial U}{\partial Y}$$
+\end{itemize}
+
+\textbf{Exemple}
+\begin{itemize}
+\item $U(X,Y) = \ln X + \ln Y$
+ $$TMS = \frac{\partial U}{\partial X}/ \frac{\partial U}{\partial Y} = -Y/X$$
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Par différentielle totale}
+
+Prenons la différentielle totale:
+\begin{align}
+dU = \frac{\partial U}{\partial X}dX + \frac{\partial U}{\partial Y}dY
+\end{align}
+Posons $dU = 0$, alors 
+
+\begin{align}
+\frac{dY}{dX}\bigg\rvert_{dU=0} = -\frac{\partial U}{\partial X}/ \frac{\partial U}{\partial Y}
+\end{align}
+
+\end{frame}
+
+
+\section{Contrainte budgétaire}
+
+\begin{frame}{Contrainte Budgétaire}
+\begin{itemize}
+\item On ne peut pas dépenser plus que notre richesse $I$
+\item Deux biens $X$, $Y$:  Contrainte: $p_X X + p_Y Y = I$ \\ Définie ce qui est abordable étant donné $I$\\
+\item Résoudre pour $Y$ en terme de  $X$:     $Y = \frac{I - p_X X}{p_Y}$\\
+Le taux de change entre $X$ and $Y$ en respectant la contrainte: $$\frac{dY}{dX} = -\frac{p_X}{p_Y}$$
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{Contraintes, la suite}
+\textbf{Normalisation}
+\begin{itemize}
+\item  Contrainte budgétaire la même si prix et richesse multiplié par même constante $\lambda$.
+\item On peut acheter les mêmes biens.\pause
+\item Normalisons $p_Y = 1$. Alors $Y = I - p_X X$. $p_X$ est maintenant en terme de quantité de $Y$ (numéraire). 
+\end{itemize}
+\textbf{Exercice C}: Montrer qu'une contrainte budgétaire ne change pas si on multiplie prix et revenu par $\lambda>0$. 
+\end{frame}
+
+\section{Choix du consommateur}
+
+\begin{frame}\frametitle{Choix du consommateur}
+
+\begin{itemize}
+\item La contrainte est une donnée fixe. Quel est le plus haut niveau d'utilité sur cette contrainte?
+
+\item On ne peut pas aller sur une courbe d'indifférence plus élevée que la contrainte
+
+\item Toutes courbes plus basses est sous-optimale.
+
+\item La courbe d'indifférence qui touche la contrainte (souvent tangente) donne le meilleur niveau de bien-être possible
+\end{itemize}
+
+\end{frame}
+
+\section{Conditions mathématiques}
+
+\begin{frame}\frametitle{Approche Directe}
+
+\textbf{Le problème est}
+\begin{itemize}
+\item Maximise $U(X,Y)$ étant donné par contrainte $p_X X+ p_YY = I$
+\end{itemize}
+
+\pause
+\textbf{Étape 1: Substituer la contrainte}
+\begin{itemize}
+\item Si achète $X$ alors on consomme $Y(X) = \frac{I - p_X X}{p_Y}$
+\item Utilité seulement fonction de $X$: $V(X) = U(X,Y(X))$
+\end{itemize}
+
+\pause
+
+\textbf{Étape 2: Maximiser sans contrainte}
+\begin{itemize}
+\item Voir que la solution de coin n'est pas optimale (cas $X= 0$ et $Y=0$)
+\item Prendre condition de premier ordre 
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Approche Directe}
+
+\textbf{La CPO}
+\begin{itemize}
+\item $$\frac{dV}{dX} = 0 \iff \frac{dU}{dX} + \frac{dY}{dX}\frac{dU}{dY} = 0$$
+ $$\iff \frac{dU}{dX}\Bigg/\frac{dU}{dY} = \frac{p_X}{p_Y}$$
+\end{itemize}
+TMS sur la courbe d'indifférence = Pente de la contrainte budgétaire
+\end{frame}
+
+\begin{frame}\frametitle{Solution}
+
+\textbf{Exercice D}: Trouvez les demandes pour $u(x,y) = XY$ sous la contrainte $p_X X + p_Y Y \le I $. 
+\end{frame}
+
+\section{Approche générale}
+
+\begin{frame}{Lagrangien I}
+On peut poser le lagrangien
+
+\begin{align*}
+L(X,Y,\lambda) = U(X,Y) - \lambda (p_X X + p_Y Y - I)
+\end{align*}
+
+\pause
+
+Si on maximise: $\max_{X,Y,\lambda} L(X,Y,\lambda)$, les CPO sont
+
+\pause
+
+\begin{align*}
+U'_X(X,Y) - \lambda p_X = 0 \\
+U'_Y(X,Y) - \lambda p_Y = 0 \\
+p_X X + p_Y Y = I
+\end{align*}
+\end{frame}
+
+\begin{frame}{Lagrangien II}
+En prenant le ratio des deux premières CPO, on a:
+
+\begin{align*}
+\frac{U'_X(X,Y)}{U'_Y(X,Y)} = \frac{p_X}{p_Y} \\
+p_X X + p_Y Y = I
+\end{align*}
+
+\textbf{Exercice E}: Trouvez les demandes pour $u(X,Y) = XY$ tel que précédement mais par le lagrangien. 
+\newline
+
+\end{frame}
+
+\begin{frame}{Utilité Indirecte}
+
+L'utilité indirecte $V(p_X,p_Y,I)$ est le niveau d'utilité maximal à atteindre avec les prix $(p_X,p_Y)$ et 
+$$ V(p_X,p_Y,I) = \max_{X,Y} \{ u(X,Y) : p_X X + p_Y Y \le I\} $$
+
+\textbf{Exercice F}: Montrez que $\frac{\partial V}{\partial I} = \lambda$ où $V$ l'utilité indirecte. 
+\end{frame}
+
+\begin{frame}{Identité de Roy}
+
+Si l'utilité indirecte est donnée par $V(p_X,p_Y,I)$ alors on peut retrouver les demandes par l'identité de Roy: 
+
+$$ X^*(p_X,p_Y,I) = \frac{\partial{V(p_X,p_Y,I)}/\partial{p_X}}{\partial{V(p_X,p_Y,I)}/\partial{I}}  $$
+
+\textbf{Exercice F}: Montrez que ceci est vrai en utilisant le théorème de l'enveloppe. 
+\end{frame}
+
+\end{document}

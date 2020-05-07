@@ -1,0 +1,42 @@
+\documentclass[11pt, oneside,french]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage[frenchb]{babel}
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}				% Use pdf, png, jpg, or epsÂ§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+
+
+
+\title{Exercises on Time}
+\author{20851-W2020}
+\date{}							% Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+    \item A consumer has utility $$u(C) = \frac{C^{1-\tfrac{1}{\sigma}}-1}{1-\tfrac{1}{\sigma}}.$$ 
+    
+    He discounts utility with a discount factor $\delta=0.95$ and $\sigma=0.5$. He has initial wealth in the first period $W_0=100$. He lives for two periods and has no income in both period. 
+    
+    \begin{enumerate} 
+    \item If the interest rate $r$ is 0.05, how much does he consumes in the first period? \textit{Answer: $C_1^* = 51.2$}
+    \item The interest rate $r$ increases to 0.1. How much does he now consumes in the first period? \textit{Answer: $\hat C_1 = 51.8$. }
+    \item Find the compensated income in the first period that he would require if the interest rate changed $r=0.1$. \textit{Answer: Compensation $\Delta W^{cmp}_0 = -7$. He would be as well off with $W^{cmp}_0 = 93$}. 
+    \item How much would he then consume in the first period if compensation takes place? \textit{Answer: $C^{cmp}_1 = 48.17$}
+    \item What is the income and substitution effect of the interest rate change on first-period consumption? \textit{Answer: Substitution = -3.03 and Income = 3.63}. 
+    \end{enumerate}
+
+  \item A consumer has two credit cards: one with a 10,000\$ limit and an interest rate of 10\% and another one with a 20,000\$ limit and an interest rate of 20\%. If he saves, he earns an interest rate of 3\%. He has income this year of 50,000\$ and next year of 100,000\$. He has no savings.
+  \begin{enumerate}
+  \item Draw his intertemporal budget constraint in terms of possible consumption possibilities $(C_1,C_2)$ where $C_1$ refers to consumption this year and $C_2$ next year. \textit{Answer: Draw first the income coordinates (50e3,100e3). To the left, the slope is -1.03. To the right, for the first 10e3 above $Y_1$, the slope is -1.1. Then for the next 20e3, the slope is -1.2. Then the slope is vertical as there is no more borrowing limit. Find the second period consumptions at each of the kink points using the budget constraint.} 
+  \item Assume he has an annual discount factor of 0.8 and $u(C) = \ln C$. Find how much debt he should hold on and which card if he maximizes discounted utility. \textit{He should borrow up to his limit in the first card and 14,537 on the second card. To find this, first compute MRS. Then, compute the MRS at each of the kink points in your figure. At optimum $MRS = (1+r_i)$ where $r_i$ is one of the rates. Use info on MRS at kink points and the slope of the budget constraint to determine on which segment is the indifference curve tangent to the budget constraint. You will find somewhere on the segment with the second credit card. Then use the budget constraint and the expression for $MRS = -1.2$ to find optimum. } 
+  \end{enumerate}
+\end{enumerate}
+
+
+\end{document} 

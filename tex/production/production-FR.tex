@@ -1,0 +1,327 @@
+\documentclass[handout]{beamer}
+\usepackage[frenchb]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+
+% functions to plot
+\def\func(#1){(#1)*(1-(#1))}
+\hypersetup{colorlinks = true,linkcolor = blue,urlcolor  = blue}
+            
+\newcommand{\qGraph}[1]{\begin{center} \includegraphics[width =
+\textwidth]{#1}\end{center}}
+
+\newcommand{\mcl}{\mathcal}
+
+
+\newenvironment{iPar}[1]{\textbf{#1} \begin{itemize}}{\end{itemize}}
+
+\newcommand{\inc}{{inc}}
+\newcommand{\cp}{{cmp}}
+\newcommand{\bull}{$\bullet\;$} 
+
+\newcommand{\esp}{\mathbf{E}} \newcommand{\ul}[1]{\underline{#1}}
+\newcommand{\ol}[1]{\overline{#1}} \newcommand{\ora}[1]{\textbf{#1}}
+\newcommand{\wh}{\widehat}
+\newcommand{\mdp}{\medskip \pause}
+\newcommand{\mc}{\mathcal}
+
+\title{Entreprises et Économie de Production}
+\author{Microéconomie \\ 20851}
+\date{}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\section[Outline]{}
+\frame{\tableofcontents}
+
+\section{}
+
+
+\begin{frame}\frametitle{Itinéraire}
+
+\begin{iPar}{Jusqu'à maintenant}
+\item Choix du consommateur
+\item Effets prix et richesse
+\item Mesurer le bien-être
+\item Risque et Temps
+\item Échange
+\end{iPar}\mdp
+
+\begin{iPar}{Ce cours: échange}
+\item Économie de Production
+\end{iPar}\mdp
+
+\begin{iPar}{Plus tard}
+\item  Comportement stratégique
+\end{iPar}
+
+
+\end{frame}
+
+\begin{frame}{Survol} \textbf{Objectif} \begin{itemize} \item Introduire les firmes et la production dans l'économie d'échange  \end{itemize} \mdp
+\textbf{Message principal} \begin{itemize} \item L'économie de production est très similaire à l'économie d'échange \item Les firmes sont des agents, tout comme les consommateurs \end{itemize} \mdp
+\textbf{Méthodologie}\begin{itemize} \item Calcul de la demande des firmes \item Calcul de l'offre des firmes \item Calcul des demandes des consommateurs \item Prix déterminé en équilibre $$demande \;\; totale  = offre \;\; totale $$\end{itemize}
+
+
+\end{frame}
+
+
+\section{Décisions de la firme}
+
+\begin{frame}{La firme qui prend des décisions}
+
+\begin{iPar}{Inputs et outputs} \item Firme caractérisée par la fonction de production $F$ \item Étant donné les inputs, $F$ détermine l'output
+\end{iPar}\mdp \begin{iPar}{Exemple: un input et un output} \item  e.g.
+Mine de fer ---  input: travail $L$, output: fer $Y = F(L) = \sqrt{L}$ \item Contrainte de la firme: étant donné input, peut seulement produire certain niveau output \end{iPar}
+
+\end{frame}
+
+
+\begin{frame}{Exemple (cont.)} \begin{iPar}{Deux inputs, un output}
+\item Inputs: Minerai Fer ($I$), Charbon ($C$) --- Output: Fer ($S$) \medskip \item $S(I,C)  = I^{\alpha}C^{\beta}\quad \quad$ (avec $\alpha + \beta <1$) 
+\end{iPar}
+\end{frame}
+
+\begin{frame}{Fonctions de production: TMST} 
+
+Supposons la fonction de production $Y = F(X,Z)$. Prenons la différentielle totale: 
+
+$$ dY = F'_X(X,Z)dX + F'_Z(X,Z)dZ $$
+
+Fixons $dY = 0$, on obtient le taux marginal de substitution technique: 
+
+$$ TMST = \frac{dZ}{dX} = -\frac{F'_X(X,Z)}{F'_Z(X,Z)} $$
+
+Pente des isoquantes dans l'espace $(X,Y)$. 
+
+\textbf{Exercice A}: Trouvez le TMST pour $S=I^{\alpha} C^{\beta}$
+\end{frame}
+
+\begin{frame}{Fonctions de production: Rendements à l'échelle} 
+
+Une fonction de production a des rendements à l'échelle :
+
+\begin{itemize}
+\item constants: si $F(X,Z)$ est homogène de degré 1
+\item croissants: si $F(X,Z)$ est homogène de degré supérieur à 1
+\item décroissants: si $F(X,Z)$ est homogène de degré inférieur à 1
+\end{itemize}
+
+\textbf{Exercice B}: Considérez la fonction $Y=F(X,Z)=A X^\alpha Z^\beta$. Rendements d'échelle?
+
+\end{frame}
+
+\begin{frame}{Minimisation des coûts} 
+
+Étant donné un niveau de production $Y$, quel est le meilleur choix des inputs?
+
+$$ \min_{X,Z} \{ p_X X + p_Z Z : F(X,Z) \ge Y \}$$
+
+Posons le lagrangien: 
+
+$$ L(X,Z,\mu) = p_X X + p_Z Z + \mu(Y - F(X,Z))$$
+
+Les CPOs sont:
+
+$$ p_X - \mu F'_X(X,Z) = 0 $$
+$$ p_Z - \mu F'_Z(X,Z) = 0 $$
+$$ F(X,Z) = Y $$
+
+\end{frame}
+
+\begin{frame}{Minimisation des coûts} 
+
+On peut simplifier:
+
+$$ \frac{p_X}{p_Z} = \frac{F'_X(X,Z)}{F'_Z(X,Z)} $$
+$$ F(X,Z) = Y $$
+
+La première condition: $TMST = $ prix relatif.
+
+\textbf{Exercice C}: Trouvez les demandes conditionelles pour $Y=X^\alpha Z^{1-\alpha}$. 
+\end{frame}
+
+\begin{frame}{Demande conditionelle} 
+
+La solution donne les fonctions de demande conditionelles des inputs: $Z^*(p_X,p_Z,Y),Z^*(p_X,p_Z,Y))$. 
+
+Quelles sont les propriétés de ces fonctions?
+\begin{itemize}
+\item Homogène de degré zéro en $(p_X,p_Z)$
+\item Symmétrie: $\frac{\partial X^*(p_X,p_Z,Y)}{\partial p_Z} = \frac{\partial Z^*(p_X,p_Z,Y)}{\partial p_X}$
+\item Négativité: $\frac{\partial X^*(p_X,p_Z,Y)}{\partial p_X}<0$. 
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Fonction de coût} 
+
+En substituant les demandes conditionelles, on obtient la fonction de coûts: 
+
+$$ C(p_X,p_Z,Y) = p_X X^*(p_X,p_Z,Y) + p_Z Z^*(p_X,p_Z,Y) $$
+
+Propriétés:
+\begin{itemize}
+\item Non décroissante en $(Y,p_X,p_Z)$
+\item Homogène de degré 1 en $(p_X,p_Z)$
+\item Concave en $(p_X,p_Z)$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Relation entre Coûts et Demandes} 
+
+Un résultat intéressant est le Lemme de Sheppard: 
+
+$$ \frac{\partial C(p_X,p_Z,Y)}{\partial p_X} = X^*(p_X,p_Z,Y) $$
+
+\textbf{Exercice D}: Montrez que L'astuce de l'enveloppe donne ce résultat.
+
+\end{frame}
+
+\begin{frame}{Relation entre Coûts et Output} 
+
+En appliquant l'astuce de l'enveloppe on a aussi que, 
+
+$$ \frac{\partial C(p_X,p_Y,Y)}{\partial Y} = \mu $$
+
+$\mu$ est donc le coût marginal à l'optimum. 
+
+\vspace{0.5in}
+
+Si la fonction de production a des rendements à l'échelle:
+
+\begin{itemize}
+\item Constant: $C(p_X,p_Z,Y)$ est linéaire en $Y$
+\item Croissant: $C(p_X,p_Z,Y)$ est concave en $Y$
+\item Décroissant: $C(p_X,p_Z,Y)$ est convexe en $Y$
+\end{itemize}
+
+
+\end{frame}
+
+\begin{frame}{La firme comme agent} \begin{iPar}{Maximisation des profits} \item Fonction objective:  Profits = Valeur des outputs -
+coûts des inputs $$ \Pi = V - C$$ \item Décision: Entreprise choisit ses inputs pour maximiser profits \end{iPar} \mdp \begin{iPar}{Exemple} \item e.g. Si un input $X$ et un output $Y = F(X)$ $$C(X) = p_X X\;;\quad V(Y) = p_Y
+Y\;;\quad \Pi(X) = p_Y F(X) - p_XX $$ 
+\end{iPar}
+\textbf{Exercice E} Supposons $F(X) = \sqrt X$, trouvez la demande pour $X$
+
+\end{frame}
+
+\begin{frame}{La demande et l'offre de la firme price-taker (I)}
+\begin{iPar}{Un input, un output} \item  Input $X$, un output $Y =
+F(X)$  \item Profit $\Pi(X) = p_Y F(X) -
+p_XX$.  \item  Supposons que la firme veut produire  \item À l'optimum CPO respectée $$ p_Y F'(X) - p_X = 0 \iff F'(X) =
+\frac{p_X}{p_Y}$$ \item Équation qui permet de trouver la demande $X^*$.
+Donne l'offre $Y^* = F(X^*)$ \end{iPar}
+\end{frame}
+
+\section{Économie de Production}
+
+\begin{frame}{Économie de production avec une firme et deux biens (I)}
+
+\begin{iPar}{Contexte} \item 2 biens $X$ et $Y$  \item Entreprise a la fonction de production $Y = F(X)$.\end{iPar}\mdp
+
+\begin{iPar}{Comportement de la firme}\item Étant donné les prix $p_Y$ et $p_X$ la firme
+maximise les profits $$\Pi(X) = p_Y F(X) - p_X X$$   \item Donne la demande de la firme $X^{F,d}(p_X,p_Y)$; \smallskip
+
+Offre de la firme
+$Y^{F,s}(p_X,p_Y)$;\smallskip
+
+ et les profits $\Pi$ \end{iPar} 
+ 
+\end{frame}
+
+\begin{frame}{Économie de production, une firme, deux biens (II)}
+
+\begin{iPar}{Comportement du consommateur} \item 2 consommateurs C1 et C2
+ \item Les consommateurs ont des préférences représentées par
+$U_1(X, Y)$ et $U_2(X,Y)$ \item Le consommateur  1 a une {dotation} $X^{C1,e},
+Y^{C1,e}$ \\ \medskip Consommateur 2 a une {dotation} $X^{C2,e}, Y^{C2,e}$
+\item Les deux consommateurs ont des actions $\rho_{1}$ et $\rho_2 = 1- \rho_1$
+de la firme.
+\end{iPar}
+\end{frame}
+
+
+\begin{frame}{Économie de production, une firme, deux biens (III)}
+\begin{iPar}{Comportement du consommateur} \item Consommateur 1 résout
+\begin{eqnarray*} &&\max_{X,Y} U_1(X,Y) \\ &\textrm{s.c.} &\textrm{Coût de la consommation} = \textrm{Richesse totale} \\ &&  p_{X} X +  p_{Y}Y = p_{X}
+X^{C1,e}+ p_{Y}Y^{C1,e} + \rho_{1}\Pi\end{eqnarray*} \item Donne la demande du consommateur  $1$:  $X^{C1,d}(p_X,p_Y)$ et
+$Y^{C1,d}(p_X,p_Y)$. (même idée pour 2) \end{iPar} \end{frame}
+
+
+
+\begin{frame}{Économie de production, une firme, deux biens (IV)}
+
+\begin{iPar}{Équilibre de marché} \item Numéraire: normalisons
+$p_{X} = 1$ et $p_{Y} = p$. \item Étant donné $p$, on peut trouver la demande $X$
+et $Y$ pour chaque consommateur, demande de $X$ par la firme et offre de $Y$
+par la firme
+
+\item Le marché pour le bien $X$  est en équilibre au prix $p$
+si et seulement si \begin{eqnarray*}  \textrm{demande totale} X &=&
+\textrm{offre totale de} X  \\ \iff X^{C1,d} + X^{C2,d} + X^{F,d} &=&
+X^{C1,e} + X^{C2,e}  \end{eqnarray*} \item Prix d'équilibre
+sont des prix tels que tous les marchés sont en équilibre. \end{iPar}
+\end{frame}
+
+\begin{frame}{Économie de production, une firme, deux biens (V)}
+\begin{iPar}{Exemple} \item  $F(X) =  \log(1+X)$ \item $U_1(X,Y) =
+U_2(X,Y) = \log X + \alpha \log Y$ \item $X^{C1,e} = 2$ and $X^{C2,e} =
+Y^{C1,e} = Y^{C2,e} = 0$ \item $\rho_1 =0 $ et $\rho_2 = 1$ \item prix
+$p_X = 1$, $p_Y = p$ \end{iPar} \mdp \begin{iPar}{Comportement de la firme} \item
+Maximisation des profits: $$\max_X p\log(1+X) - X\;\; \Rightarrow \;\; X^{F,d}
+= p- 1 \;\; et \;\; Y^{F,s} = \log p$$ \item Profit $\Pi = p \log p - p
++1 $\end{iPar}
+
+\end{frame}
+
+\begin{frame}{Économie de production, une firme, deux biens (VI)}
+\begin{iPar}{Comportement consommateur} \item<1-> Étant donné le revenu $I$ $$\max_{X,Y}
+\log X + \alpha \log Y \quad s.c.\;\; X + pY = I$$ \item<2-> Revenu du consommateur 1: $I_1 = 2$ \\ \medskip Revenu du consommateur 2: $I_2 = \Pi =  p \log
+p - p +1$ \item<3-> Demande consommateur 1: $$X^{C1,d} = \frac{1}{1+\alpha}
+I_1 \;\; et \;\; Y^{C1,d} = \frac{\alpha}{1+\alpha} \frac{I_1}{p}$$ \\
+\medskip Demande consommateur 2: $$X^{C2,d} = \frac{1}{1+\alpha} I_2 \;\; et
+\;\; Y^{C2,d} = \frac{\alpha}{1+\alpha} \frac{I_2}{p}$$ \end{iPar}
+
+\end{frame}
+
+\begin{frame}{Économie de production, une firme, deux biens (VII)}
+\begin{iPar}{Équilibre de marché} \item Équilibre sur marché pour $X$:
+$$X^{F,d} + X^{C1,d} + X^{C2,d} = X^{C1,e} + X^{C2,e} = 2$$ \item donne
+\begin{eqnarray*} & & p-1 + \frac{1}{1+\alpha}2 + \frac{1}{1+\alpha}(p\log p - p +1 ) = 2 \\
+&\iff& \alpha p +p\log p = 3 \alpha\end{eqnarray*} \item Équation qui caractérise le prix
+$p^*$. \item Vérifier qu'à $p^*$ le marché pour $Y$ est aussi en équilibre.
+\end{iPar}
+
+\end{frame}
+
+\begin{frame}{Économie de production avec firmes et biens multiples}
+\begin{iPar}{Méthodologie} \item[Étape 1:] Étant donné les prix, maximisation des profits donne les demandes des firmes et offres des firmes (profits)  \pause  \item[Étape 2:] Étant donné les prix,
+dotations and actions des firmes, calcul des revenus et des demandes du consommateur  \pause \item[Étape 3:] Pour chaque bien, équilibre de marché $$\textrm{offre totale} =
+\textrm{demande totale}$$ \pause \item[Step 4:] Étant donné un système d'équation: solution donne les prix d'équilibre \end{iPar} \end{frame}
+
+
+\begin{frame}{Les deux théorèmes du bien-être}
+\textbf{Environement} \begin{enumerate} \item Tous les agents sont des price-takers (firmes et consommateurs) (pas de monopole) \item Les biens sont homogènes (qualité uniforme) \item Les consommateurs ont des préférences sur leur  propre consommations seulement\\  Les décisions de la firme n'ont pas d'impact sur les autres firmes ou consommateurs  (aucune externalités) 
+\end{enumerate}
+
+\begin{iPar}{Le 1er théorème du bien-être} \item Dans un équilibre de marché,
+l'allocation des biens chez les consommateurs est efficiente au sens de Pareto 
+\end{iPar}\mdp
+
+\begin{iPar}{Le 2e théorème du bien-être} \item Une allocation optimale au sens de Pareto,
+peut être implémentée dans un équilibre de marché avec transferts des dotations.  
+\end{iPar}\mdp
+\end{frame}
+
+
+\end{document}
+
+
+
+

@@ -1,0 +1,306 @@
+% !TEX encoding = utf-8
+\documentclass[handout]{beamer}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+% functions to plot
+\def\func(#1){(#1)*(1-(#1))}
+\hypersetup{colorlinks = true,linkcolor = blue,urlcolor  = blue}
+
+\newenvironment{iPar}[1]{\textbf{#1} \begin{itemize}}{\end{itemize}}
+
+\addtobeamertemplate{navigation symbols}{}{%
+    \usebeamerfont{footline}%
+    \usebeamercolor[fg]{footline}%
+    \hspace{1em}%
+    \insertframenumber/\inserttotalframenumber
+}
+
+\title{Consumer Choice}
+\author{Microeconomics \\ 20851}
+\date{}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\section[Outline]{}
+\frame{\tableofcontents}
+
+\section{Preferences}
+
+\begin{frame}\frametitle{Preferences}
+\textbf{Defined preferences in baskets of goods and services}
+\begin{itemize} \item For two baskets defined as $A$ and $B$, preferences dictate the preferred one
+\item Preferences are like hierarchical wish lists: ignore prices and resources for now, they will come later. 
+\item Preference relations are denoted by $\succ,\succeq,\sim$. 
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{Important Axioms Concerning Preferences}
+
+\textbf{Exhaustive: For any baskets A and B, te consumer either}
+\begin{itemize}
+\item  \textbf{always} prefers A over B ($A\succ B$)
+\item  \textbf{always} prefers B over A ($B\succ A$)
+\item is indifferent between A and B ($A \sim B$) \end{itemize}
+
+\textbf{Is it restrictive?}
+\begin{itemize}
+\item Yes, e.g.: ice cream vs. soup
+\item We can include circumstances within baskets
+\item We then have the baskets (ice cream, heat), (ice cream, cold), (soup, heat), (soup, cold).
+\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Important Axioms Concerning Preferences (II)}
+\textbf{Transitivity}
+\begin{itemize}
+\item Given three baskets A, B, C  such as  $A\succ B$, $B \succ C$, 
+then the consumer prefers A over C ($A \succ C$).
+\end{itemize}
+
+\textbf{Nonsatiation}\begin{itemize}
+\item If A contains exactly as many goods as B plus one good, then $A \succ B$.
+\item The weaker version ($A \succeq B$,indifference or preference) is reasonable  
+\item Labelling goods: goods must always be desirable (air quality vs. pollution). 
+\end{itemize}
+
+
+\end{frame}
+
+\begin{frame}\frametitle{Indifference Curves}
+\textbf{Two goods $X,Y$}:
+\begin{itemize}
+\item For any given basket $(X_0,Y_0)$, combinations $(X,Y)$ such that the consumer is indifferent between $(X,Y)$ and $(X_0,Y_0)$
+\item Indifference curves going towards the north-east indicate higher utility levels (nonsatiation)
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{Indifference Curves Don't Cross}
+
+\textbf{Exercise A}: Show that indifference curves that don't intersect each other respect the transitivity hypothesis.
+\end{frame}
+
+
+\begin{frame}\frametitle{Marginal Rate of Substitution (MRS)}
+\textbf{Definition}
+\begin{itemize}
+\item Goods:  $X$ (Food) and $Y$ (Heating)
+\item For a given basket $(X_0, Y_0)$, MRS of $X$ as a function of $Y$: Heating ($Y$) that the consumer is willing to sacrifice in order to obtain a unit of food ($X$)
+\item It's the value that a consumer gives to $X$ in terms of units of another good $Y$.
+\item This corresponds to the slope of the indifference curve at the point $(X_0,Y_0)$.
+\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Convexity of Indifference Curves}
+\begin{itemize}
+\item If the amount of food ($X$) increases, how does the MRS of $X$ in terms of $Y$ change?
+\end{itemize}
+
+This corresponds to the convexity of indifference curves. 
+\end{frame}
+
+\begin{frame}\frametitle{Utility}
+
+\textbf{Representing preferences}
+\begin{itemize}
+\item  Utility functions: assign a number to each basket
+\item $U$ represents preferences if and only if $ A \succ B \Rightarrow U(A) > U(B)$ and 
+$ U(A) > U(B)   \Rightarrow A \succ B$
+\end{itemize}
+\vfill
+\end{frame}
+
+\begin{frame}{Utility}
+\textbf{Preferences are ordinal (hierarchical)}
+\begin{itemize}
+\item If $f$ is a strictly increasing function and $U$ represents preferences, then $V(X) = f(U(X))$ represente the same preferences.
+
+$$ U(X) > U(Y) \iff f(U(X)) > f(U(Y))$$
+\item A value of utility has no meaning, the order of the baskets is what matters.
+\item $U(X,Y) = \ln X + \ln Y$ and $V(X,Y) = XY$ represent the same preferences
+\end{itemize}
+\textbf{Exercise B}: Show that $U$ and $V$ have the same preferences. 
+\end{frame}
+
+
+\begin{frame}{Back to the MRS}
+\textbf{Context}
+\begin{itemize}
+\item Two goods, $X$, $Y$.  Preferences are represented by the utility function $U(X,Y)$
+\item e.g. $U(X,Y) = \ln X + \ln Y$
+\end{itemize}
+\textbf{MRS of $X$ in terms of $Y$} \pause
+\begin{itemize}
+\item How much $Y$ is sacrificed for more $X$\pause
+\item Formally: if $X$ increases by $\Delta X$: what is the change $\Delta Y $ that will keep the indifference?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Calculating the MRS}
+\textbf{MRS of $X$ in terms of $Y$} \pause
+\begin{itemize}
+\item We need a $\Delta Y$ such that $U(X + \Delta X, Y + \Delta Y) = U(X,Y)$
+\item First order approximation: $$U(X+\Delta X, Y+ \Delta Y) \simeq  U(X,Y)+  \Delta X  \frac{\partial U}{\partial X} + \Delta Y \frac{\partial U}{\partial Y}$$\pause
+$$ \Rightarrow \;\; MRS = \Delta Y/ \Delta X =  -\frac{\partial U}{\partial X}/ \frac{\partial U}{\partial Y}$$
+\end{itemize}
+
+\textbf{Example}
+\begin{itemize}
+\item $U(X,Y) = \ln X + \ln Y$
+ $$MRS = \frac{\partial U}{\partial X}/ \frac{\partial U}{\partial Y} = -Y/X$$
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{By Total Differential}
+
+Take the total differential:
+\begin{align}
+dU = \frac{\partial U}{\partial X}dX + \frac{\partial U}{\partial Y}dY
+\end{align}
+Set $dU = 0$, then 
+
+\begin{align}
+\frac{dY}{dX}\bigg\rvert_{dU=0} = -\frac{\partial U}{\partial X}/ \frac{\partial U}{\partial Y}
+\end{align}
+
+\end{frame}
+
+
+\section{Budget constraint}
+
+\begin{frame}{Budget Constraint}
+\begin{itemize}
+\item We can't spend more than what we own $I$
+\item Two goods $X$, $Y$:  Constraints: $p_X X + p_Y Y = I$ \\ Defines what is affordable given $I$\\
+\item Solve for $Y$ in terms of  $X$:     $Y = \frac{I - p_X X}{p_Y}$\\
+The exchange rate between $X$ and $Y$ while respecting the constraint: $$\frac{dY}{dX} = -\frac{p_X}{p_Y}$$
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{Constraints}
+\textbf{Normalization}
+\begin{itemize}
+\item  The budget constraint is the same if we simultaneously multiply the prices and the budget by $\lambda$.
+\item We can buy the same goods.\pause
+\item Normalizing $p_Y = 1$. Then $Y = I - p_X X$. $p_X$ is now in terms of quantity of $Y$ (called the \textit{numeraire}). 
+\end{itemize}
+\textbf{Exercise C}: Show that a budget constraint doesn't change if we multiply prices and income by $\lambda>0$. 
+\end{frame}
+
+\section{Consumer choices}
+
+\begin{frame}\frametitle{Consumer Choices}
+
+\begin{itemize}
+\item The constraint is a fixed value. What is the highest utility level on this constraint?
+
+\item We cannot be on a utility curve that is higher than the constraint
+
+\item Any lower indifference curve is sub-optimal.
+
+\item The curve touching the constraint (often tangent) wil give us the highest level of well-being achievable
+\end{itemize}
+
+\end{frame}
+
+\section{Mathematical conditions}
+
+\begin{frame}\frametitle{The Direct Approach}
+
+\textbf{The problem}
+\begin{itemize}
+\item Maximize $U(X,Y)$ given the following constraint: $p_X X+ p_YY = I$
+\end{itemize}
+
+\pause
+\textbf{Step 1: Substitute the constraint}
+\begin{itemize}
+\item If we buy $X$ then we consume $Y(X) = \frac{I - p_X X}{p_Y}$
+\item Utility is only a function of $X$: $V(X) = U(X,Y(X))$
+\end{itemize}
+
+\pause
+
+\textbf{Step 2: Maximize without a constraint}
+\begin{itemize}
+\item Check that the corner solution is not optimal (say $X= 0$ and $Y=0$)
+\item Take the first order condition 
+\end{itemize}
+\end{frame}
+
+\begin{frame}{The Direct Approach}
+
+\textbf{The FOC}
+\begin{itemize}
+\item $$\frac{dV}{dX} = 0 \iff \frac{dU}{dX} + \frac{dY}{dX}\frac{dU}{dY} = 0$$
+ $$\iff \frac{dU}{dX}\Bigg/\frac{dU}{dY} = \frac{p_X}{p_Y}$$
+\end{itemize}
+MRS on the indifference curve = Slope of the budget constraint
+\end{frame}
+
+\begin{frame}\frametitle{Solution}
+
+\textbf{Exercise D}: Find the demands for $u(X,Y) = XY$ subject to $p_X X + p_Y Y \le I $. 
+\end{frame}
+
+\section{General approach}
+
+\begin{frame}{Lagrangian I}
+We can set the lagrangian
+
+\begin{align*}
+L(X,Y,\lambda) = U(X,Y) - \lambda (p_X X + p_Y Y - I)
+\end{align*}
+
+\pause
+
+If we maximize: $\max_{X,Y,\lambda} L(X,Y,\lambda)$, the FOC are
+
+\pause
+
+\begin{align*}
+U'_X(X,Y) - \lambda p_X = 0 \\
+U'_Y(X,Y) - \lambda p_Y = 0 \\
+p_X X + p_Y Y = I
+\end{align*}
+\end{frame}
+
+\begin{frame}{Lagrangian II}
+Taking the ratio of the first two FOC, we get:
+
+\begin{align*}
+\frac{U'_X(X,Y)}{U'_Y(X,Y)} = \frac{p_X}{p_Y} \\
+p_X X + p_Y Y = I
+\end{align*}
+
+\textbf{Exercise E}: Find the demands for $u(X,Y) = XY$ this time using a lagrangian. 
+\newline
+
+\end{frame}
+
+\begin{frame}{Indirect utility}
+
+The indirect utility $V(p_X,p_Y,I)$ is the highest utility level achievable with the prices $(p_X,p_Y)$ and 
+$$ V(p_X,p_Y,I) = \max_{X,Y} \{ u(X,Y) : p_X X + p_Y Y \le I\} $$
+
+\textbf{Exercise F}: Show that $\frac{\partial V}{\partial I} = \lambda$ where $V$ is the indirect utility. 
+\end{frame}
+
+\begin{frame}{Roy's Identity}
+
+If the indirect utility is given by $V(p_X,p_Y,I)$ then we can find the demands with Roy's Identity: 
+
+$$ X^*(p_X,p_Y,I) = \frac{\partial{-V(p_X,p_Y,I)}/\partial{p_X}}{\partial{V(p_X,p_Y,I)}/\partial{I}}  $$
+
+\textbf{Exercise F}: Show that this is true using the envelope theorem. 
+\end{frame}
+
+\end{document}

@@ -1,0 +1,297 @@
+\documentclass[handout]{beamer}
+\usepackage[frenchb]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+% functions to plot
+\def\func(#1){(#1)*(1-(#1))}
+\hypersetup{colorlinks = true,linkcolor = blue,urlcolor  = blue}
+            
+\newcommand{\qGraph}[1]{\begin{center} \includegraphics[width =
+\textwidth]{#1}\end{center}}
+
+\newcommand{\mcl}{\mathcal}
+
+
+\newenvironment{iPar}[1]{\textbf{#1} \begin{itemize}}{\end{itemize}}
+
+\newcommand{\inc}{{inc}}
+\newcommand{\cp}{{cmp}}
+\newcommand{\bull}{$\bullet\;$} 
+
+\newcommand{\esp}{\mathbf{E}} \newcommand{\ul}[1]{\underline{#1}}
+\newcommand{\ol}[1]{\overline{#1}} \newcommand{\ora}[1]{\textbf{#1}}
+\newcommand{\wh}{\widehat}
+\newcommand{\mdp}{\medskip \pause}
+\newcommand{\mc}{\mathcal}
+
+\title{Strategic Behavior of Firms}
+\author{Microeconomics \\ 20851}
+\date{}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}\frametitle{Itinerary}
+
+\begin{iPar}{Until now}
+\item Consumer choice
+\item Risk and time
+\item Measuring welfare
+\item Exchange
+\item Production
+\end{iPar}\mdp
+
+\begin{iPar}{This class: Strategic Behavior of Firms}
+\item Monopoly
+\item Cournot Oligopoly
+\item Price Discrimination
+\end{iPar}\mdp
+
+\end{frame}
+
+\section[Outline]{}
+\frame{\tableofcontents}
+
+\section{Monopoly}
+
+\begin{frame}{Monopoly: Price Manipulation}
+
+\begin{iPar}{First Welfare Theorem} \item The market is Pareto efficient.  \item Firms take the price as given: they do not internalize the impact of their choice of production on price (\textit{price taker}).
+\item Is this a good assumption? \end{iPar} \mdp
+
+\begin{iPar}{Perfect competition} \item A large number of firms \item
+All small in size \item The production of each has a small effect on total production $\Rightarrow$ fixed price reasonable \item e.g.: market for meat, cereals, coffee... But oil, diamonds? \end{iPar}
+
+\end{frame}
+
+
+\begin{frame}{Behavior of the Firm}
+\begin{iPar}{Setup}
+\item  Good $X$ and the \textit{numéraire} $M$.\smallskip
+
+ Utility is quasi-linear $U(X,M) = V(X) + M$,
+ 
+  $V(X)$ concave, $V'(0) = + \infty$
+\item  Endownment $I_0$ of $M$, $X$ produced by a single firm, price $p$ (price of X since price of $M$ normalized to one). 
+\item   The firm produces $X$ with a cost function $C(X)$. Assume $C'(0) = 0$
+\end{iPar} \mdp 
+\textbf{Exercise A} Find the equilibrium price if the firm is a \textit{price taker} for $V(X) = \sqrt{X}$ and $C(X) = X^2$
+\end{frame}
+
+
+\begin{frame}\frametitle{Strategic Price Manipulation}
+
+\begin{itemize} \item The firm correctly anticipates that increasing its supply may lower the price on the market. 
+\item The firm picks $X$ so it maximizes $$\Pi = p(X)X - C(X)$$
+\item FOC yields $$\frac{d\Pi}{dX} = 0 \iff p'(X)X + p(X) = C'(X)$$
+\item Produces $X_{PM}$ such that  $   p(X_{PM}) + p'(X_{PM}) X_{PM} = C'(X_{PM}) $ \mdp
+\item marginal price-effect + infra-marginal price-effect  = marginal cost. The infra marginal effect captures the impact of expanding production on the value from existing production.\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}\frametitle{Strategic Price Manipulation (II)}
+
+\textbf{Exercise B} Find the equilibrium price if the firm is strategic for $V(X) = \sqrt{X}$ and $C(X) = X^2$. Compare graphically to the case when the firm is price-taker. 
+
+\textbf{Exercise C} : In the exercise above, find an expression for the equilibrium price as a function of the price elasticity of demand.  
+
+\end{frame}
+
+\begin{frame}\frametitle{Monopoly}
+
+\begin{itemize} \item At optimal production $X_{PM}$ $$p(X_{PM}) + p'(X_{PM})X_{PM} = C'(X_{PM}) $$ 
+Given, $p'(X_{PM})<0$, then $ p(X_{PM}) > C'(X_{PM})$. \item The monopoly fixes production at a price higher than marginal cost. \end{itemize}
+
+\begin{itemize}\item If production of a firm has no impact on the price, it produces $X_{PT}$ s.t. $$p(X_{PT}) = C'(X_{PT})$$ \item When the firm internalizes its effect on the price (has market power), it produces $X_{PM}$ such that  $$p(X_{PM}) + p'(X_{PM})X_{PM} > C'(X_{PM})$$ \item This implies $X_{PM} < X_{PT}$.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{Monopoly}
+
+A (artificial) monopoly is inefficient: 
+
+\begin{itemize}
+    \item The monopoly makes profits. Those profits are given by: $$ \Pi_{PM} = (p(X_{PM}) - p(X_{PT}) X_{PM} $$. The price taker does not make profits. 
+    \item Those profits reduce consumer surplus by the same amount. So no total welfare loss from this transfer. 
+    \item The monopoly imposes a welfare loss because units $X_{PT}>X_{PM}$ have $V'(X)-C'(X)>0$. 
+\end{itemize}
+\textbf{Exercise D}: Show the profits and the rents in the graph done for Exercise B. 
+
+\end{frame}
+
+\section{Oligopoly}
+
+\begin{frame}\frametitle{Oligopoly} \begin{itemize} \item Oligopolies are markets where a (small) number of firms produce a good. Duopolies are a special case with two firms. 
+\item Duopoly: Two identical firms produce quantities $X_A$ and $X_B$ \item Representative consumer with $U(X,M) =V(X) + M$ and $$ V(X) = D_0 X - \frac{\alpha}{2} X^2$$   \item Costs given by $C_A(X) = C_B(X)= c \times X$\end{itemize} \mdp
+
+\begin{iPar}{Inverse demand}
+\item  $P(X) = V'(X) = D_0 - \alpha X$
+\end{iPar}
+\end{frame}
+
+
+\begin{frame}{What should we compare with?}
+
+\begin{iPar}{Counterfactual is efficient production (Pareto sense)}
+\item Pick $X$ such that marginal cost is equal to marginal valuation
+\begin{eqnarray*} &\iff& c = D_0 - \alpha X \\ &\iff& X_{Pareto} = \frac{D_0 - c}{\alpha} \end{eqnarray*}
+\end{iPar} \mdp
+
+ 
+\begin{iPar}{In comparison, the monopoly }
+\item Maximizes $$\Pi(X) =  P(X) X - c X = (D_0- \alpha X) X - c X$$
+\item Produces $$X_{Mon} = \frac{D_0 - c}{2\alpha} = \frac{1}{2} X_{Pareto}$$
+
+\end{iPar}
+
+\end{frame}
+
+
+\begin{frame}{Cournot Competition -- Two firms}
+\begin{iPar}{Best response curves (BR)}
+\item Two identical firms
+\item If firm $B$ produces $X_B$, what is the optimal production $X_A$ of firm $A$? \pause
+\item Profit $$\Pi_A = P \times X_A - C(X_A) = [D_0 - \alpha(X_B + X_A)]X_A - C(X_A)$$
+\item FOC is $$ D_0 -   \alpha(X_B + X_A) - \alpha X_A - c  = 0$$
+\item Best response (BR) at $X_B$ is  $$X_A = \frac{D_0 -  c - \alpha X_B}{ 2 \alpha} = \frac{D_0 - c}{2\alpha} - \frac{1}{2}X_B$$
+\end{iPar}
+\end{frame}
+
+
+\begin{frame}{Cournot Competition -- Duopoly}
+\begin{itemize}
+\item If firm $A$ produces $X_A$, best response from $B$ is to pick
+$$X_B =   \frac{D_0 -  c - \alpha X_A}{ 2 \alpha} = \frac{D_0 - c}{2\alpha} - \frac{1}{2}X_A $$
+\end{itemize}\mdp
+
+\begin{iPar}{Recall from Intro to Microeconomics principles of Game theory}
+\item \textbf{Nash Equilibrium:} No firm can benefit from a unilateral change on her part. 
+
+\item If $X^*_A$ and $X^*_B$ are equilibrium quantities, we must have that $A$ best responds in an optimal way to $X^*_B$ and firm $B$ best responds in an optimal way to $X^*_A$
+\end{iPar}
+\end{frame}
+
+
+\begin{frame}{Equilibrium}
+We have the best response functions
+\begin{itemize}
+\item  $$X^*_A =  \frac{D_0 - c - \alpha X_B^*}{ 2 \alpha} \quad and \quad  X^*_B = \frac{D_0 - c -  \alpha X_A^*}{2 \alpha} $$
+
+\item Since symmetric firms: $X^*_A = X^*_B = X^*$ gives $$X^*_A = X^*_B = X^* = \frac{D_0 - c}{3\alpha}$$
+\item Total production  $$2 X^* = \frac{2}{3} \frac{D_0 - c}{\alpha}$$
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Some Exercises}
+
+\textbf{Exercise E}: Plot the two best response functions in the space ($X_A,X_B$). Plot the equilibrium outcome. \\
+\textbf{Exercise F}: Starting from $X_A = \frac{D_0 - c}{2\alpha}$, $D_0=10,c=1,\alpha=1$, show how applying the best response functions of each firm sequentially would eventually lead you to the equilibrium outcome. \\ 
+\textbf{Exercise G}: Assume firm A has marginal cost $c_A$ and firm B, $c_B$, with $c_A=2>c_B=1$. Also assume $D_0=10,\alpha=1$. Find the equilibrium quantities of each firm.  
+
+\end{frame}
+
+\begin{frame}{Cournot Competition -- Increasing Competition}
+\begin{iPar}{With more firms}
+\item N identical firms $F_1,F_2,\cdots,F_N$
+\item Given $X_2, X_3, \cdots, X_N$, firm $F_1$ produces $X_1$ to maximize $$\Pi_1 = [D_0 - \alpha(X_1 + X_2 + \cdots + X_N)]X_1 - c\times X_1$$
+\item Best response is $$X_1 = \frac{D_0 - c - \alpha[X_2 + X_3 + \cdots + X_N]}{ 2 \alpha}$$
+\end{iPar}
+
+\textbf{Exercise H}: Show how one obtains the best response function in the example above. 
+
+\end{frame}
+
+\begin{frame}{Cournot competition}
+
+\begin{iPar}{Equilibrium with many firms}
+\item $X_1$ optimal given $X_2, X_3, \cdots, X_N$
+\item $X_2$ optimal given $X_1,X_3,X_4, \cdots, X_N$
+\item $\cdots$
+\item $X_N$ optimal given $X_1,X_2, \cdots, X_{N-1}$
+\item $N$ equations, exploiting symmetry yields $$X_1^* = X_2^* = \cdots = X_N^* = \frac{D_0 - c}{(N+1) \alpha}$$ \item Total production $$\frac{N}{N+1} \frac{D_0 -c}{\alpha}$$
+\end{iPar}
+
+\end{frame}
+
+\begin{frame}{Competition}
+
+
+\begin{iPar}{Firm with no market power}
+\item A firm with no market power picks $X_0$  such that price equals marginal cost $ p(X) = c$
+\end{iPar}\mdp
+
+\begin{iPar}{Competition}
+\item If one firm acts as monopoly, total production is $$X^{Tot}_1 = \frac{1}{2}\frac{D_0-c}{\alpha} \quad  and \quad \textrm{price } p_1 = \frac{1}{2} D_0  + \frac{1}{2} c$$
+\item If two firms, total production $$X^{Tot}_2 = \frac{2}{3}\frac{D_0-c}{\alpha} \quad  et \quad \textrm{price } p_2  = \frac{1}{3}D_0 +\frac{2}{3}c$$
+\item If $N$ firms , total production $$X^{Tot}_N = \frac{N}{N+1}\frac{D_0-c}{\alpha} \quad  and \quad  p_N = \frac{1}{N}D_0 +\frac{N}{N+1}c$$
+
+\end{iPar}
+\end{frame}
+
+
+\begin{frame}{Interesting Result}
+\begin{iPar}{With many firms, cournot competition converges to perfect competition (price taking behavior):}
+\item When $N$ is large, $p(X_N) \to c$, $$ \lim_{N \to \infty} \left( \frac{1}{N}D_0 +\frac{N}{N+1}c \right) = 0 + c = c$$
+\item In other words, price equals marginal cost.
+\item Firms cannot affect the price when too many firms in the market. They become price taker and the rents from strategic behavior are eliminated. 
+\end{iPar}
+\end{frame}
+
+\section{Bertrand Price Competition}
+
+\begin{frame}{Competing on Price}
+\begin{itemize}
+   \item  In some markets, capacity is illimited. Think of retail. 
+   \item Firms compete on the price they post (think of a flea market). 
+   \item Competition among a few sellers is best modelled using Bertrand price competition
+    \item Take $N$ identical firms with marginal cost $c_i=c \quad \forall i=1,...,N$. 
+    \item First assume, $p_i = c \quad \forall i$. \\ \\
+    \item If one firm $j$ deviates and posts $p_j>c$, she sells nothing (looses her market share). If she posts, $p_j<c$, she makes a loss. \item Equilibrium (nash) solution: $p_i=c \quad \forall i $. As opposed to Cournot, Bertrand yields a competitive market outcome (Pareto optimal)!
+    \item Key assumption: Consumer can observe prices of all competitors without cost. Good homogeneous.
+\end{itemize}    
+\end{frame}
+
+\begin{frame}{Bertrand Price Competition}
+\begin{itemize}
+    \item Cournot better suited for things that take time to build, capacity (e.g. airplanes, etc).  
+   \item  In some markets, capacity is almost illimited and quantity adjusted very quickly. e.g. retail. 
+   \item Firms compete on the price they post (think of a flea market with many kiosks close to each other selling the same thing). 
+   \item Competition among a few sellers  is best modelled using Bertrand price competition
+
+\end{itemize}    
+\end{frame}
+
+\begin{frame}{Bertrand Price Competition}
+\begin{itemize}
+    \item Take $N$ identical firms with marginal cost $c_i=c \quad \forall i=1,...,N$. 
+    \item First assume, $p_i = c \quad \forall i$. \\ \\
+    \item If one firm $j$ deviates and posts $p_j>c$, she sells nothing (looses her market share). If she posts, $p_j<c$, she makes a loss. \item Equilibrium (Nash) solution: $p_i=c \quad \forall i $. As opposed to Cournot, Bertrand yields a competitive market outcome (Pareto optimal)!
+    \item Key assumption: Consumer can observe prices of all competitors without cost. Good homogeneous.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Other Important Topics}
+The field of industrial organization deals with strategic decisions of firms in different market settings. 
+
+Other topics of interest are: 
+\begin{itemize}
+\item Product differentiation (monopolistic competition)
+\item Collusion
+\item Price discrimination
+\end{itemize}
+
+These are covered in courses like \textit{Comprendre la concurrence} (BAA) and \textit{Industrial Organization} (M.sc). 
+
+\end{frame}
+\end{document}
+
+
+
+

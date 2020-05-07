@@ -1,0 +1,56 @@
+\documentclass[11pt, oneside,french]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage[frenchb]{babel}
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}				% Use pdf, png, jpg, or epsÂ§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+
+
+
+\title{Exercices on Exchange}
+\author{20851-W2020}
+\date{}							% Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+
+\section*{Market Equilibrium}
+
+Consider an exchange economy where two consumers have preferences represented by: 
+
+$$ u_1(x_{11},x_{12}) = x_{11}^{\frac{2}{5}}x_{12}^{\frac{3}{5}} $$
+
+and 
+
+$$ u_2(x_{21},x_{22}) = \ln \left(x_{21}^{\frac{1}{2}}x_{22}^{\frac{1}{2}} \right)$$
+
+Their initial endownments are $(w_{11},w_{12}) = (2,8)$ and $(w_{21},w_{22}) = (4,2)$.
+\begin{enumerate}
+    \item What are the excess demand functions for these two goods?  Answer: if $p = p_1/p_2$, $z_1(p) = (1/p)\left( \frac{2}{5}w_{12} + \frac{1}{2}w_{22}\right) - \left( \frac{3}{5}w_{11} + \frac{1}{2}w_{21}\right)  $ and $z_2(p) = p\left( \frac{3}{5}w_{11} + \frac{1}{2}w_{21}\right) - \left( \frac{2}{5}w_{12} + \frac{1}{2}w_{22}\right)$. 
+    \item For which value of $p^* = \frac{p_1}{p_2}$ do we have an general market equilibrium? Answer $p^* = 1.3125$ (solve excess demands replacing endownments). 
+    \item What is the equilibrium allocation? Answer: $(x^*_{11},x^*_{12},x^*_{21},x^*_{22}) = (3.238,6.375,2.761,3.625)$
+\end{enumerate}
+
+\section*{Pareto Allocation}
+
+In another economy, two consumers have the preferences: 
+
+
+$$ u_1(x_{11},x_{12}) = \ln \left(x_{11}^{2}x_{12}^{4} \right)$$
+
+and 
+
+$$ u_2(x_{21},x_{22}) = x_{21}^{\frac{1}{3}}x_{22}^{\frac{2}{3}} $$
+
+\begin{enumerate}
+    \item If the two consumers want to share $w_1$ units of good 1 and $w_2$ units of good 2, how should they share these units so that the outcome is Pareto optimal? Answer: $x^*_{22} = \overline{u}_2 \left( \frac{w_2}{w_1}\right)^{\frac{1}{3}}$, $x^*_{12} = w_2 - x^*_{22}$, $x^*_{21} = \overline{u}_2 \left( \frac{w_1}{w_2}\right)^{\frac{2}{3}}$ and $x^*_{11} = w_1 - x^*_{21}$.
+    \item Show in the case where $w_1 = 4$ and $w_2 = 32$ and $\overline{u}_2=4$, the allocation found in the first question. Answer: See figures in class. Indifference curves should be tangent. 
+    
+\end{enumerate}
+
+
+\end{document}  

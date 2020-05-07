@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Microeconomie avec Python'
+project = 'Microeconomie 20-851'
 copyright = '2020, Pierre-Carl Michaud'
 author = 'Pierre-Carl Michaud'
 
@@ -27,8 +27,17 @@ author = 'Pierre-Carl Michaud'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ["sphinx_rtd_theme","sphinx.ext.autodoc", "sphinx.ext.napoleon","sphinx.ext.mathjax"
+extensions = ["sphinx_rtd_theme","sphinx.ext.autodoc", "sphinx.ext.napoleon",
+              "sphinx.ext.mathjax",'sphinx.ext.autosectionlabel'
 ]
+
+mathjax_config = {
+    'extensions': ['tex2jax.js'],
+    'jax': ['input/TeX', 'output/HTML-CSS'],
+    'availableFonts': ['Neo-Euler','TeX'],
+    'preferredFont': ['Neo-Euler'],
+    'scale': 60,
+}
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -58,3 +67,4 @@ html_theme = "sphinx_rtd_theme"
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+

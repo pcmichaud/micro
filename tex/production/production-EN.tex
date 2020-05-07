@@ -1,0 +1,353 @@
+\documentclass[handout]{beamer}
+\usepackage[frenchb]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+
+% functions to plot
+\def\func(#1){(#1)*(1-(#1))}
+\hypersetup{colorlinks = true,linkcolor = blue,urlcolor  = blue}
+            
+\newcommand{\qGraph}[1]{\begin{center} \includegraphics[width =
+\textwidth]{#1}\end{center}}
+
+\newcommand{\mcl}{\mathcal}
+
+
+\newenvironment{iPar}[1]{\textbf{#1} \begin{itemize}}{\end{itemize}}
+
+\newcommand{\inc}{{inc}}
+\newcommand{\cp}{{cmp}}
+\newcommand{\bull}{$\bullet\;$} 
+
+\newcommand{\esp}{\mathbf{E}} \newcommand{\ul}[1]{\underline{#1}}
+\newcommand{\ol}[1]{\overline{#1}} \newcommand{\ora}[1]{\textbf{#1}}
+\newcommand{\wh}{\widehat}
+\newcommand{\mdp}{\medskip \pause}
+\newcommand{\mc}{\mathcal}
+
+\title{Firms and Production Economies}
+\author{Microeconomics \\ 20851}
+\date{}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\section[Outline]{}
+\frame{\tableofcontents}
+
+\section{}
+
+
+\begin{frame}\frametitle{Roadmap}
+
+\begin{iPar}{Up until now}
+\item Consumer choice
+\item Price and income effects
+\item Measuring welfare and well-being 
+\item Risk and intertemporal choices
+\item Exchange economies
+\end{iPar}\mdp
+
+\begin{iPar}{This class:}
+\item Production economy
+\end{iPar}\mdp
+
+\begin{iPar}{Coming up}
+\item  Strategic behaviour of firms
+\item Auctions
+\end{iPar}
+
+
+\end{frame}
+
+\begin{frame}{Overview} \textbf{Objective} \begin{itemize} \item Introducing firms and production in an exchange economy  \end{itemize} \mdp
+\textbf{Main takeaway} \begin{itemize} \item A production economy is very similar to an exchange economy \item Firms are agents, just like consumers \end{itemize} \mdp
+\textbf{Methodology}\begin{itemize} \item Calculating the firms' demand \item Calculating the firms' supply \item Calculating the consumers' demand \item The price is determined at equilibrium $$total \;\; demand  = total \;\; supply $$\end{itemize}
+
+
+\end{frame}
+
+
+\section{The Firm's Decisions}
+
+\begin{frame}{A Firm's Decisons}
+
+\begin{iPar}{Inputs and outputs} \item A firm is caracterized by the production function $F$ \item Given the inputs, $F$ determines the output
+\end{iPar}\mdp \begin{iPar}{Example: an input and an output} \item  e.g.
+An iron mine ---  input: labor $L$, output: iron $Y = F(L) = \sqrt{L}$ \item The firm's constraint: given an input, it can only produce a certain level of output \end{iPar}
+
+\end{frame}
+
+
+\begin{frame}{Example (cont.)} \begin{iPar}{Two inputs, one output}
+\item Inputs: Iron Ore ($I$), Coal ($C$) --- Output: Steel ($S$) \medskip \item $S(I,C)  = I^{\alpha}C^{\beta}\quad \quad$ (with $\alpha + \beta <1$) 
+\end{iPar}
+\end{frame}
+
+\begin{frame}{Production Functions: MRTS} 
+
+Consider the production function $Y = F(X,Z)$. Take the total differential: 
+
+$$ dY = F'_X(X,Z)dX + F'_Z(X,Z)dZ $$
+
+Set $dY = 0$, We obtain the Marginal Rate of Technical Substitution: 
+
+$$ MRTS = \frac{dZ}{dX} = -\frac{F'_X(X,Z)}{F'_Z(X,Z)} $$
+
+The slopes are isoquant in the space $(X,Z)$. 
+
+\textbf{Exercise A}: Find the MRTS for  $Y=X^{\alpha} Z^{\beta}$
+\end{frame}
+
+\begin{frame}{Production Functions: Returns to Scale} 
+
+A production function has returns to scale that are :
+
+\begin{itemize}
+\item constant: if $F(X,Z)$ is homogenous of degree 1
+\item increasing: si $F(X,Z)$ is homogenous of a degree larger than 1
+\item decreasing: si $F(X,Z)$ is homogenous of a degree smaller than 1
+\end{itemize}
+
+\textbf{Exercise B}: Consider the function $Y=F(X,Z)=A X^\alpha Z^\beta$. What are the returns to scale of that function?
+
+\end{frame}
+
+\begin{frame}{Cost Minimization} 
+
+Given a level of production $Y$, what is the best choice of inputs?
+
+$$ \min_{X,Z} \{ p_X X + p_Z Z : F(X,Z) \ge Y \}$$
+
+Set the lagrangian: 
+
+$$ L(X,Z,\mu) = p_X X + p_Z Z + \mu(Y - F(X,Z))$$
+
+The FOC are:
+
+$$ p_X - \mu F'_X(X,Z) = 0 $$
+$$ p_Z - \mu F'_Z(X,Z) = 0 $$
+$$ F(X,Z) = Y $$
+
+\end{frame}
+
+\begin{frame}{Cost Minimization} 
+
+We can simplify this:
+
+$$ \frac{p_X}{p_Z} = \frac{F'_X(X,Z)}{F'_Z(X,Z)} $$
+$$ F(X,Z) = Y $$
+
+The first condition: $MRTS = $ Relative Price
+
+\textbf{Exercise C}: Find the conditional demands for $Y=X^{1/2} Z^{1/4}$. 
+\end{frame}
+
+\begin{frame}{Conditional Demands} 
+
+The solution gives the conditional demand functions for inputs: $$X^*(p_X,p_Z,Y),Z^*(p_X,p_Z,Y)$$. 
+
+What are the properties of these functions?
+\begin{itemize}
+\item Homogenous of degree zero in $(p_X,p_Z)$
+\item Symmetry: $\frac{\partial X^*(p_X,p_Z,Y)}{\partial p_Z} = \frac{\partial Z^*(p_X,p_Z,Y)}{\partial p_X}$
+\item Negativity: $\frac{\partial X^*(p_X,p_Z,Y)}{\partial p_X}<0$. 
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Cost Functions} 
+
+By substituting the conditional demands, we obtain the cost function: 
+
+$$ C(p_X,p_Z,Y) = p_X X^*(p_X,p_Z,Y) + p_Z Z^*(p_X,p_Z,Y) $$
+
+Properties:
+\begin{itemize}
+\item Non-decreasing in $(Y,p_X,p_Z)$
+\item Homogenous of degree 1 in $(p_X,p_Z)$
+\item Concave in $(p_X,p_Z)$
+\end{itemize}
+
+
+\textbf{Exercise D}: Find the cost function for $Y=X^{1/2} Z^{1/4}$.
+
+
+\end{frame}
+
+
+\begin{frame}{Relation Between Costs and Demands} 
+
+An interesting result is Sheppard's Lemma: 
+
+$$ \frac{\partial C(p_X,p_Z,Y)}{\partial p_X} = X^*(p_X,p_Z,Y) $$
+
+\textbf{Exercise E}: Show that this works for finding $X^*$ for the production function  $Y=X^{1/2} Z^{1/4}$.
+
+\end{frame}
+
+\begin{frame}{Relation Between Costs and Demands} 
+
+By using the envelope theorem, we can also see that 
+
+$$ \frac{\partial C(p_X,p_Y,Y)}{\partial Y} = \mu $$
+
+$\mu$ is therefore the marginal cost at the optimum. 
+
+\textbf{Exercise F}: Find marginal cost for $Y=X^{1/2} Z^{1/4}$.
+
+\vspace{0.5in}
+
+If the production function has returns to scale that are:
+
+\begin{itemize}
+\item Constant: $C(p_X,p_Z,Y)$ is linear in $Y$
+\item Increasing: $C(p_X,p_Z,Y)$ is concave in $Y$
+\item Decreasing: $C(p_X,p_Z,Y)$ is convex in $Y$
+\end{itemize}
+
+
+\end{frame}
+
+
+\begin{frame}{The Firm as an Agent} \begin{iPar}{Profit maximization} \item Objective function:  Profits = Value of outputs -
+costs of inputs $$ \Pi = V - C$$ \item Decision: The firm must choose its inputs to maximize profits \end{iPar} \mdp \begin{iPar}{Example} \item e.g. Given an input $X$ and an output $Y = F(X)$ $$C(X) = p_X X\;;\quad V(Y) = p_Y
+Y\;;\quad \Pi(X) = p_Y F(X) - p_XX $$ 
+\end{iPar}
+\textbf{Exercise G} Suppose $F(X) = \sqrt X$, find the demand for $X$
+
+\end{frame}
+
+\begin{frame}{Supply and Demand of a Price-Taking Firm (I)}
+\begin{iPar}{One input, one output} \item  Input $X$, output $Y =
+F(X)$  \item Profit $\Pi(X) = p_Y F(X) -
+p_XX$.  \item  Suppose that the firm wishes to produce  \item At the optimum the FOC is respected $$ p_Y F'(X) - p_X = 0 \iff F'(X) =
+\frac{p_X}{p_Y}$$ \item The equation that allows us to find the demand $X^*$ gives the supply $Y^* = F(X^*)$ \end{iPar}
+
+\textbf{Exercise H} Suppose $F(X) = \sqrt X$, find the supply function of $Y$. 
+
+\end{frame}
+
+
+\begin{frame}{Cost-minimization and Profit maximization} 
+
+Multiple inputs, Two-step approach: 
+
+\begin{itemize}
+    \item Minimize cost for choice of $(X,Z)$. 
+    \item Maximize profits over $Y$ using cost function (function of $Y$). 
+\end{itemize}
+
+\textbf{Exercise I} For $Y=X^{1/2} Z^{1/4}$, find the supply function of $Y$. 
+
+\end{frame}
+
+
+
+\section{Production Economy}
+
+\begin{frame}{A Production Economy with a Firm and Two Goods (I)}
+
+\begin{iPar}{Context} \item 2 goods $X$ and $Y$  \item Firm has a production function $Y = F(X)$.\end{iPar}\mdp
+
+\begin{iPar}{Firm's behaviour}\item Given the prices $p_Y$ and $p_X$ the firm maximizes profits $$\Pi(X) = p_Y F(X) - p_X X$$   \item Gives the firm's demand $X^{F,d}(p_X,p_Y)$; \smallskip
+
+The firm's supply
+$Y^{F,s}(p_X,p_Y)$;\smallskip
+
+...and the profits $\Pi$ \end{iPar} 
+ 
+\end{frame}
+
+\begin{frame}{A Production Economy with a Firm and Two Goods (II)}
+
+\begin{iPar}{The consumer's behaviour} \item 2 consumers C1 et C2
+ \item The consumers have preferences represented by
+$U_1(X, Y)$ and $U_2(X,Y)$ \item Consumer 1 has an {endowment} $X^{C1,e},
+Y^{C1,e}$ \\ \medskip Consumer 2 has an {endowment} $X^{C2,e}, Y^{C2,e}$
+\item Both consumers have stocks $\rho_{1}$ and $\rho_2 = 1- \rho_1$ in the firm.
+\end{iPar}
+\end{frame}
+
+
+\begin{frame}{A Production Economy with a Firm and Two Goods (III)}
+\begin{iPar}{The consumer's behaviour} \item Consumer 1 must solve
+\begin{eqnarray*} &&\max_{X,Y} U_1(X,Y) \\ &\textrm{s.t.} &\textrm{Cost of consumption} = \textrm{Total wealth} \\ &&  p_{X} X +  p_{Y}Y = p_{X}
+X^{C1,e}+ p_{Y}Y^{C1,e} + \rho_{1}\Pi\end{eqnarray*} \item Gives consumer $1$'s demand:  $X^{C1,d}(p_X,p_Y)$ and
+$Y^{C1,d}(p_X,p_Y)$ (same idea for 2) \end{iPar} \end{frame}
+
+
+
+\begin{frame}{A Production Economy with a Firm and Two Goods (IV)}
+
+\begin{iPar}{Market equilibrium} \item Numéraire: normalize
+$p_{X} = 1$ and $p_{Y} = p$. \item Given $p$, we can find the demand $X$
+and $Y$ for each consumer, the demand of $X$ for the firm and the supply of $Y$
+by the firm.
+
+\item The market for the good $X$ is at equilibrium at price $p$
+if and only if \begin{eqnarray*}  \textrm{Total demand of } X &=&
+\textrm{Total supply of } X  \\ \iff X^{C1,d} + X^{C2,d} + X^{F,d} &=&
+X^{C1,e} + X^{C2,e}  \end{eqnarray*} \item The equilibrium prices are prices such that all markets are at equilibrium. \end{iPar}
+\end{frame}
+
+\begin{frame}{A Production Economy with a Firm and Two Goods (V)}
+\begin{iPar}{Example} \item  $F(X) =  \log(1+X)$ \item $U_1(X,Y) =
+U_2(X,Y) = \log X + \alpha \log Y$ \item $X^{C1,e} = 2$ and $X^{C2,e} =
+Y^{C1,e} = Y^{C2,e} = 0$ \item $\rho_1 =0 $ and $\rho_2 = 1$ \item price
+$p_X = 1$, $p_Y = p$ \end{iPar} \mdp \begin{iPar}{Firm's behaviour} \item
+Profit maximization: $$\max_X p\log(1+X) - X\;\; \Rightarrow \;\; X^{F,d}
+= p- 1 \;\; et \;\; Y^{F,s} = \log p$$ \item Profit $\Pi = p \log p - p
++1 $\end{iPar}
+
+\end{frame}
+
+\begin{frame}{A Production Economy with a Firm and Two Goods (VI)}
+\begin{iPar}{Consumer's behaviour} \item<1-> Given the income $I$ $$\max_{X,Y}
+\log X + \alpha \log Y \quad s.t.\;\; X + pY = I$$ \item<2-> Income of consumer 1: $I_1 = 2$ \\ \medskip Income of consumer 2: $I_2 = \Pi =  p \log
+p - p +1$ \item<3-> Demand of consumer 1: $$X^{C1,d} = \frac{1}{1+\alpha}
+I_1 \;\; and \;\; Y^{C1,d} = \frac{\alpha}{1+\alpha} \frac{I_1}{p}$$ \\
+\medskip Demand of consumer 2: $$X^{C2,d} = \frac{1}{1+\alpha} I_2 \;\; and
+\;\; Y^{C2,d} = \frac{\alpha}{1+\alpha} \frac{I_2}{p}$$ \end{iPar}
+
+\end{frame}
+
+\begin{frame}{A Production Economy with a Firm and Two Goods (VII)}
+\begin{iPar}{Market Equilibrium} \item A market equilibrium for $X$:
+$$X^{F,d} + X^{C1,d} + X^{C2,d} = X^{C1,e} + X^{C2,e} = 2$$ \item gives
+\begin{eqnarray*} & & p-1 + \frac{1}{1+\alpha}2 + \frac{1}{1+\alpha}(p\log p - p +1 ) = 2 \\
+&\iff& \alpha p +p\log p = 3 \alpha\end{eqnarray*} \item Equation describes the price
+$p^*$. \item Show that at $p^*$, the market for $Y$ is also at equilibrium.
+\end{iPar}
+
+\end{frame}
+
+\begin{frame}{A Production Economy with a Firm and Multiple Goods}
+\begin{iPar}{Methodology} \item[Step 1:] Given the prices, profit maximization gives firm demands and firm supply  (profits)  \pause  \item[Step 2:] Given the prices, endowments and stock (of the firms) distributions calculate the income and demand of consumers  \pause \item[Step 3:] For each good, maket equilibrium $$\textrm{total supply} =
+\textrm{total demand}$$ \pause \item[Step 4:] Given a system of equations: the solution gives us the equilibrium prices \end{iPar} 
+
+See the Production Equilibrium Notebook for an example. 
+
+\end{frame}
+
+
+\begin{frame}{The Two Fundamental Theorems of Welfare Economics}
+\textbf{Environment} \begin{enumerate} \item All agents are price-takers (firms and consumers; no monopoly) \item Goods are homogeneous (uniform quality) \item Consumers' preferences depend only on their own consumption\\  Firm decisions have no impact on other firms or consumers (no externalities) 
+\end{enumerate}
+
+\begin{iPar}{1st Theorem of Welfare Economics} \item In a market equilibrium, the allocation of goods between consumers is Pareto-efficient. 
+\end{iPar}\mdp
+
+\begin{iPar}{2nd Theorem of Welfare Economics} \item Any Pareto-optimal allocation can be obtained as a market equilibrium with the use of endowment transfers.  
+\end{iPar}\mdp
+\end{frame}
+
+
+\end{document}
+
+
+
+

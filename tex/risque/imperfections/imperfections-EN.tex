@@ -1,0 +1,250 @@
+\documentclass[handout]{beamer}
+\usepackage[frenchb]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+% functions to plot
+\def\func(#1){(#1)*(1-(#1))}
+\hypersetup{colorlinks = true,linkcolor = blue,urlcolor  = blue}
+            
+\newcommand{\qGraph}[1]{\begin{center} \includegraphics[width =
+\textwidth]{#1}\end{center}}
+
+\newcommand{\mcl}{\mathcal}
+
+
+\newenvironment{iPar}[1]{\textbf{#1} \begin{itemize}}{\end{itemize}}
+
+\newcommand{\inc}{{inc}}
+\newcommand{\cp}{{cmp}}
+\newcommand{\bull}{$\bullet\;$} 
+
+\newcommand{\esp}{\mathbf{E}} \newcommand{\ul}[1]{\underline{#1}}
+\newcommand{\ol}[1]{\overline{#1}} \newcommand{\ora}[1]{\textbf{#1}}
+\newcommand{\wh}{\widehat}
+\newcommand{\mdp}{\medskip \pause}
+\newcommand{\mc}{\mathcal}
+
+\title{Market Imperfections}
+\author{Microéconomie \\ 20851}
+\date{}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}\frametitle{Itinéraire}
+
+\begin{iPar}{Until now}
+\item Consumer Choice
+\item Risk and Time
+\item Welfare
+\item Exchange
+\item Production
+\item Strategy
+\end{iPar}\mdp
+
+\begin{iPar}{This class: market imperfections}
+\item Externalities
+\item Asymetric Information
+\item Hidden actions
+
+\end{iPar}\mdp
+
+
+\end{frame}
+
+\section[Outline]{}
+\frame{\tableofcontents}
+
+\section{Monopole}
+
+\begin{frame}{Monopole: Manipulation du prix}
+
+\begin{iPar}{Premier théorème du bien-être} \item Équilibre de marché est efficient au sens de Pareto \item Entreprise prend prix comme fixe: ne prend pas en compte impact de sa production sur les prix (\textit{price taker}).
+\item Approximation acceptable? \end{iPar} \mdp
+
+\begin{iPar}{Compétition parfaite} \item Un nombre très grand de producteurs \item
+Tous petit \item La production de chaque producteur a un effet faible sur production totale $\Rightarrow$ prix fixe est réaliste \item e.g.: marché pour le porc, céréales, café... Mais pétrôle, diamants? \end{iPar}
+
+\end{frame}
+
+
+\begin{frame}{Comportement de la firme}
+\begin{iPar}{Setup}
+\item  Bien $X$ et numéraire (``monétaire") $M$.\smallskip
+
+ Utilité quasi-linéaire $U(X,M) = V(X) + M$,
+ 
+  $V(X)$ concave, $V'(0) = + \infty$
+\item  Dotation initiale $I_0$ de $M$, $X$ produit par une seule firme, prix $p$. 
+\item   La firme produit $X$ avec fonction de coût $C(X)$. Supposons $C'(0) = 0$
+\end{iPar} \mdp 
+\textbf{Exercice A} Trouvez le prix d'équilibre si la firme est \textit{price taker} pour $V(X) = \sqrt{X}$, $C(X) = X^2$
+\end{frame}
+
+
+\begin{frame}\frametitle{Manipulation du Prix Stratégique}
+
+\begin{itemize} \item L'entreprise anticipe correctement qu'un changement d'offre affecte changement de prix
+\item Entreprise choisit $X$ tel qu'elle maximise $$\Pi = p(X)X - C(X)$$
+\item CPO donne $$\frac{d\Pi}{dX} = 0 \iff p'(X)X + p(X) = C'(X)$$
+\item produit $X_{PM}$ tel que  $   p(X_{PM}) = C'(X_{PM}) - p'(X_{PM}) X_{PM} $ \mdp
+\item prix  = cout marginal + impact sur valeur des produits existants\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}\frametitle{Manipulation du Prix Stratégique (II)}
+
+\textbf{Exercices} \begin{itemize} \item (B) résoudre pour le comportement de la firme quand $C(X) = \frac{\gamma}{2} X^2$ et  $V(X) = \sqrt X$
+\item (C) résoudre quand  $C(X) = \frac{\gamma}{2} X^2$ et $V(X) = D_0 X - \frac{\alpha}{2} X^2$ ( on peut supposer $X < \frac{D_0}{\alpha}$) 
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Type de firme}
+
+
+
+\begin{iPar}{Qui fixe le prix} \item À la
+production optimale $X_{PM}$ $$p(X_{PM}) = C'(X_{PM}) - p'(X_{PM})X_{PM}$$ \item Notez que $p'(X) < 0$ (pourquoi?).
+Alors $ p(X_{PM}) > C'(X_{PM})$ \item Fixe production tel que le prix est plus élevé que coût marginal. \end{iPar}\mdp
+
+\begin{iPar}{Offre si pouvoir de marché} \item Si firme n'a pas d'effet sur le prix alors produit $X_{PT}$ s.c. $$p(X_{PT}) = C'(X_{PT})$$ \item Quand firme prend en compte impact sur prix, produit $X_{PM}$ tel que  $$p(X_{PM}) =
+C'(X_{PM}) - p'(X_{PM})X_{PM} > C'(X_{PM})$$ \item Ceci implique que $X_{PM} < X_{PT}$
+\end{iPar}
+
+\end{frame}
+
+
+
+\section{Oligopole}
+
+
+\begin{frame}\frametitle{Oligopole} \begin{itemize} \item
+Deux firmes identiques A et B \item Produisent les quantités $X_A$ and $X_B$ \item Consommateur représentatif avec $U(X,M) =V(X) + M$ et $$ V(X) = D_0 X - \frac{\alpha}{2} X^2$$   \item Coût $C_A(X) = C_B(X)= c \times X$\end{itemize} \mdp
+
+\begin{iPar}{Formation des prix}
+\item  $P(X) = V'(X) = D_0 - \alpha X$
+\end{iPar}
+\end{frame}
+
+
+\begin{frame}{Contrefactuels}
+
+\begin{iPar}{Production Efficiente (sens de Pareto)}
+\item On doit avoir $X$ tel que coût marginal = valeur marginale
+\begin{eqnarray*} &\iff& c = D_0 - \alpha X \\ &\iff& X_{Pareto} = \frac{D_0 - c}{\alpha} \end{eqnarray*}
+\end{iPar} \mdp
+
+
+\begin{iPar}{Monopole}
+\item Maximise $$\Pi(X) =  P(X) X - c X = (D_0- \alpha X) X - c X$$
+\item Produit $$X_{Mon} = \frac{D_0 - c}{2\alpha} = \frac{1}{2} X_{Pareto}$$
+
+\end{iPar}
+
+\end{frame}
+
+
+\begin{frame}{Compétition à la Cournot -- Deux entreprises}
+\begin{iPar}{Courbes de réponse}
+\item retournez au cas des deux firmes identiques
+\item Si firme $B$ produit $X_B$, quelle est la production optimale $X_A$ pour l'entreprise $A$? \pause
+\item Profit $$\Pi_A = P \times X_A - C(X_A) = [D_0 - \alpha(X_B + X_A)]X_A - C(X_A)$$
+\item CPO est $$ D_0 -   \alpha(X_B + X_A) - \alpha X_A - c  = 0$$
+\item Donc réponse optimale  à $X_B$ est  $$X_A = \frac{D_0 -  c - \alpha X_B}{ 2 \alpha} = \frac{D_0 - c}{2\alpha} - \frac{1}{2}X_B$$
+\end{iPar}
+\end{frame}
+
+
+\begin{frame}{Compétition à la Cournot -- Deux entreprises}
+\begin{itemize}
+\item Si entreprise $A$ produit $X_A$, meilleure réponse de $B$ est de choisir
+$$X_B =   \frac{D_0 -  c - \alpha X_A}{ 2 \alpha} = \frac{D_0 - c}{2\alpha} - \frac{1}{2}X_A $$
+\end{itemize}\mdp
+
+\begin{iPar}{Concept de solution}
+\item \textbf{Équilibre de Nash:} Aucune entreprise ne peut bénéficier d'un changement unilateral de sa part
+
+\item Si $X^*_A$ et $X^*_B$ sont des quantités d'équilibre, on doit avoir que $A$ répond de manière optimale à $X^*_B$ et l'entreprise $B$ répond de manière optimale à $X^*_A$
+\end{iPar}
+\end{frame}
+
+
+\begin{frame}{Équilibre}
+On a les meilleures réponses
+\begin{itemize}
+\item  $$X^*_A =  \frac{D_0 - c - \alpha X_B^*}{ 2 \alpha} \quad et \quad  X^*_B = \frac{D_0 - c -  \alpha X_A^*}{2 \alpha} $$
+
+\item Puisque symmétrie $X^*_A = X^*_B = X^*$ donne $$X^*A = X^*_B = X^* = \frac{D_0 - c}{3\alpha}$$
+\item Production totale  $$2 X^* = \frac{2}{3} \frac{D_0 - c}{\alpha}$$
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Compétition à la Cournot -- Augmentation Compétition}
+\begin{iPar}{Avec davantage d'entreprises}
+\item N entreprises identiques $F_1,F_2,\cdots,F_N$
+\item Étant donné $X_2, X_3, \cdots, X_N$, entreprise $F_1$ produit $X_1$ pour maximiser $$\Pi_1 = [D_0 - \alpha(X_1 + X_2 + \cdots + X_N)]X_1 - c\times X_1$$
+\item Donne $$X_1 = \frac{D_0 - c - \alpha[X_2 + X_3 + \cdots + X_N]}{ 2 \alpha}$$
+\end{iPar}\end{frame}
+
+\begin{frame}{Cournot competition (VI)}
+
+\begin{iPar}{Équilibre avec plusieurs entreprises}
+\item $X_1$ optimal étant donné $X_2, X_3, \cdots, X_N$
+\item $X_2$ optimal étant donné $X_1,X_3,X_4, \cdots, X_N$
+\item $\cdots$
+\item $X_N$ optimal étant donné $X_1,X_2, \cdots, X_{N-1}$
+\item $N$ équations, en utilisant la symmétrie, donne $$X_1^* = X_2^* = \cdots = X_N^* = \frac{D_0 - c}{(N+1) \alpha}$$ \item Production totale $$\frac{N}{N+1} \frac{D_0 -c}{\alpha}$$
+\end{iPar}
+\end{frame}
+
+\begin{frame}{Compétition (I)}
+
+
+\begin{iPar}{Entreprise sans pouvoir de marché}
+\item Une firme sans pouvoir de marché peut choisir la quantité $X_0$  tel que $$\textrm{prix} = \textrm{coût marginal} \iff p(X) = c$$
+\end{iPar}\mdp
+
+\begin{iPar}{Compétition}
+\item Si une firme, production totale $$X^{Tot}_1 = \frac{1}{2}\frac{D_0-c}{\alpha} \quad  et \quad \textrm{price } p_1 = \frac{1}{2} D_0  + \frac{1}{2} c$$
+\item Si 2 firmes, production totale $$X^{Tot}_2 = \frac{2}{3}\frac{D_0-c}{\alpha} \quad  et \quad \textrm{price } p_2  = \frac{1}{3}D_0 +\frac{2}{3}c$$
+\item Si $N$ firmes , production totale $$X^{Tot}_N = \frac{N}{N+1}\frac{D_0-c}{\alpha} \quad  et \quad \textrm{prix } p_N = \frac{1}{N}D_0 +\frac{N}{N+1}c$$
+
+\end{iPar}
+\end{frame}
+
+
+\begin{frame}{Compétition et Pouvoir de marché (II)}
+\begin{iPar}{Avec plusieurs firmes, Compétition à la Cournot s'approche de la compétition parfaite}
+\item Quand $N$ devient grand, $p(X_N) \to c$
+\item En d'autres termes, $$\textrm{prix} \simeq \textrm{coût marginal}$$
+\end{iPar}
+\end{frame}
+
+
+\section{Autres comportements stratégiques}
+
+\begin{frame}{Leadership de Stackelberg}
+
+\end{frame}
+
+
+\begin{frame}{Compétition à la Bertrand}
+
+\end{frame}
+
+\begin{frame}{Discrimination par les prix}
+
+\end{frame}
+
+
+\end{document}
+
+
+
+

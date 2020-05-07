@@ -1,0 +1,86 @@
+Objectifs du cours
+------------------
+
+Ce cours comporte deux objectifs principaux. Le premier est de présenter aux étudiants les principes mathématiques de modélisation en microéconomie afin de pouvoir les appliquer aux données dans un grand nombre d'applications. L'étude de ces modèles microéconomiques se fera à travers l'acquisition des outils d'analyse que sont l'optimisation contrainte et la statique comparative ainsi que la programmation. Le deuxième objectif est de confronter les étudiants aux imperfections de marché, leur permettant ainsi d'évaluer l'intervention gouvernementale en politique publique.  
+
+Les thèmes couverts
++++++++++++++++++++
+
+-  Les choix consommation: statique, incertitude et temps
+
+-  Modélisation d'équilibre de marché et bien-être
+
+-  Choix de production des entreprises
+
+-  Les comportements stratégiques des entreprises
+
+-  Les imperfections de marchés: externalités, asymétrie d'information
+
+Forme de l'enseignement
++++++++++++++++++++++++
+
+Chaque cours, vous êtes responsable de venir préparer en ayant étudié le matériel de chaque section sur la page web du cours. Après une révision du matériel en groupe (sous forme de discussion), le cours sera consacré à des exercices que nous ferons en classe et que vous devrez préparer à l'avance (voir les exercices contenue dans chaque séance). 
+
+Évaluation
+++++++++++
+
+-  Participation (10%)
+-  Un Quiz (5%)
+-  2 devoirs en équipe (20%)
+-  Intra et final (Meilleure note 40%,l'autre 25%)
+
+Enseignement
+++++++++++++
+
+- Professeur: `Pierre-Carl Michaud <mailto:pierre-carl.michaud\@hec.ca>`_ 
+- Auxiliaire enseignement: `Aïssatou Ba <mailto:aissatou.2.ba@hec.ca>`_ 
+
+Heures de consultation: À déterminer. 
+
+Modes d'interaction
++++++++++++++++++++
+
+.. |slack| image:: /images/slack.png
+   :scale: 10%
+
+|slack| **Slack**
+
+
+
+Un channel sur Slack  a été mis en place pour les communications durant le cours. Vous pouvez le joindre en cliquant sur le lien suivant. Utilisez les différents channel pour la matériel vue pour chaque cours. 
+
+|zoom| **Zoom**
+
+.. |zoom| image:: /images/zoom.png
+   :scale: 10%
+
+
+
+Si nous sommes dans l'impossibilité de nous rencontrer en personne pour le cours, j'initierai sur le channel slack un appel Zoom auquel vous pourrez vous joindre. 
+
+Références bibliographiques
++++++++++++++++++++++++++++
+
+En principe, vous n'avez pas besoin de références supplémentaires. Mais si nécessaire, ces deux ouvrages peuvent être utiles pour compléter ce qui est vue en classe.
+
+   -  Hal Varian (2015). `Introduction à la microéconomie <https://www.renaud-bray.com/Livres_Produit.aspx?id=1701460&def=Introduction+%c3%a0+la+micro%c3%a9conomie+8e+%c3%a9d.%2cVARIAN%2c+HAL+R%2c9782804190224>`_, Deboeck
+
+   -  Hal Varian (2008). `Analyse microéconomique <https://www.amazon.ca/-/fr/Varian-Hal-R/dp/2804158233>`_, Deboeck
+
+Théorie et pratique 
++++++++++++++++++++
+
+Python est rapidement devenu un des languages de choix pour débuter en programmation, comme en fait foi ce graphique (cliquez pour voir l'article de The Economist). 
+
+.. |Python| image:: /images/python_economist.png
+   :scale: 35%
+.. _Python: https://www.economist.com/graphic-detail/2018/07/26/python-is-becoming-the-worlds-most-popular-coding-language
+
+|Python|_
+
+Google met à la disposition de tous une plateforme pour travailler en Python à l'aide des Notebooks. Cette plateforme s'appelle Google Collab et ne requière qu'un compte google et google drive. 
+
+Accedez à ce notebook d'introduction vous permettra de vous familiariser avec Python et Google Collab. Cliquez sur l'icone s'il est présent dans une section du cours. |ImageLink|_
+
+.. |ImageLink| image:: https://colab.research.google.com/assets/colab-badge.svg
+.. _ImageLink: https://colab.research.google.com/github/pcmichaud/micro/blob/master/notebooks/DebutPython.ipynb
