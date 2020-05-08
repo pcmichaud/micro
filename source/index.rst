@@ -15,6 +15,7 @@ Bienvenue sur le site du cours 20-851 à HEC Montréal.
    plan.rst
    intro.rst
    cons.rst
+   effets.rst
 
 
 Index

@@ -77,7 +77,10 @@ Deux biens :math:`X,Y`:
 
 Les courbes d’indifférence ne se croisent pas si elle respectve la transitivité.
 
-*Exercice A*: Montrer que des courbes d’indifférence qui se croisent
+.. image:: /images/indif.png
+   :scale: 25%
+
+*Exercice A*: Montrez que des courbes d’indifférence qui se croisent
 ne respectent pas la transitivité.
 
 Taux marginal de substitution (TMS)
@@ -104,6 +107,8 @@ Convexité des courbes d’indifférences
 
 Il diminue généralement. Ceci est représenté par des courbes d’indifférences convexes.
 
+
+
 Utilité
 +++++++
 
@@ -129,7 +134,7 @@ Les préférences sont ordinales (hiérarchiques)
 -  :math:`U(X,Y) = \ln X + \ln Y` et :math:`V(X,Y) = XY` représente les
    mêmes préférences
 
-*Exercice B*: Montrer que :math:`U` et :math:`V` ont les mêmes
+*Exercice B*: Montrez que :math:`U` et :math:`V` ont les mêmes
 préférences en trouvant la transformation :math:`f(U)`.
 
 Comment trouvez le TMS à partir de l'utilité?
@@ -215,7 +220,7 @@ Normalisation
 -  Normalisons :math:`p_Y = 1`. Alors :math:`Y = I - p_X X`. :math:`p_X`
    est maintenant en terme de quantité de :math:`Y` (numéraire).
 
-*Exercice C*: Montrer qu’une contrainte budgétaire ne change pas si on
+*Exercice C*: Montrez qu’une contrainte budgétaire ne change pas si on
 multiplie prix et revenu par :math:`\lambda>0`.
 
 Choix du consommateur

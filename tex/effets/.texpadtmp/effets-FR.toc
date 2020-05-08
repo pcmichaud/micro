@@ -1,0 +1,4 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {2}{Les variations de prix et de richesse}{4}{0}{1}
+\beamer@sectionintoc {3}{Propri\IeC {\'e}t\IeC {\'e}s des fonctions de demande}{17}{0}{2}
+\beamer@sectionintoc {4}{Cas particuliers}{19}{0}{3}

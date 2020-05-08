@@ -38,6 +38,7 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="Demand Preferences" href="effets.html" />
     <link rel="prev" title="Introduction" href="intro.html" /> 
 </head>
 
@@ -105,6 +106,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#exemple-consommateur">Exemple Consommateur</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="effets.html">Demand Preferences</a></li>
 </ul>
 
             
@@ -229,7 +231,8 @@ que consommateur indifférent entre <span class="math notranslate nohighlight">\
 (non-satiation)</p></li>
 </ul>
 <p>Les courbes d’indifférence ne se croisent pas si elle respectve la transitivité.</p>
-<p><em>Exercice A</em>: Montrer que des courbes d’indifférence qui se croisent
+<a class="reference internal image-reference" href="_images/indif.png"><img alt="_images/indif.png" src="_images/indif.png" style="width: 450.0px; height: 300.0px;" /></a>
+<p><em>Exercice A</em>: Montrez que des courbes d’indifférence qui se croisent
 ne respectent pas la transitivité.</p>
 <div class="section" id="taux-marginal-de-substitution-tms">
 <h3>Taux marginal de substitution (TMS)<a class="headerlink" href="#taux-marginal-de-substitution-tms" title="Lien permanent vers ce titre">¶</a></h3>
@@ -275,7 +278,7 @@ paniers est important.</p></li>
 <li><p><span class="math notranslate nohighlight">\(U(X,Y) = \ln X + \ln Y\)</span> et <span class="math notranslate nohighlight">\(V(X,Y) = XY\)</span> représente les
 mêmes préférences</p></li>
 </ul>
-<p><em>Exercice B</em>: Montrer que <span class="math notranslate nohighlight">\(U\)</span> et <span class="math notranslate nohighlight">\(V\)</span> ont les mêmes
+<p><em>Exercice B</em>: Montrez que <span class="math notranslate nohighlight">\(U\)</span> et <span class="math notranslate nohighlight">\(V\)</span> ont les mêmes
 préférences en trouvant la transformation <span class="math notranslate nohighlight">\(f(U)\)</span>.</p>
 <p>Comment trouvez le TMS à partir de l’utilité?</p>
 <ul class="simple">
@@ -315,7 +318,7 @@ dU = \frac{\partial U}{\partial X}dX + \frac{\partial U}{\partial Y}dY\end{align
 <p>Posons <span class="math notranslate nohighlight">\(dU = 0\)</span>, alors</p>
 <div class="math notranslate nohighlight">
 \[\frac{dY}{dX}\bigg\rvert_{dU=0} = -\frac{\partial U}{\partial X}/ \frac{\partial U}{\partial Y}\]</div>
-<p>On peut utiliser SimPy pour trouver le TMS:</p>
+<p>On peut utiliser SymPy pour trouver le TMS:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">simpy</span> <span class="k">as</span> <span class="nn">sp</span>
 <span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">a</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;x y a&#39;</span><span class="p">)</span>
 <span class="n">u</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="n">a</span> <span class="o">*</span> <span class="n">y</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">a</span><span class="p">)</span>
@@ -355,7 +358,7 @@ constante <span class="math notranslate nohighlight">\(\lambda\)</span>.</p></li
 <li><p>Normalisons <span class="math notranslate nohighlight">\(p_Y = 1\)</span>. Alors <span class="math notranslate nohighlight">\(Y = I - p_X X\)</span>. <span class="math notranslate nohighlight">\(p_X\)</span>
 est maintenant en terme de quantité de <span class="math notranslate nohighlight">\(Y\)</span> (numéraire).</p></li>
 </ul>
-<p><em>Exercice C</em>: Montrer qu’une contrainte budgétaire ne change pas si on
+<p><em>Exercice C</em>: Montrez qu’une contrainte budgétaire ne change pas si on
 multiplie prix et revenu par <span class="math notranslate nohighlight">\(\lambda&gt;0\)</span>.</p>
 </div>
 <div class="section" id="choix-du-consommateur">
@@ -395,7 +398,7 @@ donne le meilleur niveau de bien-être possible</p></li>
 \[\iff \frac{dU}{dX}\Bigg/\frac{dU}{dY} = \frac{p_X}{p_Y}\]</div>
 </div></blockquote>
 <p>-TMS sur la courbe d’indifférence = Pente de la contrainte budgétaire</p>
-<p>On peut faire ce travail par SimPy:</p>
+<p>On peut faire ce travail par SymPy:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sympy</span> <span class="k">as</span> <span class="nn">sp</span>
 <span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">a</span><span class="p">,</span> <span class="n">p_x</span><span class="p">,</span> <span class="n">p_y</span><span class="p">,</span> <span class="n">I</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;x y a p_x, p_y, I&#39;</span><span class="p">)</span>
 <span class="n">u</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="n">a</span> <span class="o">*</span> <span class="n">y</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">a</span><span class="p">)</span>
@@ -456,6 +459,8 @@ l’enveloppe.</p>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="effets.html" class="btn btn-neutral float-right" title="Demand Preferences" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="intro.html" class="btn btn-neutral float-left" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
