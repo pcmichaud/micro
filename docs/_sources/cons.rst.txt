@@ -21,8 +21,7 @@ Préférences
 -  Les relations de préférences sont dénotées par
    :math:`\succ,\succeq,\sim`.
 
-Hypothèses importantes sur les préférences
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+** Hypothèses importantes sur les préférences **
 
 Ces hypothèses ou axiomes sont nécessaires pour en arriver à une théorie du comportement. On note les plus importantes: 
 
