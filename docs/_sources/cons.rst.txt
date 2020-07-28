@@ -90,8 +90,7 @@ Les courbes d’indifférence ne se croisent pas si elle respectve la transitivi
 *Exercice A*: Montrez que des courbes d’indifférence qui se croisent
 ne respectent pas la transitivité.
 
-Taux marginal de substitution (TMS)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+** Taux marginal de substitution (TMS) **
 
 Ces courbes d'indifférences contienent plus d'information qu'on croit ...
 
@@ -105,14 +104,13 @@ Ces courbes d'indifférences contienent plus d'information qu'on croit ...
 -  Correspond à la pente de la courbe d’indifférence à
    :math:`(X_0,Y_0)`.
 
-Convexité des courbes d’indifférences
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+** Convexité des courbes d’indifférences **
 
 -  Si la quantité de nourriture (:math:`X`) augmente, comment le TMS de
    :math:`X` en fonction de :math:`Y` change?
 
 
-Il diminue généralement. Ceci est représenté par des courbes d’indifférences convexes. Même s'il y a non-satiation, on accepte généralement que le bien-être associé à une unité additionelle diminue avec le nombre d'unités consommées. 
+Il diminue généralement. Ceci est représenté par des courbes d’indifférences convexes. Même s'il y a non-satiation, on accepte généralement que l'intensité de la préférence associée à une unité additionelle est plus faible avec le nombre d'unités consommées. 
 
 Utilité
 +++++++
