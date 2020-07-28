@@ -45,7 +45,7 @@ Cet `article <https://www.quantamagazine.org/to-build-truly-intelligent-machines
 Rappel Mathématique
 +++++++++++++++++++
 
-Les mathématiques sont essentiels, en particulier le calcul différentiel, afin d'analyser le comportement, mesurer l'effet de changements dans l'environnement (prix, taxes). Voici un rappel des concepts qui sont important pour le cours.  
+Les mathématiques sont essentielles, en particulier le calcul différentiel, afin d'analyser le comportement, mesurer l'effet de changements dans l'environnement (prix, taxes). Voici un (rappel) des concepts qui sont important pour le cours.  
 
 L’analyse marginale et les approximations
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -55,19 +55,38 @@ Comment décrire une fonction, :math:`f(x)`?
 -  Fonctions généralement compliquées, fonctions linéaires simples...
 
 -  Localement, on peut faire une approximation de toute fonction *lisse*
-   à partir de :math:`x_0`, pour :math:`x` près de :math:`x_0`:
+   pour :math:`x` près de :math:`x_0`:
 
    .. math::
 
 
-      f(x) \simeq f(x_0) + \alpha (x-x_0) + ...  
+      f(x) \simeq f(x_0) + \alpha (x-x_0)  
 
-Le module Sympy de Python permet d'écrire des fonctions symboliques. Il sera très utile. Voici comment on écrit une fonction:  
+
+Pour trouver le meilleur :math:`\alpha`, on a que pour :math:`x` près de :math:`x_0`
+
+.. math::
+
+   
+   &f(x) \simeq f(x_0) + \alpha (x-x_0) \\ \\ \iff & f(x) -f(x_0) \simeq \alpha (x-x_0)\\\\
+    \iff & \alpha \simeq \frac{f(x) -f(x_0)}{x-x_0}  \simeq\; f'(x_0) 
+
+où :math:`f'(\cdot)` est la dérivée première de la fonction :math:`f(\cdot)`. Donc,
+
+.. math::
+
+   f(x) \simeq f(x_0) + f'(x_0) (x-x_0)  \\
+   f(x) - f(x_0) \simeq f'(x_0) (x-x_0)  \\ 
+   \Delta f \simeq f'(x_0) \Delta x 
+
+Si on veut prédire le changement dans la valeur d'une fonction, la dérivée est très utile!
+
+Le module Sympy de Python permet d'écrire des fonctions symboliques (si vous n'avez pas encore fait le `tutorial python <https://colab.research.google.com/github/pcmichaud/micro/blob/master/notebooks/DebutPython.ipynb>`_, allez le faire avant de passer à ceci). Il sera très utile. Voici comment on écrit une fonction:  
 
 .. code-block:: ipython
    
    import sympy as sp
-   x, x0, a, b = sp.symbols('x a b')
+   x, a, b = sp.symbols('x a b')
    f = a*x**b
 
 Python permet aussi d'écrire des fonctions pour évaluation rapide. On peut le faire directement en python de la façon suivante: 
@@ -82,29 +101,12 @@ On peut finalement passer de SymPy à python avec Lambdify:
 .. code-block:: ipython
    
    import sympy as sp
-   x, x0, a, b = sp.symbols('x a b')
+   x, a, b = sp.symbols('x a b')
    f = a*x**b
    
    my_func = lambdify((x,a,b),f)
 
-
-Pour trouver le meilleur :math:`alpha`, on a que pour :math:`x` près de :math:`x_0`
-
-.. math::
-
-   
-   &f(x) \simeq f(x_0) + \alpha (x-x_0) \\ \\ \iff & f(x) -f(x_0) \simeq \alpha (x-x_0)\\\\
-    \iff & \alpha \simeq \frac{f(x) -f(x_0)}{x-x_0}  \simeq\; f'(x_0) 
-
-Alors
-
-.. math::
-
-   f(x) \simeq f(x_0) + f'(x_0) (x-x_0)  
-   f(x) - f(x_0) \simeq f'(x_0) (x-x_0)   
-   \Delta f \simeq f'(x_0) \Delta x 
-
-Donc :math:`\alpha=f'(x_0)`. 
+Pour faire les exercices ici-bas avec Python, voir le notebook à la fin.
 
 La dérivée
 ^^^^^^^^^^
@@ -128,14 +130,14 @@ La librairie SymPy permet de prendre la dérivée de fonctions. Par exemple,
 
 **Avec des fonctions**
 
--  :math:`f(x) = a(x)b(x)`, :math:`f'(x) = a'(x)b(x) + a(x)b'(x)`
+-  Règle du produit: :math:`f(x) = a(x)b(x)`, :math:`f'(x) = a'(x)b(x) + a(x)b'(x)`
 
--  :math:`f(x) = \frac{a(x)}{b(x)}`,
+-  Règle du quotient: :math:`f(x) = \frac{a(x)}{b(x)}`,
    :math:`f'(x) = \frac{a'(x)b(x) - a(x)b'(x)}{b(x)^2}`
 
--  :math:`f(x) = a(b(x))`, :math:`f'(x) = a'(b(x))b'(x)`
+-  Règle de chaine: :math:`f(x) = a(b(x))`, :math:`f'(x) = a'(b(x))b'(x)`
 
--  :math:`f(x) = a(x) + b(x)`, :math:`f'(x) = a'(x) + b'(x)`.
+-  Règle d'addition (et soustraction): :math:`f(x) = a(x) + b(x)`, :math:`f'(x) = a'(x) + b'(x)`.
 
 
 **Exercice A**: Trouvez les dérivées de :
@@ -146,13 +148,15 @@ La librairie SymPy permet de prendre la dérivée de fonctions. Par exemple,
 
 **Approximations d’ordres supérieurs**
 
-On peut pousser plus loin,
+Si la fonction a des dérivées supérieures non-nulles, ou bien :math:`x` est loin de :math:`x_0`, l'approximation de premier ordre que nous avons vu produira une approximation assez mauvaise... Par ailleurs, on veut peut-être aussi caractériser des fonctions par autre chose que seulement leur pente. (est-ce une courbe, etc?). 
 
--  Polynome d’ordre 2 assez simple...
+On peut pousser plus loin le concept d'approximation,
+
+-  Polynome d’ordre 2 devrait être meilleur...
 
 -  Alors, on approxime par deuxième ordre
 
--  Polynome d’ordre :math:`k` …
+-  Polynome d’ordre :math:`k`: on peut certainement généraliser.
 
   Ce type d'approximation est appelée approximation de `Taylor <https://en.wikipedia.org/wiki/Brook_Taylor>`_. On utilise alors les
 dérivées d’ordres supérieurs d’une fonction:
@@ -172,8 +176,8 @@ Une fonction est concave si pour tous points :math:`(x_1,x_2)` et tout
 
    f(\lambda x_1 + (1-\lambda) x_2) \geq \lambda f(x_1) + (1-\lambda)f(x_2)
 
-et convexe si l’inverse est vrai. On dit strictement si les inégalités
-sont strictes.
+et convexe si faux. On dit strictement concave (ou convexe) si les inégalités
+sont strictes (n'incluent pas zéro).
 
 **Approximation et maximum (minimum)**
 
@@ -192,9 +196,9 @@ Observons que:
    augmente :math:`f`
 
 -  Si :math:`x_0` est la solution de :math:`\max_x f(x)`, il faut que
-   :math:`f'(x_0) =0`
+   :math:`f'(x_0) =0`! C'est la condition de premier ordre (CPO) nécessaire.
 
-Considérons l’approximation de deuxième ordre:
+Considérons l’approximation de deuxième ordre pour voir si elle est suffisante:
 
 .. math::
 
@@ -211,23 +215,33 @@ Pour un maximum (local), il faut que :math:`f'(x_0)=0` (condition de premier ord
 
 On peut trouver le maximum (minimum) d'une fonction en Python numériquement ou avec SymPy. 
 
-**Exercice C**: Trouvez l'optimum de la fonction :math:`f(x) = x(10-x)` sur papier et en utilisant SymPy et numériquement.
+**Exercice C**: Trouvez l'optimum de la fonction :math:`f(x) = x(10-x)` sur papier et en utilisant SymPy.
+
+Dérivée partielle
+^^^^^^^^^^^^^^^^^
+
+Supposons la fonction :math:`f(x,y)`. La dérivée partielle se fait en
+gardant fixe (ou exogène) les autres variables:
+:math:`f'_x(x,y) = \frac{\partial f(x,y)}{\partial x}`.
+
+En Sympy, c'est déjà ce qu'on fait avec :code:`diff()`, on garde fixe les autres variables.
+
 
 .. _envelop:
 
 Théorème de l’enveloppe
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Considérons la fonction :math:`f(x,p)` où :math:`p` est hors de contrôle
+Considérons la fonction :math:`f(x,p)` où :math:`p` est hors de contrôle de l'agent qui optimise
 (exogène). On dénote:
 
 .. math::
 
     V(p) = \max_x f(x,p) , \quad x^*(p) = \arg \max_x f(x,p)
 
-On a que :math:`V(p) = f(x^*(p),p)`. 
+La première fonction, :math:`\max` retourne la valeur maximale de la fonction en choissant :math:`x` et en gardant :math:`p` constant. C'est une fonction qui dépend de :math:`p` seulement (:math:`x` a été choisi tel qu'il maximise la fonction). La deuxième retourne le :math:`x` qui maximise :math:`f(x,p)` en gardant encore une fois :math:`p` constant. C'est donc une fonction de :math:`p`. 
 
-Ainsi,
+Un lien évident existe entre les deux :math:`V(p) = f(x^*(p),p)`.  On peut utiliser ce lien pour étudier comment la valeur maximale de :math:`f` change quand on change :math:`p`:
 
 .. math::
 
@@ -239,26 +253,17 @@ Donc, :math:`f'_x(x^*(p),p) = 0` (CPO).
 
 Ainsi, le premier terme de :math:`V'(p)` est zéro. On obtient, :math:`V'(p) = f'_p(x^*(p),p)`.
 
-Ceci implique que la dérivée de la valeur maximale par rapport à une variable exogène est la dérivée de la fonction objective par rapport à cette variable exogène, sans utiliser la règle de chaine (sans changer la solution optimale). Ceci sera utilise à plusieurs moments dans le cours. 
+Ceci implique que la dérivée de la valeur maximale par rapport à une variable exogène est la dérivée de la fonction objective par rapport à cette variable exogène, sans utiliser la règle de chaine (sans changer la solution optimale). C'est un raccourci (approximation) qui sera utile à plusieurs moments dans le cours. 
 
-**Exercice D**: Trouvez la valeur de cette approximation pour la
-fonction :math:`V(p) = (10 - p\frac{x(p)}{2})x`.
-
-Dérivée partielle
-^^^^^^^^^^^^^^^^^
-
-Supposons la fonction :math:`f(x,y)`. La dérivée partielle se fait en
-gardant fixe (ou exogène) les autres variables:
-:math:`f'_x(x,y) = \frac{\partial f(x,y)}{\partial x}`.
-
-En Sympy, c'est déjà ce qu'on fait avec :code:`diff()`, on garde fixe les autres variables.
+**Exercice D**: Trouvez la forme de :math:`V'(p)` la
+fonction :math:`V(p) = (10 - p\frac{x^*(p)}{2})x^*(p)` où :math:`x^*(p) = \arg \max_x f(x,p)` et :math:`f(x,p) =(10 - p\frac{x}{2})x`.
 
 La différentielle totale
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Les combinaisons de :math:`x,y` tels que :math:`f(x,y) = \overline{f}`)
-peuvent être trouvées par solution directe, :math:`y=g(x,\overline{f})`.
-Mais on peut décrire ces combinaisons plus facilement en utilisant la
+Les combinaisons de :math:`x,y` telles que :math:`f(x,y) = \overline{f}`)
+peuvent être trouvées par en inversant la fonction, :math:`y=g(x,\overline{f})`.
+Mais on peut décrire ces combinaisons en utilisant la
 différentielle totale (une approximation linéaire):
 
 On peut décrire la forme de cette fonction par:
@@ -268,11 +273,13 @@ On peut décrire la forme de cette fonction par:
    \begin{aligned}
    df(x,y) = f'_x(x,y)dx + f'_y(x,y)dy\end{aligned}
 
-Si on pose :math:`df(x,y)=0`,
+Si on pose :math:`df(x,y)=0`, on peut réarranger pour obtenir
 
 .. math::
 
    \frac{dy}{dx}\Bigr|_{df=0} = -\frac{f'_x(x,y)}{f'_y(x,y)}
+
+On qualifie la dérivée par le :math:`df=0` pour indiquer que c'est une dérivée obtenue en contraignant la fonction à être constante.
 
 **Exercice E**: Trouvez :math:`\frac{dy}{dx}\Bigr|_{df=0}` par
 différentielle totale pour :math:`f(x,y)=\log(xy)`. Faire sur papier et par SymPy. 
@@ -280,15 +287,17 @@ différentielle totale pour :math:`f(x,y)=\log(xy)`. Faire sur papier et par Sym
 Homogénéité d'une fonction
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Une fonction est homogène de degré :math:`r` si pour tout
+La dérivée partielle informe sur le comportement de la fonction quand un des arguments varie alors que les autres demeurent constant. Mais on pourrait aussi s'intéresser au comportement d'une fonction quand tous les arguments augmentent (ou diminuent) d'une même proportion. On utilise le concept d'homogénéité pour faire cette analyse. Il y a deux façons de s'y prendre: 
+
+Approche directe: Une fonction est homogène de degré :math:`r` si pour tout
 :math:`\lambda>0`,
 
 .. math::
 
    f(\lambda x_1, \lambda x_2, ... \lambda x_n) = \lambda^r f(x_1,x_2,...,x_n)
 
-Si une fonction est homogène de degré :math:`r`, alors ceci est aussi
-vrai (théorème d’Euler):
+Théorème d'Euler: Si une fonction est homogène de degré :math:`r`, alors 
+vrai:
 
 .. math::
 
@@ -314,7 +323,7 @@ Condition pour un maximum:
 -  Suffisante:
    :math:`\frac{1}{2}f''_{xx}(x_0,y_0)(x-x_0)^2  + \frac{1}{2}f''_{yy}(x_0,y_0)(y-y_0)^2 +f''_{xy}(x_0,y_0)(x-x_0)(y-y_0)<0`
 
-La condition suffisante est relié au déterminant du Hessien de la fonction. 
+La condition suffisante est reliée au déterminant du Hessien de la fonction (un concept qui nous n'utiliserons pas en classe mais qui devrait rappeler des souvenirs). 
 
 Maximisation avec contrainte
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -326,7 +335,7 @@ Quand le problème prend la forme:
 .. math::
 
    \begin{aligned}
-   \max_{x,y} \{ f(x,y): g(x,y)=m\}\end{aligned}
+   \max_{x,y} \{ f(x,y): g(x,y) \leq m\}\end{aligned}
 
 Et qu’on peut inverser :math:`g(x,y)=m` tel que :math:`y=q(x,m)`, alors
 la solution du problème contraint pour :math:`x` est la même que celui
@@ -335,11 +344,11 @@ de :
 .. math::
 
    \begin{aligned}
-   \max_{x} \{ f(x,q(x))\}\end{aligned}
+   \max_{x} \{ f(x,q(x,m))\}\end{aligned}
 
 La CPO est :math:`f'_x(x,q(x,m)) + f'_y(x,q(x,m))q'(x,m) = 0`. On peut
 résoudre pour :math:`x^*` et utiliser :math:`y=q(x)` pour trouver
-:math:`y^*`. Facile, mais quand plus de 2 variables?
+:math:`y^*`. Avec plusieurs variables et contraintes, cette approche n'est pas très pratique...
 
 **Exercice G**: Maximisez la fonction :math:`f(x,y) = \log x + \log y`
 sous la contrainte :math:`x+y \le m`.
@@ -367,7 +376,7 @@ Ces trois équations sont les CPO du Lagrangien:
    \begin{aligned}
        \max_{x,y,\lambda} L(x,y,\lambda) = f(x,y) - \lambda (g(x,y)-m)\end{aligned}
 
-Le Lagrangien :math:`L(x,y,\lambda)` est une fonction objective modifiée qui permet de pénaliser la maximisation pour la contrainte (pour s'assurer qu'elle soit respectée). 
+Le Lagrangien :math:`L(x,y,\lambda)` est une fonction objective modifiée qui permet de pénaliser la maximisation pour la contrainte (pour s'assurer qu'elle soit respectée). On remarque que si :math:`\lambda = 0`, on a les deux CPO non-contraintes, :math:`f'_x(x,y)=0` et :math:`f'_y(x,y)=0` qui donnent une solution optimale sans avoir besoin de la troisième. Seulement si la contrainte est *mordante* (si :math:`\lambda \neq 0`) aurons nous une solution différente... 
 
 **Exercice H**: Maximisez la fonction :math:`f(x,y) = \log x + \log y`
 sous la contrainte :math:`x+y \le m` par la méthode du Lagrangien.
@@ -385,12 +394,12 @@ Par le théorème de l’enveloppe, si
 alors :math:`V'(m) = \lambda`. La valeur maximale augmente de :math:`\lambda` quand on augmente (marginalement) :math:`m` (quand on relâche la contrainte).
 
 **Exercice I**: Démontrez dans le problème précédent (H) qu’une augmentation
-marginale de :math:`m` sur le maximum est bien égale à :math:`\lambda`. Pour ce faire résoudre les CPO du lagrangien pour :math:`x,y,\lambda`, remplacer ces expressions dans:math:`f(x,y)` et prendre la dérivée par rapport à  :math:`m`.
+marginale de :math:`m` a pour effet d'augmenter le maximum de :math:`\lambda`. Pour ce faire résoudre les CPO du lagrangien pour :math:`x,y,\lambda`, remplacer ces expressions dans:math:`f(x,y)` et prendre la dérivée par rapport à  :math:`m`. Montrer que cette dérivée est égale à la valeur de :math:`\lambda`. 
 
 Notebook Python
 +++++++++++++++
 
-Pour faire les exercices ici-haut dans Python, vous pouvez ouvrir ce notebook dans google collab 
+Pour faire les exercices ici-haut dans Python, vous pouvez ouvrir ce notebook dans google collab et y rajouter vos calculs. 
 
 |ImageLink|_
 
