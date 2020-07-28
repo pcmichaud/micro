@@ -220,7 +220,7 @@ raisonnable</p></li>
 <li><p>Étiquette des biens: les biens sont désirables (qualité air au lieu de
 pollution).</p></li>
 </ul>
-<p>Il est peu pratique de fonctionner avec des listes de préférences modéliser les comportements. Par exemple, comment prédire l’effet d’un changement de prix avec une liste de préférence? On voudra se rapporcher de l’analyse marginale.</p>
+<p>Il est peu pratique de fonctionner avec des listes de préférences pour modéliser les comportements. Par exemple, comment prédire l’effet d’un changement de prix avec une liste de préférence? On voudra se rapporcher de l’analyse marginale pour rendre ceci plus pratique.</p>
 </div>
 </div>
 <div class="section" id="courbes-dindifference-et-tms">
@@ -262,7 +262,7 @@ d’unités d’un autre bien <span class="math notranslate nohighlight">\(Y\)</
 </div>
 <div class="section" id="utilite">
 <h2>Utilité<a class="headerlink" href="#utilite" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Les courbres d’indifférence nous permettent de passer vers une représentation des préférences par une fonction. Sur la courbe d’indifférence, chacun des paniers procure le même bien-être. Nous pouvons lui attribuer une valeur ou utilité (arbitraire). En sautant d’une courbe d’indifférence à une autre, on augmente l’utilité. Cette valeur est donc ordinale (elle permet de classer les paniers en ordre de préférence). Ce n’est que l’ordre qui compte.</p>
+<p>Les courbes d’indifférence nous permettent de passer vers une représentation des préférences par une fonction. Sur la courbe d’indifférence, chacun des paniers procure le même bien-être. Nous pouvons lui attribuer une valeur ou utilité (arbitraire). En sautant d’une courbe d’indifférence à une autre (plus élevée), on augmente l’utilité. Donc, il existe une fonction <span class="math notranslate nohighlight">\(U(X,Y)\)</span> qui représente ces préférences. La valeur de cette fonction est donc ordinale (elle permet de classer les paniers en ordre de préférence). Ce n’est que l’ordre qui compte.</p>
 <ul class="simple">
 <li><p>Fonction d’utilité: assigne un nombre à chaque panier</p></li>
 <li><p><span class="math notranslate nohighlight">\(U\)</span> représente les préférences si et seulement si
@@ -271,7 +271,7 @@ d’unités d’un autre bien <span class="math notranslate nohighlight">\(Y\)</
 </ul>
 <p>Les préférences sont ordinales (hiérarchiques)</p>
 <ul>
-<li><p>Si <span class="math notranslate nohighlight">\(f\)</span> est une fonction strictement croissance et <span class="math notranslate nohighlight">\(U\)</span>
+<li><p>Si <span class="math notranslate nohighlight">\(f\)</span> est une fonction strictement croissante et <span class="math notranslate nohighlight">\(U\)</span>
 représente des préférences, alors <span class="math notranslate nohighlight">\(V(X) = f(U(X))\)</span> représente
 les même préférences.</p>
 <div class="math notranslate nohighlight">
@@ -279,11 +279,11 @@ les même préférences.</p>
 </li>
 <li><p>La valeur de l’utilité n’a pas de signification, l’ordonnancement des
 paniers est important.</p></li>
-<li><p><span class="math notranslate nohighlight">\(U(X,Y) = \ln X + \ln Y\)</span> et <span class="math notranslate nohighlight">\(V(X,Y) = XY\)</span> représente les
+<li><p>Exemple: <span class="math notranslate nohighlight">\(U(X,Y) = \ln X + \ln Y\)</span> et <span class="math notranslate nohighlight">\(V(X,Y) = XY\)</span> représente les
 mêmes préférences</p></li>
 </ul>
-<p><em>Exercice B</em>: Montrez que <span class="math notranslate nohighlight">\(U\)</span> et <span class="math notranslate nohighlight">\(V\)</span> ont les mêmes
-préférences en trouvant la transformation <span class="math notranslate nohighlight">\(f(U)\)</span>.</p>
+<p><em>Exercice B</em>: Montrez que <span class="math notranslate nohighlight">\(U\)</span> et <span class="math notranslate nohighlight">\(V\)</span> dans l’exemple ont les mêmes
+préférences en trouvant la transformation <span class="math notranslate nohighlight">\(V=f(U)\)</span>.</p>
 <p>Comment trouvez le TMS à partir de l’utilité?</p>
 <ul class="simple">
 <li><p>Deux biens, <span class="math notranslate nohighlight">\(X\)</span>, <span class="math notranslate nohighlight">\(Y\)</span>. Préférences représentées par la
@@ -292,7 +292,7 @@ fonction d’utilité <span class="math notranslate nohighlight">\(U(X,Y)\)</spa
 </ul>
 <p>TMS de <span class="math notranslate nohighlight">\(X\)</span> en fonction de <span class="math notranslate nohighlight">\(Y\)</span></p>
 <ul class="simple">
-<li><p>Combien de <span class="math notranslate nohighlight">\(Y\)</span> sacrifié pour davantage de <span class="math notranslate nohighlight">\(X\)</span></p></li>
+<li><p>Combien de <span class="math notranslate nohighlight">\(Y\)</span> sacrifier pour davantage de <span class="math notranslate nohighlight">\(X\)</span></p></li>
 <li><p>Formellement: augmente <span class="math notranslate nohighlight">\(X\)</span> de <span class="math notranslate nohighlight">\(\Delta X\)</span>: quel est le
 changement <span class="math notranslate nohighlight">\(\Delta Y\)</span> qui conserve l’indifférence?</p></li>
 </ul>
@@ -307,7 +307,7 @@ changement <span class="math notranslate nohighlight">\(\Delta Y\)</span> qui co
 \[\Rightarrow \;\; TMS = \Delta Y/ \Delta X =  -\frac{\partial U}{\partial X}/ \frac{\partial U}{\partial Y}\]</div>
 </li>
 </ul>
-<p>On réfère à <span class="math notranslate nohighlight">\(\frac{\partial U}{\partial X}\)</span> comme étant l’utilité marginale de <span class="math notranslate nohighlight">\(x\)</span> (et vice-versa pour <span class="math notranslate nohighlight">\(y\)</span>). L’utilité marginale est généralement décroissante mais positive (attention: l’utilité n’est pas décroissante, seule l’utilité marginale). Ceci donne la forme convexe aux courbes d’indifférence.</p>
+<p>On réfère à <span class="math notranslate nohighlight">\(\frac{\partial U}{\partial X}\)</span> comme étant l’utilité marginale de <span class="math notranslate nohighlight">\(x\)</span> (et vice-versa pour <span class="math notranslate nohighlight">\(y\)</span>). L’utilité marginale est généralement décroissante mais positive (attention: l’utilité n’est pas décroissante, seule l’utilité marginale).</p>
 <p>Exemple:</p>
 <ul>
 <li><p><span class="math notranslate nohighlight">\(U(X,Y) = \ln X + \ln Y\)</span></p>
@@ -334,7 +334,7 @@ dU = \frac{\partial U}{\partial X}dX + \frac{\partial U}{\partial Y}dY\end{align
 </div>
 <div class="section" id="contrainte-budgetaire">
 <h2>Contrainte budgétaire<a class="headerlink" href="#contrainte-budgetaire" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Jusqu’içi, le consommateur a tout les paniers devant lui et a des préférences sur ceux-ci. Il peut tout avoir. En pratique, Il pourra aussi acheter les biens, mais à un prix. Et ce prix est important parce qu’il a une richesse limitée pour consommer.</p>
+<p>Jusqu’içi, le consommateur a tous les paniers devant lui et a des préférences sur ceux-ci. Il peut tout avoir. En pratique, Il pourra acheter les biens, mais à un prix. Et ce prix est important parce qu’il a une richesse limitée pour consommer. Tout achat a un coût d’opportunité.</p>
 <ul>
 <li><p>On ne peut pas dépenser davantage que notre richesse <span class="math notranslate nohighlight">\(I\)</span></p></li>
 <li><div class="line-block">
@@ -355,14 +355,15 @@ contrainte:</div>
 </div></blockquote>
 </li>
 </ul>
-<p>Acheter une unité de <span class="math notranslate nohighlight">\(X\)</span> implique un sacrifice de <span class="math notranslate nohighlight">\(\frac{p_X}{p_Y}\)</span> unités de <span class="math notranslate nohighlight">\(Y\)</span>.</p>
+<p>Acheter une unité de <span class="math notranslate nohighlight">\(X\)</span> implique un sacrifice de <span class="math notranslate nohighlight">\(\frac{p_X}{p_Y}\)</span> unités de <span class="math notranslate nohighlight">\(Y\)</span>. C’est le coût d’opportunité de <span class="math notranslate nohighlight">\(X\)</span> en terme de <span class="math notranslate nohighlight">\(Y\)</span>.</p>
+<p>Dans l’espace <span class="math notranslate nohighlight">\((X,Y)\)</span>, la contrainte définie les allocations possibles. Celles au dessus ne sont pas possibles. Seules celles entre l’origine est la contrainte sont possibles…</p>
 <p>** Normalisation **</p>
 <ul class="simple">
 <li><p>Contrainte budgétaire demeure la même si prix et richesse multipliés par même
 constante <span class="math notranslate nohighlight">\(\lambda\)</span>.</p></li>
 <li><p>On peut acheter les mêmes biens.</p></li>
 <li><p>Normalisons <span class="math notranslate nohighlight">\(p_Y = 1\)</span>. Alors <span class="math notranslate nohighlight">\(Y = I - p_X X\)</span>. <span class="math notranslate nohighlight">\(p_X\)</span>
-est maintenant en terme de quantité de <span class="math notranslate nohighlight">\(Y\)</span> (numéraire).</p></li>
+est maintenant en terme de quantité de <span class="math notranslate nohighlight">\(Y\)</span> (numéraire) et idem pour <span class="math notranslate nohighlight">\(I\)</span>.</p></li>
 </ul>
 <p>Seul les prix relatifs affectent l’allocation.</p>
 <p><em>Exercice C</em>: Montrez qu’une contrainte budgétaire ne change pas si on
@@ -371,8 +372,8 @@ multiplie prix et revenu par <span class="math notranslate nohighlight">\(\lambd
 <div class="section" id="choix-du-consommateur">
 <h2>Choix du consommateur<a class="headerlink" href="#choix-du-consommateur" title="Lien permanent vers ce titre">¶</a></h2>
 <ul class="simple">
-<li><p>La contrainte est une donnée fixe. Quel est le plus haut niveau
-d’utilité sur cette contrainte?</p></li>
+<li><p>La contrainte est fixe. Le consommateur peut choisir la courbe d’indifférence sur laquelle il sera, et donc quelle combinaison il consommera étant donné la contrainte. Quel est le plus haut niveau
+d’utilité qu’il peut atteindre sur la contrainte?</p></li>
 <li><p>On ne peut pas aller sur une courbe d’indifférence plus élevée que la
 contrainte</p></li>
 <li><p>Toutes les courbes plus basses sont sous-optimales.</p></li>
@@ -429,9 +430,9 @@ p_X X + p_Y Y = I\end{split}\]</div>
 \[\begin{split}\begin{aligned}
 \frac{U'_X(X,Y)}{U'_Y(X,Y)} = \frac{p_X}{p_Y} \\
 p_X X + p_Y Y = I\end{aligned}\end{split}\]</div>
-<p><em>Exercice E</em>: Trouvez les demandes pour <span class="math notranslate nohighlight">\(u(X,Y) = XY\)</span> tel que
+<p><em>Exercice E</em>: Trouvez les demandes pour <span class="math notranslate nohighlight">\(u(X,Y) = XY\)</span> comme
 précédement mais par le lagrangien.</p>
-<p>Les demandes <span class="math notranslate nohighlight">\(X^*(p_X,p_Y,I)\)</span> et <span class="math notranslate nohighlight">\(Y^*(p_X,p_Y,I)\)</span> sont appelés demandes marshalliennes (<a class="reference external" href="https://fr.wikipedia.org/wiki/Alfred_Marshall">Alfred Marshall</a>). Nous étudierons leurs propriétés dans le prochain cours. Elles seront très utiles pour étudier le comportement et les politiques publiques (e.g. taxation). Ces demandes sont observables, contrairement à l’utilité. On apprendra sur l’utilité par ces demandes.</p>
+<p>Les demandes <span class="math notranslate nohighlight">\(X^*(p_X,p_Y,I)\)</span> et <span class="math notranslate nohighlight">\(Y^*(p_X,p_Y,I)\)</span> sont appelées demandes marshalliennes (<a class="reference external" href="https://fr.wikipedia.org/wiki/Alfred_Marshall">Alfred Marshall</a>). Nous étudierons leurs propriétés dans le prochain cours. Elles seront très utiles pour étudier le comportement et les politiques publiques (e.g. taxation). Ces demandes sont observables, contrairement à l’utilité. On apprendra sur l’utilité par ces demandes.</p>
 </div>
 <div class="section" id="utilite-indirecte">
 <h2>Utilité Indirecte<a class="headerlink" href="#utilite-indirecte" title="Lien permanent vers ce titre">¶</a></h2>

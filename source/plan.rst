@@ -19,7 +19,7 @@ Les thèmes couverts
 Forme de l'enseignement
 +++++++++++++++++++++++
 
-Chaque cours, vous êtes responsable de venir préparé en ayant étudié le matériel de chaque section sur la page web du cours. Les cours sont enregistrés et il y aura 10 pts de la note finale pour la participation. Après une révision du matériel en groupe (sous forme de discussion), la deuxième portion du cours sera consacrée à des exercices que nous ferons en classe en petit groupe. Finalement une correction et synthèse sera faite groupe.
+Chaque cours, vous êtes responsable de venir préparé en ayant étudié le matériel de chaque section sur la page web du cours. Les cours sont enregistrés et il y aura 10 pts de la note finale pour la participation en cours et sur le forum du cours. Après une révision du matériel en groupe (sous forme de discussion), la deuxième portion du cours sera consacrée à des exercices que nous ferons en classe en petit groupe. Finalement une correction et synthèse sera faite groupe.
 
 Évaluation
 ++++++++++
@@ -35,7 +35,7 @@ Enseignement
 - Professeur: `Pierre-Carl Michaud <mailto:pierre-carl.michaud\@hec.ca>`_ 
 - Auxiliaire enseignement: `Aïssatou Ba <mailto:aissatou.2.ba@hec.ca>`_ 
 
-Périodes de consultation: Ba (Lundi 13-14h et mercredi 13-14h), Michaud (sur demande par Slack). 
+Périodes de consultation: Ba (Lundi 13:00-14:00 et Mardi 15:30-16:30), Michaud (Mercredi 15:30-16:30). 
 
 Modes d'interaction
 +++++++++++++++++++
@@ -54,7 +54,7 @@ Un site sur Slack  a été mis en place pour les communications durant le cours.
 .. |zoom| image:: /images/zoom.png
    :scale: 10%
 
-Si nous sommes dans l'impossibilité de nous rencontrer en personne pour le cours, j'initierai sur le channel slack un appel Zoom auquel vous pourrez vous joindre. 
+Si nous sommes dans l'impossibilité de nous rencontrer en personne pour le cours, j'initierai sur le channel slack une conférence Zoom auquel vous pourrez vous joindre. 
 
 Références bibliographiques
 +++++++++++++++++++++++++++

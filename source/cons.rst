@@ -66,7 +66,7 @@ Cette hypothèse est loin d'être évidente en pratique.
 -  Étiquette des biens: les biens sont désirables (qualité air au lieu de
    pollution). 
 
-Il est peu pratique de fonctionner avec des listes de préférences modéliser les comportements. Par exemple, comment prédire l'effet d'un changement de prix avec une liste de préférence? On voudra se rapporcher de l'analyse marginale. 
+Il est peu pratique de fonctionner avec des listes de préférences pour modéliser les comportements. Par exemple, comment prédire l'effet d'un changement de prix avec une liste de préférence? On voudra se rapporcher de l'analyse marginale pour rendre ceci plus pratique. 
 
 Courbes d’indifférence et TMS
 +++++++++++++++++++++++++++++
@@ -117,7 +117,7 @@ Il diminue généralement. Ceci est représenté par des courbes d’indifféren
 Utilité
 +++++++
 
-Les courbres d'indifférence nous permettent de passer vers une représentation des préférences par une fonction. Sur la courbe d'indifférence, chacun des paniers procure le même bien-être. Nous pouvons lui attribuer une valeur ou utilité (arbitraire). En sautant d'une courbe d'indifférence à une autre, on augmente l'utilité. Cette valeur est donc ordinale (elle permet de classer les paniers en ordre de préférence). Ce n'est que l'ordre qui compte. 
+Les courbes d'indifférence nous permettent de passer vers une représentation des préférences par une fonction. Sur la courbe d'indifférence, chacun des paniers procure le même bien-être. Nous pouvons lui attribuer une valeur ou utilité (arbitraire). En sautant d'une courbe d'indifférence à une autre (plus élevée), on augmente l'utilité. Donc, il existe une fonction :math:`U(X,Y)` qui représente ces préférences. La valeur de cette fonction est donc ordinale (elle permet de classer les paniers en ordre de préférence). Ce n'est que l'ordre qui compte. 
 
 -  Fonction d’utilité: assigne un nombre à chaque panier
 
@@ -127,7 +127,7 @@ Les courbres d'indifférence nous permettent de passer vers une représentation 
 
 Les préférences sont ordinales (hiérarchiques)
 
--  Si :math:`f` est une fonction strictement croissance et :math:`U`
+-  Si :math:`f` est une fonction strictement croissante et :math:`U`
    représente des préférences, alors :math:`V(X) = f(U(X))` représente
    les même préférences.
 
@@ -136,11 +136,11 @@ Les préférences sont ordinales (hiérarchiques)
 -  La valeur de l’utilité n’a pas de signification, l’ordonnancement des
    paniers est important.
 
--  :math:`U(X,Y) = \ln X + \ln Y` et :math:`V(X,Y) = XY` représente les
+-  Exemple: :math:`U(X,Y) = \ln X + \ln Y` et :math:`V(X,Y) = XY` représente les
    mêmes préférences
 
-*Exercice B*: Montrez que :math:`U` et :math:`V` ont les mêmes
-préférences en trouvant la transformation :math:`f(U)`.
+*Exercice B*: Montrez que :math:`U` et :math:`V` dans l'exemple ont les mêmes
+préférences en trouvant la transformation :math:`V=f(U)`.
 
 Comment trouvez le TMS à partir de l'utilité?
 
@@ -151,7 +151,7 @@ Comment trouvez le TMS à partir de l'utilité?
 
 TMS de :math:`X` en fonction de :math:`Y`
 
--  Combien de :math:`Y` sacrifié pour davantage de :math:`X`
+-  Combien de :math:`Y` sacrifier pour davantage de :math:`X`
 
 -  Formellement: augmente :math:`X` de :math:`\Delta X`: quel est le
    changement :math:`\Delta Y` qui conserve l'indifférence?
@@ -167,7 +167,7 @@ Calculer le TMS de :math:`X` en fonction de :math:`Y`
 
    .. math:: \Rightarrow \;\; TMS = \Delta Y/ \Delta X =  -\frac{\partial U}{\partial X}/ \frac{\partial U}{\partial Y}
 
-On réfère à :math:`\frac{\partial U}{\partial X}` comme étant l'utilité marginale de :math:`x` (et vice-versa pour :math:`y`). L'utilité marginale est généralement décroissante mais positive (attention: l'utilité n'est pas décroissante, seule l'utilité marginale). Ceci donne la forme convexe aux courbes d'indifférence. 
+On réfère à :math:`\frac{\partial U}{\partial X}` comme étant l'utilité marginale de :math:`x` (et vice-versa pour :math:`y`). L'utilité marginale est généralement décroissante mais positive (attention: l'utilité n'est pas décroissante, seule l'utilité marginale). 
 
 Exemple:
 
@@ -202,7 +202,7 @@ On peut utiliser SymPy pour trouver le TMS:
 Contrainte budgétaire
 +++++++++++++++++++++
 
-Jusqu'içi, le consommateur a tout les paniers devant lui et a des préférences sur ceux-ci. Il peut tout avoir. En pratique, Il pourra aussi acheter les biens, mais à un prix. Et ce prix est important parce qu'il a une richesse limitée pour consommer.
+Jusqu'içi, le consommateur a tous les paniers devant lui et a des préférences sur ceux-ci. Il peut tout avoir. En pratique, Il pourra acheter les biens, mais à un prix. Et ce prix est important parce qu'il a une richesse limitée pour consommer. Tout achat a un coût d'opportunité. 
 
 -  On ne peut pas dépenser davantage que notre richesse :math:`I`
 
@@ -217,7 +217,9 @@ Jusqu'içi, le consommateur a tout les paniers devant lui et a des préférences
 
      .. math:: \frac{dY}{dX} = -\frac{p_X}{p_Y}
 
-Acheter une unité de :math:`X` implique un sacrifice de :math:`\frac{p_X}{p_Y}` unités de :math:`Y`.
+Acheter une unité de :math:`X` implique un sacrifice de :math:`\frac{p_X}{p_Y}` unités de :math:`Y`. C'est le coût d'opportunité de :math:`X` en terme de :math:`Y`. 
+
+Dans l'espace :math:`(X,Y)`, la contrainte définie les allocations possibles. Celles au dessus ne sont pas possibles. Seules celles entre l'origine est la contrainte sont possibles...
 
 ** Normalisation **
 
@@ -227,7 +229,7 @@ Acheter une unité de :math:`X` implique un sacrifice de :math:`\frac{p_X}{p_Y}`
 -  On peut acheter les mêmes biens.
 
 -  Normalisons :math:`p_Y = 1`. Alors :math:`Y = I - p_X X`. :math:`p_X`
-   est maintenant en terme de quantité de :math:`Y` (numéraire).
+   est maintenant en terme de quantité de :math:`Y` (numéraire) et idem pour :math:`I`.
 
 Seul les prix relatifs affectent l'allocation. 
 
@@ -237,8 +239,8 @@ multiplie prix et revenu par :math:`\lambda>0`.
 Choix du consommateur
 +++++++++++++++++++++
 
--  La contrainte est une donnée fixe. Quel est le plus haut niveau
-   d’utilité sur cette contrainte?
+-  La contrainte est fixe. Le consommateur peut choisir la courbe d'indifférence sur laquelle il sera, et donc quelle combinaison il consommera étant donné la contrainte. Quel est le plus haut niveau
+   d’utilité qu'il peut atteindre sur la contrainte?
 
 -  On ne peut pas aller sur une courbe d’indifférence plus élevée que la
    contrainte
@@ -315,10 +317,10 @@ En prenant le ratio des deux premières CPO, on a:
    \frac{U'_X(X,Y)}{U'_Y(X,Y)} = \frac{p_X}{p_Y} \\
    p_X X + p_Y Y = I\end{aligned}
 
-*Exercice E*: Trouvez les demandes pour :math:`u(X,Y) = XY` tel que
+*Exercice E*: Trouvez les demandes pour :math:`u(X,Y) = XY` comme
 précédement mais par le lagrangien.
 
-Les demandes :math:`X^*(p_X,p_Y,I)` et :math:`Y^*(p_X,p_Y,I)` sont appelés demandes marshalliennes (`Alfred Marshall <https://fr.wikipedia.org/wiki/Alfred_Marshall>`_). Nous étudierons leurs propriétés dans le prochain cours. Elles seront très utiles pour étudier le comportement et les politiques publiques (e.g. taxation). Ces demandes sont observables, contrairement à l'utilité. On apprendra sur l'utilité par ces demandes.    
+Les demandes :math:`X^*(p_X,p_Y,I)` et :math:`Y^*(p_X,p_Y,I)` sont appelées demandes marshalliennes (`Alfred Marshall <https://fr.wikipedia.org/wiki/Alfred_Marshall>`_). Nous étudierons leurs propriétés dans le prochain cours. Elles seront très utiles pour étudier le comportement et les politiques publiques (e.g. taxation). Ces demandes sont observables, contrairement à l'utilité. On apprendra sur l'utilité par ces demandes.    
 
 Utilité Indirecte
 +++++++++++++++++
