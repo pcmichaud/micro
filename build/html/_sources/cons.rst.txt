@@ -91,7 +91,7 @@ Les courbes d’indifférence ne se croisent pas si elle respectve la transitivi
 ne respectent pas la transitivité.
 
 Taux marginal de substitution (TMS)
-^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Ces courbes d'indifférences contienent plus d'information qu'on croit ...
 
