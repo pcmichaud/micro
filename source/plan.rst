@@ -42,12 +42,11 @@ Modes d'interaction
 
 .. |slack| image:: /images/slack.png
    :scale: 10%
+.. _slack: https://join.slack.com/t/micro20851/shared_invite/zt-g9e7nzh0-DIx5l09LwV_xZGeBYz5Vpg
 
 |slack| **Slack**
 
-
-
-Un site sur Slack  a été mis en place pour les communications durant le cours. Vous pouvez le joindre en cliquant sur le lien suivant. 
+Un site sur Slack  a été mis en place pour les communications durant le cours. Vous pouvez le joindre en cliquant sur l'icone Slack. 
 
 |zoom| **Zoom**
 
