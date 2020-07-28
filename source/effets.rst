@@ -251,7 +251,7 @@ L'équation de Slutsky est donc:
 .. math:: \eta_{X,p} = \eta^{cmp}_{X,p}  - \eta_{X,I} \cdot s_X
 
 Effets prix croisés
--------------------
++++++++++++++++++++
 
 D'abord, on peut inférer la nature des biens par les fonctions de demande. Les biens :math:`X` et :math:`Y` sont:
 

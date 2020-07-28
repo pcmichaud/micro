@@ -9,7 +9,7 @@ Microéconomie 20-851
 Bienvenue sur le site du cours 20-851 à HEC Montréal.  
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Menu:
 
    plan.rst

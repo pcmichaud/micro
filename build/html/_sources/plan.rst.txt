@@ -1,12 +1,12 @@
 Objectifs du cours
 ------------------
 
-Ce cours comporte deux objectifs principaux. Le premier est de présenter aux étudiants les principes mathématiques de modélisation en microéconomie afin de pouvoir les appliquer aux données dans un grand nombre d'applications. L'étude de ces modèles microéconomiques se fera à travers l'acquisition des outils d'analyse que sont l'optimisation contrainte et la statique comparative ainsi que la programmation. Le deuxième objectif est de confronter les étudiants aux imperfections de marché, leur permettant ainsi d'évaluer l'intervention gouvernementale en politique publique.  
+Ce cours comporte deux objectifs principaux. Le premier est de présenter aux étudiants les principes mathématiques de modélisation en microéconomie afin de pouvoir les appliquer en pratique. L'étude de ces modèles microéconomiques se fera à travers l'acquisition des outils d'analyse que sont l'optimisation contrainte et la statique comparative. Un volet pratique utilisant la programmation permettra aux étudiants d'approfondir ces concepts. Le deuxième objectif est de confronter les étudiants aux imperfections de marché, leur permettant ainsi d'évaluer l'intervention gouvernementale par le biais de politiques publiques.  
 
 Les thèmes couverts
 +++++++++++++++++++
 
--  Les choix consommation: statique, incertitude et temps
+-  Les choix de consommation: statique, incertitude et temps
 
 -  Modélisation d'équilibre de marché et bien-être
 
@@ -19,7 +19,7 @@ Les thèmes couverts
 Forme de l'enseignement
 +++++++++++++++++++++++
 
-Chaque cours, vous êtes responsable de venir préparer en ayant étudié le matériel de chaque section sur la page web du cours. Après une révision du matériel en groupe (sous forme de discussion), le cours sera consacré à des exercices que nous ferons en classe et que vous devrez préparer à l'avance (voir les exercices contenue dans chaque séance). 
+Chaque cours, vous êtes responsable de venir préparé en ayant étudié le matériel de chaque section sur la page web du cours. Les cours sont enregistrés et il y aura 10 pts de la note finale pour la participation. Après une révision du matériel en groupe (sous forme de discussion), la deuxième portion du cours sera consacrée à des exercices que nous ferons en classe en petit groupe. Finalement une correction et synthèse sera faite groupe.
 
 Évaluation
 ++++++++++
@@ -35,7 +35,7 @@ Enseignement
 - Professeur: `Pierre-Carl Michaud <mailto:pierre-carl.michaud\@hec.ca>`_ 
 - Auxiliaire enseignement: `Aïssatou Ba <mailto:aissatou.2.ba@hec.ca>`_ 
 
-Heures de consultation: À déterminer. 
+Périodes de consultation: Ba (Lundi 13-14h et mercredi 13-14h), Michaud (sur demande par Slack). 
 
 Modes d'interaction
 +++++++++++++++++++
@@ -47,7 +47,7 @@ Modes d'interaction
 
 
 
-Un channel sur Slack  a été mis en place pour les communications durant le cours. Vous pouvez le joindre en cliquant sur le lien suivant. Utilisez les différents channel pour la matériel vue pour chaque cours. 
+Un site sur Slack  a été mis en place pour les communications durant le cours. Vous pouvez le joindre en cliquant sur le lien suivant. 
 
 |zoom| **Zoom**
 
@@ -70,7 +70,7 @@ En principe, vous n'avez pas besoin de références supplémentaires. Mais si n�
 Théorie et pratique 
 +++++++++++++++++++
 
-Python est rapidement devenu un des languages de choix pour débuter en programmation, comme en fait foi ce graphique (cliquez pour voir l'article de The Economist). 
+Python est rapidement devenu un des langages de choix pour débuter en programmation, comme le montre ce graphique (cliquez pour voir l'article de The Economist). 
 
 .. |Python| image:: /images/python_economist.png
    :scale: 35%
@@ -80,7 +80,7 @@ Python est rapidement devenu un des languages de choix pour débuter en programm
 
 Google met à la disposition de tous une plateforme pour travailler en Python à l'aide des Notebooks. Cette plateforme s'appelle Google Collab et ne requière qu'un compte google et google drive. 
 
-Accedez à ce notebook d'introduction vous permettra de vous familiariser avec Python et Google Collab. Cliquez sur l'icone s'il est présent dans une section du cours. |ImageLink|_
+Accedez à ce notebook d'introduction vous permettra de vous familiariser avec Python et Google Collab. Cliquez sur l'icone s'il est présent dans une section du cours pour accéder à un notebook. |ImageLink|_
 
 .. |ImageLink| image:: https://colab.research.google.com/assets/colab-badge.svg
 .. _ImageLink: https://colab.research.google.com/github/pcmichaud/micro/blob/master/notebooks/DebutPython.ipynb
