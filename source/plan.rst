@@ -54,8 +54,6 @@ Un site sur Slack  a été mis en place pour les communications durant le cours.
 .. |zoom| image:: /images/zoom.png
    :scale: 10%
 
-
-
 Si nous sommes dans l'impossibilité de nous rencontrer en personne pour le cours, j'initierai sur le channel slack un appel Zoom auquel vous pourrez vous joindre. 
 
 Références bibliographiques

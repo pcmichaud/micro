@@ -3,6 +3,8 @@
 Consommateur
 ------------
 
+Les fondements de la microéconomie commencent par le comportement du consommateur. On veut prédire ce que ferait un consommateur dans une situation donnée. On veut faire du sens des comportements observés. La théorie paraîtra simpliste, mais de ces fondements, on sera capable d'assez bien prédire le comportement économique des consommateurs. Des raffinements existent, certains ont même révisé ces fondements pour y introduire une approche comportementale où les individus ont des biais, répondent aux émotions, à des limites cognitives, etc. 
+
 Préférences
 +++++++++++
 
@@ -21,6 +23,8 @@ Préférences
 
 Hypothèses importantes sur les préférences
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Ces hypothèses ou axiomes sont nécessaires pour en arriver à une théorie du comportement. On note les plus importantes: 
 
 **Exhaustive** 
 
@@ -49,7 +53,7 @@ Une question de cohérence...
    :math:`B \succ C`, alors le consommateur préfère A à C
    (:math:`A \succ C`).
 
-Cette hypothèse est loin d'être évidente. 
+Cette hypothèse est loin d'être évidente en pratique. 
 
 **Non-satiation**
 
@@ -62,9 +66,12 @@ Cette hypothèse est loin d'être évidente.
 -  Étiquette des biens: les biens sont désirables (qualité air au lieu de
    pollution). 
 
+Il est peu pratique de fonctionner avec des listes de préférences modéliser les comportements. Par exemple, comment prédire l'effet d'un changement de prix avec une liste de préférence? On voudra se rapporcher de l'analyse marginale. 
 
 Courbes d’indifférence et TMS
 +++++++++++++++++++++++++++++
+
+Le premier outil est celui des courbes d'indifférence dans un espace réel (quantités de plusieurs biens). 
 
 Deux biens :math:`X,Y`:
 
@@ -84,9 +91,9 @@ Les courbes d’indifférence ne se croisent pas si elle respectve la transitivi
 ne respectent pas la transitivité.
 
 Taux marginal de substitution (TMS)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^
 
--  Biens: :math:`X` et :math:`Y`
+Ces courbes d'indifférences contienent plus d'information qu'on croit ...
 
 -  Pour un panier :math:`(X_0, Y_0)`, TMS de :math:`X` en fonction de
    :math:`Y`: Quantité du bien :math:`Y` que le consommateur est
@@ -105,14 +112,12 @@ Convexité des courbes d’indifférences
    :math:`X` en fonction de :math:`Y` change?
 
 
-Il diminue généralement. Ceci est représenté par des courbes d’indifférences convexes.
-
-
+Il diminue généralement. Ceci est représenté par des courbes d’indifférences convexes. Même s'il y a non-satiation, on accepte généralement que le bien-être associé à une unité additionelle diminue avec le nombre d'unités consommées. 
 
 Utilité
 +++++++
 
-Représentation des préférences
+Les courbres d'indifférence nous permettent de passer vers une représentation des préférences par une fonction. Sur la courbe d'indifférence, chacun des paniers procure le même bien-être. Nous pouvons lui attribuer une valeur ou utilité (arbitraire). En sautant d'une courbe d'indifférence à une autre, on augmente l'utilité. Cette valeur est donc ordinale (elle permet de classer les paniers en ordre de préférence). Ce n'est que l'ordre qui compte. 
 
 -  Fonction d’utilité: assigne un nombre à chaque panier
 
@@ -197,6 +202,8 @@ On peut utiliser SymPy pour trouver le TMS:
 Contrainte budgétaire
 +++++++++++++++++++++
 
+Jusqu'içi, le consommateur a tout les paniers devant lui et a des préférences sur ceux-ci. Il peut tout avoir. En pratique, Il pourra aussi acheter les biens, mais à un prix. Et ce prix est important parce qu'il a une richesse limitée pour consommer.
+
 -  On ne peut pas dépenser davantage que notre richesse :math:`I`
 
 -  | Deux biens :math:`X`, :math:`Y`: Contrainte:
@@ -210,7 +217,9 @@ Contrainte budgétaire
 
      .. math:: \frac{dY}{dX} = -\frac{p_X}{p_Y}
 
-Normalisation
+Acheter une unité de :math:`X` implique un sacrifice de :math:`\frac{p_X}{p_Y}` unités de :math:`Y`.
+
+** Normalisation **
 
 -  Contrainte budgétaire demeure la même si prix et richesse multipliés par même
    constante :math:`\lambda`.
@@ -219,6 +228,8 @@ Normalisation
 
 -  Normalisons :math:`p_Y = 1`. Alors :math:`Y = I - p_X X`. :math:`p_X`
    est maintenant en terme de quantité de :math:`Y` (numéraire).
+
+Seul les prix relatifs affectent l'allocation. 
 
 *Exercice C*: Montrez qu’une contrainte budgétaire ne change pas si on
 multiplie prix et revenu par :math:`\lambda>0`.
@@ -241,10 +252,10 @@ Choix du consommateur
 
 Le problème est
 
--  Maximiser :math:`U(X,Y)` étant donné par contrainte
+-  Maximiser :math:`U(X,Y)` étant donné la contrainte
    :math:`p_X X+ p_YY = I`
 
-Étape 1: Substituez la contrainte
+Étape 1: Substituer la contrainte
 
 -  Si achète :math:`X` alors on consomme
    :math:`Y(X) = \frac{I - p_X X}{p_Y}`
@@ -252,10 +263,7 @@ Le problème est
 -  Utilité seulement fonction de :math:`X`: :math:`V(X) = U(X,Y(X))`
 
 
-Étape 2: Maximisez sans contrainte
-
--  Voir que la solution de coin n’est pas optimale (cas :math:`X= 0` et
-   :math:`Y=0`)
+Étape 2: Maximiser sans contrainte
 
 -  Prendre condition de premier ordre (CPO)
 
@@ -273,7 +281,7 @@ On peut faire ce travail par SymPy:
 .. code:: Python
 
    import sympy as sp 
-   x,y,a, p_x, p_y, I = sp.symbols('x y a p_x, p_y, I')
+   x,y,a, p_x, p_y, I = sp.symbols('x y a p_x p_y I')
    u = x**a * y**(1-a)
    budget = sp.Eq(p_x*x + p_y*y,I)
    yx = sp.solve(budget,y)[0]
@@ -310,17 +318,17 @@ En prenant le ratio des deux premières CPO, on a:
 *Exercice E*: Trouvez les demandes pour :math:`u(X,Y) = XY` tel que
 précédement mais par le lagrangien.
 
-Les demandes :math:`X^*(p_X,p_Y,I)` et :math:`Y^*(p_X,p_Y,I)` sont appelés demandes marshalliennes (`Alfred Marshall <https://fr.wikipedia.org/wiki/Alfred_Marshall>`_). Nous étudierons leurs propriétés dans la prochaine section. Elles seront très utiles pour étudier le comportement et les politiques publiques (e.g. taxation).   
+Les demandes :math:`X^*(p_X,p_Y,I)` et :math:`Y^*(p_X,p_Y,I)` sont appelés demandes marshalliennes (`Alfred Marshall <https://fr.wikipedia.org/wiki/Alfred_Marshall>`_). Nous étudierons leurs propriétés dans le prochain cours. Elles seront très utiles pour étudier le comportement et les politiques publiques (e.g. taxation). Ces demandes sont observables, contrairement à l'utilité. On apprendra sur l'utilité par ces demandes.    
 
 Utilité Indirecte
 +++++++++++++++++
 
 L’utilité indirecte :math:`V(p_X,p_Y,I)` est le niveau d’utilité maximale
-à atteindre avec les prix :math:`(p_X,p_Y)` et le revenu :math:`I`,
+atteint avec les prix :math:`(p_X,p_Y)` et le revenu :math:`I`,
 
 .. math:: V(p_X,p_Y,I) = \max_{X,Y} \{ u(X,Y) : p_X X + p_Y Y \le I\}.
 
-**Exercice F**: Montrez que
+*Exercice F* : Montrez que
 :math:`\frac{\partial V}{\partial I} = \lambda` où :math:`V` est l’utilité
 indirecte.
 
@@ -331,7 +339,7 @@ retrouver les demandes par l’identité de Roy:
 
 .. math:: X^*(p_X,p_Y,I) = -\frac{\partial{V(p_X,p_Y,I)}/\partial{p_X}}{\partial{V(p_X,p_Y,I)}/\partial{I}}
 
-*Exercice F*: Montrez que ceci est vrai en utilisant le théorème de
+*Exercice G*: Montrez que ceci est vrai en utilisant le théorème de
 l’enveloppe.
 
 Exemple Consommateur
