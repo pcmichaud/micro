@@ -157,7 +157,7 @@ La librairie SymPy permet de prendre la dérivée de fonctions. Par exemple,
 .. raw:: html
 
     <div style="position: relative; padding-bottom: 25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/9QXqtycmdwA" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
+        <iframe src="https://www.youtube.com/embed/twgmlJWvqT8" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
     </div>
 
 **Approximations d’ordres supérieurs**
