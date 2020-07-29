@@ -152,7 +152,13 @@ La librairie SymPy permet de prendre la dérivée de fonctions. Par exemple,
 
 
 **Exercice B**: Faire une approximation de premier ordre pour :
-:math:`f(x)=\sqrt{x}` sur papier et ensuite en utilisant SymPy. Produisez un graphique de votre approximation en utilisant la fonction plot de SymPy pour :math:`x_0=3`.
+:math:`f(x)=\sqrt{x}` sur papier et ensuite en utilisant SymPy. 
+
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/9QXqtycmdwA" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
+    </div>
 
 **Approximations d’ordres supérieurs**
 
