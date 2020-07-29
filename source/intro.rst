@@ -143,6 +143,14 @@ La librairie SymPy permet de prendre la dérivée de fonctions. Par exemple,
 **Exercice A**: Trouvez les dérivées de :
 :math:`f(x)=\sqrt{x},\frac{x}{1+x},\frac{1}{2}x^2 + 2x-10,(1+\frac{x}{2})^2` sur papier et ensuite en utilisant SymPy.
 
+
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/twgmlJWvqT8" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
+    </div>
+
+
 **Exercice B**: Faire une approximation de premier ordre pour :
 :math:`f(x)=\sqrt{x}` sur papier et ensuite en utilisant SymPy. Produisez un graphique de votre approximation en utilisant la fonction plot de SymPy pour :math:`x_0=3`.
 
