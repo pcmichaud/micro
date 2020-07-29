@@ -156,7 +156,7 @@ La librairie SymPy permet de prendre la dérivée de fonctions. Par exemple,
 .. raw:: html
 
     <div style="position: relative; padding-bottom: 25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/AWRiUu4q8kg" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
+        <iframe src="https://www.youtube.com/embed/AWRiUu4q8kg" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
 
 **Approximations d’ordres supérieurs**
@@ -279,6 +279,12 @@ Ceci implique que la dérivée de la valeur maximale par rapport à une variable
 
 **Exercice D**: Trouvez la forme de :math:`V'(p)` la
 fonction :math:`V(p) = (10 - p\frac{x^*(p)}{2})x^*(p)` où :math:`x^*(p) = \arg \max_x f(x,p)` et :math:`f(x,p) =(10 - p\frac{x}{2})x`.
+
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/cMS3Gs6-kbM" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
 
 La différentielle totale
 ^^^^^^^^^^^^^^^^^^^^^^^^
