@@ -147,9 +147,8 @@ La librairie SymPy permet de prendre la dérivée de fonctions. Par exemple,
 .. raw:: html
 
     <div style="position: relative; padding-bottom: 25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/twgmlJWvqT8" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
+        <iframe src="https://www.youtube.com/embed/twgmlJWvqT8" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
-
 
 **Exercice B**: Faire une approximation de premier ordre pour :
 :math:`f(x)=\sqrt{x}` sur papier et ensuite en utilisant SymPy. 
@@ -157,7 +156,7 @@ La librairie SymPy permet de prendre la dérivée de fonctions. Par exemple,
 .. raw:: html
 
     <div style="position: relative; padding-bottom: 25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/twgmlJWvqT8" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
+        <iframe src="https://www.youtube.com/embed/AWRiUu4q8kg" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
     </div>
 
 **Approximations d’ordres supérieurs**
@@ -230,6 +229,15 @@ Pour un maximum (local), il faut que :math:`f'(x_0)=0` (condition de premier ord
 On peut trouver le maximum (minimum) d'une fonction en Python numériquement ou avec SymPy. 
 
 **Exercice C**: Trouvez l'optimum de la fonction :math:`f(x) = x(10-x)` sur papier et en utilisant SymPy.
+
+
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/cMS3Gs6-kbM" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+
 
 Dérivée partielle
 ^^^^^^^^^^^^^^^^^
