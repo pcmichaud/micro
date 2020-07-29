@@ -82,3 +82,11 @@ Accedez à ce notebook d'introduction vous permettra de vous familiariser avec P
 
 .. |ImageLink| image:: https://colab.research.google.com/assets/colab-badge.svg
 .. _ImageLink: https://colab.research.google.com/github/pcmichaud/micro/blob/master/notebooks/DebutPython.ipynb
+
+Pour chaque notebook, une vidéo commentée est disponible. Dans le cas de ce notebook d'introduction, nous vous conseillons de le regarder en même temps que vous explorez pour la première fois. 
+
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/watch?v=UNeVEIUdboY" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
