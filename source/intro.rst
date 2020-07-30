@@ -451,7 +451,7 @@ Par le théorème de l’enveloppe, si
 alors :math:`V'(m) = \lambda`. La valeur maximale augmente de :math:`\lambda` quand on augmente (marginalement) :math:`m` (quand on relâche la contrainte).
 
 **Exercice I**: Démontrez dans le problème précédent (H) qu’une augmentation
-marginale de :math:`m` a pour effet d'augmenter le maximum de :math:`\lambda`. Pour ce faire résoudre les CPO du lagrangien pour :math:`x,y,\lambda`, remplacer ces expressions dans:math:`f(x,y)` et prendre la dérivée par rapport à  :math:`m`. Montrer que cette dérivée est égale à la valeur de :math:`\lambda`. 
+marginale de :math:`m` a pour effet d'augmenter le maximum de :math:`\lambda`. Pour ce faire résoudre les CPO du lagrangien pour :math:`x,y,\lambda`, remplacer ces expressions dans :math:`f(x,y)` et prendre la dérivée par rapport à  :math:`m`. Montrer que cette dérivée est égale à la valeur de :math:`\lambda`. 
 
 .. raw:: html
 
