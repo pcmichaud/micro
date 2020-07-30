@@ -283,8 +283,9 @@ fonction :math:`V(p) = (10 - p\frac{x^*(p)}{2})x^*(p)` où :math:`x^*(p) = \arg 
 .. raw:: html
 
     <div style="position: relative; padding-bottom: 25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/cMS3Gs6-kbM" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        <iframe src="https://www.youtube.com/embed/4F663J3yNyE" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
+
 
 La différentielle totale
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -312,6 +313,13 @@ On qualifie la dérivée par le :math:`df=0` pour indiquer que c'est une dériv�
 **Exercice E**: Trouvez :math:`\frac{dy}{dx}\Bigr|_{df=0}` par
 différentielle totale pour :math:`f(x,y)=\log(xy)`. Faire sur papier et par SymPy. 
 
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/cQ5U5hFl6Qo" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+
 Homogénéité d'une fonction
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -333,6 +341,13 @@ vrai:
 
 **Exercice F**: Trouvez le degré d’homogénéité de la fonction
 :math:`f(x,y)=x^\alpha y^\beta` des deux façons.
+
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/V3cSniJhhuU" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
 
 Approximation et maximum
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -381,6 +396,13 @@ résoudre pour :math:`x^*` et utiliser :math:`y=q(x)` pour trouver
 **Exercice G**: Maximisez la fonction :math:`f(x,y) = \log x + \log y`
 sous la contrainte :math:`x+y \le m`.
 
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/o_YgiZvNmx8" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+
 .. _lagragian:
 
 **Le Lagrangien**
@@ -409,6 +431,13 @@ Le Lagrangien :math:`L(x,y,\lambda)` est une fonction objective modifiée qui pe
 **Exercice H**: Maximisez la fonction :math:`f(x,y) = \log x + \log y`
 sous la contrainte :math:`x+y \le m` par la méthode du Lagrangien.
 
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/UxbZ9rwdHDg" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+
 **L’interprétation du multiplicateur**
 
 Il n'est pas nécessaire de résoudre pour la valeur de :math:`\lambda` afin de trouver les
@@ -423,6 +452,12 @@ alors :math:`V'(m) = \lambda`. La valeur maximale augmente de :math:`\lambda` qu
 
 **Exercice I**: Démontrez dans le problème précédent (H) qu’une augmentation
 marginale de :math:`m` a pour effet d'augmenter le maximum de :math:`\lambda`. Pour ce faire résoudre les CPO du lagrangien pour :math:`x,y,\lambda`, remplacer ces expressions dans:math:`f(x,y)` et prendre la dérivée par rapport à  :math:`m`. Montrer que cette dérivée est égale à la valeur de :math:`\lambda`. 
+
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/jewTrwjTksU" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
 
 Notebook Python
 +++++++++++++++
