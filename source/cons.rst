@@ -311,6 +311,13 @@ On peut faire ce travail par SymPy:
 *Exercice D*: Trouvez les demandes pour :math:`u(x,y) = XY` sous la
 contrainte :math:`p_X X + p_Y Y \le I`.
 
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/gKWqAtD9ttw" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
+    </div>
+
+
 On peut poser le lagrangien:
 
 .. math::
