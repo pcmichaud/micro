@@ -343,6 +343,12 @@ En prenant le ratio des deux premières CPO, on a:
 *Exercice E*: Trouvez les demandes pour :math:`u(X,Y) = XY` comme
 précédement mais par le lagrangien.
 
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/cbpdV7mBVaQ" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
+    </div>
+
 Les demandes :math:`X^*(p_X,p_Y,I)` et :math:`Y^*(p_X,p_Y,I)` sont appelées demandes marshalliennes (`Alfred Marshall <https://fr.wikipedia.org/wiki/Alfred_Marshall>`_). Nous étudierons leurs propriétés dans le prochain cours. Elles seront très utiles pour étudier le comportement et les politiques publiques (e.g. taxation). Ces demandes sont observables, contrairement à l'utilité. On apprendra sur l'utilité par ces demandes.    
 
 Utilité Indirecte
@@ -357,6 +363,12 @@ atteint avec les prix :math:`(p_X,p_Y)` et le revenu :math:`I`,
 :math:`\frac{\partial V}{\partial I} = \lambda` où :math:`V` est l’utilité
 indirecte.
 
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/YSyHk5wacoc" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
+    </div>
+
 Identité de Roy
 +++++++++++++++
 
@@ -367,6 +379,14 @@ retrouver les demandes par l’identité de Roy:
 
 *Exercice G*: Montrez que ceci est vrai en utilisant le théorème de
 l’enveloppe.
+
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/KX0-XtNgH6g" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
+    </div>
+
+
 
 Exemple Consommateur
 ++++++++++++++++++++
