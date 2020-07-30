@@ -3,7 +3,7 @@
 Consommateur
 ------------
 
-Les fondements de la microéconomie commencent par le comportement du consommateur. On veut prédire ce que ferait un consommateur dans une situation donnée. On veut faire du sens des comportements observés. La théorie paraîtra simpliste, mais de ces fondements, on sera capable d'assez bien prédire le comportement économique des consommateurs. Des raffinements existent, certains ont même révisé ces fondements pour y introduire une approche comportementale où les individus ont des biais, répondent aux émotions, à des limites cognitives, etc. 
+Les fondements de la microéconomie débutent avec le comportement du consommateur. On veut prédire ce que ferait un consommateur dans une situation donnée. On veut faire du sens des comportements observés. La théorie paraîtra simpliste, mais de ces fondements, on sera capable d'assez bien prédire le comportement économique des consommateurs. Des raffinements existent, certains ont même révisé ces fondements pour y introduire une approche comportementale où les individus ont des biais, répondent aux émotions, à des limites cognitives, etc. 
 
 Préférences
 +++++++++++
@@ -21,7 +21,7 @@ Préférences
 -  Les relations de préférences sont dénotées par
    :math:`\succ,\succeq,\sim`.
 
-** Hypothèses importantes sur les préférences **
+**Hypothèses importantes sur les préférences**
 
 Ces hypothèses ou axiomes sont nécessaires pour en arriver à une théorie du comportement. On note les plus importantes: 
 
@@ -89,7 +89,7 @@ Les courbes d’indifférence ne se croisent pas si elle respectve la transitivi
 *Exercice A*: Montrez que des courbes d’indifférence qui se croisent
 ne respectent pas la transitivité.
 
-** Taux marginal de substitution (TMS) **
+**Taux marginal de substitution (TMS)**
 
 Ces courbes d'indifférences contienent plus d'information qu'on croit ...
 
@@ -103,7 +103,7 @@ Ces courbes d'indifférences contienent plus d'information qu'on croit ...
 -  Correspond à la pente de la courbe d’indifférence à
    :math:`(X_0,Y_0)`.
 
-** Convexité des courbes d’indifférences **
+**Convexité des courbes d’indifférences**
 
 -  Si la quantité de nourriture (:math:`X`) augmente, comment le TMS de
    :math:`X` en fonction de :math:`Y` change?
@@ -170,7 +170,7 @@ Exemple:
 
 -  :math:`U(X,Y) = \ln X + \ln Y`
 
-   .. math:: TMS = \frac{\partial U}{\partial X}/ \frac{\partial U}{\partial Y} = -Y/X
+   .. math:: TMS = -\frac{\partial U}{\partial X}/ \frac{\partial U}{\partial Y} = -Y/X
 
 Prenons la différentielle totale:
 
@@ -218,7 +218,7 @@ Acheter une unité de :math:`X` implique un sacrifice de :math:`\frac{p_X}{p_Y}`
 
 Dans l'espace :math:`(X,Y)`, la contrainte définie les allocations possibles. Celles au dessus ne sont pas possibles. Seules celles entre l'origine est la contrainte sont possibles...
 
-** Normalisation **
+**Normalisation**
 
 -  Contrainte budgétaire demeure la même si prix et richesse multipliés par même
    constante :math:`\lambda`.
@@ -331,7 +331,8 @@ atteint avec les prix :math:`(p_X,p_Y)` et le revenu :math:`I`,
 :math:`\frac{\partial V}{\partial I} = \lambda` où :math:`V` est l’utilité
 indirecte.
 
-**Identité de Roy**
+Identité de Roy
++++++++++++++++
 
 Si l’utilité indirecte est donnée par :math:`V(p_X,p_Y,I)` alors on peut
 retrouver les demandes par l’identité de Roy:
