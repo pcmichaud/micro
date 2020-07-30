@@ -25,7 +25,7 @@ Préférences
 
 Ces hypothèses ou axiomes sont nécessaires pour en arriver à une théorie du comportement. On note les plus importantes: 
 
-**Exhaustive** 
+*Exhaustive*
 
 Pour tous paniers A et B soit le consommateur:
 
@@ -44,7 +44,7 @@ Est-ce restrictif?
 -  Les paniers sont alors (crème glacée, chaleur), (crème glacée,
    froid), (soupe, chaleur), (soupe, froid). La relation de préférence est alors stable et exhaustive.
 
-**Transitivité**
+*Transitivité*
 
 Une question de cohérence...
 
@@ -52,9 +52,9 @@ Une question de cohérence...
    :math:`B \succ C`, alors le consommateur préfère A à C
    (:math:`A \succ C`).
 
-Cette hypothèse est loin d'être évidente en pratique. 
+Cette hypothèse n'est pas toujours vérifiée... Surtout en présence d'incertitude. 
 
-**Non-satiation**
+*Non-satiation*
 
 -  Si A contient au moins autant que le panier B, strictement plus d’au
    moins un bien dans le panier, alors :math:`A \succ B`.
@@ -89,6 +89,13 @@ Les courbes d’indifférence ne se croisent pas si elle respectve la transitivi
 *Exercice A*: Montrez que des courbes d’indifférence qui se croisent
 ne respectent pas la transitivité.
 
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/P44fP8dFZxM" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
+    </div>
+
+
 **Taux marginal de substitution (TMS)**
 
 Ces courbes d'indifférences contienent plus d'information qu'on croit ...
@@ -114,7 +121,7 @@ Il diminue généralement. Ceci est représenté par des courbes d’indifféren
 Utilité
 +++++++
 
-Les courbes d'indifférence nous permettent de passer vers une représentation des préférences par une fonction. Sur la courbe d'indifférence, chacun des paniers procure le même bien-être. Nous pouvons lui attribuer une valeur ou utilité (arbitraire). En sautant d'une courbe d'indifférence à une autre (plus élevée), on augmente l'utilité. Donc, il existe une fonction :math:`U(X,Y)` qui représente ces préférences. La valeur de cette fonction est donc ordinale (elle permet de classer les paniers en ordre de préférence). Ce n'est que l'ordre qui compte. 
+Les courbes d'indifférence nous permettent de passer vers une représentation des préférences par une fonction. Sur la courbe d'indifférence, chacun des paniers procure le même bien-être. Nous pouvons lui attribuer une valeur ou utilité (arbitraire). En sautant d'une courbe d'indifférence à une autre (plus élevée), on augmente l'utilité. Donc, on peut construire une fonction :math:`U(X,Y)` qui représente ces préférences. La valeur de cette fonction est donc ordinale (elle permet de classer les paniers en ordre de préférence). Ce n'est que l'ordre qui compte. 
 
 -  Fonction d’utilité: assigne un nombre à chaque panier
 
@@ -139,7 +146,13 @@ Les préférences sont ordinales (hiérarchiques)
 *Exercice B*: Montrez que :math:`U` et :math:`V` dans l'exemple ont les mêmes
 préférences en trouvant la transformation :math:`V=f(U)`.
 
-Comment trouvez le TMS à partir de l'utilité?
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/wsPBuGGIBLE" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
+    </div>
+
+Comment trouver le TMS à partir de l'utilité?
 
 -  Deux biens, :math:`X`, :math:`Y`. Préférences représentées par la
    fonction d’utilité :math:`U(X,Y)`
