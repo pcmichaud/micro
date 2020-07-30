@@ -233,8 +233,8 @@ On peut trouver le maximum (minimum) d'une fonction en Python numériquement ou 
 
 .. raw:: html
 
-    <div style="position: relative; padding-bottom: 100%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/cMS3Gs6-kbM" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/cMS3Gs6-kbM" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
     </div>
 
 
@@ -282,8 +282,8 @@ fonction :math:`V(p) = (10 - p\frac{x^*(p)}{2})x^*(p)` où :math:`x^*(p) = \arg 
 
 .. raw:: html
 
-    <div style="position: relative; padding-bottom: 25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/4F663J3yNyE" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/4F663J3yNyE" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
     </div>
 
 
@@ -315,8 +315,8 @@ différentielle totale pour :math:`f(x,y)=\log(xy)`. Faire sur papier et par Sym
 
 .. raw:: html
 
-    <div style="position: relative; padding-bottom: 25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/cQ5U5hFl6Qo" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/cQ5U5hFl6Qo" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
     </div>
 
 
@@ -344,8 +344,8 @@ vrai:
 
 .. raw:: html
 
-    <div style="position: relative; padding-bottom: 25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/V3cSniJhhuU" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/V3cSniJhhuU" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
     </div>
 
 
@@ -398,8 +398,8 @@ sous la contrainte :math:`x+y \le m`.
 
 .. raw:: html
 
-    <div style="position: relative; padding-bottom: 25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/o_YgiZvNmx8" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/o_YgiZvNmx8" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
     </div>
 
 
@@ -433,8 +433,8 @@ sous la contrainte :math:`x+y \le m` par la méthode du Lagrangien.
 
 .. raw:: html
 
-    <div style="position: relative; padding-bottom: 25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/UxbZ9rwdHDg" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/UxbZ9rwdHDg" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
     </div>
 
 
@@ -455,8 +455,8 @@ marginale de :math:`m` a pour effet d'augmenter le maximum de :math:`\lambda`. P
 
 .. raw:: html
 
-    <div style="position: relative; padding-bottom: 25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/jewTrwjTksU" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/jewTrwjTksU" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
     </div>
 
 Notebook Python
