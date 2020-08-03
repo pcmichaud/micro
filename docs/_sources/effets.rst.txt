@@ -325,7 +325,7 @@ La théorie qu'on vient de voir indique qu'il faut tenir compte des réactions c
 
 Tout dépendant des préférences, il se peut que l'indice de prix hicksien donne une réponse différente de l'indice de Laysperes. En particulier, si la part d'un bien décroit si son prix augmente, l'indice Hicksien pourrait donner une augmentation du coût de la vie plus faible qu'un indice de type Laysperes. C'est ce qu'on appelle un biais de substitution. 
 
-Avec la pandémie et le confinement, la consommation d'essence a chuté. Le prix de l'essence a aussi chuté (pour pleins de raisons, incluant une décision des cartels). Est-ce qu'un indice de Laysperes donne un bon reflet du changement du pouvoir d'achat dans un tel contexte?
+Avec la pandémie et le confinement, la consommation d'essence a chuté. Le prix de l'essence a aussi chuté (pour pleins de raisons, incluant une décision des cartels). Est-ce qu'un indice de Laysperes donne un bon reflet du changement du pouvoir d'achat dans un tel contexte? Cet `article <https://www.nber.org/papers/w27352>`_ fait le calcul pour les États-Unis et montre que l'inflation est sous-estimée considérablement. 
 
 Biens Giffen
 ++++++++++++
@@ -351,3 +351,13 @@ Pourquoi une entreprise devrait-elle étudier les propriétés de la demande pou
 * discriminant par les prix (segmentation) 
 
 L'analyse économétrique peut être utilisée à partir des données de l'entreprise, ou du marché (scanner data?). 
+
+Exemple Effet prix et revenu
+++++++++++++++++++++++++++++
+
+Voir ce notebook pour un bel exemple qui utilise Python pour calculez la compensation et trouvez les effets prix et revenu avec fonction d'utilité CES (Constant Elasticity of Substitution)
+
+|ImageLink|_
+
+.. |ImageLink| image:: https://colab.research.google.com/assets/colab-badge.svg
+.. _ImageLink: https://colab.research.google.com/github/pcmichaud/micro/blob/master/notebooks/PriceEffectTutorial.ipynb
