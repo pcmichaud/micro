@@ -363,9 +363,10 @@ Maurice Allais and his Paradox
 :math:`L_4 \succ L_3` are incoherent with the expected utility theory.
 
 .. figure:: /images/allais.png
-   :alt: `Munier 1991, Journal of Economic
-   Perspectives <https://pubs.aeaweb.org/doi/pdf/10.1257/jep.5.2.179>`__
 
+
+Voir cet article pour toute l'histoire derrière le Paradoxe... `Munier 1991, Journal of Economic
+   Perspectives <https://pubs.aeaweb.org/doi/pdf/10.1257/jep.5.2.179>`_
 
 Choice
 
