@@ -96,11 +96,10 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#equation-de-slutsky">Équation de Slutsky</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#effets-prix-croises">Effets prix croisés</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#proprietes-des-fonctions-demandes">Propriétés des fonctions demandes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#indices-de-prix-et-de-cout-de-la-vie">Indices de prix et de coût de la vie</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#biens-giffen">Biens Giffen</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="#proprietes-des-fonctions-de-demandes">Propriétés des fonctions de demandes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#indices-de-prix-et-de-cout-de-la-vie">Indices de prix et de coût de la vie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#biens-giffen">Biens Giffen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#les-entreprises-et-l-analyse-de-la-demande">Les entreprises et l’analyse de la demande</a></li>
 </ul>
 </li>
 </ul>
@@ -172,6 +171,7 @@
 <p>Est-ce qu’une taxe sur l’essence réduit la consommation d’essence et encourage le transport en commun?</p>
 <p>Pour le savoir, on doit étudier empiriquement comment la demande d’essence et de transport en commun réagit à une taxe sur l’essence. On veut peut-être aussi comprendre si cette taxe sera régressive (si elle aura un effet important sur le pouvoir d’achat des moins nantis). Si on veut les compenser, il faudra connaître les effets prix et revenu.</p>
 <p>Les élasticités prix et revenu peuvent être estimés sans théorie. Mais comment utiliser ces informations pour répondre aux questions plus normatives?</p>
+<p>La théorie sur le choix du consommateur nous fournira un bon nombre d’outils …</p>
 <div class="section" id="demande-et-preferences">
 <h2>Demande et Préférences<a class="headerlink" href="#demande-et-preferences" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Formalisons cet exemple:</p>
@@ -180,8 +180,9 @@
 <li><p>Utilité <span class="math notranslate nohighlight">\(U(X,Y)\)</span></p></li>
 <li><p>Contrainte Budgétaire: <span class="math notranslate nohighlight">\(p_X Y+ p_Y Y = I\)</span></p></li>
 </ul>
-<p>Pour trouver les fonctions de demande:</p>
-<p>Les fonctions de demande <span class="math notranslate nohighlight">\((X^*, Y^*)\)</span> sont telles que</p>
+<blockquote>
+<div><p>Les fonctions de demande <span class="math notranslate nohighlight">\((X^*, Y^*)\)</span> sont telles que</p>
+</div></blockquote>
 <div class="math notranslate nohighlight">
 \[\begin{split}\frac{dU}{dX}\Bigg/\frac{dU}{dY} = \frac{p_X}{p_Y}  \\
 p_X X + p_Y Y = I\end{split}\]</div>
@@ -202,7 +203,7 @@ réduire <span class="math notranslate nohighlight">\(X\)</span> pour augmenter 
 <h2>Effets revenu<a class="headerlink" href="#effets-revenu" title="Lien permanent vers ce titre">¶</a></h2>
 <p><strong>Courbe d’Engel</strong></p>
 <ul class="simple">
-<li><p>Le consommateur demande <span class="math notranslate nohighlight">\(X(p_X,p_Y,I)\)</span>, <span class="math notranslate nohighlight">\(Y(p_X,p_Y,I)\)</span>.</p></li>
+<li><p>Le consommateur demande <span class="math notranslate nohighlight">\(X(p_X,p_Y,I)\)</span> et <span class="math notranslate nohighlight">\(Y(p_X,p_Y,I)\)</span>.</p></li>
 <li><p>La courbe d’Engel pour <span class="math notranslate nohighlight">\(X\)</span>: Comment <span class="math notranslate nohighlight">\(X^*\)</span> change quand
 <span class="math notranslate nohighlight">\(I\)</span> change?</p></li>
 <li><p>Proportion du budget dédiée à <span class="math notranslate nohighlight">\(X\)</span>:
@@ -217,7 +218,7 @@ réduire <span class="math notranslate nohighlight">\(X\)</span> pour augmenter 
 <p>Pour quantifier les effets revenu, on voudra utiliser une élasticité revenu de la forme:</p>
 <div class="math notranslate nohighlight">
 \[\eta_{X,I} = \frac{\partial X}{\partial I}\frac{I}{X}\]</div>
-<p>En pratique, il n’est pas facile d’observer ces élasticités-revenu en s’assurant que le changement de revenu est <em>exogène</em>.</p>
+<p>En pratique, il n’est pas facile d’observer ces élasticités-revenu en s’assurant que le changement de revenu est <em>exogène</em>. Quel type d’évennement pourrait-on exploiter?</p>
 </div>
 <div class="section" id="effets-prix">
 <h2>Effets Prix<a class="headerlink" href="#effets-prix" title="Lien permanent vers ce titre">¶</a></h2>
@@ -226,19 +227,18 @@ réduire <span class="math notranslate nohighlight">\(X\)</span> pour augmenter 
 <p>Pour décrire les changements de demande, on utilise l’élasticité:</p>
 <div class="math notranslate nohighlight">
 \[\eta_{X,p} = \frac{\partial X}{\partial p_X}\frac{p_X}{X}\]</div>
-<p>Ell est invariante aux unités monétaires. Encore une fois, un enjeu important c’est d’estimer cette élasticité dans un contexte où le changement de prix est <em>exogène</em>.</p>
+<p>Ell est invariante aux unités monétaires. Encore une fois, un enjeu important c’est d’estimer cette élasticité dans un contexte où le changement de prix est <em>exogène</em>. Heureusement, il y a les taxes qui changent parfois pour des raisons indépendantes de la demande… Sinon, des chocs d’offre (manipulation du prix d’un cartel, désastre naturel).</p>
 <p>Au Danemark, une <a class="reference external" href="https://www.sciencedirect.com/science/article/abs/pii/S0094119018300779">étude</a> montre que l’elasticité varie considérablement à travers le pays et en particulier dépendant de la distance qu’ont les gens à faire chaque jours.</p>
 <a class="reference internal image-reference" href="_images/elasticity_denmark.png"><img alt="_images/elasticity_denmark.png" src="_images/elasticity_denmark.png" style="width: 544.7px; height: 435.5px;" /></a>
-<p>Au États-Unis, une autre <a class="reference external" href="https://www.aeaweb.org/articles?id=10.1257/pol.6.4.302">analyse</a> montre qu’il faut faire la distinction entre l’effet d’un changement de prix et une taxe. L’effet d’une taxe est plus important? Pourquoi? Quelles implications pour les revenus de taxes?</p>
+<p>Au États-Unis, une autre <a class="reference external" href="https://www.aeaweb.org/articles?id=10.1257/pol.6.4.302">analyse</a> montre qu’il faut faire la distinction entre l’effet d’un changement de prix et une taxe. L’effet d’une taxe est plus important? Pourquoi? Quelles implications pour les revenus de taxes? Indice: regarder l’effet de l’élasticité sur les revenus de la taxe.</p>
 <a class="reference internal image-reference" href="_images/elasticity_tax_price.png"><img alt="_images/elasticity_tax_price.png" src="_images/elasticity_tax_price.png" style="width: 678.6px; height: 639.0px;" /></a>
-<p>Pour aller plus loin, et en particulier, calculer la compensation possible suite à une taxe, il
-faut décomposer le changement de demande pour l’essence quand le prix <span class="math notranslate nohighlight">\(p_X\)</span> augmente. Il y a deux forces:</p>
+<p>Une hausse de prix (ou taxe) a l’effet direct de réduire le bien-être du consommateur. On pourrait vouloir compenser certains ménages parce que la taxe poursuit un objectif noble (e.g. climat, redistribution). Afin de calculer la compensation possible suite à une taxe, il faut décomposer le changement de demande pour l’essence quand le prix <span class="math notranslate nohighlight">\(p_X\)</span> augmente. Il y a deux forces:</p>
 <ul>
-<li><p>Le transport en commun est plus abordable que l’automobile (essence): voudra substituer vers le transport en commun. C’est un effet <strong>substitution</strong> qui provient du <em>signal de prix</em>.</p>
+<li><p>Le transport en commun est plus abordable que l’automobile (essence): le consommateur voudra substituer vers le transport en commun. C’est un effet <em>substitution</em> qui provient du <em>signal de prix</em>.</p>
 <div class="math notranslate nohighlight">
 \[\frac{U'_X(X,Y)}{U'_Y(X,Y)} = \frac{p_X}{p_Y}\]</div>
 </li>
-<li><p>Besoin de plus de revenu pour acheter le même panier de référence (réduction pouvoir d’achat): <strong>effet revenu</strong>. Les <a class="reference external" href="https://www.rtl.fr/actu/conso/pouvoir-d-achat-une-etude-de-l-insee-explique-la-colere-des-gilets-jaunes-7797202617">gilets jaunes</a> ont certainement perçu cet effet.</p></li>
+<li><p>Besoin de plus de revenu pour acheter le même panier de référence (réduction pouvoir d’achat): <em>effet revenu</em>. Les <a class="reference external" href="https://www.rtl.fr/actu/conso/pouvoir-d-achat-une-etude-de-l-insee-explique-la-colere-des-gilets-jaunes-7797202617">gilets jaunes</a> ont certainement perçu cet effet.</p></li>
 </ul>
 <p>Notre <strong>objectif:</strong> Identifier les effets prix et revenus</p>
 <div class="section" id="demande-compensee">
@@ -257,15 +257,17 @@ faut décomposer le changement de demande pour l’essence quand le prix <span c
 <div><div class="math notranslate nohighlight">
 \[V(p_X,p_Y, I) = V(\hat p_X, p_Y,  I^{cmp})\]</div>
 </div></blockquote>
-<p>La demande compensé (ou <a class="reference external" href="https://fr.wikipedia.org/wiki/John_Hicks">hicksienne</a>) est donné par la demande marshallienne ou l’on remplace le revenu par le revenu compensé <span class="math notranslate nohighlight">\(X^{cmp}= X(\hat p_X, p_Y,  I^{cmp})\)</span>.</p>
-<p>La revenu compensé pour une hausse de prix est toujours plus élevé que le revenu de référence. La différence est la compensation requise. Si la hausse de prix est une nouvelle taxe, cette compensation est la compensation requise pour maintenir le bien-être du consommateur constant tout en ayant modifié les comportements.</p>
-<p><strong>Loi de la demande compensée</strong> Si <span class="math notranslate nohighlight">\(\hat p_X &gt; p_X\)</span>, alors <span class="math notranslate nohighlight">\(X^{cmp}&lt;X(p_X,p_Y,I)\)</span>. La demande compensée <span class="math notranslate nohighlight">\(X\)</span> est décroissante dans le prix <span class="math notranslate nohighlight">\(p_X\)</span>.</p>
-<p><strong>Exercise A</strong>: Calculez le revenu et la demande compensée pour
+<p>La demande compensée (ou <a class="reference external" href="https://fr.wikipedia.org/wiki/John_Hicks">hicksienne</a>) est donnée par la demande marshallienne où l’on remplace le revenu par le revenu compensé <span class="math notranslate nohighlight">\(X^{cmp}= X(\hat p_X, p_Y,  I^{cmp})\)</span>.</p>
+<p>Le revenu compensé pour une hausse de prix est toujours plus élevé que le revenu de référence. La différence est la compensation requise. Si la hausse de prix est une nouvelle taxe, cette compensation est la compensation requise pour maintenir le bien-être du consommateur constant tout en ayant modifié les comportements.</p>
+<p><strong>Loi de la demande compensée</strong> Si <span class="math notranslate nohighlight">\(\hat p_X &gt; p_X\)</span>, alors <span class="math notranslate nohighlight">\(X^{cmp}(p_X,p_Y,I)&lt;X(p_X,p_Y,I)\)</span>. La demande compensée <span class="math notranslate nohighlight">\(X\)</span> est décroissante dans le prix <span class="math notranslate nohighlight">\(p_X\)</span>.</p>
+<p><strong>Exercice A</strong>: Calculez le revenu et la demande compensée pour
 <span class="math notranslate nohighlight">\(X\)</span> si <span class="math notranslate nohighlight">\(U(X,Y) = XY\)</span> et <span class="math notranslate nohighlight">\(p_XX+p_YY \le I\)</span> pour un changement de prix <span class="math notranslate nohighlight">\(\hat p_X &gt; p_X\)</span>.</p>
-<p>Précisons maintenant davantage les effets substitutions et revenu.</p>
+<div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+    <iframe src="https://www.youtube.com/embed/0dfoolULChE" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
+</div><p>Précisons maintenant davantage les effets substitutions et revenu.</p>
 <p><strong>Effet substitution</strong></p>
 <p>Changement de demnde causé par un changement de prix relatif, en gardant l’utilité constante.</p>
-<p>Effet substitution <span class="math notranslate nohighlight">\(=\)</span> Demande compensé - Demande de référence</p>
+<p>Effet substitution <span class="math notranslate nohighlight">\(=\)</span> Demande compensée - Demande de référence</p>
 <blockquote>
 <div><div class="math notranslate nohighlight">
 \[\Delta X^{{cmp}} =  X(\hat p_X,p_Y,I^{cmp}) - X(p_X,p_Y,I)\]</div>
@@ -277,15 +279,15 @@ faut décomposer le changement de demande pour l’essence quand le prix <span c
 </ul>
 <div class="math notranslate nohighlight">
 \[\Delta X^{I} = X(\hat p_X,p_Y,I) - X(\hat p_X,p_Y,I^{cmp})\]</div>
-<p>On peut approximer le revenu compensé pour un petit changement de prix:</p>
+<p>On peut approximer le revenu compensé pour un petit changement de prix paramétrisé</p>
 <blockquote>
 <div><p><span class="math notranslate nohighlight">\(\hat p_X = p_X + \Delta p_X\)</span>.</p>
 </div></blockquote>
-<p>Pour nettoyer la notation et y voir clair:</p>
+<p>Pour nettoyer la notation et y voir clair, dénotons</p>
 <blockquote>
 <div><p><span class="math notranslate nohighlight">\(X^* = X(p_X,p_X,I)\)</span>, <span class="math notranslate nohighlight">\(Y^* = Y(p_X,p_Y,I)\)</span></p>
 </div></blockquote>
-<p>Définissons <span class="math notranslate nohighlight">\(I^{cmp}= I + \Delta I^{cmp}\)</span>,
+<p>Définissons ensuite <span class="math notranslate nohighlight">\(I^{cmp}= I + \Delta I^{cmp}\)</span>,
 <span class="math notranslate nohighlight">\(X^{cmp}= X^* + \Delta X^{cmp}\)</span> et
 <span class="math notranslate nohighlight">\(Y^{cmp}= Y^* + \Delta Y^{cmp}\)</span>.</p>
 <p>Alors,</p>
@@ -306,11 +308,13 @@ I^{cmp}&amp; =  \hat p_X X^{cmp}+  p_Y Y^{cmp}\\
 <ol class="arabic simple">
 <li><p>Alors, <span class="math notranslate nohighlight">\(p_X \Delta X^{cmp}+ p_Y \Delta Y^{cmp}= 0\)</span>.</p></li>
 </ol>
-<p><strong>Exercise B</strong>: Voir si cette approximation est bonne pour
+<p><strong>Exercice B</strong>: Voir si cette approximation est bonne pour
 <span class="math notranslate nohighlight">\(U(X,Y) = XY\)</span> avec prix et revenu de référence
 <span class="math notranslate nohighlight">\((p_X,p_Y,I) = (1,1,100)\)</span> et <span class="math notranslate nohighlight">\(\Delta p_X = 1\)</span> dans un premier temps et
 <span class="math notranslate nohighlight">\(\Delta p_X = 0.1\)</span> dans un 2e temps.</p>
-</div>
+<div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+    <iframe src="https://www.youtube.com/embed/Ovjh0AhL6mY" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
+</div></div>
 </div>
 <div class="section" id="equation-de-slutsky">
 <h2>Équation de Slutsky<a class="headerlink" href="#equation-de-slutsky" title="Lien permanent vers ce titre">¶</a></h2>
@@ -322,9 +326,11 @@ I^{cmp}&amp; =  \hat p_X X^{cmp}+  p_Y Y^{cmp}\\
 <p>On obtient</p>
 <div class="math notranslate nohighlight">
 \[\begin{aligned}
-\underbrace{\Delta X^*}_{\text{Total effect}} = \underbrace{\Delta X^{cmp}}_{\text{Effet substitution}} + \underbrace{\Delta X^I}_{\text{Effet prix}}\end{aligned}\]</div>
-<p><strong>Exercise D</strong>: Trouvez les effets revenu et prix de l’exercice C.</p>
-<p>Puisque</p>
+\underbrace{\Delta X^*}_{\text{Effet total}} = \underbrace{\Delta X^{cmp}}_{\text{Effet substitution}} + \underbrace{\Delta X^I}_{\text{Effet prix}}\end{aligned}\]</div>
+<p><strong>Exercice C</strong>: Trouvez les effets revenu et prix de l’exercice B (<span class="math notranslate nohighlight">\(\Delta p_X = 1\)</span>).</p>
+<div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+    <iframe src="https://www.youtube.com/embed/04cuRQMZi5c" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
+</div><p>Puisque</p>
 <div class="math notranslate nohighlight">
 \[ \begin{align}\begin{aligned}\Delta X^I =   -\frac{\partial X}{\partial I} \Delta I^{cmp}=  -\frac{\partial X}{\partial I}  \Delta p_X X^*\\alors,\end{aligned}\end{align} \]</div>
 <div class="math notranslate nohighlight">
@@ -337,7 +343,10 @@ I^{cmp}&amp; =  \hat p_X X^{cmp}+  p_Y Y^{cmp}\\
 <p>L’équation de Slutsky est donc:</p>
 <div class="math notranslate nohighlight">
 \[\eta_{X,p} = \eta^{cmp}_{X,p}  - \eta_{X,I} \cdot s_X\]</div>
-</div>
+<p><strong>Exercice D</strong>: Pour les préférences Cobb-Douglas <span class="math notranslate nohighlight">\(U(X,Y) = X^\alpha Y^{1-\alpha}\)</span>, calculez l’élasticité prix compensée à l’aide de l’équation de Slutsky.</p>
+<div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+    <iframe src="https://www.youtube.com/embed/si2THh8yqRI" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
+</div></div>
 <div class="section" id="effets-prix-croises">
 <h2>Effets prix croisés<a class="headerlink" href="#effets-prix-croises" title="Lien permanent vers ce titre">¶</a></h2>
 <p>D’abord, on peut inférer la nature des biens par les fonctions de demande. Les biens <span class="math notranslate nohighlight">\(X\)</span> et <span class="math notranslate nohighlight">\(Y\)</span> sont:</p>
@@ -347,12 +356,12 @@ I^{cmp}&amp; =  \hat p_X X^{cmp}+  p_Y Y^{cmp}\\
 <li><p>Compléments: si l’effet prix croisé
 <span class="math notranslate nohighlight">\(\frac{\partial X^{cmp}}{\partial p_Y} &lt;0\)</span></p></li>
 </ul>
-<p>Qu’en est-il pour le transport en commun et les taxes sur l’essence?</p>
+<p>Qu’en est-il pour le transport en commun et les taxes sur l’essence? Cette élasticité est-elle importante pour la politique publique?</p>
 </div>
-<div class="section" id="proprietes-des-fonctions-demandes">
-<h2>Propriétés des fonctions demandes<a class="headerlink" href="#proprietes-des-fonctions-demandes" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="proprietes-des-fonctions-de-demandes">
+<h2>Propriétés des fonctions de demandes<a class="headerlink" href="#proprietes-des-fonctions-de-demandes" title="Lien permanent vers ce titre">¶</a></h2>
 <ul>
-<li><p>Homogénéité de degré zéro</p>
+<li><p>Homogénéité de degré zéro (pas d’illusion monétaire)</p>
 <div class="math notranslate nohighlight">
 \[X(\lambda p_X,\lambda p_Y,\lambda I) = X(p_X,p_Y,I)\]</div>
 </li>
@@ -372,51 +381,38 @@ I^{cmp}&amp; =  \hat p_X X^{cmp}+  p_Y Y^{cmp}\\
 </div>
 <div class="section" id="indices-de-prix-et-de-cout-de-la-vie">
 <h2>Indices de prix et de coût de la vie<a class="headerlink" href="#indices-de-prix-et-de-cout-de-la-vie" title="Lien permanent vers ce titre">¶</a></h2>
-<p>To measure changes in costs of living, we often use consumption price
-indices. A very common one is the Laspeyres index:</p>
+<p>Pour mesurer un changement du coût de la vie (pouvoir d’achat), on utilise des indices de prix à la consommation. Un indice souvent utilisé est l’indice de Laspeyres:</p>
 <div class="math notranslate nohighlight">
-\[\pi_L = \frac{\hat p_X X + \hat p_Y Y}{p_X X + p_Y Y}\]</div>
-<ul class="simple">
-<li><p>The Quebec Pension Plan (QPP) and private pension plans are often
-indexed using this kind of index.</p></li>
-<li><p>Is this a good index to capture an increase in the cost of living?</p></li>
-</ul>
-<p>The Ideal Price Index. Need account for behavioral changes. Therefore, a price increases
-implies substitution.</p>
+\[\pi_L = \frac{\hat p_X  X + \hat p_Y Y}{p_X X + p_Y Y}\]</div>
+<p>Ainsi X et Y, consommé dans la situation de référence, sont aussi utilisées après le changement de prix. L’indice des prix à la consommation garde les quantités (part des dépenses) fixes dans le court terme (les changent mais pas très fréquemment). Plusieurs prestations gouvernementales sont indexées annuellement de la sorte afin de maintenir le pouvoir d’achat (pensions, crédit d’impôt, etc). Mais est-ce un bon indice pour mesurer une variation du coût de la vie?</p>
+<p>La théorie qu’on vient de voir indique qu’il faut tenir compte des réactions comportementales. Si le prix d’un bien augmente, il y aura substitution. Pour bien mesurer la consommation, on revient à la théorie:</p>
 <ul>
-<li><p>Following a price increase for the good <span class="math notranslate nohighlight">\(X\)</span>, the necessary
-compensation to keep welfare constant is</p>
+<li><p>Après une augmentation de prix du bien <span class="math notranslate nohighlight">\(X\)</span>, la compensation nécessaire pour garder le bien-être constant est:</p>
 <div class="math notranslate nohighlight">
 \[\pi_I =  \frac{I^{cmp}}{I}\]</div>
-<p>.</p>
-</li>
-<li><p>In a Cobb-Douglas situation <span class="math notranslate nohighlight">\(u(X,Y)=X^{\alpha}Y^{1-\alpha}\)</span>:</p>
-<div class="math notranslate nohighlight">
-\[\pi_I = \frac{I^{cmp}}{I} = \left(\frac{\hat p_X}{p_X}\right)^\alpha\]</div>
 </li>
 </ul>
-<div class="section" id="biens-giffen">
-<h3>Biens Giffen<a class="headerlink" href="#biens-giffen" title="Lien permanent vers ce titre">¶</a></h3>
-<p>Giffen Goods <strong>Direction of income and price effects</strong></p>
-<ul class="simple">
-<li><p>When indifference curves are convex, the compensated demand for
-<span class="math notranslate nohighlight">\(X\)</span> decreases as <span class="math notranslate nohighlight">\(p_X\)</span> increases</p></li>
-<li><p>Income effects depend on whether the good is normal or inferior at
-reference income and prices.</p></li>
-<li><p>If normal good, price increase causes a negative income effect (same
-direction as price effect)</p></li>
-<li><p>If inferior good, price increase causes a positive income effect
-(opposite direction)</p></li>
-</ul>
-<p><strong>Giffen Goods</strong></p>
-<ul class="simple">
-<li><p>If the income effect is larger than the substitution effect, as the
-price <span class="math notranslate nohighlight">\(p_X\)</span> increases, the demand for <span class="math notranslate nohighlight">\(X\)</span> increases.</p></li>
-<li><p>Classic example : Potatoes in Ireland (circa 1850, according to
-legend).</p></li>
-</ul>
-<p>Chinese Rice Subsidy</p>
+<p>Tout dépendant des préférences, il se peut que l’indice de prix hicksien donne une réponse différente de l’indice de Laysperes. En particulier, si la part d’un bien décroit si son prix augmente, l’indice Hicksien pourrait donner une augmentation du coût de la vie plus faible qu’un indice de type Laysperes. C’est ce qu’on appelle un biais de substitution.</p>
+<p>Avec la pandémie et le confinement, la consommation d’essence a chuté. Le prix de l’essence a aussi chuté (pour pleins de raisons, incluant une décision des cartels). Est-ce qu’un indice de Laysperes donne un bon reflet du changement du pouvoir d’achat dans un tel contexte?</p>
 </div>
+<div class="section" id="biens-giffen">
+<h2>Biens Giffen<a class="headerlink" href="#biens-giffen" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Il existe un type de bien pour lequel la demande augmente avec le prix! On peut comprendre ce type de bien avec l’équation de Slutsky:</p>
+<div class="math notranslate nohighlight">
+\[\eta_{X,p} = \eta^{cmp}_{X,p}  - \eta_{X,I} \cdot s_X.\]</div>
+<p>Le premier terme à droite est toujours négatif. C’est le résultat de la loi de la demande compensée. Il faut donc que le 2e terme soit négatif (puisqu’il est soustrait du premier terme).</p>
+<p>On en déduit qu’une condition nécessaire est que le bien soit inférieur (demande diminue quand revenu augmente) et que le bien consitue une part importante du budget pour que ce deuxième terme soit suffisament élevé.</p>
+<p>Ainsi, il est possible que <span class="math notranslate nohighlight">\(\eta_{X,p}&gt;0\)</span>. Mais est-ce que ce cas spécial existe?</p>
+<p>L’exemple classique donné est le cas des pommes de terre en Irlande, même si des doutes existent sur cet exemple (voir ce résumé de l’histoire derrière les biens Giffen <a class="reference external" href="https://en.wikipedia.org/wiki/Giffen_good">wikipedia</a>). Un meilleur exemple est donné par l’analyse d’un programme implanté en Chine qui donnait une subvention pour la consommation de riz (<a class="reference external" href="https://www.aeaweb.org/articles?id=10.1257/aer.98.4.1553">Jensen et Miller (2008)</a>). La subvention (baisse de prix) a mené à une diminution de la consommation de riz. Les auteurs ne trouvent pas la même chose pour le blé…</p>
+</div>
+<div class="section" id="les-entreprises-et-l-analyse-de-la-demande">
+<h2>Les entreprises et l’analyse de la demande<a class="headerlink" href="#les-entreprises-et-l-analyse-de-la-demande" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Pourquoi une entreprise devrait-elle étudier les propriétés de la demande pour ses biens? Elle peut potentiellement augmenter ses revenus en:</p>
+<ul class="simple">
+<li><p>fixant un prix qui maximise ses revenus si elle a un pouvoir de marché</p></li>
+<li><p>discriminant par les prix (segmentation)</p></li>
+</ul>
+<p>L’analyse économétrique peut être utilisée à partir des données de l’entreprise, ou du marché (scanner data?).</p>
 </div>
 </div>
 
