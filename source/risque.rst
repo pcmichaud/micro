@@ -362,7 +362,7 @@ Maurice Allais and his Paradox
 **Exercise I**: Show that :math:`L_1 \succ L_2` and
 :math:`L_4 \succ L_3` are incoherent with the expected utility theory.
 
-.. figure:: allais.png
+.. figure:: images/allais.png
    :alt: `Munier 1991, Journal of Economic
    Perspectives <https://pubs.aeaweb.org/doi/pdf/10.1257/jep.5.2.179>`__
 
