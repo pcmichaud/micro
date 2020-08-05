@@ -1,2 +1,2 @@
-Stratégie d'entreprise
+Concurrence imparfaite
 ----------------------
