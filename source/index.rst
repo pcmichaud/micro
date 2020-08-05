@@ -17,6 +17,12 @@ Bienvenue sur le site du cours 20-851 à HEC Montréal.
    cons.rst
    effets.rst
    risque.rst
+   welfare.rst
+   echange.rst
+   production.rst
+   gemodel.rst
+   strategy.rst
+   selection.rst
 
 
 Index
