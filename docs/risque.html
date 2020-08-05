@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Préférences pour le risque &mdash; Documentation Microeconomie 20-851 </title>
+  <title>Le Risque &mdash; Documentation Microeconomie 20-851 </title>
   
 
   
@@ -88,32 +88,18 @@
 <li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cons.html">Consommateur</a></li>
 <li class="toctree-l1"><a class="reference internal" href="effets.html">Effets Prix et Revenu</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Préférences pour le risque</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Le Risque</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#rendement-et-risque">Rendement et risque</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#l-approche-d-esperance-d-utilite-eu">L’approche d’espérance d’utilité (EU)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#aversion-au-risque">Aversion au risque</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#aversion-au-risque-et-concavite-de-l-utilite">Aversion au risque et concavité de l’utilité</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mesurer-l-aversion-au-risque">Mesurer l’aversion au risque</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#prime-de-risque">Prime de risque</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#assurance">Assurance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#assurance-et-entrepreneuriat">Assurance et entrepreneuriat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#critique-de-l-esperance-d-utilite">Critique de l’espérance d’utilité</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="#risk-aversion-and-risk-seeking">Risk Aversion and Risk Seeking</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#risk-averse-and-risk-seeking-consumers">Risk-Averse and Risk-Seeking Consumers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#risk-aversion-and-concavity-of-the-utility">Risk Aversion and Concavity of the Utility</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="#risk-premium">Risk Premium</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#risk-premium-1">Risk Premium</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="#applications-insurance-and-investment">Applications: Insurance and Investment</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#several-goods-we-buy-are-lotteries">Several goods we buy are lotteries</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#insurance-and-co-insurance-i">Insurance and Co-insurance – I</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#insurance-and-co-insurance-ii">Insurance and Co-insurance – II</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#insurance-and-co-insurance-iii">Insurance and Co-insurance – III</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#the-law-of-large-numbers-and-insurance">The Law of Large Numbers and Insurance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#the-law-of-large-numbers-and-insurance-1">The Law of Large Numbers and Insurance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#insurance-is-important-an-investment-example">Insurance is Important: An Investment Example</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#insurance-encourages-investment">Insurance Encourages Investment</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="#criticism-of-expected-utility">Criticism of Expected Utility</a></li>
 </ul>
 
             
@@ -159,7 +145,7 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Préférences pour le risque</li>
+      <li>Le Risque</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -178,20 +164,19 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="preferences-pour-le-risque">
-<span id="section-1"></span><h1>Préférences pour le risque<a class="headerlink" href="#preferences-pour-le-risque" title="Lien permanent vers ce titre">¶</a></h1>
-<p><strong>De manière générale, les gens n’aiment pas le risque</strong></p>
-<p>Pour s’en convaincre, imaginez vous faire offrir:</p>
+  <div class="section" id="le-risque">
+<h1>Le Risque<a class="headerlink" href="#le-risque" title="Lien permanent vers ce titre">¶</a></h1>
+<p>De manière générale, les gens n’aiment pas le risque. Pour s’en convaincre, imaginez vous faire offrir à la retraite:</p>
 <ul>
-<li><p>un revenu certain à la retraite de: 50 000/an</p></li>
-<li><p>Un revenu incertain à la retraite (dès suite de placement)</p>
+<li><p><strong>Plan A</strong>: un revenu certain de: 50 000/an</p></li>
+<li><p>Un revenu incertain à la retraite (dès suite de placements)</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><strong>placement</strong></p></td>
+<tr class="row-odd"><td><p><strong>Plan B</strong></p></td>
 <td><p>50% chance 10 000/an</p></td>
 </tr>
 <tr class="row-even"><td><p></p></td>
@@ -204,7 +189,7 @@
 </ul>
 <div class="section" id="rendement-et-risque">
 <h2>Rendement et risque<a class="headerlink" href="#rendement-et-risque" title="Lien permanent vers ce titre">¶</a></h2>
-<p><strong>Imaginez que le placement est maintenant</strong></p>
+<p>Imaginez que le placement est maintenant:</p>
 <blockquote>
 <div><table class="docutils align-default">
 <colgroup>
@@ -212,7 +197,7 @@
 <col style="width: 50%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><strong>placement</strong></p></td>
+<tr class="row-odd"><td><p><strong>Plan C</strong></p></td>
 <td><p>50% chance 10 000/an</p></td>
 </tr>
 <tr class="row-even"><td><p></p></td>
@@ -229,7 +214,7 @@
 <col style="width: 50%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><strong>placement</strong></p></td>
+<tr class="row-odd"><td><p><strong>Plan D</strong></p></td>
 <td><p>50% chance 10 000/an</p></td>
 </tr>
 <tr class="row-even"><td><p></p></td>
@@ -238,259 +223,191 @@
 </tbody>
 </table>
 </div></blockquote>
-<p>À un moment, vous allez probablement choisir le placement…</p>
+<p>À un moment, vous allez probablement choisir le placement risqué parce que le rendement espéré est plus élevé. Les préférences en situation de risque sont fonctions des gains mais aussi du risque (les probabilités et les gains). La théorie du consommateur que nous avons vu ne couvre pas ce cas.</p>
 </div>
 <div class="section" id="l-approche-d-esperance-d-utilite-eu">
 <h2>L’approche d’espérance d’utilité (EU)<a class="headerlink" href="#l-approche-d-esperance-d-utilite-eu" title="Lien permanent vers ce titre">¶</a></h2>
-<p><strong>Lottery and expected utility</strong></p>
+<p><strong>Lotterie</strong></p>
 <ul>
-<li><p>Lottery <span class="math notranslate nohighlight">\(\mathcal L = (p,X \;; 1-p,Y)\)</span> : with probability
-<span class="math notranslate nohighlight">\(p\)</span> to get <span class="math notranslate nohighlight">\(X\)</span>, and probability <span class="math notranslate nohighlight">\(1-p\)</span> to get
-<span class="math notranslate nohighlight">\(Y\)</span></p></li>
-<li><p>Expected utility</p>
+<li><p>Lotterie <span class="math notranslate nohighlight">\(\mathcal L = (p,X \;; 1-p,Y)\)</span> : avec probabilité
+<span class="math notranslate nohighlight">\(p\)</span> d’obtenir <span class="math notranslate nohighlight">\(X\)</span>, et probabilité <span class="math notranslate nohighlight">\(1-p\)</span> d’obtenir
+<span class="math notranslate nohighlight">\(Y\)</span>. L’espérance de la lotterie est <span class="math notranslate nohighlight">\(\mathbb{E}_{L} = pX + (1-p)Y\)</span>.</p></li>
+<li><p>Espérance d’utilité semble naturelle</p>
 <div class="math notranslate nohighlight">
-\[\mathbf \mathbb{E}_{{ \mathcal L}} (u) = p\times u(X) + (1-p) \times
+\[\mathbb{E}_{{ \mathcal L}} (u) = p\times u(X) + (1-p) \times
 u(Y)\]</div>
 </li>
 </ul>
-<p><strong>Preferences in lotteries</strong></p>
+<p><strong>Préférences sur des lotteries</strong></p>
 <ul>
-<li><p>Model: Consumer prefers the lottery <span class="math notranslate nohighlight">\(\mathcal L_1\)</span> over the
-lottery <span class="math notranslate nohighlight">\(\mathcal L_2\)</span> if</p>
+<li><p>Le consommateur préfère la lotterie <span class="math notranslate nohighlight">\(\mathcal L_1\)</span> à la lotterie <span class="math notranslate nohighlight">\(\mathcal L_2\)</span> si</p>
 <div class="math notranslate nohighlight">
-\[\mathbf \mathbb
-{E}_{{ \mathcal L_1}} (u) &gt; \mathbf \mathbb{E}_{{ \mathcal L_2}} (u)\]</div>
+\[\mathbb{E}_{{ \mathcal L_1}} (u) &gt; \mathbb{E}_{{ \mathcal L_2}} (u)\]</div>
 </li>
-<li><p>Note: Utility is cardinal (units and form matter). This is called the
-<a class="reference external" href="https://fr.wikipedia.org/wiki/John_von_Neumann">von Neumann</a> and
-Morgenstern (vNM) utility.</p></li>
+<li><p>La représentation des préférences par l’espérance d’utilité est appelé utilité
+<a class="reference external" href="https://fr.wikipedia.org/wiki/John_von_Neumann">von Neumann</a> et
+Morgenstern (vNM).</p></li>
 </ul>
-<p>Example</p>
-<p><strong>Context</strong></p>
+<p><strong>Exemple</strong></p>
+<p>Si <span class="math notranslate nohighlight">\(u(X) = \sqrt{X}\)</span> et le consommateur fait face aux lotteries <span class="math notranslate nohighlight">\(\mathcal L_1 = (0.5,0\;; 0.5,16)\)</span> et <span class="math notranslate nohighlight">\(\mathcal L_2 = (1,6)\)</span>.</p>
 <ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(u(X) = \sqrt{X}\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(\mathcal L_1 =
-(0.5,0\;; 0.5,16)\)</span> et <span class="math notranslate nohighlight">\(\mathcal L_2 = (1,6)\)</span></p></li>
-<li><p><strong>Exercise A</strong>: Expected return?</p></li>
-<li><p><strong>Exercise B</strong> What does the consumer choose?</p></li>
-<li><p><strong>Exercise C</strong>: Does the utility function <span class="math notranslate nohighlight">\(u(X) = X\)</span> result in
-the same behaviour?</p></li>
+<li><p><strong>Exercice A</strong>: Quel est le rendement espéré de chaque lotterie?</p></li>
+<li><p><strong>Exercice B</strong> Si le consommateur a des préférences vNM, laquelle des lotteries choisira-t-il?</p></li>
+<li><p><strong>Exercice C</strong>: Est-ce que la fonction d’utilité <span class="math notranslate nohighlight">\(u(X) = X\)</span> donne le même choix?</p></li>
 </ul>
-<p>Identifying preferences from choices</p>
-<p><strong>Preferences do not vary with affine transformations</strong></p>
-<ul>
-<li><p>Affine transformation: <span class="math notranslate nohighlight">\(\widehat u = a u +b\)</span> with <span class="math notranslate nohighlight">\(a&gt;0\)</span></p>
-<div class="math notranslate nohighlight">
+<p>En situation de certitude, l’utilité est ordinale: seul l’ordre compte. Cependant, en situation de risque, l’utilité espérée à la vNM est cardinale, car elle dépend des probabilités qui sont ont une échelle (entre 0 et 1). Donc, les transformations monotones ne sont pas permises. Mais une transformation est permise: la transformation affine: <span class="math notranslate nohighlight">\(\widehat u = a u +b\)</span> avec <span class="math notranslate nohighlight">\(a&gt;0\)</span>. On peut montrer que cette transformation n’affecte pas les préférences</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
-\mathbf{E}_{L_1} \widehat u \geq \mathbf{E}_{L_2} \widehat u &amp; \iff  a\mathbf{E}_{L_1} u + b \geq a\mathbf{E}_{L_2} u + b \\ &amp; \iff
- \mathbf{E}_{L_1} u  \geq \mathbf{E}_{L_2} u\end{aligned}\end{split}\]</div>
-</li>
-</ul>
+\mathbb{E}_{L_1} \widehat u \geq \mathbb{E}_{L_2} \widehat u &amp; \iff  a\mathbb{E}_{L_1} u + b \geq a\mathbb{E}_{L_2} u + b \\ &amp; \iff
+ \mathbb{E}_{L_1} u  \geq \mathbb{E}_{L_2} u\end{aligned}\end{split}\]</div>
+</div></blockquote>
 </div>
-</div>
-<div class="section" id="risk-aversion-and-risk-seeking">
-<h1>Risk Aversion and Risk Seeking<a class="headerlink" href="#risk-aversion-and-risk-seeking" title="Lien permanent vers ce titre">¶</a></h1>
-<div class="section" id="risk-averse-and-risk-seeking-consumers">
-<h2>Risk-Averse and Risk-Seeking Consumers<a class="headerlink" href="#risk-averse-and-risk-seeking-consumers" title="Lien permanent vers ce titre">¶</a></h2>
-<p><strong>Different attitudes towards risk</strong></p>
-<ul>
-<li><div class="line-block">
-<div class="line">Risk aversion: consider <span class="math notranslate nohighlight">\(L = (p, X\;; 1-p,Y)\)</span></div>
-<div class="line">If we denote <span class="math notranslate nohighlight">\(Z = p X + (1-p)Y\)</span>.</div>
-</div>
-<p>consumer is risk-averse if he prefers <span class="math notranslate nohighlight">\(\mathcal L' = (1,Z)\)</span>
-over <span class="math notranslate nohighlight">\(\mathcal L\)</span></p>
-</li>
-<li><p>Risk-seeking: he prefers <span class="math notranslate nohighlight">\(\mathcal L = (p, X\;; 1-p,Y)\)</span> over
+<div class="section" id="aversion-au-risque">
+<h2>Aversion au risque<a class="headerlink" href="#aversion-au-risque" title="Lien permanent vers ce titre">¶</a></h2>
+<p>L’attitude au risque varie d’un individu à l’autre:</p>
+<ul class="simple">
+<li><p><strong>Riscophobie (aversion au risque)</strong>: si <span class="math notranslate nohighlight">\(L = (p, X\;; 1-p,Y)\)</span>
+et on dénote <span class="math notranslate nohighlight">\(Z = p X + (1-p)Y\)</span>, alors le consommateur est riscophobe si s’il préfère <span class="math notranslate nohighlight">\(\mathcal L' = (1,Z)\)</span>
+à <span class="math notranslate nohighlight">\(\mathcal L\)</span>.</p></li>
+<li><p><strong>Riscophilie (propension au risque)</strong>: Il ou elle préfère <span class="math notranslate nohighlight">\(\mathcal L = (p, X\;; 1-p,Y)\)</span> à
 <span class="math notranslate nohighlight">\(\mathcal L' =
 (1,Z)\)</span></p></li>
+<li><p><strong>Risconeutre</strong>:   Alors le consommateur est indifférent entre <span class="math notranslate nohighlight">\(\mathcal L = (p, X\;; 1-p,Y)\)</span> et <span class="math notranslate nohighlight">\(\mathcal L' =(1,Z)\)</span>.</p></li>
 </ul>
-<p><strong>What do we observe?</strong></p>
+<p><strong>Qu’observe-t-on?</strong></p>
 <ul class="simple">
-<li><p>There is some risk-seeking behaviour (casinos … ) but it doesn’t
-take into account the value of the « experience »</p></li>
-<li><p>A lot of risk aversion (insurance, saving, investment …)</p></li>
+<li><p>Beaucoup de riscophobie</p></li>
+<li><p>Un peu de riscophilie, mais ne tient souvent pas compte de la valeur de l’expérience de prendre des risques… Exemple du casino souvent donné…</p></li>
 </ul>
 </div>
-<div class="section" id="risk-aversion-and-concavity-of-the-utility">
-<h2>Risk Aversion and Concavity of the Utility<a class="headerlink" href="#risk-aversion-and-concavity-of-the-utility" title="Lien permanent vers ce titre">¶</a></h2>
-<p><strong>Risk aversion</strong></p>
-<ul class="simple">
-<li><p>Consumer with utility <span class="math notranslate nohighlight">\(u\)</span></p></li>
-<li><p>Given <span class="math notranslate nohighlight">\((X,Y)\)</span> and <span class="math notranslate nohighlight">\(p\)</span>, define
-<span class="math notranslate nohighlight">\(z \equiv pX + (1-p)Y\)</span></p></li>
-<li><p>Risk-aversion implies: <span class="math notranslate nohighlight">\(u(Z) \geq pu(X) + (1-p)u(Y)\)</span></p></li>
-<li><p>This is the equivalent of saying that <span class="math notranslate nohighlight">\(u\)</span> is concave.</p></li>
-</ul>
-<p><strong>Risk-neutrality</strong></p>
-<ul>
-<li><p>Indifference between</p>
+<div class="section" id="aversion-au-risque-et-concavite-de-l-utilite">
+<h2>Aversion au risque et concavité de l’utilité<a class="headerlink" href="#aversion-au-risque-et-concavite-de-l-utilite" title="Lien permanent vers ce titre">¶</a></h2>
+<p><strong>Riscophobie</strong></p>
+<p>Le consommateur a une fonction d’utilité <span class="math notranslate nohighlight">\(u\)</span>. En contexte, vNM, c’est le seul objet qu’on peut modéliser pour capter les comportements de riscophobie et de riscophilie. On peut donc se douter que les propriétés de <span class="math notranslate nohighlight">\(u\)</span> auront quelque chose à voir avec ces comportements.</p>
+<p>Fixons deux états <span class="math notranslate nohighlight">\((X,Y)\)</span> et la probabilité <span class="math notranslate nohighlight">\(p\)</span> que <span class="math notranslate nohighlight">\(X\)</span> soit réalisé. Alors la richesse espérée est <span class="math notranslate nohighlight">\(Z = pX + (1-p)Y\)</span>.</p>
+<p>L’aversion au risque implique que</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[u(Z) &gt; pu(X) + (1-p)u(Y).\]</div>
+</div></blockquote>
+<p>Une fonction <span class="math notranslate nohighlight">\(u\)</span> qui respecte cette inégalité est concave (voir rappel mathématique). Dans le domaine des statistiques, on réfère à ce résultat comme étant l’inégalité de Jensen. Le cas de la riscophilie correspond à une fonction d’utilité convexe.</p>
+<p><strong>Neutralité au risque</strong></p>
+<p>Si l’individu est neutre face au risque, il y a indifférence entre</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[\mathcal L = (p, X\;; 1-p,Y) \quad et \quad  \mathcal L' = (1,Z)\]</div>
+</div></blockquote>
+<p>La fonction d’utilité doit donc être contrainte à être linéaire dans la richesse  <span class="math notranslate nohighlight">\(u(X) = a X + b\)</span>, avec le cas particulier <span class="math notranslate nohighlight">\(u(X) = X\)</span>.</p>
+</div>
+<div class="section" id="mesurer-l-aversion-au-risque">
+<h2>Mesurer l’aversion au risque<a class="headerlink" href="#mesurer-l-aversion-au-risque" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Comment mesurer le degré de riscophobie? Comment comparer deux individus et dire qu’un est plus riscophobe qu’un autre? Deux mesures sont bien utiles dans ce contexte, soit le coefficient d’aversion au risque absolue et le coefficient d’aversion au risque relatif.</p>
+<p>Coefficient absolue:</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[A(X) = -\frac{u''(X)}{u'(X)}\]</div>
+</div></blockquote>
+<p>Coefficient relatif:</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[R(X) = -\frac{u''(X)X}{u'(X)}\]</div>
+</div></blockquote>
+<p>Pourquoi ces mesures? Puisque la riscophobie est reliée à la concavité, les deux mesures augmentent quand la deuxième dérivée augmente (elle est négative pour concave, d’où le moins). Ensuite, on normalise par l’utilité marginale <span class="math notranslate nohighlight">\(u'(X)\)</span>, pour fixer les unités puisque <span class="math notranslate nohighlight">\(u\)</span> est ordinale.</p>
+<p>La mesure absolue permet de regarder le niveau de riscophobie pour une lotterie en montant absolue. Le coefficient relatif permet de regarder le degré de riscophobie pour une lotterie en proportion de la richesse.</p>
+<p>La distinction entre les deux est utile. Par exemple, on pourrait croire intuitif que la mesure absolue décroit dans la richesse (la lotterie est faible par rapport à la richesse) tandis que le coefficient relatif devrait être relativement constant puisque la lotterie reste constante en proportion de la richesse. Donc, pour une décision d’investissement de portefeuille, où la taille du portefeuille est à peu près constante en proportion de la richesse, le coefficient relatif parait la bonne mesure. Pour un risque plus absolue, par exemple, une lotterie au casino, le coefficient absolue paraît plus utile.</p>
+<p>Comment mesurer ce coefficient? Une méthode très utilisée est le liste de prix multiples. <a class="reference external" href="https://pubs.aeaweb.org/doi/pdfplus/10.1257/000282802762024700">Holt et Laury (2002)</a> ont fait une application à la mesure des attitudes façes au risque, qui démontre entre autre l’importance de donner des incitatifs financiers à ceux qui participent.</p>
+<p>Une liste de prix multiple présente deux lotteries sous différentes configurations. Le répondant doit choisir la lotterie qu’il préfère. Une lotterie sera choisie au hasard à la fin de l’expérience et sera jouée. Le répondant se verra payer le montant. Voici exemple tiré de Holt et Laury:</p>
+<a class="reference internal image-reference" href="_images/mpl.png"><img alt="_images/mpl.png" src="_images/mpl.png" style="width: 431.0px; height: 210.0px;" /></a>
+<p>On utilisera une fonction d’utilité de type,</p>
 <div class="math notranslate nohighlight">
-\[\mathcal L = (p, X\;; 1-p,Y) \quad and \quad  \mathcal L' = (1,Z)\]</div>
-</li>
-<li><p>Corresponds to linear utility <span class="math notranslate nohighlight">\(u(X) = a X + b\)</span>, in particular
-<span class="math notranslate nohighlight">\(u(x) = x\)</span>.</p></li>
-</ul>
-<p>Measuring risk aversion</p>
-<p><a class="reference external" href="https://pubs.aeaweb.org/doi/pdfplus/10.1257/000282802762024700">Holt et Laury (2002), American Economic
-Review</a>
-<a class="reference external" href="https://pubs.aeaweb.org/doi/pdfplus/10.1257/000282802762024700">Holt et Laury (2002), American Economic
-Review</a></p>
-<p><strong>Exercise D</strong>: Why does a risk-averse agent wait longer in the Holt and
-Laury experiment?</p>
+\[U(X) = \frac{X^{1-r}}{1-r}.\]</div>
+<p>Dans ce cas, on peut montrer que <span class="math notranslate nohighlight">\(R(X) = r\)</span>, d’où son nom, fonction d’utilité CRRA (<em>constant relative risk aversion</em>).</p>
+<p><strong>Exercice D</strong>: En utilisant la fonction d’utilité CRRA, dans l’expérience MPL ici-haut, calculer l’interval dans lequel doit se trouver <span class="math notranslate nohighlight">\(r\)</span> si l’individu l’option A jusqu’au 7e choix et ensuite l’option B à partir du 8e choix?</p>
 </div>
-</div>
-<div class="section" id="risk-premium">
-<h1>Risk Premium<a class="headerlink" href="#risk-premium" title="Lien permanent vers ce titre">¶</a></h1>
-<div class="section" id="risk-premium-1">
-<span id="id1"></span><h2>Risk Premium<a class="headerlink" href="#risk-premium-1" title="Lien permanent vers ce titre">¶</a></h2>
-<p><strong>Definition</strong></p>
-<ul class="simple">
-<li><p>Consider the lottery <span class="math notranslate nohighlight">\(\mathcal L =
-(p,X\;;1-p,Y)\)</span>. Define <span class="math notranslate nohighlight">\(Z\)</span> as <span class="math notranslate nohighlight">\(Z \equiv pX+ (1-p)Y\)</span>.</p></li>
-<li><p>Find <span class="math notranslate nohighlight">\(Z'\)</span> such that <span class="math notranslate nohighlight">\(u(Z') = pu(X) + (1-p)u(Y)\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(Z'\)</span> is a certain equivalent of <span class="math notranslate nohighlight">\(\mathcal L\)</span></p></li>
-<li><p>When risk-averse, <span class="math notranslate nohighlight">\(Z' &lt; Z\)</span> and <span class="math notranslate nohighlight">\(\pi = Z-Z'\)</span> is the risk
-premium</p></li>
-<li><p>The risk premium is the amount equal to the gain/loss provided by the
-lottery</p></li>
-<li><p>It’s how much we should give the consumer to entice him to take the
-risk (compensation). Or, how much he is willing to pay to eliminate
-of a risk.</p></li>
-<li><p>This is used to evaluate risky assets and demand for insurance.</p></li>
-</ul>
-<div class="line-block">
-<div class="line">Example <strong>Exercise E</strong>: An agent has the utility function
-<span class="math notranslate nohighlight">\(u(X)=\ln X\)</span>. His initial wealth is <span class="math notranslate nohighlight">\(X_0 = 100\)</span> and he’s
-facing the risk of losing 50 with probability 0.5 and win 50 with
-probability 0.5. What is the maximum amount he’s willing to pay to
-avoid that risk?</div>
-<div class="line"><strong>Exercise F</strong>: With <span class="math notranslate nohighlight">\(u(X) = \sqrt X\)</span>, is the risk premium
-smaller?</div>
-</div>
-</div>
-</div>
-<div class="section" id="applications-insurance-and-investment">
-<h1>Applications: Insurance and Investment<a class="headerlink" href="#applications-insurance-and-investment" title="Lien permanent vers ce titre">¶</a></h1>
-<div class="section" id="several-goods-we-buy-are-lotteries">
-<h2>Several goods we buy are lotteries<a class="headerlink" href="#several-goods-we-buy-are-lotteries" title="Lien permanent vers ce titre">¶</a></h2>
-<p><strong>Financial assets, insurance, investment goods … almost everything</strong></p>
-<ul class="simple">
-<li><p>Stocks (yields 10 if the firm performs well, yields 0 if she
-underperforms)</p></li>
-<li><p>Fire insurance (yields 5 if house burns down, yields 0 otherwise)</p></li>
-<li><p>Used car (value of 3 if good quality, value of 0 if lemon)</p></li>
-<li><p>Starting a business (yields 15 if it works , -5 if it fails)</p></li>
-<li><p>Getting married, choosing a career, getting surgery, driving a
-vehicle… all of these are choices in a risky context.</p></li>
-</ul>
-<p><strong>Later:</strong> practical implications of risk-aversion</p>
-</div>
-<div class="section" id="insurance-and-co-insurance-i">
-<h2>Insurance and Co-insurance – I<a class="headerlink" href="#insurance-and-co-insurance-i" title="Lien permanent vers ce titre">¶</a></h2>
-<p><strong>Context: two consumers facing risk</strong></p>
-<ul class="simple">
-<li><p>Each is employed with a 50% probability, income 100</p></li>
-<li><p>Unemployed (U) with a 50% probability, income 0</p></li>
-</ul>
-<p><strong>Employment insurance</strong></p>
-<ul class="simple">
-<li><p>An insurance program where instead of the consumer 1 getting
-<span class="math notranslate nohighlight">\(I_1\)</span> and the consumer 2 getting <span class="math notranslate nohighlight">\(I_2\)</span> they both get
-<span class="math notranslate nohighlight">\((I_1+I_2)/2\)</span> regardless of their employment status</p></li>
-</ul>
-</div>
-<div class="section" id="insurance-and-co-insurance-ii">
-<h2>Insurance and Co-insurance – II<a class="headerlink" href="#insurance-and-co-insurance-ii" title="Lien permanent vers ce titre">¶</a></h2>
-<p><strong>Insurance is beneficial</strong></p>
-<ul>
-<li><p>Without insurance: 50% of getting 0, 50% of getting 100</p></li>
-<li><p>expected utility <span class="math notranslate nohighlight">\(.5 [u(0) + u(100)]\)</span></p></li>
-<li><p>With insurance 25 % of getting 0, 25% of getting 50, 25% of getting
-50, 25% of getting 100</p></li>
-<li><p>expected utility <span class="math notranslate nohighlight">\(.25[u(0) + u(50) + u(50) + u(100)]\)</span></p></li>
-<li><p>Insurance is beneficial if and only if</p>
+<div class="section" id="prime-de-risque">
+<h2>Prime de risque<a class="headerlink" href="#prime-de-risque" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Considérons la lotterie  <span class="math notranslate nohighlight">\(\mathcal L =(p,X\;;1-p,Y)\)</span>. On dénote <span class="math notranslate nohighlight">\(Z\)</span> l’espèrance de la lotterie <span class="math notranslate nohighlight">\(Z = pX+ (1-p)Y\)</span>. On pourrait s’intéresser à <span class="math notranslate nohighlight">\(Z'\)</span> tel que</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
- &amp; .25[u(0) + u(50) +
-u(50) + u(100)] &gt; .5 [u(0) + u(100)]\\ \iff&amp; u(50) &gt; .5[u(0)+u(100)]\end{aligned}\end{split}\]</div>
-</li>
-<li><p>True if they are risk-averse</p></li>
-</ul>
+\[u(Z') = pu(X) + (1-p)u(Y)\]</div>
+<p><span class="math notranslate nohighlight">\(Z'\)</span> est un équivalent certain pour <span class="math notranslate nohighlight">\(\mathcal L\)</span> étant donné les préférences représentées par <span class="math notranslate nohighlight">\(u\)</span>.</p>
+<p>Si l’agent est riscophobe, <span class="math notranslate nohighlight">\(Z' &lt; Z\)</span> et on dénote <span class="math notranslate nohighlight">\(\pi = Z-Z'\)</span> la prime de risque. Son interprétation dépend du contexte. Quand l’action concerne la prise de risque (par défaut l’individu est en situation de certitude), on l’interprète comme étant la compensation minimum demandée par l’agent pour prendre le risque. La prime de risque représente alors le montant minimal qu’il faut payer avec certitude à l’agent pour qu’il prenne le risque. En contexte d’investissement boursier, le rendement excédentaire requis par un investisseur riscophobe sera égal à cette prime de risque. Plus l’actif est risqué, plus il demandera une compensation (rendement) élevée.</p>
+<p>En assurance, la prime de risque sera plutôt le montant maximal que l’agent est prêt à payer pour éliminer le risque puisque la situation sans action, est risquée, alors qu’une assurance complète élimine le risque. Il s’agit donc d’une disposition à payer pour éliminer un risque.</p>
+<p><strong>Exercice E</strong>: Un agent a les préférences représentées par <span class="math notranslate nohighlight">\(u(X)=\log X\)</span>. Sa richesse initialile est <span class="math notranslate nohighlight">\(X_0 = 100\)</span> et il fait façe à un risque de perdre 50 avec probabilité 0.5 et gagner 50 avec une probabilité 0.5. Quel est le montant maximal qu’il est prêt à payer pour éliminer ce risque?</p>
+<p>Une approximation à la prime de risque existe pour un risque faible. Dénotant <span class="math notranslate nohighlight">\(\sigma^2\)</span> la variance d’un risque absolue avec moyenne zéro, la prime de risque pour un agent ayant une richesse initiale de <span class="math notranslate nohighlight">\(X\)</span> est bien approximée par:</p>
+<div class="math notranslate nohighlight">
+\[\tilde\pi = \frac{1}{2}\sigma^2 A(X)\]</div>
+<p>On remarque que la prime augmente avec l’aversion au risque et la variance du risque. Une variante pour les risques relatifs prend une forme similaire.</p>
+<p><strong>Exercice F</strong>: Avec <span class="math notranslate nohighlight">\(u(X) = \sqrt X\)</span>, la prime de risque est-elle plus faible que dans l’exercice précédent?</p>
 </div>
-<div class="section" id="insurance-and-co-insurance-iii">
-<h2>Insurance and Co-insurance – III<a class="headerlink" href="#insurance-and-co-insurance-iii" title="Lien permanent vers ce titre">¶</a></h2>
-<p><strong>In practice</strong></p>
+<div class="section" id="assurance">
+<h2>Assurance<a class="headerlink" href="#assurance" title="Lien permanent vers ce titre">¶</a></h2>
+<p>L’assurance est un marché qui existe parce que la population est riscophobe de manière générale. Il y a un marché pour l’assurance de biens (voitures, maisons, etc) mais aussi l’assurance des personnes (vie, rentes viagères, santé). Même nos gouvernements mettent en place des assurances, comme l’assurance-emploi (anciennement assurance-chômage).</p>
+<p>Prennons le cas du chômage. Considérons un exemple simple où deux individus peuvent être dans les états suivants:</p>
 <ul class="simple">
-<li><p>The issue of doing it informally: ex-ante (before knowing the
-outcome) we want insurance (sharing), but ex-post, if employed, we
-don’t want to share our income</p></li>
-<li><p>That is where insurance companies come in (making sure people pay
-even though they got lucky)</p></li>
+<li><p>Employé avec probabilité 0.5, revenu de 100</p></li>
+<li><p>Au chômage avec probabilité 0.5, revenu de 0</p></li>
 </ul>
-</div>
-<div class="section" id="the-law-of-large-numbers-and-insurance">
-<h2>The Law of Large Numbers and Insurance<a class="headerlink" href="#the-law-of-large-numbers-and-insurance" title="Lien permanent vers ce titre">¶</a></h2>
-<p><strong>Law of large numbers</strong></p>
+<p>Dénotons les revenus réalisées des deux individus, <span class="math notranslate nohighlight">\(I_i\)</span> (<span class="math notranslate nohighlight">\(i=1,2\)</span>). Un programme d’assurance-emploi dicte plutôt que les deux individus reçoivent <span class="math notranslate nohighlight">\((I_1+I_2)/2\)</span> peu importe leur statut d’emploi.</p>
+<p>L’assurance est bénéfique <em>ex ante</em> pour deux agents riscophobes (avant la réalisation du risque):</p>
+<ul class="simple">
+<li><p>Sans assurance: utilité espérée de chacun des agents est <span class="math notranslate nohighlight">\(.5 [u(0) + u(100)]\)</span></p></li>
+<li><p>Avec insurance, 25 % les deux ont 0, 50% que 1 seul travaille, 25% les deux travaillent. Donc l’espérance d’utilité de chacun des agents est <span class="math notranslate nohighlight">\(.25[u(0) + 2u(50) + u(100)]\)</span></p></li>
+</ul>
+<p>L’assurance est bénéfique si</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[.25[u(0) + 2u(50) + u(100)] &gt; .5 [u(0) + u(100)]\]</div>
+</div></blockquote>
+<p>ou si <span class="math notranslate nohighlight">\(u(50) &gt; .5[u(0)+u(100)]\)</span>. Donc, vrai si <span class="math notranslate nohighlight">\(u\)</span> concave ou agent riscophobe (encore l’inégalité de Jensen).</p>
+<p>En pratique, l’assurance-emploi pourrait être informelle entre les gens. Mais le problème est qu’après la réalisation du risque, l’individu qui a toujours un emploi ne veut plus partager. Une façon de voir un régime d’assurance, ou bien un assureur, est qu’il permet de sauver sur ces coûts de transaction (agence) entre les assurés.</p>
+<p>L’autre avantage est que l’assureur pourra mutualiser davantage d’agents au sein du régime.</p>
+<p><strong>La loi des grands nombre</strong></p>
 <ul>
-<li><p>Consider a random variable <span class="math notranslate nohighlight">\(Z\)</span> equal to <span class="math notranslate nohighlight">\(X\)</span> with
-probability <span class="math notranslate nohighlight">\(p\)</span> and <span class="math notranslate nohighlight">\(Y\)</span> with probability <span class="math notranslate nohighlight">\(1-p\)</span></p></li>
-<li><p>If <span class="math notranslate nohighlight">\(Z_1,
-\cdots , Z_n\)</span> are independent with the same distribution
-<span class="math notranslate nohighlight">\((p,X \;; 1-p,Y)\)</span> Then</p>
+<li><p>Considérons une variable aléatoire <span class="math notranslate nohighlight">\(Z\)</span> égale à <span class="math notranslate nohighlight">\(X\)</span> avec probabilité <span class="math notranslate nohighlight">\(p\)</span> et <span class="math notranslate nohighlight">\(Y\)</span> avec probabilité <span class="math notranslate nohighlight">\(1-p\)</span></p></li>
+<li><p>Si <span class="math notranslate nohighlight">\(Z_1,
+\cdots , Z_n\)</span> sont indépendantes avec la même distribution
+<span class="math notranslate nohighlight">\((p,X \;; 1-p,Y)\)</span> alors</p>
 <div class="math notranslate nohighlight">
 \[si\; N \to +\infty,\quad  \frac{1}{N} (Z_1 + Z_2 + \cdots + Z_n)
 \to pX + (1-p)Y\]</div>
 </li>
-<li><p>The empirical average converges towards the expected value</p></li>
+<li><p>La réalisation moyenne, qui demeure aléatoire avec <span class="math notranslate nohighlight">\(N\)</span> petit, devient certaine quand <cite>N</cite> tend vers l’infini.</p></li>
 </ul>
-</div>
-<div class="section" id="the-law-of-large-numbers-and-insurance-1">
-<span id="id2"></span><h2>The Law of Large Numbers and Insurance<a class="headerlink" href="#the-law-of-large-numbers-and-insurance-1" title="Lien permanent vers ce titre">¶</a></h2>
-<p><strong>What this means for insurance</strong></p>
+<p><strong>Mutualisation</strong></p>
 <ul class="simple">
-<li><p>When several individuals are sharing risk, and their risks are
-independent, then everyone recieves exactly their expected income</p></li>
-<li><p>If individuals are risk-averse, this result is good</p></li>
-<li><p>The larger the number of indivuals sharing risk is, the higher their
-well-being will be</p></li>
+<li><p>Quand un grand nombre partage le risque, il élimine le risque par l’effet de mutualisation. Les assurées reçoivent exactement le revenu moyen.</p></li>
+<li><p>Si les agents sont riscophobes, ce résultat est désirable.</p></li>
 </ul>
 </div>
-<div class="section" id="insurance-is-important-an-investment-example">
-<h2>Insurance is Important: An Investment Example<a class="headerlink" href="#insurance-is-important-an-investment-example" title="Lien permanent vers ce titre">¶</a></h2>
-<p><strong>Investment project</strong></p>
+<div class="section" id="assurance-et-entrepreneuriat">
+<h2>Assurance et entrepreneuriat<a class="headerlink" href="#assurance-et-entrepreneuriat" title="Lien permanent vers ce titre">¶</a></h2>
+<p><strong>Devenir entrepreneur</strong></p>
 <ul class="simple">
-<li><p>An individual has a wealth of 9 and can decide to do nothing or to
-use all his wealth to start a business corresponding to the lottery
-<span class="math notranslate nohighlight">\(\mathcal L = (.5,0 \;; .5,25)\)</span></p></li>
-<li><p>Utility <span class="math notranslate nohighlight">\(u(X) = \sqrt{X}\)</span></p></li>
-<li><p><strong>Exercise G</strong>: What is the expected return? What will he choose ?</p></li>
+<li><p>Un individu a une richesse de 9 et peut décider de la garder ou bien de l’utiliser pour démarrer une entreprise. Sa richesse finale, s’il démarre une entreprise est donnée par la lotterie suivant:    <span class="math notranslate nohighlight">\(\mathcal L = (.5,0 \;; .5,25)\)</span>. Ses préférences sont vMN avec <span class="math notranslate nohighlight">\(u(X) = \sqrt{X}\)</span>.</p></li>
+<li><p><strong>Exercice G</strong>: Est-ce qu’il démarre l’entreprise?</p></li>
 </ul>
-</div>
-<div class="section" id="insurance-encourages-investment">
-<h2>Insurance Encourages Investment<a class="headerlink" href="#insurance-encourages-investment" title="Lien permanent vers ce titre">¶</a></h2>
-<p><strong>With insurance</strong></p>
+<p><strong>L’ange investisseur</strong></p>
 <ul class="simple">
-<li><p>Instead of investing alone, the entrepreneur can get financing from
-an angel investor who will provide half the capital and recieve half
-the return</p></li>
-<li><p>The entrepreneur gets to keep 4.5 and gets half of the return</p></li>
-<li><p>The lottery is now <span class="math notranslate nohighlight">\(\mathcal L' = (.5,4.5 \;; .5,17)\)</span></p></li>
-<li><p><strong>Exercise H</strong>: What will he choose?</p></li>
+<li><p>Plutôt que d’investir seul, l’entrepreneur peut obtenir un financement d’un ange investisseur qui lui donne la moitié du capital pour la moitié du rendement.</p></li>
+<li><p>L’entrepreneur garde donc 4.5 avec certitude s’il démarre l’entreprise. Mais il doit donner la moitié des rendements.</p></li>
+<li><p>La lotterie est maintenant <span class="math notranslate nohighlight">\(\mathcal L' = (.5,4.5 \;; .5,17)\)</span></p></li>
+<li><p><strong>Exercice H</strong>: Quel sera son choix?</p></li>
 </ul>
+<p>L’émission, <em>Les Dragons</em> de Radio-Canada est une application directe de cet exemple. La participation est toujours conditionnelle à une part des profits. La négociation porte donc sur la part des profits en rapport à la part de l’investissement initial. En voici un exemple ou les deux entrepreneurs ont négocié fort…</p>
+<div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+    <iframe src="https://www.youtube.com/embed/ICyUEUUgq8Q" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
+</div><p>En plus des différentes entreprises privées qui font ce genre d’investissements, des organisations comme Investissement Québec, les Fonds de travailleur (FTQ et Fondaction), Anges Québec, sont tous des mécanismes d’assurance qui peuvent promouvoir l’entrepreneuriat en partageant le risque.</p>
 </div>
-</div>
-<div class="section" id="criticism-of-expected-utility">
-<h1>Criticism of Expected Utility<a class="headerlink" href="#criticism-of-expected-utility" title="Lien permanent vers ce titre">¶</a></h1>
-<p>Criticism of Expected Utility</p>
+<div class="section" id="critique-de-l-esperance-d-utilite">
+<h2>Critique de l’espérance d’utilité<a class="headerlink" href="#critique-de-l-esperance-d-utilite" title="Lien permanent vers ce titre">¶</a></h2>
 <ul class="simple">
-<li><p>Allais’ Paradox</p></li>
-<li><p>Ellsberg’s Paradox</p></li>
-<li><p>Kahneman and Tversky</p></li>
+<li><p>Paradoxe d’Allais</p></li>
+<li><p>Paradoxe de Ellsberg</p></li>
+<li><p>Kahneman et Tversky: L’effet des perspectives</p></li>
 </ul>
-<p>Choice</p>
-<p>We draw a number between 0 and 99 with probability 1/100 of drawing each
-integer:</p>
+<p>Expérience de choix I</p>
+<p>On tire un nombre entier entre 0 et 99 avec probabilité 1/100 pour chaque nombre entier:</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 50%" />
@@ -516,8 +433,8 @@ integer:</p>
 </tr>
 </tbody>
 </table>
-<p>Choice</p>
-<p>Now, let’s choose again between</p>
+<p>Expérience de choix II</p>
+<p>Maintenant, on considère une autre paire avec les mêmes règles de tirages.</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 50%" />
@@ -543,32 +460,27 @@ integer:</p>
 </tr>
 </tbody>
 </table>
-<p>Maurice Allais and his Paradox</p>
-<p><strong>Exercise I</strong>: Show that <span class="math notranslate nohighlight">\(L_1 \succ L_2\)</span> and
-<span class="math notranslate nohighlight">\(L_4 \succ L_3\)</span> are incoherent with the expected utility theory.</p>
+<p>Maurice Allais et son Paradoxe</p>
+<p><strong>Exercice I</strong>: Montrez que <span class="math notranslate nohighlight">\(L_1 \succ L_2\)</span> et
+<span class="math notranslate nohighlight">\(L_4 \succ L_3\)</span> sont des choix incohérents si les préférences sont représentées par l’espérance de l’utilité.</p>
 <div class="figure align-default">
 <img alt="_images/allais.png" src="_images/allais.png" />
 </div>
-<dl class="simple">
-<dt>Voir cet article pour toute l’histoire derrière le Paradoxe… <a href="#id3"><span class="problematic" id="id4">`</span></a>Munier 1991, Journal of Economic</dt><dd><p>Perspectives &lt;<a class="reference external" href="https://pubs.aeaweb.org/doi/pdf/10.1257/jep.5.2.179">https://pubs.aeaweb.org/doi/pdf/10.1257/jep.5.2.179</a>&gt;`_</p>
-</dd>
-</dl>
-<p>Choice</p>
-<p>An urn contains 90 marbles. 30 are red. The other 60 are either black or
-white. The proportion of black and white marbles is unknown. Choose
-between</p>
+<p>Voir cet article pour toute l’histoire derrière le Paradoxe… <a class="reference external" href="https://pubs.aeaweb.org/doi/pdf/10.1257/jep.5.2.179">Munier (1991)</a></p>
+<p>Expérience de choix III</p>
+<p>Une urne contient 90 billes. 30 sont rouges. Les autres 60 sont soit noires ou blanches. La proportion de billes blanches ou noires n’est pas connue. On vous demande de faire un choix entre les deux configurations de paiements suivants (lotteries):</p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 46%" />
-<col style="width: 13%" />
-<col style="width: 21%" />
-<col style="width: 21%" />
+<col style="width: 39%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 25%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Lotteries</p></td>
-<td><p>red</p></td>
-<td><p>black</p></td>
-<td><p>white</p></td>
+<td><p>rouge</p></td>
+<td><p>noire</p></td>
+<td><p>blanche</p></td>
 </tr>
 <tr class="row-even"><td><p><span class="math notranslate nohighlight">\(L_1\)</span></p></td>
 <td><p>50</p></td>
@@ -583,20 +495,19 @@ between</p>
 </tbody>
 </table>
 <p>Choice</p>
-<p>An urn contains 90 marbles. 30 are red. The other 60 are either black or
-white. The proportion of black and white marbles is unknown.</p>
+<p>Le même contexte pour ces deux lotteries.</p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 46%" />
-<col style="width: 13%" />
-<col style="width: 21%" />
-<col style="width: 21%" />
+<col style="width: 39%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 25%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Lotteries</p></td>
-<td><p>red</p></td>
-<td><p>black</p></td>
-<td><p>white</p></td>
+<td><p>rouge</p></td>
+<td><p>noire</p></td>
+<td><p>blanche</p></td>
 </tr>
 <tr class="row-even"><td><p><span class="math notranslate nohighlight">\(L_3\)</span></p></td>
 <td><p>50</p></td>
@@ -610,20 +521,24 @@ white. The proportion of black and white marbles is unknown.</p>
 </tr>
 </tbody>
 </table>
-<p>Ellsberg’s Paradox</p>
-<p><strong>Exercise J</strong> Show that the combination of <span class="math notranslate nohighlight">\(L_1 \succ L_2\)</span> and
-<span class="math notranslate nohighlight">\(L_4 \succ L_3\)</span> does not respect the expected utility for any
-subjective probability of black marbles.</p>
-<p><a class="reference external" href="https://fr.wikipedia.org/wiki/Daniel_Ellsberg">Pentagon Papers</a></p>
-<p>Kahneman and Tversky: Perspective Theory</p>
-<p>Imagine a new disease expected to kill 600. Two programs proposed.</p>
+<p>Le Paradoxe d’Ellsberg</p>
+<p><strong>Exercice J</strong> Montrez que la combinaison de choix <span class="math notranslate nohighlight">\(L_1 \succ L_2\)</span> et
+<span class="math notranslate nohighlight">\(L_4 \succ L_3\)</span> ne peut survenir si l’agent a des préférences représentées par l’espérance d’utilité.</p>
+<ol class="upperalpha simple" start="13">
+<li><p>Ellsberg est bien connue pour ce Paradoxe, mais encore davantage pour ses mésaventures avec le gouvernement américain… <a class="reference external" href="https://fr.wikipedia.org/wiki/Daniel_Ellsberg">Pentagon Papers</a></p></li>
+</ol>
+<p>Kahneman and Tversky: Les perspectives</p>
+<p>Ces auteurs, tous deux récipiendaires d’un Prix Nobel, montrent que nous sommes influencés par les perspectives (framing) quand nous faisons des choix en situation risquée:</p>
+<p>Imaginons qu’une nouveau virus pourrait tuer 600 personnes. Deux interventions sont présentées.</p>
 <ul class="simple">
-<li><p>(Positive Framing): A) 200 saved, B) 1/3 probability that 600 saved,
-2/3 that none saved</p></li>
-<li><p>(Negative Framing): C) 400 will die, D) 1/3 nobody dies, 2/3 all die</p></li>
+<li><p>(Perspective positive): A) 200 sauvées, B) 1/3 probabilité que 600 sont sauvés,
+2/3 que personne n’est sauvé</p></li>
+<li><p>(Perspective négative): C) 400 vont mourrir, D) 1/3 probabilité que personne décède, 2/3 probabilité que tous décèdent.</p></li>
 </ul>
-<p>If this interests you, read: <a class="reference external" href="https://www.uzh.ch/cmsssl/suz/dam/jcr:00000000-64a0-5b1c-0000-00003b7ec704/10.05-kahneman-tversky-79.pdf">Khaneman et Tversky
+<p>En pratique, A est plus populaire que B, mais D est plus populaire que C. Or, en terme de personnes en vie, les deux choix mènent aux mêmes résultats.</p>
+<p>Si les perspectives vous intéressent, allez lire ce chef d’oeuvre: <a class="reference external" href="https://www.uzh.ch/cmsssl/suz/dam/jcr:00000000-64a0-5b1c-0000-00003b7ec704/10.05-kahneman-tversky-79.pdf">Khaneman et Tversky
 (1979)</a></p>
+</div>
 </div>
 
 

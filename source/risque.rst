@@ -1,345 +1,293 @@
-.. _section-1:
+Le Risque
+---------
 
-Préférences pour le risque
-==========================
+De manière générale, les gens n'aiment pas le risque. Pour s'en convaincre, imaginez vous faire offrir à la retraite:
 
-**De manière générale, les gens n'aiment pas le risque**
+-  **Plan A**: un revenu certain de: 50 000/an
 
-Pour s'en convaincre, imaginez vous faire offrir:
-
--  un revenu certain à la retraite de: 50 000/an
-
--  Un revenu incertain à la retraite (dès suite de placement)
+-  Un revenu incertain à la retraite (dès suite de placements)
 
    ====================== ======================
-   **placement**          50% chance 10 000/an
+   **Plan B**             50% chance 10 000/an
    \                      50% chance 90 000/an
    ====================== ======================
 
 -  Revenu espéré est de 50 000 dans les deux cas, lequel choisissez-vous?
 
 Rendement et risque
-~~~~~~~~~~~~~~~~~~~
++++++++++++++++++++
 
-**Imaginez que le placement est maintenant**
+Imaginez que le placement est maintenant:
 
    ====================== ======================
-   **placement**          50% chance 10 000/an
+   **Plan C**             50% chance 10 000/an
    \                      50% chance 100 000/an
    ====================== ======================
 
 ou encore mieux, 
 
    ====================== ======================
-   **placement**          50% chance 10 000/an
+   **Plan D**             50% chance 10 000/an
    \                      50% chance 150 000/an
    ====================== ======================
 
-À un moment, vous allez probablement choisir le placement...
+À un moment, vous allez probablement choisir le placement risqué parce que le rendement espéré est plus élevé. Les préférences en situation de risque sont fonctions des gains mais aussi du risque (les probabilités et les gains). La théorie du consommateur que nous avons vu ne couvre pas ce cas. 
 
 L'approche d'espérance d'utilité (EU)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
++++++++++++++++++++++++++++++++++++++
 
-**Lottery and expected utility**
+**Lotterie**
 
--  Lottery :math:`\mathcal L = (p,X \;; 1-p,Y)` : with probability
-   :math:`p` to get :math:`X`, and probability :math:`1-p` to get
-   :math:`Y`
+-  Lotterie :math:`\mathcal L = (p,X \;; 1-p,Y)` : avec probabilité
+   :math:`p` d'obtenir :math:`X`, et probabilité :math:`1-p` d'obtenir
+   :math:`Y`. L'espérance de la lotterie est :math:`\mathbb{E}_{L} = pX + (1-p)Y`. 
 
--  Expected utility
+-  Espérance d'utilité semble naturelle
 
    .. math::
 
-      \mathbf \mathbb{E}_{{ \mathcal L}} (u) = p\times u(X) + (1-p) \times
+      \mathbb{E}_{{ \mathcal L}} (u) = p\times u(X) + (1-p) \times
       u(Y)
 
-**Preferences in lotteries**
+**Préférences sur des lotteries**
 
--  Model: Consumer prefers the lottery :math:`\mathcal L_1` over the
-   lottery :math:`\mathcal L_2` if
+-  Le consommateur préfère la lotterie :math:`\mathcal L_1` à la lotterie :math:`\mathcal L_2` si
 
    .. math::
 
-      \mathbf \mathbb
-      {E}_{{ \mathcal L_1}} (u) > \mathbf \mathbb{E}_{{ \mathcal L_2}} (u)
+      \mathbb{E}_{{ \mathcal L_1}} (u) > \mathbb{E}_{{ \mathcal L_2}} (u)
 
--  Note: Utility is cardinal (units and form matter). This is called the
-   `von Neumann <https://fr.wikipedia.org/wiki/John_von_Neumann>`__ and
-   Morgenstern (vNM) utility.
+-  La représentation des préférences par l'espérance d'utilité est appelé utilité
+   `von Neumann <https://fr.wikipedia.org/wiki/John_von_Neumann>`__ et
+   Morgenstern (vNM).
 
-Example
+**Exemple**
 
-**Context**
+Si :math:`u(X) = \sqrt{X}` et le consommateur fait face aux lotteries :math:`\mathcal L_1 = (0.5,0\;; 0.5,16)` et :math:`\mathcal L_2 = (1,6)`.
 
--  :math:`u(X) = \sqrt{X}`
+-  **Exercice A**: Quel est le rendement espéré de chaque lotterie?
 
--  :math:`\mathcal L_1 =
-   (0.5,0\;; 0.5,16)` et :math:`\mathcal L_2 = (1,6)`
+-  **Exercice B** Si le consommateur a des préférences vNM, laquelle des lotteries choisira-t-il?
 
--  **Exercise A**: Expected return?
+-  **Exercice C**: Est-ce que la fonction d'utilité :math:`u(X) = X` donne le même choix?
 
--  **Exercise B** What does the consumer choose?
-
--  **Exercise C**: Does the utility function :math:`u(X) = X` result in
-   the same behaviour?
-
-Identifying preferences from choices
-
-**Preferences do not vary with affine transformations**
-
--  Affine transformation: :math:`\widehat u = a u +b` with :math:`a>0`
+En situation de certitude, l'utilité est ordinale: seul l'ordre compte. Cependant, en situation de risque, l'utilité espérée à la vNM est cardinale, car elle dépend des probabilités qui sont ont une échelle (entre 0 et 1). Donc, les transformations monotones ne sont pas permises. Mais une transformation est permise: la transformation affine: :math:`\widehat u = a u +b` avec :math:`a>0`. On peut montrer que cette transformation n'affecte pas les préférences
 
    .. math::
 
       \begin{aligned}
-      \mathbf{E}_{L_1} \widehat u \geq \mathbf{E}_{L_2} \widehat u & \iff  a\mathbf{E}_{L_1} u + b \geq a\mathbf{E}_{L_2} u + b \\ & \iff 
-       \mathbf{E}_{L_1} u  \geq \mathbf{E}_{L_2} u\end{aligned}
+      \mathbb{E}_{L_1} \widehat u \geq \mathbb{E}_{L_2} \widehat u & \iff  a\mathbb{E}_{L_1} u + b \geq a\mathbb{E}_{L_2} u + b \\ & \iff 
+       \mathbb{E}_{L_1} u  \geq \mathbb{E}_{L_2} u\end{aligned}
 
-Risk Aversion and Risk Seeking
-==============================
 
-Risk-Averse and Risk-Seeking Consumers
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Aversion au risque
+++++++++++++++++++
 
-**Different attitudes towards risk**
+L'attitude au risque varie d'un individu à l'autre: 
 
--  | Risk aversion: consider :math:`L = (p, X\;; 1-p,Y)`
-   | If we denote :math:`Z = p X + (1-p)Y`.
+-  **Riscophobie (aversion au risque)**: si :math:`L = (p, X\;; 1-p,Y)`
+   et on dénote :math:`Z = p X + (1-p)Y`, alors le consommateur est riscophobe si s'il préfère :math:`\mathcal L' = (1,Z)`
+   à :math:`\mathcal L`.
 
-   consumer is risk-averse if he prefers :math:`\mathcal L' = (1,Z)`
-   over :math:`\mathcal L`
-
--  Risk-seeking: he prefers :math:`\mathcal L = (p, X\;; 1-p,Y)` over
+-  **Riscophilie (propension au risque)**: Il ou elle préfère :math:`\mathcal L = (p, X\;; 1-p,Y)` à
    :math:`\mathcal L' =
    (1,Z)`
 
-**What do we observe?**
+- **Risconeutre**:   Alors le consommateur est indifférent entre :math:`\mathcal L = (p, X\;; 1-p,Y)` et :math:`\mathcal L' =(1,Z)`.
 
--  There is some risk-seeking behaviour (casinos ... ) but it doesn’t
-   take into account the value of the "experience"
+**Qu'observe-t-on?**
 
--  A lot of risk aversion (insurance, saving, investment ...)
+-  Beaucoup de riscophobie
 
-Risk Aversion and Concavity of the Utility
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-  Un peu de riscophilie, mais ne tient souvent pas compte de la valeur de l'expérience de prendre des risques... Exemple du casino souvent donné... 
 
-**Risk aversion**
+Aversion au risque et concavité de l'utilité
+++++++++++++++++++++++++++++++++++++++++++++
 
--  Consumer with utility :math:`u`
+**Riscophobie**
 
--  Given :math:`(X,Y)` and :math:`p`, define
-   :math:`z \equiv pX + (1-p)Y`
+Le consommateur a une fonction d'utilité :math:`u`. En contexte, vNM, c'est le seul objet qu'on peut modéliser pour capter les comportements de riscophobie et de riscophilie. On peut donc se douter que les propriétés de :math:`u` auront quelque chose à voir avec ces comportements. 
 
--  Risk-aversion implies: :math:`u(Z) \geq pu(X) + (1-p)u(Y)`
+Fixons deux états :math:`(X,Y)` et la probabilité :math:`p` que :math:`X` soit réalisé. Alors la richesse espérée est :math:`Z = pX + (1-p)Y`.
 
--  This is the equivalent of saying that :math:`u` is concave.
+L'aversion au risque implique que 
 
-**Risk-neutrality**
+   .. math::
+      u(Z) > pu(X) + (1-p)u(Y). 
 
--  Indifference between
+Une fonction :math:`u` qui respecte cette inégalité est concave (voir rappel mathématique). Dans le domaine des statistiques, on réfère à ce résultat comme étant l'inégalité de Jensen. Le cas de la riscophilie correspond à une fonction d'utilité convexe. 
 
-   .. math:: \mathcal L = (p, X\;; 1-p,Y) \quad and \quad  \mathcal L' = (1,Z)
+**Neutralité au risque**
 
--  Corresponds to linear utility :math:`u(X) = a X + b`, in particular
-   :math:`u(x) = x`.
+Si l'individu est neutre face au risque, il y a indifférence entre
 
-Measuring risk aversion
+   .. math:: \mathcal L = (p, X\;; 1-p,Y) \quad et \quad  \mathcal L' = (1,Z)
 
-`Holt et Laury (2002), American Economic
-Review <https://pubs.aeaweb.org/doi/pdfplus/10.1257/000282802762024700>`__
-`Holt et Laury (2002), American Economic
-Review <https://pubs.aeaweb.org/doi/pdfplus/10.1257/000282802762024700>`__
+La fonction d'utilité doit donc être contrainte à être linéaire dans la richesse  :math:`u(X) = a X + b`, avec le cas particulier :math:`u(X) = X`.
 
-**Exercise D**: Why does a risk-averse agent wait longer in the Holt and
-Laury experiment?
+Mesurer l'aversion au risque
+++++++++++++++++++++++++++++
 
-Risk Premium
-============
+Comment mesurer le degré de riscophobie? Comment comparer deux individus et dire qu'un est plus riscophobe qu'un autre? Deux mesures sont bien utiles dans ce contexte, soit le coefficient d'aversion au risque absolue et le coefficient d'aversion au risque relatif. 
 
-.. _risk-premium-1:
+Coefficient absolue: 
 
-Risk Premium
-~~~~~~~~~~~~
+   .. math::
+      A(X) = -\frac{u''(X)}{u'(X)} 
 
-**Definition**
+Coefficient relatif: 
 
--  Consider the lottery :math:`\mathcal L =
-   (p,X\;;1-p,Y)`. Define :math:`Z` as :math:`Z \equiv pX+ (1-p)Y`.
+   .. math::
+      R(X) = -\frac{u''(X)X}{u'(X)} 
 
--  Find :math:`Z'` such that :math:`u(Z') = pu(X) + (1-p)u(Y)`
+Pourquoi ces mesures? Puisque la riscophobie est reliée à la concavité, les deux mesures augmentent quand la deuxième dérivée augmente (elle est négative pour concave, d'où le moins). Ensuite, on normalise par l'utilité marginale :math:`u'(X)`, pour fixer les unités puisque :math:`u` est ordinale.
 
--  :math:`Z'` is a certain equivalent of :math:`\mathcal L`
+La mesure absolue permet de regarder le niveau de riscophobie pour une lotterie en montant absolue. Le coefficient relatif permet de regarder le degré de riscophobie pour une lotterie en proportion de la richesse. 
 
--  When risk-averse, :math:`Z' < Z` and :math:`\pi = Z-Z'` is the risk
-   premium
+La distinction entre les deux est utile. Par exemple, on pourrait croire intuitif que la mesure absolue décroit dans la richesse (la lotterie est faible par rapport à la richesse) tandis que le coefficient relatif devrait être relativement constant puisque la lotterie reste constante en proportion de la richesse. Donc, pour une décision d'investissement de portefeuille, où la taille du portefeuille est à peu près constante en proportion de la richesse, le coefficient relatif parait la bonne mesure. Pour un risque plus absolue, par exemple, une lotterie au casino, le coefficient absolue paraît plus utile. 
 
--  The risk premium is the amount equal to the gain/loss provided by the
-   lottery
 
--  It’s how much we should give the consumer to entice him to take the
-   risk (compensation). Or, how much he is willing to pay to eliminate
-   of a risk.
+Comment mesurer ce coefficient? Une méthode très utilisée est le liste de prix multiples. `Holt et Laury (2002) <https://pubs.aeaweb.org/doi/pdfplus/10.1257/000282802762024700>`__ ont fait une application à la mesure des attitudes façes au risque, qui démontre entre autre l'importance de donner des incitatifs financiers à ceux qui participent. 
 
--  This is used to evaluate risky assets and demand for insurance.
+Une liste de prix multiple présente deux lotteries sous différentes configurations. Le répondant doit choisir la lotterie qu'il préfère. Une lotterie sera choisie au hasard à la fin de l'expérience et sera jouée. Le répondant se verra payer le montant. Voici exemple tiré de Holt et Laury: 
 
-| Example **Exercise E**: An agent has the utility function
-  :math:`u(X)=\ln X`. His initial wealth is :math:`X_0 = 100` and he’s
-  facing the risk of losing 50 with probability 0.5 and win 50 with
-  probability 0.5. What is the maximum amount he’s willing to pay to
-  avoid that risk?
-| **Exercise F**: With :math:`u(X) = \sqrt X`, is the risk premium
-  smaller?
 
-Applications: Insurance and Investment
-======================================
+.. image:: /images/mpl.png
+   :scale: 100%
 
-Several goods we buy are lotteries
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+On utilisera une fonction d'utilité de type, 
 
-**Financial assets, insurance, investment goods ... almost everything**
+.. math::
 
--  Stocks (yields 10 if the firm performs well, yields 0 if she
-   underperforms)
+   U(X) = \frac{X^{1-r}}{1-r}.
 
--  Fire insurance (yields 5 if house burns down, yields 0 otherwise)
+Dans ce cas, on peut montrer que :math:`R(X) = r`, d'où son nom, fonction d'utilité CRRA (*constant relative risk aversion*). 
 
--  Used car (value of 3 if good quality, value of 0 if lemon)
+**Exercice D**: En utilisant la fonction d'utilité CRRA, dans l'expérience MPL ici-haut, calculer l'interval dans lequel doit se trouver :math:`r` si l'individu l'option A jusqu'au 7e choix et ensuite l'option B à partir du 8e choix?
 
--  Starting a business (yields 15 if it works , -5 if it fails)
 
--  Getting married, choosing a career, getting surgery, driving a
-   vehicle... all of these are choices in a risky context.
+Prime de risque
++++++++++++++++
 
-**Later:** practical implications of risk-aversion
+Considérons la lotterie  :math:`\mathcal L =(p,X\;;1-p,Y)`. On dénote :math:`Z` l'espèrance de la lotterie :math:`Z = pX+ (1-p)Y`. On pourrait s'intéresser à :math:`Z'` tel que 
 
-Insurance and Co-insurance – I
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. math::
+   u(Z') = pu(X) + (1-p)u(Y)
 
-**Context: two consumers facing risk**
+:math:`Z'` est un équivalent certain pour :math:`\mathcal L` étant donné les préférences représentées par :math:`u`.
 
--  Each is employed with a 50% probability, income 100
+Si l'agent est riscophobe, :math:`Z' < Z` et on dénote :math:`\pi = Z-Z'` la prime de risque. Son interprétation dépend du contexte. Quand l'action concerne la prise de risque (par défaut l'individu est en situation de certitude), on l'interprète comme étant la compensation minimum demandée par l'agent pour prendre le risque. La prime de risque représente alors le montant minimal qu'il faut payer avec certitude à l'agent pour qu'il prenne le risque. En contexte d'investissement boursier, le rendement excédentaire requis par un investisseur riscophobe sera égal à cette prime de risque. Plus l'actif est risqué, plus il demandera une compensation (rendement) élevée.  
 
--  Unemployed (U) with a 50% probability, income 0
+En assurance, la prime de risque sera plutôt le montant maximal que l'agent est prêt à payer pour éliminer le risque puisque la situation sans action, est risquée, alors qu'une assurance complète élimine le risque. Il s'agit donc d'une disposition à payer pour éliminer un risque. 
 
-**Employment insurance**
+**Exercice E**: Un agent a les préférences représentées par :math:`u(X)=\log X`. Sa richesse initialile est :math:`X_0 = 100` et il fait façe à un risque de perdre 50 avec probabilité 0.5 et gagner 50 avec une probabilité 0.5. Quel est le montant maximal qu'il est prêt à payer pour éliminer ce risque?
 
--  An insurance program where instead of the consumer 1 getting
-   :math:`I_1` and the consumer 2 getting :math:`I_2` they both get
-   :math:`(I_1+I_2)/2` regardless of their employment status
+Une approximation à la prime de risque existe pour un risque faible. Dénotant :math:`\sigma^2` la variance d'un risque absolue avec moyenne zéro, la prime de risque pour un agent ayant une richesse initiale de :math:`X` est bien approximée par: 
 
-Insurance and Co-insurance – II
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. math::
+   \tilde\pi = \frac{1}{2}\sigma^2 A(X)
 
-**Insurance is beneficial**
+On remarque que la prime augmente avec l'aversion au risque et la variance du risque. Une variante pour les risques relatifs prend une forme similaire.  
 
--  Without insurance: 50% of getting 0, 50% of getting 100
+**Exercice F**: Avec :math:`u(X) = \sqrt X`, la prime de risque est-elle plus faible que dans l'exercice précédent?
 
--  expected utility :math:`.5 [u(0) + u(100)]`
+Assurance
++++++++++
 
--  With insurance 25 % of getting 0, 25% of getting 50, 25% of getting
-   50, 25% of getting 100
+L'assurance est un marché qui existe parce que la population est riscophobe de manière générale. Il y a un marché pour l'assurance de biens (voitures, maisons, etc) mais aussi l'assurance des personnes (vie, rentes viagères, santé). Même nos gouvernements mettent en place des assurances, comme l'assurance-emploi (anciennement assurance-chômage). 
 
--  expected utility :math:`.25[u(0) + u(50) + u(50) + u(100)]`
+Prennons le cas du chômage. Considérons un exemple simple où deux individus peuvent être dans les états suivants:
 
--  Insurance is beneficial if and only if
+-  Employé avec probabilité 0.5, revenu de 100 
+
+-  Au chômage avec probabilité 0.5, revenu de 0
+
+
+Dénotons les revenus réalisées des deux individus, :math:`I_i` (:math:`i=1,2`). Un programme d'assurance-emploi dicte plutôt que les deux individus reçoivent :math:`(I_1+I_2)/2` peu importe leur statut d'emploi. 
+
+L'assurance est bénéfique *ex ante* pour deux agents riscophobes (avant la réalisation du risque): 
+
+- Sans assurance: utilité espérée de chacun des agents est :math:`.5 [u(0) + u(100)]`
+
+-  Avec insurance, 25 % les deux ont 0, 50% que 1 seul travaille, 25% les deux travaillent. Donc l'espérance d'utilité de chacun des agents est :math:`.25[u(0) + 2u(50) + u(100)]`
+
+L'assurance est bénéfique si
 
    .. math::
 
-      \begin{aligned}
-       & .25[u(0) + u(50) +
-      u(50) + u(100)] > .5 [u(0) + u(100)]\\ \iff& u(50) > .5[u(0)+u(100)]\end{aligned}
+      .25[u(0) + 2u(50) + u(100)] > .5 [u(0) + u(100)]
 
--  True if they are risk-averse
+ou si :math:`u(50) > .5[u(0)+u(100)]`. Donc, vrai si :math:`u` concave ou agent riscophobe (encore l'inégalité de Jensen). 
 
-Insurance and Co-insurance – III
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+En pratique, l'assurance-emploi pourrait être informelle entre les gens. Mais le problème est qu'après la réalisation du risque, l'individu qui a toujours un emploi ne veut plus partager. Une façon de voir un régime d'assurance, ou bien un assureur, est qu'il permet de sauver sur ces coûts de transaction (agence) entre les assurés.  
 
-**In practice**
+L'autre avantage est que l'assureur pourra mutualiser davantage d'agents au sein du régime. 
 
--  The issue of doing it informally: ex-ante (before knowing the
-   outcome) we want insurance (sharing), but ex-post, if employed, we
-   don’t want to share our income
+**La loi des grands nombre**
 
--  That is where insurance companies come in (making sure people pay
-   even though they got lucky)
+-  Considérons une variable aléatoire :math:`Z` égale à :math:`X` avec probabilité :math:`p` et :math:`Y` avec probabilité :math:`1-p`
 
-The Law of Large Numbers and Insurance
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-**Law of large numbers**
-
--  Consider a random variable :math:`Z` equal to :math:`X` with
-   probability :math:`p` and :math:`Y` with probability :math:`1-p`
-
--  If :math:`Z_1,
-   \cdots , Z_n` are independent with the same distribution
-   :math:`(p,X \;; 1-p,Y)` Then
+-  Si :math:`Z_1,
+   \cdots , Z_n` sont indépendantes avec la même distribution
+   :math:`(p,X \;; 1-p,Y)` alors
 
    .. math::
 
       si\; N \to +\infty,\quad  \frac{1}{N} (Z_1 + Z_2 + \cdots + Z_n)
       \to pX + (1-p)Y
 
--  The empirical average converges towards the expected value
+-  La réalisation moyenne, qui demeure aléatoire avec :math:`N` petit, devient certaine quand `N` tend vers l'infini. 
 
-.. _the-law-of-large-numbers-and-insurance-1:
+**Mutualisation**
 
-The Law of Large Numbers and Insurance
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-  Quand un grand nombre partage le risque, il élimine le risque par l'effet de mutualisation. Les assurées reçoivent exactement le revenu moyen. 
 
-**What this means for insurance**
+-  Si les agents sont riscophobes, ce résultat est désirable. 
 
--  When several individuals are sharing risk, and their risks are
-   independent, then everyone recieves exactly their expected income
 
--  If individuals are risk-averse, this result is good
+Assurance et entrepreneuriat
+++++++++++++++++++++++++++++
 
--  The larger the number of indivuals sharing risk is, the higher their
-   well-being will be
+**Devenir entrepreneur**
 
-Insurance is Important: An Investment Example
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-  Un individu a une richesse de 9 et peut décider de la garder ou bien de l'utiliser pour démarrer une entreprise. Sa richesse finale, s'il démarre une entreprise est donnée par la lotterie suivant:    :math:`\mathcal L = (.5,0 \;; .5,25)`. Ses préférences sont vMN avec :math:`u(X) = \sqrt{X}`. 
 
-**Investment project**
+-  **Exercice G**: Est-ce qu'il démarre l'entreprise?
 
--  An individual has a wealth of 9 and can decide to do nothing or to
-   use all his wealth to start a business corresponding to the lottery
-   :math:`\mathcal L = (.5,0 \;; .5,25)`
+**L'ange investisseur**
 
--  Utility :math:`u(X) = \sqrt{X}`
+-  Plutôt que d'investir seul, l'entrepreneur peut obtenir un financement d'un ange investisseur qui lui donne la moitié du capital pour la moitié du rendement.
 
--  **Exercise G**: What is the expected return? What will he choose ?
+-  L'entrepreneur garde donc 4.5 avec certitude s'il démarre l'entreprise. Mais il doit donner la moitié des rendements. 
 
-Insurance Encourages Investment
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-  La lotterie est maintenant :math:`\mathcal L' = (.5,4.5 \;; .5,17)`
 
-**With insurance**
+-  **Exercice H**: Quel sera son choix?
 
--  Instead of investing alone, the entrepreneur can get financing from
-   an angel investor who will provide half the capital and recieve half
-   the return
 
--  The entrepreneur gets to keep 4.5 and gets half of the return
+L'émission, *Les Dragons* de Radio-Canada est une application directe de cet exemple. La participation est toujours conditionnelle à une part des profits. La négociation porte donc sur la part des profits en rapport à la part de l'investissement initial. En voici un exemple ou les deux entrepreneurs ont négocié fort... 
 
--  The lottery is now :math:`\mathcal L' = (.5,4.5 \;; .5,17)`
+.. raw:: html
 
--  **Exercise H**: What will he choose?
+    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/ICyUEUUgq8Q" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
+    </div>
 
-Criticism of Expected Utility
-=============================
+En plus des différentes entreprises privées qui font ce genre d'investissements, des organisations comme Investissement Québec, les Fonds de travailleur (FTQ et Fondaction), Anges Québec, sont tous des mécanismes d'assurance qui peuvent promouvoir l'entrepreneuriat en partageant le risque. 
 
-Criticism of Expected Utility
+Critique de l'espérance d'utilité
++++++++++++++++++++++++++++++++++
 
--  Allais’ Paradox
 
--  Ellsberg’s Paradox
+-  Paradoxe d'Allais
 
--  Kahneman and Tversky
+-  Paradoxe de Ellsberg
 
-Choice
+-  Kahneman et Tversky: L'effet des perspectives
 
-We draw a number between 0 and 99 with probability 1/100 of drawing each
-integer:
+Expérience de choix I
+
+On tire un nombre entier entre 0 et 99 avec probabilité 1/100 pour chaque nombre entier:
 
 =========== == ==== =====
 Lotteries   0  1-10 11-99
@@ -347,9 +295,9 @@ Lotteries   0  1-10 11-99
 :math:`L_2` 0  250  50
 =========== == ==== =====
 
-Choice
+Expérience de choix II
 
-Now, let’s choose again between
+Maintenant, on considère une autre paire avec les mêmes règles de tirages. 
 
 =========== == ==== =====
 Lotteries   0  1-10 11-99
@@ -357,56 +305,56 @@ Lotteries   0  1-10 11-99
 :math:`L_4` 0  250  0
 =========== == ==== =====
 
-Maurice Allais and his Paradox
+Maurice Allais et son Paradoxe
 
-**Exercise I**: Show that :math:`L_1 \succ L_2` and
-:math:`L_4 \succ L_3` are incoherent with the expected utility theory.
+**Exercice I**: Montrez que :math:`L_1 \succ L_2` et
+:math:`L_4 \succ L_3` sont des choix incohérents si les préférences sont représentées par l'espérance de l'utilité.
 
 .. figure:: /images/allais.png
 
 
-Voir cet article pour toute l'histoire derrière le Paradoxe... `Munier 1991, Journal of Economic
-   Perspectives <https://pubs.aeaweb.org/doi/pdf/10.1257/jep.5.2.179>`_
+Voir cet article pour toute l'histoire derrière le Paradoxe... `Munier (1991) <https://pubs.aeaweb.org/doi/pdf/10.1257/jep.5.2.179>`_
+
+Expérience de choix III
+
+Une urne contient 90 billes. 30 sont rouges. Les autres 60 sont soit noires ou blanches. La proportion de billes blanches ou noires n'est pas connue. On vous demande de faire un choix entre les deux configurations de paiements suivants (lotteries): 
+
+=========== ===== ===== =======
+Lotteries   rouge noire blanche
+:math:`L_1` 50    0     0
+:math:`L_2` 0     50    0
+=========== ===== ===== =======
 
 Choice
 
-An urn contains 90 marbles. 30 are red. The other 60 are either black or
-white. The proportion of black and white marbles is unknown. Choose
-between
+Le même contexte pour ces deux lotteries. 
 
-=========== === ===== =====
-Lotteries   red black white
-:math:`L_1` 50  0     0
-:math:`L_2` 0   50    0
-=========== === ===== =====
+=========== ===== ===== =======
+Lotteries   rouge noire blanche
+:math:`L_3` 50    0     50
+:math:`L_4` 0     50    50
+=========== ===== ===== =======
 
-Choice
 
-An urn contains 90 marbles. 30 are red. The other 60 are either black or
-white. The proportion of black and white marbles is unknown.
+Le Paradoxe d'Ellsberg
 
-=========== === ===== =====
-Lotteries   red black white
-:math:`L_3` 50  0     50
-:math:`L_4` 0   50    50
-=========== === ===== =====
+**Exercice J** Montrez que la combinaison de choix :math:`L_1 \succ L_2` et
+:math:`L_4 \succ L_3` ne peut survenir si l'agent a des préférences représentées par l'espérance d'utilité.
 
-Ellsberg’s Paradox
+M. Ellsberg est bien connue pour ce Paradoxe, mais encore davantage pour ses mésaventures avec le gouvernement américain... `Pentagon Papers <https://fr.wikipedia.org/wiki/Daniel_Ellsberg>`__
 
-**Exercise J** Show that the combination of :math:`L_1 \succ L_2` and
-:math:`L_4 \succ L_3` does not respect the expected utility for any
-subjective probability of black marbles.
+Kahneman and Tversky: Les perspectives
 
-`Pentagon Papers <https://fr.wikipedia.org/wiki/Daniel_Ellsberg>`__
+Ces auteurs, tous deux récipiendaires d'un Prix Nobel, montrent que nous sommes influencés par les perspectives (framing) quand nous faisons des choix en situation risquée: 
 
-Kahneman and Tversky: Perspective Theory
+Imaginons qu'une nouveau virus pourrait tuer 600 personnes. Deux interventions sont présentées.
 
-Imagine a new disease expected to kill 600. Two programs proposed.
+-  (Perspective positive): A) 200 sauvées, B) 1/3 probabilité que 600 sont sauvés,
+   2/3 que personne n'est sauvé
 
--  (Positive Framing): A) 200 saved, B) 1/3 probability that 600 saved,
-   2/3 that none saved
+-  (Perspective négative): C) 400 vont mourrir, D) 1/3 probabilité que personne décède, 2/3 probabilité que tous décèdent. 
 
--  (Negative Framing): C) 400 will die, D) 1/3 nobody dies, 2/3 all die
+En pratique, A est plus populaire que B, mais D est plus populaire que C. Or, en terme de personnes en vie, les deux choix mènent aux mêmes résultats. 
 
-If this interests you, read: `Khaneman et Tversky
+Si les perspectives vous intéressent, allez lire ce chef d'oeuvre: `Khaneman et Tversky
 (1979) <https://www.uzh.ch/cmsssl/suz/dam/jcr:00000000-64a0-5b1c-0000-00003b7ec704/10.05-kahneman-tversky-79.pdf>`__
