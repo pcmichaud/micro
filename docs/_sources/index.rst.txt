@@ -24,6 +24,7 @@ Bienvenue sur le site du cours 20-851 à HEC Montréal.
    gemodel.rst
    strategy.rst
    selection.rst
+   intervention.rst
 
 
 Index
