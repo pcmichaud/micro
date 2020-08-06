@@ -395,3 +395,12 @@ En pratique, A est plus populaire que B, mais D est plus populaire que C. Or, en
 
 Si les perspectives vous intéressent, allez lire ce chef d'oeuvre: `Khaneman et Tversky
 (1979) <https://www.uzh.ch/cmsssl/suz/dam/jcr:00000000-64a0-5b1c-0000-00003b7ec704/10.05-kahneman-tversky-79.pdf>`__
+
+Exemple Python risque
++++++++++++++++++++++
+
+|ImageLink|_
+
+.. |ImageLink| image:: https://colab.research.google.com/assets/colab-badge.svg
+.. _ImageLink: https://colab.research.google.com/github/pcmichaud/micro/blob/master/notebooks/AversionRisqueExemple.ipynb
+
