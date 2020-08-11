@@ -39,7 +39,7 @@ Taux marginal de substitution (TMS)
 
 Si :math:`T=2`, alors
 
-.. math:: DU(\textbf{C}) = u(C_1) +  \delta u(C_2)
+.. math:: DU(C_1,C_2) = u(C_1) +  \delta u(C_2)
 
 La différentielle totale donne le TMS:
 
@@ -59,7 +59,7 @@ Une expérience au Danemark réalisée auprès de fonctionnaires Danois essaie d
 
 |image_mpl|
 
-Résultats montrent une grande dispersion et des taux élevés, beaucoup plus que les taux d'intérêts. 
+Les résultats montrent une grande dispersion et des taux d'escompte élevés, beaucoup plus que les taux d'intérêts. 
 
 |image_discount|
 
