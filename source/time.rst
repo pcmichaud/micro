@@ -334,3 +334,11 @@ Les gens au prise avec un problème de la sorte, pourrait vouloir, rationellemen
 .. |image_discount| image:: /images/Results.png
 .. |image_budget| image:: /images/budget.png
 .. |image_optimal| image:: /images/optimal.png
+
+Exemple Python Intertemporel
+++++++++++++++++++++++++++++
+
+|ImageLink|_
+
+.. |ImageLink| image:: https://colab.research.google.com/assets/colab-badge.svg
+.. _ImageLink: https://colab.research.google.com/github/pcmichaud/micro/blob/master/notebooks/Intertemporel.ipynb
