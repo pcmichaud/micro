@@ -23,7 +23,9 @@ L'évidence empirique indique que l'origine de ces préférences peut-être trac
 Utilité escomptée
 +++++++++++++++++
 
-Si :math:`u(C_t)` est l'utilité de consommer à la période :math:`t`, l'utilité escompté pour un plan de consommation :math:`\textbf{C} = (C_1,...,C_T)` est :
+Dans son livre *The Theory of Interest* en 1930, `Irving Fisher <https://fr.wikipedia.org/wiki/Irving_Fisher>`_ présente une théorie assez simple, mais qui servira de modèle pour des centaines de travaux en micro et macroéconomie. Les préférences y sont représentées par l'utilité escomptée. 
+
+Si :math:`u(C_t)` est l'utilité de consommer à la période :math:`t`, l'utilité escomptée pour un plan de consommation :math:`\textbf{C} = (C_1,...,C_T)` est :
 
 .. math:: DU(\mathbf{C}) = \sum_{t=1}^T \delta^{t-1} u(C_t)
 
@@ -51,9 +53,9 @@ Les préférences intertemporelles sont charactérisées par:
 
 **Exercice A**: Trouvez le TMS pour :math:`u(C_t) = \ln C_t`
 
-Comment estimer le taux d'escompte?
+Comment estimer le taux d'escompte? On peut utiliser les listes de prix multiples. 
 
-Une expérience au Danemark `(Harrison, Lau and Williams, 2002) <https://www.aeaweb.org/articles?id=10.1257/000282802762024674>`_
+Une expérience au Danemark réalisée auprès de fonctionnaires Danois essaie d'estimer le facteur d'escompte au niveau individuel `(Harrison, Lau and Williams, 2002) <https://www.aeaweb.org/articles?id=10.1257/000282802762024674>`_
 
 |image_mpl|
 
@@ -173,6 +175,7 @@ Visualement
 
  |image_optimal|
 
+Cette théorie serviva de fondation pour la théorie du cycle de vie (*the Life-Cycle Hypothesis*), proposée par `Franco Modigliani <https://en.wikipedia.org/wiki/Franco_Modigliani>`_, qui permettra de comprendre les choix en fonction de l'âge d'un agent. L'équation de Euler dérivée ici-haut suggère qu'un individu aime lisser sa consommation sur le cycle de vie, et par conséquent, s'il fait fasse à des revenus élevées durant son jeune âge et faible plus tard, épargne quand il est jeune et consomme cette épargne quand il est plus vieux. Ceci servira de fondation pour l'étude de l'épargne, de l'assurance-vie, de l'immobilier et d'un tas d'autres décisions financières. 
 
 **Exercice D**: Trouvez le choix optimal de :math:`C_1` et
 :math:`C_2` si :math:`u(C)=\frac{C^{1-\sigma}}{1-\sigma}` et avec une contrainte budgétaire classique. 
@@ -274,7 +277,7 @@ Exemple: Comment aider les gens à épargner?
 Moins évident à long-terme...
 
 
-** Engagement **
+**Engagement**
 
 Les gens au prise avec un problème de la sorte, pourrait vouloir, rationellement, qu'on limite leur choix. Par exemple, en ne leur permettant pas de succomber à la temptation à court-terme *dans leur propre intérêt*. David Laibson de Harvard, et plusieurs autres, étudient des mécanismes de la sorte, appliquées à la santé et l'épargne par exemple. 
 
