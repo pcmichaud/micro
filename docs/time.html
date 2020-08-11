@@ -90,13 +90,22 @@
 <li class="toctree-l1"><a class="reference internal" href="cons.html">Consommateur</a></li>
 <li class="toctree-l1"><a class="reference internal" href="effets.html">Effets Prix et Revenu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="risque.html">Le Risque</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Le Temps</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Le Temps</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#preferences">Préférences</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#utilite-escomptee">Utilité escomptée</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#taux-marginal-de-substitution-tms">Taux marginal de substitution (TMS)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#la-contrainte-intertemporelle">La contrainte intertemporelle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#choix-optimal">Choix optimal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#biais-pour-le-present">Biais pour le présent</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="welfare.html">Bien-être</a></li>
 <li class="toctree-l1"><a class="reference internal" href="echange.html">Échange</a></li>
 <li class="toctree-l1"><a class="reference internal" href="production.html">La production</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gemodel.html">Équilibre général</a></li>
-<li class="toctree-l1"><a class="reference internal" href="strategy.html">Stratégie d’entreprise</a></li>
+<li class="toctree-l1"><a class="reference internal" href="strategy.html">Concurrence imparfaite</a></li>
 <li class="toctree-l1"><a class="reference internal" href="selection.html">Asymétrie d’information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intervention.html">Politiques publiques</a></li>
 </ul>
 
             
@@ -163,6 +172,182 @@
             
   <div class="section" id="le-temps">
 <h1>Le Temps<a class="headerlink" href="#le-temps" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="section" id="preferences">
+<h2>Préférences<a class="headerlink" href="#preferences" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Les individus préfèrent généralement un bénéfice le plus tôt possible et un coût le plus tard possible:</p>
+<ul class="simple">
+<li><p>Un café maintenant ou dans une heure?</p></li>
+<li><p>Aller au Gym aujourd’hui ou demain?</p></li>
+<li><p>Épargner aujourd’hui pour dépenser demain?</p></li>
+</ul>
+</div>
+<div class="section" id="utilite-escomptee">
+<h2>Utilité escomptée<a class="headerlink" href="#utilite-escomptee" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Si <span class="math notranslate nohighlight">\(u(C_t)\)</span> est l’utilité de consommer à la période <span class="math notranslate nohighlight">\(t\)</span>, l’utilité escompté pour un plan de consommation <span class="math notranslate nohighlight">\(\textbf{C} = (C_1,...,C_T)\)</span> est :</p>
+<div class="math notranslate nohighlight">
+\[DU(\mathbf{C}) = \sum_{t=1}^T \delta^{t-1} u(C_t)\]</div>
+<p><span class="math notranslate nohighlight">\(\delta\)</span> <span class="math notranslate nohighlight">\(\in [0,1]\)</span> est le facteur d’escompte (patience)
+alors que <span class="math notranslate nohighlight">\(\mathbf{C} = (C_1,...,C_T)\)</span>. La relation entre le facteur d’escompte et le taux d’escompte <span class="math notranslate nohighlight">\(\rho\)</span> est donné par:</p>
+<div class="math notranslate nohighlight">
+\[\delta = \frac{1}{1+\rho}\]</div>
+</div>
+<div class="section" id="taux-marginal-de-substitution-tms">
+<h2>Taux marginal de substitution (TMS)<a class="headerlink" href="#taux-marginal-de-substitution-tms" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Si <span class="math notranslate nohighlight">\(T=2\)</span>, alors</p>
+<div class="math notranslate nohighlight">
+\[DU(\textbf{C}) = u(C_1) +  \delta u(C_2)\]</div>
+<p>La différentielle totale donne le TMS:</p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial C_2}{\partial C_1}\rvert_{dDU=0} = -\frac{u'(C_1)}{\delta u'(C_2)}\]</div>
+<p>Les préférences intertemporelles sont charactérisées par:</p>
+<ul class="simple">
+<li><p>Le facteur d’escompte (<span class="math notranslate nohighlight">\(\delta\)</span>)</p></li>
+<li><p>La forme de <span class="math notranslate nohighlight">\(u\)</span>.</p></li>
+</ul>
+<p><strong>Exercice A</strong>: Trouvez le TMS pour <span class="math notranslate nohighlight">\(u(C_t) = \ln C_t\)</span></p>
+<p>Comment estimer le taux d’escompte?</p>
+<p>Une expérience au Danemark (Harrison, Lau and Williams, 2002)</p>
+<p><img alt="image_mpl" src="_images/MPL.png" /></p>
+<p>Résultats montrent une grande dispersion et des taux élevés, beaucoup plus que les taux d’intérêts.</p>
+<p><img alt="image_discount" src="_images/Results.png" /></p>
+</div>
+<div class="section" id="la-contrainte-intertemporelle">
+<h2>La contrainte intertemporelle<a class="headerlink" href="#la-contrainte-intertemporelle" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Marché financiers et intérêt</p>
+<p>Institution financière offre <span class="math notranslate nohighlight">\(r_S\)</span> pour chaque dollar déposé
+(épargne). Elle nous demande <span class="math notranslate nohighlight">\(r_D\)</span> pour chaque dollar prêté</p>
+<p>Pour maintenant supposons <span class="math notranslate nohighlight">\(r_D = r_S = r\)</span>.</p>
+<p><strong>Ressources</strong></p>
+<p>Les ressources ont deux sources:</p>
+<ul class="simple">
+<li><p>Richesse initiale: <span class="math notranslate nohighlight">\(W_0\)</span>.</p></li>
+<li><p>Revenu dans les deux périodes, <span class="math notranslate nohighlight">\(Y_1\)</span>, <span class="math notranslate nohighlight">\(Y_2\)</span>.</p></li>
+</ul>
+<p>La valeur présente des ressources est :</p>
+<div class="math notranslate nohighlight">
+\[VP_W = W_0 + Y_1 + \frac{Y_2}{1+r}\]</div>
+<p><strong>Constrainte</strong></p>
+<p>La valeur présente de la consommation est:</p>
+<div class="math notranslate nohighlight">
+\[VP_C = C_1 + \frac{C_2}{1+r}\]</div>
+<p>.</p>
+<p>Ainsi, la contrainte intertemporelle est <span class="math notranslate nohighlight">\(VP_C \leq VP_W\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[C_1 + \frac{C_2}{1+r} \leq W_0 + Y_1 + \frac{Y_2}{1+r}\]</div>
+<p><strong>Emprunt et épargne</strong></p>
+<p>On peut écrire la contrainte comme étant :</p>
+<div class="math notranslate nohighlight">
+\[(1+r)(W_0 + Y_1 - C_1) \ge  C_2 - Y_2\]</div>
+<p>Ainsi,</p>
+<ul class="simple">
+<li><p>L’individu qui épargne en première période, peut consommer plus que son revenu en 2e période.</p></li>
+<li><p>L’individu qui emprunte en première période, doit consommer moins que son revenu en 2e période.</p></li>
+</ul>
+<p>Visualement, on a</p>
+<p><img alt="image_budget" src="_images/budget.png" /></p>
+<p>Exemple: Un régime de retraite à prestation déterminé force l’individu à épargner dans la première période et donne un revenu additionel dans la deuxième.</p>
+<ul class="simple">
+<li><p>Revenu en 2e période est <span class="math notranslate nohighlight">\(Y_2 = \phi Y_1\)</span> avec un taux de remplacement
+<span class="math notranslate nohighlight">\(\phi \in [0,1]\)</span>.</p></li>
+<li><p>Le revenu de première période est amputé d’une contribution
+<span class="math notranslate nohighlight">\(\tau Y_1\)</span>.</p></li>
+</ul>
+<p>La contrainte budgétaire est donc:</p>
+<div class="math notranslate nohighlight">
+\[C_1 + \frac{C_2}{1+r} \leq W_0 + (1-\tau)Y_1 + \frac{\phi Y_1}{1+r}\]</div>
+<p>Le taux de contribution est choisi par l’actuaire <span class="math notranslate nohighlight">\(\tau\)</span> tel que:</p>
+<div class="math notranslate nohighlight">
+\[\tau Y_1 = \frac{\phi Y_1}{1+r_P} \to \tau = \frac{\phi}{1+r_P}\]</div>
+<p>où <span class="math notranslate nohighlight">\(r_P\)</span> est le taux de rendement implicite du régime de retraite. Si <span class="math notranslate nohighlight">\(r_P = r\)</span>,
+la contrainte budgétaire ne change pas! Le plan de consommation ne change pas et donc l’épargne privée est réduite d’un même montant que la contribution (Effet d’éviction).</p>
+<p><strong>Écarts de taux emprunts vs. épargne</strong></p>
+<p><strong>Exercice B</strong>: À qui ressemble la contrainte si <span class="math notranslate nohighlight">\(r_S&lt;r_D\)</span>?</p>
+<p><strong>Exercice C</strong>: Comment représenter une situation où l’agent ne peut emprunter?</p>
+</div>
+<div class="section" id="choix-optimal">
+<h2>Choix optimal<a class="headerlink" href="#choix-optimal" title="Lien permanent vers ce titre">¶</a></h2>
+<p><strong>Maximisation</strong></p>
+<p>Le problème est (fixons <span class="math notranslate nohighlight">\(W_0=0\)</span> pour simplifier):</p>
+<div class="math notranslate nohighlight">
+\[\max_{C_1,C_2} \{ u(C_1) + \delta u(C_2) : C_1+C_2/(1+r) \leq Y_1 + Y_2/(1+r)\}\]</div>
+<p>Deux approches:</p>
+<ol class="arabic simple">
+<li><p>Approche directe (substitution de la contrainte)</p></li>
+<li><p>Lagrangien</p></li>
+</ol>
+<p><strong>Conditions d’optimalité</strong></p>
+<p>Le Lagrangien a 3 CPO:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+ u'(C_1) - \lambda = 0  \\
+\delta u'(C_2) - \lambda /(1+r) = 0  \\
+C_1+C_2/(1+r) - Y_1 - Y_2/(1+r) = 0  \end{aligned}\end{split}\]</div>
+<p>Avec (1) et (2) on obtient :</p>
+<div class="math notranslate nohighlight">
+\[\frac{u'(C_1)}{\delta u'(C_2)} = 1+r\]</div>
+<p>On peut réarranger et en fixant <span class="math notranslate nohighlight">\(R=1+r\)</span>, on obtient l’équation de <strong>Euler</strong>:</p>
+<div class="math notranslate nohighlight">
+\[u'(C_1) = R\delta u'(C_2)\]</div>
+<p>Visualement</p>
+<blockquote>
+<div><p><img alt="image_optimal" src="_images/optimal.png" /></p>
+</div></blockquote>
+<p>Exemple</p>
+<p><strong>Exercice D</strong>: Trouvez le choix optimal de <span class="math notranslate nohighlight">\(C_1\)</span> et
+<span class="math notranslate nohighlight">\(C_2\)</span> si <span class="math notranslate nohighlight">\(u(C)=\frac{C^{1-\sigma}}{1-\sigma}\)</span> et avec une contrainte budgétaire classique.</p>
+<p>Exemple: Épargne-t-on assez pour la retraite?</p>
+<p>Un sujet important dans la littérature économique et très présente dans le débat public.</p>
+<div class="figure align-default" id="id1">
+<img alt="Le Conseiller, Globe and Mail, L’Actualité" src="_images/retraite.png" />
+<p class="caption"><span class="caption-text">Le Conseiller, Globe and Mail, L’Actualité</span><a class="headerlink" href="#id1" title="Lien permanent vers cette image">¶</a></p>
+</div>
+<p>On peut simuler des taux de remplacement effectif mais difficile de dire ce qui est assez ou non…</p>
+<div class="figure align-default" id="id2">
+<img alt="McKinsey (2015)" src="_images/mckinsey.png" />
+<p class="caption"><span class="caption-text">McKinsey (2015)</span><a class="headerlink" href="#id2" title="Lien permanent vers cette image">¶</a></p>
+</div>
+<p>Épargne optimale</p>
+<p>Qu’est-ce que la théorie nous dit sur l’épargne optimale?</p>
+<p><strong>Exercice E</strong>: Trouvez une expression pour le niveau optimal d’épargne en début de 2e période si <span class="math notranslate nohighlight">\(u(C)=\frac{C^{1-\sigma}}{1-\sigma}\)</span> et la contrainte est donnée par:</p>
+<div class="math notranslate nohighlight">
+\[C_1 + \frac{C_2}{1+r} \leq (1-\tau)Y_1 + \frac{\phi Y_1}{1+r}\]</div>
+<p>Des calculs plus sophistiqués donneront ce genre de graphique:</p>
+<div class="figure align-default" id="id3">
+<img alt="Scholz et al. (2007, Journal of Political Economy)" src="_images/savings.png" />
+<p class="caption"><span class="caption-text">Scholz et al. (2007, Journal of Political Economy)</span><a class="headerlink" href="#id3" title="Lien permanent vers cette image">¶</a></p>
+</div>
+</div>
+<div class="section" id="biais-pour-le-present">
+<h2>Biais pour le présent<a class="headerlink" href="#biais-pour-le-present" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Choisir un film</p>
+<p>Vous devez choisir un film à regarder aujourd’hui et un la semaine prochaine:</p>
+<p>Supposons que « Mommy » a un bénéfice immédiat de 4 et un bénéfice futur de 4 mais que « Les Boys » a un bénéfice immédiat de 7 (aucun bénéfice futur).</p>
+<p><strong>Exercice F</strong>: Quel est l’utilité escomptée is vous choisissez aujourd’hui et <span class="math notranslate nohighlight">\(\delta=1\)</span>. Que se passe-t-il si vous choisissez la semaine prochaine?</p>
+<p><strong>Biais pour le présent</strong></p>
+<p>Laibson (1997) propose les préférences escomptées quasi-hyperbolique:</p>
+<div class="math notranslate nohighlight">
+\[QH(\mathbf{c}) = u(C_1) + \beta \sum_{t=2}^T \delta^{t-1} u(C_t)\]</div>
+<p><strong>Exercice G</strong>: Quel est le TMS entre les consommations <span class="math notranslate nohighlight">\(C_1\)</span> et
+<span class="math notranslate nohighlight">\(C_2\)</span>? Et <span class="math notranslate nohighlight">\(C_2\)</span> vs. <span class="math notranslate nohighlight">\(C_3\)</span>? Comparer avec l’espérance d’utilité.</p>
+<p>En utilisant l’exemple des deux films, supposons maintenant <span class="math notranslate nohighlight">\(\beta=0.5\)</span>.</p>
+<p><strong>Exercice H</strong>: Quel film choisissez-vous pour aujourd’hui et pour la semaine présente si vous avez des préférences quasi-hyperbolique? Et si le choix se fait la semaine prochaine?</p>
+<p>Example: Qui s’abonne au Gym?</p>
+<p>Une passe d’une visite coûte 10$. Le coût par visite des gens qui s’abonne est beaucoup plus élevé que 10$.</p>
+<div class="figure align-default" id="id4">
+<img alt="Della Vigna et Malmendier (2006)" src="_images/Gym.png" />
+<p class="caption"><span class="caption-text">Della Vigna et Malmendier (2006)</span><a class="headerlink" href="#id4" title="Lien permanent vers cette image">¶</a></p>
+</div>
+<p>Exemple: Comment aider les gens à épargner?</p>
+<ul class="simple">
+<li><p>Épargner est similaire à aller au Guym: coûteux dans le court-terme, bénéfique à long-terme.</p></li>
+<li><p>Pour aider les gens avec ces biais (attention: paternalisme libertarien), on pourrait décider de changer l’option de défaut: opt-in vs. opt-out. Au lieu de devoir décider d’épargner (défaut = n’épargne pas), on peut par défaut forcer les gens à épargner et ils peuvent arrêter s’ils le veulent…</p></li>
+<li><p>Shea et Madrian (2001, QJE) montre que l’épargne, à court-terme pour les entreprises qui changent le défault.</p></li>
+</ul>
+<div class="figure align-default" id="id5">
+<img alt="Shea et Madrian (2001, QJE)" src="_images/shea.png" />
+<p class="caption"><span class="caption-text">Shea et Madrian (2001, QJE)</span><a class="headerlink" href="#id5" title="Lien permanent vers cette image">¶</a></p>
+</div>
+</div>
 </div>
 
 

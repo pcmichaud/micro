@@ -1,2 +1,254 @@
 Le Temps
 --------
+
+Préférences
++++++++++++
+
+Les individus préfèrent généralement un bénéfice le plus tôt possible et un coût le plus tard possible:
+
+-  Un café maintenant ou dans une heure?
+
+-  Aller au Gym aujourd'hui ou demain?
+
+-  Épargner aujourd'hui pour dépenser demain?
+
+Utilité escomptée
++++++++++++++++++
+
+Si :math:`u(C_t)` est l'utilité de consommer à la période :math:`t`, l'utilité escompté pour un plan de consommation :math:`\textbf{C} = (C_1,...,C_T)` est :
+
+.. math:: DU(\mathbf{C}) = \sum_{t=1}^T \delta^{t-1} u(C_t)
+
+:math:`\delta` :math:`\in [0,1]` est le facteur d'escompte (patience)
+alors que :math:`\mathbf{C} = (C_1,...,C_T)`. La relation entre le facteur d'escompte et le taux d'escompte :math:`\rho` est donné par:
+
+.. math:: \delta = \frac{1}{1+\rho}
+
+Taux marginal de substitution (TMS)
++++++++++++++++++++++++++++++++++++
+
+Si :math:`T=2`, alors
+
+.. math:: DU(\textbf{C}) = u(C_1) +  \delta u(C_2)
+
+La différentielle totale donne le TMS:
+
+.. math:: \frac{\partial C_2}{\partial C_1}\rvert_{dDU=0} = -\frac{u'(C_1)}{\delta u'(C_2)}
+
+Les préférences intertemporelles sont charactérisées par:
+
+-  Le facteur d'escompte (:math:`\delta`)
+
+-  La forme de :math:`u`.
+
+**Exercice A**: Trouvez le TMS pour :math:`u(C_t) = \ln C_t`
+
+Comment estimer le taux d'escompte?
+
+Une expérience au Danemark (Harrison, Lau and Williams, 2002)
+
+|image_mpl|
+
+Résultats montrent une grande dispersion et des taux élevés, beaucoup plus que les taux d'intérêts. 
+
+|image_discount|
+
+La contrainte intertemporelle
++++++++++++++++++++++++++++++
+
+Marché financiers et intérêt
+
+Institution financière offre :math:`r_S` pour chaque dollar déposé
+(épargne). Elle nous demande :math:`r_D` pour chaque dollar prêté
+
+Pour maintenant supposons :math:`r_D = r_S = r`.
+
+**Ressources**
+
+Les ressources ont deux sources:
+
+-  Richesse initiale: :math:`W_0`.
+
+-  Revenu dans les deux périodes, :math:`Y_1`, :math:`Y_2`.
+
+La valeur présente des ressources est :
+
+.. math:: VP_W = W_0 + Y_1 + \frac{Y_2}{1+r}
+
+**Constrainte**
+
+La valeur présente de la consommation est:
+
+.. math:: VP_C = C_1 + \frac{C_2}{1+r}
+
+.
+
+Ainsi, la contrainte intertemporelle est :math:`VP_C \leq VP_W`:
+
+.. math:: C_1 + \frac{C_2}{1+r} \leq W_0 + Y_1 + \frac{Y_2}{1+r}
+
+**Emprunt et épargne**
+
+On peut écrire la contrainte comme étant :
+
+.. math:: (1+r)(W_0 + Y_1 - C_1) \ge  C_2 - Y_2
+
+Ainsi,
+
+-  L'individu qui épargne en première période, peut consommer plus que son revenu en 2e période. 
+-  L'individu qui emprunte en première période, doit consommer moins que son revenu en 2e période. 
+
+Visualement, on a
+
+|image_budget|
+
+Exemple: Un régime de retraite à prestation déterminé force l'individu à épargner dans la première période et donne un revenu additionel dans la deuxième.
+
+-  Revenu en 2e période est :math:`Y_2 = \phi Y_1` avec un taux de remplacement
+   :math:`\phi \in [0,1]`.
+
+-  Le revenu de première période est amputé d'une contribution
+   :math:`\tau Y_1`.
+
+La contrainte budgétaire est donc:
+
+.. math:: C_1 + \frac{C_2}{1+r} \leq W_0 + (1-\tau)Y_1 + \frac{\phi Y_1}{1+r}
+
+Le taux de contribution est choisi par l'actuaire :math:`\tau` tel que:
+
+.. math:: \tau Y_1 = \frac{\phi Y_1}{1+r_P} \to \tau = \frac{\phi}{1+r_P}
+
+où :math:`r_P` est le taux de rendement implicite du régime de retraite. Si :math:`r_P = r`,
+la contrainte budgétaire ne change pas! Le plan de consommation ne change pas et donc l'épargne privée est réduite d'un même montant que la contribution (Effet d'éviction). 
+
+**Écarts de taux emprunts vs. épargne**
+
+**Exercice B**: À qui ressemble la contrainte si :math:`r_S<r_D`?
+
+**Exercice C**: Comment représenter une situation où l'agent ne peut emprunter?
+
+Choix optimal
++++++++++++++
+
+**Maximisation**
+
+Le problème est (fixons :math:`W_0=0` pour simplifier): 
+
+.. math:: \max_{C_1,C_2} \{ u(C_1) + \delta u(C_2) : C_1+C_2/(1+r) \leq Y_1 + Y_2/(1+r)\}
+
+Deux approches:
+
+#. Approche directe (substitution de la contrainte)
+
+#. Lagrangien
+
+**Conditions d'optimalité**
+
+Le Lagrangien a 3 CPO:
+
+.. math::
+
+   \begin{aligned}
+    u'(C_1) - \lambda = 0  \\
+   \delta u'(C_2) - \lambda /(1+r) = 0  \\
+   C_1+C_2/(1+r) - Y_1 - Y_2/(1+r) = 0  \end{aligned}
+
+Avec (1) et (2) on obtient :
+
+.. math:: \frac{u'(C_1)}{\delta u'(C_2)} = 1+r
+
+On peut réarranger et en fixant :math:`R=1+r`, on obtient l'équation de **Euler**:
+
+.. math:: u'(C_1) = R\delta u'(C_2)
+
+Visualement
+
+ |image_optimal|
+
+Exemple
+
+**Exercice D**: Trouvez le choix optimal de :math:`C_1` et
+:math:`C_2` si :math:`u(C)=\frac{C^{1-\sigma}}{1-\sigma}` et avec une contrainte budgétaire classique. 
+
+Exemple: Épargne-t-on assez pour la retraite?
+
+Un sujet important dans la littérature économique et très présente dans le débat public. 
+
+.. figure:: /images/retraite.png
+   :alt: Le Conseiller, Globe and Mail, L’Actualité
+
+   Le Conseiller, Globe and Mail, L’Actualité
+
+On peut simuler des taux de remplacement effectif mais difficile de dire ce qui est assez ou non...
+
+.. figure:: /images/mckinsey.png
+   :alt: McKinsey (2015)
+
+   McKinsey (2015)
+
+Épargne optimale 
+
+Qu'est-ce que la théorie nous dit sur l'épargne optimale?
+
+**Exercice E**: Trouvez une expression pour le niveau optimal d'épargne en début de 2e période si :math:`u(C)=\frac{C^{1-\sigma}}{1-\sigma}` et la contrainte est donnée par:
+
+.. math:: C_1 + \frac{C_2}{1+r} \leq (1-\tau)Y_1 + \frac{\phi Y_1}{1+r}
+
+Des calculs plus sophistiqués donneront ce genre de graphique: 
+
+.. figure:: /images/savings.png
+   :alt: Scholz et al. (2007, Journal of Political Economy)
+
+   Scholz et al. (2007, Journal of Political Economy)
+
+Biais pour le présent
++++++++++++++++++++++
+
+Choisir un film
+
+Vous devez choisir un film à regarder aujourd'hui et un la semaine prochaine:
+
+
+Supposons que "Mommy" a un bénéfice immédiat de 4 et un bénéfice futur de 4 mais que "Les Boys" a un bénéfice immédiat de 7 (aucun bénéfice futur).
+
+**Exercice F**: Quel est l'utilité escomptée is vous choisissez aujourd'hui et :math:`\delta=1`. Que se passe-t-il si vous choisissez la semaine prochaine?
+
+**Biais pour le présent**
+
+Laibson (1997) propose les préférences escomptées quasi-hyperbolique:
+
+.. math:: QH(\mathbf{c}) = u(C_1) + \beta \sum_{t=2}^T \delta^{t-1} u(C_t)
+
+**Exercice G**: Quel est le TMS entre les consommations :math:`C_1` et
+:math:`C_2`? Et :math:`C_2` vs. :math:`C_3`? Comparer avec l'espérance d'utilité.
+
+En utilisant l'exemple des deux films, supposons maintenant :math:`\beta=0.5`.
+
+**Exercice H**: Quel film choisissez-vous pour aujourd'hui et pour la semaine présente si vous avez des préférences quasi-hyperbolique? Et si le choix se fait la semaine prochaine?
+
+Example: Qui s'abonne au Gym?
+
+Une passe d'une visite coûte 10$. Le coût par visite des gens qui s'abonne est beaucoup plus élevé que 10$.
+
+.. figure:: /images/Gym.png
+   :alt: Della Vigna et Malmendier (2006)
+
+   Della Vigna et Malmendier (2006)
+
+Exemple: Comment aider les gens à épargner?
+
+-  Épargner est similaire à aller au Guym: coûteux dans le court-terme, bénéfique à long-terme.
+
+-  Pour aider les gens avec ces biais (attention: paternalisme libertarien), on pourrait décider de changer l'option de défaut: opt-in vs. opt-out. Au lieu de devoir décider d'épargner (défaut = n'épargne pas), on peut par défaut forcer les gens à épargner et ils peuvent arrêter s'ils le veulent...
+
+-  Shea et Madrian (2001, QJE) montre que l'épargne, à court-terme pour les entreprises qui changent le défault. 
+
+.. figure:: /images/shea.png
+   :alt: Shea et Madrian (2001, QJE)
+
+   Shea et Madrian (2001, QJE)
+
+.. |image_mpl| image:: /images/MPL.png
+.. |image_discount| image:: /images/Results.png
+.. |image_budget| image:: /images/budget.png
+.. |image_optimal| image:: /images/optimal.png
