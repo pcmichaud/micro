@@ -53,6 +53,13 @@ Les préférences intertemporelles sont charactérisées par:
 
 **Exercice A**: Trouvez le TMS pour :math:`u(C_t) = \ln C_t`
 
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/owx0w0dqjF4" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
+    </div>
+
+
 Comment estimer le taux d'escompte? On peut utiliser les listes de prix multiples. 
 
 Une expérience au Danemark réalisée auprès de fonctionnaires Danois essaie d'estimer le facteur d'escompte au niveau individuel `(Harrison, Lau and Williams, 2002) <https://www.aeaweb.org/articles?id=10.1257/000282802762024674>`_
@@ -137,6 +144,13 @@ la contrainte budgétaire ne change pas! Le plan de consommation ne change pas e
 
 **Exercice C**: Comment représenter une situation où l'agent ne peut emprunter?
 
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/sub6hdZWQiE" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
+    </div>
+
+
 Choix optimal
 +++++++++++++
 
@@ -180,6 +194,13 @@ Cette théorie serviva de fondation pour la théorie du cycle de vie (*the Life-
 **Exercice D**: Trouvez le choix optimal de :math:`C_1` et
 :math:`C_2` si :math:`u(C)=\frac{C^{1-\sigma}}{1-\sigma}` et avec une contrainte budgétaire classique. 
 
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/L5GuC9FIfGA" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
+    </div>
+
+
 *Exemple*: Épargne-t-on assez pour la retraite?
 
 Une question très présente dans le débat public. 
@@ -207,6 +228,12 @@ Qu'est-ce que la théorie nous dit sur l'épargne optimale?
 
 .. math:: C_1 + \frac{C_2}{1+r} \leq (1-\tau)Y_1 + \frac{\phi Y_1}{1+r}
 
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/s-as6pPdrTE" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
+    </div>
+
 Des calculs plus sophistiqués donneront peuvent être fait pour comparer l'épargne accumulée à la retraite à l'épargne optimale selon un modèle: 
 
 .. figure:: /images/savings.png
@@ -230,6 +257,12 @@ Supposons que `Mommy <https://www.youtube.com/watch?v=d7rtSqI0ZeA>`_  a un bén�
 
 **Exercice F**: Quel est l'utilité escomptée is vous choisissez aujourd'hui et :math:`\delta=1`. Que se passe-t-il si vous choisissez plutôt pour la semaine prochaine?
 
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/mykC_IdabOE" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
+    </div>
+
 
 L'évidence empirique montre que les gens préfèrent les Boys si le choix se fait aujourd'hui mais Mommy si le choix est fait pour la semaine prochaine. L'utilité escomptée ne permet pas d'expliquer que le choix dépend de l'horizon. Cet exemple est un parmi d'autres d'incohérence intertemporelle.  
 
@@ -242,11 +275,20 @@ Laibson (1997, QJE) propose une modification assez simple aux préférences esco
 Le paramètre :math:`\beta` agit comme paramètre de biais pour le présent (facteur d'escompte à court terme) alors que :math:`\delta` contrôle l'impatience à long-terme. Ces préférences dépendent maintenant de l'horizon...
 
 **Exercice G**: Quel est le TMS entre les consommations :math:`C_1` et
-:math:`C_2`? Et :math:`C_2` vs. :math:`C_3`? Comparer avec l'espérance d'utilité.
+:math:`C_2`? Et :math:`C_2` vs. :math:`C_3`? Comparer avec l'espérance d'ut
+
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/WLyiWOGTd2A" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
+    </div>
+
 
 En utilisant l'exemple des deux films, supposons maintenant :math:`\beta=0.5`.
 
 **Exercice H**: Quel film choisissez-vous pour aujourd'hui et pour la semaine présente si vous avez des préférences quasi-hyperboliques? Et si le choix se fait la semaine prochaine?
+
+Solution, voir vidéo Exercice F. 
 
 Les préférence quasi-hyperboliques capturent bien ce pattern de choix. 
 
