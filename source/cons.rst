@@ -67,6 +67,9 @@ Cette hypothèse n'est pas toujours vérifiée... Surtout en présence d'incerti
 
 Il est peu pratique de fonctionner avec des listes de préférences pour modéliser les comportements. Par exemple, comment prédire l'effet d'un changement de prix avec une liste de préférence? On voudra se rapporcher de l'analyse marginale pour rendre ceci plus pratique. 
 
+Par ailleurs, les préférences sont très différentes d'une personne à l'autre (et d'un pays à l'autre). `Falk et co-auteurs (2018) <https://academic.oup.com/qje/article/133/4/1645/5025666>`_ ont analysé les préférences dans 76 pays dans un nombre de domaine. 
+
+
 Courbes d’indifférence et TMS
 +++++++++++++++++++++++++++++
 

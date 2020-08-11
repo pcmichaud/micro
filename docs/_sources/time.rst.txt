@@ -12,6 +12,14 @@ Les individus préfèrent généralement un bénéfice le plus tôt possible et 
 
 -  Épargner aujourd'hui pour dépenser demain?
 
+L'évidence empirique indique que l'origine de ces préférences peut-être tracé à l'enfance... 
+
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/Yo4WF3cSd9Q" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
+    </div>
+
 Utilité escomptée
 +++++++++++++++++
 
@@ -45,7 +53,7 @@ Les préférences intertemporelles sont charactérisées par:
 
 Comment estimer le taux d'escompte?
 
-Une expérience au Danemark (Harrison, Lau and Williams, 2002)
+Une expérience au Danemark `(Harrison, Lau and Williams, 2002) <https://www.aeaweb.org/articles?id=10.1257/000282802762024674>`_
 
 |image_mpl|
 
@@ -56,16 +64,16 @@ Résultats montrent une grande dispersion et des taux élevés, beaucoup plus qu
 La contrainte intertemporelle
 +++++++++++++++++++++++++++++
 
-Marché financiers et intérêt
+**Marché financiers et intérêt**
 
 Institution financière offre :math:`r_S` pour chaque dollar déposé
 (épargne). Elle nous demande :math:`r_D` pour chaque dollar prêté
 
-Pour maintenant supposons :math:`r_D = r_S = r`.
+Supposons pour le moment :math:`r_D = r_S = r`.
 
 **Ressources**
 
-Les ressources ont deux sources:
+Les ressources proviennent de:
 
 -  Richesse initiale: :math:`W_0`.
 
@@ -102,7 +110,7 @@ Visualement, on a
 
 |image_budget|
 
-Exemple: Un régime de retraite à prestation déterminé force l'individu à épargner dans la première période et donne un revenu additionel dans la deuxième.
+*Exemple*: Un régime de retraite à prestation déterminé force l'individu à épargner dans la première période et donne un revenu additionel dans la deuxième.
 
 -  Revenu en 2e période est :math:`Y_2 = \phi Y_1` avec un taux de remplacement
    :math:`\phi \in [0,1]`.
@@ -165,14 +173,13 @@ Visualement
 
  |image_optimal|
 
-Exemple
 
 **Exercice D**: Trouvez le choix optimal de :math:`C_1` et
 :math:`C_2` si :math:`u(C)=\frac{C^{1-\sigma}}{1-\sigma}` et avec une contrainte budgétaire classique. 
 
-Exemple: Épargne-t-on assez pour la retraite?
+*Exemple*: Épargne-t-on assez pour la retraite?
 
-Un sujet important dans la littérature économique et très présente dans le débat public. 
+Une question très présente dans le débat public. 
 
 .. figure:: /images/retraite.png
    :alt: Le Conseiller, Globe and Mail, L’Actualité
@@ -186,7 +193,10 @@ On peut simuler des taux de remplacement effectif mais difficile de dire ce qui 
 
    McKinsey (2015)
 
-Épargne optimale 
+Pour des calculs plus récents, voir ce `rapport <https://ire.hec.ca/en/wp-content/uploads/sites/3/2020/06/cpr-report-2020-final.pdf>`_ de l'Institut Retraite et Épargne. 
+
+
+**Épargne optimale** 
 
 Qu'est-ce que la théorie nous dit sur l'épargne optimale?
 
@@ -194,61 +204,88 @@ Qu'est-ce que la théorie nous dit sur l'épargne optimale?
 
 .. math:: C_1 + \frac{C_2}{1+r} \leq (1-\tau)Y_1 + \frac{\phi Y_1}{1+r}
 
-Des calculs plus sophistiqués donneront ce genre de graphique: 
+Des calculs plus sophistiqués donneront peuvent être fait pour comparer l'épargne accumulée à la retraite à l'épargne optimale selon un modèle: 
 
 .. figure:: /images/savings.png
    :alt: Scholz et al. (2007, Journal of Political Economy)
 
-   Scholz et al. (2007, Journal of Political Economy)
+   `Scholz et al. (2007, Journal of Political Economy) <https://www.journals.uchicago.edu/doi/10.1086/506335>`_
+
+Les conclusions sont parfois surprenantes comparativement à ce qu'on observe dans les médias. 
 
 Biais pour le présent
 +++++++++++++++++++++
 
-Choisir un film
+Les gens peuvent être très impatients. Mais leur préférence peut tout de même respecter les principes de l'utilité escomptée. Cependant, il existe plusieurs violations de l'utilité escomptée. Nous nous concentrons ici sur le biais pour le présent. 
+
+*Exemple*: Choisir un film
 
 Vous devez choisir un film à regarder aujourd'hui et un la semaine prochaine:
 
 
-Supposons que "Mommy" a un bénéfice immédiat de 4 et un bénéfice futur de 4 mais que "Les Boys" a un bénéfice immédiat de 7 (aucun bénéfice futur).
+Supposons que `Mommy <https://www.youtube.com/watch?v=d7rtSqI0ZeA>`_  a un bénéfice immédiat de 4 et un bénéfice futur de 4 mais que `Les Boys <https://www.youtube.com/watch?v=OFl0fuIRl9A>`_ a un bénéfice immédiat de 7 (aucun bénéfice futur).
 
-**Exercice F**: Quel est l'utilité escomptée is vous choisissez aujourd'hui et :math:`\delta=1`. Que se passe-t-il si vous choisissez la semaine prochaine?
+**Exercice F**: Quel est l'utilité escomptée is vous choisissez aujourd'hui et :math:`\delta=1`. Que se passe-t-il si vous choisissez plutôt pour la semaine prochaine?
+
+
+L'évidence empirique montre que les gens préfèrent les Boys si le choix se fait aujourd'hui mais Mommy si le choix est fait pour la semaine prochaine. L'utilité escomptée ne permet pas d'expliquer que le choix dépend de l'horizon. Cet exemple est un parmi d'autres d'incohérence intertemporelle.  
 
 **Biais pour le présent**
 
-Laibson (1997) propose les préférences escomptées quasi-hyperbolique:
+Laibson (1997, QJE) propose une modification assez simple aux préférences escomptées, soit l'introduction d'une fonction d'escompte quasi-hyperboliques:
 
 .. math:: QH(\mathbf{c}) = u(C_1) + \beta \sum_{t=2}^T \delta^{t-1} u(C_t)
+
+Le paramètre :math:`\beta` agit comme paramètre de biais pour le présent (facteur d'escompte à court terme) alors que :math:`\delta` contrôle l'impatience à long-terme. Ces préférences dépendent maintenant de l'horizon...
 
 **Exercice G**: Quel est le TMS entre les consommations :math:`C_1` et
 :math:`C_2`? Et :math:`C_2` vs. :math:`C_3`? Comparer avec l'espérance d'utilité.
 
 En utilisant l'exemple des deux films, supposons maintenant :math:`\beta=0.5`.
 
-**Exercice H**: Quel film choisissez-vous pour aujourd'hui et pour la semaine présente si vous avez des préférences quasi-hyperbolique? Et si le choix se fait la semaine prochaine?
+**Exercice H**: Quel film choisissez-vous pour aujourd'hui et pour la semaine présente si vous avez des préférences quasi-hyperboliques? Et si le choix se fait la semaine prochaine?
 
-Example: Qui s'abonne au Gym?
+Les préférence quasi-hyperboliques capturent bien ce pattern de choix. 
 
-Une passe d'une visite coûte 10$. Le coût par visite des gens qui s'abonne est beaucoup plus élevé que 10$.
+*Exemple*: Qui s'abonne au Gym?
+
+Une passe d'une visite coûte 10$. Le coût par visite des gens qui s'abonne est beaucoup plus élevé que 10$. Pourquoi les gens achètent-ils un abonnement? Sont-ils naifs par rapport au fait qu'ils ont des préférences quasi-hyperboliques?
 
 .. figure:: /images/Gym.png
    :alt: Della Vigna et Malmendier (2006)
 
-   Della Vigna et Malmendier (2006)
+   `Della Vigna et Malmendier (2006) <https://www.aeaweb.org/articles?id=10.1257/aer.96.3.694>`_
+
+Il y a évidence que certains sous-estiment leur degré de biais pour le présent. Ils sont naif par rapport à leur problème de contrôle. 
 
 Exemple: Comment aider les gens à épargner?
 
--  Épargner est similaire à aller au Guym: coûteux dans le court-terme, bénéfique à long-terme.
+-  Épargner est similaire à aller au Gym: coûteux dans le court-terme, bénéfique à long-terme.
 
--  Pour aider les gens avec ces biais (attention: paternalisme libertarien), on pourrait décider de changer l'option de défaut: opt-in vs. opt-out. Au lieu de devoir décider d'épargner (défaut = n'épargne pas), on peut par défaut forcer les gens à épargner et ils peuvent arrêter s'ils le veulent...
+-  Pour aider les gens avec ces biais, on pourrait décider de changer l'option de défaut: opt-in vs. opt-out. Au lieu de devoir décider d'épargner (défaut = n'épargne pas), on peut par défaut forcer les gens à épargner et ils peuvent arrêter s'ils le veulent (défaut = épargne)...
 
--  Shea et Madrian (2001, QJE) montre que l'épargne, à court-terme pour les entreprises qui changent le défault. 
+-  Shea et Madrian (2001, QJE) montre que l'épargne, à court-terme pour les entreprises qui changent le défault, augmente. 
 
 .. figure:: /images/shea.png
    :alt: Shea et Madrian (2001, QJE)
 
-   Shea et Madrian (2001, QJE)
+   `Shea et Madrian (2001, QJE) <https://academic.oup.com/qje/article-abstract/116/4/1149/1903159?redirectedFrom=fulltext>`_
 
-.. |image_mpl| image:: /images/MPL.png
+Moins évident à long-terme...
+
+
+** Engagement **
+
+Les gens au prise avec un problème de la sorte, pourrait vouloir, rationellement, qu'on limite leur choix. Par exemple, en ne leur permettant pas de succomber à la temptation à court-terme *dans leur propre intérêt*. David Laibson de Harvard, et plusieurs autres, étudient des mécanismes de la sorte, appliquées à la santé et l'épargne par exemple. 
+
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/a7Y6_2JLTrA" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
+    </div>
+
+
+.. |image_mpl| image:: /images/mpl.png
 .. |image_discount| image:: /images/Results.png
 .. |image_budget| image:: /images/budget.png
 .. |image_optimal| image:: /images/optimal.png
