@@ -29,8 +29,6 @@ Variation compensatoire
 
 Une approche plus prometteuse est de quantifier monétairement le bien-être à l'aide des préférences. On peut définir le bien-être en terme monétaire par les préférences. C'est ce qui a été proposé par `John Hicks <https://fr.wikipedia.org/wiki/John_Hicks>`_. 
 
-**Utilité indirecte**
-
 On peut utiliser l'utilité indirecte comme point de départ. Mais d'abord, qu'est-ce qu'une politique dans le problème du consommateur? Une politique :math:`\mathcal P` définie une contrainte budgétaire :math:`C_i(\mathcal P,I_i)` pour le citoyen :math:`i` (où :math:`I_i` est le revenu).
 
 L'utilité maximale du citoyen :math:`i` étant donné sa contrainte est:
@@ -78,8 +76,6 @@ Note: convention de signe tel que :math:`\Delta I^{CV}>0` quand le changement de
 
 Cas spécial utile
 +++++++++++++++++
-
-**Utilité quasi-linéaire**
 
 Considérons les préférences pour un bien :math:`X` et l'argent :math:`Y`. Les préférences sont représentées par :math:`U(X,Y) = V(X) + Y`.
 
@@ -137,10 +133,12 @@ C'est la somme des dispositions à payer pour chaque unité de :math:`X`. Le deu
 Bien-être et taxation
 +++++++++++++++++++++
 
-La taxation affecte le prix payé par le consommateur. Donc, elle a des effets de bien-être. Dans la théorie du consommateur, nous avons déjà vu qu'une hausse de prix réduit de bien-être du consommateur. Et le revenu compensé permet d'obtenir l'effet substitution. Ce n'est qu'une application de la compensation hicksienne que nous pouvons étendre à l'analyse des taxes. 
-
 .. figure:: /images/tax.jpeg
    :scale: 50
+
+La taxation affecte le prix payé par le consommateur. Donc, elle a des effets de bien-être. Dans la théorie du consommateur, nous avons déjà vu qu'une hausse de prix réduit de bien-être du consommateur. Et le revenu compensé permet d'obtenir l'effet substitution. Ce n'est qu'une application de la compensation hicksienne que nous pouvons étendre à l'analyse des taxes. 
+
+
    
 Considérons l'élimination d'une taxe, le prix passant de :math:`p_X = p+t` à :math:`p_X = p` . On a :math:`X^*(p) > X^*(p+t)` (le bien est normal). Le revenue de la taxe est :math:`T= t\times X^*(p+t)`. 
 
