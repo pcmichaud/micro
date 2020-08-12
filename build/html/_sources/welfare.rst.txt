@@ -1,12 +1,12 @@
 Bien-être
 ---------
 
-.. figure:: /images/happy.jpeg
-   :scale: 50
-
 Pour bien évaluer une politique, on peut bien sur regarder son efficacité, c'est-à-dire cible-t-elle le groupe visé, est-ce qu'elle a l'effet attendu sur les comportements, et combien coûte-t-elle étant donné son efficacité. Par exemple, réglementation sur la qualité de l'air peut inciter plusieurs individus à changer de comportement. Le coût par unité d'amélioration de la qualité de l'air peut être élevé. Est-ce que ca veut dire que la politique n'est pas désirable? Comme nous le verrons, la réponse est non. La qualité de l'air est valorisé par la population. Donc, il manque des bénéfices qui ne sont pas mesurés. Au final, on peut savoir si la réglementation est bénéfique, si elle améliore le sort de la population. Afin de répondre à cette question, et permettre de juger des politiques, il faut aller une étape plus loin et se demander comment on peut mesurer le bien-être. 
 
 Trois approches existent: une approche utilitarienne, une approche hicksienne et finalement une approche du bonheur rapporté. 
+
+.. figure:: /images/happy.jpeg
+   :scale: 100
 
 Utilisarisme
 ++++++++++++
@@ -97,7 +97,7 @@ Dans ce cas, la variation compensatoire est :math:`\Delta I^{CV}` telle que
 La variation compensatoire est égale au changement de l'utilité. Les demandes n'ont pas d'effets revenus. Le TMS de cette fonction d'utilité est: 
 
 .. math::
-   TMS = \frac{dY}{dX} = - \frac{V'(X}{1} = -V'(X)
+   TMS = \frac{dY}{dX} = - \frac{V'(X)}{1} = -V'(X)
 
 Puisque :math:`p_Y=1` dans le cas où :math:`Y` est de l'argent, :math:`V'(X)` représente la disposition à payer (en dollars) pour une unité de :math:`X`.
 
@@ -169,8 +169,6 @@ Il n'y a pas de marché pour la qualité de l'air. Le *Clean Air Act* (1977): le
 Considérons un changement de politique :math:`\mathcal P_0`: aucun control, aucun coûts, à :math:`\mathcal P`: contrôle de la population, ce qui vient à un prix. La variation compensatoire devrait être positive si les citoyens valorisent la qualité de l'air.
 
 Empiriquement, comment faire?
-
-**Étape 1: Estimer les préférences**
 
 On peut trouver une situation où des gens ont du faire un arbitrage entre pollution et leur richesse financière. Par exemple, l'achat d'une maison dépend bien sur du prix mais aussi de l'environnement, etc. Les prix et la qualité de l'air varie à l'intérieur d'une ville. Dans un marché, les prix devraient être plus élevés quand la qualité de l'air est plus élevée si les acheteurs valorisent la qualité de l'air. 
 
