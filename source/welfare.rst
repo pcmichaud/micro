@@ -3,7 +3,7 @@ Bien-être
 
 Pour bien évaluer une politique, on peut bien sur regarder son efficacité, c'est-à-dire cible-t-elle le groupe visé, est-ce qu'elle a l'effet attendu sur les comportements, et combien coûte-t-elle étant donné son efficacité. Par exemple, réglementation sur la qualité de l'air peut inciter plusieurs individus à changer de comportement. Le coût par unité d'amélioration de la qualité de l'air peut être élevé. Est-ce que ca veut dire que la politique n'est pas désirable? Comme nous le verrons, la réponse est non. La qualité de l'air est valorisé par la population. Donc, il manque des bénéfices qui ne sont pas mesurés. Au final, on peut savoir si la réglementation est bénéfique, si elle améliore le sort de la population. Afin de répondre à cette question, et permettre de juger des politiques, il faut aller une étape plus loin et se demander comment on peut mesurer le bien-être. 
 
-Trois approches existent: une approche utilitarienne, une approche hicksienne et finalement une approche directe. 
+Trois approches existent: une approche utilitarienne, une approche hicksienne et finalement une approche du bonheur rapporté. 
 
 Utilisarisme
 ++++++++++++
@@ -206,10 +206,10 @@ Il est donc possible de quantifier ceci une fois tous les paramètres connues.
 
 **Exercice C**: Pollution par le bruit. L'élasticité prix des maisons à la pollution par le bruit est -0.2. Le gouvernement considère réduire le niveau de pollution de 10% près d'une autoroute. Les ingénieurs nous disent que la technologie nécessaire coûtera 1000$ pour chaque propriété. La politique est financée par une taxe qui mène à une perte de bien être de 43 cents pour chaque dollar à financer. Est-ce que cette politique augmente le bien-être?
 
-Approche directe
+Approche bonheur
 ++++++++++++++++
 
-Pourquoi ne pas simplement demander aux gens s'ils sont heureux? Ceci évite d'avoir à spécifier les préférences.  C'est une approche qui gagne une certaine crédibilité avec `le budget 2019 en Nouvelle-Zélande <https://www.weforum.org/agenda/2019/05/new-zealand-is-publishing-its-first-well-being-budget/>`_. C'est `Richard Easterlin <https://fr.wikipedia.org/wiki/Richard_Easterlin>`__ qui a beaucoup popularisé l'utilisation de mesures directes du bien-être. Le Paradox de Easterlin a longtemps suscité de l'intérêt:
+Pourquoi ne pas simplement demander aux gens s'ils sont heureux? Sur une échelle allant de 1 à 10, ête-vous heureux? Ceci évite d'avoir à spécifier les préférences.  C'est une approche qui gagne une certaine crédibilité avec `le budget 2019 en Nouvelle-Zélande <https://www.weforum.org/agenda/2019/05/new-zealand-is-publishing-its-first-well-being-budget/>`_. C'est `Richard Easterlin <https://fr.wikipedia.org/wiki/Richard_Easterlin>`__ qui a beaucoup popularisé l'utilisation de mesures directes du bien-être. Le Paradox de Easterlin a longtemps suscité de l'intérêt:
 
 .. figure:: /images/easterlin.png
    :scale: 50
