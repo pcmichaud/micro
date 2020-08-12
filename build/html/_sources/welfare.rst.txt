@@ -31,8 +31,7 @@ Une approche plus prometteuse est de quantifier monétairement le bien-être à 
 
 **Utilité indirecte**
 
-On peut utiliser l'utilité indirecte comme point de départ. Mais d'abord, qu'est-ce qu'une politique dans le problème du consommateur? Une politique :math:`\mathcal P` définie une contrainte budgétaire :math:`C_i(\mathcal P,I_i)` pour le citoyen :math:`i` (où :math:`I_i`
-   est le revenu).
+On peut utiliser l'utilité indirecte comme point de départ. Mais d'abord, qu'est-ce qu'une politique dans le problème du consommateur? Une politique :math:`\mathcal P` définie une contrainte budgétaire :math:`C_i(\mathcal P,I_i)` pour le citoyen :math:`i` (où :math:`I_i` est le revenu).
 
 L'utilité maximale du citoyen :math:`i` étant donné sa contrainte est:
 
