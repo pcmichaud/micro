@@ -139,6 +139,9 @@ Bien-être et taxation
 
 La taxation affecte le prix payé par le consommateur. Donc, elle a des effets de bien-être. Dans la théorie du consommateur, nous avons déjà vu qu'une hausse de prix réduit de bien-être du consommateur. Et le revenu compensé permet d'obtenir l'effet substitution. Ce n'est qu'une application de la compensation hicksienne que nous pouvons étendre à l'analyse des taxes. 
 
+.. figure:: /images/tax.jpeg
+   :scale: 50
+   
 Considérons l'élimination d'une taxe, le prix passant de :math:`p_X = p+t` à :math:`p_X = p` . On a :math:`X^*(p) > X^*(p+t)` (le bien est normal). Le revenue de la taxe est :math:`T= t\times X^*(p+t)`. 
 
 En terme de variation compensatoire, on a 
