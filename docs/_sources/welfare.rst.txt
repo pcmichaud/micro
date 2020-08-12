@@ -155,9 +155,10 @@ La perte de bien-être associée à la taxe est donc de :math:`= \Delta I^{CV} -
 Bien-être et environnement
 ++++++++++++++++++++++++++
 
-Généralement, on accorde une valeur positive à la qualité de l'air. Valeur de la qualité de l'air 
+Généralement, on accorde une valeur positive à la qualité de l'air.  
 
 .. figure:: /images/china_pollution.jpg
+   :scale: 50
 
 Il n'y a pas de marché pour la qualité de l'air. Le *Clean Air Act* (1977): le gouvernement american a mis en place un nombre important de mesures pour réduire la pollution. Les lois sont couteuses à implémenter et faire respecter. Question: Étant donné les coûts, est-ce que ces mesures en valent la peine?
 
