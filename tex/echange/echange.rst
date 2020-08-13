@@ -1,6 +1,61 @@
-Échange
--------
+.. raw:: latex
 
+   \frame{\titlepage}
+
+.. raw:: latex
+
+   \frame{\tableofcontents}
+
+.. _section-1:
+
+Roadmap
+~~~~~~~
+
+**Up until now**
+
+-  Consumer choice
+
+-  Price and income effects
+
+-  Risk and time
+
+-  Measuring welfare and well-being
+
+.. raw:: latex
+
+   \medskip 
+
+.. raw:: latex
+
+   \pause
+
+**This class: Exchanges**
+
+-  Market equilibrium in an exchange economy
+
+.. raw:: latex
+
+   \medskip 
+
+.. raw:: latex
+
+   \pause
+
+**Coming up**
+
+-  Production decisions in firms
+
+-  Strategic behaviour of firms
+
+-  Auctions
+
+Market equilibrium
+==================
+
+Exchange Economy
+~~~~~~~~~~~~~~~~
+
+**Context**
 
 -  Consider a situation with two consumers (1 and 2) and two goods
    (:math:`X` and :math:`Y`)
@@ -10,7 +65,15 @@
 -  Each consumer has an endowment of each good,
    :math:`B_1^e = (X_1^e,Y_1^e)` and :math:`B_2^e = (X_2^e,Y_2^e)`.
 
-Exemples
+.. raw:: latex
+
+   \medskip 
+
+.. raw:: latex
+
+   \pause
+
+**Examples**
 
 -  2 farmers, one has an endowment of potatoes and the other has an
    endowment of livestock.
@@ -22,12 +85,12 @@ Exemples
    (consumer goods, machinery ...). We will talk about this further in
    the "Production" class.
 
-
+.. _market-equilibrium-1:
 
 Market Equilibrium
-++++++++++++++++++
+~~~~~~~~~~~~~~~~~~
 
-Demande individuelle
+**Individual demand**
 
 -  Consumer 1 choses to consume :math:`(X_1^c, Y_1^c)`
 
@@ -38,8 +101,15 @@ Demande individuelle
 
 -  Prices will be determined in equilibrium.
 
+.. raw:: latex
 
-Normalisation
+   \medskip 
+
+.. raw:: latex
+
+   \pause
+
+**Normalization**
 
 -  Two unknown prices :math:`p_X` and :math:`p_Y`. Only relative price
    matters: the budget constraint can be written as follows :
@@ -48,7 +118,10 @@ Normalisation
 
 -  Let’s define the relative price as :math:`p = p_Y/p_X`
 
-Definition
+Market Equilibrium – II
+~~~~~~~~~~~~~~~~~~~~~~~
+
+**Definition**
 
 -  Individual demand: :math:`\max U_1` subject to
    :math:`X_1^c + p Y_1^c  =   X_1^e + p Y_1^e`
@@ -81,8 +154,9 @@ Important Assumptions
    consumer: **no externalities**
 
 An Example
+~~~~~~~~~~
 
-Context
+**Context**
 
 -  :math:`U_1(X,Y) =
    U_2(X,Y) = \log X + \alpha \log Y`
@@ -90,6 +164,16 @@ Context
 -  Price :math:`p_X= 1`, :math:`p_Y = p`.
 
 -  Endowment :math:`X_1^e, Y_1^e, X_2^e, Y_2^e`
+
+.. raw:: latex
+
+   \medskip 
+
+.. raw:: latex
+
+   \pause
+
+**Equilibrium**
 
 -  Solution of individual demands:
 
@@ -111,9 +195,9 @@ Context
    | **Question:** only one unkown variable and two equations?
 
 Walras’ Law
-+++++++++++
+~~~~~~~~~~~
 
-One unkown variable but two equations
+**One unkown variable but two equations**
 
 -  No problem: equilibrium on one market implies equilibrium on the
    other
@@ -125,7 +209,7 @@ One unkown variable but two equations
       X_1^c + p Y_1^c  =   X_1^e + p Y_1^e \quad and \quad
       X_2^c + p Y_2^c  =   X_2^e + p Y_2^e
 
-   If we add one constraint to the other
+   \ If we add one constraint to the other
 
    .. math::
 
@@ -141,9 +225,9 @@ One unkown variable but two equations
       Y_2^e
 
 What determines the price?
-++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Compared static
+**Compared static**
 
 -  How :math:`p` varies with :math:`\alpha` (importance of the good
    :math:`Y`) and the aggregated quantities of :math:`X` and :math:`Y` ?
@@ -162,9 +246,10 @@ Compared static
    :math:`X`
 
 Pareto-efficient allocation
-+++++++++++++++++++++++++++
+===========================
 
 The Edgeworth Box
+~~~~~~~~~~~~~~~~~
 
 -  We draw the space of possible allocations in an Edgeworth box
 
@@ -172,6 +257,11 @@ The Edgeworth Box
 
 **Exercise A**: Show the endowment :math:`(x^e_1,y_1^e) = (50,20)` and
 :math:`(x^e_2,y_2^e)=(20,50)` in an Edgeworth box.
+
+.. _pareto-efficient-allocation-1:
+
+Pareto-Efficient Allocation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -  A point on the Edgeworth box where indifference curves cross is not
    Pareto-optimal.
@@ -205,6 +295,7 @@ fixed and respecting the resource constraints:
    Y_1 + Y_2 \le Y_e\end{aligned}
 
 A Few Exercises
+~~~~~~~~~~~~~~~
 
 **Exercise B**: Find the Pareto-optimal allocation for the utility
 functions :math:`u_1` and :math:`u_2` strictly positive and concave,
@@ -228,8 +319,10 @@ Market Equilibrium in an Edgeworth box
 -  A market equilibrium implies that the :math:`MRS` are equal to the
    price ratio.
 
-Exchange and Welfare
-++++++++++++++++++++
+Exchange is Better Than Autarky
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**Property:**
 
 -  Consider the equilibrium price: :math:`p^*` and the quantities
    consumed by consumer 1: :math:`X^c_1 = X^c_1(p^*)` and
@@ -237,7 +330,15 @@ Exchange and Welfare
 
 -  We have :math:`U_1(X^c_1, Y^c_1) \geq U_1(X^e_1, Y^e_1)`
 
-Why?
+.. raw:: latex
+
+   \medskip 
+
+.. raw:: latex
+
+   \pause
+
+**Why?**
 
 -  At :math:`p^*`, the basket :math:`B^e_1 = (X^e_1,Y^e_1)` is available
    and consumer 1 chooses :math:`B^c_1=(X^c_1, Y^c_1)`
@@ -248,16 +349,27 @@ Why?
    Y^e_1)` then :math:`U_1(X^c_1, Y^c_1) > U_1(X^e_1, Y^e_1)`
 
 Welfare theorems
-++++++++++++++++
+================
 
-1st Theorem of Welfare
+Propeties of a Market Equilibrium (I) – 1st Theorem of Welfare
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**1st theorem of welfare**
 
 -  A market equilibrium is always Pareto-optimal.
 
 -  In an allocation that is Pareto-efficient we cannot make a consumer
    better off without making another consumer worse off
 
-Why?
+.. raw:: latex
+
+   \medskip 
+
+.. raw:: latex
+
+   \pause
+
+**Why?**
 
 -  At the equilibrium allocation
    :math:`X^c_1(p^*),Y^c_1(p^*),X^c_2(p^*),Y^c_1(p^*)` the indifference
@@ -267,6 +379,9 @@ Why?
 -  This implies that the allocation is Pareto-efficient.
 
 The 2nd Theorem
+~~~~~~~~~~~~~~~
+
+**The 2nd theorem of welfare**
 
 -  We can achieve any Pareto-efficient allocation we desire through
    market equilibrium if we redistribute the initial endowments
@@ -275,7 +390,15 @@ The 2nd Theorem
 
 -  Often called a decentralized resource allocation
 
-Why?
+.. raw:: latex
+
+   \medskip 
+
+.. raw:: latex
+
+   \pause
+
+**Why?**
 
 -  Suppose there’s no corner solution
 
@@ -292,9 +415,9 @@ Why?
 :math:`(64,28,64,4)`, which give the optimal allocation found in D.
 
 Market Efficiency
-+++++++++++++++++
+~~~~~~~~~~~~~~~~~
 
-The 1st and 2nd theorems establish that
+**The 1st and 2nd theorems establish that**
 
 -  The market is efficient
 
@@ -302,7 +425,15 @@ The 1st and 2nd theorems establish that
    achieve it by redistributing the resources and letting the market
    take its course
 
-An important result: Decentralized efficiency
+.. raw:: latex
+
+   \medskip 
+
+.. raw:: latex
+
+   \pause
+
+**An important result: Decentralized efficiency**
 
 -  A market equilibrium requires only that agents know their own
    preferences
@@ -317,11 +448,11 @@ An important result: Decentralized efficiency
 -  Planned economies lose this information (not to mention that it is
    costly to find preferences of every citizen).
 
-Limits
-++++++
+Epilogue – II – limits
+~~~~~~~~~~~~~~~~~~~~~~
 
-These two theorems are interesting, but they rest on important
-hypotheses
+**These two theorems are interesting, but they rest on important
+hypotheses**
 
 -  Competitive markets (price takers)
 
@@ -331,25 +462,48 @@ hypotheses
 
 -  We can impose lump-sum taxes (for the 2nd theorem)
 
+.. raw:: latex
+
+   \medskip 
+
+.. raw:: latex
+
+   \pause
+
 The general equilibrium theory had quite an impact on economics: think
 about how we understand financial markets or macroeconomics.
 
 A bit of history
-++++++++++++++++
+================
 
+History of the General Equilibrium Theory
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. raw:: latex
+
+   \centering
 
 |image|
 
-.. |image| image:: /images/ad1954.png
+.. _history-of-the-general-equilibrium-theory-1:
 
+History of the General Equilibrium Theory
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 They came from very different backgrounds (Arrow, economics), (Debreu,
 mathematics). Düppe (2017) tells the story of how this project came to
 be.
 
-.. figure:: /images/invitation.png
+.. raw:: latex
+
+   \centering
+
+.. figure:: invitation.png
+   :alt: `Duppe (2017), Journal of History of Economic
+   Thought <https://www.cambridge.org/core/journals/journal-of-the-history-of-economic-thought/article/div-classtitlearrow-and-debreu-de-homogenizeddiv/761E76D5A52C948615066F502277D9DD>`__
 
    `Duppe (2017), Journal of History of Economic
    Thought <https://www.cambridge.org/core/journals/journal-of-the-history-of-economic-thought/article/div-classtitlearrow-and-debreu-de-homogenizeddiv/761E76D5A52C948615066F502277D9DD>`__
 
+.. |image| image:: ad1954.png
 

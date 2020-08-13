@@ -92,7 +92,18 @@
 <li class="toctree-l1"><a class="reference internal" href="risque.html">Le Risque</a></li>
 <li class="toctree-l1"><a class="reference internal" href="time.html">Le Temps</a></li>
 <li class="toctree-l1"><a class="reference internal" href="welfare.html">Bien-être</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Échange</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Échange</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#market-equilibrium">Market Equilibrium</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#walras-law">Walras’ Law</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#what-determines-the-price">What determines the price?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pareto-efficient-allocation">Pareto-efficient allocation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#exchange-and-welfare">Exchange and Welfare</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#welfare-theorems">Welfare theorems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#market-efficiency">Market Efficiency</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#limits">Limits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#a-bit-of-history">A bit of history</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="production.html">La production</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gemodel.html">Équilibre général</a></li>
 <li class="toctree-l1"><a class="reference internal" href="strategy.html">Concurrence imparfaite</a></li>
@@ -164,6 +175,283 @@
             
   <div class="section" id="echange">
 <h1>Échange<a class="headerlink" href="#echange" title="Lien permanent vers ce titre">¶</a></h1>
+<ul class="simple">
+<li><p>Consider a situation with two consumers (1 and 2) and two goods
+(<span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span>)</p></li>
+<li><p>Utility fuctions <span class="math notranslate nohighlight">\(U_1(X,Y)\)</span> and <span class="math notranslate nohighlight">\(U_2(X,Y)\)</span></p></li>
+<li><p>Each consumer has an endowment of each good,
+<span class="math notranslate nohighlight">\(B_1^e = (X_1^e,Y_1^e)\)</span> and <span class="math notranslate nohighlight">\(B_2^e = (X_2^e,Y_2^e)\)</span>.</p></li>
+</ul>
+<p>Exemples</p>
+<ul class="simple">
+<li><p>2 farmers, one has an endowment of potatoes and the other has an
+endowment of livestock.</p></li>
+<li><p>Two countries: Country 1 has a petroleum endowment and Country 2 has
+a machinery endowment</p></li>
+<li><p>Where do these endowments come from? Nature (resources) or production
+(consumer goods, machinery …). We will talk about this further in
+the « Production » class.</p></li>
+</ul>
+<div class="section" id="market-equilibrium">
+<h2>Market Equilibrium<a class="headerlink" href="#market-equilibrium" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Demande individuelle</p>
+<ul>
+<li><p>Consumer 1 choses to consume <span class="math notranslate nohighlight">\((X_1^c, Y_1^c)\)</span></p></li>
+<li><p>Given the prices <span class="math notranslate nohighlight">\(p_X\)</span> and <span class="math notranslate nohighlight">\(p_Y\)</span>, the budget constraint
+is</p>
+<div class="math notranslate nohighlight">
+\[p_X X_1^c + p_Y Y_1^c  =  p_X X_1^e + p_Y Y_1^e\]</div>
+</li>
+<li><p>Prices will be determined in equilibrium.</p></li>
+</ul>
+<p>Normalisation</p>
+<ul>
+<li><p>Two unknown prices <span class="math notranslate nohighlight">\(p_X\)</span> and <span class="math notranslate nohighlight">\(p_Y\)</span>. Only relative price
+matters: the budget constraint can be written as follows :</p>
+<div class="math notranslate nohighlight">
+\[X_1^c + \frac{p_Y}{p_X} Y_1^c  =   X_1^e + \frac{p_Y}{p_X} Y_1^e\]</div>
+</li>
+<li><p>Let’s define the relative price as <span class="math notranslate nohighlight">\(p = p_Y/p_X\)</span></p></li>
+</ul>
+<p>Definition</p>
+<ul>
+<li><p>Individual demand: <span class="math notranslate nohighlight">\(\max U_1\)</span> subject to
+<span class="math notranslate nohighlight">\(X_1^c + p Y_1^c  =   X_1^e + p Y_1^e\)</span></p></li>
+<li><p>We obtain <span class="math notranslate nohighlight">\(X_1^c(p)\)</span> and <span class="math notranslate nohighlight">\(Y_1^c(p)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(p^*\)</span> is an equilibrium price only if at <span class="math notranslate nohighlight">\(p^*\)</span> demand is
+equal to supply</p>
+<div class="math notranslate nohighlight">
+\[X_1^c(p^*)+X_2^c(p^*) = X_1^e + X_2^e \quad
+and \quad Y_1^c(p^*)+Y_2^c(p^*) = Y_1^e + Y_2^e\]</div>
+</li>
+<li><p><span class="math notranslate nohighlight">\(X_1^c(p^*) -
+X_1^e =X_2^e - X_2^c(p^*)  \;\)</span> is the amount of <span class="math notranslate nohighlight">\(X\)</span> that is
+exchanged</p></li>
+<li><p>si <span class="math notranslate nohighlight">\(X_1^c - X_1^e &lt; 0\)</span>, consumer 1 is a net supplier of
+<span class="math notranslate nohighlight">\(X\)</span>.</p></li>
+</ul>
+<p>Important Assumptions</p>
+<ul class="simple">
+<li><p>Competitive market: consumers are <strong>price takers</strong></p></li>
+<li><p>All sold goods are homogeneous (identical) and percieved the same way
+by both the buyer and the seller</p></li>
+<li><p>The utility of consumer 1 does not depend on the actions of the other
+consumer: <strong>no externalities</strong></p></li>
+</ul>
+<p>An Example</p>
+<p>Context</p>
+<ul>
+<li><p><span class="math notranslate nohighlight">\(U_1(X,Y) =
+U_2(X,Y) = \log X + \alpha \log Y\)</span></p></li>
+<li><p>Price <span class="math notranslate nohighlight">\(p_X= 1\)</span>, <span class="math notranslate nohighlight">\(p_Y = p\)</span>.</p></li>
+<li><p>Endowment <span class="math notranslate nohighlight">\(X_1^e, Y_1^e, X_2^e, Y_2^e\)</span></p></li>
+<li><p>Solution of individual demands:</p>
+<div class="math notranslate nohighlight">
+\[X_1^c =
+\frac{1}{1+\alpha}(X_1^e + p Y_1^e) \quad and \quad Y_1^c =
+\frac{\alpha}{1+\alpha}\frac{X_1^e + p Y_1^e}{p}\]</div>
+</li>
+<li><p>Market equilibrium for <span class="math notranslate nohighlight">\(X\)</span></p>
+<div class="math notranslate nohighlight">
+\[X_1^c(p) + X_2^c(p) = X_1^e + X_2^e
+\Rightarrow p = \alpha \frac{X_1^e + X_2^e}{Y_1^e + Y_2^e}\]</div>
+</li>
+<li><div class="line-block">
+<div class="line">Notice that the market for <span class="math notranslate nohighlight">\(Y\)</span> has also reached an
+equilibrium at <span class="math notranslate nohighlight">\(p\)</span>.</div>
+<div class="line"><strong>Question:</strong> only one unkown variable and two equations?</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="walras-law">
+<h2>Walras’ Law<a class="headerlink" href="#walras-law" title="Lien permanent vers ce titre">¶</a></h2>
+<p>One unkown variable but two equations</p>
+<ul>
+<li><p>No problem: equilibrium on one market implies equilibrium on the
+other</p></li>
+<li><p>Budget constraint:</p>
+<div class="math notranslate nohighlight">
+\[X_1^c + p Y_1^c  =   X_1^e + p Y_1^e \quad and \quad
+X_2^c + p Y_2^c  =   X_2^e + p Y_2^e\]</div>
+<p>If we add one constraint to the other</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}  [X_1^c + X_2^c] + p [Y_1^c + Y_2^c] = [X_1^e + X_2^e] + p
+  [Y_1^e + Y_2^e]\\An equilibrium in :math:`X` implies\end{aligned}\end{align} \]</div>
+<div class="math notranslate nohighlight">
+\[p
+[Y_1^c + Y_2^c]  = p [Y_1^e + Y_2^e] \Rightarrow  Y_1^c + Y_2^c = Y_1^e +
+Y_2^e\]</div>
+</li>
+</ul>
+</div>
+<div class="section" id="what-determines-the-price">
+<h2>What determines the price?<a class="headerlink" href="#what-determines-the-price" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Compared static</p>
+<ul class="simple">
+<li><p>How <span class="math notranslate nohighlight">\(p\)</span> varies with <span class="math notranslate nohighlight">\(\alpha\)</span> (importance of the good
+<span class="math notranslate nohighlight">\(Y\)</span>) and the aggregated quantities of <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span> ?</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(\alpha\)</span> <span class="math notranslate nohighlight">\(\nearrow\)</span> then <span class="math notranslate nohighlight">\(p=p_Y\)</span>
+<span class="math notranslate nohighlight">\(\nearrow\)</span>: since the total supply of <span class="math notranslate nohighlight">\(Y\)</span> is fixed, when
+demand for <span class="math notranslate nohighlight">\(Y\)</span> increases, the price must adjust to maintain the
+equilibrium.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(Y_1^e + Y_2^e
+\nearrow\)</span> then <span class="math notranslate nohighlight">\(p=p_Y\)</span> <span class="math notranslate nohighlight">\(\searrow\)</span>: the price must fall to
+sell the endowment.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(X_1^e + X_2^e \nearrow\)</span> then <span class="math notranslate nohighlight">\(p = p_Y\)</span>
+<span class="math notranslate nohighlight">\(\nearrow\)</span> since <span class="math notranslate nohighlight">\(Y\)</span> has become rarer relative to
+<span class="math notranslate nohighlight">\(X\)</span></p></li>
+</ul>
+</div>
+<div class="section" id="pareto-efficient-allocation">
+<h2>Pareto-efficient allocation<a class="headerlink" href="#pareto-efficient-allocation" title="Lien permanent vers ce titre">¶</a></h2>
+<p>The Edgeworth Box</p>
+<ul class="simple">
+<li><p>We draw the space of possible allocations in an Edgeworth box</p></li>
+<li><p>The initial endowment is a point in this space</p></li>
+</ul>
+<p><strong>Exercise A</strong>: Show the endowment <span class="math notranslate nohighlight">\((x^e_1,y_1^e) = (50,20)\)</span> and
+<span class="math notranslate nohighlight">\((x^e_2,y_2^e)=(20,50)\)</span> in an Edgeworth box.</p>
+<ul class="simple">
+<li><p>A point on the Edgeworth box where indifference curves cross is not
+Pareto-optimal.</p></li>
+<li><p>We can define the core of this point as all the allocations that are
+a Pareto improvement.</p></li>
+<li><p>When the core is empty, we get an allocation that is Pareto-efficient
+: this implies that the indifference curves are tangent.</p></li>
+<li><p>The Pareto Frontier (or Pareto Front) is the curve that shows all the
+allocations that are Pareto-efficient.</p></li>
+</ul>
+<p>Calculating an optimum</p>
+<p>We can seek to maximize the welfare of an agent by keeping the other’s
+fixed and respecting the resource constraints:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}  \begin{aligned}
+  \max_{X_1,Y_1,X_2,Y_2} u(X_1,Y_1) \end{aligned}\\subject to:\end{aligned}\end{align} \]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+u(X_2,Y_2)\ge \overline{u}_2 \\
+X_1 + X_2 \le X_e \\
+Y_1 + Y_2 \le Y_e\end{aligned}\end{split}\]</div>
+<p>A Few Exercises</p>
+<p><strong>Exercise B</strong>: Find the Pareto-optimal allocation for the utility
+functions <span class="math notranslate nohighlight">\(u_1\)</span> and <span class="math notranslate nohighlight">\(u_2\)</span> strictly positive and concave,
+<span class="math notranslate nohighlight">\(u_j = \sqrt{x_j y_j}\)</span> for consumers <span class="math notranslate nohighlight">\(j=1,2\)</span>, using the
+Lagrangian method.</p>
+<p><strong>Exercise C</strong>: Find the Pareto-optimal allocation for the utility
+functions <span class="math notranslate nohighlight">\(u_j = \sqrt{x_j y_j}\)</span> for consumers <span class="math notranslate nohighlight">\(j=1,2\)</span> with
+the total endowments <span class="math notranslate nohighlight">\(x_e = 128\)</span> and <span class="math notranslate nohighlight">\(y_e=32\)</span> if
+<span class="math notranslate nohighlight">\(\overline{u}_2=48\)</span>.</p>
+<p><strong>Exercise D</strong>: In Exercise C, is the allocation <span class="math notranslate nohighlight">\((64,28,64,4)\)</span>
+optimal? If it isn’t, find a Pareto improvement that can be made in the
+core.</p>
+<p>Market Equilibrium in an Edgeworth box</p>
+<ul class="simple">
+<li><p>The budget constraint is given by the endowments and indicates which
+allocations are possible at price <span class="math notranslate nohighlight">\(p\)</span>.</p></li>
+<li><p>A market equilibrium implies that the <span class="math notranslate nohighlight">\(MRS\)</span> are equal to the
+price ratio.</p></li>
+</ul>
+</div>
+<div class="section" id="exchange-and-welfare">
+<h2>Exchange and Welfare<a class="headerlink" href="#exchange-and-welfare" title="Lien permanent vers ce titre">¶</a></h2>
+<ul class="simple">
+<li><p>Consider the equilibrium price: <span class="math notranslate nohighlight">\(p^*\)</span> and the quantities
+consumed by consumer 1: <span class="math notranslate nohighlight">\(X^c_1 = X^c_1(p^*)\)</span> and
+<span class="math notranslate nohighlight">\(Y^c_1 = Y^c_1(p^*)\)</span></p></li>
+<li><p>We have <span class="math notranslate nohighlight">\(U_1(X^c_1, Y^c_1) \geq U_1(X^e_1, Y^e_1)\)</span></p></li>
+</ul>
+<p>Why?</p>
+<ul class="simple">
+<li><p>At <span class="math notranslate nohighlight">\(p^*\)</span>, the basket <span class="math notranslate nohighlight">\(B^e_1 = (X^e_1,Y^e_1)\)</span> is available
+and consumer 1 chooses <span class="math notranslate nohighlight">\(B^c_1=(X^c_1, Y^c_1)\)</span></p></li>
+<li><p>This implies that <span class="math notranslate nohighlight">\(U_1(X^c_1, Y^c_1) \geq U_1(X^e_1, Y^e_1)\)</span></p></li>
+<li><p>Note: If <span class="math notranslate nohighlight">\(U\)</span> concave and <span class="math notranslate nohighlight">\((X^c_1, Y^c_1) \neq (X^e_1,
+Y^e_1)\)</span> then <span class="math notranslate nohighlight">\(U_1(X^c_1, Y^c_1) &gt; U_1(X^e_1, Y^e_1)\)</span></p></li>
+</ul>
+</div>
+<div class="section" id="welfare-theorems">
+<h2>Welfare theorems<a class="headerlink" href="#welfare-theorems" title="Lien permanent vers ce titre">¶</a></h2>
+<p>1st Theorem of Welfare</p>
+<ul class="simple">
+<li><p>A market equilibrium is always Pareto-optimal.</p></li>
+<li><p>In an allocation that is Pareto-efficient we cannot make a consumer
+better off without making another consumer worse off</p></li>
+</ul>
+<p>Why?</p>
+<ul class="simple">
+<li><p>At the equilibrium allocation
+<span class="math notranslate nohighlight">\(X^c_1(p^*),Y^c_1(p^*),X^c_2(p^*),Y^c_1(p^*)\)</span> the indifference
+curve of consumer 1 is tangent to the budget constraint, and tangent
+to the indifference curve of consumer 2</p></li>
+<li><p>This implies that the allocation is Pareto-efficient.</p></li>
+</ul>
+<p>The 2nd Theorem</p>
+<ul class="simple">
+<li><p>We can achieve any Pareto-efficient allocation we desire through
+market equilibrium if we redistribute the initial endowments</p></li>
+<li><p>This requires the ability to impose taxes (lump-sum payments)</p></li>
+<li><p>Often called a decentralized resource allocation</p></li>
+</ul>
+<p>Why?</p>
+<ul class="simple">
+<li><p>Suppose there’s no corner solution</p></li>
+<li><p>At any allocation <span class="math notranslate nohighlight">\((X_1^*,Y_1^*)\)</span> (and consequent value for
+<span class="math notranslate nohighlight">\(X_2^*,Y_2^*\)</span>) the indifference curve of the two consumers are
+tangent.</p></li>
+<li><p>Consider this tangence line.</p></li>
+<li><p>Any of the allocations on that line results in a market equilibrium
+<span class="math notranslate nohighlight">\((X^*,Y^*)\)</span>.</p></li>
+</ul>
+<p><strong>Exercise E</strong>: Find the endowment transfer and the price, starting from
+<span class="math notranslate nohighlight">\((64,28,64,4)\)</span>, which give the optimal allocation found in D.</p>
+</div>
+<div class="section" id="market-efficiency">
+<h2>Market Efficiency<a class="headerlink" href="#market-efficiency" title="Lien permanent vers ce titre">¶</a></h2>
+<p>The 1st and 2nd theorems establish that</p>
+<ul class="simple">
+<li><p>The market is efficient</p></li>
+<li><p>If for one reason or another we want another allocation, we can
+achieve it by redistributing the resources and letting the market
+take its course</p></li>
+</ul>
+<p>An important result: Decentralized efficiency</p>
+<ul class="simple">
+<li><p>A market equilibrium requires only that agents know their own
+preferences</p></li>
+<li><p>There is no need for a central planner that knows everyone’s
+preferences</p></li>
+<li><p>We naturally obtain a Pareto-efficient result</p></li>
+<li><p>Hayek’s take: markets are information aggregators</p></li>
+<li><p>Planned economies lose this information (not to mention that it is
+costly to find preferences of every citizen).</p></li>
+</ul>
+</div>
+<div class="section" id="limits">
+<h2>Limits<a class="headerlink" href="#limits" title="Lien permanent vers ce titre">¶</a></h2>
+<p>These two theorems are interesting, but they rest on important
+hypotheses</p>
+<ul class="simple">
+<li><p>Competitive markets (price takers)</p></li>
+<li><p>Goods are homogeneous (we know what we’re buying)</p></li>
+<li><p>No externalities</p></li>
+<li><p>We can impose lump-sum taxes (for the 2nd theorem)</p></li>
+</ul>
+<p>The general equilibrium theory had quite an impact on economics: think
+about how we understand financial markets or macroeconomics.</p>
+</div>
+<div class="section" id="a-bit-of-history">
+<h2>A bit of history<a class="headerlink" href="#a-bit-of-history" title="Lien permanent vers ce titre">¶</a></h2>
+<p><img alt="image" src="_images/ad1954.png" /></p>
+<p>They came from very different backgrounds (Arrow, economics), (Debreu,
+mathematics). Düppe (2017) tells the story of how this project came to
+be.</p>
+<div class="figure align-default" id="id1">
+<img alt="_images/invitation.png" src="_images/invitation.png" />
+<p class="caption"><span class="caption-text"><a class="reference external" href="https://www.cambridge.org/core/journals/journal-of-the-history-of-economic-thought/article/div-classtitlearrow-and-debreu-de-homogenizeddiv/761E76D5A52C948615066F502277D9DD">Duppe (2017), Journal of History of Economic
+Thought</a></span><a class="headerlink" href="#id1" title="Lien permanent vers cette image">¶</a></p>
+</div>
+</div>
 </div>
 
 

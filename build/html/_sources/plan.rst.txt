@@ -40,6 +40,8 @@ Périodes de consultation: Ba (Lundi 13:00-14:00 et Mardi 15:30-16:30), Michaud 
 Modes d'interaction
 +++++++++++++++++++
 
+Le cours est donné en mode co-modal, ce qui signifie qu'il y aura un cours présentiel tous les jeudi de 8:30 à 11:30 à la salle TD Assurance Monnex. Nous sommes restraint à 19 personnes en classe. Les autres pourront suivre le cours à distance et le cours sera diffusé sur Zoom et les étudiants pourront eux aussi interagir avec la classe. Donc, en principe, il n'y aura pas de différence pour ceux qui assistent en personne et en ligne. Un sondage sera effectué avant la première séance pour savoir qui voudrait être présent en salle de classe. 
+
 
 |Slack|_ **Slack**
 
@@ -47,14 +49,14 @@ Modes d'interaction
    :scale: 10%
 .. _Slack: https://join.slack.com/t/micro20851/shared_invite/zt-g9e7nzh0-DIx5l09LwV_xZGeBYz5Vpg
 
-Un site sur Slack  a été mis en place pour les communications durant le cours. Vous pouvez le joindre en cliquant sur l'icone Slack. 
+Un site sur Slack a été mis en place pour les communications durant le cours. Vous pouvez le joindre en cliquant sur l'icone Slack. L'application Slack peut être télécharger. Vous êtes responsable de consulter le site sur Slack pour les annonces concernant le cours.
 
 |zoom| **Zoom**
 
 .. |zoom| image:: /images/zoom.png
    :scale: 10%
 
-Si nous sommes dans l'impossibilité de nous rencontrer en personne pour le cours, j'initierai sur le channel slack une conférence Zoom auquel vous pourrez vous joindre. 
+Ceux qui devront joindre le cours à distance le feront par Zoom.  
 
 Références bibliographiques
 +++++++++++++++++++++++++++
