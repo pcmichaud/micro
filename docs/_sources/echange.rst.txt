@@ -1,201 +1,183 @@
 Échange
 -------
 
+Pourquoi échanger entre consommateur? par quel moyen? Par le troc, un marché ou bien en nommant quelqu'un qui se chargera de partager les biens entre les personnes. Quel mécanisme fera fera le mieux? 
 
--  Consider a situation with two consumers (1 and 2) and two goods
+.. figure:: /images/barter.jpeg
+   :scale: 100
+
+
+Nous verrons qu'il existe généralement des gains à l'échange. L'échange peut seulement être bénéfique. Si ce ne l'est pas, les individus n'échangent pas. Donc permettre l'échange ne peut nuire. Le meilleur résultat peut être atteint de différentes façons (marché, planificateur central, troc) si certaines conditions sont respectées. 
+
+Débutons avec un cadre simple, qui ne restraint pas la généralité des résultats plus tard:
+
+-  Considérons une situation avec deux consommateurs (1 et 2) et deux biens
    (:math:`X` and :math:`Y`)
 
--  Utility fuctions :math:`U_1(X,Y)` and :math:`U_2(X,Y)`
+-  Fonctions d'utilité :math:`U_1(X,Y)` et :math:`U_2(X,Y)`
 
--  Each consumer has an endowment of each good,
-   :math:`B_1^e = (X_1^e,Y_1^e)` and :math:`B_2^e = (X_2^e,Y_2^e)`.
+-  Chaque consommateur a une dotation de chacun des biens,
+   :math:`B_1^e = (X_1^e,Y_1^e)` et :math:`B_2^e = (X_2^e,Y_2^e)`.
 
 Exemples
 
--  2 farmers, one has an endowment of potatoes and the other has an
-   endowment of livestock.
+-  Deux fermiers, un a une dotation de pommes de terre et l'autre de bétail. 
 
--  Two countries: Country 1 has a petroleum endowment and Country 2 has
-   a machinery endowment
+-  Deux pays: Le pays 1 a une dotation de pétrole, le pays 2 de la machinerie industrielle. 
 
--  Where do these endowments come from? Nature (resources) or production
-   (consumer goods, machinery ...). We will talk about this further in
-   the "Production" class.
+- Deux consommateurs sur kijiji ou Ebay: un a une canot et l'autre un ordinateur portable
 
+D'où viennent ces dotations? Pour le moment, de la nature (ressources naturelles ou héritage?). Plus tard, ces dotations proviendront des profits provenant de la production d'un bien à l'aide d'autres biens dans l'économie. 
 
+Équilibre de marché
++++++++++++++++++++
 
-Market Equilibrium
-++++++++++++++++++
+Le marché est une forme d'échange très répandue. En terme de modélisation, le marché est résumé par un vecteur de prix (s'il y a plusieurs biens) et un système légal qui encadre les transactions. 
 
-Demande individuelle
+Si chaque consommateur a une dotation et une demande individuelle pour les biens en fonction des prix, on peut assez facilement trouver un l'équilibre de marché, içi d'échange, puisqu'il n'y a pas de production. Pensez à Kijiji.  
 
--  Consumer 1 choses to consume :math:`(X_1^c, Y_1^c)`
+Pour ce qui est des demandes individuelles, 
 
--  Given the prices :math:`p_X` and :math:`p_Y`, the budget constraint
-   is
+-  Consommateur 1 choisi de consommer :math:`(X_1^c, Y_1^c)`
+
+- Étant donné les prix :math:`p_X` and :math:`p_Y`, la contrainte budgétaire de chacun des agents est
 
    .. math:: p_X X_1^c + p_Y Y_1^c  =  p_X X_1^e + p_Y Y_1^e
 
--  Prices will be determined in equilibrium.
+-  Les prix sont déterminés en équilibre. 
 
 
-Normalisation
-
--  Two unknown prices :math:`p_X` and :math:`p_Y`. Only relative price
-   matters: the budget constraint can be written as follows :
+Réalisons d'abord que ce n'est que le prix relatif qui est important pour l'équilibre. Nous avons deux prix inconnues, :math:`p_X` et :math:`p_Y`. La contrainte budgétaire peut être ré-écrite  
 
    .. math:: X_1^c + \frac{p_Y}{p_X} Y_1^c  =   X_1^e + \frac{p_Y}{p_X} Y_1^e
 
--  Let’s define the relative price as :math:`p = p_Y/p_X`
+On peut donc, sans perte d'information, dénoter :math:`p = p_Y/p_X`, le prix relatif de :math:`Y`en terme de quantité de :math:`X`. On aurait aussi pu définir le prix comme étant :math:`p = p_X/p_Y`!
 
-Definition
+Comment trouver le prix relatif d'équilibre?
 
--  Individual demand: :math:`\max U_1` subject to
-   :math:`X_1^c + p Y_1^c  =   X_1^e + p Y_1^e`
+- Étape 1: Demande individuelle: On cherche 
 
--  We obtain :math:`X_1^c(p)` and :math:`Y_1^c(p)`
+.. math::
+   \max_{X_1,Y_1} \left[U_1 : X_1^c + p Y_1^c  \leq   X_1^e + p Y_1^e\right]
 
--  :math:`p^*` is an equilibrium price only if at :math:`p^*` demand is
-   equal to supply
+On obtient :math:`X_1^c(p)` et :math:`Y_1^c(p)` par le Lagrangien. 
+
+-  Étape 2: Le prix :math:`p^*` est un prix d'équilibre si à :math:`p^*` la demande agrégée est égale à l'offre agrégée. On cherche donc :math:`p^*` tel que: 
 
    .. math::
-
       X_1^c(p^*)+X_2^c(p^*) = X_1^e + X_2^e \quad
-      and \quad Y_1^c(p^*)+Y_2^c(p^*) = Y_1^e + Y_2^e
+      et \quad Y_1^c(p^*)+Y_2^c(p^*) = Y_1^e + Y_2^e
 
--  :math:`X_1^c(p^*) -
-   X_1^e =X_2^e - X_2^c(p^*)  \;` is the amount of :math:`X` that is
-   exchanged
+Le quantité de :math:`X` échangée est donné par :math:`X_1^c(p^*) - X_1^e =X_2^e - X_2^c(p^*)`. Si :math:`X_1^c - X_1^e < 0`, le consommateur 1 est offreur de :math:`X` (le consommateur 2 demandeur).
 
--  si :math:`X_1^c - X_1^e < 0`, consumer 1 is a net supplier of
-   :math:`X`.
+Hypothèses importantes:
 
-Important Assumptions
+-  Le marché est compétitif: Le consommateur prend le prix comme donné. Il est **prenneur de prix**.
 
--  Competitive market: consumers are **price takers**
+-  Tous les biens sont homogènes (identifiques) et perçus de la même façon par l'acheteur et le vendeur. 
 
--  All sold goods are homogeneous (identical) and percieved the same way
-   by both the buyer and the seller
+-  L'utilité du consommateur 1 ne dépend pas des actions des autres consommateurs: **aucune externalités**
 
--  The utility of consumer 1 does not depend on the actions of the other
-   consumer: **no externalities**
-
-An Example
-
-Context
-
--  :math:`U_1(X,Y) =
-   U_2(X,Y) = \log X + \alpha \log Y`
-
--  Price :math:`p_X= 1`, :math:`p_Y = p`.
-
--  Endowment :math:`X_1^e, Y_1^e, X_2^e, Y_2^e`
-
--  Solution of individual demands:
+Regardons un exemple. Considérons :math:`U_1(X,Y) = U_2(X,Y) = \log X + \alpha \log Y`. Fixons :math:`p_X= 1`, et donc :math:`p_Y = p`. Les dotations sont données par :math:`(X_1^e, Y_1^e, X_2^e, Y_2^e)`. La solution pour les demandes est:
 
    .. math::
-
-      X_1^c =
-      \frac{1}{1+\alpha}(X_1^e + p Y_1^e) \quad and \quad Y_1^c =
+      \begin{aligned}
+      X_1^c &=
+      \frac{1}{1+\alpha}(X_1^e + p Y_1^e) \\ 
+      Y_1^c &=
       \frac{\alpha}{1+\alpha}\frac{X_1^e + p Y_1^e}{p}
+      \end{aligned}
 
--  Market equilibrium for :math:`X`
+L'équilibre de marché pour :math:`X` implique que
 
    .. math::
 
       X_1^c(p) + X_2^c(p) = X_1^e + X_2^e
       \Rightarrow p = \alpha \frac{X_1^e + X_2^e}{Y_1^e + Y_2^e}
 
--  | Notice that the market for :math:`Y` has also reached an
-     equilibrium at :math:`p`.
-   | **Question:** only one unkown variable and two equations?
+Le marché pour :math:`Y` est aussi en équilibre au prix d'équilibre :math:`p`. Pourquoi un seul marché est-il nécessaire?
 
-Walras’ Law
-+++++++++++
+Loi de Walras
++++++++++++++
 
-One unkown variable but two equations
-
--  No problem: equilibrium on one market implies equilibrium on the
-   other
-
--  Budget constraint:
+On a une seule inconnue, :math:`p` mais deux équations... L'équilibre sur un marché implique l'équilibre sur l'autre. Regardons les deux contraintes budgétaires: 
 
    .. math::
 
-      X_1^c + p Y_1^c  =   X_1^e + p Y_1^e \quad and \quad
+      X_1^c + p Y_1^c  =   X_1^e + p Y_1^e \quad et \quad
       X_2^c + p Y_2^c  =   X_2^e + p Y_2^e
 
-   If we add one constraint to the other
+Si on additionne les deux contraintes on obtient: 
 
    .. math::
 
-      [X_1^c + X_2^c] + p [Y_1^c + Y_2^c] = [X_1^e + X_2^e] + p
-      [Y_1^e + Y_2^e]
+      [X_1^c + X_2^c] + p [Y_1^c + Y_2^c] = [X_1^e + X_2^e] + p[Y_1^e + Y_2^e]
 
-    An equilibrium in :math:`X` implies
+Un équilibre pour :math:`X` implique que
 
    .. math::
 
-      p
-      [Y_1^c + Y_2^c]  = p [Y_1^e + Y_2^e] \Rightarrow  Y_1^c + Y_2^c = Y_1^e +
-      Y_2^e
+      p[Y_1^c + Y_2^c]  = p [Y_1^e + Y_2^e] \Rightarrow  Y_1^c + Y_2^c = Y_1^e + Y_2^e
 
-What determines the price?
+La loi de `Walras <https://fr.wikipedia.org/wiki/L%C3%A9on_Walras>`_ permet de se concentrer sur le prix relatif et de trouver le prix d'équilibre sur un seul des marchés sans avoir à regarder l'autre. On peut généraliser cette loi à plus de 2 biens. 
+
+Déterminants du prix d'équilibre
+++++++++++++++++++++++++++++++++
+
+Le prix d'équilibre sera fonction des préférences des agents. Dans notre exemple, 
+
+.. math::
+   p^* = \alpha \frac{X_1^e + X_2^e}{Y_1^e + Y_2^e}
+
+Donc le prix de :math:`Y` augmente avec la préférence relative pour :math:`Y`, donnée par :math:`\alpha`. L'offre est fixe, si la demande est élevée, le prix d'équilibre devra être plus élevée pour retrouver un équilibre. Si le bien :math:`Y` est rare, c'est-à-dire que :math:`Y_1^e + Y_2^e` est faible, le prix d'équilibre sera plus élevé. 
+
+Le prix est un signal des préférences et de la rareté relative des biens. Est-ce que l'équilibre de marché garantie le niveau de bien-être le plus élevé que peuvent obtenir les deux agents? Afin de juger de l'allocation de marché, nous devons faire un pas de côté pour définir une allocation optimale, sans le recours au marché. 
+
+Allocation Pareto-efficace
 ++++++++++++++++++++++++++
 
-Compared static
+On a déjà vu qu'une amélioration de Pareto est possible quand aucun des deux agents ne perd en utilité et qu'au moins un gagne. Quand il n'existe plus d'amélioration au sens de Pareto, on dit que l'allocation est Pareto optimale ou efficace. Nous allons maintenant appliquer ce principe aux allocations de biens. 
 
--  How :math:`p` varies with :math:`\alpha` (importance of the good
-   :math:`Y`) and the aggregated quantities of :math:`X` and :math:`Y` ?
+Pour ce faire, on aura besoin d'une boîte d'Edgeworth, un outil très utile. C'est en fait un système de coordonées qui permet de tracer en deux dimensions un problème qui en a 4 (les quantités des biens :math:`X` et :math:`Y` pour les consommateurs 1 et 2). Pour ce faire, on utilise le fait qu'il existe une quantité totale fixe des biens X et Y.  L'exercice A vous apprendra à construire une boîte d'Edgeworth. 
 
--  If :math:`\alpha` :math:`\nearrow` then :math:`p=p_Y`
-   :math:`\nearrow`: since the total supply of :math:`Y` is fixed, when
-   demand for :math:`Y` increases, the price must adjust to maintain the
-   equilibrium.
+.. figure:: /images/endow.png
+   :scale: 35
 
--  If :math:`Y_1^e + Y_2^e
-   \nearrow` then :math:`p=p_Y` :math:`\searrow`: the price must fall to
-   sell the endowment.
+   La boîte a des dimensions égales aux dotations totales des biens :math:`X` et :math:`Y`. 
 
--  If :math:`X_1^e + X_2^e \nearrow` then :math:`p = p_Y`
-   :math:`\nearrow` since :math:`Y` has become rarer relative to
-   :math:`X`
 
-Pareto-efficient allocation
-+++++++++++++++++++++++++++
+**Exercice A**: Montrer la :math:`(x^e_1,y_1^e) = (50,20)` et
+:math:`(x^e_2,y_2^e)=(20,50)` dans une boîte d'Edgeworth.
 
-The Edgeworth Box
+Un certain nombre d'observations peuvent être faite à partir de la boîte d'Edgeworth: 
 
--  We draw the space of possible allocations in an Edgeworth box
+D'abord, un point dans une boite d'Edgeworth ou deux courbes d'indifférence se croisent ne peut être Pareto optimal. Pourquoi, parce qu'on peut définir un noyau par rapport à ce point comme étant toutes les allocations qui mènent à une amélioration de Pareto. 
 
--  The initial endowment is a point in this space
+.. figure:: /images/core.png
+   :scale: 35
 
-**Exercise A**: Show the endowment :math:`(x^e_1,y_1^e) = (50,20)` and
-:math:`(x^e_2,y_2^e)=(20,50)` in an Edgeworth box.
+   L'allocation A n'est pas optimale: les courbes d'indifférences se croisent. L'allocation A est une amélioration au sens de Pareto. Le noyau est cette zone entre les deux courbes d'indifférences. 
 
--  A point on the Edgeworth box where indifference curves cross is not
-   Pareto-optimal.
+Quand le noyau est vide, l'allocation est Pareto efficiente ou optimale. Ceci implique que les courbes d'indifférences doivent être tangentes. 
 
--  We can define the core of this point as all the allocations that are
-   a Pareto improvement.
+La courbe des contrats est la droite qui passe par toutes les allocations Pareto efficiente. La frontière de Pareto est la courbe dans l'espace :math:`(U_1,U_2)` qui indique toutes les allocations optimales au sens de Pareto. 
 
--  When the core is empty, we get an allocation that is Pareto-efficient
-   : this implies that the indifference curves are tangent.
+.. figure:: /images/contract.png
+   :scale: 35
 
--  The Pareto Frontier (or Pareto Front) is the curve that shows all the
-   allocations that are Pareto-efficient.
+.. figure:: /images/pareto-frontier.png
+   :scale: 50
 
-Calculating an optimum
+   Les allocations A et C sont optimales au sens de Pareto. Elles se retrouvent sur la courbe des contrats et sur la frontière de Pareto. Cependant, l'allocation B n'est pas optimale: les courbes d'indifférence se croisent et elle est à l'intérieur de la frontière de Pareto. 
 
-We can seek to maximize the welfare of an agent by keeping the other’s
-fixed and respecting the resource constraints:
+Comment calculer un optimum de Pareto? On peut utiliser le principe de la maximisation contrainte. On pourrait tenter de maximiser le bien-être d'un agent, tout en gardant le bien-être d'un autre agent fixe et en respectant la contrainte de ressources. 
 
 .. math::
 
    \begin{aligned}
    \max_{X_1,Y_1,X_2,Y_2} u(X_1,Y_1) \end{aligned}
 
- subject to:
+sujet à :
 
 .. math::
 
@@ -204,152 +186,115 @@ fixed and respecting the resource constraints:
    X_1 + X_2 \le X_e \\
    Y_1 + Y_2 \le Y_e\end{aligned}
 
-A Few Exercises
+On applique la technique du Lagrangien mais cette fois avec trois contraintes. Voici le Lagrangien: 
 
-**Exercise B**: Find the Pareto-optimal allocation for the utility
-functions :math:`u_1` and :math:`u_2` strictly positive and concave,
-:math:`u_j = \sqrt{x_j y_j}` for consumers :math:`j=1,2`, using the
-Lagrangian method.
+.. math::
+   \begin{split}
+    U(X_1,Y_1) + \lambda(U(X_2,Y_2)-\overline{U}_2) \\ 
+   - \pi_X (X_1+X_2 - X_e) - \pi_Y (Y_1+Y_2-Y_e) \end{split}
 
-**Exercise C**: Find the Pareto-optimal allocation for the utility
-functions :math:`u_j = \sqrt{x_j y_j}` for consumers :math:`j=1,2` with
-the total endowments :math:`x_e = 128` and :math:`y_e=32` if
+
+Il y aura donc 6 CPO et 3 multiplicateurs. Les exercices qui suivant vous aideront à comprendre la démarche pour la solution. 
+
+**Exercice B**: Trouvez l'allocation Pareto optimale pour les fonctions d'utilité :math:`u_1` et :math:`u_2` strictement positive and concave,
+:math:`u_j = \sqrt{x_j y_j}` pour les consommateurs :math:`j=1,2`, en utilisant la méthode du Lagrangien.
+
+**Exercice C**: Trouvez l'allocation Pareto optimale pour les fonctions d'utilités :math:`u_j = \sqrt{x_j y_j}` pour les consommateurs :math:`j=1,2` avec les dotations :math:`x_e = 128` et :math:`y_e=32` si
 :math:`\overline{u}_2=48`.
 
-**Exercise D**: In Exercise C, is the allocation :math:`(64,28,64,4)`
-optimal? If it isn’t, find a Pareto improvement that can be made in the
-core.
+**Exercice D**: Dans l'exercice C, l'allocation :math:`(64,28,64,4)`
+est-elle optimale au sens de Pareto? Si elle ne l'est pas, trouvez une amélioration au sens de Pareto dans le noyau.
+ 
+**Équilibre de marché dans une boîte d'Edgeworth**
 
-Market Equilibrium in an Edgeworth box
+La contrainte budgétaire dépend des dotations et indique les allocations qui sont possibles au prix :math:`p`. Un équilibre de marché implique que le  :math:`TMS` est égal au prix. Puisque le prix est le même pour les deux consommateurs, les :math:`TMS` sont égaux dans un équilibre de marché.
 
--  The budget constraint is given by the endowments and indicates which
-   allocations are possible at price :math:`p`.
 
--  A market equilibrium implies that the :math:`MRS` are equal to the
-   price ratio.
+.. figure:: /images/price-equilibrium.png
+   :scale: 50
 
-Exchange and Welfare
+   Un équilibre de marché est donné par A. Il est réalisé à partir de dotations représentées au point E. Le prix relatif :math:`p = p_Y/p_X` donc donc une droite avec pente :math:`-p_X/p_Y = -1/p`. 
+
+
+Échange et bien-être
 ++++++++++++++++++++
 
--  Consider the equilibrium price: :math:`p^*` and the quantities
-   consumed by consumer 1: :math:`X^c_1 = X^c_1(p^*)` and
-   :math:`Y^c_1 = Y^c_1(p^*)`
+Considérons le prix d'équilibre: :math:`p^*` et les quantités consommées par le consommateur 1: :math:`X^c_1 = X^c_1(p^*)` et :math:`Y^c_1 = Y^c_1(p^*)`. On a que :math:`U_1(X^c_1, Y^c_1) \geq U_1(X^e_1, Y^e_1)`
 
--  We have :math:`U_1(X^c_1, Y^c_1) \geq U_1(X^e_1, Y^e_1)`
+Pourquoi? Au prix :math:`p^*`, le panier de dotations :math:`B^e_1 = (X^e_1,Y^e_1)` est disponible mais le consommateur préfère :math:`B^c_1=(X^c_1, Y^c_1)`. Donc, les préférences révèlent que :math:`U_1(X^c_1, Y^c_1) \geq U_1(X^e_1, Y^e_1)`. 
 
-Why?
 
--  At :math:`p^*`, the basket :math:`B^e_1 = (X^e_1,Y^e_1)` is available
-   and consumer 1 chooses :math:`B^c_1=(X^c_1, Y^c_1)`
+Théorème du bien-être
++++++++++++++++++++++
 
--  This implies that :math:`U_1(X^c_1, Y^c_1) \geq U_1(X^e_1, Y^e_1)`
+**Premier théorème**
 
--  Note: If :math:`U` concave and :math:`(X^c_1, Y^c_1) \neq (X^e_1,
-   Y^e_1)` then :math:`U_1(X^c_1, Y^c_1) > U_1(X^e_1, Y^e_1)`
+-  Un équilibre de marché est toujours optimal au sens de Pareto. 
 
-Welfare theorems
-++++++++++++++++
+Si une allocation est Pareto-optimale, on ne peut améliorer le sort d'un consommateur sans réduire celui d'un autre. 
 
-1st Theorem of Welfare
+Pourquoi ce résultat? À l'allocation d'équilibre :math:`X^c_1(p^*),Y^c_1(p^*),X^c_2(p^*),Y^c_1(p^*)` les courbes d'indifférences sont tangentes à la même contrainte budgétaire. Si elles sont tangentes, c'est donc qu'on a une allocation Pareto optimale. 
 
--  A market equilibrium is always Pareto-optimal.
+**Deuxième théorème**
 
--  In an allocation that is Pareto-efficient we cannot make a consumer
-   better off without making another consumer worse off
+-  On peut obtenir n'importe quelle allocation Pareto optimale par un équilibre de marché où on devra potentiellement redistribuer les dotations. 
 
-Why?
+Ceci nécessite la possibilité d'imposer des taxes, ou confisquer des dotations: paiments ou taxes dites *lump-sum*. On dit alors que l'allocation des ressources est décentralisée (le fruit d'un équilibre de marché et de redistribution des dotations). 
 
--  At the equilibrium allocation
-   :math:`X^c_1(p^*),Y^c_1(p^*),X^c_2(p^*),Y^c_1(p^*)` the indifference
-   curve of consumer 1 is tangent to the budget constraint, and tangent
-   to the indifference curve of consumer 2
+Pourquoi ca fonctionne?
 
--  This implies that the allocation is Pareto-efficient.
+Pour toute allocation :math:`(X_1^*,Y_1^*)`, et valeur conséquente pour :math:`(X_2^*,Y_2^*)`,  les courbes d'indifférence sont tangentes. À cette ligne de tangence, on peut redistribuer les dotations pour trouver un point sur cette ligne. N'importe quelle dotation finale (après transfert) sur cette ligne, mène à un équilibre de marché avec :math:`(X^*,Y^*)`.
 
-The 2nd Theorem
+.. figure:: /images/transfer-equilibrium.png
+   :scale: 50
 
--  We can achieve any Pareto-efficient allocation we desire through
-   market equilibrium if we redistribute the initial endowments
+   L'optimum de Pareto A n'est pas atteignable à partir de la dotation :math:`E_0`. Mais un transfert de :math:`T_X` du bien :math:`X` provenant du consommateur 1 au consommateur 2, permet d'atteindre la dotation  :math:`E_1`, à partir de laquelle on peut attendre l'optimum de Pareto A avec un équilibre de marché au prix :math:`p`. 
 
--  This requires the ability to impose taxes (lump-sum payments)
+**Exercice E**: Trouvez le transfert de dotation et de prix, partant de :math:`(64,28,64,4)`, qui donne l'allocation trouvée à l'exercice D.
 
--  Often called a decentralized resource allocation
+Efficience des marchés
+++++++++++++++++++++++
 
-Why?
+Les premier et deuxième théorèmes établissent que
 
--  Suppose there’s no corner solution
+-  Le marché est efficient
 
--  At any allocation :math:`(X_1^*,Y_1^*)` (and consequent value for
-   :math:`X_2^*,Y_2^*`) the indifference curve of the two consumers are
-   tangent.
+-  Si on veut une autre allocation efficiente, on peut l'obtenir est redistribuant les ressources et en laissant le marché faire son travail. 
 
--  Consider this tangence line.
+C'est un résultat important en économie: l'économie décentralisée permet d'obtenir ce que le planificateur aurait pu faire sans sacrifier la liberté des agents économiques. 
 
--  Any of the allocations on that line results in a market equilibrium
-   :math:`(X^*,Y^*)`.
+Un équilibre de marché nécessite seulement que les agents connaissent leur propre préférence. Il n'y a pas de besoin pour un planificateur central qui connait les préférences de tous. Selon `Hayek <https://fr.wikipedia.org/wiki/Friedrich_Hayek>`_, les marchés sont des aggrégateurs d'information. Les économies planifiées perdent cette information (sans mentionner le coût énorme de réussir à connaître les préférences de tous les citoyens). 
 
-**Exercise E**: Find the endowment transfer and the price, starting from
-:math:`(64,28,64,4)`, which give the optimal allocation found in D.
+Limitations
++++++++++++
 
-Market Efficiency
+Ces résultats encourageant reposent cependant sur des hypothèses très fortes: 
+
+-  Marchés sont compétitifs (on a des prenneurs de prix)
+
+-  Les biens sont homogènes (on sait ce qu'on achète)
+
+-  Aucune externalités
+
+-  On peut imposer des taxes *lump-sum* (pour le 2e théorème)
+
+Même si son cadre est simpliste, et certains diront que peu de marchés remplissent les conditions, il s'agit d'un modèle qui permet de fixer un *benchmark*, ou un contre-factuel, afin de réflechir aux failles de marchés de manière précise et structuré. 
+
+La théorie de l'équilibre générale a eu un impact certain sur l'économie: en particulier en macroéconomie et pour les marchés financiers. Comme nous le verrons plus tard, les gouvernements mais aussi d'autres organisations, utilisent ces modèles pour prédire l'effet de différentes politiques, notamment en ce qui attrait au climat. 
+
+Un peu d'histoire
 +++++++++++++++++
-
-The 1st and 2nd theorems establish that
-
--  The market is efficient
-
--  If for one reason or another we want another allocation, we can
-   achieve it by redistributing the resources and letting the market
-   take its course
-
-An important result: Decentralized efficiency
-
--  A market equilibrium requires only that agents know their own
-   preferences
-
--  There is no need for a central planner that knows everyone’s
-   preferences
-
--  We naturally obtain a Pareto-efficient result
-
--  Hayek’s take: markets are information aggregators
-
--  Planned economies lose this information (not to mention that it is
-   costly to find preferences of every citizen).
-
-Limits
-++++++
-
-These two theorems are interesting, but they rest on important
-hypotheses
-
--  Competitive markets (price takers)
-
--  Goods are homogeneous (we know what we’re buying)
-
--  No externalities
-
--  We can impose lump-sum taxes (for the 2nd theorem)
-
-The general equilibrium theory had quite an impact on economics: think
-about how we understand financial markets or macroeconomics.
-
-A bit of history
-++++++++++++++++
-
 
 |image|
 
 .. |image| image:: /images/ad1954.png
 
-
-They came from very different backgrounds (Arrow, economics), (Debreu,
-mathematics). Düppe (2017) tells the story of how this project came to
-be.
+`Kennet Arrow <https://fr.wikipedia.org/wiki/Kenneth_Arrow>`_ et `Gérard Debreu <https://fr.wikipedia.org/wiki/G%C3%A9rard_Debreu>`_ sont ceux qu'on créditent habituellement pour avoir montré l'existence de l'équilibre général. Ils venaient de background très différent et étaient intéressés à cette question pour des raisons différentes. Düppe (2017) raconte et documente comment ce projet s'est réalisé, non sans des tensions évidentes. 
 
 .. figure:: /images/invitation.png
 
    `Duppe (2017), Journal of History of Economic
    Thought <https://www.cambridge.org/core/journals/journal-of-the-history-of-economic-thought/article/div-classtitlearrow-and-debreu-de-homogenizeddiv/761E76D5A52C948615066F502277D9DD>`__
+
 
 

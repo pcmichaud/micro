@@ -5,6 +5,10 @@ Consommateur
 
 Les fondements de la microéconomie débutent avec le comportement du consommateur. On veut prédire ce que ferait un consommateur dans une situation donnée. On veut faire du sens des comportements observés. La théorie paraîtra simpliste, mais de ces fondements, on sera capable d'assez bien prédire le comportement économique des consommateurs. Des raffinements existent, certains ont même révisé ces fondements pour y introduire une approche comportementale où les individus ont des biais, répondent aux émotions, à des limites cognitives, etc. 
 
+.. figure:: /images/distribution_conso.jpeg
+   :scale: 100
+
+
 Préférences
 +++++++++++
 

@@ -1,7 +1,12 @@
 Le Risque
 ---------
 
-De manière générale, les gens n'aiment pas le risque. Pour s'en convaincre, imaginez vous faire offrir à la retraite:
+De manière générale, les gens n'aiment pas le risque. 
+
+.. figure:: /images/risk-scared.jpeg
+   :scale: 100
+
+Pour s'en convaincre, imaginez vous faire offrir à la retraite:
 
 -  **Plan A**: un revenu certain de: 50 000/an
 

@@ -19,14 +19,13 @@ Les thèmes couverts
 Forme de l'enseignement
 +++++++++++++++++++++++
 
-Chaque cours, vous êtes responsable de venir préparé en ayant étudié le matériel de chaque section sur la page web du cours. Une capsule est disponible pour la solution aux exercices. Les cours sont enregistrés et il y aura 10 pts de la note finale pour la participation en cours et sur le forum du cours. La première portion du cours comporte une révision du matériel en groupe (sous forme de discussion), la deuxième portion du cours sera consacrée à des problèmes que nous ferons en petit groupe. Finalement une solution et synthèse du matériel sera faite groupe.
+Chaque cours, vous êtes responsable de venir préparé en ayant étudié le matériel de chaque section sur la page web du cours (donc préparation avant). Une capsule est disponible pour la solution aux exercices. Les cours sont enregistrés. La première portion du cours comporte une révision du matériel en groupe (sous forme de discussion), la deuxième portion du cours sera consacrée à des problèmes que nous ferons en petit groupe. Finalement une solution et synthèse du matériel sera faite en groupe.
 
 Évaluation
 ++++++++++
 
--  Participation (10%)
 -  Un Quiz (5%), au cours 3
--  2 devoirs en équipe (20%), au cours 5 et 9
+-  3 devoirs en équipe (30%)
 -  Intra et final (Meilleure note 40%,l'autre 25%)
 
 Enseignement

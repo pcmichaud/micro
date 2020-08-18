@@ -9,9 +9,17 @@ Est-ce qu'une taxe sur l'essence réduit la consommation d'essence et encourage 
 
 Pour le savoir, on doit étudier empiriquement comment la demande d'essence et de transport en commun réagit à une taxe sur l'essence. On veut peut-être aussi comprendre si cette taxe sera régressive (si elle aura un effet important sur le pouvoir d'achat des moins nantis). Si on veut les compenser, il faudra connaître les effets prix et revenu. 
 
+.. figure:: /images/gilets.jpeg
+   :scale: 100
+   
+   Les gilets jaunes en France ont manifesté entre autre parce que de nouvelles taxes sur le carburant réduisait leur pouvoir d'achat. 
+
 Les élasticités prix et revenu peuvent être estimés sans théorie. Mais comment utiliser ces informations pour répondre aux questions plus normatives?
 
 La théorie sur le choix du consommateur nous fournira un bon nombre d'outils ...
+
+
+
 
 Demande et Préférences
 ++++++++++++++++++++++

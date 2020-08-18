@@ -1,8 +1,7 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="fr" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
+<html class="writer-html5" lang="fr" >
 <head>
   <meta charset="utf-8">
   
@@ -12,12 +11,18 @@
   
 
   
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
   
   
   
 
   
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -26,16 +31,12 @@
         <script src="_static/doctools.js"></script>
         <script src="_static/language_data.js"></script>
         <script src="_static/translations.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script type="text/x-mathjax-config">MathJax.Hub.Config({"extensions": ["tex2jax.js"], "jax": ["input/TeX", "output/HTML-CSS"], "availableFonts": ["Neo-Euler", "TeX"], "preferredFont": ["Neo-Euler"], "scale": 60})</script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Recherche" href="search.html" />
     <link rel="next" title="La production" href="production.html" />
@@ -53,7 +54,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home"> Microeconomie 20-851
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Microeconomie 20-851
           
 
           
@@ -67,7 +68,7 @@
           
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Rechercher docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -76,6 +77,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -93,15 +95,15 @@
 <li class="toctree-l1"><a class="reference internal" href="time.html">Le Temps</a></li>
 <li class="toctree-l1"><a class="reference internal" href="welfare.html">Bien-être</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Échange</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#market-equilibrium">Market Equilibrium</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#walras-law">Walras’ Law</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#what-determines-the-price">What determines the price?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#pareto-efficient-allocation">Pareto-efficient allocation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#exchange-and-welfare">Exchange and Welfare</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#welfare-theorems">Welfare theorems</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#market-efficiency">Market Efficiency</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#limits">Limits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#a-bit-of-history">A bit of history</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#equilibre-de-marche">Équilibre de marché</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#loi-de-walras">Loi de Walras</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#determinants-du-prix-d-equilibre">Déterminants du prix d’équilibre</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#allocation-pareto-efficace">Allocation Pareto-efficace</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#echange-et-bien-etre">Échange et bien-être</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#theoreme-du-bien-etre">Théorème du bien-être</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#efficience-des-marches">Efficience des marchés</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#limitations">Limitations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#un-peu-d-histoire">Un peu d’histoire</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="production.html">La production</a></li>
@@ -114,6 +116,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -152,7 +155,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html">Docs</a> &raquo;</li>
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
       <li>Échange</li>
     
@@ -160,7 +163,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/echange.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/echange.rst.txt" rel="nofollow"> Afficher la source de la page</a>
           
         
       </li>
@@ -175,281 +178,224 @@
             
   <div class="section" id="echange">
 <h1>Échange<a class="headerlink" href="#echange" title="Lien permanent vers ce titre">¶</a></h1>
+<p>Pourquoi échanger entre consommateur? par quel moyen? Par le troc, un marché ou bien en nommant quelqu’un qui se chargera de partager les biens entre les personnes. Quel mécanisme fera fera le mieux?</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="_images/barter.jpeg"><img alt="_images/barter.jpeg" src="_images/barter.jpeg" style="width: 800.0px; height: 572.0px;" /></a>
+</div>
+<p>Nous verrons qu’il existe généralement des gains à l’échange. L’échange peut seulement être bénéfique. Si ce ne l’est pas, les individus n’échangent pas. Donc permettre l’échange ne peut nuire. Le meilleur résultat peut être atteint de différentes façons (marché, planificateur central, troc) si certaines conditions sont respectées.</p>
+<p>Débutons avec un cadre simple, qui ne restraint pas la généralité des résultats plus tard:</p>
 <ul class="simple">
-<li><p>Consider a situation with two consumers (1 and 2) and two goods
+<li><p>Considérons une situation avec deux consommateurs (1 et 2) et deux biens
 (<span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span>)</p></li>
-<li><p>Utility fuctions <span class="math notranslate nohighlight">\(U_1(X,Y)\)</span> and <span class="math notranslate nohighlight">\(U_2(X,Y)\)</span></p></li>
-<li><p>Each consumer has an endowment of each good,
-<span class="math notranslate nohighlight">\(B_1^e = (X_1^e,Y_1^e)\)</span> and <span class="math notranslate nohighlight">\(B_2^e = (X_2^e,Y_2^e)\)</span>.</p></li>
+<li><p>Fonctions d’utilité <span class="math notranslate nohighlight">\(U_1(X,Y)\)</span> et <span class="math notranslate nohighlight">\(U_2(X,Y)\)</span></p></li>
+<li><p>Chaque consommateur a une dotation de chacun des biens,
+<span class="math notranslate nohighlight">\(B_1^e = (X_1^e,Y_1^e)\)</span> et <span class="math notranslate nohighlight">\(B_2^e = (X_2^e,Y_2^e)\)</span>.</p></li>
 </ul>
 <p>Exemples</p>
 <ul class="simple">
-<li><p>2 farmers, one has an endowment of potatoes and the other has an
-endowment of livestock.</p></li>
-<li><p>Two countries: Country 1 has a petroleum endowment and Country 2 has
-a machinery endowment</p></li>
-<li><p>Where do these endowments come from? Nature (resources) or production
-(consumer goods, machinery …). We will talk about this further in
-the « Production » class.</p></li>
+<li><p>Deux fermiers, un a une dotation de pommes de terre et l’autre de bétail.</p></li>
+<li><p>Deux pays: Le pays 1 a une dotation de pétrole, le pays 2 de la machinerie industrielle.</p></li>
+<li><p>Deux consommateurs sur kijiji ou Ebay: un a une canot et l’autre un ordinateur portable</p></li>
 </ul>
-<div class="section" id="market-equilibrium">
-<h2>Market Equilibrium<a class="headerlink" href="#market-equilibrium" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Demande individuelle</p>
+<p>D’où viennent ces dotations? Pour le moment, de la nature (ressources naturelles ou héritage?). Plus tard, ces dotations proviendront des profits provenant de la production d’un bien à l’aide d’autres biens dans l’économie.</p>
+<div class="section" id="equilibre-de-marche">
+<h2>Équilibre de marché<a class="headerlink" href="#equilibre-de-marche" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Le marché est une forme d’échange très répandue. En terme de modélisation, le marché est résumé par un vecteur de prix (s’il y a plusieurs biens) et un système légal qui encadre les transactions.</p>
+<p>Si chaque consommateur a une dotation et une demande individuelle pour les biens en fonction des prix, on peut assez facilement trouver un l’équilibre de marché, içi d’échange, puisqu’il n’y a pas de production. Pensez à Kijiji.</p>
+<p>Pour ce qui est des demandes individuelles,</p>
 <ul>
-<li><p>Consumer 1 choses to consume <span class="math notranslate nohighlight">\((X_1^c, Y_1^c)\)</span></p></li>
-<li><p>Given the prices <span class="math notranslate nohighlight">\(p_X\)</span> and <span class="math notranslate nohighlight">\(p_Y\)</span>, the budget constraint
-is</p>
-<div class="math notranslate nohighlight">
+<li><p>Consommateur 1 choisi de consommer <span class="math notranslate nohighlight">\((X_1^c, Y_1^c)\)</span></p></li>
+<li><p>Étant donné les prix <span class="math notranslate nohighlight">\(p_X\)</span> and <span class="math notranslate nohighlight">\(p_Y\)</span>, la contrainte budgétaire de chacun des agents est</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
 \[p_X X_1^c + p_Y Y_1^c  =  p_X X_1^e + p_Y Y_1^e\]</div>
+</div></blockquote>
 </li>
-<li><p>Prices will be determined in equilibrium.</p></li>
+<li><p>Les prix sont déterminés en équilibre.</p></li>
 </ul>
-<p>Normalisation</p>
-<ul>
-<li><p>Two unknown prices <span class="math notranslate nohighlight">\(p_X\)</span> and <span class="math notranslate nohighlight">\(p_Y\)</span>. Only relative price
-matters: the budget constraint can be written as follows :</p>
-<div class="math notranslate nohighlight">
+<p>Réalisons d’abord que ce n’est que le prix relatif qui est important pour l’équilibre. Nous avons deux prix inconnues, <span class="math notranslate nohighlight">\(p_X\)</span> et <span class="math notranslate nohighlight">\(p_Y\)</span>. La contrainte budgétaire peut être ré-écrite</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
 \[X_1^c + \frac{p_Y}{p_X} Y_1^c  =   X_1^e + \frac{p_Y}{p_X} Y_1^e\]</div>
-</li>
-<li><p>Let’s define the relative price as <span class="math notranslate nohighlight">\(p = p_Y/p_X\)</span></p></li>
+</div></blockquote>
+<p>On peut donc, sans perte d’information, dénoter <span class="math notranslate nohighlight">\(p = p_Y/p_X\)</span>, le prix relatif de <span class="math notranslate nohighlight">\(Y\)</span>. On aurait aussi pu définir le prix comme étant <span class="math notranslate nohighlight">\(p = p_X/p_Y\)</span>!</p>
+<p>Comment trouver le prix relatif d’équilibre?</p>
+<ul class="simple">
+<li><p>Étape 1: Demande individuelle: On cherche</p></li>
 </ul>
-<p>Definition</p>
+<div class="math notranslate nohighlight">
+\[\max_{X_1,Y_1} \left[U_1 : X_1^c + p Y_1^c  \leq   X_1^e + p Y_1^e\right]\]</div>
+<p>On obtient <span class="math notranslate nohighlight">\(X_1^c(p)\)</span> et <span class="math notranslate nohighlight">\(Y_1^c(p)\)</span> par le Lagrangien.</p>
 <ul>
-<li><p>Individual demand: <span class="math notranslate nohighlight">\(\max U_1\)</span> subject to
-<span class="math notranslate nohighlight">\(X_1^c + p Y_1^c  =   X_1^e + p Y_1^e\)</span></p></li>
-<li><p>We obtain <span class="math notranslate nohighlight">\(X_1^c(p)\)</span> and <span class="math notranslate nohighlight">\(Y_1^c(p)\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(p^*\)</span> is an equilibrium price only if at <span class="math notranslate nohighlight">\(p^*\)</span> demand is
-equal to supply</p>
+<li><p>Étape 2: Le prix <span class="math notranslate nohighlight">\(p^*\)</span> est un prix d’équilibre si à <span class="math notranslate nohighlight">\(p^*\)</span> la demande agrégée est égale à l’offre agrégée. On cherche donc <span class="math notranslate nohighlight">\(p^*\)</span> tel que:</p>
 <div class="math notranslate nohighlight">
 \[X_1^c(p^*)+X_2^c(p^*) = X_1^e + X_2^e \quad
-and \quad Y_1^c(p^*)+Y_2^c(p^*) = Y_1^e + Y_2^e\]</div>
+et \quad Y_1^c(p^*)+Y_2^c(p^*) = Y_1^e + Y_2^e\]</div>
 </li>
-<li><p><span class="math notranslate nohighlight">\(X_1^c(p^*) -
-X_1^e =X_2^e - X_2^c(p^*)  \;\)</span> is the amount of <span class="math notranslate nohighlight">\(X\)</span> that is
-exchanged</p></li>
-<li><p>si <span class="math notranslate nohighlight">\(X_1^c - X_1^e &lt; 0\)</span>, consumer 1 is a net supplier of
-<span class="math notranslate nohighlight">\(X\)</span>.</p></li>
 </ul>
-<p>Important Assumptions</p>
+<p>Le quantité de <span class="math notranslate nohighlight">\(X\)</span> échangée est donné par <span class="math notranslate nohighlight">\(X_1^c(p^*) - X_1^e =X_2^e - X_2^c(p^*)\)</span>. Si <span class="math notranslate nohighlight">\(X_1^c - X_1^e &lt; 0\)</span>, le consommateur 1 est offreur de <span class="math notranslate nohighlight">\(X\)</span> (le consommateur 2 demandeur).</p>
+<p>Hypothèses importantes:</p>
 <ul class="simple">
-<li><p>Competitive market: consumers are <strong>price takers</strong></p></li>
-<li><p>All sold goods are homogeneous (identical) and percieved the same way
-by both the buyer and the seller</p></li>
-<li><p>The utility of consumer 1 does not depend on the actions of the other
-consumer: <strong>no externalities</strong></p></li>
+<li><p>Le marché est compétitif: Le consommateur prend le prix comme donné. Il est <strong>prenneur de prix</strong>.</p></li>
+<li><p>Tous les biens sont homogènes (identifiques) et perçus de la même façon par l’acheteur et le vendeur.</p></li>
+<li><p>L’utilité du consommateur 1 ne dépend pas des actions des autres consommateurs: <strong>aucune externalités</strong></p></li>
 </ul>
-<p>An Example</p>
-<p>Context</p>
-<ul>
-<li><p><span class="math notranslate nohighlight">\(U_1(X,Y) =
-U_2(X,Y) = \log X + \alpha \log Y\)</span></p></li>
-<li><p>Price <span class="math notranslate nohighlight">\(p_X= 1\)</span>, <span class="math notranslate nohighlight">\(p_Y = p\)</span>.</p></li>
-<li><p>Endowment <span class="math notranslate nohighlight">\(X_1^e, Y_1^e, X_2^e, Y_2^e\)</span></p></li>
-<li><p>Solution of individual demands:</p>
-<div class="math notranslate nohighlight">
-\[X_1^c =
-\frac{1}{1+\alpha}(X_1^e + p Y_1^e) \quad and \quad Y_1^c =
-\frac{\alpha}{1+\alpha}\frac{X_1^e + p Y_1^e}{p}\]</div>
-</li>
-<li><p>Market equilibrium for <span class="math notranslate nohighlight">\(X\)</span></p>
-<div class="math notranslate nohighlight">
+<p>Regardons un exemple. Considérons <span class="math notranslate nohighlight">\(U_1(X,Y) = U_2(X,Y) = \log X + \alpha \log Y\)</span>. Fixons <span class="math notranslate nohighlight">\(p_X= 1\)</span>, et donc <span class="math notranslate nohighlight">\(p_Y = p\)</span>. Les dotations sont données par <span class="math notranslate nohighlight">\((X_1^e, Y_1^e, X_2^e, Y_2^e)\)</span>. La solution pour les demandes est:</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+X_1^c &amp;=
+\frac{1}{1+\alpha}(X_1^e + p Y_1^e) \\
+Y_1^c &amp;=
+\frac{\alpha}{1+\alpha}\frac{X_1^e + p Y_1^e}{p}
+\end{aligned}\end{split}\]</div>
+</div></blockquote>
+<p>L’équilibre de marché pour <span class="math notranslate nohighlight">\(X\)</span> implique que</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
 \[X_1^c(p) + X_2^c(p) = X_1^e + X_2^e
 \Rightarrow p = \alpha \frac{X_1^e + X_2^e}{Y_1^e + Y_2^e}\]</div>
-</li>
-<li><div class="line-block">
-<div class="line">Notice that the market for <span class="math notranslate nohighlight">\(Y\)</span> has also reached an
-equilibrium at <span class="math notranslate nohighlight">\(p\)</span>.</div>
-<div class="line"><strong>Question:</strong> only one unkown variable and two equations?</div>
+</div></blockquote>
+<p>Le marché pour <span class="math notranslate nohighlight">\(Y\)</span> est aussi en équilibre au prix d’équilibre <span class="math notranslate nohighlight">\(p\)</span>. Pourquoi un seul marché est-il nécessaire?</p>
 </div>
-</li>
-</ul>
-</div>
-<div class="section" id="walras-law">
-<h2>Walras’ Law<a class="headerlink" href="#walras-law" title="Lien permanent vers ce titre">¶</a></h2>
-<p>One unkown variable but two equations</p>
-<ul>
-<li><p>No problem: equilibrium on one market implies equilibrium on the
-other</p></li>
-<li><p>Budget constraint:</p>
-<div class="math notranslate nohighlight">
-\[X_1^c + p Y_1^c  =   X_1^e + p Y_1^e \quad and \quad
+<div class="section" id="loi-de-walras">
+<h2>Loi de Walras<a class="headerlink" href="#loi-de-walras" title="Lien permanent vers ce titre">¶</a></h2>
+<p>On a une seule inconnue, <span class="math notranslate nohighlight">\(p\)</span> mais deux équations… L’équilibre sur un marché implique l’équilibre sur l’autre. Regardons les deux contraintes budgétaires:</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[X_1^c + p Y_1^c  =   X_1^e + p Y_1^e \quad et \quad
 X_2^c + p Y_2^c  =   X_2^e + p Y_2^e\]</div>
-<p>If we add one constraint to the other</p>
-<div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}  [X_1^c + X_2^c] + p [Y_1^c + Y_2^c] = [X_1^e + X_2^e] + p
-  [Y_1^e + Y_2^e]\\An equilibrium in :math:`X` implies\end{aligned}\end{align} \]</div>
-<div class="math notranslate nohighlight">
-\[p
-[Y_1^c + Y_2^c]  = p [Y_1^e + Y_2^e] \Rightarrow  Y_1^c + Y_2^c = Y_1^e +
-Y_2^e\]</div>
-</li>
-</ul>
+</div></blockquote>
+<p>Si on additionne les deux contraintes on obtient:</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[[X_1^c + X_2^c] + p [Y_1^c + Y_2^c] = [X_1^e + X_2^e] + p[Y_1^e + Y_2^e]\]</div>
+</div></blockquote>
+<p>Un équilibre pour <span class="math notranslate nohighlight">\(X\)</span> implique que</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[p[Y_1^c + Y_2^c]  = p [Y_1^e + Y_2^e] \Rightarrow  Y_1^c + Y_2^c = Y_1^e + Y_2^e\]</div>
+</div></blockquote>
+<p>La loi de <a class="reference external" href="https://fr.wikipedia.org/wiki/L%C3%A9on_Walras">Walras</a> permet de se concentrer sur le prix relatif et de trouver le prix d’équilibre sur un seul des marchés sans avoir à regarder l’autre. On peut généraliser cette loi à plus de 2 biens.</p>
 </div>
-<div class="section" id="what-determines-the-price">
-<h2>What determines the price?<a class="headerlink" href="#what-determines-the-price" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Compared static</p>
-<ul class="simple">
-<li><p>How <span class="math notranslate nohighlight">\(p\)</span> varies with <span class="math notranslate nohighlight">\(\alpha\)</span> (importance of the good
-<span class="math notranslate nohighlight">\(Y\)</span>) and the aggregated quantities of <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span> ?</p></li>
-<li><p>If <span class="math notranslate nohighlight">\(\alpha\)</span> <span class="math notranslate nohighlight">\(\nearrow\)</span> then <span class="math notranslate nohighlight">\(p=p_Y\)</span>
-<span class="math notranslate nohighlight">\(\nearrow\)</span>: since the total supply of <span class="math notranslate nohighlight">\(Y\)</span> is fixed, when
-demand for <span class="math notranslate nohighlight">\(Y\)</span> increases, the price must adjust to maintain the
-equilibrium.</p></li>
-<li><p>If <span class="math notranslate nohighlight">\(Y_1^e + Y_2^e
-\nearrow\)</span> then <span class="math notranslate nohighlight">\(p=p_Y\)</span> <span class="math notranslate nohighlight">\(\searrow\)</span>: the price must fall to
-sell the endowment.</p></li>
-<li><p>If <span class="math notranslate nohighlight">\(X_1^e + X_2^e \nearrow\)</span> then <span class="math notranslate nohighlight">\(p = p_Y\)</span>
-<span class="math notranslate nohighlight">\(\nearrow\)</span> since <span class="math notranslate nohighlight">\(Y\)</span> has become rarer relative to
-<span class="math notranslate nohighlight">\(X\)</span></p></li>
-</ul>
-</div>
-<div class="section" id="pareto-efficient-allocation">
-<h2>Pareto-efficient allocation<a class="headerlink" href="#pareto-efficient-allocation" title="Lien permanent vers ce titre">¶</a></h2>
-<p>The Edgeworth Box</p>
-<ul class="simple">
-<li><p>We draw the space of possible allocations in an Edgeworth box</p></li>
-<li><p>The initial endowment is a point in this space</p></li>
-</ul>
-<p><strong>Exercise A</strong>: Show the endowment <span class="math notranslate nohighlight">\((x^e_1,y_1^e) = (50,20)\)</span> and
-<span class="math notranslate nohighlight">\((x^e_2,y_2^e)=(20,50)\)</span> in an Edgeworth box.</p>
-<ul class="simple">
-<li><p>A point on the Edgeworth box where indifference curves cross is not
-Pareto-optimal.</p></li>
-<li><p>We can define the core of this point as all the allocations that are
-a Pareto improvement.</p></li>
-<li><p>When the core is empty, we get an allocation that is Pareto-efficient
-: this implies that the indifference curves are tangent.</p></li>
-<li><p>The Pareto Frontier (or Pareto Front) is the curve that shows all the
-allocations that are Pareto-efficient.</p></li>
-</ul>
-<p>Calculating an optimum</p>
-<p>We can seek to maximize the welfare of an agent by keeping the other’s
-fixed and respecting the resource constraints:</p>
+<div class="section" id="determinants-du-prix-d-equilibre">
+<h2>Déterminants du prix d’équilibre<a class="headerlink" href="#determinants-du-prix-d-equilibre" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Le prix d’équilibre sera fonction des préférences des agents. Dans notre exemple,</p>
 <div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}  \begin{aligned}
-  \max_{X_1,Y_1,X_2,Y_2} u(X_1,Y_1) \end{aligned}\\subject to:\end{aligned}\end{align} \]</div>
+\[p^* = \alpha \frac{X_1^e + X_2^e}{Y_1^e + Y_2^e}\]</div>
+<p>Donc le prix de <span class="math notranslate nohighlight">\(Y\)</span> augmente avec la préférence relative pour <span class="math notranslate nohighlight">\(Y\)</span>, donnée par <span class="math notranslate nohighlight">\(\alpha\)</span>. L’offre est fixe, si la demande est élevée, le prix d’équilibre devra être plus élevée pour retrouver un équilibre. Si le bien <span class="math notranslate nohighlight">\(Y\)</span> est rare, c’est-à-dire que <span class="math notranslate nohighlight">\(Y_1^e + Y_2^e\)</span> est faible, le prix d’équilibre sera plus élevé.</p>
+<p>Le prix est un signal des préférences et de la rareté relative des biens. Est-ce que l’équilibre de marché garantie le niveau de bien-être le plus élevé que peuvent obtenir les deux agents? Afin de juger de l’allocation de marché, nous devons faire un pas de côté pour définir une allocation optimale, sans le recours au marché.</p>
+</div>
+<div class="section" id="allocation-pareto-efficace">
+<h2>Allocation Pareto-efficace<a class="headerlink" href="#allocation-pareto-efficace" title="Lien permanent vers ce titre">¶</a></h2>
+<p>On a déjà vu qu’une amélioration de Pareto est possible quand aucun des deux agents ne perd en utilité et qu’au moins un gagne. Quand il n’existe plus d’amélioration au sens de Pareto, on dit que l’allocation est Pareto optimale ou efficace. Nous allons maintenant appliquer ce principe aux allocations de biens.</p>
+<p>Pour ce faire, on aura besoin d’une boîte d’Edgeworth, un outil très utile. C’est en fait un système de coordonées qui permet de tracer en deux dimensions un problème qui en a 4 (les quantités des biens <span class="math notranslate nohighlight">\(X\)</span> et <span class="math notranslate nohighlight">\(Y\)</span> pour les consommateurs 1 et 2). Pour ce faire, on utilise le fait qu’il existe une quantité totale fixe des biens X et Y.  L’exercice A vous apprendra à construire une boîte d’Edgeworth.</p>
+<div class="figure align-default" id="id1">
+<a class="reference internal image-reference" href="_images/endow.png"><img alt="_images/endow.png" src="_images/endow.png" style="width: 446.95px; height: 269.5px;" /></a>
+<p class="caption"><span class="caption-text">La boîte a des dimensions égales aux dotations totales des biens <span class="math notranslate nohighlight">\(X\)</span> et <span class="math notranslate nohighlight">\(Y\)</span>.</span><a class="headerlink" href="#id1" title="Lien permanent vers cette image">¶</a></p>
+</div>
+<p><strong>Exercice A</strong>: Montrer la <span class="math notranslate nohighlight">\((x^e_1,y_1^e) = (50,20)\)</span> et
+<span class="math notranslate nohighlight">\((x^e_2,y_2^e)=(20,50)\)</span> dans une boîte d’Edgeworth.</p>
+<p>Un certain nombre d’observations peuvent être faite à partir de la boîte d’Edgeworth:</p>
+<p>D’abord, un point dans une boite d’Edgeworth ou deux courbes d’indifférence se croisent ne peut être Pareto optimal. Pourquoi, parce qu’on peut définir un noyau par rapport à ce point comme étant toutes les allocations qui mènent à une amélioration de Pareto.</p>
+<div class="figure align-default" id="id2">
+<a class="reference internal image-reference" href="_images/core.png"><img alt="_images/core.png" src="_images/core.png" style="width: 421.4px; height: 270.2px;" /></a>
+<p class="caption"><span class="caption-text">L’allocation A n’est pas optimale: les courbes d’indifférences se croisent. L’allocation A est une amélioration au sens de Pareto. Le noyau est cette zone entre les deux courbes d’indifférences.</span><a class="headerlink" href="#id2" title="Lien permanent vers cette image">¶</a></p>
+</div>
+<p>Quand le noyau est vide, l’allocation est Pareto efficiente ou optimale. Ceci implique que les courbes d’indifférences doivent être tangentes.</p>
+<p>La courbe des contrats est la droite qui passe par toutes les allocations Pareto efficiente. La frontière de Pareto est la courbe dans l’espace <span class="math notranslate nohighlight">\((U_1,U_2)\)</span> qui indique toutes les allocations optimales au sens de Pareto.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="_images/contract.png"><img alt="_images/contract.png" src="_images/contract.png" style="width: 428.4px; height: 276.15px;" /></a>
+</div>
+<div class="figure align-default" id="id3">
+<a class="reference internal image-reference" href="_images/pareto-frontier.png"><img alt="_images/pareto-frontier.png" src="_images/pareto-frontier.png" style="width: 373.5px; height: 273.0px;" /></a>
+<p class="caption"><span class="caption-text">Les allocations A et C sont optimales au sens de Pareto. Elles se retrouvent sur la courbe des contrats et sur la frontière de Pareto. Cependant, l’allocation B n’est pas optimale: les courbes d’indifférence se croisent et elle est à l’intérieur de la frontière de Pareto.</span><a class="headerlink" href="#id3" title="Lien permanent vers cette image">¶</a></p>
+</div>
+<p>Comment calculer un optimum de Pareto? On peut utiliser le principe de la maximisation contrainte. On pourrait tenter de maximiser le bien-être d’un agent, tout en gardant le bien-être d’un autre agent fixe et en respectant la contrainte de ressources.</p>
+<div class="math notranslate nohighlight">
+\[\begin{aligned}
+\max_{X_1,Y_1,X_2,Y_2} u(X_1,Y_1) \end{aligned}\]</div>
+<p>sujet à :</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
 u(X_2,Y_2)\ge \overline{u}_2 \\
 X_1 + X_2 \le X_e \\
 Y_1 + Y_2 \le Y_e\end{aligned}\end{split}\]</div>
-<p>A Few Exercises</p>
-<p><strong>Exercise B</strong>: Find the Pareto-optimal allocation for the utility
-functions <span class="math notranslate nohighlight">\(u_1\)</span> and <span class="math notranslate nohighlight">\(u_2\)</span> strictly positive and concave,
-<span class="math notranslate nohighlight">\(u_j = \sqrt{x_j y_j}\)</span> for consumers <span class="math notranslate nohighlight">\(j=1,2\)</span>, using the
-Lagrangian method.</p>
-<p><strong>Exercise C</strong>: Find the Pareto-optimal allocation for the utility
-functions <span class="math notranslate nohighlight">\(u_j = \sqrt{x_j y_j}\)</span> for consumers <span class="math notranslate nohighlight">\(j=1,2\)</span> with
-the total endowments <span class="math notranslate nohighlight">\(x_e = 128\)</span> and <span class="math notranslate nohighlight">\(y_e=32\)</span> if
+<p>On applique la technique du Lagrangien mais cette fois avec trois contraintes. Voici le Lagrangien:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{split}
+ U(X_1,Y_1) + \lambda(U(X_2,Y_2)-\overline{U}_2) \\
+- \pi_X (X_1+X_2 - X_e) - \pi_Y (Y_1+Y_2-Y_e) \end{split}\end{split}\]</div>
+<p>Il y aura donc 6 CPO et 3 multiplicateurs. Les exercices qui suivant vous aideront à comprendre la démarche pour la solution.</p>
+<p><strong>Exercice B</strong>: Trouvez l’allocation Pareto optimale pour les fonctions d’utilité <span class="math notranslate nohighlight">\(u_1\)</span> et <span class="math notranslate nohighlight">\(u_2\)</span> strictement positive and concave,
+<span class="math notranslate nohighlight">\(u_j = \sqrt{x_j y_j}\)</span> pour les consommateurs <span class="math notranslate nohighlight">\(j=1,2\)</span>, en utilisant la méthode du Lagrangien.</p>
+<p><strong>Exercice C</strong>: Trouvez l’allocation Pareto optimale pour les fonctions d’utilités <span class="math notranslate nohighlight">\(u_j = \sqrt{x_j y_j}\)</span> pour les consommateurs <span class="math notranslate nohighlight">\(j=1,2\)</span> avec les dotations <span class="math notranslate nohighlight">\(x_e = 128\)</span> et <span class="math notranslate nohighlight">\(y_e=32\)</span> si
 <span class="math notranslate nohighlight">\(\overline{u}_2=48\)</span>.</p>
-<p><strong>Exercise D</strong>: In Exercise C, is the allocation <span class="math notranslate nohighlight">\((64,28,64,4)\)</span>
-optimal? If it isn’t, find a Pareto improvement that can be made in the
-core.</p>
-<p>Market Equilibrium in an Edgeworth box</p>
-<ul class="simple">
-<li><p>The budget constraint is given by the endowments and indicates which
-allocations are possible at price <span class="math notranslate nohighlight">\(p\)</span>.</p></li>
-<li><p>A market equilibrium implies that the <span class="math notranslate nohighlight">\(MRS\)</span> are equal to the
-price ratio.</p></li>
-</ul>
+<p><strong>Exercice D</strong>: Dans l’exercice C, l’allocation <span class="math notranslate nohighlight">\((64,28,64,4)\)</span>
+est-elle optimale au sens de Pareto? Si elle ne l’est pas, trouvez une amélioration au sens de Pareto dans le noyau.</p>
+<p><strong>Équilibre de marché dans une boîte d’Edgeworth</strong></p>
+<p>La contrainte budgétaire dépend des dotations et indique les allocations qui sont possibles au prix <span class="math notranslate nohighlight">\(p\)</span>. Un équilibre de marché implique que le  <span class="math notranslate nohighlight">\(TMS\)</span> est égal au prix. Puisque le prix est le même pour les deux consommateurs, les <span class="math notranslate nohighlight">\(TMS\)</span> sont égaux dans un équilibre de marché.</p>
+<div class="figure align-default" id="id4">
+<a class="reference internal image-reference" href="_images/price-equilibrium.png"><img alt="_images/price-equilibrium.png" src="_images/price-equilibrium.png" style="width: 642.0px; height: 416.5px;" /></a>
+<p class="caption"><span class="caption-text">Un équilibre de marché est donné par A. Il est réalisé à partir de dotations représentées au point E. Le prix relatif <span class="math notranslate nohighlight">\(p = p_Y/p_X\)</span> donc donc une droite avec pente <span class="math notranslate nohighlight">\(-p_X/p_Y = -1/p\)</span>.</span><a class="headerlink" href="#id4" title="Lien permanent vers cette image">¶</a></p>
 </div>
-<div class="section" id="exchange-and-welfare">
-<h2>Exchange and Welfare<a class="headerlink" href="#exchange-and-welfare" title="Lien permanent vers ce titre">¶</a></h2>
-<ul class="simple">
-<li><p>Consider the equilibrium price: <span class="math notranslate nohighlight">\(p^*\)</span> and the quantities
-consumed by consumer 1: <span class="math notranslate nohighlight">\(X^c_1 = X^c_1(p^*)\)</span> and
-<span class="math notranslate nohighlight">\(Y^c_1 = Y^c_1(p^*)\)</span></p></li>
-<li><p>We have <span class="math notranslate nohighlight">\(U_1(X^c_1, Y^c_1) \geq U_1(X^e_1, Y^e_1)\)</span></p></li>
-</ul>
-<p>Why?</p>
-<ul class="simple">
-<li><p>At <span class="math notranslate nohighlight">\(p^*\)</span>, the basket <span class="math notranslate nohighlight">\(B^e_1 = (X^e_1,Y^e_1)\)</span> is available
-and consumer 1 chooses <span class="math notranslate nohighlight">\(B^c_1=(X^c_1, Y^c_1)\)</span></p></li>
-<li><p>This implies that <span class="math notranslate nohighlight">\(U_1(X^c_1, Y^c_1) \geq U_1(X^e_1, Y^e_1)\)</span></p></li>
-<li><p>Note: If <span class="math notranslate nohighlight">\(U\)</span> concave and <span class="math notranslate nohighlight">\((X^c_1, Y^c_1) \neq (X^e_1,
-Y^e_1)\)</span> then <span class="math notranslate nohighlight">\(U_1(X^c_1, Y^c_1) &gt; U_1(X^e_1, Y^e_1)\)</span></p></li>
-</ul>
 </div>
-<div class="section" id="welfare-theorems">
-<h2>Welfare theorems<a class="headerlink" href="#welfare-theorems" title="Lien permanent vers ce titre">¶</a></h2>
-<p>1st Theorem of Welfare</p>
-<ul class="simple">
-<li><p>A market equilibrium is always Pareto-optimal.</p></li>
-<li><p>In an allocation that is Pareto-efficient we cannot make a consumer
-better off without making another consumer worse off</p></li>
-</ul>
-<p>Why?</p>
-<ul class="simple">
-<li><p>At the equilibrium allocation
-<span class="math notranslate nohighlight">\(X^c_1(p^*),Y^c_1(p^*),X^c_2(p^*),Y^c_1(p^*)\)</span> the indifference
-curve of consumer 1 is tangent to the budget constraint, and tangent
-to the indifference curve of consumer 2</p></li>
-<li><p>This implies that the allocation is Pareto-efficient.</p></li>
-</ul>
-<p>The 2nd Theorem</p>
-<ul class="simple">
-<li><p>We can achieve any Pareto-efficient allocation we desire through
-market equilibrium if we redistribute the initial endowments</p></li>
-<li><p>This requires the ability to impose taxes (lump-sum payments)</p></li>
-<li><p>Often called a decentralized resource allocation</p></li>
-</ul>
-<p>Why?</p>
-<ul class="simple">
-<li><p>Suppose there’s no corner solution</p></li>
-<li><p>At any allocation <span class="math notranslate nohighlight">\((X_1^*,Y_1^*)\)</span> (and consequent value for
-<span class="math notranslate nohighlight">\(X_2^*,Y_2^*\)</span>) the indifference curve of the two consumers are
-tangent.</p></li>
-<li><p>Consider this tangence line.</p></li>
-<li><p>Any of the allocations on that line results in a market equilibrium
-<span class="math notranslate nohighlight">\((X^*,Y^*)\)</span>.</p></li>
-</ul>
-<p><strong>Exercise E</strong>: Find the endowment transfer and the price, starting from
-<span class="math notranslate nohighlight">\((64,28,64,4)\)</span>, which give the optimal allocation found in D.</p>
+<div class="section" id="echange-et-bien-etre">
+<h2>Échange et bien-être<a class="headerlink" href="#echange-et-bien-etre" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Considérons le prix d’équilibre: <span class="math notranslate nohighlight">\(p^*\)</span> et les quantités consommées par le consommateur 1: <span class="math notranslate nohighlight">\(X^c_1 = X^c_1(p^*)\)</span> et <span class="math notranslate nohighlight">\(Y^c_1 = Y^c_1(p^*)\)</span>. On a que <span class="math notranslate nohighlight">\(U_1(X^c_1, Y^c_1) \geq U_1(X^e_1, Y^e_1)\)</span></p>
+<p>Pourquoi? Au prix <span class="math notranslate nohighlight">\(p^*\)</span>, le panier de dotations <span class="math notranslate nohighlight">\(B^e_1 = (X^e_1,Y^e_1)\)</span> est disponible mais le consommateur préfère <span class="math notranslate nohighlight">\(B^c_1=(X^c_1, Y^c_1)\)</span>. Donc, les préférences révèlent que <span class="math notranslate nohighlight">\(U_1(X^c_1, Y^c_1) \geq U_1(X^e_1, Y^e_1)\)</span>.</p>
 </div>
-<div class="section" id="market-efficiency">
-<h2>Market Efficiency<a class="headerlink" href="#market-efficiency" title="Lien permanent vers ce titre">¶</a></h2>
-<p>The 1st and 2nd theorems establish that</p>
+<div class="section" id="theoreme-du-bien-etre">
+<h2>Théorème du bien-être<a class="headerlink" href="#theoreme-du-bien-etre" title="Lien permanent vers ce titre">¶</a></h2>
+<p><strong>Premier théorème</strong></p>
 <ul class="simple">
-<li><p>The market is efficient</p></li>
-<li><p>If for one reason or another we want another allocation, we can
-achieve it by redistributing the resources and letting the market
-take its course</p></li>
+<li><p>Un équilibre de marché est toujours optimal au sens de Pareto.</p></li>
 </ul>
-<p>An important result: Decentralized efficiency</p>
+<p>Si une allocation est Pareto-optimale, on ne peut améliorer le sort d’un consommateur sans réduire celui d’un autre.</p>
+<p>Pourquoi ce résultat? À l’allocation d’équilibre <span class="math notranslate nohighlight">\(X^c_1(p^*),Y^c_1(p^*),X^c_2(p^*),Y^c_1(p^*)\)</span> les courbes d’indifférences sont tangentes à la même contrainte budgétaire. Si elles sont tangentes, c’est donc qu’on a une allocation Pareto optimale.</p>
+<p><strong>Deuxième théorème</strong></p>
 <ul class="simple">
-<li><p>A market equilibrium requires only that agents know their own
-preferences</p></li>
-<li><p>There is no need for a central planner that knows everyone’s
-preferences</p></li>
-<li><p>We naturally obtain a Pareto-efficient result</p></li>
-<li><p>Hayek’s take: markets are information aggregators</p></li>
-<li><p>Planned economies lose this information (not to mention that it is
-costly to find preferences of every citizen).</p></li>
+<li><p>On peut obtenir n’importe quelle allocation Pareto optimale par un équilibre de marché où on devra potentiellement redistribuer les dotations.</p></li>
 </ul>
+<p>Ceci nécessite la possibilité d’imposer des taxes, ou confisquer des dotations: paiments ou taxes dites <em>lump-sum</em>. On dit alors que l’allocation des ressources est décentralisée (le fruit d’un équilibre de marché et de redistribution des dotations).</p>
+<p>Pourquoi ca fonctionne?</p>
+<p>Pour toute allocation <span class="math notranslate nohighlight">\((X_1^*,Y_1^*)\)</span>, et valeur conséquente pour <span class="math notranslate nohighlight">\((X_2^*,Y_2^*)\)</span>,  les courbes d’indifférence sont tangentes. À cette ligne de tangence, on peut redistribuer les dotations pour trouver un point sur cette ligne. N’importe quelle dotation finale (après transfert) sur cette ligne, mène à un équilibre de marché avec <span class="math notranslate nohighlight">\((X^*,Y^*)\)</span>.</p>
+<div class="figure align-default" id="id5">
+<a class="reference internal image-reference" href="_images/transfer-equilibrium.png"><img alt="_images/transfer-equilibrium.png" src="_images/transfer-equilibrium.png" style="width: 612.5px; height: 391.0px;" /></a>
+<p class="caption"><span class="caption-text">L’optimum de Pareto A n’est pas atteignable à partir de la dotation <span class="math notranslate nohighlight">\(E_0\)</span>. Mais un transfert de <span class="math notranslate nohighlight">\(T_X\)</span> du bien <span class="math notranslate nohighlight">\(X\)</span> provenant du consommateur 1 au consommateur 2, permet d’atteindre la dotation  <span class="math notranslate nohighlight">\(E_1\)</span>, à partir de laquelle on peut attendre l’optimum de Pareto A avec un équilibre de marché au prix <span class="math notranslate nohighlight">\(p\)</span>.</span><a class="headerlink" href="#id5" title="Lien permanent vers cette image">¶</a></p>
 </div>
-<div class="section" id="limits">
-<h2>Limits<a class="headerlink" href="#limits" title="Lien permanent vers ce titre">¶</a></h2>
-<p>These two theorems are interesting, but they rest on important
-hypotheses</p>
-<ul class="simple">
-<li><p>Competitive markets (price takers)</p></li>
-<li><p>Goods are homogeneous (we know what we’re buying)</p></li>
-<li><p>No externalities</p></li>
-<li><p>We can impose lump-sum taxes (for the 2nd theorem)</p></li>
-</ul>
-<p>The general equilibrium theory had quite an impact on economics: think
-about how we understand financial markets or macroeconomics.</p>
+<p><strong>Exercice E</strong>: Trouvez le transfert de dotation et de prix, partant de <span class="math notranslate nohighlight">\((64,28,64,4)\)</span>, qui donne l’allocation trouvée à l’exercice D.</p>
 </div>
-<div class="section" id="a-bit-of-history">
-<h2>A bit of history<a class="headerlink" href="#a-bit-of-history" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="efficience-des-marches">
+<h2>Efficience des marchés<a class="headerlink" href="#efficience-des-marches" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Les premier et deuxième théorèmes établissent que</p>
+<ul class="simple">
+<li><p>Le marché est efficient</p></li>
+<li><p>Si on veut une autre allocation efficiente, on peut l’obtenir est redistribuant les ressources et en laissant le marché faire son travail.</p></li>
+</ul>
+<p>C’est un résultat important en économie: l’économie décentralisée permet d’obtenir ce que le planificateur aurait pu faire sans sacrifier la liberté des agents économiques.</p>
+<p>Un équilibre de marché nécessite seulement que les agents connaissent leur propre préférence. Il n’y a pas de besoin pour un planificateur central qui connait les préférences de tous. Selon <a class="reference external" href="https://fr.wikipedia.org/wiki/Friedrich_Hayek">Hayek</a>, les marchés sont des aggrégateurs d’information. Les économies planifiées perdent cette information (sans mentionner le coût énorme de réussir à connaître les préférences de tous les citoyens).</p>
+</div>
+<div class="section" id="limitations">
+<h2>Limitations<a class="headerlink" href="#limitations" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Ces résultats encourageant reposent cependant sur des hypothèses très fortes:</p>
+<ul class="simple">
+<li><p>Marchés sont compétitifs (on a des prenneurs de prix)</p></li>
+<li><p>Les biens sont homogènes (on sait ce qu’on achète)</p></li>
+<li><p>Aucune externalités</p></li>
+<li><p>On peut imposer des taxes <em>lump-sum</em> (pour le 2e théorème)</p></li>
+</ul>
+<p>Même si son cadre est simpliste, et certains diront que peu de marchés remplissent les conditions, il s’agit d’un modèle qui permet de fixer un <em>benchmark</em>, ou un contre-factuel, afin de réflechir aux failles de marchés de manière précise et structuré.</p>
+<p>La théorie de l’équilibre générale a eu un impact certain sur l’économie: en particulier en macroéconomie et pour les marchés financiers. Comme nous le verrons plus tard, les gouvernements mais aussi d’autres organisations, utilisent ces modèles pour prédire l’effet de différentes politiques, notamment en ce qui attrait au climat.</p>
+</div>
+<div class="section" id="un-peu-d-histoire">
+<h2>Un peu d’histoire<a class="headerlink" href="#un-peu-d-histoire" title="Lien permanent vers ce titre">¶</a></h2>
 <p><img alt="image" src="_images/ad1954.png" /></p>
-<p>They came from very different backgrounds (Arrow, economics), (Debreu,
-mathematics). Düppe (2017) tells the story of how this project came to
-be.</p>
-<div class="figure align-default" id="id1">
+<p><a class="reference external" href="https://fr.wikipedia.org/wiki/Kenneth_Arrow">Kennet Arrow</a> et <a class="reference external" href="https://fr.wikipedia.org/wiki/G%C3%A9rard_Debreu">Gérard Debreu</a> sont ceux qu’on créditent habituellement pour avoir montré l’existence de l’équilibre général. Ils venaient de background très différent et étaient intéressés à cette question pour des raisons différentes. Düppe (2017) raconte et documente comment ce projet s’est réalisé, non sans des tensions évidentes.</p>
+<div class="figure align-default" id="id6">
 <img alt="_images/invitation.png" src="_images/invitation.png" />
 <p class="caption"><span class="caption-text"><a class="reference external" href="https://www.cambridge.org/core/journals/journal-of-the-history-of-economic-thought/article/div-classtitlearrow-and-debreu-de-homogenizeddiv/761E76D5A52C948615066F502277D9DD">Duppe (2017), Journal of History of Economic
-Thought</a></span><a class="headerlink" href="#id1" title="Lien permanent vers cette image">¶</a></p>
+Thought</a></span><a class="headerlink" href="#id6" title="Lien permanent vers cette image">¶</a></p>
 </div>
 </div>
 </div>
@@ -462,10 +408,10 @@ Thought</a></span><a class="headerlink" href="#id1" title="Lien permanent vers c
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="production.html" class="btn btn-neutral float-right" title="La production" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="production.html" class="btn btn-neutral float-right" title="La production" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="welfare.html" class="btn btn-neutral float-left" title="Bien-être" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="welfare.html" class="btn btn-neutral float-left" title="Bien-être" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Précédent</a>
       
     </div>
   
@@ -474,11 +420,19 @@ Thought</a></span><a class="headerlink" href="#id1" title="Lien permanent vers c
 
   <div role="contentinfo">
     <p>
+        
         &copy; Copyright 2020, Pierre-Carl Michaud
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Compilé avec <a href="http://sphinx-doc.org/">Sphinx</a> en utilisant un
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">thème</a>
+    
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -489,7 +443,6 @@ Thought</a></span><a class="headerlink" href="#id1" title="Lien permanent vers c
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {
