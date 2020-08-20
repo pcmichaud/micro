@@ -295,7 +295,7 @@ inputs?</p>
 <p>Le coût marginal de produire un output (en minimisant les coûts) est donné par:</p>
 <div class="math notranslate nohighlight">
 \[c(p_X,p_Y,Y) = \frac{\partial C(p_X,p_Y,Y)}{\partial Y}\]</div>
-<p>On utilise la convention de c minuscule dénote le coût marginal et C majuscule, les coûts totaux.</p>
+<p>On utilise la convention de <span class="math notranslate nohighlight">\(c\)</span> minuscule dénote le coût marginal et C majuscule, les coûts totaux.</p>
 <p>En utilisant le théorème de l’enveloppe, on peut montrer que</p>
 <div class="math notranslate nohighlight">
 \[\frac{\partial C(p_X,p_Y,Y)}{\partial Y} = \mu\]</div>
@@ -332,8 +332,8 @@ inputs?</p>
 <p><strong>Exercise G</strong> Supposons <span class="math notranslate nohighlight">\(F(X) = \sqrt X\)</span>, trouvez le choix de
 <span class="math notranslate nohighlight">\(X\)</span> qui maximise les profits.</p>
 <p>L’offre de la firme est donné par <span class="math notranslate nohighlight">\(Y^* = F(X^*)\)</span>.</p>
-<p><strong>Exercise H</strong> Suppose <span class="math notranslate nohighlight">\(F(X) = \sqrt X\)</span>, find the supply function
-of <span class="math notranslate nohighlight">\(Y\)</span>.</p>
+<p><strong>Exercise H</strong> Supposons que <span class="math notranslate nohighlight">\(F(X) = \sqrt X\)</span>, trouvez l’offre de l’entreprise
+pour <span class="math notranslate nohighlight">\(Y\)</span>.</p>
 <p>Quand deux inputs sont présent, et un output, on peut procéder de la façon suivante:</p>
 <ul class="simple">
 <li><p>Minimisation des coûts pour <span class="math notranslate nohighlight">\((X,Z)\)</span> en fonction de <span class="math notranslate nohighlight">\(Y\)</span>.</p></li>
@@ -343,174 +343,94 @@ of <span class="math notranslate nohighlight">\(Y\)</span>.</p>
 <p><strong>Exercice I</strong> Pour <span class="math notranslate nohighlight">\(Y=X^{1/2} Z^{1/4}\)</span>, trouvez l’offre de <span class="math notranslate nohighlight">\(Y\)</span>.</p>
 <div class="section" id="economie-de-production">
 <h2>Économie de production<a class="headerlink" href="#economie-de-production" title="Lien permanent vers ce titre">¶</a></h2>
-<p>A Production Economy with a Firm and Two Goods (I)</p>
-<p><strong>Contexte</strong></p>
-<ul class="simple">
-<li><p>2 goods <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span></p></li>
-<li><p>Firm has a production function <span class="math notranslate nohighlight">\(Y = F(X)\)</span>.</p></li>
-</ul>
-<p><strong>Firm’s behaviour</strong></p>
+<p>En situation d’échange, nous avons été capable de définir l’équilibre de marché ainsi que l’optimum de Pareto. Dans une économie de production, on peut faire la même chose. Il faut rajouter une entreprise et spécifier ce qu’elle produit, et avec quels biens. Il faut aussi répartir ses profits, s’il y en a, auprès des consommateurs, actionnaires. En équilibre général, rien ne se perd …</p>
+<p>Considérons une situation avec deux biens: <span class="math notranslate nohighlight">\(X\)</span> et <span class="math notranslate nohighlight">\(Y\)</span>. L’entreprise a une fonction de production <span class="math notranslate nohighlight">\(Y = F(X)\)</span>.</p>
+<p><strong>Comportement de la firme</strong></p>
 <ul>
-<li><p>Given the prices <span class="math notranslate nohighlight">\(p_Y\)</span> and <span class="math notranslate nohighlight">\(p_X\)</span> the firm maximizes
-profits</p>
+<li><p>Étant donné les prix <span class="math notranslate nohighlight">\(p_Y\)</span> et <span class="math notranslate nohighlight">\(p_X\)</span> l’entreprise maximise ses profits.</p>
 <div class="math notranslate nohighlight">
 \[\Pi(X) = p_Y F(X) - p_X X\]</div>
 </li>
-<li><p>Gives the firm’s demand <span class="math notranslate nohighlight">\(X^{F,d}(p_X,p_Y)\)</span>;</p>
-<p>The firm’s supply <span class="math notranslate nohighlight">\(Y^{F,s}(p_X,p_Y)\)</span>;</p>
-<p>…and the profits <span class="math notranslate nohighlight">\(\Pi\)</span></p>
-</li>
+<li><p>On peut trouver la demande de l’input <span class="math notranslate nohighlight">\(X^{F,d}(p_X,p_Y)\)</span>, l’offre de l’entreprise <span class="math notranslate nohighlight">\(Y^{F,s}(p_X,p_Y)\)</span> et les profits, s’il y en a <span class="math notranslate nohighlight">\(\Pi\)</span>.</p></li>
 </ul>
-<p>A Production Economy with a Firm and Two Goods (II)</p>
-<p><strong>The consumer’s behaviour</strong></p>
-<ul>
-<li><p>2 consumers C1 et C2</p></li>
-<li><p>The consumers have preferences represented by <span class="math notranslate nohighlight">\(U_1(X, Y)\)</span> and
+<p><strong>Comportement des consommateurs</strong></p>
+<ul class="simple">
+<li><p>On a deux consumers C1 et C2</p></li>
+<li><p>Les préférences des consommateurs sont représentées par <span class="math notranslate nohighlight">\(U_1(X, Y)\)</span> et
 <span class="math notranslate nohighlight">\(U_2(X,Y)\)</span></p></li>
-<li><div class="line-block">
-<div class="line">Consumer 1 has an endowment <span class="math notranslate nohighlight">\(X^{C1,e},
-Y^{C1,e}\)</span></div>
-<div class="line">Consumer 2 has an endowment <span class="math notranslate nohighlight">\(X^{C2,e}, Y^{C2,e}\)</span></div>
-</div>
-</li>
-<li><p>Both consumers have stocks <span class="math notranslate nohighlight">\(\rho_{1}\)</span> and
-<span class="math notranslate nohighlight">\(\rho_2 = 1- \rho_1\)</span> in the firm.</p></li>
+<li><p>Le consommateur 1 a une dotation <span class="math notranslate nohighlight">\((X^{C1,e},
+Y^{C1,e})\)</span> alors que le consommateur 2 a <span class="math notranslate nohighlight">\((X^{C2,e}, Y^{C2,e})\)</span></p></li>
+<li><p>Chaque consommateur a une participation aux profits dans l’entreprise <span class="math notranslate nohighlight">\(\rho_{1}\)</span> and
+<span class="math notranslate nohighlight">\(\rho_2 = 1- \rho_1\)</span>.</p></li>
 </ul>
-<p>A Production Economy with a Firm and Two Goods (III) <strong>The consumer’s
-behaviour</strong></p>
-<ul>
-<li><p>Consumer 1 must solve</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
- &amp;&amp;\max_{X,Y} U_1(X,Y) \\ &amp;\textrm{s.t.} &amp;\textrm{Cost of consumption} = \textrm{Total wealth} \\ &amp;&amp;  p_{X} X +  p_{Y}Y = p_{X}
-X^{C1,e}+ p_{Y}Y^{C1,e} + \rho_{1}\Pi\end{aligned}\end{split}\]</div>
-</li>
-<li><p>Gives consumer <span class="math notranslate nohighlight">\(1\)</span>’s demand: <span class="math notranslate nohighlight">\(X^{C1,d}(p_X,p_Y)\)</span> and
-<span class="math notranslate nohighlight">\(Y^{C1,d}(p_X,p_Y)\)</span> (same idea for 2)</p></li>
+<dl>
+<dt>Ainsi, le consommateur 1 (même chose pour 2) doit résoudre</dt><dd><div class="math notranslate nohighlight">
+\[\max_{X,Y} \left[U_1(X,Y): p_{X} X +  p_{Y}Y \leq p_{X}X^{C1,e}+ p_{Y}Y^{C1,e} + \rho_{1}\Pi \right]\]</div>
+</dd>
+</dl>
+<ul class="simple">
+<li><p>Donne les demandes du consommateur 1: <span class="math notranslate nohighlight">\(X^{C1,d}(p_X,p_Y)\)</span> et
+<span class="math notranslate nohighlight">\(Y^{C1,d}(p_X,p_Y)\)</span></p></li>
 </ul>
-<p>A Production Economy with a Firm and Two Goods (IV)</p>
-<p><strong>Market equilibrium</strong></p>
-<ul>
-<li><p>Numéraire: normalize <span class="math notranslate nohighlight">\(p_{X} = 1\)</span> and <span class="math notranslate nohighlight">\(p_{Y} = p\)</span>.</p></li>
-<li><p>Given <span class="math notranslate nohighlight">\(p\)</span>, we can find the demand <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span> for
-each consumer, the demand of <span class="math notranslate nohighlight">\(X\)</span> for the firm and the supply of
-<span class="math notranslate nohighlight">\(Y\)</span> by the firm.</p></li>
-<li><p>The market for the good <span class="math notranslate nohighlight">\(X\)</span> is at equilibrium at price
-<span class="math notranslate nohighlight">\(p\)</span> if and only if</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-  \textrm{Total demand of } X &amp;=&amp;
-\textrm{Total supply of } X  \\ \iff X^{C1,d} + X^{C2,d} + X^{F,d} &amp;=&amp;
-X^{C1,e} + X^{C2,e}  \end{aligned}\end{split}\]</div>
-</li>
-<li><p>The equilibrium prices are prices such that all markets are at
-equilibrium.</p></li>
-</ul>
-<p>A Production Economy with a Firm and Two Goods (V) <strong>Example</strong></p>
+<p><strong>L’équilibre de marché</strong></p>
+<dl class="simple">
+<dt>On peut normaliser <span class="math notranslate nohighlight">\(p_{X} = 1\)</span> et donc <span class="math notranslate nohighlight">\(p_{Y} = p\)</span> (voir le cours sur l’échange si pas clair). Étant donné <span class="math notranslate nohighlight">\(p\)</span>, on peut trouver les demandes <span class="math notranslate nohighlight">\(X\)</span> et <span class="math notranslate nohighlight">\(Y\)</span> pour chaque consommateur, la demande de <span class="math notranslate nohighlight">\(X\)</span> de l’entreprise et l’offre</dt><dd><p><span class="math notranslate nohighlight">\(Y\)</span> de l’entreprise.</p>
+</dd>
+</dl>
+<p>Le marché pour  <span class="math notranslate nohighlight">\(X\)</span> est en équilibre au prix <span class="math notranslate nohighlight">\(p\)</span> si et seulement si</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[X^{C1,d} + X^{C2,d} + X^{F,d} = X^{C1,e} + X^{C2,e}\]</div>
+</div></blockquote>
+<p>La loi de Walras s’applique et si <span class="math notranslate nohighlight">\(p\)</span> est le prix d’équilibre pour le marché de <span class="math notranslate nohighlight">\(X\)</span>, le marché de <span class="math notranslate nohighlight">\(Y\)</span> est aussi en équilibre.</p>
+<p>Un exemple…</p>
+<p>Supposons</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(F(X) =  \log(1+X)\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(U_1(X,Y) =
 U_2(X,Y) = \log X + \alpha \log Y\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(X^{C1,e} = 2\)</span> and <span class="math notranslate nohighlight">\(X^{C2,e} =
+<li><p><span class="math notranslate nohighlight">\(X^{C1,e} = 2\)</span> et <span class="math notranslate nohighlight">\(X^{C2,e} =
 Y^{C1,e} = Y^{C2,e} = 0\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(\rho_1 =0\)</span> and <span class="math notranslate nohighlight">\(\rho_2 = 1\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\rho_1 =0\)</span> et <span class="math notranslate nohighlight">\(\rho_2 = 1\)</span></p></li>
 <li><p>price <span class="math notranslate nohighlight">\(p_X = 1\)</span>, <span class="math notranslate nohighlight">\(p_Y = p\)</span></p></li>
 </ul>
-<p><strong>Firm’s behaviour</strong></p>
-<ul>
-<li><p>Profit maximization:</p>
-<div class="math notranslate nohighlight">
+<p>Pour l’entreprise, la maximisation des profits implique</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
 \[\max_X p\log(1+X) - X\;\; \Rightarrow \;\; X^{F,d}
 = p- 1 \;\; et \;\; Y^{F,s} = \log p\]</div>
-</li>
-<li><p>Profit <span class="math notranslate nohighlight">\(\Pi = p \log p - p
-+1\)</span></p></li>
-</ul>
-<p>A Production Economy with a Firm and Two Goods (VI) <strong>Consumer’s
-behaviour</strong></p>
-<ul>
-<li><p>Given the income <span class="math notranslate nohighlight">\(I\)</span></p>
+</div></blockquote>
+<p>Les profits sont donc <span class="math notranslate nohighlight">\(\Pi = p \log p - p+1\)</span></p>
+<p>Du côté des consommateurs, étant donné un revenu, <span class="math notranslate nohighlight">\(I\)</span>, les consommateurs maximisent l’utilité</p>
 <div class="math notranslate nohighlight">
-\[\max_{X,Y}
-\log X + \alpha \log Y \quad s.t.\;\; X + pY = I\]</div>
-</li>
-<li><div class="line-block">
-<div class="line">Income of consumer 1: <span class="math notranslate nohighlight">\(I_1 = 2\)</span></div>
-<div class="line">Income of consumer 2: <span class="math notranslate nohighlight">\(I_2 = \Pi =  p \log
-p - p +1\)</span></div>
-</div>
-</li>
-<li><div class="line-block">
-<div class="line">Demand of consumer 1:</div>
-</div>
+\[\max_{X,Y} \left[\log X + \alpha \log Y : X + pY \leq I \right]\]</div>
+<p>Les revenus sont donnés par  <span class="math notranslate nohighlight">\(I_1 = 2\)</span> et <span class="math notranslate nohighlight">\(I_2 = \Pi =  p \log p - p +1\)</span>.</p>
+<p>Les demandes sont</p>
 <blockquote>
 <div><div class="math notranslate nohighlight">
-\[X^{C1,d} = \frac{1}{1+\alpha}
-I_1 \;\; and \;\; Y^{C1,d} = \frac{\alpha}{1+\alpha} \frac{I_1}{p}\]</div>
+\[X^{C1,d} = \frac{1}{1+\alpha}I_1
+Y^{C1,d} = \frac{\alpha}{1+\alpha} \frac{I_1}{p}
+X^{C2,d} = \frac{1}{1+\alpha} I_2
+Y^{C2,d} = \frac{\alpha}{1+\alpha} \frac{I_2}{p}\]</div>
 </div></blockquote>
-<div class="line-block">
-<div class="line">Demand of consumer 2:</div>
-</div>
+<p>Un équilibre de marché pour <span class="math notranslate nohighlight">\(X\)</span> est donné par:</p>
 <blockquote>
 <div><div class="math notranslate nohighlight">
-\[X^{C2,d} = \frac{1}{1+\alpha} I_2 \;\; and
-\;\; Y^{C2,d} = \frac{\alpha}{1+\alpha} \frac{I_2}{p}\]</div>
-</div></blockquote>
-</li>
-</ul>
-<p>A Production Economy with a Firm and Two Goods (VII) <strong>Market
-Equilibrium</strong></p>
-<ul>
-<li><p>A market equilibrium for <span class="math notranslate nohighlight">\(X\)</span>:</p>
-<div class="math notranslate nohighlight">
 \[X^{F,d} + X^{C1,d} + X^{C2,d} = X^{C1,e} + X^{C2,e} = 2\]</div>
-</li>
-<li><p>gives</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
- &amp; &amp; p-1 + \frac{1}{1+\alpha}2 + \frac{1}{1+\alpha}(p\log p - p +1 ) = 2 \\
-&amp;\iff&amp; \alpha p +p\log p = 3 \alpha\end{aligned}\end{split}\]</div>
-</li>
-<li><p>Equation describes the price <span class="math notranslate nohighlight">\(p^*\)</span>.</p></li>
-<li><p>Show that at <span class="math notranslate nohighlight">\(p^*\)</span>, the market for <span class="math notranslate nohighlight">\(Y\)</span> is also at
-equilibrium.</p></li>
-</ul>
-<p>A Production Economy with a Firm and Multiple Goods <strong>Methodology</strong></p>
-<ul>
-<li><p>Given the prices, profit maximization gives firm demands and firm
-supply (profits)</p></li>
-<li><p>Given the prices, endowments and stock (of the firms) distributions
-calculate the income and demand of consumers</p></li>
-<li><p>For each good, maket equilibrium</p>
-<div class="math notranslate nohighlight">
-\[\textrm{total supply} =
-\textrm{total demand}\]</div>
-</li>
-<li><p>Given a system of equations: the solution gives us the equilibrium
-prices</p></li>
-</ul>
-<p>See the Production Equilibrium Notebook for an example.</p>
-<p>The Two Fundamental Theorems of Welfare Economics <strong>Environment</strong></p>
-<ol class="arabic">
-<li><p>All agents are price-takers (firms and consumers; no monopoly)</p></li>
-<li><p>Goods are homogeneous (uniform quality)</p></li>
-<li><div class="line-block">
-<div class="line">Consumers’ preferences depend only on their own consumption</div>
-<div class="line">Firm decisions have no impact on other firms or consumers (no
-externalities)</div>
-</div>
-</li>
-</ol>
-<p><strong>1st Theorem of Welfare Economics</strong></p>
+</div></blockquote>
+<p>ce qui donne:</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[p-1 + \frac{1}{1+\alpha}2 + \frac{1}{1+\alpha}(p\log p - p +1 ) = 2.\]</div>
+</div></blockquote>
+<p>Donc, le prix d’équilibre est la solution à <span class="math notranslate nohighlight">\(\alpha p +p\log p = 3 \alpha\)</span>. On peut trouver numériquement (<span class="math notranslate nohighlight">\(p^*\)</span>).</p>
+<p>Si on résume la méthode pour trouver un équilibre de production (peut importe le nombre de consommateur, etc):</p>
 <ul class="simple">
-<li><p>In a market equilibrium, the allocation of goods between consumers is
-Pareto-efficient.</p></li>
+<li><p>Étant donné les prix, la maximisation des profits donne les demandes d’inputs et l’offre d’output de la firme. On retrouve donc aussi les profits à re-distribuer.</p></li>
+<li><p>Étant donné les prix, les dotations et les profits de l’entreprise, on peut calculer le revenu et les demandes de chaque consommateur.</p></li>
+<li><p>Des équations d’équilibre des marchés, on trouve la solution pour les prix d’équilibre.</p></li>
 </ul>
-<p><strong>2nd Theorem of Welfare Economics</strong></p>
-<ul class="simple">
-<li><p>Any Pareto-optimal allocation can be obtained as a market equilibrium
-with the use of endowment transfers.</p></li>
-</ul>
+<p>Les théorèmes du bien-être s’applique, tout comme en échange. Une condition clé est que l’entreprise est prenneur de prix concernant son output et de ses inputs. Elle n’est pas stratégique. Il existe des situations, comme nous le verrons, où l’entreprise peut tirer profit de la manipulation des prix.</p>
 </div>
 </div>
 
