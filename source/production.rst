@@ -179,7 +179,7 @@ Si la fonction de production a des rendements à l'échelle qui sont:
 -  Décroissant: :math:`C(p_X,p_Z,Y)` est convexe en :math:`Y`, :math:`c(p_X,p_Z,Y)` est croissant. 
 
 Maximisation des profits
-------------------------
+++++++++++++++++++++++++
 
 La firme minimise ses coûts mais doit aussi choisir son niveau d'output. Donc, plus généralement, elle doit maximiser ses profits. 
 
