@@ -331,4 +331,9 @@ Si on résume la méthode pour trouver un équilibre de production (peut importe
 
 -  Des équations d'équilibre des marchés, on trouve la solution pour les prix d'équilibre. 
 
-Les théorèmes du bien-être s'applique, tout comme en échange. Une condition clé est que l'entreprise est prenneur de prix concernant son output et de ses inputs. Elle n'est pas stratégique. Il existe des situations, comme nous le verrons, où l'entreprise peut tirer profit de la manipulation des prix. 
+Les théorèmes du bien-être s'applique, tout comme en échange. Une condition clé est que l'entreprise est prenneur de prix concernant son output et de ses inputs. Elle n'est pas stratégique. Il existe des situations, comme nous le verrons, où l'entreprise peut tirer profit de la manipulation des prix.
+
+Exemple Python 
+++++++++++++++
+
+À venir...
