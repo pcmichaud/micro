@@ -21,7 +21,6 @@ Bienvenue sur le site du cours 20-851 à HEC Montréal.
    welfare.rst
    echange.rst
    production.rst
-   gemodel.rst
    strategy.rst
    selection.rst
    intervention.rst
