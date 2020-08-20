@@ -1,7 +1,7 @@
 La production
 -------------
 
-Les dotations ne tombent pas du ciel. De plus, plusieurs biens doivent être produit à l'aide d'autres biens. L'économie est constituée ce consommateur, certe, mais aussi d'entreprise. Pourquoi les entreprises existent-elles? Ronald Coase propose une explication simple: les entreprises sont des organisations qui servent à *internaliser* les coûts de transaction pour produire des biens, ou donner des services. Sans ces organisations, difficile de produire à faible coût des ordinateurs portables, des meubles. Il existe des rendements à l'échelle qui font en sorte que les entreprises peuvent produire des grandes quantités de biens à faible coûts. Elles permettent aussi l'innovation, en réunissant ensemble les cerveaux. Dans cette séance, nous abordons les décisions de l'entreprise (plutôt que le consommateur). L'entreprise produit un bien (ou plusieurs) qu'elle vend sur les marchés (offre). Elle demande des inputs pour produire ce bien. Finalement, dans un équilibre général avec production, extension naturelle de l'équilibre général d'échange, elle est détenue par certains consommateurs, qui tirent un revenu provenant de ses profits. 
+Les dotations ne tombent pas du ciel. De plus, plusieurs biens doivent être produit à l'aide d'autres biens. L'économie est constituée ce consommateur, certe, mais aussi d'entreprise. Pourquoi les entreprises existent-elles? `Ronald Coase <https://fr.wikipedia.org/wiki/Ronald_Coase>`_ propose une explication simple: les entreprises sont des organisations qui servent à *internaliser* les coûts de transaction pour produire des biens, ou donner des services. Sans ces organisations, difficile de produire à faible coût des ordinateurs portables, des meubles. Il existe des rendements à l'échelle qui font en sorte que les entreprises peuvent produire des grandes quantités de biens à faible coûts. Elles permettent aussi l'innovation, en réunissant ensemble les cerveaux. Dans cette séance, nous abordons les décisions de l'entreprise (plutôt que le consommateur). L'entreprise produit un bien (ou plusieurs) qu'elle vend sur les marchés (offre). Elle demande des inputs pour produire ce bien. Finalement, dans un équilibre général avec production, extension naturelle de l'équilibre général d'échange, elle est détenue par certains consommateurs, qui tirent un revenu provenant de ses profits. 
 
 
 La fonction de production
@@ -328,7 +328,6 @@ Si on résume la méthode pour trouver un équilibre de production (peut importe
 -  Étant donné les prix, la maximisation des profits donne les demandes d'inputs et l'offre d'output de la firme. On retrouve donc aussi les profits à re-distribuer. 
 
 -  Étant donné les prix, les dotations et les profits de l'entreprise, on peut calculer le revenu et les demandes de chaque consommateur.
-
 
 -  Des équations d'équilibre des marchés, on trouve la solution pour les prix d'équilibre. 
 
