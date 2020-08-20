@@ -95,7 +95,20 @@
 <li class="toctree-l1"><a class="reference internal" href="time.html">Le Temps</a></li>
 <li class="toctree-l1"><a class="reference internal" href="welfare.html">Bien-être</a></li>
 <li class="toctree-l1"><a class="reference internal" href="echange.html">Échange</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">La production</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">La production</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#la-fonction-de-production">La fonction de production</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#taux-marginal-de-substitution-technique">Taux marginal de substitution technique</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#les-rendements-a-l-echelle">Les rendements à l’échelle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#miminisation-des-couts">Miminisation des coûts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fonction-de-cout">Fonction de coût</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lemme-de-sheppard">Lemme de Sheppard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cout-marginal">Coût marginal</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#maximisation-des-profits">Maximisation des profits</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#economie-de-production">Économie de production</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="gemodel.html">Équilibre général</a></li>
 <li class="toctree-l1"><a class="reference internal" href="strategy.html">Concurrence imparfaite</a></li>
 <li class="toctree-l1"><a class="reference internal" href="selection.html">Asymétrie d’information</a></li>
@@ -167,6 +180,338 @@
             
   <div class="section" id="la-production">
 <h1>La production<a class="headerlink" href="#la-production" title="Lien permanent vers ce titre">¶</a></h1>
+<p>Les dotations ne tombent pas du ciel. De plus, plusieurs biens doivent être produit à l’aide d’autres biens. L’économie est constituée ce consommateur, certe, mais aussi d’entreprise. Pourquoi les entreprises existent-elles? Ronald Coase propose une explication simple: les entreprises sont des organisations qui servent à <em>internaliser</em> les coûts de transaction pour produire des biens, ou donner des services. Sans ces organisations, difficile de produire à faible coût des ordinateurs portables, des meubles. Il existe des rendements à l’échelle qui font en sorte que les entreprises peuvent produire des grandes quantités de biens à faible coûts. Elles permettent aussi l’innovation, en réunissant ensemble les cerveaux. Dans cette séance, nous abordons les décisions de l’entreprise (plutôt que le consommateur). L’entreprise produit un bien (ou plusieurs) qu’elle vend sur les marchés (offre). Elle demande des inputs pour produire ce bien. Finalement, dans un équilibre général avec production, extension naturelle de l’équilibre général d’échange, elle est détenue par certains consommateurs, qui tirent un revenu provenant de ses profits.</p>
+<div class="section" id="la-fonction-de-production">
+<h2>La fonction de production<a class="headerlink" href="#la-fonction-de-production" title="Lien permanent vers ce titre">¶</a></h2>
+<p>La firme a des inputs qu’elle transforme en output. La fonction de production <span class="math notranslate nohighlight">\(F(\cdot)\)</span> accomplie cette transformation. La fonction de production peut être estimé à l’aide de l’économétrie, en collaboration avec les ingénieurs.</p>
+<p><strong>Exemple: un input et un output</strong></p>
+<ul class="simple">
+<li><p>e.g. Mine de fer — input: travail <span class="math notranslate nohighlight">\(L\)</span>, output: fer
+<span class="math notranslate nohighlight">\(Y = F(L) = \sqrt{L}\)</span></p></li>
+</ul>
+<p>La fonction de production détermine les contraintes. Étant donné une quantité d’input, l’entreprise ne peut produire qu’une certaine quantité d’output.</p>
+<p><strong>Exemple: Deux inputs, one output</strong></p>
+<ul class="simple">
+<li><p>Inputs: Minerai de fer (<span class="math notranslate nohighlight">\(I\)</span>), Charbon (<span class="math notranslate nohighlight">\(C\)</span>) — Output: Acier
+(<span class="math notranslate nohighlight">\(S\)</span>)</p></li>
+</ul>
+<p>On pourrait par exemple penser à une fonction:</p>
+<div class="math notranslate nohighlight">
+\[S(I,C)  = I^{\alpha}C^{\beta}\]</div>
+<p>Avec des données sur la quantité d’acier produit, la quantité de minerai et de charbon utilisée dans le temps <span class="math notranslate nohighlight">\(t=1,...,T\)</span> , on peut estimer les paramètres en transformant la fonction de production:</p>
+<div class="math notranslate nohighlight">
+\[\log S_t = \log A_t + \alpha \log I_t + \beta \log C_t + \epsilon_t\]</div>
+<p>où <span class="math notranslate nohighlight">\(A_t\)</span> est un facteur de productivité multifactorielle et <span class="math notranslate nohighlight">\(\epsilon_t\)</span> est un aléa. Ainsi <span class="math notranslate nohighlight">\(\alpha\)</span>beta` peuvent être estimés, sous certaines conditions concernant <span class="math notranslate nohighlight">\(\epsilon_t\)</span> et sa relation avec <span class="math notranslate nohighlight">\((I_t,C_t)\)</span>.</p>
+</div>
+<div class="section" id="taux-marginal-de-substitution-technique">
+<h2>Taux marginal de substitution technique<a class="headerlink" href="#taux-marginal-de-substitution-technique" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Il y a pénurie d’un input <span class="math notranslate nohighlight">\(Z\)</span>. Le directeur de l’usine vous demande combien de <span class="math notranslate nohighlight">\(X\)</span> de plus aura-t-on besoin pour palier à la baisse de <span class="math notranslate nohighlight">\(Z\)</span> tout en gardant la production de <span class="math notranslate nohighlight">\(Y\)</span> constante.</p>
+<p>Considérons la fonction de production <span class="math notranslate nohighlight">\(Y = F(X,Z)\)</span>. Prennons la différentielle totale:</p>
+<div class="math notranslate nohighlight">
+\[dY = F'_X(X,Z)dX + F'_Z(X,Z)dZ\]</div>
+<p>La productivité marginale de chacun des inputs est donné par <span class="math notranslate nohighlight">\(F'_i(X,Z)\)</span> pour <span class="math notranslate nohighlight">\(i=X,Z\)</span>. Elle donne la production de <span class="math notranslate nohighlight">\(Y\)</span> qu’on obtient en augmentant marginalement un input et en <em>gardant les autres constants</em>.</p>
+<p>Fixons <span class="math notranslate nohighlight">\(dY = 0\)</span>. On obtient le <strong>taux marginal de substitution technique</strong>:</p>
+<div class="math notranslate nohighlight">
+\[TMST = \frac{dZ}{dX} = -\frac{F'_X(X,Z)}{F'_Z(X,Z)}\]</div>
+<p>Au lieu de courbe d’indifférence, nous avons des isoquantes dans l’espace <span class="math notranslate nohighlight">\((X,Z)\)</span> qui donne les combinaisons d’input qui produisent une quantité d’output constante. LE TMST est la pente de ces isoquantes.</p>
+<p>Il nous donne la quantité de <span class="math notranslate nohighlight">\(Z\)</span> qu’on peut économiser si on augmente <span class="math notranslate nohighlight">\(X\)</span> marginalement. Il est négatif parce que la fonction de production est généralement croissante dans les deux inputs (productivité marginale positive).</p>
+<p><strong>Exercice A</strong>: Trouvez le TMST pour <span class="math notranslate nohighlight">\(Y=X^{\alpha} Z^{\beta}\)</span></p>
+</div>
+<div class="section" id="les-rendements-a-l-echelle">
+<h2>Les rendements à l’échelle<a class="headerlink" href="#les-rendements-a-l-echelle" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Le directeur de l’usine souhaite doubler la production. Il vous demande dans quelle proportion on doit augmenter les achats d’inputs. La productivité marginale ne nous est pas utile pour deux raisons: elle mesure un effet marginal (doubler est loin d’être marginal) et elle mesure l’effet marginal gardant les autres inputs constant. Or la question du directeur ne garde pas certains inputs constants. On fera appel aux rendements à l’échelle de la fonction.</p>
+<p>Une fonction de production a des rendements à l’échelle:</p>
+<ul class="simple">
+<li><p>constant: si <span class="math notranslate nohighlight">\(F(X,Z)\)</span> est homogène de degré 1</p></li>
+<li><p>croissant: si <span class="math notranslate nohighlight">\(F(X,Z)\)</span> est homogène d’un degré plus grand que 1</p></li>
+<li><p>décroissant: si <span class="math notranslate nohighlight">\(F(X,Z)\)</span> est homogène d’un degré plus petit que 1</p></li>
+</ul>
+<p><strong>Exercice B</strong>: Considérez la fonction
+<span class="math notranslate nohighlight">\(Y=F(X,Z)=A X^\alpha Z^\beta\)</span>. Quelles sont les rendements à l’échelle de la fonction?</p>
+</div>
+<div class="section" id="miminisation-des-couts">
+<h2>Miminisation des coûts<a class="headerlink" href="#miminisation-des-couts" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Maintenant que nous comprenons les capacités techniques de l’entreprise, nous pourrions nous demander qu’elle serait le meilleur choix d’inputs pour un niveau d’output donné. Pensons à une entreprise qui essaie de réduire ses coûts mais ne cherche pas nécessairement à changer son niveau de production.</p>
+<p>Étant donné un niveau de production <span class="math notranslate nohighlight">\(Y\)</span>, quel est le meilleur choix des
+inputs?</p>
+<div class="math notranslate nohighlight">
+\[\min_{X,Z} \{ p_X X + p_Z Z : F(X,Z) \ge Y \}\]</div>
+<p>Posons le lagrangien:</p>
+<div class="math notranslate nohighlight">
+\[L(X,Z,\mu) = p_X X + p_Z Z + \mu(Y - F(X,Z))\]</div>
+<p>Les CPO sont:</p>
+<div class="math notranslate nohighlight">
+\[p_X - \mu F'_X(X,Z) = 0\]</div>
+<div class="math notranslate nohighlight">
+\[p_Z - \mu F'_Z(X,Z) = 0\]</div>
+<div class="math notranslate nohighlight">
+\[F(X,Z) = Y\]</div>
+<p>On peut simplifier pour obtenir les deux équations:</p>
+<div class="math notranslate nohighlight">
+\[\frac{p_X}{p_Z} = \frac{F'_X(X,Z)}{F'_Z(X,Z)}\]</div>
+<div class="math notranslate nohighlight">
+\[F(X,Z) = Y\]</div>
+<p>La première équation nous donne le <em>mix</em> des inputs qui est optimal. Il doit être tel que le <span class="math notranslate nohighlight">\(TMST\)</span> est égal au prix relatifs des inputs. Le prix relatif donne ce que coûte en unité de <span class="math notranslate nohighlight">\(Y\)</span> une unité de <span class="math notranslate nohighlight">\(X\)</span>. Si ce coût est plus faible que l’économie que l’on fait en augmentant <span class="math notranslate nohighlight">\(X\)</span>, on peut augmenter <span class="math notranslate nohighlight">\(X\)</span> et réduire les coûts totaux. Au point où le <span class="math notranslate nohighlight">\(TMST\)</span> est égal au prix relatifs des inputs, il n’y a plus d’économie à faire. On a minimisé les coûts.</p>
+<p>La deuxième contrainte vient appliquer le <em>mix</em> des inputs trouvés avec la première équation au niveau de production choisi en terme de <span class="math notranslate nohighlight">\(Y\)</span>. C’est là que peuvent intervenir les rendements à l’échelle.</p>
+<p>La solution à ce système d’équation est une paire de demande conditionelle pour les inputs</p>
+<div class="math notranslate nohighlight">
+\[X^*(p_X,p_Z,Y),Z^*(p_X,p_Z,Y)\]</div>
+<p>On les dit <em>conditionnelles</em> parce qu’elles dépendent d’un niveau d’output fixe.</p>
+<p><strong>Exercice C</strong>: Trouvez les demandes conditionnelles pour
+<span class="math notranslate nohighlight">\(Y=X^{1/2} Z^{1/4}\)</span>.</p>
+<p>Quelles sont les propriétés de ces fonctions?</p>
+<ul class="simple">
+<li><p>Homogène de degré zéro en <span class="math notranslate nohighlight">\((p_X,p_Z)\)</span></p></li>
+<li><p>Symmétrique:
+<span class="math notranslate nohighlight">\(\frac{\partial X^*(p_X,p_Z,Y)}{\partial p_Z} = \frac{\partial Z^*(p_X,p_Z,Y)}{\partial p_X}\)</span></p></li>
+<li><p>Effets prix négatifs: <span class="math notranslate nohighlight">\(\frac{\partial X^*(p_X,p_Z,Y)}{\partial p_X}&lt;0\)</span>.</p></li>
+</ul>
+</div>
+<div class="section" id="fonction-de-cout">
+<h2>Fonction de coût<a class="headerlink" href="#fonction-de-cout" title="Lien permanent vers ce titre">¶</a></h2>
+<p>En substituant les demandes condionnelles on peut obtenir la fonction de coûts:</p>
+<div class="math notranslate nohighlight">
+\[C(p_X,p_Z,Y) = p_X X^*(p_X,p_Z,Y) + p_Z Z^*(p_X,p_Z,Y)\]</div>
+<p>Cette fonction nous donne pour des prix et une quantité d’output donné, le coût totale qui minimise les coûts.</p>
+<p>Propriétés:</p>
+<ul class="simple">
+<li><p>Non-décroissante en <span class="math notranslate nohighlight">\((Y,p_X,p_Z)\)</span></p></li>
+<li><p>Homogène de degré 1 en <span class="math notranslate nohighlight">\((p_X,p_Z)\)</span></p></li>
+<li><p>Concave en <span class="math notranslate nohighlight">\((p_X,p_Z)\)</span></p></li>
+</ul>
+<p>Parfois des données sur les coûts, les prix ainsi que les inputs sont disponibles mais pas l’output. On peut alors estimer les paramètres de la fonction de production par la fonction de coûts.</p>
+<p><strong>Exercice D</strong>: Trouvez la fonction de coût pour <span class="math notranslate nohighlight">\(Y=X^{1/2} Z^{1/4}\)</span>.</p>
+</div>
+<div class="section" id="lemme-de-sheppard">
+<h2>Lemme de Sheppard<a class="headerlink" href="#lemme-de-sheppard" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Un résultat intéressant est</p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial C(p_X,p_Z,Y)}{\partial p_X} = X^*(p_X,p_Z,Y)\]</div>
+<p>Ce résultat peut être utile pour retrouver les demandes conditionnelles.</p>
+<p><strong>Exercice E</strong>: Montrez que ceci est vrai pour trouver <span class="math notranslate nohighlight">\(X^*\)</span> en utilisant la fonction de production <span class="math notranslate nohighlight">\(Y=X^{1/2} Z^{1/4}\)</span>.</p>
+</div>
+<div class="section" id="cout-marginal">
+<h2>Coût marginal<a class="headerlink" href="#cout-marginal" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Le coût marginal de produire un output (en minimisant les coûts) est donné par:</p>
+<div class="math notranslate nohighlight">
+\[c(p_X,p_Y,Y) = \frac{\partial C(p_X,p_Y,Y)}{\partial Y}\]</div>
+<p>On utilise la convention de c minuscule dénote le coût marginal et C majuscule, les coûts totaux.</p>
+<p>En utilisant le théorème de l’enveloppe, on peut montrer que</p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial C(p_X,p_Y,Y)}{\partial Y} = \mu\]</div>
+<p><span class="math notranslate nohighlight">\(\mu\)</span> is therefore the marginal cost at the optimum.</p>
+<p><strong>Exercice F</strong>: Trouvez le coût marginal pour <span class="math notranslate nohighlight">\(Y=X^{1/2} Z^{1/4}\)</span>.</p>
+<p>Si la fonction de production a des rendements à l’échelle qui sont:</p>
+<ul class="simple">
+<li><p>Constant: <span class="math notranslate nohighlight">\(C(p_X,p_Z,Y)\)</span> est linéaire en <span class="math notranslate nohighlight">\(Y\)</span>, <span class="math notranslate nohighlight">\(c(p_X,p_Z,Y)\)</span> est constant.</p></li>
+<li><p>Croissant: <span class="math notranslate nohighlight">\(C(p_X,p_Z,Y)\)</span> est concave en <span class="math notranslate nohighlight">\(Y\)</span>, <span class="math notranslate nohighlight">\(c(p_X,p_Z,Y)\)</span> est décroissant.</p></li>
+<li><p>Décroissant: <span class="math notranslate nohighlight">\(C(p_X,p_Z,Y)\)</span> est convexe en <span class="math notranslate nohighlight">\(Y\)</span>, <span class="math notranslate nohighlight">\(c(p_X,p_Z,Y)\)</span> est croissant.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="maximisation-des-profits">
+<h1>Maximisation des profits<a class="headerlink" href="#maximisation-des-profits" title="Lien permanent vers ce titre">¶</a></h1>
+<p>La firme minimise ses coûts mais doit aussi choisir son niveau d’output. Donc, plus généralement, elle doit maximiser ses profits.</p>
+<p>Les profits sont donnés par:</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[\Pi = R - C\]</div>
+</div></blockquote>
+<p>où <span class="math notranslate nohighlight">\(R\)</span> représente les revenus et <span class="math notranslate nohighlight">\(C\)</span>, les coûts. Étant donné un input <span class="math notranslate nohighlight">\(X\)</span> et output <span class="math notranslate nohighlight">\(Y = F(X)\)</span>, les profits sont donnés par:</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[\begin{split}C(X) = p_X X , \quad R(Y) = p_Y Y \\
+\Pi(X) = p_Y F(X) - p_XX\end{split}\]</div>
+</div></blockquote>
+<p>À l’optimum, on a</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[p_Y F'(X) - p_X = 0 \iff F'(X) =
+\frac{p_X}{p_Y}\]</div>
+</div></blockquote>
+<p><strong>Exercise G</strong> Supposons <span class="math notranslate nohighlight">\(F(X) = \sqrt X\)</span>, trouvez le choix de
+<span class="math notranslate nohighlight">\(X\)</span> qui maximise les profits.</p>
+<p>L’offre de la firme est donné par <span class="math notranslate nohighlight">\(Y^* = F(X^*)\)</span>.</p>
+<p><strong>Exercise H</strong> Suppose <span class="math notranslate nohighlight">\(F(X) = \sqrt X\)</span>, find the supply function
+of <span class="math notranslate nohighlight">\(Y\)</span>.</p>
+<p>Quand deux inputs sont présent, et un output, on peut procéder de la façon suivante:</p>
+<ul class="simple">
+<li><p>Minimisation des coûts pour <span class="math notranslate nohighlight">\((X,Z)\)</span> en fonction de <span class="math notranslate nohighlight">\(Y\)</span>.</p></li>
+<li><p>Maximisation des profits pour <span class="math notranslate nohighlight">\(Y\)</span> en utilisant la fonction de coûts (fonction de
+<span class="math notranslate nohighlight">\(Y\)</span>).</p></li>
+</ul>
+<p><strong>Exercice I</strong> Pour <span class="math notranslate nohighlight">\(Y=X^{1/2} Z^{1/4}\)</span>, trouvez l’offre de <span class="math notranslate nohighlight">\(Y\)</span>.</p>
+<div class="section" id="economie-de-production">
+<h2>Économie de production<a class="headerlink" href="#economie-de-production" title="Lien permanent vers ce titre">¶</a></h2>
+<p>A Production Economy with a Firm and Two Goods (I)</p>
+<p><strong>Contexte</strong></p>
+<ul class="simple">
+<li><p>2 goods <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span></p></li>
+<li><p>Firm has a production function <span class="math notranslate nohighlight">\(Y = F(X)\)</span>.</p></li>
+</ul>
+<p><strong>Firm’s behaviour</strong></p>
+<ul>
+<li><p>Given the prices <span class="math notranslate nohighlight">\(p_Y\)</span> and <span class="math notranslate nohighlight">\(p_X\)</span> the firm maximizes
+profits</p>
+<div class="math notranslate nohighlight">
+\[\Pi(X) = p_Y F(X) - p_X X\]</div>
+</li>
+<li><p>Gives the firm’s demand <span class="math notranslate nohighlight">\(X^{F,d}(p_X,p_Y)\)</span>;</p>
+<p>The firm’s supply <span class="math notranslate nohighlight">\(Y^{F,s}(p_X,p_Y)\)</span>;</p>
+<p>…and the profits <span class="math notranslate nohighlight">\(\Pi\)</span></p>
+</li>
+</ul>
+<p>A Production Economy with a Firm and Two Goods (II)</p>
+<p><strong>The consumer’s behaviour</strong></p>
+<ul>
+<li><p>2 consumers C1 et C2</p></li>
+<li><p>The consumers have preferences represented by <span class="math notranslate nohighlight">\(U_1(X, Y)\)</span> and
+<span class="math notranslate nohighlight">\(U_2(X,Y)\)</span></p></li>
+<li><div class="line-block">
+<div class="line">Consumer 1 has an endowment <span class="math notranslate nohighlight">\(X^{C1,e},
+Y^{C1,e}\)</span></div>
+<div class="line">Consumer 2 has an endowment <span class="math notranslate nohighlight">\(X^{C2,e}, Y^{C2,e}\)</span></div>
+</div>
+</li>
+<li><p>Both consumers have stocks <span class="math notranslate nohighlight">\(\rho_{1}\)</span> and
+<span class="math notranslate nohighlight">\(\rho_2 = 1- \rho_1\)</span> in the firm.</p></li>
+</ul>
+<p>A Production Economy with a Firm and Two Goods (III) <strong>The consumer’s
+behaviour</strong></p>
+<ul>
+<li><p>Consumer 1 must solve</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+ &amp;&amp;\max_{X,Y} U_1(X,Y) \\ &amp;\textrm{s.t.} &amp;\textrm{Cost of consumption} = \textrm{Total wealth} \\ &amp;&amp;  p_{X} X +  p_{Y}Y = p_{X}
+X^{C1,e}+ p_{Y}Y^{C1,e} + \rho_{1}\Pi\end{aligned}\end{split}\]</div>
+</li>
+<li><p>Gives consumer <span class="math notranslate nohighlight">\(1\)</span>’s demand: <span class="math notranslate nohighlight">\(X^{C1,d}(p_X,p_Y)\)</span> and
+<span class="math notranslate nohighlight">\(Y^{C1,d}(p_X,p_Y)\)</span> (same idea for 2)</p></li>
+</ul>
+<p>A Production Economy with a Firm and Two Goods (IV)</p>
+<p><strong>Market equilibrium</strong></p>
+<ul>
+<li><p>Numéraire: normalize <span class="math notranslate nohighlight">\(p_{X} = 1\)</span> and <span class="math notranslate nohighlight">\(p_{Y} = p\)</span>.</p></li>
+<li><p>Given <span class="math notranslate nohighlight">\(p\)</span>, we can find the demand <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span> for
+each consumer, the demand of <span class="math notranslate nohighlight">\(X\)</span> for the firm and the supply of
+<span class="math notranslate nohighlight">\(Y\)</span> by the firm.</p></li>
+<li><p>The market for the good <span class="math notranslate nohighlight">\(X\)</span> is at equilibrium at price
+<span class="math notranslate nohighlight">\(p\)</span> if and only if</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \textrm{Total demand of } X &amp;=&amp;
+\textrm{Total supply of } X  \\ \iff X^{C1,d} + X^{C2,d} + X^{F,d} &amp;=&amp;
+X^{C1,e} + X^{C2,e}  \end{aligned}\end{split}\]</div>
+</li>
+<li><p>The equilibrium prices are prices such that all markets are at
+equilibrium.</p></li>
+</ul>
+<p>A Production Economy with a Firm and Two Goods (V) <strong>Example</strong></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(F(X) =  \log(1+X)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(U_1(X,Y) =
+U_2(X,Y) = \log X + \alpha \log Y\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(X^{C1,e} = 2\)</span> and <span class="math notranslate nohighlight">\(X^{C2,e} =
+Y^{C1,e} = Y^{C2,e} = 0\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\rho_1 =0\)</span> and <span class="math notranslate nohighlight">\(\rho_2 = 1\)</span></p></li>
+<li><p>price <span class="math notranslate nohighlight">\(p_X = 1\)</span>, <span class="math notranslate nohighlight">\(p_Y = p\)</span></p></li>
+</ul>
+<p><strong>Firm’s behaviour</strong></p>
+<ul>
+<li><p>Profit maximization:</p>
+<div class="math notranslate nohighlight">
+\[\max_X p\log(1+X) - X\;\; \Rightarrow \;\; X^{F,d}
+= p- 1 \;\; et \;\; Y^{F,s} = \log p\]</div>
+</li>
+<li><p>Profit <span class="math notranslate nohighlight">\(\Pi = p \log p - p
++1\)</span></p></li>
+</ul>
+<p>A Production Economy with a Firm and Two Goods (VI) <strong>Consumer’s
+behaviour</strong></p>
+<ul>
+<li><p>Given the income <span class="math notranslate nohighlight">\(I\)</span></p>
+<div class="math notranslate nohighlight">
+\[\max_{X,Y}
+\log X + \alpha \log Y \quad s.t.\;\; X + pY = I\]</div>
+</li>
+<li><div class="line-block">
+<div class="line">Income of consumer 1: <span class="math notranslate nohighlight">\(I_1 = 2\)</span></div>
+<div class="line">Income of consumer 2: <span class="math notranslate nohighlight">\(I_2 = \Pi =  p \log
+p - p +1\)</span></div>
+</div>
+</li>
+<li><div class="line-block">
+<div class="line">Demand of consumer 1:</div>
+</div>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[X^{C1,d} = \frac{1}{1+\alpha}
+I_1 \;\; and \;\; Y^{C1,d} = \frac{\alpha}{1+\alpha} \frac{I_1}{p}\]</div>
+</div></blockquote>
+<div class="line-block">
+<div class="line">Demand of consumer 2:</div>
+</div>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[X^{C2,d} = \frac{1}{1+\alpha} I_2 \;\; and
+\;\; Y^{C2,d} = \frac{\alpha}{1+\alpha} \frac{I_2}{p}\]</div>
+</div></blockquote>
+</li>
+</ul>
+<p>A Production Economy with a Firm and Two Goods (VII) <strong>Market
+Equilibrium</strong></p>
+<ul>
+<li><p>A market equilibrium for <span class="math notranslate nohighlight">\(X\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[X^{F,d} + X^{C1,d} + X^{C2,d} = X^{C1,e} + X^{C2,e} = 2\]</div>
+</li>
+<li><p>gives</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+ &amp; &amp; p-1 + \frac{1}{1+\alpha}2 + \frac{1}{1+\alpha}(p\log p - p +1 ) = 2 \\
+&amp;\iff&amp; \alpha p +p\log p = 3 \alpha\end{aligned}\end{split}\]</div>
+</li>
+<li><p>Equation describes the price <span class="math notranslate nohighlight">\(p^*\)</span>.</p></li>
+<li><p>Show that at <span class="math notranslate nohighlight">\(p^*\)</span>, the market for <span class="math notranslate nohighlight">\(Y\)</span> is also at
+equilibrium.</p></li>
+</ul>
+<p>A Production Economy with a Firm and Multiple Goods <strong>Methodology</strong></p>
+<ul>
+<li><p>Given the prices, profit maximization gives firm demands and firm
+supply (profits)</p></li>
+<li><p>Given the prices, endowments and stock (of the firms) distributions
+calculate the income and demand of consumers</p></li>
+<li><p>For each good, maket equilibrium</p>
+<div class="math notranslate nohighlight">
+\[\textrm{total supply} =
+\textrm{total demand}\]</div>
+</li>
+<li><p>Given a system of equations: the solution gives us the equilibrium
+prices</p></li>
+</ul>
+<p>See the Production Equilibrium Notebook for an example.</p>
+<p>The Two Fundamental Theorems of Welfare Economics <strong>Environment</strong></p>
+<ol class="arabic">
+<li><p>All agents are price-takers (firms and consumers; no monopoly)</p></li>
+<li><p>Goods are homogeneous (uniform quality)</p></li>
+<li><div class="line-block">
+<div class="line">Consumers’ preferences depend only on their own consumption</div>
+<div class="line">Firm decisions have no impact on other firms or consumers (no
+externalities)</div>
+</div>
+</li>
+</ol>
+<p><strong>1st Theorem of Welfare Economics</strong></p>
+<ul class="simple">
+<li><p>In a market equilibrium, the allocation of goods between consumers is
+Pareto-efficient.</p></li>
+</ul>
+<p><strong>2nd Theorem of Welfare Economics</strong></p>
+<ul class="simple">
+<li><p>Any Pareto-optimal allocation can be obtained as a market equilibrium
+with the use of endowment transfers.</p></li>
+</ul>
+</div>
 </div>
 
 
