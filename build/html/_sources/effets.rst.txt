@@ -12,7 +12,7 @@ Pour le savoir, on doit étudier empiriquement comment la demande d'essence et d
 .. figure:: /images/gilets.jpeg
    :scale: 100
    
-   Les gilets jaunes en France ont manifesté entre autre parce que de nouvelles taxes sur le carburant réduisait leur pouvoir d'achat. 
+   Les gilets jaunes en France ont manifesté entre autre parce que de nouvelles taxes sur le carburant réduisaient leur pouvoir d'achat. 
 
 Les élasticités prix et revenu peuvent être estimés sans théorie. Mais comment utiliser ces informations pour répondre aux questions plus normatives?
 

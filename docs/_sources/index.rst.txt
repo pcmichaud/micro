@@ -25,7 +25,6 @@ Bienvenue sur le site du cours 20-851 à HEC Montréal.
    selection.rst
    intervention.rst
 
-
 Index
 =====
 
