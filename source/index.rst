@@ -18,12 +18,13 @@ Bienvenue sur le site du cours 20-851 à HEC Montréal.
    effets.rst
    risque.rst
    time.rst
+   labor.rst
    welfare.rst
    echange.rst
    production.rst
    strategy.rst
-   selection.rst
-   intervention.rst
+   information.rst
+
 
 Index
 =====

@@ -1,4 +1,0 @@
-
-
-Asymétrie d'information
------------------------
