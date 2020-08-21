@@ -24,9 +24,9 @@ Chaque cours, vous êtes responsable de venir préparé en ayant étudié le mat
 Évaluation
 ++++++++++
 
--  Un Quiz (5%), au cours 3
--  3 devoirs en équipe (30%)
--  Intra et final (Meilleure note 40%,l'autre 25%)
+-  Participation (10%)
+-  3 devoirs en équipe de 3 (30%)
+-  Intra et final (Meilleure note 35%,l'autre 25%)
 
 Enseignement
 ++++++++++++
