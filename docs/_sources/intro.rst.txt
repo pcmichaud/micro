@@ -11,7 +11,7 @@ Théorie et données
    :align: middle
    :scale: 25%
 
-Le site `missingprofits.world <https://missingprofits.world/>`_ calcule ce que perd chaque pays aux paradis fiscaux. Mais comment rappatrier ces profits? Quel effet aurait une taxe sur la richese pour réduire les inégalités? On a besoin de la théorie pour comprendre l'effet potentiel des incitatifs. Ensuite les données pour estimer ces effets. Saez et Zucman s'intéresse à cette question avec théorie et données. 
+Le site `missingprofits.world <https://missingprofits.world/>`_ calcule ce que perd chaque pays aux paradis fiscaux. Mais comment rappatrier ces profits? Quel effet aurait une taxe sur la richese pour réduire les inégalités? On a besoin de la théorie pour comprendre l'effet potentiel des incitatifs. Ensuite, les données pour estimer ces effets. Les économistes Emmanuel Saez et Gabriel Zucman s'intéresse à cette question avec théorie et données. 
 
 |logo1|
 
@@ -19,11 +19,11 @@ Le site `missingprofits.world <https://missingprofits.world/>`_ calcule ce que p
    :align: middle
    :scale: 25%
    
-Une taxe sur le carbone pourrait être un bon moyen de lutter contre le réchauffement climatique. Mais quelles sont les effets sur l'économie? En 2019, le Directeur parlementaire du Budget du Canada dans un `rapport <https://www.pbo-dpb.gc.ca/web/default/files/Documents/Reports/2019/Paris_Target/Paris_Target_FR.pdf>`_ utilise un modèle d'équilibre général pour calculer ces effets. Le modèle utilise données et théorie. 
+Une taxe sur le carbone pourrait être un bon moyen de lutter contre le réchauffement climatique. Mais quelles sont les effets d'une telle taxe sur l'économie? En 2019, le Directeur parlementaire du Budget du Canada dans un `rapport <https://www.pbo-dpb.gc.ca/web/default/files/Documents/Reports/2019/Paris_Target/Paris_Target_FR.pdf>`_ utilise un modèle d'équilibre général pour calculer ces effets. Le modèle utilise données et théorie. 
 
 |logo2|
 
-Comment structurer le marché de la publicité sur internet? Quel est le prix de l'information? Comment rénumérer le classement dans les moteurs de recherche? Hal Varian est l’économiste en chef chez Google. Il est l'auteur du livre de théorie le plus populaire en microéconomie mais aussi quelqu'un qui conjuge au quotidien données et théorie pour aider les entreprises de la nouvelle économie. Voir cette `entrevue <https://www.youtube.com/watch?v=aUl3OVgT64Y>`_ avec lui.
+Comment structurer le marché de la publicité sur internet? Quel est le prix de l'information? Comment rénumérer le classement dans les moteurs de recherche? Hal Varian est l’économiste en chef chez Google. Il est l'auteur d'un livre de théorie très populaire en microéconomie mais aussi quelqu'un qui conjuge au quotidien données et théorie pour aider les entreprises de la nouvelle économie. Voir cette `entrevue <https://www.youtube.com/watch?v=aUl3OVgT64Y>`_ avec lui.
 
 .. |logo3| image:: /images/rules.jpeg
    :align: middle
@@ -121,7 +121,7 @@ La dérivée
 
 -  :math:`f(x) = x^a`: :math:`f'(x) = a x^{a-1}`
 
-La librairie SymPy permet de prendre la dérivée de fonctions. Par exemple, 
+La librairie SymPy permet de prendre la dérivée de fonctions. Par exemple, essayez
 
 .. code-block:: python 
    
@@ -182,7 +182,7 @@ On dénote :math:`f'(x), f''(x)` ou :math:`\frac{d f}{d x},\frac{d}{d x}(\frac{d
 
 **Concavité et Convexité des fonctions**
 
-Une fonction est concave si pour tous points :math:`(x_1,x_2)` et tout
+Une fonction est concave si pour tout point :math:`(x_1,x_2)` et tout
 :math:`0<\lambda<1`:
 
 .. math::
@@ -269,15 +269,15 @@ Un lien évident existe entre les deux :math:`V(p) = f(x^*(p),p)`.  On peut util
 
    V'(p) = f'_x(x^*(p),p)x^{*'}(p) + f'_p(x^*(p),p)
    
-On a par définition :math:`x^*(p)` maximise :math:`f(x,p)`.
+On a par définition :math:`x^*(p)` maximisant :math:`f(x,p)`. Donc, :math:`f'_x(x^*(p),p) = 0` de par la CPO. 
 
-Donc, :math:`f'_x(x^*(p),p) = 0` (CPO). 
+Ainsi, le premier terme de :math:`V'(p)` est zéro. 
 
-Ainsi, le premier terme de :math:`V'(p)` est zéro. On obtient, :math:`V'(p) = f'_p(x^*(p),p)`.
+On obtient, :math:`V'(p) = f'_p(x^*(p),p)`.
 
 Ceci implique que la dérivée de la valeur maximale par rapport à une variable exogène est la dérivée de la fonction objective par rapport à cette variable exogène, sans utiliser la règle de chaine (sans changer la solution optimale). C'est un raccourci (approximation) qui sera utile à plusieurs moments dans le cours. 
 
-**Exercice D**: Trouvez la forme de :math:`V'(p)` la
+**Exercice D**: Trouvez la forme de :math:`V'(p)` pour la
 fonction :math:`V(p) = (10 - p\frac{x^*(p)}{2})x^*(p)` où :math:`x^*(p) = \arg \max_x f(x,p)` et :math:`f(x,p) =(10 - p\frac{x}{2})x`.
 
 .. raw:: html
@@ -291,11 +291,11 @@ La différentielle totale
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 Les combinaisons de :math:`x,y` telles que :math:`f(x,y) = \overline{f}`)
-peuvent être trouvées par en inversant la fonction, :math:`y=g(x,\overline{f})`.
+peuvent être trouvées en inversant la fonction, :math:`y=g(x,\overline{f})`.
 Mais on peut décrire ces combinaisons en utilisant la
 différentielle totale (une approximation linéaire):
 
-On peut décrire la forme de cette fonction par:
+On peut décrire la forme d'une fonction à un point donnée par:
 
 .. math::
 
@@ -308,7 +308,7 @@ Si on pose :math:`df(x,y)=0`, on peut réarranger pour obtenir
 
    \frac{dy}{dx}\Bigr|_{df=0} = -\frac{f'_x(x,y)}{f'_y(x,y)}
 
-On qualifie la dérivée par le :math:`df=0` pour indiquer que c'est une dérivée obtenue en contraignant la fonction à être constante.
+On qualifie la dérivée par le :math:`df=0` pour indiquer que c'est une dérivée obtenue en contraignant la valeur de la fonction à être constante.
 
 **Exercice E**: Trouvez :math:`\frac{dy}{dx}\Bigr|_{df=0}` par
 différentielle totale pour :math:`f(x,y)=\log(xy)`. Faire sur papier et par SymPy. 
@@ -323,7 +323,7 @@ différentielle totale pour :math:`f(x,y)=\log(xy)`. Faire sur papier et par Sym
 Homogénéité d'une fonction
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-La dérivée partielle informe sur le comportement de la fonction quand un des arguments varie alors que les autres demeurent constant. Mais on pourrait aussi s'intéresser au comportement d'une fonction quand tous les arguments augmentent (ou diminuent) d'une même proportion. On utilise le concept d'homogénéité pour faire cette analyse. Il y a deux façons de s'y prendre: 
+La dérivée partielle informe sur le comportement de la fonction quand un des arguments varie alors que les autres demeurent constants. Mais on pourrait aussi s'intéresser au comportement d'une fonction quand tous les arguments augmentent (ou diminuent) d'une même proportion. On utilise le concept d'homogénéité. Il y a deux façons de s'y prendre: 
 
 Approche directe: Une fonction est homogène de degré :math:`r` si pour tout
 :math:`\lambda>0`,
@@ -332,8 +332,7 @@ Approche directe: Une fonction est homogène de degré :math:`r` si pour tout
 
    f(\lambda x_1, \lambda x_2, ... \lambda x_n) = \lambda^r f(x_1,x_2,...,x_n)
 
-Théorème d'Euler: Si une fonction est homogène de degré :math:`r`, alors 
-vrai:
+Théorème d'Euler: Si une fonction est homogène de degré :math:`r`, alors:
 
 .. math::
 
@@ -391,7 +390,7 @@ de :
 
 La CPO est :math:`f'_x(x,q(x,m)) + f'_y(x,q(x,m))q'(x,m) = 0`. On peut
 résoudre pour :math:`x^*` et utiliser :math:`y=q(x)` pour trouver
-:math:`y^*`. Avec plusieurs variables et contraintes, cette approche n'est pas très pratique...
+:math:`y^*`. 
 
 **Exercice G**: Maximisez la fonction :math:`f(x,y) = \log x + \log y`
 sous la contrainte :math:`x+y \le m`.
@@ -402,8 +401,7 @@ sous la contrainte :math:`x+y \le m`.
         <iframe src="https://www.youtube.com/embed/o_YgiZvNmx8" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
     </div>
 
-
-.. _lagragian:
+Avec plusieurs variables et contraintes, cette approche n'est pas très pratique...
 
 **Le Lagrangien**
 
@@ -426,7 +424,7 @@ Ces trois équations sont les CPO du Lagrangien:
    \begin{aligned}
        \max_{x,y,\lambda} L(x,y,\lambda) = f(x,y) - \lambda (g(x,y)-m)\end{aligned}
 
-Le Lagrangien :math:`L(x,y,\lambda)` est une fonction objective modifiée qui permet de pénaliser la maximisation pour la contrainte (pour s'assurer qu'elle soit respectée). On remarque que si :math:`\lambda = 0`, on a les deux CPO non-contraintes, :math:`f'_x(x,y)=0` et :math:`f'_y(x,y)=0` qui donnent une solution optimale sans avoir besoin de la troisième. Seulement si la contrainte est *mordante* (si :math:`\lambda \neq 0`) aurons nous une solution différente... 
+Le Lagrangien :math:`L(x,y,\lambda)` est une fonction objective modifiée qui permet de pénaliser la maximisation pour la contrainte (pour s'assurer qu'elle soit respectée). On remarque que si :math:`\lambda = 0`, on a les deux CPO non-contraintes, :math:`f'_x(x,y)=0` et :math:`f'_y(x,y)=0` qui donnent une solution optimale sans avoir besoin de la troisième. Seulement si la contrainte est *mordante* (si :math:`\lambda \neq 0`) aurons-nous une solution différente... 
 
 **Exercice H**: Maximisez la fonction :math:`f(x,y) = \log x + \log y`
 sous la contrainte :math:`x+y \le m` par la méthode du Lagrangien.
@@ -451,7 +449,7 @@ Par le théorème de l’enveloppe, si
 alors :math:`V'(m) = \lambda`. La valeur maximale augmente de :math:`\lambda` quand on augmente (marginalement) :math:`m` (quand on relâche la contrainte).
 
 **Exercice I**: Démontrez dans le problème précédent (H) qu’une augmentation
-marginale de :math:`m` a pour effet d'augmenter le maximum de :math:`\lambda`. Pour ce faire résoudre les CPO du lagrangien pour :math:`x,y,\lambda`, remplacer ces expressions dans :math:`f(x,y)` et prendre la dérivée par rapport à  :math:`m`. Montrer que cette dérivée est égale à la valeur de :math:`\lambda`. 
+marginale de :math:`m` a pour effet d'augmenter le maximum de :math:`\lambda`. Pour ce faire résoudre les CPO du lagrangien pour :math:`x,y,\lambda`, remplacez ces expressions dans :math:`f(x,y)` et prendre la dérivée par rapport à  :math:`m`. Montrez que cette dérivée est égale à la valeur de :math:`\lambda`. 
 
 .. raw:: html
 

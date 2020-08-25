@@ -1,13 +1,13 @@
-La production
+La Production
 -------------
 
-Les dotations ne tombent pas du ciel. De plus, plusieurs biens doivent être produit à l'aide d'autres biens. L'économie est constituée ce consommateur, certe, mais aussi d'entreprise. Pourquoi les entreprises existent-elles? `Ronald Coase <https://fr.wikipedia.org/wiki/Ronald_Coase>`_ propose une explication simple: les entreprises sont des organisations qui servent à *internaliser* les coûts de transaction pour produire des biens, ou donner des services. Sans ces organisations, difficile de produire à faible coût des ordinateurs portables, des meubles. Il existe des rendements à l'échelle qui font en sorte que les entreprises peuvent produire des grandes quantités de biens à faible coûts. Elles permettent aussi l'innovation, en réunissant ensemble les cerveaux. Dans cette séance, nous abordons les décisions de l'entreprise (plutôt que le consommateur). L'entreprise produit un bien (ou plusieurs) qu'elle vend sur les marchés (offre). Elle demande des inputs pour produire ce bien. Finalement, dans un équilibre général avec production, extension naturelle de l'équilibre général d'échange, elle est détenue par certains consommateurs, qui tirent un revenu provenant de ses profits. 
+Les dotations ne tombent pas du ciel. De plus, plusieurs biens doivent être produit à l'aide d'autres biens. L'économie est constituée de consommateurs, certes, mais aussi d'entreprises. Pourquoi les entreprises existent-elles? `Ronald Coase <https://fr.wikipedia.org/wiki/Ronald_Coase>`_ propose une explication simple: les entreprises sont des organisations qui servent à *internaliser* les coûts de transaction pour produire des biens, ou donner des services. Sans ces organisations, difficile de produire à faible coût des ordinateurs portables, des meubles. Il existe des rendements à l'échelle qui font en sorte que les entreprises peuvent produire des grandes quantités de biens à faible coûts. Elles permettent aussi l'innovation, en réunissant ensemble les cerveaux. Dans cette séance, nous abordons les décisions de l'entreprise (plutôt que le consommateur). L'entreprise produit un bien (ou plusieurs) qu'elle vend sur les marchés (offre). Elle demande des inputs pour produire ce bien. Finalement, dans un équilibre général avec production, extension naturelle de l'équilibre général d'échange, elle est détenue par certains consommateurs, qui tirent un revenu provenant de ses profits. En somme, l'entreprise n'est qu'un intermédiaire.  
 
 
 La fonction de production
 +++++++++++++++++++++++++
 
-La firme a des inputs qu'elle transforme en output. La fonction de production :math:`F(\cdot)` accomplie cette transformation. La fonction de production peut être estimé à l'aide de l'économétrie, en collaboration avec les ingénieurs. 
+La firme a des inputs qu'elle transforme en output. La fonction de production :math:`F(\cdot)` accomplie cette transformation. La fonction de production peut être estimée à l'aide de l'économétrie, en collaboration avec les ingénieurs. 
 
 **Exemple: un input et un output**
 
@@ -26,7 +26,7 @@ On pourrait par exemple penser à une fonction:
 .. math::
     S(I,C)  = I^{\alpha}C^{\beta}
 
-Avec des données sur la quantité d'acier produit, la quantité de minerai et de charbon utilisée dans le temps :math:`t=1,...,T` , on peut estimer les paramètres en transformant la fonction de production: 
+Avec des données sur la quantité d'acier produite, la quantité de minerai et de charbon utilisée dans le temps :math:`t=1,...,T` , on peut estimer les paramètres en transformant la fonction de production: 
 
 .. math::
     \log S_t = \log A_t + \alpha \log I_t + \beta \log C_t + \epsilon_t
@@ -50,14 +50,14 @@ Fixons :math:`dY = 0`. On obtient le **taux marginal de substitution technique**
 
 Au lieu de courbe d'indifférence, nous avons des isoquantes dans l'espace :math:`(X,Z)` qui donne les combinaisons d'input qui produisent une quantité d'output constante. LE TMST est la pente de ces isoquantes.
 
-Il nous donne la quantité de :math:`Z` qu'on peut économiser si on augmente :math:`X` marginalement. Il est négatif parce que la fonction de production est généralement croissante dans les deux inputs (productivité marginale positive). 
+Il nous donne la quantité de :math:`Z` qu'on peut économiser si on augmente :math:`X` marginalement. Il est négatif parce que la fonction de production est généralement croissante dans les deux inputs (productivités marginales positives). 
 
 **Exercice A**: Trouvez le TMST pour :math:`Y=X^{\alpha} Z^{\beta}`
 
 Les rendements à l'échelle
 ++++++++++++++++++++++++++
 
-Le directeur de l'usine souhaite doubler la production. Il vous demande dans quelle proportion on doit augmenter les achats d'inputs. La productivité marginale ne nous est pas utile pour deux raisons: elle mesure un effet marginal (doubler est loin d'être marginal) et elle mesure l'effet marginal gardant les autres inputs constant. Or la question du directeur ne garde pas certains inputs constants. On fera appel aux rendements à l'échelle de la fonction. 
+Le directeur de l'usine souhaite doubler la production. Il vous demande dans quelle proportion on doit augmenter les achats d'inputs. La productivité marginale ne nous est pas utile pour deux raisons: elle mesure un effet marginal (doubler est loin d'être marginal) et elle mesure l'effet marginal gardant les autres inputs constants. Or la question du directeur ne garde pas certains inputs constants. On fera appel aux rendements à l'échelle de la fonction. 
 
 Une fonction de production a des rendements à l'échelle:
 
@@ -73,7 +73,7 @@ Une fonction de production a des rendements à l'échelle:
 Miminisation des coûts
 ++++++++++++++++++++++
 
-Maintenant que nous comprenons les capacités techniques de l'entreprise, nous pourrions nous demander qu'elle serait le meilleur choix d'inputs pour un niveau d'output donné. Pensons à une entreprise qui essaie de réduire ses coûts mais ne cherche pas nécessairement à changer son niveau de production. 
+Maintenant que nous comprenons les capacités techniques de l'entreprise, nous pourrions nous demander quel serait le meilleur choix d'inputs pour un niveau d'output donné. Pensons à une entreprise qui essaie de réduire ses coûts mais ne cherche pas nécessairement à changer son niveau de production. 
 
 Étant donné un niveau de production :math:`Y`, quel est le meilleur choix des
 inputs?
@@ -102,9 +102,9 @@ La première équation nous donne le *mix* des inputs qui est optimal. Il doit �
 
 La deuxième contrainte vient appliquer le *mix* des inputs trouvés avec la première équation au niveau de production choisi en terme de :math:`Y`. C'est là que peuvent intervenir les rendements à l'échelle.  
 
-La solution à ce système d'équation est une paire de demande conditionelle pour les inputs
+La solution à ce système d'équation est une paire de demandes conditionelles pour les inputs
 
-.. math:: X^*(p_X,p_Z,Y),Z^*(p_X,p_Z,Y)
+.. math:: X(p_X,p_Z,Y),Z(p_X,p_Z,Y)
 
 On les dit *conditionnelles* parce qu'elles dépendent d'un niveau d'output fixe. 
 
@@ -116,9 +116,9 @@ Quelles sont les propriétés de ces fonctions?
 -  Homogène de degré zéro en :math:`(p_X,p_Z)`
 
 -  Symmétrique:
-   :math:`\frac{\partial X^*(p_X,p_Z,Y)}{\partial p_Z} = \frac{\partial Z^*(p_X,p_Z,Y)}{\partial p_X}`
+   :math:`\frac{\partial X(p_X,p_Z,Y)}{\partial p_Z} = \frac{\partial Z(p_X,p_Z,Y)}{\partial p_X}`
 
--  Effets prix négatifs: :math:`\frac{\partial X^*(p_X,p_Z,Y)}{\partial p_X}<0`.
+-  Effets prix négatifs: :math:`\frac{\partial X(p_X,p_Z,Y)}{\partial p_X}<0`.
 
 
 Fonction de coût
@@ -126,9 +126,9 @@ Fonction de coût
 
 En substituant les demandes condionnelles on peut obtenir la fonction de coûts:
 
-.. math:: C(p_X,p_Z,Y) = p_X X^*(p_X,p_Z,Y) + p_Z Z^*(p_X,p_Z,Y)
+.. math:: C(p_X,p_Z,Y) = p_X Xp_X,p_Z,Y) + p_Z Z(p_X,p_Z,Y)
 
-Cette fonction nous donne pour des prix et une quantité d'output donné, le coût totale qui minimise les coûts. 
+Cette fonction nous donne pour des prix et une quantité d'output donné, le coût total qui minimise les coûts. 
 
 Propriétés:
 
@@ -138,7 +138,7 @@ Propriétés:
 
 -  Concave en :math:`(p_X,p_Z)`
 
-Parfois des données sur les coûts, les prix ainsi que les inputs sont disponibles mais pas l'output. On peut alors estimer les paramètres de la fonction de production par la fonction de coûts. 
+Parfois on a des données sur les coûts, les prix ainsi que les inputs mais pas l'output. On peut alors estimer les paramètres de la fonction de production par la fonction de coûts. 
 
 **Exercice D**: Trouvez la fonction de coût pour :math:`Y=X^{1/2} Z^{1/4}`.
 
@@ -166,7 +166,7 @@ En utilisant le théorème de l'enveloppe, on peut montrer que
 
 .. math:: \frac{\partial C(p_X,p_Y,Y)}{\partial Y} = \mu
 
-:math:`\mu` is therefore the marginal cost at the optimum.
+:math:`\mu` est donc le coût marginal à l'optimum.
 
 **Exercice F**: Trouvez le coût marginal pour :math:`Y=X^{1/2} Z^{1/4}`.
 
@@ -204,12 +204,12 @@ où :math:`R` représente les revenus et :math:`C`, les coûts. Étant donné un
 **Exercise G** Supposons :math:`F(X) = \sqrt X`, trouvez le choix de
 :math:`X` qui maximise les profits. 
 
-L'offre de la firme est donné par :math:`Y^* = F(X^*)`. 
+L'offre de la firme est donnée par :math:`Y^* = F(X^*)`. 
 
 **Exercise H** Supposons que :math:`F(X) = \sqrt X`, trouvez l'offre de l'entreprise
 pour :math:`Y`.
 
-Quand deux inputs sont présent, et un output, on peut procéder de la façon suivante: 
+Quand on a deux inputs et un output, on peut procéder de la façon suivante: 
 
 -  Minimisation des coûts pour :math:`(X,Z)` en fonction de :math:`Y`.
 
@@ -235,7 +235,7 @@ Considérons une situation avec deux biens: :math:`X` et :math:`Y`. L'entreprise
 
 **Comportement des consommateurs**
 
--  On a deux consumers C1 et C2
+-  On a deux consommateurs C1 et C2
 
 -  Les préférences des consommateurs sont représentées par :math:`U_1(X, Y)` et
    :math:`U_2(X,Y)`
@@ -243,21 +243,21 @@ Considérons une situation avec deux biens: :math:`X` et :math:`Y`. L'entreprise
 -  Le consommateur 1 a une dotation :math:`(X^{C1,e},
    Y^{C1,e})` alors que le consommateur 2 a :math:`(X^{C2,e}, Y^{C2,e})`
 
--  Chaque consommateur a une participation aux profits dans l'entreprise :math:`\rho_{1}` and
+-  Chaque consommateur a une participation aux profits dans l'entreprise :math:`\rho_{1}` et
    :math:`\rho_2 = 1- \rho_1`.
 
 Ainsi, le consommateur 1 (même chose pour 2) doit résoudre
-   .. math::
 
-      \max_{X,Y} \left[U_1(X,Y): p_{X} X +  p_{Y}Y \leq p_{X}X^{C1,e}+ p_{Y}Y^{C1,e} + \rho_{1}\Pi \right]
+.. math::
+
+   \max_{X,Y} \left[U_1(X,Y): p_{X} X +  p_{Y}Y \leq p_{X}X^{C1,e}+ p_{Y}Y^{C1,e} + \rho_{1}\Pi \right]
 
 -  Donne les demandes du consommateur 1: :math:`X^{C1,d}(p_X,p_Y)` et
    :math:`Y^{C1,d}(p_X,p_Y)` 
 
 **L'équilibre de marché**
 
-On peut normaliser :math:`p_{X} = 1` et donc :math:`p_{Y} = p` (voir le cours sur l'échange si pas clair). Étant donné :math:`p`, on peut trouver les demandes :math:`X` et :math:`Y` pour chaque consommateur, la demande de :math:`X` de l'entreprise et l'offre 
-   :math:`Y` de l'entreprise.
+On peut normaliser :math:`p_{X} = 1` et donc :math:`p_{Y} = p` (voir le cours sur l'échange si pas clair). Étant donné :math:`p`, on peut trouver les demandes :math:`X` et :math:`Y` pour chaque consommateur, la demande de :math:`X` de l'entreprise et l'offre :math:`Y` de l'entreprise.
 
 Le marché pour  :math:`X` est en équilibre au prix :math:`p` si et seulement si
 
@@ -272,19 +272,17 @@ Un exemple...
 
 Supposons 
 
--  :math:`F(X) =  \log(1+X)`
+-  Production: :math:`F(X) =  \log(1+X)`
 
--  :math:`U_1(X,Y) =
-   U_2(X,Y) = \log X + \alpha \log Y`
+-  Préférences: :math:`U_1(X,Y) = U_2(X,Y) = \log X + \alpha \log Y`
 
--  :math:`X^{C1,e} = 2` et :math:`X^{C2,e} =
-   Y^{C1,e} = Y^{C2,e} = 0`
+-  Dotations: :math:`X^{C1,e} = 2` et :math:`X^{C2,e} = Y^{C1,e} = Y^{C2,e} = 0`
 
--  :math:`\rho_1 =0` et :math:`\rho_2 = 1`
+-  Profits: :math:`\rho_1 =0` et :math:`\rho_2 = 1`
 
--  price :math:`p_X = 1`, :math:`p_Y = p`
+-  Prix: :math:`p_X = 1`, :math:`p_Y = p`
 
-Pour l'entreprise, la maximisation des profits implique
+Pour l'entreprise, la maximisation des profits donne
 
    .. math::
 
@@ -323,7 +321,7 @@ ce qui donne:
        
 Donc, le prix d'équilibre est la solution à :math:`\alpha p +p\log p = 3 \alpha`. On peut trouver numériquement (:math:`p^*`). 
 
-Si on résume la méthode pour trouver un équilibre de production (peut importe le nombre de consommateur, etc): 
+Si on résume la méthode pour trouver un équilibre de production (peu importe le nombre de consommateurs, etc): 
 
 -  Étant donné les prix, la maximisation des profits donne les demandes d'inputs et l'offre d'output de la firme. On retrouve donc aussi les profits à re-distribuer. 
 
@@ -331,7 +329,7 @@ Si on résume la méthode pour trouver un équilibre de production (peut importe
 
 -  Des équations d'équilibre des marchés, on trouve la solution pour les prix d'équilibre. 
 
-Les théorèmes du bien-être s'applique, tout comme en échange. Une condition clé est que l'entreprise est prenneur de prix concernant son output et de ses inputs. Elle n'est pas stratégique. Il existe des situations, comme nous le verrons, où l'entreprise peut tirer profit de la manipulation des prix.
+Les théorèmes du bien-être s'appliquent, tout comme en échange. Une condition clé est que l'entreprise est prenneur de prix concernant son output et de ses inputs. Elle n'est pas stratégique. Il existe des situations, comme nous le verrons, où l'entreprise peut tirer profit de la manipulation des prix.
 
 Exemple Python 
 ++++++++++++++

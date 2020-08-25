@@ -3,7 +3,7 @@
 Consommateur
 ------------
 
-Les fondements de la microéconomie débutent avec le comportement du consommateur. On veut prédire ce que ferait un consommateur dans une situation donnée. On veut faire du sens des comportements observés. La théorie paraîtra simpliste, mais de ces fondements, on sera capable d'assez bien prédire le comportement économique des consommateurs. Des raffinements existent, certains ont même révisé ces fondements pour y introduire une approche comportementale où les individus ont des biais, répondent aux émotions, à des limites cognitives, etc. 
+Les fondements de la microéconomie débutent avec le comportement du consommateur. On veut prédire ce que ferait un consommateur dans une situation donnée. On veut faire du sens des comportements observés. La théorie paraîtra simpliste, mais de ces fondements, on sera capable d'assez bien prédire le comportement économique des consommateurs. Des raffinements existent, certains ont même révisé les fondements pour y introduire une approche comportementale où les individus ont des biais, répondent aux émotions, à des limites cognitives, etc. 
 
 .. figure:: /images/distribution_conso.jpeg
    :scale: 100
@@ -19,15 +19,15 @@ Préférences
 -  Pour deux paniers :math:`A` and :math:`B`, préférences dictent lequel
    est préféré
 
--  Préférences sont comme liste de souhait (hierarchisée): ignore les
-   prix et les ressources. Viendra plus tard.
+-  Préférences sont comme des listes de souhaits (hierarchisée): on ignore les
+   prix et les ressources. 
 
 -  Les relations de préférences sont dénotées par
    :math:`\succ,\succeq,\sim`.
 
 **Hypothèses importantes sur les préférences**
 
-Ces hypothèses ou axiomes sont nécessaires pour en arriver à une théorie du comportement. On note les plus importantes: 
+Des hypothèses ou axiomes sont nécessaires pour en arriver à une théorie du comportement du consommateur. On note les plus importantes: 
 
 *Exhaustive*
 
@@ -56,7 +56,7 @@ Une question de cohérence...
    :math:`B \succ C`, alors le consommateur préfère A à C
    (:math:`A \succ C`).
 
-Cette hypothèse n'est pas toujours vérifiée... Surtout en présence d'incertitude. 
+Cette hypothèse paraît logique. Mais elle n'est pas toujours vérifiée... Surtout en présence d'incertitude. Nous la garderons quand même. 
 
 *Non-satiation*
 
@@ -82,10 +82,10 @@ Le premier outil est celui des courbes d'indifférence dans un espace réel (qua
 Deux biens :math:`X,Y`:
 
 -  Pour tout panier :math:`(X_0,Y_0)`, combinaisons :math:`(X,Y)` telles
-   que consommateur indifférent entre :math:`(X,Y)` et
+   que le consommateur est indifférent entre :math:`(X,Y)` et
    :math:`(X_0,Y_0)`
 
--  Courbe indifférence vers nord-est indique niveau utilité plus élevé
+-  Courbe indifférence vers le haut indique niveau utilité plus élevé
    (non-satiation)
 
 Les courbes d’indifférence ne se croisent pas si elle respectve la transitivité.
@@ -105,7 +105,7 @@ ne respectent pas la transitivité.
 
 **Taux marginal de substitution (TMS)**
 
-Ces courbes d'indifférences contienent plus d'information qu'on croit ...
+Ces courbes d'indifférences contiennent plus d'information qu'on croit ...
 
 -  Pour un panier :math:`(X_0, Y_0)`, TMS de :math:`X` en fonction de
    :math:`Y`: Quantité du bien :math:`Y` que le consommateur est
@@ -119,9 +119,7 @@ Ces courbes d'indifférences contienent plus d'information qu'on croit ...
 
 **Convexité des courbes d’indifférences**
 
--  Si la quantité de nourriture (:math:`X`) augmente, comment le TMS de
-   :math:`X` en fonction de :math:`Y` change?
-
+Si la quantité de nourriture (:math:`X`) augmente, comment le TMS de :math:`X` en fonction de :math:`Y` change?
 
 Il diminue généralement. Ceci est représenté par des courbes d’indifférences convexes. Même s'il y a non-satiation, on accepte généralement que l'intensité de la préférence associée à une unité additionelle est plus faible avec le nombre d'unités consommées. 
 
@@ -147,7 +145,7 @@ Les préférences sont ordinales (hiérarchiques)
 -  La valeur de l’utilité n’a pas de signification, l’ordonnancement des
    paniers est important.
 
--  Exemple: :math:`U(X,Y) = \ln X + \ln Y` et :math:`V(X,Y) = XY` représente les
+-  Exemple: :math:`U(X,Y) = \ln X + \ln Y` et :math:`V(X,Y) = XY` représentent les
    mêmes préférences
 
 *Exercice B*: Montrez que :math:`U` et :math:`V` dans l'exemple ont les mêmes
@@ -184,7 +182,7 @@ Calculer le TMS de :math:`X` en fonction de :math:`Y`
 
    .. math:: \Rightarrow \;\; TMS = \Delta Y/ \Delta X =  -\frac{\partial U}{\partial X}/ \frac{\partial U}{\partial Y}
 
-On réfère à :math:`\frac{\partial U}{\partial X}` comme étant l'utilité marginale de :math:`x` (et vice-versa pour :math:`y`). L'utilité marginale est généralement décroissante mais positive (attention: l'utilité n'est pas décroissante, seule l'utilité marginale). 
+On réfère à :math:`\frac{\partial U}{\partial X}` comme étant l'utilité marginale de :math:`X` (et vice-versa pour :math:`Y`). L'utilité marginale est généralement décroissante mais positive (attention: l'utilité n'est pas décroissante, seule l'utilité marginale). 
 
 Exemple:
 
@@ -219,24 +217,28 @@ On peut utiliser SymPy pour trouver le TMS:
 Contrainte budgétaire
 +++++++++++++++++++++
 
-Jusqu'içi, le consommateur a tous les paniers devant lui et a des préférences sur ceux-ci. Il peut tout avoir. En pratique, Il pourra acheter les biens, mais à un prix. Et ce prix est important parce qu'il a une richesse limitée pour consommer. Tout achat a un coût d'opportunité. 
+Jusqu'içi, le consommateur a tous les paniers devant lui et a des préférences sur ceux-ci. Il peut tout avoir! En pratique, Il pourra acheter les biens, mais à un prix. Et ce prix est important parce qu'il a une richesse limitée pour consommer. Tout achat a un coût d'opportunité. 
 
 -  On ne peut pas dépenser davantage que notre richesse :math:`I`
 
 -  | Deux biens :math:`X`, :math:`Y`: Contrainte:
-     :math:`p_X X + p_Y Y = I`
-   | Donne ce qui est abordable étant donné :math:`I`
+     :math:`p_X X + p_Y Y \leq I`. Cette contrainte donne ce qui est abordable étant donné :math:`I`
 
--  | Résoudre pour :math:`Y` en terme de :math:`X`:
+-  | En posant l'égalité, on peut résoudre pour :math:`Y` en terme de :math:`X`:
      :math:`Y = \frac{I - p_X X}{p_Y}`
-   | Le prix relative entre :math:`X` and :math:`Y` en respectant la
-     contrainte:
+   | Le prix relatif entre :math:`X` et :math:`Y` en respectant la
+     contrainte est:
 
      .. math:: \frac{dY}{dX} = -\frac{p_X}{p_Y}
 
 Acheter une unité de :math:`X` implique un sacrifice de :math:`\frac{p_X}{p_Y}` unités de :math:`Y`. C'est le coût d'opportunité de :math:`X` en terme de :math:`Y`. 
 
-Dans l'espace :math:`(X,Y)`, la contrainte définie les allocations possibles. Celles au dessus ne sont pas possibles. Seules celles entre l'origine est la contrainte sont possibles...
+
+.. figure:: /images/budget_cons.png
+   :scale: 75
+
+   Dans l'espace :math:`(X,Y)`, la contrainte définie les allocations possibles. Celles au dessus ne sont pas possibles. Seules celles entre l'origine est la contrainte sont possibles...
+
 
 **Normalisation**
 
@@ -272,6 +274,11 @@ Choix du consommateur
 
 -  La courbe d’indifférence qui touche la contrainte (souvent tangente)
    donne le meilleur niveau de bien-être possible
+
+.. figure:: /images/choice_cons.png
+   :scale: 75
+
+   Les points A, C et D sont possibles étant donné la contrainte. Donc, le point B peut être éliminé même si le TMS (pente au point B) semble très près du rapport du prix. Le point D peut être éliminé parce que le consommateur ne consomme pas tout son budget. Il peut donc aller sur une autre courbe d'indifférence en augmentant sa consommation des deux biens. Les allocations A et C dépensent tout le budget. Mais C n'est pas optimal. En valeur absolue, le TMS est plus élevé que la coût d'opportunité de consommer une unité de X additionelle. Donc, on peut augmenter X et réduire Y tout en augmentant l'utilité. Le point A est optimal, le TMS est égale au rapport de prix. 
 
 **Approche Directe**
 

@@ -26,13 +26,13 @@ Demande et Préférences
 
 Formalisons cet exemple: 
 
--  Essense (X) et Transport en commun (Y)
+-  Essense (:math:`X`) et Transport en commun (:math:`Y`)
 
 -  Utilité :math:`U(X,Y)`
 
--  Contrainte Budgétaire: :math:`p_X Y+ p_Y Y = I`
+-  Contrainte Budgétaire: :math:`p_X Y+ p_Y Y \leq I`
 
- Les fonctions de demande :math:`(X^*, Y^*)` sont telles que 
+Les fonctions de demande :math:`(X^*, Y^*)` sont telles que 
 
 .. math::
 
@@ -81,14 +81,14 @@ Un bien est normal si et seulement si la demande de ce bien augmente avec le rev
 
 Un bien est inférieur si sa demande diminue quand le revenu augmente (à prix constant)
 
-L'essence est-elle un bien inférieur ou normal? Une des études célèbres sur cet enjeu indique que même si on pourrait croire que l'essence est un bien inférieur, ceci dépend si on mesure en proportion du revenu ou des dépenses `(Poterba, 1991) <http://www.nber.org/chapters/c11271>`_? Pourquoi?
+L'essence est-elle un bien inférieur ou normal? Une étude de James Porterba suggère que même si on pourrait croire que l'essence est un bien inférieur, ceci dépend si on mesure en proportion du revenu ou des dépenses `(Poterba, 1991) <http://www.nber.org/chapters/c11271>`_? Pourquoi pensez-vous?
 
 |poterba|
 
 .. |poterba| image:: /images/poterba.png 
    :scale: 40%
 
-Pour quantifier les effets revenu, on voudra utiliser une élasticité revenu de la forme: 
+Pour quantifier les effets revenu, on voudra utiliser une élasticité-revenu de la forme: 
 
 .. math::
 
@@ -99,8 +99,8 @@ En pratique, il n'est pas facile d'observer ces élasticités-revenu en s'assura
 Effets Prix
 +++++++++++
 
-Comment les demandes :math:`X^*` and :math:`Y^*` changent si 
-:math:`p_Y` et :math:`I` restent constant mais que :math:`p_X` change?
+Comment les demandes :math:`X^*` ry :math:`Y^*` changent si 
+:math:`p_Y` et :math:`I` restent constants mais que :math:`p_X` change?
 
 Pour décrire les changements de demande, on utilise l'élasticité: 
 
@@ -108,17 +108,20 @@ Pour décrire les changements de demande, on utilise l'élasticité:
 
    \eta_{X,p} = \frac{\partial X}{\partial p_X}\frac{p_X}{X}
 
-Ell est invariante aux unités monétaires. Encore une fois, un enjeu important c'est d'estimer cette élasticité dans un contexte où le changement de prix est *exogène*. Heureusement, il y a les taxes qui changent parfois pour des raisons indépendantes de la demande... Sinon, des chocs d'offre (manipulation du prix d'un cartel, désastre naturel). 
+Ell est invariante aux unités monétaires. Encore une fois, un enjeu important est d'estimer cette élasticité dans un contexte où le changement de prix qui est *exogène*. Heureusement, il y a les taxes qui changent parfois pour des raisons indépendantes de la demande... Sinon, des chocs d'offre (manipulation du prix d'un cartel, désastre naturel). 
 
-Au Danemark, une `étude <https://www.sciencedirect.com/science/article/abs/pii/S0094119018300779>`_ montre que l'elasticité varie considérablement à travers le pays et en particulier dépendant de la distance qu'ont les gens à faire chaque jours. 
+Au Danemark, une `étude <https://www.sciencedirect.com/science/article/abs/pii/S0094119018300779>`_ montre que l'elasticité varie considérablement à travers le pays et en particulier dépendant de la distance qu'ont à faire les gens chaque jours. 
 
 .. image:: /images/elasticity_denmark.png
    :scale: 65%
 
-Au États-Unis, une autre `analyse <https://www.aeaweb.org/articles?id=10.1257/pol.6.4.302>`_ montre qu'il faut faire la distinction entre l'effet d'un changement de prix et une taxe. L'effet d'une taxe est plus important? Pourquoi? Quelles implications pour les revenus de taxes? Indice: regarder l'effet de l'élasticité sur les revenus de la taxe. 
+Au États-Unis, une autre `analyse <https://www.aeaweb.org/articles?id=10.1257/pol.6.4.302>`_ montre qu'il faut faire la distinction entre l'effet d'un changement de prix et une taxe. L'effet d'une taxe est plus important? Pourquoi? 
+
 
 .. image:: /images/elasticity_tax_price.png
    :scale: 45%
+
+Quelles implications pour les revenus de taxes? Indice: regarder l'effet de l'élasticité sur les revenus de la taxe. 
 
 Une hausse de prix (ou taxe) a l'effet direct de réduire le bien-être du consommateur. On pourrait vouloir compenser certains ménages parce que la taxe poursuit un objectif noble (e.g. climat, redistribution). Afin de calculer la compensation possible suite à une taxe, il faut décomposer le changement de demande pour l'essence quand le prix :math:`p_X` augmente. Il y a deux forces:
 
@@ -126,7 +129,7 @@ Une hausse de prix (ou taxe) a l'effet direct de réduire le bien-être du conso
 
    .. math:: \frac{U'_X(X,Y)}{U'_Y(X,Y)} = \frac{p_X}{p_Y}
 
--  Besoin de plus de revenu pour acheter le même panier de référence (réduction pouvoir d'achat): *effet revenu*. Les `gilets jaunes <https://www.rtl.fr/actu/conso/pouvoir-d-achat-une-etude-de-l-insee-explique-la-colere-des-gilets-jaunes-7797202617>`_ ont certainement perçu cet effet. 
+-  Besoin de plus de revenu pour acheter le même panier de référence (réduction pouvoir d'achat): *effet revenu*. 
 
 Notre **objectif:** Identifier les effets prix et revenus
 
@@ -265,7 +268,7 @@ Puisque
    \begin{aligned}
    \Delta X^* &=   \underbrace{\Delta X^{{cmp}}}_{\leq 0} -   \underbrace{\frac{\partial X}{\partial I}\times \Delta p_X X^*}_{\geq 0 \text{ si normal, } <0 \text{ si inférieur}} \end{aligned}
 
-En terme d'élasticité,
+En terme d'élasticités,
 
 .. math::
 
@@ -295,7 +298,7 @@ D'abord, on peut inférer la nature des biens par les fonctions de demande. Les 
 -  Compléments: si l'effet prix croisé
    :math:`\frac{\partial X^{cmp}}{\partial p_Y} <0`
 
-Qu'en est-il pour le transport en commun et les taxes sur l'essence? Cette élasticité est-elle importante pour la politique publique?
+Qu'en est-il pour le transport en commun et les taxes sur l'essence? Cette élasticité est-elle importante pour la politique publique? Comment pourriez-vous l'estimer?
 
 Propriétés des fonctions de demandes
 ++++++++++++++++++++++++++++++++++++
@@ -323,7 +326,7 @@ Pour mesurer un changement du coût de la vie (pouvoir d'achat), on utilise des 
 
 .. math:: \pi_L = \frac{\hat p_X  X + \hat p_Y Y}{p_X X + p_Y Y}
 
-Ainsi X et Y, consommé dans la situation de référence, sont aussi utilisées après le changement de prix. L'indice des prix à la consommation garde les quantités (part des dépenses) fixes dans le court terme (les changent mais pas très fréquemment). Plusieurs prestations gouvernementales sont indexées annuellement de la sorte afin de maintenir le pouvoir d'achat (pensions, crédit d'impôt, etc). Mais est-ce un bon indice pour mesurer une variation du coût de la vie?
+Ainsi :math:`X` et :math:`Y`, consommé dans la situation de référence, sont aussi utilisées après le changement de prix. L'indice des prix à la consommation garde les quantités (part des dépenses) fixes dans le court terme (les changent mais pas très fréquemment). Plusieurs prestations gouvernementales sont indexées annuellement de la sorte afin de maintenir le pouvoir d'achat (pensions, crédit d'impôt, etc). Mais est-ce un bon indice pour mesurer une variation du coût de la vie?
 
 La théorie qu'on vient de voir indique qu'il faut tenir compte des réactions comportementales. Si le prix d'un bien augmente, il y aura substitution. Pour bien mesurer la consommation, on revient à la théorie:  
 
@@ -334,6 +337,8 @@ La théorie qu'on vient de voir indique qu'il faut tenir compte des réactions c
 Tout dépendant des préférences, il se peut que l'indice de prix hicksien donne une réponse différente de l'indice de Laysperes. En particulier, si la part d'un bien décroit si son prix augmente, l'indice Hicksien pourrait donner une augmentation du coût de la vie plus faible qu'un indice de type Laysperes. C'est ce qu'on appelle un biais de substitution. 
 
 Avec la pandémie et le confinement, la consommation d'essence a chuté. Le prix de l'essence a aussi chuté (pour pleins de raisons, incluant une décision des cartels). Est-ce qu'un indice de Laysperes donne un bon reflet du changement du pouvoir d'achat dans un tel contexte? Cet `article <https://www.nber.org/papers/w27352>`_ fait le calcul pour les États-Unis et montre que l'inflation est sous-estimée considérablement. 
+
+Autre question pour discussion: devrait-on avoir un indice de prix différent pour les ménages âgés?
 
 Biens Giffen
 ++++++++++++
@@ -348,7 +353,7 @@ On en déduit qu'une condition nécessaire est que le bien soit inférieur (dema
 
 Ainsi, il est possible que :math:`\eta_{X,p}>0`. Mais est-ce que ce cas spécial existe?
 
-L'exemple classique donné est le cas des pommes de terre en Irlande, même si des doutes existent sur cet exemple (voir ce résumé de l'histoire derrière les biens Giffen `wikipedia <https://en.wikipedia.org/wiki/Giffen_good>`_). Un meilleur exemple est donné par l'analyse d'un programme implanté en Chine qui donnait une subvention pour la consommation de riz (`Jensen et Miller (2008) <https://www.aeaweb.org/articles?id=10.1257/aer.98.4.1553>`_). La subvention (baisse de prix) a mené à une diminution de la consommation de riz. Les auteurs ne trouvent pas la même chose pour le blé... 
+L'exemple classique donné est le cas des pommes de terre en Irlande, même si des doutes existent sur cet exemple (voir ce résumé de l'histoire derrière les biens Giffen `wikipedia <https://en.wikipedia.org/wiki/Giffen_good>`_). Un meilleur exemple est donné par l'analyse d'un programme implanté en Chine qui donnait une subvention pour la consommation de riz (`Jensen et Miller (2008) <https://www.aeaweb.org/articles?id=10.1257/aer.98.4.1553>`_). La subvention (baisse de prix) a mené à une diminution de la consommation de riz. Les auteurs ne trouvent pas la même chose pour le blé... Donc, la preuve d'existence de Biens Giffen demeure fragile...
 
 Les entreprises et l'analyse de la demande
 ++++++++++++++++++++++++++++++++++++++++++
@@ -358,12 +363,12 @@ Pourquoi une entreprise devrait-elle étudier les propriétés de la demande pou
 * fixant un prix qui maximise ses revenus si elle a un pouvoir de marché
 * discriminant par les prix (segmentation) 
 
-L'analyse économétrique peut être utilisée à partir des données de l'entreprise, ou du marché (scanner data?). 
+L'analyse économétrique peut être utilisée à partir des données de l'entreprise, ou du marché (scanner data?) pour estimer différentes élasticités.  
 
 Exemple Effet prix et revenu
 ++++++++++++++++++++++++++++
 
-Voir ce notebook pour un bel exemple qui utilise Python pour calculez la compensation et trouvez les effets prix et revenu avec fonction d'utilité CES (Constant Elasticity of Substitution)
+Voir ce notebook pour un exemple qui utilise Python pour calculez la compensation et trouvez les effets prix et revenu avec fonction d'utilité CES (Constant Elasticity of Substitution)
 
 |ImageLink|_
 

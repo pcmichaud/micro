@@ -87,7 +87,7 @@
             
               <p class="caption"><span class="caption-text">Menu:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="plan.html">Objectifs du cours</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plan.html">Plan de cours</a></li>
 <li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cons.html">Consommateur</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Effets Prix et Revenu</a><ul>
@@ -108,13 +108,12 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="risque.html">Le Risque</a></li>
 <li class="toctree-l1"><a class="reference internal" href="time.html">Le Temps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="labor.html">Le Travail</a></li>
 <li class="toctree-l1"><a class="reference internal" href="welfare.html">Bien-être</a></li>
 <li class="toctree-l1"><a class="reference internal" href="echange.html">Échange</a></li>
-<li class="toctree-l1"><a class="reference internal" href="production.html">La production</a></li>
-<li class="toctree-l1"><a class="reference internal" href="production.html#maximisation-des-profits">Maximisation des profits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="production.html">La Production</a></li>
 <li class="toctree-l1"><a class="reference internal" href="strategy.html">Concurrence imparfaite</a></li>
-<li class="toctree-l1"><a class="reference internal" href="selection.html">Asymétrie d’information</a></li>
-<li class="toctree-l1"><a class="reference internal" href="intervention.html">Politiques publiques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="information.html">Asymétrie d’information</a></li>
 </ul>
 
             
@@ -194,13 +193,11 @@
 <h2>Demande et Préférences<a class="headerlink" href="#demande-et-preferences" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Formalisons cet exemple:</p>
 <ul class="simple">
-<li><p>Essense (X) et Transport en commun (Y)</p></li>
+<li><p>Essense (<span class="math notranslate nohighlight">\(X\)</span>) et Transport en commun (<span class="math notranslate nohighlight">\(Y\)</span>)</p></li>
 <li><p>Utilité <span class="math notranslate nohighlight">\(U(X,Y)\)</span></p></li>
-<li><p>Contrainte Budgétaire: <span class="math notranslate nohighlight">\(p_X Y+ p_Y Y = I\)</span></p></li>
+<li><p>Contrainte Budgétaire: <span class="math notranslate nohighlight">\(p_X Y+ p_Y Y \leq I\)</span></p></li>
 </ul>
-<blockquote>
-<div><p>Les fonctions de demande <span class="math notranslate nohighlight">\((X^*, Y^*)\)</span> sont telles que</p>
-</div></blockquote>
+<p>Les fonctions de demande <span class="math notranslate nohighlight">\((X^*, Y^*)\)</span> sont telles que</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\frac{dU}{dX}\Bigg/\frac{dU}{dY} = \frac{p_X}{p_Y}  \\
 p_X X + p_Y Y = I\end{split}\]</div>
@@ -231,32 +228,33 @@ réduire <span class="math notranslate nohighlight">\(X\)</span> pour augmenter 
 <p>Un bien est normal si et seulement si la demande de ce bien augmente avec le revenu (prix constant)</p>
 <p><strong>Bien inférieur</strong></p>
 <p>Un bien est inférieur si sa demande diminue quand le revenu augmente (à prix constant)</p>
-<p>L’essence est-elle un bien inférieur ou normal? Une des études célèbres sur cet enjeu indique que même si on pourrait croire que l’essence est un bien inférieur, ceci dépend si on mesure en proportion du revenu ou des dépenses <a class="reference external" href="http://www.nber.org/chapters/c11271">(Poterba, 1991)</a>? Pourquoi?</p>
+<p>L’essence est-elle un bien inférieur ou normal? Une étude de James Porterba suggère que même si on pourrait croire que l’essence est un bien inférieur, ceci dépend si on mesure en proportion du revenu ou des dépenses <a class="reference external" href="http://www.nber.org/chapters/c11271">(Poterba, 1991)</a>? Pourquoi pensez-vous?</p>
 <p><a class="reference internal" href="_images/poterba.png"><img alt="poterba" src="_images/poterba.png" style="width: 527.2px; height: 444.0px;" /></a></p>
-<p>Pour quantifier les effets revenu, on voudra utiliser une élasticité revenu de la forme:</p>
+<p>Pour quantifier les effets revenu, on voudra utiliser une élasticité-revenu de la forme:</p>
 <div class="math notranslate nohighlight">
 \[\eta_{X,I} = \frac{\partial X}{\partial I}\frac{I}{X}\]</div>
 <p>En pratique, il n’est pas facile d’observer ces élasticités-revenu en s’assurant que le changement de revenu est <em>exogène</em>. Quel type d’évennement pourrait-on exploiter?</p>
 </div>
 <div class="section" id="effets-prix">
 <h2>Effets Prix<a class="headerlink" href="#effets-prix" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Comment les demandes <span class="math notranslate nohighlight">\(X^*\)</span> and <span class="math notranslate nohighlight">\(Y^*\)</span> changent si
-<span class="math notranslate nohighlight">\(p_Y\)</span> et <span class="math notranslate nohighlight">\(I\)</span> restent constant mais que <span class="math notranslate nohighlight">\(p_X\)</span> change?</p>
+<p>Comment les demandes <span class="math notranslate nohighlight">\(X^*\)</span> ry <span class="math notranslate nohighlight">\(Y^*\)</span> changent si
+<span class="math notranslate nohighlight">\(p_Y\)</span> et <span class="math notranslate nohighlight">\(I\)</span> restent constants mais que <span class="math notranslate nohighlight">\(p_X\)</span> change?</p>
 <p>Pour décrire les changements de demande, on utilise l’élasticité:</p>
 <div class="math notranslate nohighlight">
 \[\eta_{X,p} = \frac{\partial X}{\partial p_X}\frac{p_X}{X}\]</div>
-<p>Ell est invariante aux unités monétaires. Encore une fois, un enjeu important c’est d’estimer cette élasticité dans un contexte où le changement de prix est <em>exogène</em>. Heureusement, il y a les taxes qui changent parfois pour des raisons indépendantes de la demande… Sinon, des chocs d’offre (manipulation du prix d’un cartel, désastre naturel).</p>
-<p>Au Danemark, une <a class="reference external" href="https://www.sciencedirect.com/science/article/abs/pii/S0094119018300779">étude</a> montre que l’elasticité varie considérablement à travers le pays et en particulier dépendant de la distance qu’ont les gens à faire chaque jours.</p>
+<p>Ell est invariante aux unités monétaires. Encore une fois, un enjeu important est d’estimer cette élasticité dans un contexte où le changement de prix qui est <em>exogène</em>. Heureusement, il y a les taxes qui changent parfois pour des raisons indépendantes de la demande… Sinon, des chocs d’offre (manipulation du prix d’un cartel, désastre naturel).</p>
+<p>Au Danemark, une <a class="reference external" href="https://www.sciencedirect.com/science/article/abs/pii/S0094119018300779">étude</a> montre que l’elasticité varie considérablement à travers le pays et en particulier dépendant de la distance qu’ont à faire les gens chaque jours.</p>
 <a class="reference internal image-reference" href="_images/elasticity_denmark.png"><img alt="_images/elasticity_denmark.png" src="_images/elasticity_denmark.png" style="width: 544.7px; height: 435.5px;" /></a>
-<p>Au États-Unis, une autre <a class="reference external" href="https://www.aeaweb.org/articles?id=10.1257/pol.6.4.302">analyse</a> montre qu’il faut faire la distinction entre l’effet d’un changement de prix et une taxe. L’effet d’une taxe est plus important? Pourquoi? Quelles implications pour les revenus de taxes? Indice: regarder l’effet de l’élasticité sur les revenus de la taxe.</p>
+<p>Au États-Unis, une autre <a class="reference external" href="https://www.aeaweb.org/articles?id=10.1257/pol.6.4.302">analyse</a> montre qu’il faut faire la distinction entre l’effet d’un changement de prix et une taxe. L’effet d’une taxe est plus important? Pourquoi?</p>
 <a class="reference internal image-reference" href="_images/elasticity_tax_price.png"><img alt="_images/elasticity_tax_price.png" src="_images/elasticity_tax_price.png" style="width: 678.6px; height: 639.0px;" /></a>
+<p>Quelles implications pour les revenus de taxes? Indice: regarder l’effet de l’élasticité sur les revenus de la taxe.</p>
 <p>Une hausse de prix (ou taxe) a l’effet direct de réduire le bien-être du consommateur. On pourrait vouloir compenser certains ménages parce que la taxe poursuit un objectif noble (e.g. climat, redistribution). Afin de calculer la compensation possible suite à une taxe, il faut décomposer le changement de demande pour l’essence quand le prix <span class="math notranslate nohighlight">\(p_X\)</span> augmente. Il y a deux forces:</p>
 <ul>
 <li><p>Le transport en commun est plus abordable que l’automobile (essence): le consommateur voudra substituer vers le transport en commun. C’est un effet <em>substitution</em> qui provient du <em>signal de prix</em>.</p>
 <div class="math notranslate nohighlight">
 \[\frac{U'_X(X,Y)}{U'_Y(X,Y)} = \frac{p_X}{p_Y}\]</div>
 </li>
-<li><p>Besoin de plus de revenu pour acheter le même panier de référence (réduction pouvoir d’achat): <em>effet revenu</em>. Les <a class="reference external" href="https://www.rtl.fr/actu/conso/pouvoir-d-achat-une-etude-de-l-insee-explique-la-colere-des-gilets-jaunes-7797202617">gilets jaunes</a> ont certainement perçu cet effet.</p></li>
+<li><p>Besoin de plus de revenu pour acheter le même panier de référence (réduction pouvoir d’achat): <em>effet revenu</em>.</p></li>
 </ul>
 <p>Notre <strong>objectif:</strong> Identifier les effets prix et revenus</p>
 <div class="section" id="demande-compensee">
@@ -354,7 +352,7 @@ I^{cmp}&amp; =  \hat p_X X^{cmp}+  p_Y Y^{cmp}\\
 <div class="math notranslate nohighlight">
 \[\begin{aligned}
 \Delta X^* &amp;=   \underbrace{\Delta X^{{cmp}}}_{\leq 0} -   \underbrace{\frac{\partial X}{\partial I}\times \Delta p_X X^*}_{\geq 0 \text{ si normal, } &lt;0 \text{ si inférieur}} \end{aligned}\]</div>
-<p>En terme d’élasticité,</p>
+<p>En terme d’élasticités,</p>
 <div class="math notranslate nohighlight">
 \[\begin{aligned}
 \frac{\Delta X^*}{\Delta p_X}\frac{p_X}{X^*} &amp; = \frac{\Delta X^{cmp}}{\Delta p_X}\frac{p_X}{X^*} - \frac{\partial X}{\partial I} \Delta p_X X^*\times\frac{p_X}{\Delta p_X X^*}\frac{I}{I} \end{aligned}\]</div>
@@ -374,7 +372,7 @@ I^{cmp}&amp; =  \hat p_X X^{cmp}+  p_Y Y^{cmp}\\
 <li><p>Compléments: si l’effet prix croisé
 <span class="math notranslate nohighlight">\(\frac{\partial X^{cmp}}{\partial p_Y} &lt;0\)</span></p></li>
 </ul>
-<p>Qu’en est-il pour le transport en commun et les taxes sur l’essence? Cette élasticité est-elle importante pour la politique publique?</p>
+<p>Qu’en est-il pour le transport en commun et les taxes sur l’essence? Cette élasticité est-elle importante pour la politique publique? Comment pourriez-vous l’estimer?</p>
 </div>
 <div class="section" id="proprietes-des-fonctions-de-demandes">
 <h2>Propriétés des fonctions de demandes<a class="headerlink" href="#proprietes-des-fonctions-de-demandes" title="Lien permanent vers ce titre">¶</a></h2>
@@ -402,7 +400,7 @@ I^{cmp}&amp; =  \hat p_X X^{cmp}+  p_Y Y^{cmp}\\
 <p>Pour mesurer un changement du coût de la vie (pouvoir d’achat), on utilise des indices de prix à la consommation. Un indice souvent utilisé est l’indice de Laspeyres:</p>
 <div class="math notranslate nohighlight">
 \[\pi_L = \frac{\hat p_X  X + \hat p_Y Y}{p_X X + p_Y Y}\]</div>
-<p>Ainsi X et Y, consommé dans la situation de référence, sont aussi utilisées après le changement de prix. L’indice des prix à la consommation garde les quantités (part des dépenses) fixes dans le court terme (les changent mais pas très fréquemment). Plusieurs prestations gouvernementales sont indexées annuellement de la sorte afin de maintenir le pouvoir d’achat (pensions, crédit d’impôt, etc). Mais est-ce un bon indice pour mesurer une variation du coût de la vie?</p>
+<p>Ainsi <span class="math notranslate nohighlight">\(X\)</span> et <span class="math notranslate nohighlight">\(Y\)</span>, consommé dans la situation de référence, sont aussi utilisées après le changement de prix. L’indice des prix à la consommation garde les quantités (part des dépenses) fixes dans le court terme (les changent mais pas très fréquemment). Plusieurs prestations gouvernementales sont indexées annuellement de la sorte afin de maintenir le pouvoir d’achat (pensions, crédit d’impôt, etc). Mais est-ce un bon indice pour mesurer une variation du coût de la vie?</p>
 <p>La théorie qu’on vient de voir indique qu’il faut tenir compte des réactions comportementales. Si le prix d’un bien augmente, il y aura substitution. Pour bien mesurer la consommation, on revient à la théorie:</p>
 <ul>
 <li><p>Après une augmentation de prix du bien <span class="math notranslate nohighlight">\(X\)</span>, la compensation nécessaire pour garder le bien-être constant est:</p>
@@ -412,6 +410,7 @@ I^{cmp}&amp; =  \hat p_X X^{cmp}+  p_Y Y^{cmp}\\
 </ul>
 <p>Tout dépendant des préférences, il se peut que l’indice de prix hicksien donne une réponse différente de l’indice de Laysperes. En particulier, si la part d’un bien décroit si son prix augmente, l’indice Hicksien pourrait donner une augmentation du coût de la vie plus faible qu’un indice de type Laysperes. C’est ce qu’on appelle un biais de substitution.</p>
 <p>Avec la pandémie et le confinement, la consommation d’essence a chuté. Le prix de l’essence a aussi chuté (pour pleins de raisons, incluant une décision des cartels). Est-ce qu’un indice de Laysperes donne un bon reflet du changement du pouvoir d’achat dans un tel contexte? Cet <a class="reference external" href="https://www.nber.org/papers/w27352">article</a> fait le calcul pour les États-Unis et montre que l’inflation est sous-estimée considérablement.</p>
+<p>Autre question pour discussion: devrait-on avoir un indice de prix différent pour les ménages âgés?</p>
 </div>
 <div class="section" id="biens-giffen">
 <h2>Biens Giffen<a class="headerlink" href="#biens-giffen" title="Lien permanent vers ce titre">¶</a></h2>
@@ -421,7 +420,7 @@ I^{cmp}&amp; =  \hat p_X X^{cmp}+  p_Y Y^{cmp}\\
 <p>Le premier terme à droite est toujours négatif. C’est le résultat de la loi de la demande compensée. Il faut donc que le 2e terme soit négatif (puisqu’il est soustrait du premier terme).</p>
 <p>On en déduit qu’une condition nécessaire est que le bien soit inférieur (demande diminue quand revenu augmente) et que le bien consitue une part importante du budget pour que ce deuxième terme soit suffisament élevé.</p>
 <p>Ainsi, il est possible que <span class="math notranslate nohighlight">\(\eta_{X,p}&gt;0\)</span>. Mais est-ce que ce cas spécial existe?</p>
-<p>L’exemple classique donné est le cas des pommes de terre en Irlande, même si des doutes existent sur cet exemple (voir ce résumé de l’histoire derrière les biens Giffen <a class="reference external" href="https://en.wikipedia.org/wiki/Giffen_good">wikipedia</a>). Un meilleur exemple est donné par l’analyse d’un programme implanté en Chine qui donnait une subvention pour la consommation de riz (<a class="reference external" href="https://www.aeaweb.org/articles?id=10.1257/aer.98.4.1553">Jensen et Miller (2008)</a>). La subvention (baisse de prix) a mené à une diminution de la consommation de riz. Les auteurs ne trouvent pas la même chose pour le blé…</p>
+<p>L’exemple classique donné est le cas des pommes de terre en Irlande, même si des doutes existent sur cet exemple (voir ce résumé de l’histoire derrière les biens Giffen <a class="reference external" href="https://en.wikipedia.org/wiki/Giffen_good">wikipedia</a>). Un meilleur exemple est donné par l’analyse d’un programme implanté en Chine qui donnait une subvention pour la consommation de riz (<a class="reference external" href="https://www.aeaweb.org/articles?id=10.1257/aer.98.4.1553">Jensen et Miller (2008)</a>). La subvention (baisse de prix) a mené à une diminution de la consommation de riz. Les auteurs ne trouvent pas la même chose pour le blé… Donc, la preuve d’existence de Biens Giffen demeure fragile…</p>
 </div>
 <div class="section" id="les-entreprises-et-l-analyse-de-la-demande">
 <h2>Les entreprises et l’analyse de la demande<a class="headerlink" href="#les-entreprises-et-l-analyse-de-la-demande" title="Lien permanent vers ce titre">¶</a></h2>
@@ -430,11 +429,11 @@ I^{cmp}&amp; =  \hat p_X X^{cmp}+  p_Y Y^{cmp}\\
 <li><p>fixant un prix qui maximise ses revenus si elle a un pouvoir de marché</p></li>
 <li><p>discriminant par les prix (segmentation)</p></li>
 </ul>
-<p>L’analyse économétrique peut être utilisée à partir des données de l’entreprise, ou du marché (scanner data?).</p>
+<p>L’analyse économétrique peut être utilisée à partir des données de l’entreprise, ou du marché (scanner data?) pour estimer différentes élasticités.</p>
 </div>
 <div class="section" id="exemple-effet-prix-et-revenu">
 <h2>Exemple Effet prix et revenu<a class="headerlink" href="#exemple-effet-prix-et-revenu" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Voir ce notebook pour un bel exemple qui utilise Python pour calculez la compensation et trouvez les effets prix et revenu avec fonction d’utilité CES (Constant Elasticity of Substitution)</p>
+<p>Voir ce notebook pour un exemple qui utilise Python pour calculez la compensation et trouvez les effets prix et revenu avec fonction d’utilité CES (Constant Elasticity of Substitution)</p>
 <p><a class="reference external" href="https://colab.research.google.com/github/pcmichaud/micro/blob/master/notebooks/PriceEffectTutorial.ipynb"><img alt="ImageLink" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
 <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
     <iframe src="https://www.youtube.com/embed/1Y7FVxKgIbg" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>

@@ -1,7 +1,7 @@
 Échange
 -------
 
-Pourquoi échanger entre consommateur? par quel moyen? Par le troc, un marché ou bien en nommant quelqu'un qui se chargera de partager les biens entre les personnes. Quel mécanisme fera fera le mieux? 
+Pourquoi échanger entre consommateur? par quel moyen? Par le troc, un marché ou bien en nommant quelqu'un qui se chargera de partager les biens entre les personnes. Quel mécanisme fera le mieux? 
 
 .. figure:: /images/barter.jpeg
    :scale: 100
@@ -34,7 +34,7 @@ D'où viennent ces dotations? Pour le moment, de la nature (ressources naturelle
 
 Le marché est une forme d'échange très répandue. En terme de modélisation, le marché est résumé par un vecteur de prix (s'il y a plusieurs biens) et un système légal qui encadre les transactions. 
 
-Si chaque consommateur a une dotation et une demande individuelle pour les biens en fonction des prix, on peut assez facilement trouver un l'équilibre de marché, içi d'échange, puisqu'il n'y a pas de production. Pensez à Kijiji.  
+Si chaque consommateur a une dotation et une demande individuelle pour les biens en fonction des prix, on peut assez facilement trouver un équilibre de marché, içi d'échange, puisqu'il n'y a pas de production. Pensez à `Kijiji <https://www.kijiji.ca/>`_.  
 
 Pour ce qui est des demandes individuelles, 
 
@@ -51,7 +51,7 @@ Réalisons d'abord que ce n'est que le prix relatif qui est important pour l'éq
 
    .. math:: X_1^c + \frac{p_Y}{p_X} Y_1^c  =   X_1^e + \frac{p_Y}{p_X} Y_1^e
 
-On peut donc, sans perte d'information, dénoter :math:`p = p_Y/p_X`, le prix relatif de :math:`Y`en terme de quantité de :math:`X`. On aurait aussi pu définir le prix comme étant :math:`p = p_X/p_Y`!
+On peut donc, sans perdre d'information, dénoter :math:`p = p_Y/p_X`, le prix relatif de :math:`Y`en terme de quantité de :math:`X`. On aurait aussi pu définir le prix comme étant :math:`p = p_X/p_Y`!
 
 Comment trouver le prix relatif d'équilibre?
 
@@ -68,13 +68,13 @@ On obtient :math:`X_1^c(p)` et :math:`Y_1^c(p)` par le Lagrangien.
       X_1^c(p^*)+X_2^c(p^*) = X_1^e + X_2^e \quad
       et \quad Y_1^c(p^*)+Y_2^c(p^*) = Y_1^e + Y_2^e
 
-Le quantité de :math:`X` échangée est donné par :math:`X_1^c(p^*) - X_1^e =X_2^e - X_2^c(p^*)`. Si :math:`X_1^c - X_1^e < 0`, le consommateur 1 est offreur de :math:`X` (le consommateur 2 demandeur).
+Le quantité de :math:`X` échangée est donnée par :math:`X_1^c(p^*) - X_1^e =X_2^e - X_2^c(p^*)`. Si :math:`X_1^c - X_1^e < 0`, le consommateur 1 est offreur de :math:`X` (le consommateur 2 demandeur).
 
 Hypothèses importantes:
 
 -  Le marché est compétitif: Le consommateur prend le prix comme donné. Il est **prenneur de prix**.
 
--  Tous les biens sont homogènes (identifiques) et perçus de la même façon par l'acheteur et le vendeur. 
+-  Tous les biens sont homogènes (identitiques) et perçus de la même façon par l'acheteur et le vendeur. 
 
 -  L'utilité du consommateur 1 ne dépend pas des actions des autres consommateurs: **aucune externalités**
 
@@ -129,7 +129,7 @@ Le prix d'équilibre sera fonction des préférences des agents. Dans notre exem
 .. math::
    p^* = \alpha \frac{X_1^e + X_2^e}{Y_1^e + Y_2^e}
 
-Donc le prix de :math:`Y` augmente avec la préférence relative pour :math:`Y`, donnée par :math:`\alpha`. L'offre est fixe, si la demande est élevée, le prix d'équilibre devra être plus élevée pour retrouver un équilibre. Si le bien :math:`Y` est rare, c'est-à-dire que :math:`Y_1^e + Y_2^e` est faible, le prix d'équilibre sera plus élevé. 
+Donc le prix de :math:`Y` augmente avec la préférence relative pour :math:`Y`, donnée par :math:`\alpha`. L'offre étant fixe, si la demande est élevée, le prix d'équilibre devra être plus élevé pour retrouver un équilibre. Si le bien :math:`Y` est rare, c'est-à-dire que :math:`Y_1^e + Y_2^e` est faible, le prix d'équilibre sera plus élevé. 
 
 Le prix est un signal des préférences et de la rareté relative des biens. Est-ce que l'équilibre de marché garantie le niveau de bien-être le plus élevé que peuvent obtenir les deux agents? Afin de juger de l'allocation de marché, nous devons faire un pas de côté pour définir une allocation optimale, sans le recours au marché. 
 
@@ -149,9 +149,9 @@ Pour ce faire, on aura besoin d'une boîte d'Edgeworth, un outil très utile. C'
 **Exercice A**: Montrer la :math:`(x^e_1,y_1^e) = (50,20)` et
 :math:`(x^e_2,y_2^e)=(20,50)` dans une boîte d'Edgeworth.
 
-Un certain nombre d'observations peuvent être faite à partir de la boîte d'Edgeworth: 
+Un certain nombre d'observations peuvent être faite à partir de la boîte d'Edgeworth.
 
-D'abord, un point dans une boite d'Edgeworth ou deux courbes d'indifférence se croisent ne peut être Pareto optimal. Pourquoi, parce qu'on peut définir un noyau par rapport à ce point comme étant toutes les allocations qui mènent à une amélioration de Pareto. 
+D'abord, un point dans une boite d'Edgeworth ou deux courbes d'indifférence se croisent ne peut être Pareto optimal. Pourquoi? Parce qu'on peut définir un noyau par rapport à ce point comme étant toutes les allocations qui mènent à une amélioration de Pareto. 
 
 .. figure:: /images/core.png
    :scale: 35
@@ -160,7 +160,7 @@ D'abord, un point dans une boite d'Edgeworth ou deux courbes d'indifférence se 
 
 Quand le noyau est vide, l'allocation est Pareto efficiente ou optimale. Ceci implique que les courbes d'indifférences doivent être tangentes. 
 
-La courbe des contrats est la droite qui passe par toutes les allocations Pareto efficiente. La frontière de Pareto est la courbe dans l'espace :math:`(U_1,U_2)` qui indique toutes les allocations optimales au sens de Pareto. 
+La courbe des contrats est la courbe qui passe par toutes les allocations Pareto efficiente. La frontière de Pareto est la courbe dans l'espace :math:`(U_1,U_2)` qui indique toutes les allocations optimales au sens de Pareto. 
 
 .. figure:: /images/contract.png
    :scale: 35
@@ -194,7 +194,7 @@ On applique la technique du Lagrangien mais cette fois avec trois contraintes. V
    - \pi_X (X_1+X_2 - X_e) - \pi_Y (Y_1+Y_2-Y_e) \end{split}
 
 
-Il y aura donc 6 CPO et 3 multiplicateurs. Les exercices qui suivant vous aideront à comprendre la démarche pour la solution. 
+Il y aura donc 6 CPO et 3 multiplicateurs. Les exercices qui suivent vous aideront à comprendre la démarche pour la solution. 
 
 **Exercice B**: Trouvez l'allocation Pareto optimale pour les fonctions d'utilité :math:`u_1` et :math:`u_2` strictement positive and concave,
 :math:`u_j = \sqrt{x_j y_j}` pour les consommateurs :math:`j=1,2`, en utilisant la méthode du Lagrangien.
@@ -237,18 +237,18 @@ Pourquoi ce résultat? À l'allocation d'équilibre :math:`X^c_1(p^*),Y^c_1(p^*)
 
 **Deuxième théorème**
 
--  On peut obtenir n'importe quelle allocation Pareto optimale par un équilibre de marché où on devra potentiellement redistribuer les dotations. 
+-  On peut obtenir n'importe quelle allocation Pareto optimale par un équilibre de marché où on devra redistribuer les dotations. 
 
 Ceci nécessite la possibilité d'imposer des taxes, ou confisquer des dotations: paiments ou taxes dites *lump-sum*. On dit alors que l'allocation des ressources est décentralisée (le fruit d'un équilibre de marché et de redistribution des dotations). 
 
 Pourquoi ca fonctionne?
 
-Pour toute allocation :math:`(X_1^*,Y_1^*)`, et valeur conséquente pour :math:`(X_2^*,Y_2^*)`,  les courbes d'indifférence sont tangentes. À cette ligne de tangence, on peut redistribuer les dotations pour trouver un point sur cette ligne. N'importe quelle dotation finale (après transfert) sur cette ligne, mène à un équilibre de marché avec :math:`(X^*,Y^*)`.
+Pour toute allocation :math:`(X_1^*,Y_1^*)`, et valeurs conséquentes pour :math:`(X_2^*,Y_2^*)`,  les courbes d'indifférence sont tangentes. À cette ligne de tangence, on peut redistribuer les dotations pour trouver un point sur cette ligne. N'importe quelle dotation finale (après transfert) sur cette ligne, mène à un équilibre de marché avec :math:`(X^*,Y^*)`.
 
 .. figure:: /images/transfer-equilibrium.png
    :scale: 50
 
-   L'optimum de Pareto A n'est pas atteignable à partir de la dotation :math:`E_0`. Mais un transfert de :math:`T_X` du bien :math:`X` provenant du consommateur 1 au consommateur 2, permet d'atteindre la dotation  :math:`E_1`, à partir de laquelle on peut attendre l'optimum de Pareto A avec un équilibre de marché au prix :math:`p`. 
+   L'optimum de Pareto A n'est pas atteignable à partir de la dotation :math:`E_0`. Mais un transfert de :math:`T_X` du bien :math:`X` provenant du consommateur 2 au consommateur 1, permet d'atteindre la dotation  :math:`E_1`, à partir de laquelle on peut attendre l'optimum de Pareto A avec un équilibre de marché au prix :math:`p`. 
 
 **Exercice E**: Trouvez le transfert de dotation et de prix, partant de :math:`(64,28,64,4)`, qui donne l'allocation trouvée à l'exercice D.
 
@@ -278,7 +278,7 @@ Ces résultats encourageant reposent cependant sur des hypothèses très fortes:
 
 -  On peut imposer des taxes *lump-sum* (pour le 2e théorème)
 
-Même si son cadre est simpliste, et certains diront que peu de marchés remplissent les conditions, il s'agit d'un modèle qui permet de fixer un *benchmark*, ou un contre-factuel, afin de réflechir aux failles de marchés de manière précise et structuré. 
+Même si son cadre est simpliste, et certains diront que peu de marchés remplissent ces conditions, il s'agit d'un modèle qui permet de fixer un *benchmark*, ou un contre-factuel, afin de réflechir aux failles de marchés de manière précise et structuré. 
 
 La théorie de l'équilibre générale a eu un impact certain sur l'économie: en particulier en macroéconomie et pour les marchés financiers. Comme nous le verrons plus tard, les gouvernements mais aussi d'autres organisations, utilisent ces modèles pour prédire l'effet de différentes politiques, notamment en ce qui attrait au climat. 
 
@@ -296,5 +296,9 @@ Un peu d'histoire
    `Duppe (2017), Journal of History of Economic
    Thought <https://www.cambridge.org/core/journals/journal-of-the-history-of-economic-thought/article/div-classtitlearrow-and-debreu-de-homogenizeddiv/761E76D5A52C948615066F502277D9DD>`__
 
+Exemple Python
+++++++++++++++
+
+À venir. 
 
 

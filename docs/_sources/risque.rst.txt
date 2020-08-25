@@ -6,7 +6,7 @@ De manière générale, les gens n'aiment pas le risque.
 .. figure:: /images/risk-scared.jpeg
    :scale: 100
 
-Pour s'en convaincre, imaginez vous faire offrir à la retraite:
+Imaginez vous faire offrir à la retraite:
 
 -  **Plan A**: un revenu certain de: 50 000/an
 
@@ -17,7 +17,7 @@ Pour s'en convaincre, imaginez vous faire offrir à la retraite:
    \                      50% chance 90 000/an
    ====================== ======================
 
--  Revenu espéré est de 50 000 dans les deux cas, lequel choisissez-vous?
+Même si le revenu espéré est de 50 000 dans les deux cas, vous risquez fort bien de choisir le Plan A... 
 
 Rendement et risque
 +++++++++++++++++++
@@ -36,7 +36,7 @@ ou encore mieux,
    \                      50% chance 150 000/an
    ====================== ======================
 
-À un moment, vous allez probablement choisir le placement risqué parce que le rendement espéré est plus élevé. Les préférences en situation de risque sont fonctions des gains mais aussi du risque (les probabilités et les gains). La théorie du consommateur que nous avons vu ne couvre pas ce cas. 
+Le revenu moyen augmente et est plus élevé qu'avec le plan A.  À un moment, vous allez probablement choisir le placement risqué parce que le rendement espéré est plus élevé. Les préférences en situation de risque sont fonctions des gains mais aussi du risque (les probabilités et les gains). La théorie du consommateur que nous avons vu ne couvre pas cette situation. Il faudra l'élargir... 
 
 L'approche d'espérance d'utilité (EU)
 +++++++++++++++++++++++++++++++++++++
@@ -47,12 +47,13 @@ L'approche d'espérance d'utilité (EU)
    :math:`p` d'obtenir :math:`X`, et probabilité :math:`1-p` d'obtenir
    :math:`Y`. L'espérance de la lotterie est :math:`\mathbb{E}_{L} = pX + (1-p)Y`. 
 
--  Espérance d'utilité semble naturelle
+-  Pour représenter les préférences, l'espérance d'utilité semble naturelle
 
    .. math::
 
       \mathbb{E}_{{ \mathcal L}} (u) = p\times u(X) + (1-p) \times
       u(Y)
+
 
 **Préférences sur des lotteries**
 
@@ -62,9 +63,9 @@ L'approche d'espérance d'utilité (EU)
 
       \mathbb{E}_{{ \mathcal L_1}} (u) > \mathbb{E}_{{ \mathcal L_2}} (u)
 
--  La représentation des préférences par l'espérance d'utilité est appelé utilité
-   `von Neumann <https://fr.wikipedia.org/wiki/John_von_Neumann>`__ et
-   Morgenstern (vNM).
+La représentation des préférences par l'espérance d'utilité est appelé utilité `von Neumann <https://fr.wikipedia.org/wiki/John_von_Neumann>`__ et `Morgenstern <https://fr.wikipedia.org/wiki/Oskar_Morgenstern>`_ (vNM).
+
+Cette forme imposera plusieurs hypothèses sur les choix, certaines restrictives. Nous y reviendrons. 
 
 **Exemple**
 
@@ -118,7 +119,7 @@ Aversion au risque et concavité de l'utilité
 
 **Riscophobie**
 
-Le consommateur a une fonction d'utilité :math:`u`. En contexte, vNM, c'est le seul objet qu'on peut modéliser pour capter les comportements de riscophobie et de riscophilie. On peut donc se douter que les propriétés de :math:`u` auront quelque chose à voir avec ces comportements. 
+Le consommateur a une fonction d'utilité :math:`u`. En contexte vNM, c'est le seul objet qu'on peut modéliser pour capter les comportements de riscophobie et de riscophilie. On peut donc se douter que les propriétés de :math:`u` auront quelque chose à voir avec ces comportements. 
 
 Fixons deux états :math:`(X,Y)` et la probabilité :math:`p` que :math:`X` soit réalisé. Alors la richesse espérée est :math:`Z = pX + (1-p)Y`.
 
@@ -152,16 +153,15 @@ Coefficient relatif:
    .. math::
       R(X) = -\frac{u''(X)X}{u'(X)} 
 
-Pourquoi ces mesures? Puisque la riscophobie est reliée à la concavité, les deux mesures augmentent quand la deuxième dérivée augmente (elle est négative pour concave, d'où le moins). Ensuite, on normalise par l'utilité marginale :math:`u'(X)`, pour fixer les unités puisque :math:`u` est ordinale.
+Pourquoi ces mesures? Puisque la riscophobie est reliée à la concavité, les deux mesures augmentent quand la deuxième dérivée augmente (elle est négative pour concave, d'où le signe moins devant pour avoir une mesure positive). Ensuite, on normalise par l'utilité marginale :math:`u'(X)`, pour fixer les unités puisque :math:`u` est ordinale.
 
 La mesure absolue permet de regarder le niveau de riscophobie pour une lotterie en montant absolue. Le coefficient relatif permet de regarder le degré de riscophobie pour une lotterie en proportion de la richesse. 
 
-La distinction entre les deux est utile. Par exemple, on pourrait croire intuitif que la mesure absolue décroit dans la richesse (la lotterie est faible par rapport à la richesse) tandis que le coefficient relatif devrait être relativement constant puisque la lotterie reste constante en proportion de la richesse. Donc, pour une décision d'investissement de portefeuille, où la taille du portefeuille est à peu près constante en proportion de la richesse, le coefficient relatif parait la bonne mesure. Pour un risque plus absolue, par exemple, une lotterie au casino, le coefficient absolue paraît plus utile. 
+La distinction entre les deux est utile. Par exemple, on pourrait croire intuitif que la mesure absolue décroit dans la richesse (la lotterie devient sans importance quand la richesse augmente) tandis que le coefficient relatif devrait être relativement constant puisque la lotterie reste constante en proportion de la richesse. Donc, pour une décision d'investissement de portefeuille, où la taille du portefeuille est à peu près constante en proportion de la richesse, le coefficient relatif parait la bonne mesure. Pour un risque plus absolue, par exemple, une lotterie au casino, le coefficient absolue paraît plus utile. 
 
+Comment mesurer ce coefficient? Une méthode très utilisée est la liste de prix multiples. `Holt et Laury (2002) <https://pubs.aeaweb.org/doi/pdfplus/10.1257/000282802762024700>`__ ont fait une application de ces listes à la mesure des attitudes façes au risque, qui démontre entre autre l'importance de donner des incitatifs financiers à ceux qui participent. 
 
-Comment mesurer ce coefficient? Une méthode très utilisée est le liste de prix multiples. `Holt et Laury (2002) <https://pubs.aeaweb.org/doi/pdfplus/10.1257/000282802762024700>`__ ont fait une application à la mesure des attitudes façes au risque, qui démontre entre autre l'importance de donner des incitatifs financiers à ceux qui participent. 
-
-Une liste de prix multiple présente deux lotteries sous différentes configurations. Le répondant doit choisir la lotterie qu'il préfère. Une lotterie sera choisie au hasard à la fin de l'expérience et sera jouée. Le répondant se verra payer le montant. Voici exemple tiré de Holt et Laury: 
+Une liste de prix multiple présente deux lotteries sous différentes configurations. Le répondant doit choisir la lotterie qu'il préfère. Une lotterie sera choisie au hasard à la fin de l'expérience et sera jouée. Le répondant se verra payer le montant réalisé. Voici exemple tiré de Holt et Laury: 
 
 
 .. image:: /images/mpl.png
@@ -175,7 +175,7 @@ On utilisera une fonction d'utilité de type,
 
 Dans ce cas, on peut montrer que :math:`R(X) = r`, d'où son nom, fonction d'utilité CRRA (*constant relative risk aversion*). 
 
-**Exercice D**: En utilisant la fonction d'utilité CRRA, dans l'expérience MPL ici-haut, calculer l'interval dans lequel doit se trouver :math:`r` si l'individu l'option A jusqu'au 7e choix et ensuite l'option B à partir du 8e choix?
+**Exercice D**: En utilisant la fonction d'utilité CRRA, dans l'expérience par listes ici-haut, calculez l'interval dans lequel doit se trouver :math:`r` si l'individu choisi l'option A jusqu'au 7e choix et ensuite l'option B à partir du 8e choix?
 
 .. raw:: html
 
@@ -227,25 +227,25 @@ Prennons le cas du chômage. Considérons un exemple simple où deux individus p
 
 -  Au chômage avec probabilité 0.5, revenu de 0
 
-Dénotons les revenus réalisées des deux individus, :math:`I_i` (:math:`i=1,2`). Un programme d'assurance-emploi dicte plutôt que les deux individus reçoivent :math:`(I_1+I_2)/2` peu importe leur statut d'emploi. 
+Dénotons les revenus réalisés des deux individus, :math:`I_i` (:math:`i=1,2`). Un programme d'assurance-emploi dicte plutôt que les deux individus reçoivent :math:`(I_1+I_2)/2` peu importe leur statut d'emploi. 
 
 L'assurance est bénéfique *ex ante* pour deux agents riscophobes (avant la réalisation du risque): 
 
 - Sans assurance: utilité espérée de chacun des agents est :math:`.5 [u(0) + u(100)]`
 
--  Avec insurance, 25 % les deux ont 0, 50% que 1 seul travaille, 25% les deux travaillent. Donc l'espérance d'utilité de chacun des agents est :math:`.25[u(0) + 2u(50) + u(100)]`
+-  Avec insurance, il 25 % de chance que les deux ont 0, 50% que 1 seul travaille, 25% que les deux travaillent. Donc l'espérance d'utilité de chacun des agents est :math:`.25[u(0) + 2u(50) + u(100)]`
 
-L'assurance est bénéfique si
+Selon les préférence vNM, l'assurance est bénéfique si
 
    .. math::
 
       .25[u(0) + 2u(50) + u(100)] > .5 [u(0) + u(100)]
 
-ou si :math:`u(50) > .5[u(0)+u(100)]`. Donc, vrai si :math:`u` concave ou agent riscophobe (encore l'inégalité de Jensen). 
+ou si :math:`u(50) > .5[u(0)+u(100)]`. Donc, ceci est vrai si :math:`u` concave ou agent riscophobe (encore l'inégalité de Jensen). 
 
-En pratique, l'assurance-emploi pourrait être informelle entre les gens. Mais le problème est qu'après la réalisation du risque, l'individu qui a toujours un emploi ne veut plus partager. Une façon de voir un régime d'assurance, ou bien un assureur, est qu'il permet de sauver sur ces coûts de transaction (agence) entre les assurés.  
+En pratique, l'assurance-emploi pourrait être informelle entre les gens. Mais le problème est qu'après la réalisation du risque, l'individu qui a toujours un emploi ne veut plus partager. Une façon de voir un régime d'assurance, ou bien un assureur, est qu'il permet de sauver sur ces coûts de transaction (agence) entre les assurés dans la cas d'un sinistre.  
 
-L'autre avantage est que l'assureur pourra mutualiser davantage d'agents au sein du régime. 
+L'autre avantage est que l'assureur pourra mutualiser davantage d'agents au sein du régime. Pour le comprendre, il faut faire appel à la loi des grands nombre. 
 
 **La loi des grands nombre**
 
@@ -274,7 +274,7 @@ Assurance et entrepreneuriat
 
 **Devenir entrepreneur**
 
--  Un individu a une richesse de 9 et peut décider de la garder ou bien de l'utiliser pour démarrer une entreprise. Sa richesse finale, s'il démarre une entreprise est donnée par la lotterie suivant:    :math:`\mathcal L = (.5,0 \;; .5,25)`. Ses préférences sont vMN avec :math:`u(X) = \sqrt{X}`. 
+-  Un individu a une richesse de 9 et peut décider de la garder ou bien de l'utiliser pour démarrer une entreprise. Sa richesse finale, s'il démarre une entreprise est donnée par la lotterie suivante:    :math:`\mathcal L = (.5,0 \;; .5,25)`. Ses préférences sont vMN avec :math:`u(X) = \sqrt{X}`. 
 
 -  **Exercice G**: Est-ce qu'il démarre l'entreprise?
 
@@ -302,7 +302,7 @@ L'émission, *Les Dragons* de Radio-Canada est une application directe de cet ex
         <iframe src="https://www.youtube.com/embed/ICyUEUUgq8Q" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
     </div>
 
-En plus des différentes entreprises privées qui font ce genre d'investissements, des organisations comme Investissement Québec, les Fonds de travailleur (FTQ et Fondaction), Anges Québec, sont tous des mécanismes d'assurance qui peuvent promouvoir l'entrepreneuriat en partageant le risque. 
+En plus des différentes entreprises privées qui font ce genre d'investissements, des organisations comme Investissement Québec, les Fonds de travailleur (FTQ et Fondaction), Anges Québec, sont tous des organisations qui peuvent promouvoir l'entrepreneuriat en partageant le risque. 
 
 Critique de l'espérance d'utilité
 +++++++++++++++++++++++++++++++++
@@ -398,7 +398,7 @@ Imaginons qu'une nouveau virus pourrait tuer 600 personnes. Deux interventions s
 
 En pratique, A est plus populaire que B, mais D est plus populaire que C. Or, en terme de personnes en vie, les deux choix mènent aux mêmes résultats. 
 
-Si les perspectives vous intéressent, allez lire ce chef d'oeuvre: `Khaneman et Tversky
+Si les perspectives vous intéressent, allez lire ce classique: `Khaneman et Tversky
 (1979) <https://www.uzh.ch/cmsssl/suz/dam/jcr:00000000-64a0-5b1c-0000-00003b7ec704/10.05-kahneman-tversky-79.pdf>`__
 
 Exemple Python risque

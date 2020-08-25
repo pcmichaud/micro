@@ -1,7 +1,7 @@
 Bien-être
 ---------
 
-Pour bien évaluer une politique, on peut regarder son efficacité, c'est-à-dire cible-t-elle le groupe visé, est-ce qu'elle a l'effet attendu sur les comportements, et combien coûte-t-elle étant donné son efficacité? Par exemple, une réglementation sur la qualité de l'air peut inciter plusieurs individus à changer de comportement. Le coût par unité d'amélioration de la qualité de l'air peut être élevé. Comment statuer si la politique est désirable? En général, la qualité de l'air est valorisée par la population. Donc, on peut mesurer les bénéfices par les préférences. Au final, on peut savoir si la réglementation est bénéfique étant donné son coût. Alors qu'on s'arrête souvent aux retombés d'une intervention, on oublie très souvent de compter les bénéfices en terme de bien-être. Afin de répondre à ces question, et permettre de juger des politiques, il faut aller une étape plus loin que ce qu'on a fait et se demander comment on peut mesurer le bien-être par les préférences. 
+Pour bien évaluer une politique, on peut regarder son efficacité, c'est-à-dire cible-t-elle le groupe visé, est-ce qu'elle a l'effet attendu sur les comportements, et combien coûte-t-elle étant donné son efficacité? Par exemple, une réglementation sur la qualité de l'air peut inciter plusieurs individus à changer de comportement. Le coût par unité d'amélioration de la qualité de l'air peut être élevé. Comment statuer si la politique est désirable? En général, la qualité de l'air est valorisée par la population. Donc, on peut mesurer les bénéfices par les préférences. Au final, on peut savoir si la réglementation est bénéfique étant donné son coût. Alors qu'on s'arrête souvent aux retombés économiques ou fiscales d'une intervention, on oublie très souvent de compter les bénéfices en terme de bien-être. Afin de répondre à ces question, et permettre de juger des politiques, il faut aller une étape plus loin que ce qu'on a fait et se demander comment on peut mesurer le bien-être par les préférences. 
 
 Trois approches existent: une approche utilitarienne, une approche hicksienne et finalement une approche du bonheur rapporté. 
 
@@ -15,13 +15,13 @@ Pour chaque citoyen :math:`i\in \{1,\ldots,N\}`, on peut construire une fonction
 .. math::
    U_1(B_1) + U_2(B_2) + \ldots + U_N(B_N). 
 
-Si on utilise ce critère de bien-être, alors une politique :math:`\mathcal P_0` est mieux que l'alternative :math:`\mathcal P_1` si le bien-être est plus élevé. Içi la fonction qui aggrège les utilités des différents citoyens est linéaire, tel que proposé par `Bentham <https://fr.wikipedia.org/wiki/Jeremy_Bentham>`_, mais on peut aussi généraliser à d'autres formes, par exemple l'utilité minimale (`Rawls <https://fr.wikipedia.org/wiki/John_Rawls>`_). 
+Si on utilise ce critère de bien-être, alors une politique :math:`\mathcal P_0` est mieux que l'alternative :math:`\mathcal P_1` si le bien-être est plus élevé. Içi la fonction qui aggrège les utilités des différents citoyens est linéaire, tel que proposé par `Bentham <https://fr.wikipedia.org/wiki/Jeremy_Bentham>`_, mais on peut aussi généraliser à d'autres formes, par exemple l'utilité minimale sous-jacente à la théorie de la justice sociale de (`Rawls <https://fr.wikipedia.org/wiki/John_Rawls>`_). 
 
 Cette approche est problématique et peu utilisée. Elle suppose des utilités cardinales alors que les utilités sont ordinales... On se rappelle bien sur que :math:`U_1` represente les préférences du citoyen :math:`1`, mais :math:`f(U_1)` représente les mêmes préférences pour n'importe quelle fonction croissante :math:`f`. Il existe un nombre infini de fonctions d'utilités qui représentent les mêmes préférences. Par exemple, on aurait pu prendre :math:`2\times U_1`, ce qui peut affecter le choix de politique si une politique favorise davantage ce citoyen...
 
 Donc, le classement des politiques est ambigue: on peut avoir :math:`\mathcal P_0` mieux si :math:`W = U_1 + U_2` alors que :math:`\mathcal P_1` est mieux si on utilise :math:`W = 2U_1 + U_2`
 
-En somme, le bien-être devrait dépendre des préférences et non de :math:`U`. Il demeure que sans trahir l'ordinalité des préférences, les utilités demeurent utiles. On peut définir par exemple une amélioration au sens de Pareto, si l'utilité de tous les individus est au moins égale au niveau de référence avec un changement de politique. Si personne ne perd, et que certains gagnent, cette situation peut être considérée meilleure au sens de `Pareto <https://fr.wikipedia.org/wiki/Vilfredo_Pareto>`_. 
+En somme, le bien-être devrait dépendre des préférences et non de :math:`U`. Il demeure que sans trahir l'ordinalité des préférences, les utilités demeurent utiles. On peut définir par exemple une **amélioration au sens de Pareto**, si l'utilité de tous les individus est au moins égale au niveau de référence avec un changement de politique. Si personne ne perd, et que certains gagnent, cette situation peut être considérée meilleure au sens de `Pareto <https://fr.wikipedia.org/wiki/Vilfredo_Pareto>`_. 
 
 Variation compensatoire
 +++++++++++++++++++++++
@@ -249,6 +249,14 @@ Il n'en demeure pas moins, que ces mesures peuvent être utile puisque le bonheu
 -  Inconvénients: On peut mesurer le bien-être de différentes façons et les gens ont des manières différentes de répondre. Plusieurs biais psychologiques en jeu. 
 
 Très peu d'études utilisent ces mesures pour évaluater des politiques. Mais il y a beaucoup d'intérêt, pour de bonnes raisons. 
+
+Pour ceux qui veulent approfondir, voici une entrevue avec Angus Deaton sur la mesure du bonheur: 
+
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/pfHcdee4R3M" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
+    </div>
 
 Exemple Python Bien-être
 ++++++++++++++++++++++++

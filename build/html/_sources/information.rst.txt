@@ -5,7 +5,7 @@ Information imparfaite
 ++++++++++++++++++++++
 
 `Akerlof (1970) <https://www.jstor.org/stable/1879431?seq=1#metadata_info_tab_contents>`_ a écrit un texte qui a changé à jamais la façon d'aborder les marchés quand il y a des problèmes d'information. Dans *The Market for Lemons: Quality Uncertainty
-and the Market Mechanism*, il démontre les conséquences dévastatrices sur l'équilibre de marché quand la qualité d'un produit varie et que celle qualité n'est pas observable. 
+and the Market Mechanism*, il démontre les conséquences dévastatrices sur l'équilibre de marché quand la qualité d'un produit varie et que cette qualité n'est pas observable. 
 
 |lemons|
 
@@ -68,7 +68,7 @@ par
 
     \frac{3}{2}\overline{q}(p)=\frac{3}{4}p<p
 
-Ainsi, au prix :math:`p`, personne ne veux acheter du bien. Ceci est vrai pour tout :math:`p`. Il y a écroulement complet du marché et rien ne sera vendu en équilibre. C'est un résultat dramatique mais qui démontre l'effet de l'information imparfaite. Il y a une perte de bien être énorme. 
+Ainsi, au prix :math:`p`, personne ne veux acheter du bien. Ceci est vrai pour tout :math:`p`. Il y a écroulement complet du marché et rien ne sera vendu en équilibre. C'est un résultat dramatique mais qui démontre l'effet de l'information imparfaite. Il y a une perte de bien-être énorme parce que des biens qui ont une valeur supérieure au coût marginal ne sont pas vendues. 
 
 Un mécanisme d'antisélection est à l'oeuvre dans cet exemple. Tout prix qui est intéressant pour le propriétaire d'un bien de qualité :math:`q` est encore plus intéressant pour le propriétaire d'un bien de mauvaise qualité :math:`q^{*}<q`. Ainsi il y a anti-sélection, ceux qui offrent le bien à un prix :math:`p` ont parmi eux une surreprésentation de biens de mauvaise qualité (ceux de bonne qualité ne sont pas sur le marché).  
 
@@ -82,7 +82,7 @@ Dans un contexte d'assurance, l'assureur ne peut généralement observer complè
 .. math::
     \pi(q) = D_0 - \alpha q
 
-où :math:`\pi` est la prime d'assurance et :math:`q` est le nombre de personnes assurées. Parce que les individus ayant un risque inobservable plus élevé sont ceux qui coûtent plus cher à l'assureur mais ont une disposition plus élevér à acheter l'assurance, le coût marginal pour l'assureur augmente dans la prime :math:`\pi`. Plus la prime augmente, plus le risque moyen augmente parmi ceux qui achètent l'assurance. Supposons une courbe de coût marginal est donnée par 
+où :math:`\pi` est la prime d'assurance et :math:`q` est le nombre de personnes assurées. Parce que les individus ayant un risque inobservable plus élevé sont ceux qui coûtent plus cher à l'assureur mais ont une disposition plus élevée à acheter l'assurance, le coût marginal pour l'assureur augmente dans la prime :math:`\pi`. Plus la prime augmente, plus le risque moyen augmente parmi ceux qui achètent l'assurance. Supposons une courbe de coût marginal donnée par 
 
 .. math::
     c(\pi) = C_0 + \beta \pi
@@ -102,7 +102,7 @@ La prime qui est optimale au sens de Pareto est celle telle que le coût margina
     q^* =& \frac{(1-\beta)D_0 - C_0}{\alpha(1-\beta)}
     \end{aligned}
 
-Que se passe-t-il en équilibre de marché? Si le risque est observable, on aura le même résultat que l'optimum de Pareto puisque les conditions du 1er théorème du bien-être s'applique. L'équilibre de marché est un optimum de Pareto.  Par contre, la situation où les assureurs n'observent pas le risque est bien différente. Les assureurs en competition opère au point ou la prime est égale au coût moyen (elles ne font pas de profits ainsi...). Quel est le coût moyen? D'abord le coût total est donné par
+Que se passe-t-il en équilibre de marché? Si le risque est observable, on aura le même résultat que l'optimum de Pareto puisque les conditions du 1er théorème du bien-être s'appliquent. L'équilibre de marché est un optimum de Pareto.  Par contre, la situation où les assureurs n'observent pas le risque est bien différente. Les assureurs en competition opèrent au point où la prime est égale au coût moyen (elles ne font pas de profits ainsi...). Quel est le coût moyen? D'abord le coût total est donné par
 
 .. math:: 
 
@@ -124,7 +124,12 @@ On a donc un équilibre de marché quand la prime est égale au coût moyen (alo
     D_0 - \alpha q = C_0 + \beta D_0  - \frac{\alpha\beta}{2}q \\
     \hat{q} = \frac{(1-\beta)D_0 - C_0}{\alpha(1-\frac{\beta}{2})}
 
-On remarque que  :math:`\hat{q} < q^*`. Ainsi, l'antisélection réduit le nombre de personnes assurées. La prime d'équilibre est aussi plus élevée. Graphiquement, on obtient: 
+On remarque que  :math:`\hat{q} < q^*`. Ainsi, l'antisélection réduit le nombre de personnes assurées. La prime d'équilibre est aussi plus élevée. 
+
+|einav|
+
+.. |einav| image:: /images/dw_selection.png 
+   :scale: 100%
 
 La perte de bien-être vient du fait que des gens qui devraient être assurés ne le sont pas parce que l'assureur anticipe correctement qu'une baisse de prime entraine l'arrivée des mauvais risques, ce qui lui ferait faire une perte. La perte de bien-être est mesurée par le triangle CDE dans le graphique ci-haut. 
 
@@ -155,3 +160,7 @@ Question en classe: Le Canada doit-il se doter d'un régime d'assurance-médicam
 - Communiqué de Presse du `Conseil du Patronat <https://www.cpq.qc.ca/fr/publications/communiques-de-presse/le-cpq-est-perplexe-quant-aux-recommandations-du-rapport-sur-un-regime-national-d-assurance-medicaments/>`_. 
 - Rapport du `Fraser Institute <https://www.fraserinstitute.org/sites/default/files/lessons-quebec-universal-prescription-drug-insurance-program.pdf>`_. 
 
+Exemple Python 
+++++++++++++++
+
+À venir...

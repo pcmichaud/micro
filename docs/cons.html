@@ -87,7 +87,7 @@
             
               <p class="caption"><span class="caption-text">Menu:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="plan.html">Objectifs du cours</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plan.html">Plan de cours</a></li>
 <li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Consommateur</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#preferences">Préférences</a></li>
@@ -103,13 +103,12 @@
 <li class="toctree-l1"><a class="reference internal" href="effets.html">Effets Prix et Revenu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="risque.html">Le Risque</a></li>
 <li class="toctree-l1"><a class="reference internal" href="time.html">Le Temps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="labor.html">Le Travail</a></li>
 <li class="toctree-l1"><a class="reference internal" href="welfare.html">Bien-être</a></li>
 <li class="toctree-l1"><a class="reference internal" href="echange.html">Échange</a></li>
-<li class="toctree-l1"><a class="reference internal" href="production.html">La production</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gemodel.html">Équilibre général</a></li>
+<li class="toctree-l1"><a class="reference internal" href="production.html">La Production</a></li>
 <li class="toctree-l1"><a class="reference internal" href="strategy.html">Concurrence imparfaite</a></li>
-<li class="toctree-l1"><a class="reference internal" href="selection.html">Asymétrie d’information</a></li>
-<li class="toctree-l1"><a class="reference internal" href="intervention.html">Politiques publiques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="information.html">Asymétrie d’information</a></li>
 </ul>
 
             
@@ -177,7 +176,7 @@
             
   <div class="section" id="consommateur">
 <span id="cons"></span><h1>Consommateur<a class="headerlink" href="#consommateur" title="Lien permanent vers ce titre">¶</a></h1>
-<p>Les fondements de la microéconomie débutent avec le comportement du consommateur. On veut prédire ce que ferait un consommateur dans une situation donnée. On veut faire du sens des comportements observés. La théorie paraîtra simpliste, mais de ces fondements, on sera capable d’assez bien prédire le comportement économique des consommateurs. Des raffinements existent, certains ont même révisé ces fondements pour y introduire une approche comportementale où les individus ont des biais, répondent aux émotions, à des limites cognitives, etc.</p>
+<p>Les fondements de la microéconomie débutent avec le comportement du consommateur. On veut prédire ce que ferait un consommateur dans une situation donnée. On veut faire du sens des comportements observés. La théorie paraîtra simpliste, mais de ces fondements, on sera capable d’assez bien prédire le comportement économique des consommateurs. Des raffinements existent, certains ont même révisé les fondements pour y introduire une approche comportementale où les individus ont des biais, répondent aux émotions, à des limites cognitives, etc.</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="_images/distribution_conso.jpeg"><img alt="_images/distribution_conso.jpeg" src="_images/distribution_conso.jpeg" style="width: 260.0px; height: 194.0px;" /></a>
 </div>
@@ -188,13 +187,13 @@
 <li><p>Panier: vecteur de quantités <span class="math notranslate nohighlight">\(x = (x_1, x_2,\cdots,x_n)\)</span>.</p></li>
 <li><p>Pour deux paniers <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>, préférences dictent lequel
 est préféré</p></li>
-<li><p>Préférences sont comme liste de souhait (hierarchisée): ignore les
-prix et les ressources. Viendra plus tard.</p></li>
+<li><p>Préférences sont comme des listes de souhaits (hierarchisée): on ignore les
+prix et les ressources.</p></li>
 <li><p>Les relations de préférences sont dénotées par
 <span class="math notranslate nohighlight">\(\succ,\succeq,\sim\)</span>.</p></li>
 </ul>
 <p><strong>Hypothèses importantes sur les préférences</strong></p>
-<p>Ces hypothèses ou axiomes sont nécessaires pour en arriver à une théorie du comportement. On note les plus importantes:</p>
+<p>Des hypothèses ou axiomes sont nécessaires pour en arriver à une théorie du comportement du consommateur. On note les plus importantes:</p>
 <p><em>Exhaustive</em></p>
 <p>Pour tous paniers A et B soit le consommateur:</p>
 <ul class="simple">
@@ -216,7 +215,7 @@ froid), (soupe, chaleur), (soupe, froid). La relation de préférence est alors 
 <span class="math notranslate nohighlight">\(B \succ C\)</span>, alors le consommateur préfère A à C
 (<span class="math notranslate nohighlight">\(A \succ C\)</span>).</p></li>
 </ul>
-<p>Cette hypothèse n’est pas toujours vérifiée… Surtout en présence d’incertitude.</p>
+<p>Cette hypothèse paraît logique. Mais elle n’est pas toujours vérifiée… Surtout en présence d’incertitude. Nous la garderons quand même.</p>
 <p><em>Non-satiation</em></p>
 <ul class="simple">
 <li><p>Si A contient au moins autant que le panier B, strictement plus d’au
@@ -235,9 +234,9 @@ pollution).</p></li>
 <p>Deux biens <span class="math notranslate nohighlight">\(X,Y\)</span>:</p>
 <ul class="simple">
 <li><p>Pour tout panier <span class="math notranslate nohighlight">\((X_0,Y_0)\)</span>, combinaisons <span class="math notranslate nohighlight">\((X,Y)\)</span> telles
-que consommateur indifférent entre <span class="math notranslate nohighlight">\((X,Y)\)</span> et
+que le consommateur est indifférent entre <span class="math notranslate nohighlight">\((X,Y)\)</span> et
 <span class="math notranslate nohighlight">\((X_0,Y_0)\)</span></p></li>
-<li><p>Courbe indifférence vers nord-est indique niveau utilité plus élevé
+<li><p>Courbe indifférence vers le haut indique niveau utilité plus élevé
 (non-satiation)</p></li>
 </ul>
 <p>Les courbes d’indifférence ne se croisent pas si elle respectve la transitivité.</p>
@@ -247,7 +246,7 @@ ne respectent pas la transitivité.</p>
 <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
     <iframe src="https://www.youtube.com/embed/P44fP8dFZxM" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
 </div><p><strong>Taux marginal de substitution (TMS)</strong></p>
-<p>Ces courbes d’indifférences contienent plus d’information qu’on croit …</p>
+<p>Ces courbes d’indifférences contiennent plus d’information qu’on croit …</p>
 <ul class="simple">
 <li><p>Pour un panier <span class="math notranslate nohighlight">\((X_0, Y_0)\)</span>, TMS de <span class="math notranslate nohighlight">\(X\)</span> en fonction de
 <span class="math notranslate nohighlight">\(Y\)</span>: Quantité du bien <span class="math notranslate nohighlight">\(Y\)</span> que le consommateur est
@@ -258,10 +257,7 @@ d’unités d’un autre bien <span class="math notranslate nohighlight">\(Y\)</
 <span class="math notranslate nohighlight">\((X_0,Y_0)\)</span>.</p></li>
 </ul>
 <p><strong>Convexité des courbes d’indifférences</strong></p>
-<ul class="simple">
-<li><p>Si la quantité de nourriture (<span class="math notranslate nohighlight">\(X\)</span>) augmente, comment le TMS de
-<span class="math notranslate nohighlight">\(X\)</span> en fonction de <span class="math notranslate nohighlight">\(Y\)</span> change?</p></li>
-</ul>
+<p>Si la quantité de nourriture (<span class="math notranslate nohighlight">\(X\)</span>) augmente, comment le TMS de <span class="math notranslate nohighlight">\(X\)</span> en fonction de <span class="math notranslate nohighlight">\(Y\)</span> change?</p>
 <p>Il diminue généralement. Ceci est représenté par des courbes d’indifférences convexes. Même s’il y a non-satiation, on accepte généralement que l’intensité de la préférence associée à une unité additionelle est plus faible avec le nombre d’unités consommées.</p>
 </div>
 <div class="section" id="utilite">
@@ -283,7 +279,7 @@ les même préférences.</p>
 </li>
 <li><p>La valeur de l’utilité n’a pas de signification, l’ordonnancement des
 paniers est important.</p></li>
-<li><p>Exemple: <span class="math notranslate nohighlight">\(U(X,Y) = \ln X + \ln Y\)</span> et <span class="math notranslate nohighlight">\(V(X,Y) = XY\)</span> représente les
+<li><p>Exemple: <span class="math notranslate nohighlight">\(U(X,Y) = \ln X + \ln Y\)</span> et <span class="math notranslate nohighlight">\(V(X,Y) = XY\)</span> représentent les
 mêmes préférences</p></li>
 </ul>
 <p><em>Exercice B</em>: Montrez que <span class="math notranslate nohighlight">\(U\)</span> et <span class="math notranslate nohighlight">\(V\)</span> dans l’exemple ont les mêmes
@@ -313,7 +309,7 @@ changement <span class="math notranslate nohighlight">\(\Delta Y\)</span> qui co
 \[\Rightarrow \;\; TMS = \Delta Y/ \Delta X =  -\frac{\partial U}{\partial X}/ \frac{\partial U}{\partial Y}\]</div>
 </li>
 </ul>
-<p>On réfère à <span class="math notranslate nohighlight">\(\frac{\partial U}{\partial X}\)</span> comme étant l’utilité marginale de <span class="math notranslate nohighlight">\(x\)</span> (et vice-versa pour <span class="math notranslate nohighlight">\(y\)</span>). L’utilité marginale est généralement décroissante mais positive (attention: l’utilité n’est pas décroissante, seule l’utilité marginale).</p>
+<p>On réfère à <span class="math notranslate nohighlight">\(\frac{\partial U}{\partial X}\)</span> comme étant l’utilité marginale de <span class="math notranslate nohighlight">\(X\)</span> (et vice-versa pour <span class="math notranslate nohighlight">\(Y\)</span>). L’utilité marginale est généralement décroissante mais positive (attention: l’utilité n’est pas décroissante, seule l’utilité marginale).</p>
 <p>Exemple:</p>
 <ul>
 <li><p><span class="math notranslate nohighlight">\(U(X,Y) = \ln X + \ln Y\)</span></p>
@@ -340,20 +336,19 @@ dU = \frac{\partial U}{\partial X}dX + \frac{\partial U}{\partial Y}dY\end{align
 </div>
 <div class="section" id="contrainte-budgetaire">
 <h2>Contrainte budgétaire<a class="headerlink" href="#contrainte-budgetaire" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Jusqu’içi, le consommateur a tous les paniers devant lui et a des préférences sur ceux-ci. Il peut tout avoir. En pratique, Il pourra acheter les biens, mais à un prix. Et ce prix est important parce qu’il a une richesse limitée pour consommer. Tout achat a un coût d’opportunité.</p>
+<p>Jusqu’içi, le consommateur a tous les paniers devant lui et a des préférences sur ceux-ci. Il peut tout avoir! En pratique, Il pourra acheter les biens, mais à un prix. Et ce prix est important parce qu’il a une richesse limitée pour consommer. Tout achat a un coût d’opportunité.</p>
 <ul>
 <li><p>On ne peut pas dépenser davantage que notre richesse <span class="math notranslate nohighlight">\(I\)</span></p></li>
 <li><div class="line-block">
 <div class="line">Deux biens <span class="math notranslate nohighlight">\(X\)</span>, <span class="math notranslate nohighlight">\(Y\)</span>: Contrainte:
-<span class="math notranslate nohighlight">\(p_X X + p_Y Y = I\)</span></div>
-<div class="line">Donne ce qui est abordable étant donné <span class="math notranslate nohighlight">\(I\)</span></div>
+<span class="math notranslate nohighlight">\(p_X X + p_Y Y \leq I\)</span>. Cette contrainte donne ce qui est abordable étant donné <span class="math notranslate nohighlight">\(I\)</span></div>
 </div>
 </li>
 <li><div class="line-block">
-<div class="line">Résoudre pour <span class="math notranslate nohighlight">\(Y\)</span> en terme de <span class="math notranslate nohighlight">\(X\)</span>:
+<div class="line">En posant l’égalité, on peut résoudre pour <span class="math notranslate nohighlight">\(Y\)</span> en terme de <span class="math notranslate nohighlight">\(X\)</span>:
 <span class="math notranslate nohighlight">\(Y = \frac{I - p_X X}{p_Y}\)</span></div>
-<div class="line">Le prix relative entre <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span> en respectant la
-contrainte:</div>
+<div class="line">Le prix relatif entre <span class="math notranslate nohighlight">\(X\)</span> et <span class="math notranslate nohighlight">\(Y\)</span> en respectant la
+contrainte est:</div>
 </div>
 <blockquote>
 <div><div class="math notranslate nohighlight">
@@ -362,7 +357,10 @@ contrainte:</div>
 </li>
 </ul>
 <p>Acheter une unité de <span class="math notranslate nohighlight">\(X\)</span> implique un sacrifice de <span class="math notranslate nohighlight">\(\frac{p_X}{p_Y}\)</span> unités de <span class="math notranslate nohighlight">\(Y\)</span>. C’est le coût d’opportunité de <span class="math notranslate nohighlight">\(X\)</span> en terme de <span class="math notranslate nohighlight">\(Y\)</span>.</p>
-<p>Dans l’espace <span class="math notranslate nohighlight">\((X,Y)\)</span>, la contrainte définie les allocations possibles. Celles au dessus ne sont pas possibles. Seules celles entre l’origine est la contrainte sont possibles…</p>
+<div class="figure align-default" id="id1">
+<a class="reference internal image-reference" href="_images/budget_cons.png"><img alt="_images/budget_cons.png" src="_images/budget_cons.png" style="width: 381.75px; height: 268.5px;" /></a>
+<p class="caption"><span class="caption-text">Dans l’espace <span class="math notranslate nohighlight">\((X,Y)\)</span>, la contrainte définie les allocations possibles. Celles au dessus ne sont pas possibles. Seules celles entre l’origine est la contrainte sont possibles…</span><a class="headerlink" href="#id1" title="Lien permanent vers cette image">¶</a></p>
+</div>
 <p><strong>Normalisation</strong></p>
 <ul class="simple">
 <li><p>Contrainte budgétaire demeure la même si prix et richesse multipliés par même
@@ -388,6 +386,10 @@ contrainte</p></li>
 <li><p>La courbe d’indifférence qui touche la contrainte (souvent tangente)
 donne le meilleur niveau de bien-être possible</p></li>
 </ul>
+<div class="figure align-default" id="id2">
+<a class="reference internal image-reference" href="_images/choice_cons.png"><img alt="_images/choice_cons.png" src="_images/choice_cons.png" style="width: 458.25px; height: 363.75px;" /></a>
+<p class="caption"><span class="caption-text">Les points A, C et D sont possibles étant donné la contrainte. Donc, le point B peut être éliminé même si le TMS (pente au point B) semble très près du rapport du prix. Le point D peut être éliminé parce que le consommateur ne consomme pas tout son budget. Il peut donc aller sur une autre courbe d’indifférence en augmentant sa consommation des deux biens. Les allocations A et C dépensent tout le budget. Mais C n’est pas optimal. En valeur absolue, le TMS est plus élevé que la coût d’opportunité de consommer une unité de X additionelle. Donc, on peut augmenter X et réduire Y tout en augmentant l’utilité. Le point A est optimal, le TMS est égale au rapport de prix.</span><a class="headerlink" href="#id2" title="Lien permanent vers cette image">¶</a></p>
+</div>
 <p><strong>Approche Directe</strong></p>
 <p>Le problème est</p>
 <ul class="simple">

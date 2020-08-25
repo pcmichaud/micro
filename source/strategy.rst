@@ -28,7 +28,7 @@ Le surplus du producteur est donné par:
 Manipulation stratégique du prix
 ++++++++++++++++++++++++++++++++
 
-Une firme qui peut par son choix de production affecter le prix d'équilibre et faire un profit additionelle a un pouvoir de marché. Elle peut réduire sa production, au delà de la quantité qui serait Pareto optimale en concurrence parfaite. Ceci mènera à un prix qui est au dessus du coût marginal et ainsi augmenter ses profits. 
+Une firme qui peut par son choix de production affecter le prix d'équilibre et faire un profit additionelle a un pouvoir de marché. Elle peut réduire sa production, en dessous de de la quantité qui serait Pareto optimale en concurrence parfaite. Ceci mènera à un prix qui est au dessus du coût marginal et ainsi augmenter ses profits. 
 
 Pour comprendre la nature de cette stratégie, observons que l'entreprise choisie  :math:`X` afin de maximiser
 
@@ -45,7 +45,7 @@ Ceci mène à un choix :math:`X_{PM}` such tel que
 
 Le premier terme à droite est l'effet *marginal* d'une augmentation de la quantité. L'unité supplémentaire rapporte :math:`p(X_{PM})`. Cet effet est aussi présent quand la firme est *prenneur de prix*, la quantité est choisie tel que le prix (revenu marginal) est égale au coût marginal de produire cette unité. 
 
-Un deuxième terme est présent à gauche. Il s'agit de l'effet *infra-marginal*. Quand la firme augmente sa quantité d'une unité, le prix baisse (pas de bien Giffen svp...). Ainsi, le revenu qu'elle fait sur les :math:`X_{PM}`unités déjà produite baisse. Cet effet est négatif (puisque :math:`p'(\cdot)` est négatif. Ainsi, le revenu marginal est plus faible qu'en l'absence de manipulation stratégique. L'entreprise diminuera donc sa production jusqu'à rétablir cette égalité. 
+Un deuxième terme est présent à gauche. Il s'agit de l'effet *infra-marginal*. Quand la firme augmente sa quantité d'une unité, le prix baisse (pas de bien Giffen svp...). Ainsi, le revenu qu'elle fait sur les :math:`X_{PM}`unités déjà produite baisse. Cet effet est négatif (puisque :math:`p'(\cdot)` est négatif). Ainsi, le revenu marginal est plus faible qu'en l'absence de manipulation stratégique. L'entreprise diminuera donc sa production jusqu'à rétablir cette égalité. 
 
 **Exercice B** Trouvez le prix d'équilibre si l'entreprise fait de la manipulation stratégique du prix et
 :math:`V(X) = \sqrt{X}`, :math:`C(X) = X^2`. Comparer graphiquement par rapport à la situation où la firme est *preneur de prix*.
@@ -55,7 +55,7 @@ Un deuxième terme est présent à gauche. Il s'agit de l'effet *infra-marginal*
 Monopole
 ++++++++
 
-Le monopole existe quand une seule firme est présente sur un marché. Si la demande n'est pas complètemenet élastique, elle va se prêter à la manipulation stratégique du prix d'équilibre. 
+Le monopole existe quand une seule firme est présente sur un marché. Si la demande n'est pas complètement élastique, elle va se prêter à la manipulation stratégique du prix d'équilibre. 
 
 Puisque qu'au niveau de production optimal :math:`X_{PM}` on a 
 
@@ -78,7 +78,7 @@ D'autres situations sont plus compliquées. Par exemple, des coûts fixes import
         <iframe src="https://www.youtube.com/embed/1zLxUzcKiEA" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
     </div>
 
-Question pour discussion en classe, est-ce que la SAQ est un monopole naturel ou devrait-il être démantelée?
+Question pour discussion en classe, est-ce que la SAQ est un monopole naturel ou devrait-elle être démantelée?
 
 Voir ce rapport bien remplie de `PWC <http://www.finances.gouv.qc.ca/documents/Autres/fr/AUTFR_RapportSAQ2018.pdf0>`_ pour le Ministère des Finances du Québec. Voir aussi cette entrevue avec le PDQ de la SAQ: 
 
@@ -88,7 +88,6 @@ Voir ce rapport bien remplie de `PWC <http://www.finances.gouv.qc.ca/documents/A
         <iframe src="https://www.youtube.com/embed/jLaJ99mg0XE" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
     </div>
 
-Pas facile de trancher...
 
 Dans le cas d'un monopole artificiel, Le monopole fait des profits. Ces profits sont donnés par:
 
@@ -96,15 +95,15 @@ Dans le cas d'un monopole artificiel, Le monopole fait des profits. Ces profits 
 
 Ces profits reduisent le surplus du consommateur sur les unités produites par le monopole. Mais cette *rente* ne consistue pas une perte de bien-être. Ce sont les unités qui ne sont pas produites qui mènent à une perte de bien-être. Le monopole mène à une perte de bien-être parce que :math:`X_{PT}>X_{PM}` et :math:`V'(X)-C'(X)>0` sur ces unités.
 
-**Exercice D**: Montrez les profits et la rente du monopoleur dans le graphique fait à l'exercice B. 
+**Exercice D**: Montrez les profits et la rente du monopoleur dans le graphique fait à l'exercice B. Montrez la perte de bien-être. 
 
 
 Duopole
 +++++++
 
-On utilise le terme *duopole* pour dénoter un marché avec deux firmes et *oligopole* pour un marché avec un faible nombre de firmes. Dans cette section, nous nous concentrerons sur une situation à deux firmes et discuteront du cas avec plusieurs firmes.
+On utilise le terme *duopole* pour dénoter un marché avec deux firmes et *oligopole* pour un marché avec un faible nombre de firmes. Dans cette section, nous nous concentrerons sur une situation à deux firmes et discuterons du cas avec plusieurs firmes.
 
-Pour modéliser comment les deux firmes d'un *duopole* se comporte, on doit déterminer si celles-ci se font la compétition sur les quantités ou sur les prix. La distinction a des implications importantes. Dans une situation où la capacité est un enjeu, c'est-à-dire qu'une seule des firmes ne peut innonder le marché, ou des investissements sont importants pour bâtir un inventaire, on parlera de compétition sur les quantités, où à la `Cournot <https://fr.wikipedia.org/wiki/Antoine-Augustin_Cournot>`_. Quand la production se fait rapidement, sans coûts fixes important, et que chacune des firmes est capable de fournir le marché, on parle plutôt de compétition sur les prix, où à la `Bertrand <https://fr.wikipedia.org/wiki/Joseph_Bertrand>`_.  
+Pour modéliser comment les deux firmes d'un *duopole* se comportent, on doit déterminer si celles-ci se font la compétition sur les quantités ou sur les prix. La distinction a des implications importantes. Dans une situation où la capacité est un enjeu, c'est-à-dire qu'une seule des firmes ne peut innonder le marché, ou des investissements sont importants pour bâtir un inventaire, on parlera de compétition sur les quantités, où à la `Cournot <https://fr.wikipedia.org/wiki/Antoine-Augustin_Cournot>`_. Quand la production se fait rapidement, sans coûts fixes important, et que chacune des firmes est capable de fournir le marché, on parle plutôt de compétition sur les prix, où à la `Bertrand <https://fr.wikipedia.org/wiki/Joseph_Bertrand>`_.  
 
 Cournot
 ~~~~~~~
@@ -122,7 +121,7 @@ Les consommateurs ont des préférences représentées par :math:`U(X,M) =V(X) +
 
    .. math:: V(X) = D_0 X - \frac{\alpha}{2} X^2
 
-Les coûts des deux entreprises sont représentés par :math:`C_A(X) = C_B(X)= c X`. On a déjà vu que dans le cas de préférence quasi-linéaire, la demande inverse est représentée par :math:`P(X) = V'(X) = D_0 - \alpha X`. 
+Les coûts des deux entreprises sont représentés par :math:`C_A(X) = C_B(X)= c X`. On a déjà vu que dans le cas de préférences quasi-linéaire, la demande inverse est représentée par :math:`P(X) = V'(X) = D_0 - \alpha X`. 
 
 Avant d'analyser l'équilibre en duopole, on peut d'abord s'intérroger sur le *benchmark*, ce à quoi on va comparer la situation de duopole. Un choix naturel est la production efficiente au sens de Pareto, ce qui est obtenu si les deux entreprises sont *preneur de prix*. 
 
@@ -168,9 +167,9 @@ Dans notre exemple, on a
 
    .. math:: X^*_A =  \frac{D_0 - c - \alpha X_B^*}{ 2 \alpha} \quad et \quad  X^*_B = \frac{D_0 - c -  \alpha X_A^*}{2 \alpha}
 
-Puisque symmétriques, :math:`X^*_A = X^*_B = X^*` donne
+Puisque on  a la symmétrie, :math:`X^*_A = X^*_B = X^*` et donc
 
-   .. math:: X^*_A = X^*_B = X^* = \frac{D_0 - c}{3\alpha}
+   .. math:: X^*_A = X^*_B = X^* = \frac{D_0 - c}{3\alpha}.
 
 La production totale est
 
@@ -189,7 +188,7 @@ Quelques exercices:
   B, :math:`c_B`, avec :math:`c_A=2>c_B=1`. Aussi supposons
   :math:`D_0=10,\alpha=1`. Trouvez les productions d'équilibre des deux firmes.
 
-Que se passe-t-il quand on augmente le nombre de firme? 
+Que se passe-t-il quand on augmente le nombre de firmes? 
 
 Supposons N firmes identiques :math:`F_1,F_2,\cdots,F_N`. Étant donné :math:`X_2, X_3, \cdots, X_N`, la firme :math:`F_1` produit  :math:`X_1` qui maximise
 
@@ -218,7 +217,7 @@ En terme de prix, on obtient,
 
    .. math:: p_N = \frac{1}{N}D_0 +\frac{N}{N+1}c
 
-Ainsi, le prix est égale à :math:`c` quand N devient grand est est le plus élevé quand on est en monopole. 
+Ainsi, le prix est égale à :math:`c` quand N devient grand et plus élevé quand on est en monopole. 
 
 En concurrence (N très grand), les firmes deviennent en terme effectif des *preneurs de prix*, ce qui élimine les rentes de pouvoir de marché. 
 
@@ -232,6 +231,8 @@ Supposons, :math:`p_i = c \quad \forall i`. Si une firme :math:`j` essaie de dé
 L'équilibre de Nash est donc :math:`p_i=c \quad \forall i`. Donc, même avec deux firmes seulement, on a le résultat de concurrence parfaite. 
 
 L'hypothèse importante est que le consommateur peut observer les prix des compétiteurs sans aucun coût. Les biens sont aussi homogènes. 
+
+On doit souligner qu'il y a plusieurs possibilités pour les firmes de faire de la collusion afin de soutenir un prix plus élevé. Ces ententes sont illégales mais ca ne veut pas dire qu'elles ne surviennent pas. 
 
 Pour discussion en classe, est-ce que le cas de Bell vs. ses compétiteurs pour ce qui est de la cablo-diffusion est un bon exemple de barrière à l'entrée dans un contexte de compétition par les prix?
 

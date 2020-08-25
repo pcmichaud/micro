@@ -39,7 +39,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Recherche" href="search.html" />
-    <link rel="next" title="La production" href="production.html" />
+    <link rel="next" title="La Production" href="production.html" />
     <link rel="prev" title="Bien-être" href="welfare.html" /> 
 </head>
 
@@ -87,12 +87,13 @@
             
               <p class="caption"><span class="caption-text">Menu:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="plan.html">Objectifs du cours</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plan.html">Plan de cours</a></li>
 <li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cons.html">Consommateur</a></li>
 <li class="toctree-l1"><a class="reference internal" href="effets.html">Effets Prix et Revenu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="risque.html">Le Risque</a></li>
 <li class="toctree-l1"><a class="reference internal" href="time.html">Le Temps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="labor.html">Le Travail</a></li>
 <li class="toctree-l1"><a class="reference internal" href="welfare.html">Bien-être</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Échange</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#equilibre-de-marche">Équilibre de marché</a></li>
@@ -104,13 +105,12 @@
 <li class="toctree-l2"><a class="reference internal" href="#efficience-des-marches">Efficience des marchés</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#limitations">Limitations</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#un-peu-d-histoire">Un peu d’histoire</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#exemple-python">Exemple Python</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="production.html">La production</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gemodel.html">Équilibre général</a></li>
+<li class="toctree-l1"><a class="reference internal" href="production.html">La Production</a></li>
 <li class="toctree-l1"><a class="reference internal" href="strategy.html">Concurrence imparfaite</a></li>
-<li class="toctree-l1"><a class="reference internal" href="selection.html">Asymétrie d’information</a></li>
-<li class="toctree-l1"><a class="reference internal" href="intervention.html">Politiques publiques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="information.html">Asymétrie d’information</a></li>
 </ul>
 
             
@@ -178,7 +178,7 @@
             
   <div class="section" id="echange">
 <h1>Échange<a class="headerlink" href="#echange" title="Lien permanent vers ce titre">¶</a></h1>
-<p>Pourquoi échanger entre consommateur? par quel moyen? Par le troc, un marché ou bien en nommant quelqu’un qui se chargera de partager les biens entre les personnes. Quel mécanisme fera fera le mieux?</p>
+<p>Pourquoi échanger entre consommateur? par quel moyen? Par le troc, un marché ou bien en nommant quelqu’un qui se chargera de partager les biens entre les personnes. Quel mécanisme fera le mieux?</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="_images/barter.jpeg"><img alt="_images/barter.jpeg" src="_images/barter.jpeg" style="width: 800.0px; height: 572.0px;" /></a>
 </div>
@@ -201,7 +201,7 @@
 <div class="section" id="equilibre-de-marche">
 <h2>Équilibre de marché<a class="headerlink" href="#equilibre-de-marche" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Le marché est une forme d’échange très répandue. En terme de modélisation, le marché est résumé par un vecteur de prix (s’il y a plusieurs biens) et un système légal qui encadre les transactions.</p>
-<p>Si chaque consommateur a une dotation et une demande individuelle pour les biens en fonction des prix, on peut assez facilement trouver un l’équilibre de marché, içi d’échange, puisqu’il n’y a pas de production. Pensez à Kijiji.</p>
+<p>Si chaque consommateur a une dotation et une demande individuelle pour les biens en fonction des prix, on peut assez facilement trouver un équilibre de marché, içi d’échange, puisqu’il n’y a pas de production. Pensez à <a class="reference external" href="https://www.kijiji.ca/">Kijiji</a>.</p>
 <p>Pour ce qui est des demandes individuelles,</p>
 <ul>
 <li><p>Consommateur 1 choisi de consommer <span class="math notranslate nohighlight">\((X_1^c, Y_1^c)\)</span></p></li>
@@ -218,7 +218,7 @@
 <div><div class="math notranslate nohighlight">
 \[X_1^c + \frac{p_Y}{p_X} Y_1^c  =   X_1^e + \frac{p_Y}{p_X} Y_1^e\]</div>
 </div></blockquote>
-<p>On peut donc, sans perte d’information, dénoter <span class="math notranslate nohighlight">\(p = p_Y/p_X\)</span>, le prix relatif de <span class="math notranslate nohighlight">\(Y\)</span>. On aurait aussi pu définir le prix comme étant <span class="math notranslate nohighlight">\(p = p_X/p_Y\)</span>!</p>
+<p>On peut donc, sans perdre d’information, dénoter <span class="math notranslate nohighlight">\(p = p_Y/p_X\)</span>, le prix relatif de <span class="math notranslate nohighlight">\(Y\)</span>. On aurait aussi pu définir le prix comme étant <span class="math notranslate nohighlight">\(p = p_X/p_Y\)</span>!</p>
 <p>Comment trouver le prix relatif d’équilibre?</p>
 <ul class="simple">
 <li><p>Étape 1: Demande individuelle: On cherche</p></li>
@@ -233,11 +233,11 @@
 et \quad Y_1^c(p^*)+Y_2^c(p^*) = Y_1^e + Y_2^e\]</div>
 </li>
 </ul>
-<p>Le quantité de <span class="math notranslate nohighlight">\(X\)</span> échangée est donné par <span class="math notranslate nohighlight">\(X_1^c(p^*) - X_1^e =X_2^e - X_2^c(p^*)\)</span>. Si <span class="math notranslate nohighlight">\(X_1^c - X_1^e &lt; 0\)</span>, le consommateur 1 est offreur de <span class="math notranslate nohighlight">\(X\)</span> (le consommateur 2 demandeur).</p>
+<p>Le quantité de <span class="math notranslate nohighlight">\(X\)</span> échangée est donnée par <span class="math notranslate nohighlight">\(X_1^c(p^*) - X_1^e =X_2^e - X_2^c(p^*)\)</span>. Si <span class="math notranslate nohighlight">\(X_1^c - X_1^e &lt; 0\)</span>, le consommateur 1 est offreur de <span class="math notranslate nohighlight">\(X\)</span> (le consommateur 2 demandeur).</p>
 <p>Hypothèses importantes:</p>
 <ul class="simple">
 <li><p>Le marché est compétitif: Le consommateur prend le prix comme donné. Il est <strong>prenneur de prix</strong>.</p></li>
-<li><p>Tous les biens sont homogènes (identifiques) et perçus de la même façon par l’acheteur et le vendeur.</p></li>
+<li><p>Tous les biens sont homogènes (identitiques) et perçus de la même façon par l’acheteur et le vendeur.</p></li>
 <li><p>L’utilité du consommateur 1 ne dépend pas des actions des autres consommateurs: <strong>aucune externalités</strong></p></li>
 </ul>
 <p>Regardons un exemple. Considérons <span class="math notranslate nohighlight">\(U_1(X,Y) = U_2(X,Y) = \log X + \alpha \log Y\)</span>. Fixons <span class="math notranslate nohighlight">\(p_X= 1\)</span>, et donc <span class="math notranslate nohighlight">\(p_Y = p\)</span>. Les dotations sont données par <span class="math notranslate nohighlight">\((X_1^e, Y_1^e, X_2^e, Y_2^e)\)</span>. La solution pour les demandes est:</p>
@@ -283,7 +283,7 @@ X_2^c + p Y_2^c  =   X_2^e + p Y_2^e\]</div>
 <p>Le prix d’équilibre sera fonction des préférences des agents. Dans notre exemple,</p>
 <div class="math notranslate nohighlight">
 \[p^* = \alpha \frac{X_1^e + X_2^e}{Y_1^e + Y_2^e}\]</div>
-<p>Donc le prix de <span class="math notranslate nohighlight">\(Y\)</span> augmente avec la préférence relative pour <span class="math notranslate nohighlight">\(Y\)</span>, donnée par <span class="math notranslate nohighlight">\(\alpha\)</span>. L’offre est fixe, si la demande est élevée, le prix d’équilibre devra être plus élevée pour retrouver un équilibre. Si le bien <span class="math notranslate nohighlight">\(Y\)</span> est rare, c’est-à-dire que <span class="math notranslate nohighlight">\(Y_1^e + Y_2^e\)</span> est faible, le prix d’équilibre sera plus élevé.</p>
+<p>Donc le prix de <span class="math notranslate nohighlight">\(Y\)</span> augmente avec la préférence relative pour <span class="math notranslate nohighlight">\(Y\)</span>, donnée par <span class="math notranslate nohighlight">\(\alpha\)</span>. L’offre étant fixe, si la demande est élevée, le prix d’équilibre devra être plus élevé pour retrouver un équilibre. Si le bien <span class="math notranslate nohighlight">\(Y\)</span> est rare, c’est-à-dire que <span class="math notranslate nohighlight">\(Y_1^e + Y_2^e\)</span> est faible, le prix d’équilibre sera plus élevé.</p>
 <p>Le prix est un signal des préférences et de la rareté relative des biens. Est-ce que l’équilibre de marché garantie le niveau de bien-être le plus élevé que peuvent obtenir les deux agents? Afin de juger de l’allocation de marché, nous devons faire un pas de côté pour définir une allocation optimale, sans le recours au marché.</p>
 </div>
 <div class="section" id="allocation-pareto-efficace">
@@ -296,14 +296,14 @@ X_2^c + p Y_2^c  =   X_2^e + p Y_2^e\]</div>
 </div>
 <p><strong>Exercice A</strong>: Montrer la <span class="math notranslate nohighlight">\((x^e_1,y_1^e) = (50,20)\)</span> et
 <span class="math notranslate nohighlight">\((x^e_2,y_2^e)=(20,50)\)</span> dans une boîte d’Edgeworth.</p>
-<p>Un certain nombre d’observations peuvent être faite à partir de la boîte d’Edgeworth:</p>
-<p>D’abord, un point dans une boite d’Edgeworth ou deux courbes d’indifférence se croisent ne peut être Pareto optimal. Pourquoi, parce qu’on peut définir un noyau par rapport à ce point comme étant toutes les allocations qui mènent à une amélioration de Pareto.</p>
+<p>Un certain nombre d’observations peuvent être faite à partir de la boîte d’Edgeworth.</p>
+<p>D’abord, un point dans une boite d’Edgeworth ou deux courbes d’indifférence se croisent ne peut être Pareto optimal. Pourquoi? Parce qu’on peut définir un noyau par rapport à ce point comme étant toutes les allocations qui mènent à une amélioration de Pareto.</p>
 <div class="figure align-default" id="id2">
 <a class="reference internal image-reference" href="_images/core.png"><img alt="_images/core.png" src="_images/core.png" style="width: 421.4px; height: 270.2px;" /></a>
 <p class="caption"><span class="caption-text">L’allocation A n’est pas optimale: les courbes d’indifférences se croisent. L’allocation A est une amélioration au sens de Pareto. Le noyau est cette zone entre les deux courbes d’indifférences.</span><a class="headerlink" href="#id2" title="Lien permanent vers cette image">¶</a></p>
 </div>
 <p>Quand le noyau est vide, l’allocation est Pareto efficiente ou optimale. Ceci implique que les courbes d’indifférences doivent être tangentes.</p>
-<p>La courbe des contrats est la droite qui passe par toutes les allocations Pareto efficiente. La frontière de Pareto est la courbe dans l’espace <span class="math notranslate nohighlight">\((U_1,U_2)\)</span> qui indique toutes les allocations optimales au sens de Pareto.</p>
+<p>La courbe des contrats est la courbe qui passe par toutes les allocations Pareto efficiente. La frontière de Pareto est la courbe dans l’espace <span class="math notranslate nohighlight">\((U_1,U_2)\)</span> qui indique toutes les allocations optimales au sens de Pareto.</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="_images/contract.png"><img alt="_images/contract.png" src="_images/contract.png" style="width: 428.4px; height: 276.15px;" /></a>
 </div>
@@ -326,7 +326,7 @@ Y_1 + Y_2 \le Y_e\end{aligned}\end{split}\]</div>
 \[\begin{split}\begin{split}
  U(X_1,Y_1) + \lambda(U(X_2,Y_2)-\overline{U}_2) \\
 - \pi_X (X_1+X_2 - X_e) - \pi_Y (Y_1+Y_2-Y_e) \end{split}\end{split}\]</div>
-<p>Il y aura donc 6 CPO et 3 multiplicateurs. Les exercices qui suivant vous aideront à comprendre la démarche pour la solution.</p>
+<p>Il y aura donc 6 CPO et 3 multiplicateurs. Les exercices qui suivent vous aideront à comprendre la démarche pour la solution.</p>
 <p><strong>Exercice B</strong>: Trouvez l’allocation Pareto optimale pour les fonctions d’utilité <span class="math notranslate nohighlight">\(u_1\)</span> et <span class="math notranslate nohighlight">\(u_2\)</span> strictement positive and concave,
 <span class="math notranslate nohighlight">\(u_j = \sqrt{x_j y_j}\)</span> pour les consommateurs <span class="math notranslate nohighlight">\(j=1,2\)</span>, en utilisant la méthode du Lagrangien.</p>
 <p><strong>Exercice C</strong>: Trouvez l’allocation Pareto optimale pour les fonctions d’utilités <span class="math notranslate nohighlight">\(u_j = \sqrt{x_j y_j}\)</span> pour les consommateurs <span class="math notranslate nohighlight">\(j=1,2\)</span> avec les dotations <span class="math notranslate nohighlight">\(x_e = 128\)</span> et <span class="math notranslate nohighlight">\(y_e=32\)</span> si
@@ -355,14 +355,14 @@ est-elle optimale au sens de Pareto? Si elle ne l’est pas, trouvez une amélio
 <p>Pourquoi ce résultat? À l’allocation d’équilibre <span class="math notranslate nohighlight">\(X^c_1(p^*),Y^c_1(p^*),X^c_2(p^*),Y^c_1(p^*)\)</span> les courbes d’indifférences sont tangentes à la même contrainte budgétaire. Si elles sont tangentes, c’est donc qu’on a une allocation Pareto optimale.</p>
 <p><strong>Deuxième théorème</strong></p>
 <ul class="simple">
-<li><p>On peut obtenir n’importe quelle allocation Pareto optimale par un équilibre de marché où on devra potentiellement redistribuer les dotations.</p></li>
+<li><p>On peut obtenir n’importe quelle allocation Pareto optimale par un équilibre de marché où on devra redistribuer les dotations.</p></li>
 </ul>
 <p>Ceci nécessite la possibilité d’imposer des taxes, ou confisquer des dotations: paiments ou taxes dites <em>lump-sum</em>. On dit alors que l’allocation des ressources est décentralisée (le fruit d’un équilibre de marché et de redistribution des dotations).</p>
 <p>Pourquoi ca fonctionne?</p>
-<p>Pour toute allocation <span class="math notranslate nohighlight">\((X_1^*,Y_1^*)\)</span>, et valeur conséquente pour <span class="math notranslate nohighlight">\((X_2^*,Y_2^*)\)</span>,  les courbes d’indifférence sont tangentes. À cette ligne de tangence, on peut redistribuer les dotations pour trouver un point sur cette ligne. N’importe quelle dotation finale (après transfert) sur cette ligne, mène à un équilibre de marché avec <span class="math notranslate nohighlight">\((X^*,Y^*)\)</span>.</p>
+<p>Pour toute allocation <span class="math notranslate nohighlight">\((X_1^*,Y_1^*)\)</span>, et valeurs conséquentes pour <span class="math notranslate nohighlight">\((X_2^*,Y_2^*)\)</span>,  les courbes d’indifférence sont tangentes. À cette ligne de tangence, on peut redistribuer les dotations pour trouver un point sur cette ligne. N’importe quelle dotation finale (après transfert) sur cette ligne, mène à un équilibre de marché avec <span class="math notranslate nohighlight">\((X^*,Y^*)\)</span>.</p>
 <div class="figure align-default" id="id5">
 <a class="reference internal image-reference" href="_images/transfer-equilibrium.png"><img alt="_images/transfer-equilibrium.png" src="_images/transfer-equilibrium.png" style="width: 612.5px; height: 391.0px;" /></a>
-<p class="caption"><span class="caption-text">L’optimum de Pareto A n’est pas atteignable à partir de la dotation <span class="math notranslate nohighlight">\(E_0\)</span>. Mais un transfert de <span class="math notranslate nohighlight">\(T_X\)</span> du bien <span class="math notranslate nohighlight">\(X\)</span> provenant du consommateur 1 au consommateur 2, permet d’atteindre la dotation  <span class="math notranslate nohighlight">\(E_1\)</span>, à partir de laquelle on peut attendre l’optimum de Pareto A avec un équilibre de marché au prix <span class="math notranslate nohighlight">\(p\)</span>.</span><a class="headerlink" href="#id5" title="Lien permanent vers cette image">¶</a></p>
+<p class="caption"><span class="caption-text">L’optimum de Pareto A n’est pas atteignable à partir de la dotation <span class="math notranslate nohighlight">\(E_0\)</span>. Mais un transfert de <span class="math notranslate nohighlight">\(T_X\)</span> du bien <span class="math notranslate nohighlight">\(X\)</span> provenant du consommateur 2 au consommateur 1, permet d’atteindre la dotation  <span class="math notranslate nohighlight">\(E_1\)</span>, à partir de laquelle on peut attendre l’optimum de Pareto A avec un équilibre de marché au prix <span class="math notranslate nohighlight">\(p\)</span>.</span><a class="headerlink" href="#id5" title="Lien permanent vers cette image">¶</a></p>
 </div>
 <p><strong>Exercice E</strong>: Trouvez le transfert de dotation et de prix, partant de <span class="math notranslate nohighlight">\((64,28,64,4)\)</span>, qui donne l’allocation trouvée à l’exercice D.</p>
 </div>
@@ -385,7 +385,7 @@ est-elle optimale au sens de Pareto? Si elle ne l’est pas, trouvez une amélio
 <li><p>Aucune externalités</p></li>
 <li><p>On peut imposer des taxes <em>lump-sum</em> (pour le 2e théorème)</p></li>
 </ul>
-<p>Même si son cadre est simpliste, et certains diront que peu de marchés remplissent les conditions, il s’agit d’un modèle qui permet de fixer un <em>benchmark</em>, ou un contre-factuel, afin de réflechir aux failles de marchés de manière précise et structuré.</p>
+<p>Même si son cadre est simpliste, et certains diront que peu de marchés remplissent ces conditions, il s’agit d’un modèle qui permet de fixer un <em>benchmark</em>, ou un contre-factuel, afin de réflechir aux failles de marchés de manière précise et structuré.</p>
 <p>La théorie de l’équilibre générale a eu un impact certain sur l’économie: en particulier en macroéconomie et pour les marchés financiers. Comme nous le verrons plus tard, les gouvernements mais aussi d’autres organisations, utilisent ces modèles pour prédire l’effet de différentes politiques, notamment en ce qui attrait au climat.</p>
 </div>
 <div class="section" id="un-peu-d-histoire">
@@ -398,6 +398,10 @@ est-elle optimale au sens de Pareto? Si elle ne l’est pas, trouvez une amélio
 Thought</a></span><a class="headerlink" href="#id6" title="Lien permanent vers cette image">¶</a></p>
 </div>
 </div>
+<div class="section" id="exemple-python">
+<h2>Exemple Python<a class="headerlink" href="#exemple-python" title="Lien permanent vers ce titre">¶</a></h2>
+<p>À venir.</p>
+</div>
 </div>
 
 
@@ -408,7 +412,7 @@ Thought</a></span><a class="headerlink" href="#id6" title="Lien permanent vers c
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="production.html" class="btn btn-neutral float-right" title="La production" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="production.html" class="btn btn-neutral float-right" title="La Production" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="welfare.html" class="btn btn-neutral float-left" title="Bien-être" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Précédent</a>

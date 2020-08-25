@@ -12,12 +12,12 @@ Les individus préfèrent généralement un bénéfice le plus tôt possible et 
 
 -  Épargner aujourd'hui pour dépenser demain?
 
-L'évidence empirique indique que l'origine de ces préférences peut-être tracé à l'enfance... 
+L'évidence empirique indique que l'origine de ces préférences peut-être traçée à l'enfance...
 
 .. raw:: html
 
     <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/Yo4WF3cSd9Q" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
+        <iframe src="https://www.youtube.com/embed/QX_oy9614HQ" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
     </div>
 
 Utilité escomptée
@@ -34,6 +34,7 @@ alors que :math:`\mathbf{C} = (C_1,...,C_T)`. La relation entre le facteur d'esc
 
 .. math:: \delta = \frac{1}{1+\rho}
 
+
 Taux marginal de substitution (TMS)
 +++++++++++++++++++++++++++++++++++
 
@@ -45,7 +46,7 @@ La différentielle totale donne le TMS:
 
 .. math:: \frac{\partial C_2}{\partial C_1}\rvert_{dDU=0} = -\frac{u'(C_1)}{\delta u'(C_2)}
 
-Les préférences intertemporelles sont charactérisées par:
+Les préférences intertemporelles sont caractérisées par:
 
 -  Le facteur d'escompte (:math:`\delta`)
 
@@ -62,11 +63,11 @@ Les préférences intertemporelles sont charactérisées par:
 
 Comment estimer le taux d'escompte? On peut utiliser les listes de prix multiples. 
 
-Une expérience au Danemark réalisée auprès de fonctionnaires Danois essaie d'estimer le facteur d'escompte au niveau individuel `(Harrison, Lau and Williams, 2002) <https://www.aeaweb.org/articles?id=10.1257/000282802762024674>`_
+Une expérience au Danemark réalisée auprès de fonctionnaires Danois a permis d'estimer le facteur d'escompte au niveau individuel `(Harrison, Lau and Williams, 2002) <https://www.aeaweb.org/articles?id=10.1257/000282802762024674>`_
 
 |image_mpl|
 
-Les résultats montrent une grande dispersion et des taux d'escompte élevés, beaucoup plus que les taux d'intérêts. 
+Les résultats montrent une grande dispersion et des taux d'escompte élevés, beaucoup plus élevés que les taux d'intérêts. 
 
 |image_discount|
 
@@ -98,7 +99,6 @@ La valeur présente de la consommation est:
 
 .. math:: VP_C = C_1 + \frac{C_2}{1+r}
 
-.
 
 Ainsi, la contrainte intertemporelle est :math:`VP_C \leq VP_W`:
 
@@ -140,7 +140,7 @@ la contrainte budgétaire ne change pas! Le plan de consommation ne change pas e
 
 **Écarts de taux emprunts vs. épargne**
 
-**Exercice B**: À qui ressemble la contrainte si :math:`r_S<r_D`?
+**Exercice B**: À quoi ressemble la contrainte si :math:`r_S<r_D`?
 
 **Exercice C**: Comment représenter une situation où l'agent ne peut emprunter?
 
@@ -189,7 +189,7 @@ Visualement
 
  |image_optimal|
 
-Cette théorie serviva de fondation pour la théorie du cycle de vie (*the Life-Cycle Hypothesis*), proposée par `Franco Modigliani <https://en.wikipedia.org/wiki/Franco_Modigliani>`_, qui permettra de comprendre les choix en fonction de l'âge d'un agent. L'équation de Euler dérivée ici-haut suggère qu'un individu aime lisser sa consommation sur le cycle de vie, et par conséquent, s'il fait fasse à des revenus élevées durant son jeune âge et faible plus tard, épargne quand il est jeune et consomme cette épargne quand il est plus vieux. Ceci servira de fondation pour l'étude de l'épargne, de l'assurance-vie, de l'immobilier et d'un tas d'autres décisions financières. 
+Cette théorie serviva de fondation pour la théorie du cycle de vie (*the Life-Cycle Hypothesis*), proposée par `Franco Modigliani <https://en.wikipedia.org/wiki/Franco_Modigliani>`_, qui permettra de comprendre les choix en fonction de l'âge d'un agent. L'équation de Euler dérivée ici-haut suggère qu'un individu aime lisser sa consommation sur le cycle de vie, et par conséquent, s'il fait face à des revenus élevés durant sa carrière et faible plus tard, il épargnera quand il est jeune et consomme cette épargne quand il est plus vieux. Ceci servira de fondation pour l'étude de l'épargne, de l'assurance-vie, de l'immobilier et d'un tas d'autres décisions financières. 
 
 **Exercice D**: Trouvez le choix optimal de :math:`C_1` et
 :math:`C_2` si :math:`u(C)=\frac{C^{1-\sigma}}{1-\sigma}` et avec une contrainte budgétaire classique. 
@@ -210,15 +210,14 @@ Une question très présente dans le débat public.
 
    Le Conseiller, Globe and Mail, L’Actualité
 
-On peut simuler des taux de remplacement effectif mais difficile de dire ce qui est assez ou non...
+On peut simuler des taux de remplacement effectif avec des modèles sophistiqués mais difficile de dire ce qui est assez ou non...
 
 .. figure:: /images/mckinsey.png
    :alt: McKinsey (2015)
 
    McKinsey (2015)
 
-Pour des calculs plus récents, voir ce `rapport <https://ire.hec.ca/en/wp-content/uploads/sites/3/2020/06/cpr-report-2020-final.pdf>`_ de l'Institut Retraite et Épargne. 
-
+Pour des calculs plus récents, voir ce `rapport <https://ire.hec.ca/en/wp-content/uploads/sites/3/2020/06/cpr-report-2020-final.pdf>`_ de l'Institut Retraite et Épargne à HEC. 
 
 **Épargne optimale** 
 
@@ -241,12 +240,12 @@ Des calculs plus sophistiqués donneront peuvent être fait pour comparer l'épa
 
    `Scholz et al. (2007, Journal of Political Economy) <https://www.journals.uchicago.edu/doi/10.1086/506335>`_
 
-Les conclusions sont parfois surprenantes comparativement à ce qu'on observe dans les médias. 
+Les conclusions sont parfois surprenantes comparativement à ce qu'on observe dans les médias. Une grande majorité semble épargner assez. Certains épargnent trop, ce qui est dommageable en terme de bien-être mais probablement bénéfique pour certaines institutions financières. 
 
 Biais pour le présent
 +++++++++++++++++++++
 
-Les gens peuvent être très impatients. Mais leur préférence peut tout de même respecter les principes de l'utilité escomptée. Cependant, il existe plusieurs violations de l'utilité escomptée. Nous nous concentrons ici sur le biais pour le présent. 
+Comme nous l'avons vu, les gens peuvent être très impatients. Mais leur préférence peut tout de même respecter les principes de l'utilité escomptée. Cependant, il existe plusieurs violations de l'utilité escomptée. Nous nous concentrons ici sur le biais pour le présent. 
 
 *Exemple*: Choisir un film
 
@@ -255,7 +254,7 @@ Vous devez choisir un film à regarder aujourd'hui et un la semaine prochaine:
 
 Supposons que `Mommy <https://www.youtube.com/watch?v=d7rtSqI0ZeA>`_  a un bénéfice immédiat de 4 et un bénéfice futur de 4 mais que `Les Boys <https://www.youtube.com/watch?v=OFl0fuIRl9A>`_ a un bénéfice immédiat de 7 (aucun bénéfice futur).
 
-**Exercice F**: Quel est l'utilité escomptée is vous choisissez aujourd'hui et :math:`\delta=1`. Que se passe-t-il si vous choisissez plutôt pour la semaine prochaine?
+**Exercice F**: Quel est l'utilité escomptée is vous choisissez aujourd'hui et :math:`\delta=1`. Que se passe-t-il si vous choisissez plutôt pour la semaine prochaine (et la suivante, donc vous ne regardez rien cette semaine)?
 
 .. raw:: html
 
@@ -268,14 +267,14 @@ L'évidence empirique montre que les gens préfèrent les Boys si le choix se fa
 
 **Biais pour le présent**
 
-Laibson (1997, QJE) propose une modification assez simple aux préférences escomptées, soit l'introduction d'une fonction d'escompte quasi-hyperboliques:
+Laibson (1997, QJE) propose une modification assez simple aux préférences escomptées, soit l'introduction d'une fonction d'escompte quasi-hyperbolique:
 
 .. math:: QH(\mathbf{c}) = u(C_1) + \beta \sum_{t=2}^T \delta^{t-1} u(C_t)
 
 Le paramètre :math:`\beta` agit comme paramètre de biais pour le présent (facteur d'escompte à court terme) alors que :math:`\delta` contrôle l'impatience à long-terme. Ces préférences dépendent maintenant de l'horizon...
 
 **Exercice G**: Quel est le TMS entre les consommations :math:`C_1` et
-:math:`C_2`? Et :math:`C_2` vs. :math:`C_3`? Comparer avec l'espérance d'ut
+:math:`C_2`? Et :math:`C_2` vs. :math:`C_3`? Comparez avec l'espérance d'utilité.
 
 .. raw:: html
 
@@ -294,20 +293,19 @@ Les préférence quasi-hyperboliques capturent bien ce pattern de choix.
 
 *Exemple*: Qui s'abonne au Gym?
 
-Une passe d'une visite coûte 10$. Le coût par visite des gens qui s'abonne est beaucoup plus élevé que 10$. Pourquoi les gens achètent-ils un abonnement? Sont-ils naifs par rapport au fait qu'ils ont des préférences quasi-hyperboliques?
+Dans un article intéressant,  `Della Vigna et Malmendier (2006) <https://www.aeaweb.org/articles?id=10.1257/aer.96.3.694>`_ étudie le choix de prendre un abonnement au Gym plutôt que d'acheter des passes individuelles. Une passe d'une visite coûte 10$. Le coût par visite des gens qui s'abonne est beaucoup plus élevé que 10$. Pourquoi les gens achètent-ils un abonnement? Sont-ils naifs par rapport au fait qu'ils ont des préférences quasi-hyperboliques?
 
 .. figure:: /images/Gym.png
-   :alt: Della Vigna et Malmendier (2006)
+    :alt: Della Vigna et Malmendier (2006)
 
-   `Della Vigna et Malmendier (2006) <https://www.aeaweb.org/articles?id=10.1257/aer.96.3.694>`_
 
-Il y a évidence que certains sous-estiment leur degré de biais pour le présent. Ils sont naif par rapport à leur problème de contrôle. 
+Il y a évidence que certains sous-estiment leur degré de biais pour le présent. Ils sont naif par rapport à leur problème de biais pour le présent. 
 
 Exemple: Comment aider les gens à épargner?
 
--  Épargner est similaire à aller au Gym: coûteux dans le court-terme, bénéfique à long-terme.
+-  Épargner est similaire à aller au Gym: coûteux dans le court-terme (sacrifice de consommation), bénéfique à long-terme (consommation future).
 
--  Pour aider les gens avec ces biais, on pourrait décider de changer l'option de défaut: opt-in vs. opt-out. Au lieu de devoir décider d'épargner (défaut = n'épargne pas), on peut par défaut forcer les gens à épargner et ils peuvent arrêter s'ils le veulent (défaut = épargne)...
+-  Pour aider les gens avec ces biais, on pourrait décider de changer l'option de défaut: opt-in vs. opt-out. Au lieu de devoir décider d'épargner (défaut = n'épargne pas), on peut par défaut forcer les gens à épargner et ils peuvent arrêter s'ils le veulent (défaut = épargne) ... Ce petit changement a de gros impacts. 
 
 -  Shea et Madrian (2001, QJE) montre que l'épargne, à court-terme pour les entreprises qui changent le défault, augmente. 
 
@@ -318,10 +316,9 @@ Exemple: Comment aider les gens à épargner?
 
 Moins évident à long-terme...
 
-
 **Engagement**
 
-Les gens au prise avec un problème de la sorte, pourrait vouloir, rationellement, qu'on limite leur choix. Par exemple, en ne leur permettant pas de succomber à la temptation à court-terme *dans leur propre intérêt*. David Laibson de Harvard, et plusieurs autres, étudient des mécanismes de la sorte, appliquées à la santé et l'épargne par exemple. 
+Les gens au prise avec un problème de la sorte, pourrait vouloir, rationellement, qu'on limite leur choix. Par exemple, en ne leur permettant pas de succomber à la temptation à court-terme *dans leur propre intérêt*. David Laibson de Harvard, et plusieurs autres, étudient des mécanismes de la sorte, appliquées à la santé et l'épargne par exemple. Il semblerait qu'il y a une demande pour ces mécanismes (*demand for commitment*). 
 
 .. raw:: html
 
@@ -337,6 +334,8 @@ Les gens au prise avec un problème de la sorte, pourrait vouloir, rationellemen
 
 Exemple Python Intertemporel
 ++++++++++++++++++++++++++++
+
+Voir cet exemple Python qui permet d'approfondir ces concepts. 
 
 |ImageLink|_
 
