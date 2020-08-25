@@ -48,6 +48,13 @@ La première condition stipule que la valeur absolue du TMS (la valeur d'une heu
 
 *Exercice A*: Trouvez la demande de loisir et l'offre de travail pour :math:`u(C,L) = C^{\alpha}L^{1-\alpha}`.
 
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/iKHLiFTiQxw" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
+    </div>
+
+
 Le multiplicateur de Lagrange se fait donner l'interprétation de l'utilité marginale du revenu (on peut le vérifier par le théorème de l'enveloppe). Par ailleurs, il est aussi important de noter que la présence de :math:`y` peut faire en sorte qu'une solution de coin est probable, où :math:`L:^* = T`, et le TMS est plus grand que le salaire horaire. 
 
 .. figure:: /images/labor_choice.png
@@ -100,7 +107,15 @@ On peut estimer les élasticités salaire et revenu de différentes façons. Par
 
 Concernant l'élasticité salaire, la littérature est vaste, et utilise un nombre important de méthodes. Généralement, l'élasticité est faible pour les hommes, plus forte pour les femmes, particulièrement pour ce qui est du choix de travailler ou non. 
 
-*Exercice B*: Trouvez les élasticités salaire et salaire compensée pour :math:`u(C,L) = C^{\alpha}L^{1-\alpha}` et :math:`u(C,L) = C + \frac{L^{1-\epsilon}}{1-\epsilon}`.
+*Exercice B*: Trouvez les élasticités salaire et salaire compensée pour :math:`u(C,H) = C - \frac{H^{1+\frac{1}{\epsilon}}}{1+\frac{1}{\epsilon}}`.
+
+
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/XMiYOYv2cA4" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
+    </div>
+
 
 Il est possible qu'une hausse de salaire horaire réduise l'offre de travail. Cet effet contre-intuitif est pourtant présent dans certaines professions. Un exemple souvent donné est celui des médecins au Québec qui ne semblent pas avoir augmenté leur offre de travail après l'énorme augmentation salariales consentie à la fin des années 2000. La part des médecins travaillant à temps partiel a aussi augmenté considérablement. 
 
@@ -128,7 +143,13 @@ Ainsi, l'augmentation d'une taxe est similaire à une diminution du salaire, ce 
 
 De plus, l'implémentation de la taxe est importante. Plus elle est permanente, plus les travailleurs auront un effet revenu élevé tandis que si la taxe est transitoire, seul l'effet substitution sera à l'oeuvre. Finalement, si l'impôt est compensé pour certains ménages, c'est l'effet compensé qui devrait être utilisée pour estimer l'effet de la taxe sur les comportements de ces ménages. Ces subtilités compliquent l'analyse des effets désincitatifs de la taxation.  Ainsi la question à savoir si la taxation est un désincitatif au travail n'est pas simple...
 
-**Exercice C**: Dans le cas où les préférences sont données par :math:`u(C,L) = C + \log L`, trouvez l'effet d'une taxe :math:`\tau` sur l'offre de travail et la perte de bien-être associée à la taxation. 
+**Exercice C**: Dans le cas où les préférences sont données par :math:`u(C,H) = C - \frac{H^{1+\frac{1}{\epsilon}}}{1+\frac{1}{\epsilon}}`, trouvez l'effet d'une taxe :math:`\tau` sur l'offre de travail et la perte de bien-être associée à la taxation. 
+
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/iREGXgKZNSQ" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
+    </div>
 
 Dans les faits, le système fiscal ne peut être résumé à un taux d'imposition uniforme, :math:`\tau`. D'abord, l'impôt est progressif et le taux change par palier d'imposition. Par ailleurs, des crédits d'impôt affectent le taux effectif d'imposition parce qu'ils sont fonction du revenu de travail (e.g. prime au travail québécoise, crédit pour frais de garde). Donc, plus généralement, les impôts à payer sont donnés par: :math:`\tau(wH,y)` qui dépend de la source des revenus et est généralement non-linéaire dans ces revenus. 
 
