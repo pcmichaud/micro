@@ -230,6 +230,13 @@ Alors, :math:`p_X \Delta X^{cmp}+ p_Y \Delta Y^{cmp}= 0`.
         <iframe src="https://www.youtube.com/embed/Ovjh0AhL6mY" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
     </div>
 
+
+
+.. figure:: /images/price_change.png
+   :scale: 75
+
+   Dans l'espace :math:`(X,Y)`, nous considérons une augmentation de prix du bien :math:`X`, L'indice 1 réfère à la situation de référence et l'indice 2 à la situation après le changement de prix. Le consommateur est au point A dans la situation de référence. Avec le changement de prix, la contrainte budgétaire a une pente plus forte. Après le changement de prix, le consommateur est au point C. Pour décomposer le changement de prix, on compense le consommateur aux nouveaux prix. Il choisi alors le point B, avec la même utilité que dans la situation de référence. Le passage du point A au point B est l'effet substitution. L'effet revenu se mesure du point B au point C. 
+
 Équation de Slutsky
 +++++++++++++++++++
 
