@@ -99,7 +99,7 @@ En pratique, il n'est pas facile d'observer ces élasticités-revenu en s'assura
 Effets Prix
 +++++++++++
 
-Comment les demandes :math:`X^*` ry :math:`Y^*` changent si 
+Comment les demandes :math:`X^*` et :math:`Y^*` changent si 
 :math:`p_Y` et :math:`I` restent constants mais que :math:`p_X` change?
 
 Pour décrire les changements de demande, on utilise l'élasticité: 
@@ -171,7 +171,7 @@ Précisons maintenant davantage les effets substitutions et revenu.
 
 **Effet substitution**
 
-Changement de demnde causé par un changement de prix relatif, en gardant l'utilité constante. 
+Changement de demande causé par un changement de prix relatif, en gardant l'utilité constante. 
 
 Effet substitution :math:`=` Demande compensée - Demande de référence
 
@@ -216,7 +216,7 @@ Pourquoi :math:`p_X\Delta X^{{cmp}} + p_Y \Delta Y^{{cmp}} = 0`?
 
 :math:`(X^*,Y^*)` est optimal aux prix :math:`p_X, p_Y`, ce qui implique que :math:`TMS_{X\to Y} = -\frac{p_X}{p_Y}`.
 
-#. Alors, :math:`p_X \Delta X^{cmp}+ p_Y \Delta Y^{cmp}= 0`.
+Alors, :math:`p_X \Delta X^{cmp}+ p_Y \Delta Y^{cmp}= 0`.
 
 **Exercice B**: Voir si cette approximation est bonne pour
 :math:`U(X,Y) = XY` avec prix et revenu de référence
