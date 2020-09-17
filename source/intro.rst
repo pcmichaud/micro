@@ -457,6 +457,12 @@ marginale de :math:`m` a pour effet d'augmenter le maximum de :math:`\lambda`. P
         <iframe src="https://www.youtube.com/embed/jewTrwjTksU" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
     </div>
 
+
+Note sur les logarithmes
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+Dans les notes, nous utiliserons :math:`\log` en base :math:`e=2.718281828459` et non en base 10. Donc, il s'agit du logarithme naturel (:math:`\ln = \log_e`). Python utilise aussi la base exponentielle. 
+
 Notebook Python
 +++++++++++++++
 
