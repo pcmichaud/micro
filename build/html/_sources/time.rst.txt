@@ -52,7 +52,7 @@ Les préférences intertemporelles sont caractérisées par:
 
 -  La forme de :math:`u`.
 
-**Exercice A**: Trouvez le TMS pour :math:`u(C_t) = \ln C_t`
+**Exercice A**: Trouvez le TMS pour :math:`u(C_t) = \log C_t`
 
 .. raw:: html
 

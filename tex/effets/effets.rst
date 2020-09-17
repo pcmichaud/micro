@@ -52,7 +52,7 @@ Demand Preferences
 
 Example
 
--  :math:`U(X,Y) = \ln X +  2\ln Y`
+-  :math:`U(X,Y) = \log X +  2\log Y`
 
    .. math::
 

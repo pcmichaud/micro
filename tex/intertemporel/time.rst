@@ -76,7 +76,7 @@ Intertemporal preferences are caracterized by:
 
 -  The shape of :math:`u`.
 
-**Exercise A**: Find the MRS for :math:`u(C_t) = \ln C_t`
+**Exercise A**: Find the MRS for :math:`u(C_t) = \log C_t`
 
 How to Estimate Discount Rates?
 

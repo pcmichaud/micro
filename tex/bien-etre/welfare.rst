@@ -57,12 +57,12 @@ Define Well-Being by Preferences
    .. math:: U_i^*(\mathcal P,I_i) = \max_{B \in C_i(\mathcal P, I_i)} U_i(B)
 
 -  Example: two goods :math:`X` and :math:`Y`. Utility
-   :math:`U(X,Y) = \ln X + \ln Y`
+   :math:`U(X,Y) = \log X + \log Y`
 
    Policy :math:`\mathcal P`: multiplicative tax :math:`\tau` on the
    price of :math:`Y`
 
-   | :math:`U_i^*(\mathcal P,I) = \max_{X,Y} \ln X + \ln Y`
+   | :math:`U_i^*(\mathcal P,I) = \max_{X,Y} \log X + \log Y`
    | s.c. :math:`\quad \quad \quad
      p_X  X + p_Y(1 + \tau) Y = I`
 
@@ -85,7 +85,7 @@ Compensating Variation
    change is *good*
 
 **Exercise A**: Find the expression of the compensating variation for
-:math:`\ln X + \ln Y` and a tax :math:`\tau` on the good :math:`Y`.
+:math:`\log X + \log Y` and a tax :math:`\tau` on the good :math:`Y`.
 
 Fundamental Property
 ~~~~~~~~~~~~~~~~~~~~

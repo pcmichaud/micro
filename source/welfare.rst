@@ -34,10 +34,10 @@ On peut utiliser l'utilité indirecte comme point de départ. L'utilité maximal
 
    .. math:: U_i^*(\mathcal P,I_i) = \max_{B \in C_i(\mathcal P, I_i)} U_i(B)
 
-Exemple: Deux biens :math:`X` et :math:`Y`. Utilité :math:`U(X,Y) = \ln X + \ln Y`. Une politique :math:`\mathcal P`: avec une taxe multiplicative :math:`\tau` sur le prix de :math:`Y`. Alors l'utilité indirecte est donnée par:
+Exemple: Deux biens :math:`X` et :math:`Y`. Utilité :math:`U(X,Y) = \log X + \log Y`. Une politique :math:`\mathcal P`: avec une taxe multiplicative :math:`\tau` sur le prix de :math:`Y`. Alors l'utilité indirecte est donnée par:
 
 .. math::
-   U_i^*(\mathcal P,I) = \max_{X,Y} \left[\ln X + \ln Y: p_X  X + p_Y(1 + \tau) Y \leq I \right]
+   U_i^*(\mathcal P,I) = \max_{X,Y} \left[\log X + \log Y: p_X  X + p_Y(1 + \tau) Y \leq I \right]
      
 Dénotons :math:`\mathcal P_0` le statut quo et considèrons l'implémentation de la politique :math:`\mathcal P`. On peut définir la variation compensatoire comme étant le montant :math:`\Delta I^{CV}` tel que
 

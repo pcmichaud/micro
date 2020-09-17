@@ -47,7 +47,7 @@ Il y a deux équations, deux variables: la solution pour :math:`X^*` et
 
 **Exemple**
 
-Pour les préférences représentées par :math:`U(X,Y) = \ln X +  2\ln Y`,
+Pour les préférences représentées par :math:`U(X,Y) = \log X +  2\log Y`,
 
 .. math::
 

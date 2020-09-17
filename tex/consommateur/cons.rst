@@ -135,7 +135,7 @@ Utilité **Les préférences sont ordinales (hiérarchiques)**
 -  La valeur de l’utilité n’a pas de signification, l’ordonnancement des
    paniers est important.
 
--  :math:`U(X,Y) = \ln X + \ln Y` et :math:`V(X,Y) = XY` représente les
+-  :math:`U(X,Y) = \log X + \log Y` et :math:`V(X,Y) = XY` représente les
    mêmes préférences
 
 **Exercice B**: Montrer que :math:`U` et :math:`V` ont les mêmes
@@ -146,7 +146,7 @@ Retour vers le TMS **Contexte**
 -  Deux biens, :math:`X`, :math:`Y`. Préférences représentées par la
    fonction d’utilité :math:`U(X,Y)`
 
--  e.g. :math:`U(X,Y) = \ln X + \ln Y`
+-  e.g. :math:`U(X,Y) = \log X + \log Y`
 
 **TMS de :math:`X` en fonction de :math:`Y`**
 
@@ -168,7 +168,7 @@ Calculer le TMS **TMS de :math:`X` en fonction de :math:`Y`**
 
 **Exemple**
 
--  :math:`U(X,Y) = \ln X + \ln Y`
+-  :math:`U(X,Y) = \log X + \log Y`
 
    .. math:: TMS = \frac{\partial U}{\partial X}/ \frac{\partial U}{\partial Y} = -Y/X
 
