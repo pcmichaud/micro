@@ -320,7 +320,7 @@ Propriétés des fonctions de demandes
 
 -  Additivité:
 
-   .. math:: p_X \frac{\partial X(p_X,p_Y,I)}{\partial I} + p_Y \frac{\partial Y(p_X,p_Y,I)}{\partial I} = 0
+   .. math:: p_X \frac{\partial X(p_X,p_Y,I)}{\partial I} + p_Y \frac{\partial Y(p_X,p_Y,I)}{\partial I} = 1
 
 -  Negativité (loi de la demande compensée):
 
