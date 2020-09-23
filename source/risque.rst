@@ -202,7 +202,7 @@ Considérons la lotterie  :math:`\mathcal L =(p,X\;;1-p,Y)`. On dénote :math:`Z
 
 Si l'agent est riscophobe, :math:`Z' < Z` et on dénote :math:`\pi = Z-Z'` la prime de risque. Son interprétation dépend du contexte. Quand l'action concerne la prise de risque (par défaut l'individu est en situation de certitude), on l'interprète comme étant la compensation minimum demandée par l'agent pour prendre le risque. La prime de risque représente alors le montant minimal qu'il faut payer avec certitude à l'agent pour qu'il prenne le risque. En contexte d'investissement boursier, le rendement excédentaire requis par un investisseur riscophobe sera égal à cette prime de risque. Plus l'actif est risqué, plus il demandera une compensation (rendement) élevée.  
 
-. figure:: /images/risk_premium.png
+.. figure:: /images/risk_premium.png
    :scale: 75
 
    Dans l'espace richesse - utilité, nous considérons une lotterie sur :math:`(X,Y)` avec la probabilité :math:`p` que :math:`X` soit réalisé. Le point C donne la richesse équivalente certaine, puisqu'à cette richesse l'espérance d'utilité est égale à l'utilité certaine. Donc la richesse équivalente certaine est :math:`Z' < Z` et la prime de risque est :math:`\pi = Z-Z'`. 
