@@ -133,7 +133,7 @@ Une fonction :math:`u` qui respecte cette inégalité est concave (voir rappel m
 .. figure:: /images/risk_concave.png
    :scale: 75
 
-   Dans l'espace richesse - utilité, nous considérons une lotterie sur :math:`(X,Y)` avec la probabilité :math:`p` que :math:`X` soit réalisé. En débutant sur l'axe horizontal, la richesse espérée se trouve entre :math:`X` et :math:`Y` puisque :math:`p` est entre zéro et 1. Sur l'axe vertical, on peut faire la même chose en calculant l'utilité espérée, avec le même  :math:`p`. En variant  :math:`p`, on obtient la corde (ligne droite) qui relie les points :math:`(X,Y)` sur la fonction d'utilité. Puisque la fonction est concave, cette corde est toujours inférieure à la fonction d'utilité. Donc l'utilité évaluée à la richesse espérée (point A) est toujours supérieur à l'espérance d'utilité (point B). Et ce pour tout  :math:`p`. 
+   Dans l'espace richesse - utilité, nous considérons une lotterie sur :math:`(X,Y)` avec la probabilité :math:`p` que :math:`X` soit réalisé. En débutant sur l'axe horizontal, la richesse espérée se trouve entre :math:`X` et :math:`Y` puisque :math:`p` est entre zéro et 1. Sur l'axe vertical, on peut faire la même chose en calculant l'utilité espérée, avec le même  :math:`p`. En variant  :math:`p`, on obtient la corde (ligne droite) qui relie les points :math:`(X,Y)` sur la fonction d'utilité. Puisque la fonction est concave, cette corde est toujours inférieure à la fonction d'utilité. Donc l'utilité évaluée à la richesse espérée (point A) est toujours supérieure à l'espérance d'utilité (point B). Et ce pour tout  :math:`p`. 
 
 **Neutralité au risque**
 
