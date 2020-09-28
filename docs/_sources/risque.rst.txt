@@ -189,7 +189,6 @@ Dans ce cas, on peut montrer que :math:`R(X) = r`, d'où son nom, fonction d'uti
     </div>
 
 
-
 Prime de risque
 +++++++++++++++
 
