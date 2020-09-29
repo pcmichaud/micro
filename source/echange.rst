@@ -333,6 +333,11 @@ Un peu d'histoire
 Exemple Python
 ++++++++++++++
 
-À venir. 
+
+|ImageLink|_
+
+.. |ImageLink| image:: https://colab.research.google.com/assets/colab-badge.svg
+.. _ImageLink: https://colab.research.google.com/github/pcmichaud/micro/blob/master/notebooks/Equilibre%20Echange.ipynb
+
 
 
