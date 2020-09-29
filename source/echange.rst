@@ -149,6 +149,13 @@ Pour ce faire, on aura besoin d'une boîte d'Edgeworth, un outil très utile. C'
 **Exercice A**: Montrer la :math:`(x^e_1,y_1^e) = (50,20)` et
 :math:`(x^e_2,y_2^e)=(20,50)` dans une boîte d'Edgeworth.
 
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/EjjYu4Ysi2g" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
+    </div>
+
+
 Un certain nombre d'observations peuvent être faite à partir de la boîte d'Edgeworth.
 
 D'abord, un point dans une boite d'Edgeworth ou deux courbes d'indifférence se croisent ne peut être Pareto optimal. Pourquoi? Parce qu'on peut définir un noyau par rapport à ce point comme étant toutes les allocations qui mènent à une amélioration de Pareto. 
@@ -199,12 +206,32 @@ Il y aura donc 6 CPO et 3 multiplicateurs. Les exercices qui suivent vous aidero
 **Exercice B**: Trouvez l'allocation Pareto optimale pour les fonctions d'utilité :math:`u_1` et :math:`u_2` strictement positive and concave,
 :math:`u_j = \sqrt{x_j y_j}` pour les consommateurs :math:`j=1,2`, en utilisant la méthode du Lagrangien.
 
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/7hsYEwHfCOc" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
+    </div>
+
 **Exercice C**: Trouvez l'allocation Pareto optimale pour les fonctions d'utilités :math:`u_j = \sqrt{x_j y_j}` pour les consommateurs :math:`j=1,2` avec les dotations :math:`x_e = 128` et :math:`y_e=32` si
 :math:`\overline{u}_2=48`.
 
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/5grk62wBKdk" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
+    </div>
+
 **Exercice D**: Dans l'exercice C, l'allocation :math:`(64,28,64,4)`
 est-elle optimale au sens de Pareto? Si elle ne l'est pas, trouvez une amélioration au sens de Pareto dans le noyau.
- 
+
+
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/aK7cvEuO-wA" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
+    </div>
+
+
 **Équilibre de marché dans une boîte d'Edgeworth**
 
 La contrainte budgétaire dépend des dotations et indique les allocations qui sont possibles au prix :math:`p`. Un équilibre de marché implique que le  :math:`TMS` est égal au prix. Puisque le prix est le même pour les deux consommateurs, les :math:`TMS` sont égaux dans un équilibre de marché.
@@ -251,6 +278,13 @@ Pour toute allocation :math:`(X_1^*,Y_1^*)`, et valeurs conséquentes pour :math
    L'optimum de Pareto A n'est pas atteignable à partir de la dotation :math:`E_0`. Mais un transfert de :math:`T_X` du bien :math:`X` provenant du consommateur 2 au consommateur 1, permet d'atteindre la dotation  :math:`E_1`, à partir de laquelle on peut attendre l'optimum de Pareto A avec un équilibre de marché au prix :math:`p`. 
 
 **Exercice E**: Trouvez le transfert de dotation et de prix, partant de :math:`(64,28,64,4)`, qui donne l'allocation trouvée à l'exercice D.
+
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/4kcC7SgOY9I" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
+    </div>
+
 
 Efficience des marchés
 ++++++++++++++++++++++
