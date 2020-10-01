@@ -208,7 +208,7 @@ Si l'agent est riscophobe, :math:`Z' < Z` et on dénote :math:`\pi = Z-Z'` la pr
 
 En assurance, la prime de risque sera plutôt le montant maximal que l'agent est prêt à payer pour éliminer le risque puisque la situation sans action, est risquée, alors qu'une assurance complète élimine le risque. Il s'agit donc d'une disposition à payer pour éliminer un risque. 
 
-**Exercice E**: Un agent a les préférences représentées par :math:`u(X)=\log X`. Sa richesse initialile est :math:`X_0 = 100` et il fait façe à un risque de perdre 50 avec probabilité 0.5 et gagner 50 avec une probabilité 0.5. Quel est le montant maximal qu'il est prêt à payer pour éliminer ce risque?
+**Exercice E**: Un agent a les préférences représentées par :math:`u(X)=\log X`. Sa richesse initiale est :math:`X_0 = 100` et il fait façe à un risque de perdre 50 avec probabilité 0.5 et gagner 50 avec une probabilité 0.5. Quel est le montant maximal qu'il est prêt à payer pour éliminer ce risque?
 
 Une approximation à la prime de risque existe pour un risque faible. Dénotant :math:`\sigma^2` la variance d'un risque absolue avec moyenne zéro, la prime de risque pour un agent ayant une richesse initiale de :math:`X` est bien approximée par: 
 
@@ -370,7 +370,7 @@ Lotteries   rouge noire blanche
 :math:`L_2` 0     50    0
 =========== ===== ===== =======
 
-Choice
+Expérience de choix IV
 
 Le même contexte pour ces deux lotteries. 
 
