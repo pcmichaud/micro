@@ -55,7 +55,7 @@ La première condition stipule que la valeur absolue du TMS (la valeur d'une heu
     </div>
 
 
-Le multiplicateur de Lagrange se fait donner l'interprétation de l'utilité marginale du revenu (on peut le vérifier par le théorème de l'enveloppe). Par ailleurs, il est aussi important de noter que la présence de :math:`y` peut faire en sorte qu'une solution de coin est probable, où :math:`L:^* = T`, et le TMS est plus grand que le salaire horaire. 
+Le multiplicateur de Lagrange se fait donner l'interprétation de l'utilité marginale du revenu (on peut le vérifier par le théorème de l'enveloppe). Par ailleurs, il est aussi important de noter que la présence de :math:`y` peut faire en sorte qu'une solution de coin est probable, où :math:`L^* = T`, et le TMS est plus grand que le salaire horaire. 
 
 .. figure:: /images/labor_choice.png
    :scale: 75
@@ -86,12 +86,12 @@ où :math:`u_C` est l'utilité marginale de la consommation et :math:`u_L`, l'ut
 
 où :math:`\Delta` est un terme négatif si la solution n'est pas de coin (en fait la valeur de la dérivée seconde à la solution). Ainsi l'effet d'un changement de salaire sur le loisir est la somme d'un effet négatif (premier terme) et d'un deuxième terme positif si le loisir est un bien normal. Ainsi, l'effet d'une hausse de salaire sur le loisir est indéterminé et dépendra de la force relative de ces deux effets. 
 
-On peut montrer que le premier terme est en fait l'effet substitution (ou compensé), :math:`\frac{d L}{d W}|_{dU=0}`. Le deuxième terme est l'effet revenu. 
+On peut montrer que le premier terme est en fait l'effet substitution (ou compensé), :math:`\frac{d L}{d w}|_{dU=0}`. Le deuxième terme est l'effet revenu. 
 
 On peut écrire en terme d'offre de travail pour obtenir l'équation de Slutsky d'offre de travail: 
 
 .. math::
-   \frac{dH}{dw} = \frac{dH}{dW}|_{dU=0} + H \frac{dH}{dy}
+   \frac{dH}{dw} = \frac{dH}{dw}|_{dU=0} + H \frac{dH}{dy}
 
 L'effet d'une hausse de salaire est la somme d'un effet substitution (compensé) positif et d'un effet revenu négatif (si loisir est un bien normal). En terme d'élasticité, on peut écrire: 
 
