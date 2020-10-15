@@ -11,7 +11,7 @@ Offre de Travail
 
 Pour modéliser ce choix, nous allons introduire un nouveau bien, le temps de loisir, :math:`L`. Le temps dans une journée (effectif en omettant le sommeil et soins personnels) est donné par :math:`T`. Ainsi, le temps de travail est :math:`H=T-L`. Içi, on suppose que les deux seules utilisations du temps sont le loisir et le travail. Il est possible d'introduire d'autres utilisations du temps. Le prix Nobel `Gary Becker <https://fr.wikipedia.org/wiki/Gary_Becker>`_ a été un des pionners dans `l'analyse de l'allocation du temps <https://www.jstor.org/stable/2228949?seq=1#metadata_info_tab_contents>`_. 
 
-Le consommateur à des préférences pour :math:`(C,L)`, où :math:`C`représente les dépenses de consommation (on normalise son prix à 1) et :math:`L` le loisir compté en heures ou autre mesure du temps, représentées par la fonction d'utilité :math:`u(C,L)`, généralement concave dans ses deux arguments. Ainsi le TMS entre la consommation et le loisir est donné par: 
+Le consommateur à des préférences pour :math:`(C,L)`, où :math:`C` représente les dépenses de consommation (on normalise son prix à 1) et :math:`L` le loisir compté en heures ou autre mesure du temps, représentées par la fonction d'utilité :math:`u(C,L)`, généralement concave dans ses deux arguments. Ainsi le TMS entre la consommation et le loisir est donné par: 
 
 .. math:: 
    TMS = \frac{dC}{dL}|_{dU=0} = - \frac{u'_L(C,L)}{u'_C(C,L)}
