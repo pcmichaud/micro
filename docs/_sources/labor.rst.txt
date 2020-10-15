@@ -82,7 +82,7 @@ La condition de premier ordre est :
 où :math:`u_C` est l'utilité marginale de la consommation et :math:`u_L`, l'utilité marginale du loisir. En prenant la différentielle totale, en fixant :math:`dy=0`, on obtient,
 
 .. math::
-   \frac{d L}{d w} = \frac{U_C}/\Delta + h \frac{d L}{d y}
+   \frac{d L}{d w} = \frac{U_C}{\Delta} + h \frac{d L}{d y}
 
 où :math:`\Delta` est un terme négatif si la solution n'est pas de coin (en fait la valeur de la dérivée seconde à la solution). Ainsi l'effet d'un changement de salaire sur le loisir est la somme d'un effet négatif (premier terme) et d'un deuxième terme positif si le loisir est un bien normal. Ainsi, l'effet d'une hausse de salaire sur le loisir est indéterminé et dépendra de la force relative de ces deux effets. 
 
