@@ -1,7 +1,13 @@
 Bien-être
 ---------
 
-Pour bien évaluer une politique, on peut regarder son efficacité, c'est-à-dire cible-t-elle le groupe visé, est-ce qu'elle a l'effet attendu sur les comportements, et combien coûte-t-elle étant donné son efficacité? Par exemple, une réglementation sur la qualité de l'air peut inciter plusieurs individus à changer de comportement. Le coût par unité d'amélioration de la qualité de l'air peut être élevé. Comment statuer si la politique est désirable? En général, la qualité de l'air est valorisée par la population. Donc, on peut mesurer les bénéfices par les préférences. Au final, on peut savoir si la réglementation est bénéfique étant donné son coût. Alors qu'on s'arrête souvent aux retombés économiques ou fiscales d'une intervention, on oublie très souvent de compter les bénéfices en terme de bien-être. Afin de répondre à ces question, et permettre de juger des politiques, il faut aller une étape plus loin que ce qu'on a fait et se demander comment on peut mesurer le bien-être par les préférences. 
+Pour bien évaluer une politique, on peut regarder son efficacité, c'est-à-dire cible-t-elle le groupe visé, est-ce qu'elle a l'effet attendu sur les comportements, et combien coûte-t-elle étant donné son efficacité? 
+
+Par exemple, une réglementation sur la qualité de l'air peut inciter plusieurs individus à changer de comportement. Le coût par unité d'amélioration de la qualité de l'air peut être élevé. Comment statuer si la politique est désirable? 
+
+En général, la qualité de l'air est valorisée par la population. Donc, on peut mesurer les bénéfices par les préférences. Au final, on peut savoir si la réglementation est bénéfique étant donné son coût. Alors qu'on s'arrête souvent aux retombés économiques ou fiscales d'une intervention, on oublie très souvent de compter les bénéfices en terme de bien-être. 
+
+Afin de répondre à ces question, et permettre de juger des politiques, il faut aller une étape plus loin que ce qu'on a fait et se demander comment on peut mesurer le bien-être par les préférences. 
 
 Trois approches existent: une approche utilitarienne, une approche hicksienne et finalement une approche du bonheur rapporté. 
 
@@ -15,18 +21,18 @@ Pour chaque citoyen :math:`i\in \{1,\ldots,N\}`, on peut construire une fonction
 .. math::
    U_1(B_1) + U_2(B_2) + \ldots + U_N(B_N). 
 
-Si on utilise ce critère de bien-être, alors une politique :math:`\mathcal P_0` est mieux que l'alternative :math:`\mathcal P_1` si le bien-être est plus élevé. Içi la fonction qui aggrège les utilités des différents citoyens est linéaire, tel que proposé par `Bentham <https://fr.wikipedia.org/wiki/Jeremy_Bentham>`_, mais on peut aussi généraliser à d'autres formes, par exemple l'utilité minimale sous-jacente à la théorie de la justice sociale de (`Rawls <https://fr.wikipedia.org/wiki/John_Rawls>`_). 
+Si on utilise ce critère de bien-être, alors une politique :math:`\mathcal P_0` est mieux que l'alternative :math:`\mathcal P_1` si la somme des utilités est plus élevée. Içi la fonction qui aggrège les utilités des différents citoyens est linéaire, tel que proposé par `Bentham <https://fr.wikipedia.org/wiki/Jeremy_Bentham>`_, mais on peut aussi généraliser à d'autres formes, par exemple l'utilité minimale sous-jacente à la théorie de la justice sociale de (`Rawls <https://fr.wikipedia.org/wiki/John_Rawls>`_). 
 
-Cette approche est problématique et peu utilisée. Elle suppose des utilités cardinales alors que les utilités sont ordinales... On se rappelle bien sur que :math:`U_1` represente les préférences du citoyen :math:`1`, mais :math:`f(U_1)` représente les mêmes préférences pour n'importe quelle fonction croissante :math:`f`. Il existe un nombre infini de fonctions d'utilités qui représentent les mêmes préférences. Par exemple, on aurait pu prendre :math:`2\times U_1`, ce qui peut affecter le choix de politique si une politique favorise davantage ce citoyen...
+Cette approche est problématique et peu utilisée. Elle suppose des utilités cardinales alors que les utilités sont ordinales... On se rappelle que :math:`U_1` represente les préférences du citoyen :math:`1`, mais :math:`f(U_1)` représente les mêmes préférences pour n'importe quelle fonction croissante :math:`f`. Il existe un nombre infini de fonctions d'utilités qui représentent les mêmes préférences. Par exemple, on aurait pu prendre :math:`2\times U_1`, ce qui peut affecter le choix de politique si une politique favorise davantage ce citoyen...
 
-Donc, le classement des politiques est ambigue: on peut avoir :math:`\mathcal P_0` mieux si :math:`W = U_1 + U_2` alors que :math:`\mathcal P_1` est mieux si on utilise :math:`W = 2U_1 + U_2`
+Donc, le classement des politiques est ambigue: on peut avoir :math:`\mathcal P_0` meilleure  si :math:`W = U_1 + U_2` alors que :math:`\mathcal P_1` est meilleure si on utilise :math:`W = 2U_1 + U_2`
 
-En somme, le bien-être devrait dépendre des préférences et non de :math:`U`. Il demeure que sans trahir l'ordinalité des préférences, les utilités demeurent utiles. On peut définir par exemple une **amélioration au sens de Pareto**, si l'utilité de tous les individus est au moins égale au niveau de référence avec un changement de politique. Si personne ne perd, et que certains gagnent, cette situation peut être considérée meilleure au sens de `Pareto <https://fr.wikipedia.org/wiki/Vilfredo_Pareto>`_. 
+En somme, le bien-être devrait dépendre des préférences et non de :math:`U`. Il demeure que sans trahir l'ordinalité des préférences, les utilités demeurent utiles. On peut définir par exemple une **amélioration au sens de Pareto**, si l'utilité de tous les individus est au moins égale au niveau de référence avec un changement de politique. Si personne ne perd, et que certains gagnent, cette situation peut être considérée meilleure au sens de `Pareto <https://fr.wikipedia.org/wiki/Vilfredo_Pareto>`_. L'amélioration au sens de Pareto est indépendante de l'échelle de l'utilité. C'est un concept ordinal. 
 
 Variation compensatoire
 +++++++++++++++++++++++
 
-Une approche plus prometteuse est de quantifier monétairement le bien-être à l'aide des préférences. `John Hicks <https://fr.wikipedia.org/wiki/John_Hicks>`_ propose d'utiliser la variation compensatoire. 
+Une approche plus prometteuse est de quantifier de façon monétaire le bien-être à l'aide des préférences. `John Hicks <https://fr.wikipedia.org/wiki/John_Hicks>`_ propose d'utiliser la variation compensatoire. 
 
 Qu'est-ce qu'une politique dans le problème du consommateur? Une politique :math:`\mathcal P` définie une contrainte budgétaire :math:`C_i(\mathcal P,I_i)` pour le citoyen :math:`i` (où :math:`I_i` est le revenu).
 
@@ -43,12 +49,11 @@ Dénotons :math:`\mathcal P_0` le statut quo et considèrons l'implémentation d
 
    .. math::
 
-      U^*(\mathcal P_0,I) = U^*(\mathcal P,
-      I - \Delta I^{CV})
+      U^*(\mathcal P_0,I) = U^*(\mathcal P,I - \Delta I^{CV})
 
 C'est le montant qu'on doit retirer au consommateur pour garder son bien-être constant au niveau du statut quo.
 
-Note: convention de signe tel que :math:`\Delta I^{CV}>0` quand le changement de politique est *bénéfique*. Par exemple, une baisse de taxe, une hausse des transferts, une baisse de prix. 
+Note: on utilise une convention de signe telle que :math:`\Delta I^{CV}>0` quand le changement de politique est *bénéfique*. Par exemple, une baisse de taxe, une hausse des transferts, une baisse de prix. 
 
 **Exercice A**: Trouvez l'expression de la variation compensatoire pour
 :math:`U = XY` et une taxe :math:`\tau` sur le bien :math:`Y`.
@@ -81,7 +86,7 @@ Considérons les préférences pour un bien :math:`X` et l'argent :math:`Y`. Les
 
 La politique de référence est :math:`\mathcal P_0`. Le consommateur choisi l'allocation :math:`(X_0, Y_0)`. Maintenant, considérons un changement :math:`\mathcal P`. Le nouveau choix optimal est :math:`(X_1, Y_1)`.
 
-Dans ce cas, la variation compensatoire est :math:`\Delta I^{CV}` telle que
+Dans ce cas, la variation compensatoire est :math:`\Delta I^{CV}` ou
 
 .. math::
 
@@ -91,7 +96,7 @@ Dans ce cas, la variation compensatoire est :math:`\Delta I^{CV}` telle que
    \Delta I^{CV} &= V(X_1) + Y_1 - V(X_0) - Y_0 \\
    \Delta I^{CV} &= U(X_1,Y_1) - U(X_0,Y_0)\end{aligned}
 
-La variation compensatoire est égale au changement de l'utilité. Le TMS de cette fonction d'utilité est: 
+La variation compensatoire est égale au changement de l'utilité. De par la linéarité dans l'argent, l'utilité est en dollars.  Le TMS de cette fonction d'utilité est: 
 
 .. math::
    TMS = \frac{dY}{dX} = - \frac{V'(X)}{1} = -V'(X)
@@ -113,7 +118,7 @@ On peut substituer la contrainte pour obtenir :math:`\max_{X} V(X) + I - p_X X`.
 .. math::
    \frac{dV}{dX} =  p_X
 
-ce qui permet de trouver la demande :math:`X^*(p_X)`. Dénotons :math:`p_X(X^*) = \frac{dV}{dX}` la fonction de demande inverse. Ainsi un point sur cette demande inverse donne la disposition à payer pour une unité de :math:`X`.
+ce qui permet de trouver la demande :math:`X^*(p_X)`. Dénotons :math:`p_X(X^*) = \frac{dV}{dX}`, la fonction de demande inverse. Ainsi un point sur cette demande inverse donne la disposition à payer pour une unité de :math:`X`.
 
 Dans le cas d'un nouveau produit, la variation compensatoire de :math:`\mathcal P_0` à :math:`\mathcal P` est le surplus du consommateur.
 
@@ -128,7 +133,12 @@ Le premier terme n'est rien d'autre que l'aire sous la courbe de la fonction de 
 .. math::
    \int_{0}^{X^*} V'(i)di = V(X^*) - V(0)
 
-C'est la somme des dispositions à payer pour chaque unité de :math:`X`. Le deuxième terme est le coût d'acheter la quantité :math:`X^*`. Le surplus provient du fait que le consommateur valorise chaque unité qu'il achète au prix :math:`p_X` à au moins le prix :math:`p_X`.  
+C'est la somme des dispositions à payer pour chaque unité de :math:`X`. Le deuxième terme est le coût d'acheter la quantité :math:`X^*`. Le surplus provient du fait que le consommateur valorise chaque unité qu'il achète au prix :math:`p_X` davantage que le prix :math:`p_X`.  
+
+.. figure:: /images/surplus.png
+   :scale: 100
+
+   La zone A+B est donné par :math:`V[X_0] - V(0)` alors que la zone B est la dépense :math:`p_{X0}X_0`. Ainsi le surplus du consommateur est A+B - B = A. 
 
 **Exercice B**: Si :math:`V(X) = 10 X - \frac{1}{2}X^2`, trouvez l'expression du surplus du consommateur. 
 
