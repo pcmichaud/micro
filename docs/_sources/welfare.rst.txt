@@ -136,7 +136,7 @@ Le premier terme n'est rien d'autre que l'aire sous la courbe de la fonction de 
 C'est la somme des dispositions à payer pour chaque unité de :math:`X`. Le deuxième terme est le coût d'acheter la quantité :math:`X^*`. Le surplus provient du fait que le consommateur valorise chaque unité qu'il achète au prix :math:`p_X` davantage que le prix :math:`p_X`.  
 
 .. figure:: /images/surplus.png
-   :scale: 100
+   :scale: 75
 
    La zone A+B est donné par :math:`V[X_0] - V(0)` alors que la zone B est la dépense :math:`p_{X0}X_0`. Ainsi le surplus du consommateur est A+B - B = A. 
 
