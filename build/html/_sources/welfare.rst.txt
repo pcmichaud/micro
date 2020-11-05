@@ -138,7 +138,7 @@ C'est la somme des dispositions à payer pour chaque unité de :math:`X`. Le deu
 .. figure:: /images/surplus.png
    :scale: 75
 
-   La zone A+B est donné par :math:`V[X_0] - V(0)` alors que la zone B est la dépense :math:`p_{X0}X_0`. Ainsi le surplus du consommateur est A+B - B = A. 
+   La zone A+B est donné par :math:`V(X_0) - V(0)` alors que la zone B est la dépense :math:`p_{X0}X_0`. Ainsi le surplus du consommateur est A+B - B = A. 
 
 **Exercice B**: Si :math:`V(X) = 10 X - \frac{1}{2}X^2`, trouvez l'expression du surplus du consommateur. 
 
@@ -185,7 +185,7 @@ Généralement, on accorde une valeur positive à la qualité de l'air.
 .. figure:: /images/china_pollution.jpg
    :scale: 50
 
-Il n'y a pas de marché pour la qualité de l'air. Avec le *Clean Air Act* (1977), le gouvernement american a mis en place un nombre important de mesures pour réduire la pollution. Les lois sont couteuses à implémenter et faire respecter. Pour justifier ces lois, on doit montrer que les bénéfices sont élevés. 
+Il n'y a pas de marché pour la qualité de l'air. Avec le *Clean Air Act* (1977), le gouvernement Americain a mis en place un nombre important de mesures pour réduire la pollution. Les lois sont couteuses à implémenter et faire respecter. Pour justifier ces lois, on doit montrer que les bénéfices sont élevés. 
 
 Considérons un changement de politique :math:`\mathcal P_0`: aucun contrôle, aucun coût, à :math:`\mathcal P`: contrôle de la pollution, ce qui implique des coûts. La variation compensatoire devrait être positive si les citoyens valorisent la qualité de l'air.
 
