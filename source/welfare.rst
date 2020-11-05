@@ -58,12 +58,6 @@ Note: on utilise une convention de signe telle que :math:`\Delta I^{CV}>0` quand
 **Exercice A**: Trouvez l'expression de la variation compensatoire pour
 :math:`U = XY` et une taxe :math:`\tau` sur le bien :math:`Y`.
 
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/6imTJaSOFIc" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>
-
 
 :math:`\Delta I^{CV}` dépend seulement des préférences
 
@@ -141,12 +135,6 @@ C'est la somme des dispositions à payer pour chaque unité de :math:`X`. Le deu
    La zone A+B est donné par :math:`V(X^*) - V(0)` alors que la zone B est la dépense :math:`p_{X}X^*`. Ainsi le surplus du consommateur est A+B - B = A. 
 
 **Exercice B**: Si :math:`V(X) = 10 X - \frac{1}{2}X^2`, trouvez l'expression du surplus du consommateur. 
-
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/R1OKZp8Hqj0" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>
 
 
 Bien-être et taxation
