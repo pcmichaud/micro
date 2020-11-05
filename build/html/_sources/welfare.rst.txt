@@ -132,7 +132,7 @@ C'est la somme des dispositions à payer pour chaque unité de :math:`X`. Le deu
 .. figure:: /images/surplus.png
    :scale: 75
 
-   La zone A+B est donné par :math:`V(X^*) - V(0)` alors que la zone B est la dépense :math:`p_{X}X^*`. Ainsi le surplus du consommateur est A+B - B = A. 
+   La zone A+B est donnée par :math:`V(X^*) - V(0)` alors que la zone B est la dépense :math:`p_{X}X^*`. Ainsi le surplus du consommateur est A+B - B = A. 
 
 **Exercice B**: Si :math:`V(X) = 10 X - \frac{1}{2}X^2`, trouvez l'expression du surplus du consommateur. 
 
