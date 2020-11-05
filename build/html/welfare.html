@@ -259,15 +259,15 @@ V(X_0) + Y_0 &amp;= V(X_1) + Y_1 - \Delta I^{CV} \\
 <p>Dans le cas d’un nouveau produit, la variation compensatoire de <span class="math notranslate nohighlight">\(\mathcal P_0\)</span> à <span class="math notranslate nohighlight">\(\mathcal P\)</span> est le surplus du consommateur.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
-\Delta I^{CV} &amp;=&amp; V[X^*(p_X)] + I - p_X^*(p_X) - [V(0) + I] \\
-&amp;=&amp; V[X^*(p_X)] - V(0) - p_X X^*(p_X)\end{aligned}\end{split}\]</div>
+\Delta I^{CV} &amp;=&amp; V[X^*(p_X) + I - p_X X^*(p_X)] - [V(0) + I] \\
+&amp;=&amp; V(X^*(p_X)) - V(0) - p_X X^*(p_X)\end{aligned}\end{split}\]</div>
 <p>Le premier terme n’est rien d’autre que l’aire sous la courbe de la fonction de demande inverse:</p>
 <div class="math notranslate nohighlight">
 \[\int_{0}^{X^*} V'(i)di = V(X^*) - V(0)\]</div>
 <p>C’est la somme des dispositions à payer pour chaque unité de <span class="math notranslate nohighlight">\(X\)</span>. Le deuxième terme est le coût d’acheter la quantité <span class="math notranslate nohighlight">\(X^*\)</span>. Le surplus provient du fait que le consommateur valorise chaque unité qu’il achète au prix <span class="math notranslate nohighlight">\(p_X\)</span> davantage que le prix <span class="math notranslate nohighlight">\(p_X\)</span>.</p>
 <div class="figure align-default" id="id1">
-<a class="reference internal image-reference" href="_images/surplus.png"><img alt="_images/surplus.png" src="_images/surplus.png" style="width: 529.5px; height: 366.75px;" /></a>
-<p class="caption"><span class="caption-text">La zone A+B est donné par <span class="math notranslate nohighlight">\(V(X_0) - V(0)\)</span> alors que la zone B est la dépense <span class="math notranslate nohighlight">\(p_{X0}X_0\)</span>. Ainsi le surplus du consommateur est A+B - B = A.</span><a class="headerlink" href="#id1" title="Lien permanent vers cette image">¶</a></p>
+<a class="reference internal image-reference" href="_images/surplus.png"><img alt="_images/surplus.png" src="_images/surplus.png" style="width: 525.0px; height: 346.5px;" /></a>
+<p class="caption"><span class="caption-text">La zone A+B est donné par <span class="math notranslate nohighlight">\(V(X^*) - V(0)\)</span> alors que la zone B est la dépense <span class="math notranslate nohighlight">\(p_{X}X^*\)</span>. Ainsi le surplus du consommateur est A+B - B = A.</span><a class="headerlink" href="#id1" title="Lien permanent vers cette image">¶</a></p>
 </div>
 <p><strong>Exercice B</strong>: Si <span class="math notranslate nohighlight">\(V(X) = 10 X - \frac{1}{2}X^2\)</span>, trouvez l’expression du surplus du consommateur.</p>
 <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
@@ -279,18 +279,16 @@ V(X_0) + Y_0 &amp;= V(X_1) + Y_1 - \Delta I^{CV} \\
 <a class="reference internal image-reference" href="_images/tax.jpeg"><img alt="_images/tax.jpeg" src="_images/tax.jpeg" style="width: 182.5px; height: 69.0px;" /></a>
 </div>
 <p>La taxation affecte le prix payé par le consommateur. Donc, elle a des effets sur le bien-être. Dans la théorie du consommateur, nous avons déjà vu qu’une hausse de prix réduit le bien-être du consommateur. Nous avons qu’à appliquer le concept de revenu compensé à l’analyse des taxes.</p>
-<p>Considérons l’élimination d’une taxe, le prix passant de <span class="math notranslate nohighlight">\(p_X = p+t\)</span> à <span class="math notranslate nohighlight">\(p_X = p\)</span> . On a <span class="math notranslate nohighlight">\(X^*(p) &gt; X^*(p+t)\)</span> (le bien n’est pas <em>Giffen</em>). Le revenu de la taxe est <span class="math notranslate nohighlight">\(T= t X^*(p+t)\)</span>.</p>
+<p>Considérons l’élimination d’une taxe, le prix passant de <span class="math notranslate nohighlight">\(p_X = p+t\)</span> à <span class="math notranslate nohighlight">\(p_X = p\)</span> . On a <span class="math notranslate nohighlight">\(X^*(p) &gt; X^*(p+t)\)</span> (le bien n’est pas <em>Giffen</em>). Le revenu de la taxe est <span class="math notranslate nohighlight">\(T= t X^*(p+t)\)</span>. Quand le gouvernement collecte une taxe, il faut implicitement faire comme si les revenus seront redistribués de manière forfaitaire. Du point de vue du bien-être, l’argent collecté par le gouvernement n’est pas perdu…</p>
 <p>En terme de variation compensatoire, on a</p>
 <blockquote>
 <div><div class="math notranslate nohighlight">
-\[U[X^*(p), I - pX^*(p)] - U[X^*(p+t), I - (p+t) X^*(p+t)]\]</div>
+\[\Delta I^{CV} =  U[X^*(p), I - pX^*(p)] - U[X^*(p+t), I - (p+t) X^*(p+t)] &gt; 0\]</div>
 </div></blockquote>
 <p>On obtient que <span class="math notranslate nohighlight">\(\Delta I^{CV} &gt; T\)</span>: Le consommateur est prêt à payer un montant supérieur au revenu généré par la taxe pour le gouvernement. Donc, l’élimination de la taxe lui est bénéfique.</p>
-<p>La perte de bien-être associée à la taxe est donc <span class="math notranslate nohighlight">\(\Delta W = \Delta I^{CV} - T\)</span>.</p>
-<p><strong>Exercice C</strong>: Si <span class="math notranslate nohighlight">\(V(X) = 10 X - \frac{1}{2}X^2\)</span>, trouvez la perte de bien-être associée à une taxe <span class="math notranslate nohighlight">\(t\)</span> sur le bien <span class="math notranslate nohighlight">\(X\)</span>. Montrez graphiquement cette perte.</p>
-<div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-    <iframe src="https://www.youtube.com/embed/u74TNMcFb2k" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-</div></div>
+<p>Le gain de bien-être associée à l’élimination de la  taxe est donc <span class="math notranslate nohighlight">\(\Delta W = \Delta I^{CV} - T\)</span>. Pourquoi le <span class="math notranslate nohighlight">\(T\)</span> est soustrait? En enlevant la taxe, le gouvernement ne peut plus destribuer de manière forfaitaire les revenus de la taxe. Donc, il faut l’enlever du changement de surplus du consommateur.  Si on introduit une taxe, on a plutôt,  <span class="math notranslate nohighlight">\(\Delta W = \Delta I^{CV} + T\)</span> parce qu’on doit redistribuer de manière forfaitaire les revenus de la taxe, ce qui est un gain pour le consommateur.</p>
+<p><strong>Exercice C</strong>: Si <span class="math notranslate nohighlight">\(V(X) = 10 X - \frac{1}{2}X^2\)</span>, trouvez la perte de bien-être associée à une nouvelle taxe <span class="math notranslate nohighlight">\(t\)</span> sur le bien <span class="math notranslate nohighlight">\(X\)</span>. Montrez graphiquement cette perte.</p>
+</div>
 <div class="section" id="bien-etre-et-environnement">
 <h2>Bien-être et environnement<a class="headerlink" href="#bien-etre-et-environnement" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Généralement, on accorde une valeur positive à la qualité de l’air.</p>

@@ -125,8 +125,8 @@ Dans le cas d'un nouveau produit, la variation compensatoire de :math:`\mathcal 
 .. math::
 
    \begin{aligned}
-   \Delta I^{CV} &=& V[X^*(p_X)] + I - p_X^*(p_X) - [V(0) + I] \\
-   &=& V[X^*(p_X)] - V(0) - p_X X^*(p_X)\end{aligned}
+   \Delta I^{CV} &=& V[X^*(p_X) + I - p_X X^*(p_X)] - [V(0) + I] \\
+   &=& V(X^*(p_X)) - V(0) - p_X X^*(p_X)\end{aligned}
 
 Le premier terme n'est rien d'autre que l'aire sous la courbe de la fonction de demande inverse:
 
@@ -138,7 +138,7 @@ C'est la somme des dispositions à payer pour chaque unité de :math:`X`. Le deu
 .. figure:: /images/surplus.png
    :scale: 75
 
-   La zone A+B est donné par :math:`V(X_0) - V(0)` alors que la zone B est la dépense :math:`p_{X0}X_0`. Ainsi le surplus du consommateur est A+B - B = A. 
+   La zone A+B est donné par :math:`V(X^*) - V(0)` alors que la zone B est la dépense :math:`p_{X}X^*`. Ainsi le surplus du consommateur est A+B - B = A. 
 
 **Exercice B**: Si :math:`V(X) = 10 X - \frac{1}{2}X^2`, trouvez l'expression du surplus du consommateur. 
 
@@ -157,25 +157,20 @@ Bien-être et taxation
 
 La taxation affecte le prix payé par le consommateur. Donc, elle a des effets sur le bien-être. Dans la théorie du consommateur, nous avons déjà vu qu'une hausse de prix réduit le bien-être du consommateur. Nous avons qu'à appliquer le concept de revenu compensé à l'analyse des taxes. 
 
-Considérons l'élimination d'une taxe, le prix passant de :math:`p_X = p+t` à :math:`p_X = p` . On a :math:`X^*(p) > X^*(p+t)` (le bien n'est pas *Giffen*). Le revenu de la taxe est :math:`T= t X^*(p+t)`. 
+Considérons l'élimination d'une taxe, le prix passant de :math:`p_X = p+t` à :math:`p_X = p` . On a :math:`X^*(p) > X^*(p+t)` (le bien n'est pas *Giffen*). Le revenu de la taxe est :math:`T= t X^*(p+t)`. Quand le gouvernement collecte une taxe, il faut implicitement faire comme si les revenus seront redistribués de manière forfaitaire. Du point de vue du bien-être, l'argent collecté par le gouvernement n'est pas perdu...
 
 En terme de variation compensatoire, on a 
 
    .. math::
-      U[X^*(p), I - pX^*(p)] - U[X^*(p+t), I - (p+t) X^*(p+t)]
+     \Delta I^{CV} =  U[X^*(p), I - pX^*(p)] - U[X^*(p+t), I - (p+t) X^*(p+t)] > 0
 
 On obtient que :math:`\Delta I^{CV} > T`: Le consommateur est prêt à payer un montant supérieur au revenu généré par la taxe pour le gouvernement. Donc, l'élimination de la taxe lui est bénéfique. 
 
-La perte de bien-être associée à la taxe est donc :math:`\Delta W = \Delta I^{CV} - T`. 
+Le gain de bien-être associée à l'élimination de la  taxe est donc :math:`\Delta W = \Delta I^{CV} - T`. Pourquoi le :math:`T` est soustrait? En enlevant la taxe, le gouvernement ne peut plus destribuer de manière forfaitaire les revenus de la taxe. Donc, il faut l'enlever du changement de surplus du consommateur.  Si on introduit une taxe, on a plutôt,  :math:`\Delta W = \Delta I^{CV} + T` parce qu'on doit redistribuer de manière forfaitaire les revenus de la taxe, ce qui est un gain pour le consommateur.   
 
-**Exercice C**: Si :math:`V(X) = 10 X - \frac{1}{2}X^2`, trouvez la perte de bien-être associée à une taxe :math:`t` sur le bien :math:`X`. Montrez graphiquement cette perte. 
+**Exercice C**: Si :math:`V(X) = 10 X - \frac{1}{2}X^2`, trouvez la perte de bien-être associée à une nouvelle taxe :math:`t` sur le bien :math:`X`. Montrez graphiquement cette perte. 
 
 
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/u74TNMcFb2k" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>
 
 Bien-être et environnement
 ++++++++++++++++++++++++++
