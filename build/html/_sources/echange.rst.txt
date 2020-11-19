@@ -277,7 +277,7 @@ Pour toute allocation :math:`(X_1^*,Y_1^*)`, et valeurs conséquentes pour :math
 
    L'optimum de Pareto A n'est pas atteignable à partir de la dotation :math:`E_0`. Mais un transfert de :math:`T_X` du bien :math:`X` provenant du consommateur 2 au consommateur 1, permet d'atteindre la dotation  :math:`E_1`, à partir de laquelle on peut attendre l'optimum de Pareto A avec un équilibre de marché au prix :math:`p`. 
 
-**Exercice E**: Trouvez le transfert de dotation et de prix, partant de :math:`(64,28,64,4)`, qui donne l'allocation trouvée à l'exercice D.
+**Exercice E**: Trouvez le transfert de dotation et le prix, partant de :math:`(64,28,64,4)`, qui donne l'allocation trouvée à l'exercice D.
 
 .. raw:: html
 

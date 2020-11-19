@@ -31,7 +31,7 @@ Avec des données sur la quantité d'acier produite, la quantité de minerai et 
 .. math::
     \log S_t = \log A_t + \alpha \log I_t + \beta \log C_t + \epsilon_t
 
-où :math:`A_t` est un facteur de productivité multifactorielle et :math:`\epsilon_t` est un aléa. Ainsi :math:`\alpha`et :math:`\beta` peuvent être estimés, sous certaines conditions concernant :math:`\epsilon_t` et sa relation avec :math:`(I_t,C_t)`. 
+où :math:`A_t` est un facteur de productivité multifactorielle et :math:`\epsilon_t` est un aléa. Ainsi :math:`\alpha` et :math:`\beta` peuvent être estimés, sous certaines conditions concernant :math:`\epsilon_t` et sa relation avec :math:`(I_t,C_t)`. 
 
 Taux marginal de substitution technique
 +++++++++++++++++++++++++++++++++++++++
