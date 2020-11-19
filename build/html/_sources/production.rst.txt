@@ -334,4 +334,8 @@ Les théorèmes du bien-être s'appliquent, tout comme en échange. Une conditio
 Exemple Python 
 ++++++++++++++
 
-À venir...
+|ImageLink|_
+
+.. |ImageLink| image:: https://colab.research.google.com/assets/colab-badge.svg
+.. _ImageLink: https://colab.research.google.com/github/pcmichaud/micro/blob/master/notebooks/EquilibreProduction.ipynb
+
