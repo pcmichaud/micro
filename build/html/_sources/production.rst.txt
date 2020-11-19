@@ -70,7 +70,7 @@ Une fonction de production a des rendements à l'échelle:
 **Exercice B**: Considérez la fonction
 :math:`Y=F(X,Z)=A X^\alpha Z^\beta`. Quelles sont les rendements à l'échelle de la fonction?
 
-Miminisation des coûts
+Minimisation des coûts
 ++++++++++++++++++++++
 
 Maintenant que nous comprenons les capacités techniques de l'entreprise, nous pourrions nous demander quel serait le meilleur choix d'inputs pour un niveau d'output donné. Pensons à une entreprise qui essaie de réduire ses coûts mais ne cherche pas nécessairement à changer son niveau de production. 
@@ -126,7 +126,7 @@ Fonction de coût
 
 En substituant les demandes condionnelles on peut obtenir la fonction de coûts:
 
-.. math:: C(p_X,p_Z,Y) = p_X Xp_X,p_Z,Y) + p_Z Z(p_X,p_Z,Y)
+.. math:: C(p_X,p_Z,Y) = p_X X(p_X,p_Z,Y) + p_Z Z(p_X,p_Z,Y)
 
 Cette fonction nous donne pour des prix et une quantité d'output donné, le coût total qui minimise les coûts. 
 
@@ -158,13 +158,13 @@ Coût marginal
 
 Le coût marginal de produire un output (en minimisant les coûts) est donné par: 
 
-.. math:: c(p_X,p_Y,Y) = \frac{\partial C(p_X,p_Y,Y)}{\partial Y} 
+.. math:: c(p_X,p_Z,Y) = \frac{\partial C(p_X,p_Z,Y)}{\partial Y} 
 
 On utilise la convention de :math:`c` minuscule dénote le coût marginal et C majuscule, les coûts totaux. 
 
 En utilisant le théorème de l'enveloppe, on peut montrer que
 
-.. math:: \frac{\partial C(p_X,p_Y,Y)}{\partial Y} = \mu
+.. math:: \frac{\partial C(p_X,p_Z,Y)}{\partial Y} = \mu
 
 :math:`\mu` est donc le coût marginal à l'optimum.
 
