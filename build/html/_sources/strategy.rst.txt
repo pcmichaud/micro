@@ -28,7 +28,7 @@ Le surplus du producteur est donné par:
 Manipulation stratégique du prix
 ++++++++++++++++++++++++++++++++
 
-Une firme qui peut par son choix de production affecter le prix d'équilibre et faire un profit additionelle a un pouvoir de marché. Elle peut réduire sa production, en dessous de de la quantité qui serait Pareto optimale en concurrence parfaite. Ceci mènera à un prix qui est au dessus du coût marginal et ainsi augmenter ses profits. 
+Une firme qui peut par son choix de production affecter le prix d'équilibre et faire un profit additionel a un pouvoir de marché. Elle peut réduire sa production, en dessous de  la quantité qui serait Pareto optimale en concurrence parfaite. Ceci mènera à un prix qui est au dessus du coût marginal et ainsi augmenter ses profits. 
 
 Pour comprendre la nature de cette stratégie, observons que l'entreprise choisie  :math:`X` afin de maximiser
 
@@ -38,14 +38,14 @@ La CPO est
 
    .. math:: \frac{d\Pi}{dX} = 0 \iff p'(X)X + p(X) = C'(X)
 
-Ceci mène à un choix :math:`X_{PM}` such tel que 
+Ceci mène à un choix :math:`X_{PM}`  tel que 
 
 .. math::
     p(X_{PM}) + p'(X_{PM}) X_{PM} = C'(X_{PM})
 
-Le premier terme à droite est l'effet *marginal* d'une augmentation de la quantité. L'unité supplémentaire rapporte :math:`p(X_{PM})`. Cet effet est aussi présent quand la firme est *prenneur de prix*, la quantité est choisie tel que le prix (revenu marginal) est égale au coût marginal de produire cette unité. 
+Le premier terme à droite est l'effet *marginal* d'une augmentation de la quantité. L'unité supplémentaire rapporte :math:`p(X_{PM})`. Cet effet est aussi présent quand la firme est *prenneur de prix*, la quantité est choisie tel que le prix (revenu marginal) est égal au coût marginal de produire cette unité. 
 
-Un deuxième terme est présent à gauche. Il s'agit de l'effet *infra-marginal*. Quand la firme augmente sa quantité d'une unité, le prix baisse (pas de bien Giffen svp...). Ainsi, le revenu qu'elle fait sur les :math:`X_{PM}`unités déjà produite baisse. Cet effet est négatif (puisque :math:`p'(\cdot)` est négatif). Ainsi, le revenu marginal est plus faible qu'en l'absence de manipulation stratégique. L'entreprise diminuera donc sa production jusqu'à rétablir cette égalité. 
+Un deuxième terme est présent à gauche. Il s'agit de l'effet *infra-marginal*. Quand la firme augmente sa quantité d'une unité, le prix baisse (pas de bien Giffen svp...). Ainsi, le revenu  qu'elle fait sur les :math:`X_{PM}`unités déjà produite baisse. Cet effet est négatif (puisque :math:`p'(\cdot)` est négatif). Ainsi, le revenu marginal est plus faible qu'en l'absence de manipulation stratégique. L'entreprise diminuera donc sa production jusqu'à rétablir cette égalité. 
 
 **Exercice B** Trouvez le prix d'équilibre si l'entreprise fait de la manipulation stratégique du prix et
 :math:`V(X) = \sqrt{X}`, :math:`C(X) = X^2`. Comparer graphiquement par rapport à la situation où la firme est *preneur de prix*.
@@ -63,14 +63,14 @@ Puisque qu'au niveau de production optimal :math:`X_{PM}` on a
 
 et donc si :math:`p'(X_{PM})<0`, alors :math:`p(X_{PM}) > C'(X_{PM})`.
 
-Le monopole fixe la production à un prix plus élevé que le coût marginal. Si la production of a firm has no impact on the price, elle produit :math:`X_{PT}` à :math:`p(X_{PT}) = C'(X_{PT})`. Donc, :math:`X_{PM} < X_{PT}`.
+Le monopole fixe la production à un prix plus élevé que le coût marginal. Si la production de la firme n'a pas d'impact sur le prix, elle produit :math:`X_{PT}` à :math:`p(X_{PT}) = C'(X_{PT})`. Donc, :math:`X_{PM} < X_{PT}`.
 
 .. figure:: /images/monopoly.jpeg
    :scale: 150
 
 Pour faire de l'analyse de bien-être concernant le monopole, il faut d'abord se demander pourquoi le monopole existe. Le monopole peut être artificiel parce que l'entreprise a crée des *barrières à l'entrée* sur le marché. Si ces barrières ne sont pas justifiées, par exemple, un cablo-distributeur qui empêche un autre d'utiliser les mêmes poteaux pour accéder aux clients, elles mèneront à une perte de bien-être pour le consommateur. La réglementation peut créer, de manière indirecte, une barrière à l'entrée. Pensons à la SAQ au Québec. Ces monopoles *articifiels* mènent généralement à une perte de bien-être. 
 
-D'autres situations sont plus compliquées. Par exemple, des coûts fixes important, et donc des économies d'échelle importante peuvent justifier un monopole, qui dit alors *naturel*. Un exemple souvent donné est celui d'Hydro-Québec. Avant la nationalisation de l'électricité, plusieurs petits producteurs existaient, avec des coûts de production élevés et donc des prix plus élevés. 
+D'autres situations sont plus compliquées. Par exemple, des coûts fixes importants, et donc des économies d'échelle importantes peuvent justifier un monopole, qui dit alors *naturel*. Un exemple souvent donné est celui d'Hydro-Québec. Avant la nationalisation de l'électricité, plusieurs petits producteurs existaient, avec des coûts de production élevés et donc des prix plus élevés. 
 
 .. raw:: html
 
