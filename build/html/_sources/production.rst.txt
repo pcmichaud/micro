@@ -303,9 +303,9 @@ Les demandes sont
 
    .. math::
 
-      X^{C1,d} = \frac{1}{1+\alpha}I_1  
-      Y^{C1,d} = \frac{\alpha}{1+\alpha} \frac{I_1}{p}
-      X^{C2,d} = \frac{1}{1+\alpha} I_2 
+      X^{C1,d} = \frac{1}{1+\alpha}I_1  \\
+      Y^{C1,d} = \frac{\alpha}{1+\alpha} \frac{I_1}{p} \\
+      X^{C2,d} = \frac{1}{1+\alpha} I_2  \\
       Y^{C2,d} = \frac{\alpha}{1+\alpha} \frac{I_2}{p}
 
 Un équilibre de marché pour :math:`X` est donné par:
