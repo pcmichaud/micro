@@ -240,9 +240,3 @@ Pour discussion en classe, est-ce que le cas de Bell vs. ses compétiteurs pour 
    :scale: 100
 
 Voir cette lettre de `Robert Gagné <https://www.lapresse.ca/debats/opinions/2020-07-11/bell-un-frein-a-la-prosperite-du-quebec.php>`_ et la réponse de `Bell <https://www.lapresse.ca/debats/opinions/2020-07-16/bell-contribue-a-accelerer-la-prosperite-du-quebec.php>`_ et de Videotron par le biais de `Pierre-Karl Péladeau <https://www.ledroit.com/opinions/lobstruction-systematique-de-bell-et-autres-pratiques-anticoncurrentielles-417568f9e28fc42e9805555ad9c34087>`_. 
-
-
-Exemple Python 
-++++++++++++++
-
-À venir...
