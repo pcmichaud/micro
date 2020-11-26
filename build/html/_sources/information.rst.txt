@@ -160,7 +160,3 @@ Question en classe: Le Canada doit-il se doter d'un régime d'assurance-médicam
 - Communiqué de Presse du `Conseil du Patronat <https://www.cpq.qc.ca/fr/publications/communiques-de-presse/le-cpq-est-perplexe-quant-aux-recommandations-du-rapport-sur-un-regime-national-d-assurance-medicaments/>`_. 
 - Rapport du `Fraser Institute <https://www.fraserinstitute.org/sites/default/files/lessons-quebec-universal-prescription-drug-insurance-program.pdf>`_. 
 
-Exemple Python 
-++++++++++++++
-
-À venir...
