@@ -234,7 +234,10 @@ L'hypothèse importante est que le consommateur peut observer les prix des comp�
 
 On doit souligner qu'il y a plusieurs possibilités pour les firmes de faire de la collusion afin de soutenir un prix plus élevé. Ces ententes sont illégales mais ca ne veut pas dire qu'elles ne surviennent pas. 
 
-Pour discussion en classe, est-ce que le cas de Bell vs. ses compétiteurs pour ce qui est de la cablo-diffusion est un bon exemple de barrière à l'entrée dans un contexte de compétition par les prix?
+Barrière à l'entrée 
+~~~~~~~~~~~~~~~~~~~
+
+Pour discussion en classe, est-ce que le cas de Bell vs. ses compétiteurs pour ce qui est de la cablo-diffusion est un bon exemple de barrière à l'entrée dans un contexte de compétition?
 
 .. figure:: /images/duopoly.jpeg
    :scale: 100
