@@ -3,14 +3,16 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Microéconomie 20-851
-====================
+Notes Micro
+===========
 
-Bienvenue sur le site du cours 20-851 à HEC Montréal.  
+Ce site permet d'avoir au même endroit les notes de cours pour les cours 20-851 (microéconomie), 20-851A (microeconomics) et 80-804A (behavioral economics and finance, BEF). This website contains class notes for each of the classes listed above at HEC. 
+
+Pierre-Carl Michaud, Professeur titulaire HEC Montréal
 
 .. toctree::
    :maxdepth: 1
-   :caption: Menu:
+   :caption: Microéconomie (20-851):
 
    plan.rst
    intro.rst
@@ -25,7 +27,23 @@ Bienvenue sur le site du cours 20-851 à HEC Montréal.
    strategy.rst
    information.rst
 
+.. toctree::
+   :maxdepth: 1
+   :caption: Microeconomics (20-851A):
 
+   plan_en.rst
+   intro_en.rst
+   cons_en.rst
+   effets_en.rst
+   risque_en.rst
+   time_en.rst
+
+.. toctree::
+   :maxdepth: 1
+   :caption: BEF (80-804A):
+
+   plan_bef.rst
+   anomalies.rst
 Index
 =====
 

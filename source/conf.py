@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Microeconomie 20-851'
+project = 'Micro Notes'
 copyright = '2020, Pierre-Carl Michaud'
 author = 'Pierre-Carl Michaud'
 

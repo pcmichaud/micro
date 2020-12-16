@@ -1,0 +1,433 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="fr" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Time &mdash; Documentation Micro Notes </title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/x-mathjax-config">MathJax.Hub.Config({"extensions": ["tex2jax.js"], "jax": ["input/TeX", "output/HTML-CSS"], "availableFonts": ["Neo-Euler", "TeX"], "preferredFont": ["Neo-Euler"], "scale": 60})</script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="Syllabus" href="plan_bef.html" />
+    <link rel="prev" title="Risk" href="risque_en.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Micro Notes
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Microéconomie (20-851):</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="plan.html">Plan de cours</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cons.html">Consommateur</a></li>
+<li class="toctree-l1"><a class="reference internal" href="effets.html">Effets Prix et Revenu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="risque.html">Le Risque</a></li>
+<li class="toctree-l1"><a class="reference internal" href="time.html">Le Temps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="labor.html">Le Travail</a></li>
+<li class="toctree-l1"><a class="reference internal" href="welfare.html">Bien-être</a></li>
+<li class="toctree-l1"><a class="reference internal" href="echange.html">Échange</a></li>
+<li class="toctree-l1"><a class="reference internal" href="production.html">La Production</a></li>
+<li class="toctree-l1"><a class="reference internal" href="strategy.html">Concurrence imparfaite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="information.html">Asymétrie d’information</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Microeconomics (20-851A):</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="plan_en.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro_en.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cons_en.html">Consumer Demand</a></li>
+<li class="toctree-l1"><a class="reference internal" href="effets_en.html">Price and Income Effects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="risque_en.html">Risk</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Time</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#preferences">Preferences</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#discounted-utility">Discounted Utility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#marginal-rate-of-substitution-mrs">Marginal Rate of Substitution (MRS)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#intertemporal-budget-constraint">Intertemporal Budget Constraint</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#optimal-choice">Optimal Choice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#present-bias">Present bias</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#intertemporal-choice-python">Intertemporal Choice Python</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">BEF (80-804A):</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="plan_bef.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="anomalies.html">Anomalies</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Micro Notes</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Time</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/time_en.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="time">
+<h1>Time<a class="headerlink" href="#time" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="section" id="preferences">
+<h2>Preferences<a class="headerlink" href="#preferences" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Generally, everyone prefers to get benefits as fast as possible and incur cost as late as possible:</p>
+<ul class="simple">
+<li><p>A coffee now or in an hour?</p></li>
+<li><p>Go to the Gym today or tomorrow?</p></li>
+<li><p>Save now or next year?</p></li>
+</ul>
+<p>Empirical evidence suggest that the origin of preferences can be traced to childhood. But preferences may change over time.</p>
+<div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+    <iframe src="https://www.youtube.com/embed/QX_oy9614HQ" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
+</div></div>
+<div class="section" id="discounted-utility">
+<h2>Discounted Utility<a class="headerlink" href="#discounted-utility" title="Lien permanent vers ce titre">¶</a></h2>
+<p>In his book <em>The Theory of Interest</em> in 1930, <a class="reference external" href="https://fr.wikipedia.org/wiki/Irving_Fisher">Irving Fisher</a> presents a simple theory which is the fundation to modern finance and macro. Preferences are represented using discounted utility.</p>
+<p>If <span class="math notranslate nohighlight">\(u(C_t)\)</span> denotes utility of consuming in period <span class="math notranslate nohighlight">\(t\)</span>, discounted utility for a consumption plan <span class="math notranslate nohighlight">\(\textbf{C} = (C_1,...,C_T)\)</span> is :</p>
+<div class="math notranslate nohighlight">
+\[DU(\mathbf{C}) = \sum_{t=1}^T \delta^{t-1} u(C_t)\]</div>
+<p><span class="math notranslate nohighlight">\(\delta\)</span> <span class="math notranslate nohighlight">\(\in [0,1]\)</span> is the discount factor (higher value indicates patience). The relationship between the discount rate <span class="math notranslate nohighlight">\(\rho\)</span> and the discount factor is given by:</p>
+<div class="math notranslate nohighlight">
+\[\delta = \frac{1}{1+\rho}\]</div>
+</div>
+<div class="section" id="marginal-rate-of-substitution-mrs">
+<h2>Marginal Rate of Substitution (MRS)<a class="headerlink" href="#marginal-rate-of-substitution-mrs" title="Lien permanent vers ce titre">¶</a></h2>
+<p>If <span class="math notranslate nohighlight">\(T=2\)</span>, then</p>
+<div class="math notranslate nohighlight">
+\[DU(C_1,C_2) = u(C_1) +  \delta u(C_2)\]</div>
+<p>Total differentiating to obtain the MRS yields:</p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial C_2}{\partial C_1}\rvert_{dDU=0} = -\frac{u'(C_1)}{\delta u'(C_2)}\]</div>
+<p>Intertemporal preferences are captured by:</p>
+<ul class="simple">
+<li><p>Discount factor (<span class="math notranslate nohighlight">\(\delta\)</span>)</p></li>
+<li><p>The shape of <span class="math notranslate nohighlight">\(u\)</span>.</p></li>
+</ul>
+<p><strong>Exercise A</strong>: Find the MRS for <span class="math notranslate nohighlight">\(u(C_t) = \log C_t\)</span></p>
+<p>How can we estimate the discount rate (factor)? We can use MPL (see course on risk).</p>
+<p>A Danish study estimates discount rates using MPL <a class="reference external" href="https://www.aeaweb.org/articles?id=10.1257/000282802762024674">(Harrison, Lau and Williams, 2002)</a></p>
+<p><img alt="image_mpl" src="_images/mpl.png" /></p>
+<p>Results show great dispersion and high discount rates, much higher than interest rates.</p>
+<p><img alt="image_discount" src="_images/Results.png" /></p>
+</div>
+<div class="section" id="intertemporal-budget-constraint">
+<h2>Intertemporal Budget Constraint<a class="headerlink" href="#intertemporal-budget-constraint" title="Lien permanent vers ce titre">¶</a></h2>
+<p><strong>Interest and Financial Markets</strong></p>
+<p>Financial institutions offer <span class="math notranslate nohighlight">\(r_S\)</span> for each dollar deposited (savings)
+. We are asked <span class="math notranslate nohighlight">\(r_D\)</span> for each dollar borrowed.</p>
+<p>Assume for the moment that <span class="math notranslate nohighlight">\(r_D = r_S = r\)</span>.</p>
+<p><strong>Resources</strong></p>
+<p>Resources originate from:</p>
+<ul class="simple">
+<li><p>Initial wealth: <span class="math notranslate nohighlight">\(W_0\)</span>.</p></li>
+<li><p>Income during both periods, <span class="math notranslate nohighlight">\(Y_1\)</span>, <span class="math notranslate nohighlight">\(Y_2\)</span>.</p></li>
+</ul>
+<p>The present value (PV) of these resources :</p>
+<div class="math notranslate nohighlight">
+\[PV_W = W_0 + Y_1 + \frac{Y_2}{1+r}\]</div>
+<p><strong>Constraint</strong></p>
+<p>Present value of consumption is given by:</p>
+<div class="math notranslate nohighlight">
+\[PV_C = C_1 + \frac{C_2}{1+r}\]</div>
+<p>Ainsi, la contrainte intertemporelle est <span class="math notranslate nohighlight">\(PV_C \leq PV_W\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[C_1 + \frac{C_2}{1+r} \leq W_0 + Y_1 + \frac{Y_2}{1+r}\]</div>
+<p><strong>Borrowing and Saving</strong></p>
+<p>We can write the constraint as</p>
+<div class="math notranslate nohighlight">
+\[(1+r)(W_0 + Y_1 - C_1) \ge  C_2 - Y_2\]</div>
+<p>Therefore,</p>
+<ul class="simple">
+<li><p>If one saves in the first period, one can also consume more than income in the second period.</p></li>
+<li><p>An individual who borrows in the first period has to consume less than his income in the second period.</p></li>
+</ul>
+<p>Visually, we have</p>
+<p><img alt="image_budget" src="_images/budget.png" /></p>
+<p><em>Example</em>: We can incorporate a pension plan into our budget constraint. A defined benefit pension plan forces the individual to save in the first period (contribute) against a fixed pension benefit in the second period.</p>
+<ul class="simple">
+<li><p>Income in the second period is <span class="math notranslate nohighlight">\(Y_2 = \phi Y_1\)</span> with a replacement rate
+<span class="math notranslate nohighlight">\(\phi \in [0,1]\)</span>.</p></li>
+<li><p>Income in th first period is reduced by the contribution to the pension plan
+<span class="math notranslate nohighlight">\(\tau Y_1\)</span>.</p></li>
+</ul>
+<p>The budget constraint is:</p>
+<div class="math notranslate nohighlight">
+\[C_1 + \frac{C_2}{1+r} \leq W_0 + (1-\tau)Y_1 + \frac{\phi Y_1}{1+r}\]</div>
+<p>Actuaries pick the contribution rate <span class="math notranslate nohighlight">\(\tau\)</span> such that:</p>
+<div class="math notranslate nohighlight">
+\[\tau Y_1 = \frac{\phi Y_1}{1+r_P} \to \tau = \frac{\phi}{1+r_P}\]</div>
+<p>where <span class="math notranslate nohighlight">\(r_P\)</span> is the implicit return of the pension fund. If <span class="math notranslate nohighlight">\(r_P = r\)</span>,
+the budget constraint is identical! The consumption plan does not change and so private savings is reduced one to one with the contribution made (crowdout effect). Lots of research is devoted to understanding the interplay between pensions and savings.</p>
+<p><strong>Spread between returns and borrowing costs</strong></p>
+<p><strong>Exercise B</strong>: What does the budget constraint look like if <span class="math notranslate nohighlight">\(r_S&lt;r_D\)</span>?</p>
+<p><strong>Exercise C</strong>: How to represent a situation where the agent cannot borrow?</p>
+</div>
+<div class="section" id="optimal-choice">
+<h2>Optimal Choice<a class="headerlink" href="#optimal-choice" title="Lien permanent vers ce titre">¶</a></h2>
+<p><strong>Maximization</strong></p>
+<p>The problem is (fix <span class="math notranslate nohighlight">\(W_0=0\)</span> to simplify):</p>
+<div class="math notranslate nohighlight">
+\[\max_{C_1,C_2} \{ u(C_1) + \delta u(C_2) : C_1+C_2/(1+r) \leq Y_1 + Y_2/(1+r)\}\]</div>
+<p>Two approaches:</p>
+<ol class="arabic simple">
+<li><p>Direct approach (substitution of constraint)</p></li>
+<li><p>Lagrangian</p></li>
+</ol>
+<p><strong>Optimality conditions</strong></p>
+<p>Le Lagrangian has three FOC:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+ u'(C_1) - \lambda = 0  \\
+\delta u'(C_2) - \lambda /(1+r) = 0  \\
+C_1+C_2/(1+r) - Y_1 - Y_2/(1+r) = 0  \end{aligned}\end{split}\]</div>
+<p>With (1) and (2) we get :</p>
+<div class="math notranslate nohighlight">
+\[\frac{u'(C_1)}{\delta u'(C_2)} = 1+r\]</div>
+<p>We can re-arrange, fixing <span class="math notranslate nohighlight">\(R=1+r\)</span>, to obtain the <strong>Euler</strong> equation:</p>
+<div class="math notranslate nohighlight">
+\[u'(C_1) = R\delta u'(C_2)\]</div>
+<p>Visually</p>
+<blockquote>
+<div><p><img alt="image_optimal" src="_images/optimal.png" /></p>
+</div></blockquote>
+<p>This theory is the basis for the life-cycle model (<em>the Life-Cycle Hypothesis</em>), proposed by <a class="reference external" href="https://en.wikipedia.org/wiki/Franco_Modigliani">Franco Modigliani</a>, which allows to understand decisions over age.</p>
+<p><strong>Exercise D</strong>: Find the optimal choice <span class="math notranslate nohighlight">\(C_1\)</span> and
+<span class="math notranslate nohighlight">\(C_2\)</span> if <span class="math notranslate nohighlight">\(u(C)=\frac{C^{1-\sigma}}{1-\sigma}\)</span> and the consumer faces a simple budget constraint.</p>
+<p><em>Example</em>: Are Canadians saving enough for retirement?</p>
+<p>A question often making headlines.</p>
+<div class="figure align-default" id="id1">
+<img alt="Le Conseiller, Globe and Mail, L’Actualité" src="_images/retraite.png" />
+<p class="caption"><span class="caption-text">Le Conseiller, Globe and Mail, L’Actualité</span><a class="headerlink" href="#id1" title="Lien permanent vers cette image">¶</a></p>
+</div>
+<p>This is a difficult question. One can simulate outcomes using very sophisticated models but how do we determine what is enough? Is saving too much also a problem?</p>
+<div class="figure align-default" id="id2">
+<img alt="McKinsey (2015)" src="_images/mckinsey.png" />
+<p class="caption"><span class="caption-text">McKinsey (2015)</span><a class="headerlink" href="#id2" title="Lien permanent vers cette image">¶</a></p>
+</div>
+<p>For more recent calculations, see this <a class="reference external" href="https://ire.hec.ca/en/wp-content/uploads/sites/3/2020/06/cpr-report-2020-final.pdf">report</a> of the Retirement and Savings Institute at HEC.</p>
+<p><strong>Optimal Savings</strong></p>
+<p>What does theory tell us about optimal savings?</p>
+<p><strong>Exercise E</strong>: Find the solution for optimal savings at the beginning of period 2 if <span class="math notranslate nohighlight">\(u(C)=\frac{C^{1-\sigma}}{1-\sigma}\)</span> and the budget constraint is given by :</p>
+<div class="math notranslate nohighlight">
+\[C_1 + \frac{C_2}{1+r} \leq (1-\tau)Y_1 + \frac{\phi Y_1}{1+r}\]</div>
+<p>More sophisticated computations can be done to compute how much people should save and compare it to how much they have actually saved:</p>
+<div class="figure align-default" id="id3">
+<img alt="Scholz et al. (2007, Journal of Political Economy)" src="_images/savings.png" />
+<p class="caption"><span class="caption-text"><a class="reference external" href="https://www.journals.uchicago.edu/doi/10.1086/506335">Scholz et al. (2007, Journal of Political Economy)</a></span><a class="headerlink" href="#id3" title="Lien permanent vers cette image">¶</a></p>
+</div>
+<p>Conclusions are sometimes surprising compared to what we hear in the media. A vast majority appears to save enough. Some even save too much.</p>
+</div>
+<div class="section" id="present-bias">
+<h2>Present bias<a class="headerlink" href="#present-bias" title="Lien permanent vers ce titre">¶</a></h2>
+<p>As we have seen, individuals can be very impatient. But their preferences may still fit discounted utility theory. There is no contradiction. But, there exist violations of discounted utility which have to do with the way people discount the very short term and the medium and long-term. If the discount function is not exponential, but rather hyperbolic for example, then individuals make inconsistent plans which they will not follow upon.</p>
+<p><em>Example</em>: Picking a movie</p>
+<p>You have to pick one movie to watch today and one you will watch next week:</p>
+<p>Assume <a class="reference external" href="https://www.youtube.com/watch?v=d7rtSqI0ZeA">Mommy</a>  has an immediate benefit of 4 and also a future benefit of 4 but that <a class="reference external" href="https://www.youtube.com/watch?v=OFl0fuIRl9A">Les Boys</a> has an immediate benefit of 7 (but no future benefit).</p>
+<p><strong>Exercise F</strong>: What is your discounted utility if you pick a movie today and  <span class="math notranslate nohighlight">\(\delta=1\)</span>. What happens if we delay movie watching to next week but you have to pick today?</p>
+<p>What is likely to happen when next week comes? Do you follow up with the plan in Exercise F?</p>
+<p>Empirical evidence suggest that in such choice situations, lots of people will pick Les Boys if they watch tonight. If they pick for next week today, they will pick Mommy. Discounted utility does not allow for such choice reversals, what is often called dynamic inconsistency.</p>
+<p><strong>Present-Bias and Quasi-Hyperbolic Preferences</strong></p>
+<p>Laibson (1997, QJE) proposes a simple modification to discounted utility, but with major implications. He produces to use a quasi-hyperbolic discount faction that discounts more heaviliy the immediate short term than the long-term:</p>
+<div class="math notranslate nohighlight">
+\[QH(\mathbf{c}) = u(C_1) + \beta \sum_{t=2}^T \delta^{t-1} u(C_t)\]</div>
+<p>The parameter <span class="math notranslate nohighlight">\(\beta\)</span> acts as a measure of present bias (the lower it is, the larger the bias) while <span class="math notranslate nohighlight">\(\delta\)</span> controls impatience in the long-term (similar to discounted utility discount factors). These preferences depend on the horizon.</p>
+<p><strong>Exercise G</strong>: What is the MRS between <span class="math notranslate nohighlight">\(C_1\)</span> and
+<span class="math notranslate nohighlight">\(C_2\)</span>? And <span class="math notranslate nohighlight">\(C_2\)</span> vs. <span class="math notranslate nohighlight">\(C_3\)</span>? Compare with discounted utility.</p>
+<p>Using the two movie example, assume now <span class="math notranslate nohighlight">\(\beta=0.5\)</span>.</p>
+<p><strong>Exercice H</strong>: Repeat Exercise F.</p>
+<p><em>Example</em>: Who buys Annual Gym memberships?</p>
+<p><a class="reference external" href="https://www.aeaweb.org/articles?id=10.1257/aer.96.3.694">Della Vigna et Malmendier (2006)</a> study the choice between taking an annual membership to a Gym vs. purchasing individual passes valid for one visit to the Guym. An daily pass costs 10$. But given how rarely some people go to the gym, those who purchase an annual membership often end up paying much more per visit. Why do they buy the membership? Don’t they know that they may suffer from present-bias?</p>
+<div class="figure align-default">
+<img alt="Della Vigna et Malmendier (2006)" src="_images/Gym.png" />
+</div>
+<p>There is evidence that many under-estimate their degree of present bias. Some models have been constructed to capture this degree of naiveté.</p>
+<p>Example: How do we help people to save?</p>
+<ul class="simple">
+<li><p>Saving is, in some respect, similar to going to the Gym: costly in the short-term (sacrifice consumption), benefits in the long-term (future consumption).</p></li>
+<li><p>To help people with these biases, nudges can be used. Turns out that making people do something by default increases retention into a particular behavior.</p></li>
+<li><p>Shea et Madrian (2001, QJE) is a famous example. Moving from opt-in to opt-out increases participation in a pension plan.</p></li>
+</ul>
+<div class="figure align-default" id="id4">
+<img alt="Shea et Madrian (2001, QJE)" src="_images/shea.png" />
+<p class="caption"><span class="caption-text"><a class="reference external" href="https://academic.oup.com/qje/article-abstract/116/4/1149/1903159?redirectedFrom=fulltext">Shea et Madrian (2001, QJE)</a></span><a class="headerlink" href="#id4" title="Lien permanent vers cette image">¶</a></p>
+</div>
+<p><strong>Commitment</strong></p>
+<p>People who have present-bias may have a demand for devices that help them keep their future selves in check… David Laibson and may others, study mechanisms of this sort, applied to savings and health for example.</p>
+<div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+    <iframe src="https://www.youtube.com/embed/a7Y6_2JLTrA" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
+</div></div>
+<div class="section" id="intertemporal-choice-python">
+<h2>Intertemporal Choice Python<a class="headerlink" href="#intertemporal-choice-python" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Here is Python example.</p>
+<p><a class="reference external" href="https://colab.research.google.com/github/pcmichaud/micro/blob/master/notebooks/Intertemporel.ipynb"><img alt="ImageLink" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="plan_bef.html" class="btn btn-neutral float-right" title="Syllabus" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="risque_en.html" class="btn btn-neutral float-left" title="Risk" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Pierre-Carl Michaud
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
