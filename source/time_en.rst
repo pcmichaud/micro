@@ -92,7 +92,7 @@ Present value of consumption is given by:
 .. math:: PV_C = C_1 + \frac{C_2}{1+r}
 
 
-Ainsi, la contrainte intertemporelle est :math:`PV_C \leq PV_W`:
+Therefore, the budget constraint is :math:`PV_C \leq PV_W`:
 
 .. math:: C_1 + \frac{C_2}{1+r} \leq W_0 + Y_1 + \frac{Y_2}{1+r}
 
@@ -153,7 +153,7 @@ Two approaches:
 
 **Optimality conditions**
 
-Le Lagrangian has three FOC:
+The Lagrangian has three FOC:
 
 .. math::
 
@@ -170,7 +170,7 @@ We can re-arrange, fixing :math:`R=1+r`, to obtain the **Euler** equation:
 
 .. math:: u'(C_1) = R\delta u'(C_2)
 
-Visually
+Visually,
 
  |image_optimal|
 
@@ -204,8 +204,6 @@ What does theory tell us about optimal savings?
 **Exercise E**: Find the solution for optimal savings at the beginning of period 2 if :math:`u(C)=\frac{C^{1-\sigma}}{1-\sigma}` and the budget constraint is given by :
 
 .. math:: C_1 + \frac{C_2}{1+r} \leq (1-\tau)Y_1 + \frac{\phi Y_1}{1+r}
-
-
 
 More sophisticated computations can be done to compute how much people should save and compare it to how much they have actually saved: 
 
