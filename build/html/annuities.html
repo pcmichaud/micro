@@ -38,8 +38,7 @@
 
     
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Recherche" href="search.html" />
-    <link rel="prev" title="Anomalies" href="anomalies.html" /> 
+    <link rel="search" title="Recherche" href="search.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -107,17 +106,12 @@
 <li class="toctree-l1"><a class="reference internal" href="effets_en.html">Price and Income Effects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="risque_en.html">Risk</a></li>
 <li class="toctree-l1"><a class="reference internal" href="time_en.html">Time</a></li>
+<li class="toctree-l1"><a class="reference internal" href="labor_en.html">Labor Supply</a></li>
 </ul>
 <p class="caption"><span class="caption-text">BEF (80-804A):</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="plan_bef.html">Syllabus</a></li>
 <li class="toctree-l1"><a class="reference internal" href="anomalies.html">Anomalies</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Annuities</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#facts">Facts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#theory">Theory</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#interventions">Interventions</a></li>
-</ul>
-</li>
 </ul>
 
             
@@ -187,18 +181,63 @@
 <span id="intro"></span><h1>Annuities<a class="headerlink" href="#annuities" title="Lien permanent vers ce titre">¶</a></h1>
 <div class="section" id="facts">
 <h2>Facts<a class="headerlink" href="#facts" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="what-is-an-annuity">
+<h3>What is an Annuity?<a class="headerlink" href="#what-is-an-annuity" title="Lien permanent vers ce titre">¶</a></h3>
 <p>In their simplest form, annuities allow an agent to receive a certain stream of payments until death against an immediate cash payment. An annuity has the advantage of providing an insurance against longevity risk, the risk of outliving one’s savings.</p>
-<p>Few individuals nearing retirement hold little annuities outside public pensions.</p>
-<p>Is this cause for concern?</p>
+<p>Before we define an annuities, a short primer on mortality risk. The idea is not to make you actuaries and we will skip a lot of the technicalities to stay focused on our objective. Denote by <span class="math notranslate nohighlight">\(m(a)\)</span> the fraction of individuals alive at age a who die in that year. The probability that someone born survives to age a is therefore given by</p>
+<div class="math notranslate nohighlight">
+\[s_0(a) = \prod_{j=0}^{a-1} (1-m(j))\]</div>
+<p>The probability someone of age a survives to age a” is :</p>
+<div class="math notranslate nohighlight">
+\[s_a(a') = s_0(a')/s_0(a)\]</div>
+<p>The remaining life expectancy is someone currently age a is given by</p>
+<div class="math notranslate nohighlight">
+\[e(a) = \sum_{a'=a}^{T} s_a(a')\]</div>
+<p>A common form for mortality probabilities that fit the data well is</p>
+<div class="math notranslate nohighlight">
+\[\log m(a) = \alpha + \beta t\]</div>
+<p>This is denoted the Gompertz law of mortality. It is easy to estimate Gompertz parameters from data on mortality risk using linear regression of log mortality rates on age. Surprisingly, it fits the data quite well, except perhaps at very old ages.</p>
+<p>The second component of evaluating an annuity is the discount rate. Annuities are offered mostly by insurance companies. Financial markets lend money to insurers, mostly trough the issuance of bonds. A good measure of the riskiness of insurers is the return on corporate bonds issued by insurers. Denote by <span class="math notranslate nohighlight">\(r\)</span> this rate of return.</p>
+<p>Let us consider an insurer who is willing to cover an individual who has mortality risk described by the series <span class="math notranslate nohighlight">\(m(a')\)</span> for <span class="math notranslate nohighlight">\(a'=a,...,T\)</span>. The net present value of a one dollar annuity is given by:</p>
+<div class="math notranslate nohighlight">
+\[P(a) = \sum_{a'=a}^T \frac{s_a(a')}{(1+r)^{a'-a}}\]</div>
+<p>The NPV of a <span class="math notranslate nohighlight">\(A\)</span> dollar annual annuity is simply <span class="math notranslate nohighlight">\(P(a)A\)</span>. <span class="math notranslate nohighlight">\(P(a)\)</span> is often called the actuarially fair price of the annuity for a given mortality risk and discount (financial risk).</p>
+<p>If one wants to know how much of an annuity can someone buy with <span class="math notranslate nohighlight">\(W\)</span>, one can deduce that</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}W = P(a)A \\
+A = \frac{W}{P(a)}\end{split}\]</div>
+<p>Compare the pricing function of an annuity to that of a bond with the same return <span class="math notranslate nohighlight">\(r\)</span> and maturity <span class="math notranslate nohighlight">\(T-a\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\sum_{a'=a}^T \frac{1}{(1+r)^{a'-a}}\]</div>
+<p>It is easy to see that the price of the annuity is lower than that of the bond. This is intuitive: the bond pays no matter whether the individual is alive or not. The annuity only pays when alive.</p>
+<p>One last important concept is that of the money’s worth of an annuity. It is the ratio of the fair price <span class="math notranslate nohighlight">\(P(a)\)</span> to the observed price <span class="math notranslate nohighlight">\(\hat P(a)\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[MW(a) = \frac{P(a)}{\hat P(a)}\]</div>
+<p>A money’s worth above one indicates the price is more than fair while a money’s worth less than one indicates an unfair price. The load, or profit, on an annuity is given by</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\hat P(a) = (1+\tau) P(a)  \\
+1+\tau = \frac{\hat P(a)}{P(a)} \\
+\tau = \frac{1}{MW(a)}-1\end{split}\]</div>
+<p>Some annuities are sold with a minimum payment garantee: their payment is guaranteed for say 5 years no matter whether someone dies or not. Other annuities are sold jointly on a couple’s lives. Finally, it is becoming popular to sell deferred annuities, annuities which start only in the future.</p>
+</div>
+<div class="section" id="the-annuity-market">
+<h3>The Annuity Market<a class="headerlink" href="#the-annuity-market" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Before we describe the private annuity market, it is important to note that the government already provides annuities. In addition to first-pillar basic income from the Old Age Pension Program, Canada has set up a mandatory public pension system which provides annuity income, proportional to some measure of career earnings, the Canada and Quebec Pension Plan. Together they provide close to 100% replacement rate to low earners and 40-50% someone in the middle of the lifetime earnings distribution (and significantly less to higher earners). Some workers have also contributed to defined benefit employer pensions which provide them with yet another source of annuity income. These pension plans have come under attack and they are slowly loosing ground, except in the public sector. The bottom line is that a significant fraction of our lifetime income is already converted into annuity income in retirement.</p>
+<p>On top of this, there is a market for annuities. The most prevalent forms are variable annuities which are not really annuities but instead an investment product. It does not in general provide a longevity risk guarantee. The fixed annuity market which will be the focus on our study is quite small.</p>
+</div>
+<div class="section" id="who-buys-annuities">
+<h3>Who buys annuities?<a class="headerlink" href="#who-buys-annuities" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Data is scant on who receives annuity income outside of public and employer pensions. We first turn out attention to the Survey of Financial Security of Statistics Canada. We then look at a survey that was conducted on the topic in November 2018 by the Retirement and Savings Institute at HEC.</p>
+</div>
 </div>
 <div class="section" id="theory">
 <h2>Theory<a class="headerlink" href="#theory" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Consider a setting with two periods, <span class="math notranslate nohighlight">\(t=1,2\)</span>. In period 1, the consumer can consume <span class="math notranslate nohighlight">\(c_1\)</span>, buy bonds, <span class="math notranslate nohighlight">\(B\)</span>, or buy annuities <span class="math notranslate nohighlight">\(A\)</span>. Each dollar of bonds yield <span class="math notranslate nohighlight">\(R_B\)</span> for consumption in period 2 <span class="math notranslate nohighlight">\(c_2\)</span>. For annuities, the fair return of an annuity is <span class="math notranslate nohighlight">\(R_A = R_B/(1-q)\)</span> where <span class="math notranslate nohighlight">\(q\)</span> is the probability of dying in period 2. Hence, each dollar of annuity yields <span class="math notranslate nohighlight">\(R_A\)</span>, <span class="math notranslate nohighlight">\(R_A&gt;R_B\)</span>.</p>
+<p>Consider a setting with two periods, <span class="math notranslate nohighlight">\(t=1,2\)</span>. In period 1, the consumer can consume <span class="math notranslate nohighlight">\(c_1\)</span>, buy bonds, <span class="math notranslate nohighlight">\(B\)</span>, or buy annuities <span class="math notranslate nohighlight">\(A\)</span>. Each dollar of bonds yield <span class="math notranslate nohighlight">\(r_B\)</span> for consumption in period 2 <span class="math notranslate nohighlight">\(c_2\)</span>. For annuities, the fair return of an annuity is <span class="math notranslate nohighlight">\(r_A = r_B/(1-q)\)</span> where <span class="math notranslate nohighlight">\(q\)</span> is the probability of dying in period 2. Hence, each dollar of annuity yields <span class="math notranslate nohighlight">\(r_A\)</span>, <span class="math notranslate nohighlight">\(r_A&gt;r_B\)</span>.</p>
 <p>Consider a general utility function <span class="math notranslate nohighlight">\(U(c_1,c_2)\)</span> concave in both arguments. Utility when dead is normalized to zero.</p>
 <p>The choice problem is</p>
 <div class="math notranslate nohighlight">
-\[\max_{A,B} U(W - A - B,R_A A + R_B B)\]</div>
-<p>subject to the short-selling constraint that <span class="math notranslate nohighlight">\(B\ge 0\)</span>. Inspection of the problem shows that one can reduce bond holdings by 1 unit and increase annuities by 1 unit without affecting utility from first period consumption. But the result of this reshuffling increases consumption in period 2 since <span class="math notranslate nohighlight">\(R_A&gt;R_B\)</span>. Therefore, no matter what is the utility function when alive, the optimal solution is to set <span class="math notranslate nohighlight">\(B^*=0\)</span>. The amount of <span class="math notranslate nohighlight">\(A\)</span> depends on the consumption plan. But all savings, once consumption has been determined, should be put in annuities.</p>
+\[\max_{A,B} U(W - A - B,r_A A + r_B B)\]</div>
+<p>subject to the short-selling constraint that <span class="math notranslate nohighlight">\(B\ge 0\)</span>. Inspection of the problem shows that one can reduce bond holdings by 1 unit and increase annuities by 1 unit without affecting utility from first period consumption. But the result of this reshuffling increases consumption in period 2 since <span class="math notranslate nohighlight">\(r_A&gt;r_B\)</span>. Therefore, no matter what is the utility function when alive, the optimal solution is to set <span class="math notranslate nohighlight">\(B^*=0\)</span>. The amount of <span class="math notranslate nohighlight">\(A\)</span> depends on the consumption plan. But all savings, once consumption has been determined, should be put in annuities.</p>
 <p>This is a strong result. Note that it does not depend on using expected utility as long as the consumer has utility from consumption in period 1 and 2. The result was first shown by Yaari (1962) but generalized in these terms in  Brown, Diamond and Davidoff (2005). Two key deviations yield partial annuitization.</p>
 <p><strong>Bequest</strong></p>
 <p>Consider now a setting where</p>
@@ -222,13 +261,6 @@
            
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-      
-        <a href="anomalies.html" class="btn btn-neutral float-left" title="Anomalies" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Précédent</a>
-      
-    </div>
   
 
   <hr/>
