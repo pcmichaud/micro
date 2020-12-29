@@ -5,6 +5,10 @@ Anomalies
 
 Household finance is concerned with financial choices made by households, from savings, to holding debt, to investing, to retiring and deciding which insurance products to purchase. Household finance is potentially filled with behavior which do not seem to agree with our intuition as economists. These are often called anomalies. But are they? Here are some primary examples:
 
+
+.. figure:: /images/annuity.jpeg
+   :scale: 50
+
 Annuities
 +++++++++
 
@@ -17,6 +21,10 @@ Should people buy annuities? Read about these opposing views:
 * Yes: `Financial Post <https://financialpost.com/personal-finance/annuities-more-income-and-less-worry>`_ 
 * No: `Market Watch <https://www.marketwatch.com/story/why-annuities-are-a-bad-idea-for-almost-everyone-2018-03-05>`_
 
+
+.. figure:: /images/saving.jpeg
+   :scale: 50
+
 Savings
 +++++++
 
@@ -26,6 +34,9 @@ Is this cause for concern? Read about two opposing views:
 
 * Not a concern: `C.D. Howe Commentary <https://www.cdhowe.org/sites/default/files/attachments/research_papers/mixed/commentary_428.pdf>`_
 * Cause for concern: `Center for Policy Alternatives <https://www.policyalternatives.ca/sites/default/files/uploads/publications/Ontario%20Office/2015/07/What_Me_Worry%20FINAL.pdf>`_
+
+.. figure:: /images/invest.png
+   :scale: 50
 
 Investment
 ++++++++++
@@ -37,6 +48,8 @@ Should we let people invest or promote the use of financial advisors?
 * Invest in index funds according to `Warren Buffet <https://www.businessinsider.com/warren-buffett-best-investment-advice-2017-8>`_
 * Maybe advisors: `Forbes <https://www.forbes.com/sites/wadepfau/2015/07/21/the-value-of-financial-advice/?sh=44a94eba1333>`_
 
+.. figure:: /images/debt.jpg
+   :scale: 50
 
 Household Debt 
 ++++++++++++++
