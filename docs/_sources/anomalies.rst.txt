@@ -49,7 +49,7 @@ Should we let people invest or promote the use of financial advisors?
 * Maybe advisors: `Forbes <https://www.forbes.com/sites/wadepfau/2015/07/21/the-value-of-financial-advice/?sh=44a94eba1333>`_
 
 .. figure:: /images/debt.jpg
-   :scale: 50
+   :scale: 25
 
 Household Debt 
 ++++++++++++++
