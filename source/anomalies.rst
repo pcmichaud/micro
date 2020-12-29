@@ -8,14 +8,14 @@ Household finance is concerned with financial choices made by households, from s
 Annuities
 +++++++++
 
-In their simplest form, annuities allow someone to receive a certain stream of payments until death against an immediate investment. An annuity has the advantage of providing an insurance against longevity risk. That is the risk of outliving one's savings or living long. Read the story of <Jeanne Calment `https://en.wikipedia.org/wiki/Jeanne_Calment`>_ who lived to be 122 years but had insurance against longevity risk.   
+In their simplest form, annuities allow someone to receive a certain stream of payments until death against an immediate investment. An annuity has the advantage of providing an insurance against longevity risk. That is the risk of outliving one's savings or living long. Read the story of `Jeanne Calment <https://en.wikipedia.org/wiki/Jeanne_Calment>`_ who lived to be 122 years but had insurance against longevity risk.   
 
 While that risk appears real, few individuals nearing retirement hold little annuities outside public pensions. 
 
 Should people buy annuities? Read about these opposing views:
 
-* Yes: <Financial Post `https://financialpost.com/personal-finance/annuities-more-income-and-less-worry`>_ 
-* No: <Market Watch `https://www.marketwatch.com/story/why-annuities-are-a-bad-idea-for-almost-everyone-2018-03-05`>_
+* Yes: `Financial Post <https://financialpost.com/personal-finance/annuities-more-income-and-less-worry>`_ 
+* No: `Market Watch <https://www.marketwatch.com/story/why-annuities-are-a-bad-idea-for-almost-everyone-2018-03-05>`_
 
 Savings
 +++++++
@@ -24,8 +24,8 @@ There is a significant fraction of the population that saves little on their own
 
 Is this cause for concern? Read about two opposing views:
 
-* Not a concern: <C.D. Howe Commentary `https://www.cdhowe.org/sites/default/files/attachments/research_papers/mixed/commentary_428.pdf`>_
-* Cause for concern: <Center for Policy Alternatives `https://www.policyalternatives.ca/sites/default/files/uploads/publications/Ontario%20Office/2015/07/What_Me_Worry%20FINAL.pdf`>_
+* Not a concern: `C.D. Howe Commentary <https://www.cdhowe.org/sites/default/files/attachments/research_papers/mixed/commentary_428.pdf>`_
+* Cause for concern: `Center for Policy Alternatives <https://www.policyalternatives.ca/sites/default/files/uploads/publications/Ontario%20Office/2015/07/What_Me_Worry%20FINAL.pdf>`_
 
 Investment
 ++++++++++
@@ -34,8 +34,8 @@ When it comes to portfolio choice, many  put all their eggs in the same basket, 
 
 Should we let people invest or promote the use of financial advisors?
 
-* Invest in index funds according to <Warren Buffet `https://www.businessinsider.com/warren-buffett-best-investment-advice-2017-8`>_
-* Maybe advisors: <Forbes `https://www.forbes.com/sites/wadepfau/2015/07/21/the-value-of-financial-advice/?sh=44a94eba1333`>_
+* Invest in index funds according to `Warren Buffet <https://www.businessinsider.com/warren-buffett-best-investment-advice-2017-8>`_
+* Maybe advisors: `Forbes <https://www.forbes.com/sites/wadepfau/2015/07/21/the-value-of-financial-advice/?sh=44a94eba1333>`_
 
 
 Household Debt 
@@ -45,8 +45,8 @@ We observe lots of household debt, even into retirement. And it is increasing in
 
 Is this cause for concern?
 
-* Maybe: <Toronto Star `https://www.thestar.com/politics/political-opinion/2019/11/30/should-canada-be-worried-about-record-consumer-debt.html`>_
-* Yes, lots are getting into serious debt issues: <Bloomberg `https://www.bnnbloomberg.ca/businessweek/canadians-are-feeling-the-debt-burn-1.1234735`>_
+* Maybe: `Toronto Star <https://www.thestar.com/politics/political-opinion/2019/11/30/should-canada-be-worried-about-record-consumer-debt.html>`_
+* Yes, lots are getting into serious debt issues: `Bloomberg <https://www.bnnbloomberg.ca/businessweek/canadians-are-feeling-the-debt-burn-1.1234735>`_
 
 
 The bottom line is that behind each of these potential anomalies there are serious policy questions as well as business opportunities. 
