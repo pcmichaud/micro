@@ -85,10 +85,34 @@ Turns out, people do not act close to optimally by that metric. There is a gap, 
 
 When we are able to develop a satisfactory model of how decisions are made. We can then compare it to the benchmark. Understand where do deviations come from and then, find ways to help individuals make choices closer to the benchmark. This approach can take the form of education, decision aids, financial advice or even what is called choice architecture, a topic we will encounter later in the course. Are these interventions efficient? How much do they cost? Are they leading to undesirable outcomes? Equiped with models, one is better able to answer these questions. 
 
-Is Theory Useful?
-+++++++++++++++++
+This panel with three well-known behavioral economists (Colin Camerer, Andrew Caplin and David Laibson)  sums up well what is behavioral economics: 
+
+.. raw:: html
+
+   <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;"> <iframe src="https://www.youtube.com/embed/YF1Mf7c-uMQ" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe> </div>
+        
+Here is another take on it from Dan Ariely: 
+
+.. raw:: html
+
+  
+   <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;"> <iframe src="https://www.youtube.com/embed/wpMLYh-UIsA" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe> </div>    
+
+Can you pick similarities and potential differences between these definitions?
+
+
+
+.. figure:: /images/theory.jpeg
+   :scale: 100
+   
+Theory Useful?
+++++++++++++++
 
 Modelling behavior that deviates from standard models often takes us to more complicated models. Models are useful because they make our statements sharper, allow us to make falsiable predictions. But we do not want to do theory for the sake of doing theory. When possible, we will try and keep the math simple. For example, there is no need to consider a multi-period model of intertemporal choice if we can convey basic ideas in a two-period model. Hence, the requirements for this course is that you have a basic understanding of calculus and of intermediate microeconomics (see my class notes for 20-851A if that is far in your mind, in particular the risks and time lectures). But we will also want to develop abilities to roam free from simple models into more realistic ones by getting a sense of how to use numerical methods (programming) to solve models. This is a skill that will seem difficult at first. But will prove useful by the end of the course. 
+
+.. figure:: /images/facts.jpeg
+   :scale: 100
+
 
 Empirical Methods
 +++++++++++++++++
