@@ -31,7 +31,7 @@ Google has set up a very nice platform called Google collab to work with Python 
 See this notebook to familiarize yourself with the Python environment. For each lecture, you will see an icon like this which you can click on to open up the notebook in Google colab.  |ImageLink|_
 
 .. |ImageLink| image:: https://colab.research.google.com/assets/colab-badge.svg
-.. _ImageLink: https://colab.research.google.com/github/pcmichaud/micro/blob/master/notebooks/DebutPython.ipynb
+.. _ImageLink: https://colab.research.google.com/github/pcmichaud/micro/blob/master/notebooks/PythonStart.ipynb
 
 For most notebooks, I have recorded a capsule. Here is the one for the intro notebook. 
 
