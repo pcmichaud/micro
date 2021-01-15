@@ -38,6 +38,7 @@ Pierre-Carl Michaud, Professeur titulaire HEC Montréal
    risque_en.rst
    time_en.rst
    labor_en.rst
+   welfare_en.rst
 
 .. toctree::
    :maxdepth: 1

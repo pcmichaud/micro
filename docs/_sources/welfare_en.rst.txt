@@ -1,86 +1,91 @@
-Bien-être
----------
+Welfare
+-------
 
-Pour bien évaluer une politique, on peut regarder son efficacité, c'est-à-dire cible-t-elle le groupe visé, est-ce qu'elle a l'effet attendu sur les comportements, et combien coûte-t-elle étant donné son efficacité? 
+We can look at efficiency to look at a policy: does it target the right group, does it have the intended effect and how much does it cost? For example, we could evaluate a policy that increases air quality and leads people to changer their behavior. The economic cost per unit of improvement in air quality may be large. But what can we compare it to? What is the threshold above which the policy does not increase welfare. 
 
-Par exemple, une réglementation sur la qualité de l'air peut inciter plusieurs individus à changer de comportement. Le coût par unité d'amélioration de la qualité de l'air peut être élevé. Comment statuer si la politique est désirable? 
 
-En général, la qualité de l'air est valorisée par la population. Donc, on peut mesurer les bénéfices par les préférences. Au final, on peut savoir si la réglementation est bénéfique étant donné son coût. Alors qu'on s'arrête souvent aux retombés économiques ou fiscales d'une intervention, on oublie très souvent de compter les bénéfices en terme de bien-être. 
+Air quality is valued by consumers. Therefore, we can measure benefits from preferences. While many limit themselves to economic and fiscal impacts, benefits may go beyond what we observe in markets. For example, lockdown policies during the pandemic save lives. People value extending life. 
 
-Afin de répondre à ces question, et permettre de juger des politiques, il faut aller une étape plus loin que ce qu'on a fait et se demander comment on peut mesurer le bien-être par les préférences. 
 
-Trois approches existent: une approche utilitarienne, une approche hicksienne et finalement une approche du bonheur rapporté. 
+Three popular approaches are used  to measure up welfare impacts of policies (benefits and costs): a utilitarian, hicksian and finally one based on self-reported hapinness. 
 
 .. figure:: /images/happy.jpeg
    :scale: 100
 
-Utilisarisme
-++++++++++++
-Pour chaque citoyen :math:`i\in \{1,\ldots,N\}`, on peut construire une fonction d'utilité :math:`U_i` qui représente ses préférences sur pour un panier de bien dans un ensemble :math:`B`. Supposons que chaque citoyen obtient le panier :math:`B_1`, :math:`B_2`, ..., :math:`B_N`. Selon cette approche une mesure d'un bien-être est 
+
+Utilisarism
++++++++++++
+
+
+For each consumer :math:`i\in \{1,\ldots,N\}`, we can construct a utility function  :math:`U_i` representing preferences over a basket of goods :math:`B`. Consider the situation where each citizen has basket :`B_1`, :math:`B_2`, ..., :math:`B_N`. According to this approach, we can measure welfare of this group of consumers using  
 
 .. math::
    U_1(B_1) + U_2(B_2) + \ldots + U_N(B_N). 
 
-Si on utilise ce critère de bien-être, alors une politique :math:`\mathcal P_0` est mieux que l'alternative :math:`\mathcal P_1` si la somme des utilités est plus élevée. Içi la fonction qui aggrège les utilités des différents citoyens est linéaire, tel que proposé par `Bentham <https://fr.wikipedia.org/wiki/Jeremy_Bentham>`_, mais on peut aussi généraliser à d'autres formes, par exemple l'utilité minimale sous-jacente à la théorie de la justice sociale de (`Rawls <https://fr.wikipedia.org/wiki/John_Rawls>`_). 
 
-Cette approche est problématique et peu utilisée. Elle suppose des utilités cardinales alors que les utilités sont ordinales... On se rappelle que :math:`U_1` represente les préférences du citoyen :math:`1`, mais :math:`f(U_1)` représente les mêmes préférences pour n'importe quelle fonction croissante :math:`f`. Il existe un nombre infini de fonctions d'utilités qui représentent les mêmes préférences. Par exemple, on aurait pu prendre :math:`2\times U_1`, ce qui peut affecter le choix de politique si une politique favorise davantage ce citoyen...
+If we use this welfare criterion, a policy :math:`\mathcal P_0` is better than an alternative :math:`\mathcal P_1` if the sum of utility levels is larger. The function that aggregates utilities of each citizen is linear, as proposed by `Bentham <https://fr.wikipedia.org/wiki/Jeremy_Bentham>`_, but can also take other forms, for example taking the utility of the consumer who has the lowest one which implements the social justice criterion of `Rawls <https://fr.wikipedia.org/wiki/John_Rawls>`_. 
 
-Donc, le classement des politiques est ambigue: on peut avoir :math:`\mathcal P_0` meilleure  si :math:`W = U_1 + U_2` alors que :math:`\mathcal P_1` est meilleure si on utilise :math:`W = 2U_1 + U_2`
+This approach is problematic. It assumes that utility levels are comparable across consumers. But we saw that these are ordinal, that the absolute level has no meaning.
+Recall that :math:`U_1` represents preferences of citizen :math:`1`, but :math:`f(U_1)` represents the same preference for any strictly increasing function :math:`f`. There exist an infinite number of utility functions which represent the same preferences. For example, we could rescale utility as  :math:`2\times U_1`, which could create an advantage for a policy of this policy is favorable to a particular citizen.  
 
-En somme, le bien-être devrait dépendre des préférences et non de :math:`U`. Il demeure que sans trahir l'ordinalité des préférences, les utilités demeurent utiles. On peut définir par exemple une **amélioration au sens de Pareto**, si l'utilité de tous les individus est au moins égale au niveau de référence avec un changement de politique. Si personne ne perd, et que certains gagnent, cette situation peut être considérée meilleure au sens de `Pareto <https://fr.wikipedia.org/wiki/Vilfredo_Pareto>`_. L'amélioration au sens de Pareto est indépendante de l'échelle de l'utilité. C'est un concept ordinal. 
+The ranking of policies is therefore ambiguous: we can have :math:`\mathcal P_0` ranked better if  :math:`W = U_1 + U_2` while  :math:`\mathcal P_1` is better if we use :math:`W = 2U_1 + U_2`.
 
-Variation compensatoire
-+++++++++++++++++++++++
+In the end, welfare should depend on preferences and not on  :math:`U`. But utilities remain useful in some more restricted capacity.  We can for example define a  **Pareto Improvement**, if utility of all consumers is at least equal to their level before a change in policy, but stricly higher for at least one consumer. If no one looses, and some win, this situation is an improvement in a `Pareto <https://fr.wikipedia.org/wiki/Vilfredo_Pareto>`_ sense. Pareto improvements respect the fact that utility is ordinal.  
 
-Une approche plus prometteuse est de quantifier de façon monétaire le bien-être à l'aide des préférences. `John Hicks <https://fr.wikipedia.org/wiki/John_Hicks>`_ propose d'utiliser la variation compensatoire. 
+Compensating Variation
+++++++++++++++++++++++
 
-Qu'est-ce qu'une politique dans le problème du consommateur? Une politique :math:`\mathcal P` définie une contrainte budgétaire :math:`C_i(\mathcal P,I_i)` pour le citoyen :math:`i` (où :math:`I_i` est le revenu).
+A promising approach is to quantify welfare in monetary terms using preferences.  `John Hicks <https://fr.wikipedia.org/wiki/John_Hicks>`_ has proposed to use compensating variations. 
 
-On peut utiliser l'utilité indirecte comme point de départ. L'utilité maximale du citoyen :math:`i` étant donné sa contrainte est:
+
+For the consumer, what is a policy? A policy  :math:`\mathcal P` affects the budget constraint :math:`C_i(\mathcal P,I_i)` of consumer  :math:`i` (where :math:`I_i` is income).
+
+
+We can use indirect utility as a starting point. The highest level of utility a consumer  :math:`i` can obtain given his budget constraint is:
 
    .. math:: U_i^*(\mathcal P,I_i) = \max_{B \in C_i(\mathcal P, I_i)} U_i(B)
 
-Exemple: Deux biens :math:`X` et :math:`Y`. Utilité :math:`U(X,Y) = \log X + \log Y`. Une politique :math:`\mathcal P`: avec une taxe multiplicative :math:`\tau` sur le prix de :math:`Y`. Alors l'utilité indirecte est donnée par:
+Example: Two goods  :math:`X` and :math:`Y`. Utility is :math:`U(X,Y) = \log X + \log Y`. A policy :math:`\mathcal P`: implements a multiplicative tax :math:`\tau` on the price of :math:`Y`. Indirect utility is given by:
 
 .. math::
    U_i^*(\mathcal P,I) = \max_{X,Y} \left[\log X + \log Y: p_X  X + p_Y(1 + \tau) Y \leq I \right]
      
-Dénotons :math:`\mathcal P_0` le statut quo et considèrons l'implémentation de la politique :math:`\mathcal P`. On peut définir la variation compensatoire comme étant le montant :math:`\Delta I^{CV}` tel que
+Denote :math:`\mathcal P_0` the status quo le statut quo and consider implementing a policy  :math:`\mathcal P`. We can define the compensating variation as the amount of money On peut définir la variation :math:`\Delta I^{CV}` such that
 
    .. math::
 
       U^*(\mathcal P_0,I) = U^*(\mathcal P,I - \Delta I^{CV})
 
-C'est le montant qu'on doit retirer au consommateur pour garder son bien-être constant au niveau du statut quo.
+It is the amount of money we must take away from the consumer to keep his utility constant at the level found under the status quo. 
 
-Note: on utilise une convention de signe telle que :math:`\Delta I^{CV}>0` quand le changement de politique est *bénéfique*. Par exemple, une baisse de taxe, une hausse des transferts, une baisse de prix. 
+Note: we use the sign convention  :math:`\Delta I^{CV}>0` when the policy is *beneficial*, for example a tax rebate, an increase in transfers, an increase in air quality or health.  
 
-**Exercice A**: Trouvez l'expression de la variation compensatoire pour
-:math:`U = XY` et une taxe :math:`\tau` sur le bien :math:`Y`.
+**Exercise A**: Find the expression of compensating variation for
+:math:`U = XY` and a tax :math:`\tau` on good  :math:`Y`.
 
 
-:math:`\Delta I^{CV}` dépend seulement des préférences
+:math:`\Delta I^{CV}` only depends on preferences
 
    .. math::
 
       U^*(\mathcal P_0,I) = U^*(\mathcal P, I - \Delta I^{CV}) \\
       \Rightarrow 2 U^*(\mathcal P_0,I) = 2  U^*(\mathcal P, I- \Delta I^{CV})
 
-De manière générale, pour n'importe quelle fonction :math:`f`,
+For any function :math:`f`,
 
    .. math::
 
       U^*(\mathcal P_0,I) = U^*(\mathcal P, I - \Delta I^{CV}) \\
       \Rightarrow f[U^*(\mathcal P_0,I)] = f[ U^*(\mathcal P, I - \Delta I^{CV})]
 
-Cas spécial utile
-+++++++++++++++++
+Special case
+++++++++++++
 
-Considérons les préférences pour un bien :math:`X` et l'argent :math:`Y`. Les préférences sont représentées par :math:`U(X,Y) = V(X) + Y`. 
+Consider preferences for a good :math:`X` and cash :math:`Y`. Preferences are represented by  :math:`U(X,Y) = V(X) + Y`. 
 
-La politique de référence est :math:`\mathcal P_0`. Le consommateur choisi l'allocation :math:`(X_0, Y_0)`. Maintenant, considérons un changement :math:`\mathcal P`. Le nouveau choix optimal est :math:`(X_1, Y_1)`.
+The policy in the status quo is :math:`\mathcal P_0`. The consumer picks the allocation  :math:`(X_0, Y_0)`. Now, consider the change  :math:`\mathcal P`. The new optimal choice is  :math:`(X_1, Y_1)`.
 
-Dans ce cas, la variation compensatoire est :math:`\Delta I^{CV}` ou
+In this case, the compensating variation is :math:`\Delta I^{CV}` 
 
 .. math::
 
@@ -90,31 +95,31 @@ Dans ce cas, la variation compensatoire est :math:`\Delta I^{CV}` ou
    \Delta I^{CV} &= V(X_1) + Y_1 - V(X_0) - Y_0 \\
    \Delta I^{CV} &= U(X_1,Y_1) - U(X_0,Y_0)\end{aligned}
 
-La variation compensatoire est égale au changement de l'utilité. De par la linéarité dans l'argent, l'utilité est en dollars.  Le TMS de cette fonction d'utilité est: 
+The compensating variation is equal to a change in utility. Because of the linearity of utility in cash, utility is in dollars. The MRS is given by: 
 
 .. math::
    TMS = \frac{dY}{dX} = - \frac{V'(X)}{1} = -V'(X)
 
-Puisque :math:`p_Y=1` dans le cas où :math:`Y` est de l'argent, :math:`V'(X)` représente la disposition à payer (en dollars) pour une unité de :math:`X`.
+Since :math:`p_Y=1` in the case where :math:`Y` is cash, :math:`V'(X)` represents the willingness to pay (in dollars) for an additional unit of  :math:`X`.
 
-Surplus du consommateur
-+++++++++++++++++++++++
+Consumer Surplus
+++++++++++++++++
 
-Supposons le cas de préférences représentées par l'utilité quasi-linéaire pour le bien :math:`X` et l'argent :math:`Y`. :math:`U(X,Y) = V(X) + Y`. Supposons que :math:`V` est concave (:math:`dV/dX` diminue en :math:`X`). 
+Consider the case of quasi-linear preferences for the good  :math:`X` and cash  :math:`Y`, :math:`U(X,Y) = V(X) + Y`. Let us assume that  :math:`V` is concave (:math:`dV/dX` decreases in :math:`X`). 
 
-Considérons une situation où le bien :math:`X` ne peut être acheté, :math:`\mathcal P_0` et une alternative où :math:`\mathcal P` permet d'acheter le bien :math:`X` au prix :math:`p_X`. Le problème est donné par
+The status quo is a situation where the good   :math:`X` cannot be purchased, :math:`\mathcal P_0` and an alternative where :math:`\mathcal P` allows to purchase :math:`X` at price :math:`p_X`. The problem is given by
 
 .. math::
-   \max_{X,Y} U(X,Y) \quad s.c. \quad p_X X + Y = I
+   \max_{X,Y} U(X,Y) \quad s.t. \quad p_X X + Y = I
 
-On peut substituer la contrainte pour obtenir :math:`\max_{X} V(X) + I - p_X X`. La CPO est 
+We can substitute the constraint to obtain :math:`\max_{X} V(X) + I - p_X X`. The FOC 
 
 .. math::
    \frac{dV}{dX} =  p_X
 
-ce qui permet de trouver la demande :math:`X^*(p_X)`. Dénotons :math:`p_X(X^*) = \frac{dV}{dX}`, la fonction de demande inverse. Ainsi un point sur cette demande inverse donne la disposition à payer pour une unité de :math:`X`.
+which allows to find demand :math:`X^*(p_X)`. Denote :math:`p_X(X^*) = \frac{dV}{dX}`, the inverse demand function. A point on this inverse demand reads as the willingness to pay for an additional unit of :math:`X`.
 
-Dans le cas d'un nouveau produit, la variation compensatoire de :math:`\mathcal P_0` à :math:`\mathcal P` est le surplus du consommateur.
+In the case of a new product, the compensating variation from  :math:`\mathcal P_0` to :math:`\mathcal P` is consumer surplus.
 
 .. math::
 
@@ -122,112 +127,105 @@ Dans le cas d'un nouveau produit, la variation compensatoire de :math:`\mathcal 
    \Delta I^{CV} &=& V[X^*(p_X) + I - p_X X^*(p_X)] - [V(0) + I] \\
    &=& V(X^*(p_X)) - V(0) - p_X X^*(p_X)\end{aligned}
 
-Le premier terme n'est rien d'autre que l'aire sous la courbe de la fonction de demande inverse:
+The first term is the area under the inverse demand curve, from zero to the quantity demanded:
 
 .. math::
    \int_{0}^{X^*} V'(i)di = V(X^*) - V(0)
 
-C'est la somme des dispositions à payer pour chaque unité de :math:`X`. Le deuxième terme est le coût d'acheter la quantité :math:`X^*`. Le surplus provient du fait que le consommateur valorise chaque unité qu'il achète au prix :math:`p_X` davantage que le prix :math:`p_X`.  
+It amounts to the sum of willigness to pay for each unit of  :math:`X`. The second term is the cost of purchasing quantity  :math:`X^*`. The surplus is due to the fact that the consumer values each unit that he purchases at price  :math:`p_X` more than the price he paid :math:`p_X`.  
 
 .. figure:: /images/surplus.png
    :scale: 75
 
-   La zone A+B est donnée par :math:`V(X^*) - V(0)` alors que la zone B est la dépense :math:`p_{X}X^*`. Ainsi le surplus du consommateur est A+B - B = A. 
+   The area  A+B is given by :math:`V(X^*) - V(0)` while  area B is expenditures :math:`p_{X}X^*`. Therefore consumer surplus is  A+B - B = A. 
 
-**Exercice B**: Si :math:`V(X) = 10 X - \frac{1}{2}X^2`, trouvez l'expression du surplus du consommateur. 
+**Exercise B**: If :math:`V(X) = 10 X - \frac{1}{2}X^2`, find the expression of consumer surplus. 
 
-
-Bien-être et taxation
-+++++++++++++++++++++
+Welfare and Taxation
+++++++++++++++++++++
 
 .. figure:: /images/tax.jpeg
    :scale: 50
 
-La taxation affecte le prix payé par le consommateur. Donc, elle a des effets sur le bien-être. Dans la théorie du consommateur, nous avons déjà vu qu'une hausse de prix réduit le bien-être du consommateur. Nous avons qu'à appliquer le concept de revenu compensé à l'analyse des taxes. 
+Taxation impacts the price paid by the consumer. Therefore, it has effects on welfare (since higher prices lower welfare). Compensated income will help quantify the welfare loss from higher prices (or taxes). 
 
-Considérons l'élimination d'une taxe, le prix passant de :math:`p_X = p+t` à :math:`p_X = p` . On a :math:`X^*(p) > X^*(p+t)` (le bien n'est pas *Giffen*). Le revenu de la taxe est :math:`T= t X^*(p+t)`. Quand le gouvernement collecte une taxe, il faut implicitement faire comme si les revenus seront redistribués de manière forfaitaire. Du point de vue du bien-être, l'argent collecté par le gouvernement n'est pas perdu...
 
-En terme de variation compensatoire, on a 
+Consider eliminating a tax, the price decreases from  :math:`p_X = p+t` to :math:`p_X = p` . We have :math:`X^*(p) > X^*(p+t)` (we are not in a  *Giffen* good situation). Income from the tax is :math:`T= t X^*(p+t)`. When the government collects a tax, we assume that the revenues are distributed lump-sum (an amount for each consumer, not dependent on actions). From a welfare point of view, revenue collected from the government is not loss (implicitely it funds services, etc). Here we recognize its cash value.
+
+In terms of compensating variation, we have 
 
    .. math::
      \Delta I^{CV} =  U[X^*(p), I - pX^*(p)] - U[X^*(p+t), I - (p+t) X^*(p+t)] > 0
 
-On obtient que :math:`\Delta I^{CV} > T`: Le consommateur est prêt à payer un montant supérieur au revenu généré par la taxe pour le gouvernement. Donc, l'élimination de la taxe lui est bénéfique. 
+We obtain that :math:`\Delta I^{CV} > T`: The consumer is willing to pay an amount which is superior to the revenue generated by the tax. Hence, eliminating the tax is beneficial. 
 
-Le gain de bien-être associée à l'élimination de la  taxe est donc :math:`\Delta W = \Delta I^{CV} - T`. Pourquoi le :math:`T` est soustrait? En enlevant la taxe, le gouvernement ne peut plus destribuer de manière forfaitaire les revenus de la taxe. Donc, il faut l'enlever du changement de surplus du consommateur.  Si on introduit une taxe, on a plutôt,  :math:`\Delta W = \Delta I^{CV} + T` parce qu'on doit redistribuer de manière forfaitaire les revenus de la taxe, ce qui est un gain pour le consommateur.   
+The welfare gain associated with eliminating the tax is therefore  :math:`\Delta W = \Delta I^{CV} - T`. Why is  :math:`T` substracted? Removing the tax, the government cannot redistribute anymore the proceeds lump-sum. Hence, we have to substract it from the change in consumer surplus. If we introduce a tax, we have  :math:`\Delta W = \Delta I^{CV} + T` since we need to redistribute the tax proceeds lump-sum, which is gain for consumers.   
 
-**Exercice C**: Si :math:`V(X) = 10 X - \frac{1}{2}X^2`, trouvez la perte de bien-être associée à une nouvelle taxe :math:`t` sur le bien :math:`X`. Montrez graphiquement cette perte. 
+**Exercise C**: If :math:`V(X) = 10 X - \frac{1}{2}X^2`, find the welfare loss associated with a new tax  :math:`t` on good  :math:`X`. Show this loss graphically.  
 
 
+Welfare and Air Quality
++++++++++++++++++++++++
 
-Bien-être et environnement
-++++++++++++++++++++++++++
-
-Généralement, on accorde une valeur positive à la qualité de l'air.  
+Generally, consumers have a positive preference for air quality.   
 
 .. figure:: /images/china_pollution.jpg
    :scale: 50
 
-Il n'y a pas de marché pour la qualité de l'air. Avec le *Clean Air Act* (1977), le gouvernement Americain a mis en place un nombre important de mesures pour réduire la pollution. Les lois sont couteuses à implémenter et faire respecter. Pour justifier ces lois, on doit montrer que les bénéfices sont élevés. 
+There is no market for air quality. With the  *Clean Air Act* (1977), the American government has put in place a number of regulations which reduce pollution and improve air quality.  
 
-Considérons un changement de politique :math:`\mathcal P_0`: aucun contrôle, aucun coût, à :math:`\mathcal P`: contrôle de la pollution, ce qui implique des coûts. La variation compensatoire devrait être positive si les citoyens valorisent la qualité de l'air.
+Consider a policy change from :math:`\mathcal P_0`: no control and costs, to :math:`\mathcal P`: pollution controls and costs. The compensating variation should be positrive for consumers if they value air quality. 
 
-Empiriquement, comment faire pour estimer les préférences?
+Empirically, how can recover such a preference?
 
-On peut trouver une situation où des gens ont du faire un arbitrage entre pollution et leur richesse financière. Par exemple, l'achat d'une maison dépend bien sur du prix mais aussi de l'environnement, etc. Les prix et la qualité de l'air varient à l'intérieur d'une ville. Dans un marché, les prix devraient être plus élevés quand la qualité de l'air est plus élevée si les acheteurs valorisent la qualité de l'air. 
+We can aim to find a situation where consumers had to face a trade-off between pollution and income (wealth). For example, the decision to purchase a home may depend on the price of the home but also air quality of the neighborhood. Price and air quality vary inside a city. In a market, prices should be higher if air quality is higher if consumers value air quality.   
 
-En utilisant des données provenant de transactions immobilières on peut déterminer la valeur accordée à la qualité de l'air.  Définir :math:`X` comme étant mesure de la qualité de l'air,  (e.g. concentration de particules) On peut postuler une fonction d'utilité quasi-linéaire:
+Using data from real estate transactions, we can determine the value given to air quality. Define :math:`X` as air quality,  (e.g. air particule concentration) We might want to assume preferences are given by:
 
 .. math:: 
    U(X, Y) = V(X) + Y = \alpha X + \beta X^2 +Y
 
-Avec cette fonction d'utilité, :math:`V'(X)` représente la disposition à payer pour la qualité de l'air. En régressant le prix des transactions sur :math:`X` et en controllant pour d'autres facteurs affectant le prix des transactions, on obtient un estimé de :math:`V'(X)`. 
+With this utility function, :math:`V'(X)` represents a willingness to pay for air quality. Running a linear regression real estate transaction amounts on  :math:`X` controlling for other factors, we obtain an estimate of :math:`V'(X)`. 
 
-`Chay et Greenstone (2005) <https://www.jstor.org/stable/10.1086/427462>`_ obtiennent des estimés de l'élasticité prix-particule (entre -0.2 et -0.35). 
+`Chay et Greenstone (2005) <https://www.jstor.org/stable/10.1086/427462>`_ obtain a price-particule elasticity between  -0.2 and -0.35. 
 
 .. figure:: /images/chay.png
    :scale: 50
 
-Maintenant, comment évaluer une politique avec ces informations? Le gouvernment dépense :math:`X_{GOV}`. Le coût pour financer ces dépenses est :math:`c X_{GOV}` avec :math:`c>1` est le coût incluant la perte de bien-être dû à la taxation nécessaire.
+Now, how do we evaluate a policy with these informations? The government implements :math:`X_{GOV}`. The total cost of these measures is  :math:`c X_{GOV}` with :math:`c>1` is the marginal cost, including the welfare loss from raising this amount of revenue to fund these measures. 
 
-La politique change de  :math:`(0,0)` à :math:`(X_{GOV}, - c X_{GOV})`. Le surplus du consommateur est la variation compensatoire:
+The policy change is from  :math:`(0,0)` to :math:`(X_{GOV}, - c X_{GOV})`. Consumer surplus is the compensating variation:
 
 .. math:: 
    \Delta I^{CV} =  V(X_{GOV}) - V(0) - c X_{GOV} .
 
-Une fois l'analyse faite, on peut aussi se demander quelle serait la qualité de l'air optimale afin de voir s'il est encore possible de resserer les restrictions. 
+This serves as a basis for performing cost-benefit analysis. Once this analysis is done, a follow-up question to ask is: what is the optimal amount of air quality? 
 
-La pollution optimale est le niveau de pollution qui maximise: 
+Optimal air quality is the level which maximizes: 
 
 .. math:: 
    U(X) = V(X) + I - c X 
 
-La CPO est
+The FOC is
 
-   .. math:: \frac{dV}{d X}_{|X^*} = c
+   .. math:: V'(X^*) = c
 
-Il est donc possible de quantifier ceci une fois tous les paramètres connus. 
+We can therefore find out this optimal level once we know these qualities.  
 
-**Exercice D**: Pollution par le bruit. L'élasticité prix des maisons à la pollution par le bruit est -0.2. Le gouvernement considère réduire le niveau de pollution de 10% près d'une autoroute. Les ingénieurs nous disent que la technologie nécessaire coûtera 1000$ pour chaque propriété. La politique est financée par une taxe qui mène à une perte de bien être de 43 cents pour chaque dollar à financer. Est-ce que cette politique augmente le bien-être?
+**Exercise D**: Noise pollution. The price elasticity of house prices to noise pollution is -0.2. The government considers reducing pollution by 10% near a highway. Engineers estimate the necessary technology will cost 1000$ per house protected (a sound wall). The policy is financed by a tax, which leads to a welfare loss of 43 cents for each dollar that needs to be raised. Would building the sound wall be beneficial in terms of welfare?
+
+This approach is used a lot. It does not require per se knowledge of preference. However, it raises a number of distributive issues if preferences differ across consumers. When the benefits are larger than the cost, but some loose from the policy, we say that the policy is potentially beneficial, implying that compensation may need to take place. 
 
 
-.. raw:: html
+Self-reported Hapiness
+++++++++++++++++++++++
 
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/ud9JiRUpcfg" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>
-
-Cette approche est très utilisée. Même si a priori, ces problèmes semblent dépendre de la spécification des préférences, ce n'est pas toujours le cas, comme le montre l'exercice D (on a besoin que de l'élasticité prix dans l'exercice). Une autre enjeu est la possibilité que certains aient une variation compensatoire négative alors que pour d'autres celles-ci sont positives. A moins de spécifier un mécanisme pour aggréger les variations compensatoires (une somme?), ce qui n'est pas neutre d'un point de vue de l'équité, l'approche la plus commune sera de parler d'amélioration potentielle de Pareto si la somme des variations compensatoires est positive et où une forme de compensation pourrait être prévue pour ceux qui y perdent. La pluspart des politiques font des perdants. Il est donc tout aussi important de statuer sur la désirabilité de la politique que d'identifier les perdants afin de les compenser. 
-
-Approche bonheur rapporté
-+++++++++++++++++++++++++
-
-Pourquoi ne pas simplement demander aux gens s'ils sont heureux? Sur une échelle allant de 1 à 10, ête-vous heureux? Ceci évite d'avoir à spécifier les préférences.  C'est une approche qui gagne une certaine crédibilité avec `le budget 2019 en Nouvelle-Zélande <https://www.weforum.org/agenda/2019/05/new-zealand-is-publishing-its-first-well-being-budget/>`_. C'est `Richard Easterlin <https://fr.wikipedia.org/wiki/Richard_Easterlin>`__ qui a beaucoup popularisé l'utilisation de mesures directes du bien-être. Le Paradox de Easterlin a longtemps suscité de l'intérêt:
+Why not simply ask consumers of they are happy, or happier after a policy change? On a scale of 1 to 10, are you happy? This avoids making assumptions about preferences, utility.  It is an approach that has gained credibility with  `the 2019 budget in New Zealand <https://www.weforum.org/agenda/2019/05/new-zealand-is-publishing-its-first-well-being-budget/>`_.  `Richard Easterlin <https://fr.wikipedia.org/wiki/Richard_Easterlin>`__ is generally credited with making these measures popular. The Easterlin paradox has attracted a lot of attention.
 
 .. figure:: /images/easterlin.png
    :scale: 50
 
-Donc, on ne serait pas plus heureux avec davantage de revenu, un résultat contre-intuitif: l'argent ne fait pas le bonheur. Mais plus tard, on a montré que ce Paradoxe ne tenait plus: 
+This would suggest that we are not happier with more income: money does not buy hapiness. But later, with more data, the expected relationship was shown to hold, in particular for low levels of income. 
 
 .. figure:: /images/wolfers.png
    :scale: 50
@@ -235,15 +233,17 @@ Donc, on ne serait pas plus heureux avec davantage de revenu, un résultat contr
    `Stevenson and Wolfers (2013), AER: Papers and
    Proceedings <http://users.nber.org/~jwolfers/papers/Satiation(AER).pdf>`__
 
-Il n'en demeure pas moins, que ces mesures peuvent être utile puisque le bonheur, c'est plus qu'un portefeuille bien garnie. Pourquoi ne pas utiliser les mesures directes du bien-être pour évaluer les politiques?
 
--  Avantages: méthode directe sans avoir besoin d'un modèle qui prend en compte toutes les dimensions du bien-être.
+Since happiness is more than income, these measures can be useful. One could use them directly in policy evaluation: 
 
--  Inconvénients: On peut mesurer le bien-être de différentes façons et les gens ont des manières différentes de répondre. Plusieurs biais psychologiques en jeu. 
 
-Très peu d'études utilisent ces mesures pour évaluater des politiques. Mais il y a beaucoup d'intérêt, pour de bonnes raisons. 
+-  Advantages: direct method, model free.
 
-Pour ceux qui veulent approfondir, voici une entrevue avec Angus Deaton sur la mesure du bonheur: 
+-  Disadvantages: We can measure welfare in different ways and people have different ways of answering. Various psychological and framing effects possible.  
+
+Few studies use them. But there is a lot of interest, for good reasons. 
+
+For those who want to go deeper, here is an interview with  Angus Deaton on happiness: 
 
 .. raw:: html
 
@@ -251,17 +251,12 @@ Pour ceux qui veulent approfondir, voici une entrevue avec Angus Deaton sur la m
         <iframe src="https://www.youtube.com/embed/pfHcdee4R3M" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
     </div>
 
-Exemple Python Bien-être
-++++++++++++++++++++++++
+Python Example
+++++++++++++++
 
 |ImageLink|_
 
 .. |ImageLink| image:: https://colab.research.google.com/assets/colab-badge.svg
 .. _ImageLink: https://colab.research.google.com/github/pcmichaud/micro/blob/master/notebooks/Welfare.ipynb
 
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/Diiljk3X1iE" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>
 
