@@ -1,0 +1,499 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Production &mdash; Documentation Micro Notes </title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/x-mathjax-config">MathJax.Hub.Config({"extensions": ["tex2jax.js"], "jax": ["input/TeX", "output/HTML-CSS"], "availableFonts": ["Neo-Euler", "TeX"], "preferredFont": ["Neo-Euler"], "scale": 60})</script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="Syllabus" href="plan_bef.html" />
+    <link rel="prev" title="Welfare" href="welfare_en.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Micro Notes
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Rechercher docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Microéconomie (20-851):</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="plan.html">Plan de cours</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cons.html">Consommateur</a></li>
+<li class="toctree-l1"><a class="reference internal" href="effets.html">Effets Prix et Revenu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="risque.html">Le Risque</a></li>
+<li class="toctree-l1"><a class="reference internal" href="time.html">Le Temps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="labor.html">Le Travail</a></li>
+<li class="toctree-l1"><a class="reference internal" href="welfare.html">Bien-être</a></li>
+<li class="toctree-l1"><a class="reference internal" href="echange.html">Échange</a></li>
+<li class="toctree-l1"><a class="reference internal" href="production.html">La Production</a></li>
+<li class="toctree-l1"><a class="reference internal" href="strategy.html">Concurrence imparfaite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="information.html">Asymétrie d’information</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Microeconomics (20-851A):</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="plan_en.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro_en.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cons_en.html">Consumer Demand</a></li>
+<li class="toctree-l1"><a class="reference internal" href="effets_en.html">Price and Income Effects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="risque_en.html">Risk</a></li>
+<li class="toctree-l1"><a class="reference internal" href="time_en.html">Time</a></li>
+<li class="toctree-l1"><a class="reference internal" href="labor_en.html">Labor Supply</a></li>
+<li class="toctree-l1"><a class="reference internal" href="welfare_en.html">Welfare</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Production</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#production-function">Production Function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#marginal-rate-of-technical-substitution">Marginal Rate of Technical Substitution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#returns-to-scale">Returns to scale</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cost-minimization">Cost Minimization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cost-functions">Cost Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sheppard-lemma">Sheppard Lemma</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#marginal-cost">Marginal Cost</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#profit-maximization">Profit Maximization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#production-economy">Production Economy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#python-example">Python example</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">BEF (80-804A):</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="plan_bef.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="anomalies.html">Anomalies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="annuities.html">Annuities</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Micro Notes</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Production</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/production_en.rst.txt" rel="nofollow"> Afficher la source de la page</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="production">
+<h1>Production<a class="headerlink" href="#production" title="Lien permanent vers ce titre">¶</a></h1>
+<p>In the exchange economy, endownments were given. In the real world, they do not fall from the sky. They are often produced. Often, goods are produced from other goods by firms. Firms are owned by consumers. Why do firms exist? <a class="reference external" href="https://fr.wikipedia.org/wiki/Ronald_Coase">Ronald Coase</a> proposed a simple explanation: firms are there to internalize transactions costs in order to produce goods.Without these organizations, difficult to produce at low cost things like laptops, furniture. There are returns to scale which makes it possible for firms to produce on a great scale at low cost. Organizations also promote innovation by bringing together people who make share ideas and develop new products and services. We will present how economists think of decisions make by firms in a production context. This will lead us back to general equilibrium.</p>
+<div class="section" id="production-function">
+<h2>Production Function<a class="headerlink" href="#production-function" title="Lien permanent vers ce titre">¶</a></h2>
+<p>We will think of a simple firm who produces an output from potentially multiple inputs. This process is represented by a production function <span class="math notranslate nohighlight">\(F(\cdot)\)</span>. The production function can be estimated using econometric methods, in collaboration perhaps with engineers who know a lot about the production process.</p>
+<p><strong>Example: one input and output</strong></p>
+<ul class="simple">
+<li><p>e.g. Iron Ore Mine  — input: work  <span class="math notranslate nohighlight">\(L\)</span>, output: iron
+<span class="math notranslate nohighlight">\(Y = F(L) = \sqrt{L}\)</span></p></li>
+</ul>
+<p>The production function determines what is possible for the firm.</p>
+<p><strong>Example: Two inputs, one output</strong></p>
+<ul class="simple">
+<li><p>Inputs: Iron ore (<span class="math notranslate nohighlight">\(I\)</span>), coal (<span class="math notranslate nohighlight">\(C\)</span>) — Output: Steel
+(<span class="math notranslate nohighlight">\(S\)</span>)</p></li>
+</ul>
+<p>We could for example think of a function</p>
+<div class="math notranslate nohighlight">
+\[S(I,C)  = I^{\alpha}C^{\beta}\]</div>
+<p>With data on the quantity of steel produced, the quantity of iron ore and of coal used over time  <span class="math notranslate nohighlight">\(t=1,...,T\)</span>, we can estimate parameters by considering the following transformation of the production function:</p>
+<div class="math notranslate nohighlight">
+\[\log S_t = \log A_t + \alpha \log I_t + \beta \log C_t + \epsilon_t\]</div>
+<p>where <span class="math notranslate nohighlight">\(A_t\)</span> is a total productivity factor (TFP) and <span class="math notranslate nohighlight">\(\epsilon_t\)</span> is a noise term. Therefore <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\beta\)</span> can be estimated, under certain conditions regarding <span class="math notranslate nohighlight">\(\epsilon_t\)</span> and the relationship with <span class="math notranslate nohighlight">\((I_t,C_t)\)</span>.</p>
+</div>
+<div class="section" id="marginal-rate-of-technical-substitution">
+<h2>Marginal Rate of Technical Substitution<a class="headerlink" href="#marginal-rate-of-technical-substitution" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Suppose there is a shortage of input <span class="math notranslate nohighlight">\(Z\)</span>. The director is asking you how much more <span class="math notranslate nohighlight">\(X\)</span> will he need to compensate the loss of <span class="math notranslate nohighlight">\(Z\)</span> while maintaining production of  production of <span class="math notranslate nohighlight">\(Y\)</span> constant.</p>
+<p>Consider the production function <span class="math notranslate nohighlight">\(Y = F(X,Z)\)</span>. Take the total differential:</p>
+<div class="math notranslate nohighlight">
+\[dY = F'_X(X,Z)dX + F'_Z(X,Z)dZ\]</div>
+<p>The marginal productivity of each input is given by  <span class="math notranslate nohighlight">\(F'_i(X,Z)\)</span> for <span class="math notranslate nohighlight">\(i=X,Z\)</span>. It provides the production of  <span class="math notranslate nohighlight">\(Y\)</span> that one obtains when we increase marginally one input  <em>keeing others fixed</em>.</p>
+<p>Fix <span class="math notranslate nohighlight">\(dY = 0\)</span>. We obtain the <strong>marginal rate of technical substitution</strong>:</p>
+<div class="math notranslate nohighlight">
+\[MRST  = \frac{dZ}{dX} = -\frac{F'_X(X,Z)}{F'_Z(X,Z)}\]</div>
+<p>Instead of indifference curves, we obtain isoquants in the space <span class="math notranslate nohighlight">\((X,Z)\)</span> which give the combinations of inputs that produce a given quantity of output (constant). The MRST is the slope of the isoquant.</p>
+<p>It is the quantity of <span class="math notranslate nohighlight">\(Z\)</span> that we can save if we increase  <span class="math notranslate nohighlight">\(X\)</span> marginally. It is negative since the production function is generally positive in its inputs (positive marginal productivities).</p>
+<p><strong>Exercise A</strong>: Find the MRST for <span class="math notranslate nohighlight">\(Y=X^{\alpha} Z^{\beta}\)</span></p>
+</div>
+<div class="section" id="returns-to-scale">
+<h2>Returns to scale<a class="headerlink" href="#returns-to-scale" title="Lien permanent vers ce titre">¶</a></h2>
+<p>The factory manager wishes to double production. He is asking you in which proportion he should increase his purchases of inputs. The marginal productivity is not useful for this purpose as it is a concept that looks at how much production increases when one input increases and the others are constant. Second, this is not a marginal change, since we are looking to double production. Turns out we can look at returns to scale of a production function. A function has returns to scale which are:</p>
+<ul class="simple">
+<li><p>constant: if <span class="math notranslate nohighlight">\(F(X,Z)\)</span> is homgeneous of degree 1</p></li>
+<li><p>increasing: if <span class="math notranslate nohighlight">\(F(X,Z)\)</span> is homgeneous of degree greater than 1.</p></li>
+<li><p>decreasing: if <span class="math notranslate nohighlight">\(F(X,Z)\)</span> is homogeneous of degree smaller than 1.</p></li>
+</ul>
+<p><strong>Exercise B</strong>: Consider the function
+<span class="math notranslate nohighlight">\(Y=F(X,Z)=A X^\alpha Z^\beta\)</span>. What are the returns to scale of this function?</p>
+</div>
+<div class="section" id="cost-minimization">
+<h2>Cost Minimization<a class="headerlink" href="#cost-minimization" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Given a production level <span class="math notranslate nohighlight">\(Y\)</span>, what is the best choice of inputs?</p>
+<div class="math notranslate nohighlight">
+\[\min_{X,Z} \{ p_X X + p_Z Z : F(X,Z) \ge Y \}\]</div>
+<p>Write the langrangian:</p>
+<div class="math notranslate nohighlight">
+\[L(X,Z,\mu) = p_X X + p_Z Z + \mu(Y - F(X,Z))\]</div>
+<p>The FOCs are:</p>
+<div class="math notranslate nohighlight">
+\[p_X - \mu F'_X(X,Z) = 0\]</div>
+<div class="math notranslate nohighlight">
+\[p_Z - \mu F'_Z(X,Z) = 0\]</div>
+<div class="math notranslate nohighlight">
+\[F(X,Z) = Y\]</div>
+<p>We can simplify to obtain:</p>
+<div class="math notranslate nohighlight">
+\[\frac{p_X}{p_Z} = \frac{F'_X(X,Z)}{F'_Z(X,Z)}\]</div>
+<div class="math notranslate nohighlight">
+\[F(X,Z) = Y\]</div>
+<p>The first equation gives the optimal  <em>mix</em> of inputs. This mix has to be such that the <span class="math notranslate nohighlight">\(MRST\)</span> is equal to the relative price of inputs. The relative price gives the cost, in units of <span class="math notranslate nohighlight">\(Y\)</span> of a unit of <span class="math notranslate nohighlight">\(X\)</span>. If this cost is smaller than the savings we make by increasing <span class="math notranslate nohighlight">\(X\)</span>, we can increase <span class="math notranslate nohighlight">\(X\)</span> and reduce costs. One can do this up to the point where <span class="math notranslate nohighlight">\(TMST\)</span> is equal to the relative price of inputs. There is then no more savings to do, we have minimized costs.</p>
+<p>The second constraint uses this optimal <em>mix</em> of inputs found with the first and pins the levels by using the fixed level of production <span class="math notranslate nohighlight">\(Y\)</span>. The solution to this system of equations is a pair of conditional demand functions for inputs</p>
+<div class="math notranslate nohighlight">
+\[X(p_X,p_Z,Y),Z(p_X,p_Z,Y)\]</div>
+<p>We denote those as <em>conditional</em> because they depend on a fixed output level.</p>
+<p><strong>Exercise C</strong>: Find the conditional demand functions for
+<span class="math notranslate nohighlight">\(Y=X^{1/2} Z^{1/4}\)</span>.</p>
+<p>What are the properties of these functions?</p>
+<ul class="simple">
+<li><p>They are homogeneous of degree zero in <span class="math notranslate nohighlight">\((p_X,p_Z)\)</span></p></li>
+<li><p>They are symmetric:
+<span class="math notranslate nohighlight">\(\frac{\partial X(p_X,p_Z,Y)}{\partial p_Z} = \frac{\partial Z(p_X,p_Z,Y)}{\partial p_X}\)</span></p></li>
+<li><p>Negative price effects: <span class="math notranslate nohighlight">\(\frac{\partial X(p_X,p_Z,Y)}{\partial p_X}&lt;0\)</span>.</p></li>
+</ul>
+</div>
+<div class="section" id="cost-functions">
+<h2>Cost Functions<a class="headerlink" href="#cost-functions" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Substituting the conditional demands in the objective function, we get:</p>
+<div class="math notranslate nohighlight">
+\[C(p_X,p_Z,Y) = p_X X(p_X,p_Z,Y) + p_Z Z(p_X,p_Z,Y).\]</div>
+<p>This function provides the minimum cost of producing a certain level of output.</p>
+<p>Properties:</p>
+<ul class="simple">
+<li><p>Non-decreasing in <span class="math notranslate nohighlight">\((Y,p_X,p_Z)\)</span></p></li>
+<li><p>Homogeneous of degree 1 in <span class="math notranslate nohighlight">\((p_X,p_Z)\)</span></p></li>
+<li><p>Concave in <span class="math notranslate nohighlight">\((p_X,p_Z)\)</span></p></li>
+</ul>
+<p><strong>Exercise D</strong>: Find the cost function for <span class="math notranslate nohighlight">\(Y=X^{1/2} Z^{1/4}\)</span>.</p>
+</div>
+<div class="section" id="sheppard-lemma">
+<h2>Sheppard Lemma<a class="headerlink" href="#sheppard-lemma" title="Lien permanent vers ce titre">¶</a></h2>
+<p>An interesting result is that</p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial C(p_X,p_Z,Y)}{\partial p_X} = X^*(p_X,p_Z,Y)\]</div>
+<p>This result can be useful to find conditional demands.</p>
+<p><strong>Exercise E</strong>: Show that this is true to find <span class="math notranslate nohighlight">\(X^*\)</span> using the production function <span class="math notranslate nohighlight">\(Y=X^{1/2} Z^{1/4}\)</span>.</p>
+</div>
+<div class="section" id="marginal-cost">
+<h2>Marginal Cost<a class="headerlink" href="#marginal-cost" title="Lien permanent vers ce titre">¶</a></h2>
+<p>The marginal cost of producing an output (while minimizing costs) is given by:</p>
+<div class="math notranslate nohighlight">
+\[c(p_X,p_Z,Y) = \frac{\partial C(p_X,p_Z,Y)}{\partial Y}\]</div>
+<p>We use the convention of using lower case <span class="math notranslate nohighlight">\(c\)</span> to denote marginal cost while upper case C for total costs.</p>
+<p>Using the enveloppe theorem we can show that</p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial C(p_X,p_Z,Y)}{\partial Y} = \mu\]</div>
+<p><span class="math notranslate nohighlight">\(\mu\)</span> is therefore the marginal cost at the optimum.</p>
+<p><strong>Exercise F</strong>: Find the marginal cost for <span class="math notranslate nohighlight">\(Y=X^{1/2} Z^{1/4}\)</span>.</p>
+<p>If the production function has returns to scale which are:</p>
+<ul class="simple">
+<li><p>Constant: <span class="math notranslate nohighlight">\(C(p_X,p_Z,Y)\)</span> is linear in <span class="math notranslate nohighlight">\(Y\)</span>, <span class="math notranslate nohighlight">\(c(p_X,p_Z,Y)\)</span> is  constant.</p></li>
+<li><p>Increasing: <span class="math notranslate nohighlight">\(C(p_X,p_Z,Y)\)</span> is concave in <span class="math notranslate nohighlight">\(Y\)</span>, <span class="math notranslate nohighlight">\(c(p_X,p_Z,Y)\)</span> is decreasing.</p></li>
+<li><p>Decreasing: <span class="math notranslate nohighlight">\(C(p_X,p_Z,Y)\)</span> is convex in <span class="math notranslate nohighlight">\(Y\)</span>, <span class="math notranslate nohighlight">\(c(p_X,p_Z,Y)\)</span> is increasing.</p></li>
+</ul>
+</div>
+<div class="section" id="profit-maximization">
+<h2>Profit Maximization<a class="headerlink" href="#profit-maximization" title="Lien permanent vers ce titre">¶</a></h2>
+<p>The firm minimizes costs for a given level of output, but it also needs to pick the level of output. A natural objective is to maximize profits.</p>
+<p>Profits are given by:</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[\Pi = R - C\]</div>
+</div></blockquote>
+<p>where <span class="math notranslate nohighlight">\(R\)</span> represents revenue and <span class="math notranslate nohighlight">\(C\)</span>, costs. Given an input <span class="math notranslate nohighlight">\(X\)</span> and output <span class="math notranslate nohighlight">\(Y = F(X)\)</span>, profits are given by:</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[\begin{split}C(X) = p_X X , \quad R(Y) = p_Y Y \\
+\Pi(X) = p_Y F(X) - p_XX\end{split}\]</div>
+</div></blockquote>
+<p>At the optimum, we have</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[p_Y F'(X) - p_X = 0 \iff F'(X) =
+\frac{p_X}{p_Y}\]</div>
+</div></blockquote>
+<p><strong>Exercise G</strong> Consider <span class="math notranslate nohighlight">\(F(X) = \sqrt X\)</span>, find the choice of
+<span class="math notranslate nohighlight">\(X\)</span> which maximizes profits.</p>
+<p>The supply function of the firm (output) is given by <span class="math notranslate nohighlight">\(Y^* = F(X^*)\)</span>.</p>
+<p><strong>Exercise H</strong> Consider <span class="math notranslate nohighlight">\(F(X) = \sqrt X\)</span>. Find the supply function of the firm for <span class="math notranslate nohighlight">\(Y\)</span>.</p>
+<p>When we have two inputs and one output, we can proceed by:</p>
+<ul class="simple">
+<li><p>Cost minimization for <span class="math notranslate nohighlight">\((X,Z)\)</span> as a function of  <span class="math notranslate nohighlight">\(Y\)</span>.</p></li>
+<li><p>Profit maximization for <span class="math notranslate nohighlight">\(Y\)</span> using the cost function (function of <span class="math notranslate nohighlight">\(Y\)</span>).</p></li>
+</ul>
+<p><strong>Exercise I</strong> For <span class="math notranslate nohighlight">\(Y=X^{1/2} Z^{1/4}\)</span>, find the supply function for <span class="math notranslate nohighlight">\(Y\)</span>.</p>
+</div>
+<div class="section" id="production-economy">
+<h2>Production Economy<a class="headerlink" href="#production-economy" title="Lien permanent vers ce titre">¶</a></h2>
+<p>In an exchange economy, we have solved for a market equilibrium as well as a Pareto optimum. In a production economy, we can do the same. We have to add a firm and specify what it produces and with which goods. We also have to distribute profits from the firm, if any, to consumers who are shareholders of this firm. In general equilibrium, nothing is lost…</p>
+<p>Consider a situation with two goods: <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span>. The firm has a production function <span class="math notranslate nohighlight">\(Y = F(X)\)</span>.</p>
+<p><strong>Firm Behavior</strong></p>
+<ul>
+<li><p>Given prices <span class="math notranslate nohighlight">\(p_Y\)</span> and  <span class="math notranslate nohighlight">\(p_X\)</span>, a firm maximizes profits.</p>
+<div class="math notranslate nohighlight">
+\[\Pi(X) = p_Y F(X) - p_X X\]</div>
+</li>
+<li><p>We can find demand for the input <span class="math notranslate nohighlight">\(X^{F,d}(p_X,p_Y)\)</span>, supply of the firm <span class="math notranslate nohighlight">\(Y^{F,s}(p_X,p_Y)\)</span> and profits, if any, <span class="math notranslate nohighlight">\(\Pi\)</span>.</p></li>
+</ul>
+<p><strong>Consumer Behavior</strong></p>
+<ul class="simple">
+<li><p>Consider two consumers C1 and C2</p></li>
+<li><p>Preferences of consumers are represented by <span class="math notranslate nohighlight">\(U_1(X, Y)\)</span> and
+<span class="math notranslate nohighlight">\(U_2(X,Y)\)</span></p></li>
+<li><p>Consumer 1 has endownments <span class="math notranslate nohighlight">\((X^{C1,e},
+Y^{C1,e})\)</span> while consumer 2 has <span class="math notranslate nohighlight">\((X^{C2,e}, Y^{C2,e})\)</span></p></li>
+<li><p>Each consumer gets a share of profits from the firm <span class="math notranslate nohighlight">\(\rho_{1}\)</span> and
+<span class="math notranslate nohighlight">\(\rho_2 = 1- \rho_1\)</span>.</p></li>
+</ul>
+<p>Consumer 1 (same for 2) has to solve</p>
+<div class="math notranslate nohighlight">
+\[\max_{X,Y} \left[U_1(X,Y): p_{X} X +  p_{Y}Y \leq p_{X}X^{C1,e}+ p_{Y}Y^{C1,e} + \rho_{1}\Pi \right]\]</div>
+<ul class="simple">
+<li><p>Yields demands for consumer 1: <span class="math notranslate nohighlight">\(X^{C1,d}(p_X,p_Y)\)</span> and
+<span class="math notranslate nohighlight">\(Y^{C1,d}(p_X,p_Y)\)</span> (same for 2)</p></li>
+</ul>
+<p><strong>Market equilibrium</strong></p>
+<p>We can normalize <span class="math notranslate nohighlight">\(p_{X} = 1\)</span> and so  <span class="math notranslate nohighlight">\(p_{Y} = p\)</span> (see notes on exchange if unclear). Given <span class="math notranslate nohighlight">\(p\)</span>, we can find demands <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span> for each consumer, demand of <span class="math notranslate nohighlight">\(X\)</span> from the firm and supply <span class="math notranslate nohighlight">\(Y\)</span>.</p>
+<p>The market for  <span class="math notranslate nohighlight">\(X\)</span> is in equilibrium at price <span class="math notranslate nohighlight">\(p\)</span> if and only if</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[X^{C1,d} + X^{C2,d} + X^{F,d} = X^{C1,e} + X^{C2,e}\]</div>
+</div></blockquote>
+<p>Walras” Law applies and if <span class="math notranslate nohighlight">\(p\)</span> is the equilibrium price on the market for <span class="math notranslate nohighlight">\(X\)</span>, the market for <span class="math notranslate nohighlight">\(Y\)</span> is also in equilibrium.</p>
+<p>An example…</p>
+<p>Assume</p>
+<ul class="simple">
+<li><p>Production: <span class="math notranslate nohighlight">\(F(X) =  \log(1+X)\)</span></p></li>
+<li><p>Preferences: <span class="math notranslate nohighlight">\(U_1(X,Y) = U_2(X,Y) = \log X + \alpha \log Y\)</span></p></li>
+<li><p>Endowments: <span class="math notranslate nohighlight">\(X^{C1,e} = 2\)</span> et <span class="math notranslate nohighlight">\(X^{C2,e} = Y^{C1,e} = Y^{C2,e} = 0\)</span></p></li>
+<li><p>Profits: <span class="math notranslate nohighlight">\(\rho_1 =0\)</span> and <span class="math notranslate nohighlight">\(\rho_2 = 1\)</span></p></li>
+<li><p>Price: <span class="math notranslate nohighlight">\(p_X = 1\)</span>, <span class="math notranslate nohighlight">\(p_Y = p\)</span></p></li>
+</ul>
+<p>For the firm, profit maximization yields</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[\max_X p\log(1+X) - X\;\; \Rightarrow \;\; X^{F,d}
+= p- 1 \;\; et \;\; Y^{F,s} = \log p\]</div>
+</div></blockquote>
+<p>Profits are given by <span class="math notranslate nohighlight">\(\Pi = p \log p - p+1\)</span></p>
+<p>On the consumer side, given their income, <span class="math notranslate nohighlight">\(I\)</span>, consumers maximize utility</p>
+<div class="math notranslate nohighlight">
+\[\max_{X,Y} \left[\log X + \alpha \log Y : X + pY \leq I \right]\]</div>
+<p>Income is given by  <span class="math notranslate nohighlight">\(I_1 = 2\)</span> and <span class="math notranslate nohighlight">\(I_2 = \Pi =  p \log p - p +1\)</span>.</p>
+<p>Demands are</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[\begin{split}X^{C1,d} = \frac{1}{1+\alpha}I_1  \\
+Y^{C1,d} = \frac{\alpha}{1+\alpha} \frac{I_1}{p} \\
+X^{C2,d} = \frac{1}{1+\alpha} I_2  \\
+Y^{C2,d} = \frac{\alpha}{1+\alpha} \frac{I_2}{p}\end{split}\]</div>
+</div></blockquote>
+<p>A market equilibrium for <span class="math notranslate nohighlight">\(X\)</span> is given by:</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[X^{F,d} + X^{C1,d} + X^{C2,d} = X^{C1,e} + X^{C2,e} = 2\]</div>
+</div></blockquote>
+<p>which gives:</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[p-1 + \frac{1}{1+\alpha}2 + \frac{1}{1+\alpha}(p\log p - p +1 ) = 2.\]</div>
+</div></blockquote>
+<p>The equilibrium price is the solution to <span class="math notranslate nohighlight">\(\alpha p +p\log p = 3 \alpha\)</span>. We can solve numerically (<span class="math notranslate nohighlight">\(p^*\)</span>).</p>
+<p>If we summarize the method</p>
+<ul class="simple">
+<li><p>Given prices, profit maximization gives input demands and supply of the firm. We can compute the profits.</p></li>
+<li><p>Given prices, endownments and profits, we can compute income and consumer demands.</p></li>
+<li><p>From excess demand functions, we can find the equilibrium price.</p></li>
+</ul>
+<p>Welfare theorems apply. The firm needs to be a price-taker.</p>
+</div>
+<div class="section" id="python-example">
+<h2>Python example<a class="headerlink" href="#python-example" title="Lien permanent vers ce titre">¶</a></h2>
+<p><a class="reference external" href="https://colab.research.google.com/github/pcmichaud/micro/blob/master/notebooks/EquilibreProduction.ipynb"><img alt="ImageLink" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="plan_bef.html" class="btn btn-neutral float-right" title="Syllabus" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="welfare_en.html" class="btn btn-neutral float-left" title="Welfare" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Précédent</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Pierre-Carl Michaud
+
+    </p>
+  </div>
+    
+    
+    
+    Compilé avec <a href="http://sphinx-doc.org/">Sphinx</a> en utilisant un
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">thème</a>
+    
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
