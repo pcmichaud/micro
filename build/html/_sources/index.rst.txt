@@ -41,6 +41,7 @@ Pierre-Carl Michaud, Professeur titulaire HEC Montréal
    welfare_en.rst
    echange_en.rst
    production_en.rst
+   strategy_en.rst
 
 .. toctree::
    :maxdepth: 1
