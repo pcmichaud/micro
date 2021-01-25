@@ -9,8 +9,8 @@ Savings
 Facts
 +++++
 
-How much do people save?
-~~~~~~~~~~~~~~~~~~~~~~~~
+Stocks and Flows
+~~~~~~~~~~~~~~~~
 
 People earn income, for the large part from work, over their entire life. From that income, they spend on goods which they consume, some of which they leave for their heirs. There is no one-to-one relationship between when we earn income and when we spend it. Luckily, we can save some income for later and we can borrow when income is low. There is a lot of saving, and then dissaving, whether it is voluntary or not. For example, paying mandatory pension contributions reduces potential expenditures today against a promise to receive income in the future that allows to spend on goods when old. Paying taxes has also a savvings component since lots of government spending is devoted to the young (who earn no income) and the old, who for example consume a lot of health care. In this set of lectures, we will be mostly concerned with voluntary private savings. Savings are a stock, with the accumulation of contributions, returns and withdrawals being the flows. Let the stock of saving all savings, say at market value, be :math:`w_t`. If we denote by :math:`s_t` contributions when positive and negative when withdrawals, then the stock evolves according to 
 
@@ -60,17 +60,57 @@ Contribution rates and amounts (conditional on contributing) are quite skewed in
 
 Registered savings are very popular. For example Statistics Canada reports for 2018, a total of  43.5 billion dollars in `RRSP contributions <https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110004401>`_ while the number of 66 billion for `TFSA <https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/income-statistics-gst-hst-statistics/tax-free-savings-account-statistics/tax-free-savings-account-statistics-2018-tax-year.html>`_ in the same year. 
 
-Adding unregistered to registered savings, we often denote total savings as liquid wealth or financial wealth. Implicitely, this allows to make the distinction with another form of wealth, the stock of real assets, such as cars and real estate. The Survey of Financial Security allows us to draw a good portrait of financial wealth. In the next figure, we plot the distribution of financial wealth by age. One can see that other than the obvious age profile, there is a lot of variability. Some people have lots of wealth while others have little. 
+Adding unregistered to registered savings, we often denote total savings as liquid wealth or financial wealth. Implicitely, this allows to make the distinction with another form of wealth, the stock of real assets, such as cars and real estate. The Survey of Financial Security allows us to draw a good portrait of financial wealth. In the next figure,  we zooming in to the near retirees (age 55-65). We first look at the composition of financial wealth by education, a good marker of lifetime income. 
 
-Zooming in to the near retirees (age 55-65), and representing by income quintiles the distribution of financial wealth, we see that those who have higher income have generally accumulated more much financial wealth. Lots accumulate very little wealth. Because wealth is so skewed, we often use the median as a statistic. Other times, we clip (or winsorize) the data to throw out outliers. Another way of avoiding outliers when presenting ratios is to use ratio of means rather than mean of ratios.  
+.. figure:: /images/wealth_composition.png
+   :class: with-shadow
 
-In terms of wealth composition, we have the following composition by quintiles. 
+   Source: Calculations from the Survey of Financial Security, 2009
 
-Finally, we can express medians financial wealth as a multiple of income for the near retirees. Someone in the middle quintile has roughly 3 times is income in terms of private liquid savings. This one at the bottom has less than his income in savings. The one in the top quintiles has 6 times his income. Is that a lot? or too little? Are people saving enough?
+We see that nearly half of financial wealth is RRSP and that this share is roughly similar across education groups. The share of cash, or bank accounts, is smaller for those with higher education and the fraction in stocks slightly larger with education (also mutual funds). The next figure shows the distribution of financial wealth as a fraction of after-tax income. 
+
+.. figure:: /images/wealth_ratios_by_educ.png
+   :class: with-shadow
+
+   Source: Calculations from the Survey of Financial Security, 2009
+
+
+All of these respondents are not retired. We see that financial wealth is larger relative to income for those with higher education. On average, college educated households have 3 times their after-tax income in financial wealth compared to roughly 1.25 for those with less than high school. In fact, means mask a lot of heterogeneity and considerable skewness in the distribution of financial wealth. The next figure shows an histograph of the distribution of financial wealth relative to after-tax income. We see that more than 25% of respondents have close to no financial wealth.  
+
+.. figure:: /images/finwealth_density.png
+   :class: with-shadow
+
+   Source: Calculations from the Survey of Financial Security, 2009
+
+These calculations using the SFS can be replicated using this notebook. 
+
+|ImageLink|_
+
+.. |ImageLink| image:: https://colab.research.google.com/assets/colab-badge.svg
+.. _ImageLink: https://colab.research.google.com/drive/1ig20Bjzkpgm9e1QotJL0hkxJUXUItPWj?usp=sharing
+
+Replacement Rates
+~~~~~~~~~~~~~~~~~
+
+Before one even contemplates to make the decision of how much to save, it is useful to ask the question as to what the public pension system, and employers, replace in terms of life-time income. A short primer on the Canadian retirement income system is available here. But to summarize it succintly for our purposes:
+
+* First pillar: Old age security (OAS) and guaranteed income supplement (GIS). They are not based on career earnings, but provide a flat pension which is clawed back at various rates depending on other retirement income. 
+
+* Second pillar: Canada (and Quebec) Pension Plan provide a benefit which is a function of lifetime earnings against contributions which are made while working. 
+
+* Third pillar: Employer Defined benefit and Defined Contribution plans. DB plans provide an annuity against contributions made while working. Define contribution plans set an accumulation scheme for workers to contribute, sometimes with employers matching their contributions. 
+
+* Fourth pillar: Private retirement savings
+
+The top three pillars interact with each other in complex ways. In addition, the tax system impacts disposable income, while working and when retired. 
+
+One common measure of the generosity of a retirement system is to compute the ratio of disposable income after retirement to that before retirement, an effective replacement rate. Both measures of pre and post disposable retirement income  can be computed a number of ways, sometimes after tax and sometimes before tax. Sometimes average career earnings are used while other times earnings at some age are used. When defined contribution plans are in play, one needs to decide how to annuitize their value to compute an annual flow of disposable income.  
+
+To showcase the effective replacement rates in the Canadian retirement system, we use a retirement income simulator produced by the Retirement and Savings Institute at HEC. That calculator allows to project someone's outcomes all the way to retirement based on inputs regarding earnings and other characteristics. It can also be used on a dataset of potential cases. 
 
 
 
-Replacement rates
+
 
 
 
