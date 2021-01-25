@@ -25,7 +25,7 @@ Let us formalize the problem above:
 
 -  Preferences may be represented by :math:`U(X,Y)`. We will assume all consumers have the same preferences. 
 
--  Budget constraint: :math:`p_X Y+ p_Y Y \leq I`
+-  Budget constraint: :math:`p_X X + p_Y Y \leq I`
 
 Demand functions are :math:`(X^*, Y^*)` such that 
 
