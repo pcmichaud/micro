@@ -5,6 +5,7 @@ In general, the vast majority of us dislike risk.
 
 .. figure:: /images/risk-scared.jpeg
    :scale: 100
+   :align: center
 
 Imagine we offer you two retirement plan:
 
@@ -127,6 +128,7 @@ A function :math:`u` which fits this inequality needs to be concave (see the mat
 
 .. figure:: /images/risk_concave.png
    :scale: 75
+   :align: center
 
    In the wealth-utility space, consider a lottery on :math:`(X,Y)` with probability :math:`p` that :math:`X` is realized. Starting on the horizontal axis, expected wealth is between :math:`X` and :math:`Y` since :math:`p` is between zero and one. On the vertical axis, we can also do the same thing for expected utility, with the same  :math:`p`. Varying  :math:`p`, we get the straight line that attaches points :math:`(X,Y)` to the utility function. Since the function is concave, this line (or cord) is below the function itself. So utility evaluated at expected wealth (point A) is always above expected utility (point B). This holds for all :math:`p`. 
 
@@ -162,8 +164,10 @@ How do we measure this coefficient? One method is the multiple price list (MPL).
 A multiple price list presents two lotteries under different probability and payoff configuration. The respondant has to choose the loterry he prefers. There is often an incentive mechanism which rewards participants. Here is an example from Holt and Laury: 
 
 
-.. image:: /images/mpl.png
+.. figure:: /images/mpl.png
    :scale: 100%
+   :align: center
+
 
 We could use a utility function of the form, 
 
@@ -187,6 +191,7 @@ If the agent is risk averse, :math:`Z' < Z` and we denote :math:`\pi = Z-Z'` the
 
 .. figure:: /images/risk_premium.png
    :scale: 75
+   :align: center
 
    In the wealth-utility space, consider a lottery on :math:`(X,Y)` with probability :math:`p` that :math:`X` is realized. Point C gives the certainty equivalent wealth. Hence, certainty equivalent wealth is :math:`Z' < Z` and the risk premium is :math:`\pi = Z-Z'`. 
 
@@ -323,6 +328,7 @@ Maurice Allais and his Paradox
 :math:`L_4 \succ L_3` are not consistent with expected utility.
 
 .. figure:: /images/allais.png
+   :align: center
 
 
 Read the story behind the paradox. `Munier (1991) <https://pubs.aeaweb.org/doi/pdf/10.1257/jep.5.2.179>`_

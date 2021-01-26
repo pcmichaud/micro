@@ -199,7 +199,7 @@
   <div class="section" id="risk">
 <h1>Risk<a class="headerlink" href="#risk" title="Lien permanent vers ce titre">¶</a></h1>
 <p>In general, the vast majority of us dislike risk.</p>
-<div class="figure align-default">
+<div class="figure align-center">
 <a class="reference internal image-reference" href="_images/risk-scared.jpeg"><img alt="_images/risk-scared.jpeg" src="_images/risk-scared.jpeg" style="width: 284.0px; height: 177.0px;" /></a>
 </div>
 <p>Imagine we offer you two retirement plan:</p>
@@ -328,7 +328,7 @@ to <span class="math notranslate nohighlight">\(\mathcal L\)</span>.</p></li>
 \[u(Z) &gt; pu(X) + (1-p)u(Y).\]</div>
 </div></blockquote>
 <p>A function <span class="math notranslate nohighlight">\(u\)</span> which fits this inequality needs to be concave (see the math tools). In statistics, this result is Jensen’s inequality which arises when the function is concave. The risk loving case corresponds to a convex function.</p>
-<div class="figure align-default" id="id1">
+<div class="figure align-center" id="id1">
 <a class="reference internal image-reference" href="_images/risk_concave.png"><img alt="_images/risk_concave.png" src="_images/risk_concave.png" style="width: 529.5px; height: 372.0px;" /></a>
 <p class="caption"><span class="caption-text">In the wealth-utility space, consider a lottery on <span class="math notranslate nohighlight">\((X,Y)\)</span> with probability <span class="math notranslate nohighlight">\(p\)</span> that <span class="math notranslate nohighlight">\(X\)</span> is realized. Starting on the horizontal axis, expected wealth is between <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span> since <span class="math notranslate nohighlight">\(p\)</span> is between zero and one. On the vertical axis, we can also do the same thing for expected utility, with the same  <span class="math notranslate nohighlight">\(p\)</span>. Varying  <span class="math notranslate nohighlight">\(p\)</span>, we get the straight line that attaches points <span class="math notranslate nohighlight">\((X,Y)\)</span> to the utility function. Since the function is concave, this line (or cord) is below the function itself. So utility evaluated at expected wealth (point A) is always above expected utility (point B). This holds for all <span class="math notranslate nohighlight">\(p\)</span>.</span><a class="headerlink" href="#id1" title="Lien permanent vers cette image">¶</a></p>
 </div>
@@ -357,7 +357,9 @@ to <span class="math notranslate nohighlight">\(\mathcal L\)</span>.</p></li>
 <p>The absolute measure allows to look at risk aversion for lotteries involing absolute payoffs. The relative coefficient allows to look at the degree of risk aversion for a lottery which is proportional to wealth.</p>
 <p>How do we measure this coefficient? One method is the multiple price list (MPL). <a class="reference external" href="https://pubs.aeaweb.org/doi/pdfplus/10.1257/000282802762024700">Holt et Laury (2002)</a> have used MPLs to measure risk attitudes.</p>
 <p>A multiple price list presents two lotteries under different probability and payoff configuration. The respondant has to choose the loterry he prefers. There is often an incentive mechanism which rewards participants. Here is an example from Holt and Laury:</p>
+<div class="figure align-center">
 <a class="reference internal image-reference" href="_images/mpl.png"><img alt="_images/mpl.png" src="_images/mpl.png" style="width: 431.0px; height: 210.0px;" /></a>
+</div>
 <p>We could use a utility function of the form,</p>
 <div class="math notranslate nohighlight">
 \[U(X) = \frac{X^{1-r}}{1-r}.\]</div>
@@ -370,7 +372,7 @@ to <span class="math notranslate nohighlight">\(\mathcal L\)</span>.</p></li>
 \[u(Z') = pu(X) + (1-p)u(Y)\]</div>
 <p><span class="math notranslate nohighlight">\(Z'\)</span> is a certainty equivalent for <span class="math notranslate nohighlight">\(\mathcal L\)</span> given preferences represented by <span class="math notranslate nohighlight">\(u\)</span>.</p>
 <p>If the agent is risk averse, <span class="math notranslate nohighlight">\(Z' &lt; Z\)</span> and we denote <span class="math notranslate nohighlight">\(\pi = Z-Z'\)</span> the risk premium. Its interpretation depends on the context. When the action is to take on risk (by default the agent does not have risk),  we interpret this as the minimal compensation to take on risk. It represents the minimal amount of money we need to give so he takes on risk.  In a stock market investment decision, the excess return required by a risk averse investor is equal to the risk premium.  The more risky is the investment, the more he will demand in terms of compensation.</p>
-<div class="figure align-default" id="id2">
+<div class="figure align-center" id="id2">
 <a class="reference internal image-reference" href="_images/risk_premium.png"><img alt="_images/risk_premium.png" src="_images/risk_premium.png" style="width: 534.75px; height: 390.0px;" /></a>
 <p class="caption"><span class="caption-text">In the wealth-utility space, consider a lottery on <span class="math notranslate nohighlight">\((X,Y)\)</span> with probability <span class="math notranslate nohighlight">\(p\)</span> that <span class="math notranslate nohighlight">\(X\)</span> is realized. Point C gives the certainty equivalent wealth. Hence, certainty equivalent wealth is <span class="math notranslate nohighlight">\(Z' &lt; Z\)</span> and the risk premium is <span class="math notranslate nohighlight">\(\pi = Z-Z'\)</span>.</span><a class="headerlink" href="#id2" title="Lien permanent vers cette image">¶</a></p>
 </div>
@@ -506,7 +508,7 @@ to <span class="math notranslate nohighlight">\(\mathcal L\)</span>.</p></li>
 <p>Maurice Allais and his Paradox</p>
 <p><strong>Exercice I</strong>: Show that <span class="math notranslate nohighlight">\(L_1 \succ L_2\)</span> and
 <span class="math notranslate nohighlight">\(L_4 \succ L_3\)</span> are not consistent with expected utility.</p>
-<div class="figure align-default">
+<div class="figure align-center">
 <img alt="_images/allais.png" src="_images/allais.png" />
 </div>
 <p>Read the story behind the paradox. <a class="reference external" href="https://pubs.aeaweb.org/doi/pdf/10.1257/jep.5.2.179">Munier (1991)</a></p>
