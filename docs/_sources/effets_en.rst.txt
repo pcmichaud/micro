@@ -11,6 +11,7 @@ To answer a question like this, we need to study empirically how the demand for 
 
 .. figure:: /images/gilets.jpeg
    :scale: 100
+   :align: center
    
    The *gilets jaunes* in France in part demonstrated because of new gasoline taxes which they argued reduced their purchasing power. 
 
@@ -80,10 +81,10 @@ A good is inferior if its demand decreases when income increases (at constant pr
 
 Is gasoline an inferior or normal good? One study by James Porterba (`(Poterba, 1991) <http://www.nber.org/chapters/c11271>`_) suggests that it is inferior if we look at income but not if we look at spending. The reason has to do with variation in spending from savings. 
 
-|poterba|
 
-.. |poterba| image:: /images/poterba.png 
+.. figure:: /images/poterba.png 
    :scale: 40%
+   :align: center
 
 To quantify income effects, we can use an income elasticity defined as 
 
@@ -109,13 +110,15 @@ This elasticity is invariant to monetary units. A challenge is to find an experi
 
 In Denmark, one `study <https://www.sciencedirect.com/science/article/abs/pii/S0094119018300779>`_ shows that the price elasticity varies alot across the country and in particular reacts to the distance people need to travel to work and transportation alternatives they face.
 
-.. image:: /images/elasticity_denmark.png
+.. figure:: /images/elasticity_denmark.png
    :scale: 65%
+   :align: center
 
 In the U.S., another `analysis <https://www.aeaweb.org/articles?id=10.1257/pol.6.4.302>`_ shows that a distinction should be made between a price change and a tax change. The effect of a tax appears to be more visible and people react more to it.  
 
-.. image:: /images/elasticity_tax_price.png
+.. figure:: /images/elasticity_tax_price.png
    :scale: 45%
+   :align: center
 
 What are the implications for tax revenue? Hint: Think of the effect of the elasticity on tax revenue. 
 
@@ -158,7 +161,7 @@ Compensated income for a price increase is always higher than reference income. 
  
 **Law of Compensated Demand** If :math:`\hat p_X > p_X`, then :math:`X^{cmp}(p_X,p_Y,I)<X(p_X,p_Y,I)`. Compensated demand for :math:`X` is decreasing in the price :math:`p_X`.
 
-**Exercis A**: Compute compensated income and demand for 
+**Exercise A**: Compute compensated income and demand for 
 :math:`X` if :math:`U(X,Y) = XY` and :math:`p_XX+p_YY \le I` for a price change :math:`\hat p_X > p_X`.
 
 
@@ -221,6 +224,7 @@ Therefore, :math:`p_X \Delta X^{cmp}+ p_Y \Delta Y^{cmp}= 0`.
 
 .. figure:: /images/price_change.png
    :scale: 75
+   :align: center
 
    In the :math:`(X,Y)` space, consider a price increase for good :math:`X`. The index 1 refers to the reference situation and index 2 to the situation with the new prices. The consumer is initially at point A (reference). With the price change, the budget constraint has a steeper slope. After the price change, the consumer is at price C. To decompose this price change, we compensate the consumer at the new prices. He chooses point B, with the same utility as in the reference situation. The passage from A to B is the substitution effect. The passage from B to C is the income effect. The sum of the two yield the total effect of the price change. 
 

@@ -311,4 +311,4 @@ See this example in Python for a special utility function that is often used in 
 |ImageLink|_
 
 .. |ImageLink| image:: https://colab.research.google.com/assets/colab-badge.svg
-.. _ImageLink: https://colab.research.google.com/github/pcmichaud/micro/blob/master/notebooks/Consommateur.ipynb
+.. _ImageLink: https://colab.research.google.com/drive/1ANuye-BnoZAL2rPBFN7rYNsXEDBOWBrW?usp=sharing

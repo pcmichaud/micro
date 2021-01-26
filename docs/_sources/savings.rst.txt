@@ -27,6 +27,8 @@ The next figure from SHS shows average consumption and spending at the household
 
 .. figure:: /images/age-profiles.png
    :class: with-shadow
+   :align: center
+
 
    Source: Calculations from Survey of Household Spending, 2009
 
@@ -41,6 +43,7 @@ We can compare the two definitions of savings rates across income quintiles. The
 
 .. figure:: /images/shs-compare-savings-rate.png
    :class: with-shadow
+   :align: center
 
    Source: Calculations from the Survey of Household Spending, 2009
 
@@ -48,13 +51,15 @@ Private savings can take many form. We tend to refer to savings as either being 
 
 .. figure:: /images/shs-rrsp-takeup.png
    :class: with-shadow
+   :align: center
 
    Source: Calculations from the Survey of Household Spending, 2009
 
 Contribution rates and amounts (conditional on contributing) are quite skewed in terms of income as the next figure shows. 
 
-.. figure:: /images/rrsp_amounts.png
+.. figure:: /images/rrsp-contrib-amounts.png
    :class: with-shadow
+   :align: center
 
    Source: Calculations from the Survey of Household Spending, 2009
 
@@ -64,6 +69,7 @@ Adding unregistered to registered savings, we often denote total savings as liqu
 
 .. figure:: /images/wealth_composition.png
    :class: with-shadow
+   :align: center
 
    Source: Calculations from the Survey of Financial Security, 2009
 
@@ -71,6 +77,7 @@ We see that nearly half of financial wealth is RRSP and that this share is rough
 
 .. figure:: /images/wealth_ratios_by_educ.png
    :class: with-shadow
+   :align: center
 
    Source: Calculations from the Survey of Financial Security, 2009
 
@@ -79,6 +86,7 @@ All of these respondents are not retired. We see that financial wealth is larger
 
 .. figure:: /images/finwealth_density.png
    :class: with-shadow
+   :align: center
 
    Source: Calculations from the Survey of Financial Security, 2009
 
