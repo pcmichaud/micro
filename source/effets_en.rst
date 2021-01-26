@@ -353,5 +353,5 @@ See this notebook which uses the CES utility function to study price and income 
 |ImageLink|_
 
 .. |ImageLink| image:: https://colab.research.google.com/assets/colab-badge.svg
-.. _ImageLink: https://colab.research.google.com/github/pcmichaud/micro/blob/master/notebooks/PriceEffectTutorial.ipynb
+.. _ImageLink: https://colab.research.google.com/drive/1vij9jW4-0f9eNCgbtIomdoemsrfSGbRQ?usp=sharing
 
