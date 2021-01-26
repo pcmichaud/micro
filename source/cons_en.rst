@@ -7,6 +7,7 @@ Foundations of microeconomics start with how consumers behave. We might want to 
 
 .. figure:: /images/distribution_conso.jpeg
    :scale: 100
+   :align: center
 
 Preferences
 +++++++++++
@@ -81,8 +82,9 @@ For any two goods :math:`X,Y`:
 
 Proposition: If transitivity holds, indifference curves cannot cross.
 
-.. image:: /images/indif.png
+.. figure:: /images/indif.png
    :scale: 25%
+   :align: center
 
 *Exercise A*: Show that this last proposition is correct. 
 
@@ -171,6 +173,7 @@ Buying a unit of :math:`X` implies a sacrifice of :math:`\frac{p_X}{p_Y}` units 
 
 .. figure:: /images/budget_cons.png
    :scale: 75
+   :align: center
 
    In the space :math:`(X,Y)`, the budget line defines all possible allocation. Those above are not feasible. Those on the line or below are feasible. 
 
@@ -203,6 +206,7 @@ Consumer choice
 
 .. figure:: /images/choice_cons.png
    :scale: 75
+   :align: center
 
    The points A, C et D are possible given the constraint. Therefore, point B can be elimited even if the MRS (slope at  B) is close to the price ratio. Point D can also be elimited because the consumer does not spend all his budget. He can jump on a higher indifference curve by increasing consumption of each good. Bundles A and C spend exhaust the budget. But C is not optimal. In absolute terms, the MRS is larger than the opportunity cost (price ratio) of consuming another unit of X. Therefore, she can increase X and reduce Y yielding higher utility. Point A is optimal: MRS is equal to the price ratio. 
 
