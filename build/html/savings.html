@@ -1,7 +1,8 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="fr" >
+<!--[if IE 8]><html class="no-js lt-ie9" lang="fr" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   
@@ -11,18 +12,12 @@
   
 
   
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-
-  
   
   
   
 
   
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -31,14 +26,19 @@
         <script src="_static/doctools.js"></script>
         <script src="_static/language_data.js"></script>
         <script src="_static/translations.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script type="text/x-mathjax-config">MathJax.Hub.Config({"extensions": ["tex2jax.js"], "jax": ["input/TeX", "output/HTML-CSS"], "availableFonts": ["Neo-Euler", "TeX"], "preferredFont": ["Neo-Euler"], "scale": 60})</script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Recherche" href="search.html" /> 
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="prev" title="Annuities" href="annuities.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -52,7 +52,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Micro Notes
+            <a href="index.html" class="icon icon-home"> Micro Notes
           
 
           
@@ -66,7 +66,7 @@
           
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Rechercher docs" />
+    <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -75,7 +75,6 @@
           
         </div>
 
-        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -113,16 +112,35 @@
 <li class="toctree-l1"><a class="reference internal" href="strategy_en.html">Imperfect Competition</a></li>
 </ul>
 <p class="caption"><span class="caption-text">BEF (80-804A):</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="plan_bef.html">Syllabus</a></li>
 <li class="toctree-l1"><a class="reference internal" href="anomalies.html">Anomalies</a></li>
 <li class="toctree-l1"><a class="reference internal" href="annuities.html">Annuities</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Savings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#facts">Facts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#stocks-and-flows">Stocks and Flows</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#replacement-rates">Replacement Rates</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#theory">Theory</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#the-life-cycle-benchmark">The Life-cycle Benchmark</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#are-consumers-saving-enough-for-retirement">Are Consumers Saving Enough for Retirement?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#why-are-some-not-saving-enough">Why are some not saving enough?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#interventions">Interventions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#choice-architecture">Choice architecture</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#automatic-enrollment">Automatic Enrollment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#automatic-escalation">Automatic Escalation</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             
           
         </div>
-        
       </div>
     </nav>
 
@@ -161,7 +179,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><a href="index.html">Docs</a> &raquo;</li>
         
       <li>Savings</li>
     
@@ -169,7 +187,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/savings.rst.txt" rel="nofollow"> Afficher la source de la page</a>
+            <a href="_sources/savings.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -191,12 +209,13 @@
 <h2>Facts<a class="headerlink" href="#facts" title="Lien permanent vers ce titre">¶</a></h2>
 <div class="section" id="stocks-and-flows">
 <h3>Stocks and Flows<a class="headerlink" href="#stocks-and-flows" title="Lien permanent vers ce titre">¶</a></h3>
-<p>People earn income, for the large part from work, but also from pensions and other sources. From that income, they spend on goods which they consume, some of which they leave for their heirs. There is no need for a one-to-one relationship between when we earn income and when we spend it. Luckily, we can save some income for later when we earn a lot  and we can borrow when income is low. There is a lot of saving, and then dissaving over the life-cycle. For example, paying mandatory pension contributions reduces potential expenditures today against a promise to receive income in the future that allows to spend on goods when old. Paying taxes has also a savvings component since lots of government spending is devoted to the young (who earn no income) and the old, who for example consume a lot of health care. In this set of lectures, we will be mostly concerned with voluntary private savings. It is useful to think of savings as a stock, with contributions, returns and withdrawals being the flows. Let the stock of all savings, say at market value, be <span class="math notranslate nohighlight">\(w_t\)</span>. If we denote by <span class="math notranslate nohighlight">\(s_t\)</span> the contributions (when positive) and withdrawals (when negatives), <span class="math notranslate nohighlight">\(r_t\)</span> the effective rate of return, then the stock evolves according to</p>
+<p>People earn income, for the large part from work, but also from pensions and other sources. From that income, they spend on goods which they consume during their lifetime, sometime leaving some to their heirs. The basic point is that there is no need for a one-to-one relationship between when we earn income and when we spend it. Luckily, we can save some income for later when we earn a lot  and we can borrow when income is low. There is a lot of saving, and then dissaving over the life-cycle. Some of it is mandatory.  For example, paying mandatory pension contributions reduces potential expenditures today against a promise to receive pension income in the future. This allows to spend on goods and services when old. Paying taxes also involves saving since lots of government spending is devoted to the young (who earn no income) and the old, who for example consume a lot of health care.There intergenerational transfers involve saving. In this set of lectures, we will be mostly concerned with voluntary private savings which occurs on top of all the life-cycle and intergenerational transfers that occur. It is useful to think of financial wealth as a stock, with contributions, active savings, returns, passive saving and withdrawals, dissaving, being the flows. Let the stock of all savings, financial wealth evaluated at market value, be <span class="math notranslate nohighlight">\(w_t\)</span>. If we denote by <span class="math notranslate nohighlight">\(s_t\)</span> the contributions (when positive) and withdrawals (when negatives), <span class="math notranslate nohighlight">\(r_t\)</span> the effective rate of return. The component <span class="math notranslate nohighlight">\(r_t w_t\)</span> is unrealized capital gains. The stock  stock evolves according to</p>
 <div class="math notranslate nohighlight">
-\[w_{t+1} = (1+r_t) w_{t} + s_{t}\]</div>
-<p>Turns out we have limited information on stocks but also on flows. Administrative data in most countries, with the exception of some scandinavian countries, is not available on savings stock and flows such that we could follow the equation above. Hence, we must resort to surveys to get most of our information on savings flows and stocks.</p>
-<p>Canada has a cross-sectional data infrastructure that allows to get a picture, once in a while of how much people save (and have saved). Statistics Canada runs two surveys, each with their specific purpose, that allow us to paint some portrait of private savings: the Survey of Household Spending <a class="reference external" href="https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&amp;SDDS=3508">Survey of Household Spending</a> and the <a class="reference external" href="https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&amp;SDDS=2620">Survey of Financial Security (SFS)</a> . The Survey of Household Spending gives us information on income, spending and some measures of direct active savings. This is a good survey for flows. For stocks, the Survey of Financial Security (SFS) allows us to construct the balance sheet of Canadians. The SHS is run annually while the SFS is run every five years or so (1999, 2005, 2012, 2016). For researchers at Canadian universities, public micro-use files (PUMFS) can be downloaded from <a class="reference external" href="http://odesi2.scholarsportal.info.proxy2.hec.ca/webview/">ODESI</a>.</p>
-<p>Take flows first. Measuring saving contributions can be done in a number of ways, each imperfect. Sometimes, respondents are asked directly whether they have contributed to a savings account, <span class="math notranslate nohighlight">\(s_t\)</span>. Sometimes, they are asked instead information on spending, <span class="math notranslate nohighlight">\(c_t\)</span> and income <span class="math notranslate nohighlight">\(y_t\)</span> and an implied savings variable can be created, <span class="math notranslate nohighlight">\(s_t = y_t - c_t\)</span>. This is a savings measure that does not account for unrealized capital gains since these are not materialized in income. However,  since <span class="math notranslate nohighlight">\(y_t\)</span> often includes interest and dividend income, it does include some form of the return component of savings in <span class="math notranslate nohighlight">\(r_t w_t\)</span>.  Spending surveys get good measures of spending by asking for detailed questions on many categories of goods. There is also the question of how to include pension contributions and taxes in this definition. Finally, some construct savings from asking for changes in wealth at two points <span class="math notranslate nohighlight">\(s_t = w_{t} - w_{t-1}\)</span>. Again, this is not a direct measure of <span class="math notranslate nohighlight">\(s_t\)</span> as defined in the equation above since it will include unrealized capital gains.</p>
+\[w_{t+1} = w_{t} + r_t w_{t} + s_{t}\]</div>
+<p>Even if <span class="math notranslate nohighlight">\(s_t=0\)</span>, financial wealth may go up because of capital gains and interest. Alternatively, it is possible that <span class="math notranslate nohighlight">\(w_{t+1}=w_{t}\)</span> even if <span class="math notranslate nohighlight">\(s_t \neq 0\)</span>. Hence, reconstructing stocks from flows and infering flows from stocks requires good data on the various components.
+Turns out we have limited information on financial wealth, stocks, but also on flows, savings and dissavings. Administrative data in most countries, with the exception of some scandinavian countries, is not available on savings stock and flows such that we could reconstruct the equation above from data. One of the reason is that governments do not generally tax stocks, hence do not collect data on them. Hence, we must resort to surveys to get most of our information on savings flows and stocks.</p>
+<p>Canada has a cross-sectional data infrastructure that allows to get a picture, once in a while, of how much people save (and have saved). Statistics Canada runs two surveys, each with their specific purpose, that allow us to paint some portrait of private savings: the Survey of Household Spending <a class="reference external" href="https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&amp;SDDS=3508">Survey of Household Spending</a> and the <a class="reference external" href="https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&amp;SDDS=2620">Survey of Financial Security (SFS)</a> . The Survey of Household Spending gives us information on income, spending and some measures of direct active savings. This is a good survey for flows. For stocks, the Survey of Financial Security (SFS) allows us to construct the balance sheet of Canadians. The SHS is run annually while the SFS is run every five years or so (1999, 2005, 2012, 2016). For researchers at Canadian universities, public micro-use files (PUMFS) can be downloaded from <a class="reference external" href="http://odesi2.scholarsportal.info.proxy2.hec.ca/webview/">ODESI</a>.</p>
+<p>Take flows first. Measuring saving contributions can be done in a number of ways, each imperfect. Sometimes, respondents are asked directly whether they have contributed to a savings account. This gives direct measurement of <span class="math notranslate nohighlight">\(s_t\)</span>, active savings. But it is something hard for people to remember the net savings they make across different saving vehicles. Simply looking at their end and starting balance does not identify active savings. Sometimes, they are asked instead information on spending, <span class="math notranslate nohighlight">\(c_t\)</span> and income <span class="math notranslate nohighlight">\(y_t\)</span> and an implied savings variable can be created, <span class="math notranslate nohighlight">\(s_t = y_t - c_t\)</span>. This is often called active savings. But this measure has a few loose parts of we are to think of it as active savings, including how to deal with durable spendings and income from dividends and interest which may have been included in the definition of income, but left in the account (not realized).  Knowledge of active savings is not enough to reconstruct the wealth equation since the return component is only partially accounted for. There is also the question of how to include pension contributions and taxes in this definition when only gross income has been reported. Finally, some construct savings from asking for changes in wealth at two points <span class="math notranslate nohighlight">\(s_t = w_{t} - w_{t-1}\)</span>. This is not a direct measure of <span class="math notranslate nohighlight">\(s_t\)</span> as defined in the equation above since it will include unrealized capital gains, <span class="math notranslate nohighlight">\(r_t w_t\)</span>.</p>
 <p>The next figure from SHS shows average consumption and spending at the household level by age in 2009. The information is aggregated by age groups. We see that savings occurs mostly in the middle of the life-cycle. One important point to make is that a period age-profile does not necessarily represent how a cohort behaves over the life-cycle. In other words, the 65 year olds are from a different generation than the 25 year olds in the plot. If there are large differences in income or other characteristics, the period profile is a poor guide to what happens to a cohort over the life-cycle. One useful tool to deal with this when repeated cross-sectional data is available is the synthetic cohort method. <a class="reference external" href="https://www.jstor.org/stable/146334?seq=1#metadata_info_tab_contents">Attanasio (1998)</a> is a good example applied to savings.</p>
 <div class="figure align-center" id="id10">
 <img alt="_images/age-profiles.png" class="with-shadow" src="_images/age-profiles.png" />
@@ -281,7 +300,7 @@ c_1 + R^{-1} c_2 + R^{-2}c_3 =  y_1 + R^{-1} y_2 + R^{-2} \phi \overline{y}\end{
 <p>This leaves us with an equation seting the path of the optimal consumption plan</p>
 <div class="math notranslate nohighlight">
 \[c_{t+1} = (R\delta)^{\rho} c_{t} , t = 1, 2\]</div>
-<p>Denote <span class="math notranslate nohighlight">\(\eta = (R\delta)^{\rho}\)</span> to be the desired growth factor of consumption. If <span class="math notranslate nohighlight">\(eta&gt;1\)</span>, for example because the consumer is very patient, consumption is initially lower and then higher in the future. If <span class="math notranslate nohighlight">\(eta&lt;1\)</span>, for example because the consumer is very impatient, the consumption plan is decreasing. The parameter <span class="math notranslate nohighlight">\(rho\)</span> controls the slope of this consumption plan. Hence, the consumer may want to save, simply because he is facing a rate of return that is high and/or he is very patient. We can call this the <strong>investment motive to savings</strong>. We can simplify the first order conditions to obtain</p>
+<p>Denote <span class="math notranslate nohighlight">\(\eta = (R\delta)^{\rho}\)</span> to be the desired growth factor of consumption. If <span class="math notranslate nohighlight">\(\eta&gt;1\)</span>, for example because the consumer is very patient, consumption is initially lower and then higher in the future. If <span class="math notranslate nohighlight">\(\eta&lt;1\)</span>, for example because the consumer is very impatient, the consumption plan is decreasing. The parameter <span class="math notranslate nohighlight">\(rho\)</span> controls the slope of this consumption plan. Hence, the consumer may want to save, simply because he is facing a rate of return that is high and/or he is very patient. We can call this the <strong>investment motive to savings</strong>. We can simplify the first order conditions to obtain</p>
 <div class="math notranslate nohighlight">
 \[c_1 + R^{-1} \eta c_1 + R^{-2}\eta^2 c_1 =  y_1 + R^{-1} y_2 + R^{-2} \phi \overline{y}\]</div>
 <p>and finally, using the budget constraint to pin the level of consumption, with  <span class="math notranslate nohighlight">\(PV_{y}\)</span> the RHS of this equation (present value of income):</p>
@@ -289,13 +308,13 @@ c_1 + R^{-1} c_2 + R^{-2}c_3 =  y_1 + R^{-1} y_2 + R^{-2} \phi \overline{y}\end{
 \[c^*_1 = \frac{1}{1 + R^{-1} \eta + R^{-2}\eta^2} PV_{y}\]</div>
 <p>And using the Euler equation for other periods, we get:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}c^*_2 = \frac{\eta}{1 + R^{-1} \eta + R^{-2}\eta} PV_{y} \\
-c^*_3 = \frac{\eta^2}{1 + R^{-1} \eta + R^{-2}\eta} PV_{y}\end{split}\]</div>
+\[\begin{split}c^*_2 = \frac{\eta}{1 + R^{-1} \eta + R^{-2}\eta^2} PV_{y} \\
+c^*_3 = \frac{\eta^2}{1 + R^{-1} \eta + R^{-2}\eta^2} PV_{y}\end{split}\]</div>
 <p>A number of remarks are in order. First, consumption does not necessarily follow the path of income. We see that the consumer want to consume part of the present value of income <span class="math notranslate nohighlight">\(PV_{y}\)</span>. But this is orthogonal (unrelated) to the path of <span class="math notranslate nohighlight">\(y_t\)</span>. If his income is high relative to other periods, he is likely to save while if his income is low, he is likely to consume out of savings. To see this, consider for example first period savings, if <span class="math notranslate nohighlight">\(y_1 = y_2 = y\)</span> and <span class="math notranslate nohighlight">\(\eta = 1\)</span>. We get</p>
 <div class="math notranslate nohighlight">
 \[s_1 = y - c^*_1 = (1 - \frac{1 + R^{-1} + R^{-2} \phi}{1 + R^{-1} + R^{-2}})y &gt;0, \quad if \quad  \phi&lt;1\]</div>
 <p>Provided <span class="math notranslate nohighlight">\(\phi&lt;1\)</span>, the consumer saves part of his first period income. He will also do the same in period 2. He has a <strong>life-cycle motive</strong> to save, because his retirement income is lower than his income when working. The marginal utility of consumption in retirement is larger than when working if he does not save. Hence, he can increase discounted utility if he saves from his first and second period income.</p>
-<p>The case with <span class="math notranslate nohighlight">\(phi \neq 1\)</span> is not different but will involve the combination of a life-cycle motive and investment motive to save.</p>
+<p>The case with <span class="math notranslate nohighlight">\(\phi \neq 1\)</span> is not different but will involve the combination of a life-cycle motive and investment motive to save.</p>
 <p>A third key motive to save is the precautionary motive. To see this motive, one needs to introduce uncertainty. Consider the possibility that second period income can be <span class="math notranslate nohighlight">\(\underline{y}_{2}\)</span> with probability <span class="math notranslate nohighlight">\(p\)</span> and <span class="math notranslate nohighlight">\(\overline{y}_{2}\)</span> with probability <span class="math notranslate nohighlight">\((1-p)\)</span>. Given the concavity of utility it means that marginal utility is high when income is low and vice-versa when income is high. The first order condition, using discounted expected utility, for the trade-off between 1st and 2nd period consumption is now given by</p>
 <div class="math notranslate nohighlight">
 \[u'(c_1) = R\delta E u'(c_2)\]</div>
@@ -395,24 +414,23 @@ c^*_3 = \frac{\eta^2}{1 + R^{-1} \eta + R^{-2}\eta} PV_{y}\end{split}\]</div>
           </div>
           <footer>
   
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="annuities.html" class="btn btn-neutral float-left" title="Annuities" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        
         &copy; Copyright 2020, Pierre-Carl Michaud
 
     </p>
   </div>
-    
-    
-    
-    Compilé avec <a href="http://sphinx-doc.org/">Sphinx</a> en utilisant un
-    
-    <a href="https://github.com/rtfd/sphinx_rtd_theme">thème</a>
-    
-    fourni par <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -423,6 +441,7 @@ c^*_3 = \frac{\eta^2}{1 + R^{-1} \eta + R^{-2}\eta} PV_{y}\end{split}\]</div>
 
   </div>
   
+
 
   <script type="text/javascript">
       jQuery(function () {
