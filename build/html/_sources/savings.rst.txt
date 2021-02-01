@@ -85,10 +85,9 @@ We see that nearly half of financial wealth is in RRSPs and that this share is r
 
 All of these respondents are not retired. We see that financial wealth is larger relative to income for those with higher education. On average, college educated households have 3 times their after-tax income in financial wealth compared to roughly 1.25 for those with less than high school. In fact, averages mask a lot of heterogeneity and considerable skewness in the distribution of financial wealth. The next figure shows an histograph of the distribution of financial wealth relative to after-tax income. We see that more than 25% of respondents have close to no financial wealth.  
 
-.. figure:: /images/wealth_ratios.png
+.. figure:: /images/wealth_ratios_density.png
    :class: with-shadow
    :align: center
-   :scale: 75%
 
    Source: Calculations from the Survey of Financial Security, 2009
 
