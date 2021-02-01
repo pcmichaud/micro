@@ -336,10 +336,10 @@ If a consumer is smart about present-bias, he way take actions to force his *fut
 
 The following notebook allows to solve a simple present-bias model.
 
-|ImageLink3|_
+|ImageLink10|_
 
-.. |ImageLink3| image:: https://colab.research.google.com/assets/colab-badge.svg
-.. _ImageLink3: https://colab.research.google.com/drive/1Bk9_4GUuBvVr6c8zcJ3nnw5P7Rj88J06?usp=sharing
+.. |ImageLink10| image:: https://colab.research.google.com/assets/colab-badge.svg
+.. _ImageLink10: https://colab.research.google.com/drive/1Bk9_4GUuBvVr6c8zcJ3nnw5P7Rj88J06?usp=sharing
 
 Interventions
 +++++++++++++
