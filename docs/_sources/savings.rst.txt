@@ -88,6 +88,7 @@ All of these respondents are not retired. We see that financial wealth is larger
 .. figure:: /images/wealth_ratios_density.png
    :class: with-shadow
    :align: center
+   :scale: 75%
 
    Source: Calculations from the Survey of Financial Security, 2009
 
