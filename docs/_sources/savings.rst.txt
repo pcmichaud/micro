@@ -242,10 +242,10 @@ On the Y axis, we have what  predicted optimal wealth for respondents in an Amer
 
 The following notebook takes our three period model and computes optimal wealth. 
 
-|ImageLink|_
+|ImageLink8|_
 
-.. |ImageLink| image:: https://colab.research.google.com/assets/colab-badge.svg
-.. _ImageLink: https://colab.research.google.com/drive/1Ctq1xzBUq0Y6KF0MnApLm0wP-v_8-NrB?usp=sharing
+.. |ImageLink8| image:: https://colab.research.google.com/assets/colab-badge.svg
+.. _ImageLink8: https://colab.research.google.com/drive/1Ctq1xzBUq0Y6KF0MnApLm0wP-v_8-NrB?usp=sharing
 
 
 * **decumulation modelling approach**: One could take a different route to the modelling approach by using wealth and expenditures at the time of retirement, using a life-cycle model to determine the path of expenditures in retirement and see if wealth at retirement is sufficient to sustain the path of expenditures. An example is given by `Hurd and Rohwedder <https://deepblue.lib.umich.edu/bitstream/handle/2027.42/61809/wp184.pdf?sequence=1>`_. They find a result similar to `Scholz et al. (2006) <https://www.journals.uchicago.edu/doi/abs/10.1086/506335>`_. This is an approach which shows promise but has been little adopted in the literature. 
@@ -336,10 +336,10 @@ If a consumer is smart about present-bias, he way take actions to force his *fut
 
 The following notebook allows to solve a simple present-bias model.
 
-|ImageLink|_
+|ImageLink3|_
 
-.. |ImageLink| image:: https://colab.research.google.com/assets/colab-badge.svg
-.. _ImageLink: https://colab.research.google.com/drive/1Bk9_4GUuBvVr6c8zcJ3nnw5P7Rj88J06?usp=sharing
+.. |ImageLink3| image:: https://colab.research.google.com/assets/colab-badge.svg
+.. _ImageLink3: https://colab.research.google.com/drive/1Bk9_4GUuBvVr6c8zcJ3nnw5P7Rj88J06?usp=sharing
 
 Interventions
 +++++++++++++
