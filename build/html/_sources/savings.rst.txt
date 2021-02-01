@@ -85,7 +85,7 @@ We see that nearly half of financial wealth is in RRSPs and that this share is r
 
 All of these respondents are not retired. We see that financial wealth is larger relative to income for those with higher education. On average, college educated households have 3 times their after-tax income in financial wealth compared to roughly 1.25 for those with less than high school. In fact, averages mask a lot of heterogeneity and considerable skewness in the distribution of financial wealth. The next figure shows an histograph of the distribution of financial wealth relative to after-tax income. We see that more than 25% of respondents have close to no financial wealth.  
 
-.. figure:: /images/finwealth_density.png
+.. figure:: /images/wealth_ratios.png
    :class: with-shadow
    :align: center
 
@@ -189,7 +189,7 @@ And using the Euler equation for other periods, we get:
 A number of remarks are in order. First, consumption does not necessarily follow the path of income. We see that the consumer want to consume part of the present value of income :math:`PV_{y}`. But this is orthogonal (unrelated) to the path of :math:`y_t`. If his income is high relative to other periods, he is likely to save while if his income is low, he is likely to consume out of savings. To see this, consider for example first period savings, if :math:`y_1 = y_2 = y` and :math:`\eta = 1`. We get  
 
 .. math::
-   s_1 = y - c^*_1 = (1 - \frac{1 + R^{-1} + R^{-2} \phi}{1 + R^{-1} + R^{-2}})y >0, \quad if \quad  \phi<1
+   s_1 = y - c^*_1 = \left(1 - \frac{1 + R^{-1} + R^{-2} \phi}{1 + R^{-1} + R^{-2}}\right)y >0, \quad if \quad  \phi<1
 
 Provided :math:`\phi<1`, the consumer saves part of his first period income. He will also do the same in period 2. He has a **life-cycle motive** to save, because his retirement income is lower than his income when working. The marginal utility of consumption in retirement is larger than when working if he does not save. Hence, he can increase discounted utility if he saves from his first and second period income. 
 
@@ -205,10 +205,13 @@ where the :math:`E` operator is with respect to the income shock. If we evaluate
 Are Consumers Saving Enough for Retirement?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-We will focus on the life-cycle motive for what follows. What is the potential for the standard theory to explain whether or not people are saving enough for retirement?  There are a number of studies who have looked at this question, in particular for the U.S. Four approaches are taken: 
+We will focus on the life-cycle motive for what follows. What is the potential for the standard theory to answer whether or not people are saving enough for retirement?  There are a number of studies who have looked at this question, in particular for the U.S. Four approaches are taken: 
 
+* **retirement-consumption approach**: This early approach tries to test one of the prediction of the model above. If consumers act according to the model above, there should be no jump in consumption at retirement. Consumption is a function of the present value of income and not its path. Since the path of income is mostly known and anticipated, consumption should not drop at retirement. 
 
-* **retirement-consumption approach**: This early approach tries to test one of the prediction of the model above. If consumers act according to the model above, there should be no jump in consumption at retirement. Consumption is a function of the present value of income and not its path. Since the path of income is mostly known and anticipated, consumption should not drop at retirement. This produces an implicit test of retirement saving adequacy. The first attempt at exploiting this is prediction is `Banks, Blundell and Tanner (1998) <https://www.jstor.org/stable/117005?seq=1#metadata_info_tab_contents>`_. 
+For example, take the model above and consider the ratio of optimal third period consumption to second period consumption. It yields :math:`\eta`, and similarly for period 1 to period 2. Hence, there is no jump in consumption. 
+  
+This produces an implicit test of retirement saving adequacy. The first attempt at exploiting this is prediction is `Banks, Blundell and Tanner (1998) <https://www.jstor.org/stable/117005?seq=1#metadata_info_tab_contents>`_. 
 
 
 .. figure:: /images/bbt-drop.png
@@ -219,7 +222,14 @@ Source: `Banks, Blundell and Tanner (1998) <https://www.jstor.org/stable/117005?
 
 Upon further examination, across a number of countries, the general conclusion is that a large fraction of this is due to work-related expenditures dropping at retirement, substitution to home production, retirement being partly a surprise, when a shock occurs. See for example, `Battistin et al. (2009) <https://www.jstor.org/stable/25592556?seq=1#metadata_info_tab_contents>`_. Hence, the general conclusion from this approach is that this evidence is unlikely to support widespread lack of retirement preparation.  
 
-* **accumulation modelling approach**: Another approach has been to use observed wealth at retirement and to try and match it to what would be predicted from a fully rational model using detailed life histories of consumers. This backward looking approach tries to reconstruct wealth from the life-histories and the predictions from a life-cycle model. This approach is taken for example by `Scholz et al. (2006) <https://www.journals.uchicago.edu/doi/abs/10.1086/506335>`_. The key figure in that paper is the following: 
+* **accumulation modelling approach**: Another approach has been to use observed wealth at retirement and to try and match it to what would be predicted from a fully rational model using detailed life histories of consumers. This backward looking approach tries to reconstruct wealth from the life-histories and the predictions from a life-cycle model. This approach is taken for example by `Scholz et al. (2006) <https://www.journals.uchicago.edu/doi/abs/10.1086/506335>`_.
+ 
+The model above yields a prediction for how much wealth should be accumulated in retirement. The equation for optimal wealth at the beginning of period 3 is messy, but it depends generally on the various variables of the model: 
+
+.. math::
+   w^*_3 = f(y_1,y_2,\phi,R,\rho,\delta)
+
+In particular, it will depend on the work income history, the replacement rate, the interest rate and finally preferences. If we divide by :math:`\overline{y}`, this gives us a measure akin to what is plotted in the figure above in terms of financial wealth as ratio of income. We can compare actual wealth to optimal wealth. This is what Scholz and co-authors do. The key figure in that paper is the following: 
 
 
 .. figure:: /images/optimal-jpe.png
@@ -229,6 +239,14 @@ Upon further examination, across a number of countries, the general conclusion i
 Source: `Scholz et al. (2006) <https://www.journals.uchicago.edu/doi/abs/10.1086/506335>`_, Figure 2. 
 
 On the Y axis, we have what  predicted optimal wealth for respondents in an American Survey with very detailed retrospective information. A complex life-cycle model is used to produce these predictions. On the X axis, we have how much individuals have actually saved. Now, it is perfectly possible for optimal wealth not to be equal to actual wealth. But one would expect a cloud of points on the 45 degree line if this was simply the result of noise. If points are all above the 45 degree line, it would mean that these respondents are saving less than what a model would predict. Turns out, 80% of respondents are below the 45 degree line. This would indicate that they save more than what the model predicts. While some explanations are possible for over-savings, including a bequest motive, this study would suggest that 20% save less than what the model would predict. One attempt to apply this approach to Canada is `Liu et al. (2013) <https://www150.statcan.gc.ca/n1/en/pub/11-622-m/11-622-m2013029-eng.pdf?st=7KHtrmbl>`_.  
+
+The following notebook takes our three period model and computes optimal wealth. 
+
+|ImageLink|_
+
+.. |ImageLink| image:: https://colab.research.google.com/assets/colab-badge.svg
+.. _ImageLink: https://colab.research.google.com/drive/1Ctq1xzBUq0Y6KF0MnApLm0wP-v_8-NrB?usp=sharing
+
 
 * **decumulation modelling approach**: One could take a different route to the modelling approach by using wealth and expenditures at the time of retirement, using a life-cycle model to determine the path of expenditures in retirement and see if wealth at retirement is sufficient to sustain the path of expenditures. An example is given by `Hurd and Rohwedder <https://deepblue.lib.umich.edu/bitstream/handle/2027.42/61809/wp184.pdf?sequence=1>`_. They find a result similar to `Scholz et al. (2006) <https://www.journals.uchicago.edu/doi/abs/10.1086/506335>`_. This is an approach which shows promise but has been little adopted in the literature. 
 
@@ -316,11 +334,17 @@ This type of mechanism leads to procrastination. When there is a delay between t
 
 If a consumer is smart about present-bias, he way take actions to force his *future selves* to take different actions. Although he will generally not be able to implement the optimal plan, he may avoid the more damaging action of acting in a *naive* ways. Some models allow agents to be sophisticated or naive, to a different degree, about present-bias. A formalization of those ideas is found in `O'Donoghue and Rabin (1999) <https://www.aeaweb.org/articles?id=10.1257/aer.89.1.103>`_. 
 
+The following notebook allows to solve a simple present-bias model.
+
+|ImageLink|_
+
+.. |ImageLink| image:: https://colab.research.google.com/assets/colab-badge.svg
+.. _ImageLink: https://colab.research.google.com/drive/1Bk9_4GUuBvVr6c8zcJ3nnw5P7Rj88J06?usp=sharing
 
 Interventions
 +++++++++++++
 
-While education and financial literacy could be used to increase saving of those who save too little, we will focus in this lecture on interventions which involve making changes to the choice architecture for savings. 
+While education and financial literacy could be used to increase saving of those who save too little, we will focus in this lecture on interventions which involve making changes to the choice architecture for savings, or mandating savings. 
 
 Choice architecture
 ~~~~~~~~~~~~~~~~~~~
@@ -330,15 +354,18 @@ The main trust of the argument for choice architecture is found in `Thaler and S
 Automatic Enrollment
 ~~~~~~~~~~~~~~~~~~~~
 
-One of the most successful choice architecture intervention  has been the use of opt-out defaults in private pension plan enrollment. `Madrian and Shea (2001) <https://www.jstor.org/stable/2696456?seq=1#metadata_info_tab_contents>`_ show that when a particular company switched from opt-in to opt-out, enrollment increased substantially. This is often called Automatic enrollment in policy circles.
+One of the most successful choice architecture intervention  has been the use of opt-out defaults in private pension plan enrollment. `Madrian and Shea (2001) <https://www.jstor.org/stable/2696456?seq=1#metadata_info_tab_contents>`_ show that when a particular company switched from opt-in to opt-out, enrollment increased substantially. This is often called Automatic enrollment in policy circles. Recently, new evidence is emerging that perhaps automatic enrollment raises savings in the short term but that in the long-term saving outcomes are the same `Choukhmane (2019) <https://tahachoukhmane.com/wp-content/uploads/2019/07/Choukhmane-2019-Default-Options.pdf>`_ . Others have looked if consumers driven to save more by automatic enrollment increase debt by not adjusting their spending `Beshears and colleagues (forthcoming) <https://scholar.harvard.edu/laibson/publications/borrowing-save-impact-automatic-enrollment-debt>`_. We will dig into these studies in class. 
 
 
 Automatic Escalation
 ~~~~~~~~~~~~~~~~~~~~
 
-While Automatic enrollment tends to increase enrollment, it does so at relatively low contribution rates. Inertia and present-bias lead typically consumers to stay at the default in terms of contribution rates. This can lead to low level of savings. Another intervention, named *Save More Tomorrow* (SMT) by the authors is designed to increase contribution rates `(Thaler and Bernatzi, 2004) <https://www.jstor.org/stable/10.1086/380085?seq=1#metadata_info_tab_contents>`_. To make increasing contribution rates less painful, workers commit to allocating a portion of future salary increases to savings. This exploits both present-bias as well as the lower sensitivity of consumers to gains rather than losses. Since salary increases are a gain from the reference point of today, lowering that increase is less painful than lowering salary at the reference point. The intervention is largely succesful in raising saving from less than 3.5% of earnings to 13.6%.
+While Automatic enrollment tends to increase enrollment, it does so at relatively low contribution rates. Inertia and present-bias lead typically consumers to stay at the default in terms of contribution rates. This can lead to low level of savings. Another intervention, named *Save More Tomorrow* (SMT) by the authors is designed to increase contribution rates `(Thaler and Bernatzi, 2004) <https://www.jstor.org/stable/10.1086/380085?seq=1#metadata_info_tab_contents>`_. To make increasing contribution rates less painful, workers commit to allocating a portion of future salary increases to savings. This exploits both present-bias as well as the lower sensitivity of consumers to gains rather than losses. Since salary increases are a gain from the reference point of today, lowering that increase is less painful than lowering salary at the reference point. The intervention is largely succesful in raising saving from less than 3.5% of earnings to 13.6%. The authors have been very successful with `this idea <http://www.shlomobenartzi.com/save-more-tomorrow>`_. In class, we will review critically the evidence. 
 
+Mandatory Savings
+~~~~~~~~~~~~~~~~~
 
+The classical literature dating back to `Feldstein (1974) <https://www.journals.uchicago.edu/doi/10.1086/260246>`_ has documented a crowdout effect of mandatory savings, for example trough public pensions. Three good examples are `Attanasio and Rohwedder (2003) <https://www.jstor.org/stable/3132139?seq=1#metadata_info_tab_contents>`_ , `Gale (1998) https://www.journals.uchicago.edu/doi/abs/10.1086/250027`_ and `Messacar (2018) <https://www.mitpressjournals.org/doi/abs/10.1162/rest_a_00711?journalCode=rest>`_. If we mandate people to save, they will reduce their private savings. Hence, it is unclear whether mandating people to save will increase overall retirement savings, and ultimately retirement incomes, if that was our objective. `Chetty and colleagues (2014) <https://academic.oup.com/qje/article-abstract/129/3/1141/1817647?redirectedFrom=fulltext>` find that more than 85% of savers in Denmark appear to be passive savers, because of inertia, potentially created by present-bias. Hence, they do not adjust savings when mandatory savings change. The other 15% behaves a bit like the standard model would predict, i.e. they reduce savings when mandatory savings change. 
 
 
 
