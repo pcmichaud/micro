@@ -94,10 +94,10 @@ All of these respondents are not retired. We see that financial wealth is larger
 
 These calculations using the SFS can be replicated using this notebook. 
 
-|ImageLink|_
+|ImageLink5|_
 
-.. |ImageLink| image:: https://colab.research.google.com/assets/colab-badge.svg
-.. _ImageLink: https://colab.research.google.com/drive/1ig20Bjzkpgm9e1QotJL0hkxJUXUItPWj?usp=sharing
+.. |ImageLink5| image:: https://colab.research.google.com/assets/colab-badge.svg
+.. _ImageLink5: https://colab.research.google.com/drive/1ig20Bjzkpgm9e1QotJL0hkxJUXUItPWj?usp=sharing
 
 Replacement Rates
 ~~~~~~~~~~~~~~~~~
