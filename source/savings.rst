@@ -142,7 +142,7 @@ How much should people save?
 
 It is useful to first look at a benchmark. A natural starting point is the life-cycle model. The life-cycle model has a long tradition in economics and finance. A good summary is given in `Browning and Crossley (2001) <https://www.jstor.org/stable/2696554?seq=1#metadata_info_tab_contents>`_. In what follows, we will use a three period model, :math:`t=1,2,3`. Why three? It will become clear later on. The first two periods are periods where the individual works and earns labor income :math:`y_t`, net of taxes and pension contributions.  Otherwise, denote :math:`\overline{y}=\frac{y_1+y_2}{2}` to be average career earnings. For most of the analysis, we will focus on the case where :math:`y_t = y` for :math:`t=1,2`, hence :math:`\overline{y} = y`. The last period is one where he is retired. He gets in that period income from pensions, denoted :math:`\phi \overline{y}`, where :math:`\phi` is a replacement rate. You can think of this rate as the RRI from the CPR calculator we used above. We will abstract from uncertainty for now. For simplicity assume the individual has no wealth start with. He can save with a rate of return :math:`r` which is also the rate at which he can borrow.   
 
-Consider preferences of this individual. A natural starting point is to use discounted utility from the consumption plan :math:`(c_1,c_2,c_3)`. If you are not familial with discounted utility (DU), you can look at `this <https://pcmichaud.github.io/micro/time_en.html>`_ lecture from my intermediate micro class. Discounted utility is given by 
+Consider preferences of this consumer. A natural starting point is to consider discounted utility from the consumption plan :math:`(c_1,c_2,c_3)`. If you are not familiar with discounted utility (DU), you can look at `this <https://pcmichaud.github.io/micro/time_en.html>`_ lecture from my intermediate micro class. Discounted utility is given by 
 
 .. math::
    DU(c_1,c_2,c_3) = u(c_1) + \delta u(c_2) + \delta^2 u(c_3)
@@ -152,7 +152,7 @@ The budget constraint is such that the present value of consumption should not b
 .. math::
    c_1 + R^{-1} c_2 + R^{-2}c_3 \leq y_1 + R^{-1} y_2 + R^{-2} \phi \overline{y}
 
-where :math:`R = 1+r`.  
+where :math:`R = 1+r`.  Hence, saving and borrowing is allowed. 
 
 The first order conditions from this problem yield three equations:
 
@@ -167,12 +167,17 @@ Consider a very simple form of the utility function (iso-elastic):
 
    u(c) = \frac{c^{1-\frac{1}{\rho}}}{1-\frac{1}{\rho}}
 
-This leaves us with an equation seting the path of the optimal consumption plan 
+This leaves us with an equation determining the path of the optimal consumption plan 
 
 .. math::
    c_{t+1} = (R\delta)^{\rho} c_{t} , t = 1, 2
 
-Denote :math:`\eta = (R\delta)^{\rho}` to be the desired growth factor of consumption. If :math:`\eta>1`, for example because the consumer is very patient, consumption is initially lower and then higher in the future. If :math:`\eta<1`, for example because the consumer is very impatient, the consumption plan is decreasing. The parameter :math:`rho` controls the slope of this consumption plan. Hence, the consumer may want to save, simply because he is facing a rate of return that is high and/or he is very patient. We can call this the **investment motive to savings**. We can simplify the first order conditions to obtain 
+Denote :math:`\eta = (R\delta)^{\rho}` to be the desired growth factor of consumption. If :math:`\eta>1`, for example because the consumer is very patient, consumption is initially lower and then higher in the last period. If :math:`\eta<1`, for example because the consumer is very impatient, the consumption plan is lower in retirement. The parameter :math:`rho` controls the slope of this consumption plan. For example, we can interpret this parameter as: 
+
+.. math::
+   \frac{d\log(c_{t+1}/c_{t})}{dr} = \rho
+
+using the fact that :math:`\log R \approx r` for small :math:`r`. Hence, the consumer may want to save, simply because he is facing a rate of return that is high and/or he is very patient. We can call this the **investment motive to savings**. It is a function of both the interest rate as well as preferences. We reduce the first order conditions to obtain 
 
 .. math::
    c_1 + R^{-1} \eta c_1 + R^{-2}\eta^2 c_1 =  y_1 + R^{-1} y_2 + R^{-2} \phi \overline{y}
