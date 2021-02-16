@@ -178,7 +178,10 @@ If is hard with the preferences in the figure to incentivize return to work with
 
 Background reading for discussion: 
 
-- Report from the `Expert committee on basic income <https://www.mtess.gouv.qc.ca/publications/pdf/RMG_Rapportfinal_volume1_v3_Accessible_FR.pdf>`_. 
+- Report from the `Expert committee on basic income <https://www.mtess.gouv.qc.ca/publications/pdf/RMG_Rapportfinal_volume1_V2_EN.pdf>`_. 
+- `Recent discussions over the Pandemic <https://www.npr.org/2020/10/13/921606901/in-pandemic-downturn-canadas-drive-for-guaranteed-basic-income-picks-up-speed>`_
+- Survey results on support for `UBI <https://angusreid.org/universal-basic-income-covid19/>`_
+- A `simulation study <https://cirano.qc.ca/pdf/publication/2012s-36.pdf>`_
 
 Python Example
 ++++++++++++++
