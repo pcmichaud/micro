@@ -281,7 +281,7 @@ People who have present-bias may have a demand for devices that help them keep t
     </div>
 
 
-.. |image_mpl| image:: /images/mpl.png
+.. |image_mpl| image:: /images/mpldiscount.png
 .. |image_discount| image:: /images/Results.png
 .. |image_budget| image:: /images/budget.png
 .. |image_optimal| image:: /images/optimal.png

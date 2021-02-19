@@ -275,7 +275,7 @@ There are many reasons why some may have a hard time saving and planning for ret
 
 `Harrison, Lau and Williams (2002) <https://www.aeaweb.org/articles?id=10.1257/000282802762024674>`_ is a good example of eliciting discount rates from Denmark using Multiple Price Lists. 
 
-.. figure::  /images/mpl.png
+.. figure::  /images/mpldiscount.png
    :class: with-shadow
    :align: center
    
