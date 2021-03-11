@@ -186,32 +186,265 @@
   <div class="section" id="investing">
 <span id="intro"></span><h1>Investing<a class="headerlink" href="#investing" title="Lien permanent vers ce titre">¶</a></h1>
 <div class="figure align-default">
-<a class="reference internal image-reference" href="_images/umbrella.jpeg"><img alt="_images/umbrella.jpeg" src="_images/umbrella.jpeg" style="width: 148.0px; height: 85.0px;" /></a>
+<a class="reference internal image-reference" href="_images/stocks.jpg"><img alt="_images/stocks.jpg" src="_images/stocks.jpg" style="width: 137.5px; height: 91.5px;" /></a>
 </div>
 <div class="section" id="facts">
 <h2>Facts<a class="headerlink" href="#facts" title="Lien permanent vers ce titre">¶</a></h2>
-<div class="section" id="portfolios">
-<h3>Portfolios<a class="headerlink" href="#portfolios" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Intuitively, financial wealth evolves according to</p>
+<div class="math notranslate nohighlight">
+\[w_{t+1} = w_{t} + r_t w_{t} + s_{t}\]</div>
+<p>where <span class="math notranslate nohighlight">\(w_{t}\)</span> is wealth, <span class="math notranslate nohighlight">\(s_{t}\)</span> is current savings (<span class="math notranslate nohighlight">\(y_t - c_t\)</span>) and <span class="math notranslate nohighlight">\(r_{t}\)</span> is the investment return on wealth. That return could explain lots of the variation in wealth we observe in the data, both because some are able to get better returns on average or they are better able to control variation of those returns and associated consequences. The figure below shows statistics on the return on wealth from administrative data in Norway <a class="reference external" href="https://onlinelibrary.wiley.com/doi/abs/10.3982/ECTA14835">(Fagereng et al., 2020)</a>. Variation can be substantial. A one percent permanent difference in returns yields over an horizon of 30 years, yields an additional 34% in the value of financial wealth from a given one time increase in savings.</p>
+<div class="figure align-center" id="id15">
+<a class="reference internal image-reference" href="_images/returns-norway.png"><img alt="_images/returns-norway.png" src="_images/returns-norway.png" style="width: 591.5px; height: 326.0px;" /></a>
+<p class="caption"><span class="caption-text">Source: <a class="reference external" href="https://onlinelibrary.wiley.com/doi/abs/10.3982/ECTA14835">Fagereng et al. (2020)</a></span><a class="headerlink" href="#id15" title="Lien permanent vers cette image">¶</a></p>
 </div>
+<p>The point is therefore that returns matter. But returns will be a function of investment choices made by savers. In this set of lectures, we are interested in decisions savers make regarding investment, how and when they invest, which are helpful to understand how these patterns arise.</p>
+<p>One of the obvious place to start is to look at stock market participation. Why? Because the stock market has done historically much better in terms of returns than forms of investment which have less risk (such as government bonds). Using data from the U.S., the next figure shows historical returns on Equity (stocks) from the U.S. compared to 1 year Treasury Bills in the U.S. which is often used as a proxy for the safe rate of return. Since 1970, the average (nominal) return on equity is 11.8% compared to 5.5% for T-bills, a difference of 6.3% in return. Of course, investing on equity is more risky. The standard deviation of returns in equity is 17% compared to 3.7% with bonds.</p>
+<div class="figure align-center" id="id16">
+<a class="reference internal image-reference" href="_images/returns.png"><img alt="_images/returns.png" src="_images/returns.png" style="width: 432.0px; height: 288.0px;" /></a>
+<p class="caption"><span class="caption-text">Source: U.S. Data from <a class="reference external" href="http://www.macrohistory.net/data/#DownloadData">Jorda-Schularick-Taylor MacroHistory Database</a></span><a class="headerlink" href="#id16" title="Lien permanent vers cette image">¶</a></p>
+</div>
+<p>To look yourself at the variation in returns over a long period and across countries, you can use this notebook.</p>
+<p><a class="reference external" href="https://drive.google.com/file/d/1T7x8bBfUcJVuP5Ye88znC39ITli0myGM/view?usp=sharing"><img alt="ImageLink" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
+<p>Turns out lots of people do not invest in stocks. We can make use of data collected by the Retirement Savings Institute in 2018 to look into this. The next histogram shows among respondents age 35-55 in Quebec and Ontario the fraction of total savings in RRSP, TFSA and other taxable accounts which is invested in stocks. As one can see there is a significant group who do not put anything in stocks. There is also a sizeable group which puts everything in stocks. The distribution is relatively uniform within these bounds, with peaks at 20, 50 and 80%.</p>
+<div class="figure align-center" id="id17">
+<a class="reference internal image-reference" href="_images/hist-shares.png"><img alt="_images/hist-shares.png" src="_images/hist-shares.png" style="width: 432.0px; height: 288.0px;" /></a>
+<p class="caption"><span class="caption-text">Source: <a class="reference external" href="https://dataverse.scholarsportal.info/dataset.xhtml?persistentId=doi:10.5683/SP2/UTJDYA">RSI Survey on Retirement Savings Vehicles</a>, Quebec and Ontario age 35-55. This extract contains data from 1305 respondents with positive savings in RRSP, TFSA or other taxable accounts.</span><a class="headerlink" href="#id17" title="Lien permanent vers cette image">¶</a></p>
+</div>
+<p>Overall, as we show in the notebook below, the average share of savings invested in stocks is roughly 51.5%, 33.6% invest more than 75% in stocks, 13.3% do not put anything in stocks. The more educated, higher income, those with higher financial literacy put more in stocks. This may matter for understanding wealth inequality. As we show below the relationship between the share invested in stocks and both income and savings is particularly strong.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/income-gradient.png"><img alt="_images/income-gradient.png" src="_images/income-gradient.png" style="width: 432.0px; height: 288.0px;" /></a>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/savings-gradient.png"><img alt="_images/savings-gradient.png" src="_images/savings-gradient.png" style="width: 432.0px; height: 288.0px;" /></a>
+</div>
+<p>Source: <a class="reference external" href="https://dataverse.scholarsportal.info/dataset.xhtml?persistentId=doi:10.5683/SP2/UTJDYA">RSI Survey on Retirement Savings Vehicles</a>, Quebec and Ontario age 35-55. This extract contains data from 1305 respondents with positive savings in RRSP, TFSA or other taxable accounts.</p>
+<p>You can investigate these differences using this notebook,</p>
+<p><a class="reference external" href="https://drive.google.com/file/d/19skw2D7aNR_0N09FAhUGnSajgA1uB-0f/view?usp=sharing"><img alt="ImageLink2" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
+<p>It is worth asking why only half of savings, and for some even less, is invested in stocks given much higher returns. Obviously, risk aversion could play a role, but how much? This will be one of the topic below.</p>
+<p>Turns out that when we look even within those who invest in stocks, there is substantial variation in returns as well as in risk in the portfolio held by investors. Lots of people are under diversified. The next figure from Campbell, Sodoni and Campbell (2007) shows just how under-diversified some investors are. Some obtain the same expected return but have portfolios with much larger standard deviation, which is of course not optimal if someone is risk averse. Seen in the other direction, some for the same amount of risk could increase their expected return by diversifying better. Diversification is a poorly understood concept. Even in our sample of investors, 14% of respondents judge a single company stock as risky as a mutual fund.</p>
+<div class="figure align-center" id="id18">
+<a class="reference internal image-reference" href="_images/efficient.png"><img alt="_images/efficient.png" src="_images/efficient.png" style="width: 477.75px; height: 288.75px;" /></a>
+<p class="caption"><span class="caption-text">Source: <a class="reference external" href="https://www.journals.uchicago.edu/doi/abs/10.1086/524204">Calvet, Sodoni and Campbell (2007)</a>.</span><a class="headerlink" href="#id18" title="Lien permanent vers cette image">¶</a></p>
+</div>
+<p>This lack of diversification has welfare consequences. Another apparent puzzle is that despite large diversification benefits from buying international stocks within a portfolio, investors are biased towards domestic stocks, what is often called the home bias puzzle <a class="reference external" href="https://www-jstor-org.proxy2.hec.ca/stable/2006858?seq=1#metadata_info_tab_contents">French and Poterba (1991)</a>. Here is how portfolios look like in three countries:</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/holdings-home-bias.png"><img alt="_images/holdings-home-bias.png" src="_images/holdings-home-bias.png" style="width: 347.5px; height: 320.0px;" /></a>
+</div>
+<p>Source: <a class="reference external" href="https://www-jstor-org.proxy2.hec.ca/stable/pdf/2006858.pdf?refreqid=excelsior%3A0aaba7660352cf1d0501fe73d9aecf72">French and Poterba (1991)</a>.</p>
+<p>A more subtle puzzle is that when asked in the lab to allocate across different risky assets, some investors use simple heuristics, in particular one which leads them potentially to over-diversify by simply allocating an equal share of the endownment to different stocks.</p>
+<p>In situations where taxes affect the rate of return on savings, some investors are better than other at taking into account tax considerations. This is the case for example in Canada with RRSP and TFSAs having different tax considerations and some investors suffer from important losses from not investing in the right tax-preferred saving vehicle (see <a class="reference external" href="https://www-mitpressjournals-org.proxy2.hec.ca/doi/abs/10.1162/rest_a_00973">Boyer, d’Astous and Michaud (forthcoming)</a>).</p>
+<p>If one invests in the wrong vehicle given marginal tax rates when contributing and withdrawing, mistakes can be substantial as the following figure shows. Hence, taxes matter.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/example.png"><img alt="_images/example.png" src="_images/example.png" style="width: 432.0px; height: 288.0px;" /></a>
+</div>
+<p>Source: Boyer et al. (forthcoming). The figure shows for an investor with a 30 year horizon the difference in payout (net after-tax withdrawal) for a 1000$ investment in a TFSA relative to an RRSP as a function of the difference in marginal tax rates. When the marginal tax rate difference is positive, the investor makes a better choice by using TFSA and the increase in the payout can be substantial. When the marginal tax rate difference is negative, the RRSP is a better choice.</p>
+<p>A last set interesting facts as to do with how and when people trade. In particular, investors tend to trade often, suffering return losses, both because of trading fees and poor timing. This is the case in particular for males as shown in <a class="reference external" href="https://academic.oup.com/qje/article/116/1/261/1939000?login=true">Barber and Odean (2001)</a>. The next table shows that men, in particular single men trade more often and obtain lower returns, relative to benchmark than women. Men are known to be overconfident and the authors argue that this is one the mechanism that leads to lower return for males.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/barber-odean.png"><img alt="_images/barber-odean.png" src="_images/barber-odean.png" style="width: 698.0px; height: 473.0px;" /></a>
+</div>
+<p>Source: <a class="reference external" href="https://academic.oup.com/qje/article/116/1/261/1939000?login=true">Barber and Odean (2001)</a>.</p>
+<p>The timing of their trading is also sometimes puzzling. Some investors sell stocks that have gained in value and hold on to stocks which have lost in value. <a class="reference external" href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1540-6261.1985.tb05002.x">Shefrin and Statman (1985)</a> coin this the disposition effect.</p>
+<p>Others participate in bubbles, thinking that the price can only go higher. <a class="reference external" href="https://press.princeton.edu/books/paperback/9780691173122/irrational-exuberance">Shiller (2000)</a> is perhaps the most popular reference for this type of behavior which he calls irrational exuberance. The bottom line is that timing can also hurt returns in the long-run of when people buy and sell.</p>
 </div>
 <div class="section" id="theory">
 <h2>Theory<a class="headerlink" href="#theory" title="Lien permanent vers ce titre">¶</a></h2>
-<div class="section" id="participation-and-the-equity-premium-puzzle">
-<h3>Participation and the Equity Premium Puzzle<a class="headerlink" href="#participation-and-the-equity-premium-puzzle" title="Lien permanent vers ce titre">¶</a></h3>
-<p><strong>Measuring Risk Aversion</strong></p>
-<p><strong>Fixed Costs</strong></p>
-<p><strong>Myopic Loss Aversion</strong></p>
-<p><strong>Ambiguity Aversion</strong></p>
+<p>Consider an investor who has wealth <span class="math notranslate nohighlight">\(w_0\)</span> which he plans to allocate between risky assets and safe assets. Denote by <span class="math notranslate nohighlight">\(\alpha\)</span> wealth which would be invested in stocks. The return on the risky asset, <span class="math notranslate nohighlight">\(\tilde{r}\)</span> has expected return <span class="math notranslate nohighlight">\(\mu_r\)</span> with standard deviation <span class="math notranslate nohighlight">\(\sigma_r\)</span>. The safe asset return is <span class="math notranslate nohighlight">\(r_s\)</span>. Assuming expected utility, the problem is therefore :</p>
+<div class="math notranslate nohighlight">
+\[\max_{\alpha} E_r u(w + \alpha (\tilde{r}-r_s))\]</div>
+<p>where <span class="math notranslate nohighlight">\(w = w_0 (1+r_s)\)</span>. The first order condition from this problem is</p>
+<div class="math notranslate nohighlight">
+\[E_r u'(w + \alpha(\tilde{r}-r_s))(\tilde{r}-r_s) = 0\]</div>
+<p>Assume utility has the form, <span class="math notranslate nohighlight">\(u(w) = \frac{w^{1-\gamma}}{1-\gamma}\)</span>  where <span class="math notranslate nohighlight">\(\gamma = R(w) = -\frac{u''(w)}{u'(w)}w\)</span> is the coefficient of relative risk aversion and performing a first-order expansion of <span class="math notranslate nohighlight">\(u'(w+\alpha(\tilde{r}-r_s))\)</span> around <span class="math notranslate nohighlight">\(w\)</span>, we obtain</p>
+<div class="math notranslate nohighlight">
+\[\frac{\alpha^*}{w} \approx \frac{\mu_r - r_s}{\sigma_r^2}\frac{1}{\gamma}.\]</div>
+<p>The share is constant and does not depend on wealth. The share invested in the risky asset is inversely related to relative risk aversion <span class="math notranslate nohighlight">\(\gamma\)</span> and proportional to the risk premium (standardized using the variance of returns). This formula is simple to bring to data. From the historical data above, we had that <span class="math notranslate nohighlight">\(\mu_r \approx 0.098\)</span>, <span class="math notranslate nohighlight">\(r_s \approx 0.035\)</span> and <span class="math notranslate nohighlight">\(\sigma_r \approx = 0.17\)</span>. For a value of the share of wealth invested in the risky asset of approximately 50% as in the RSI data, one would need <span class="math notranslate nohighlight">\(\gamma\)</span> to be 4.4. In terms of the cross-section, this simple theory is problematic since those who do not invest in stocks would need infinite risk aversion. Furthermore, a value of 4.4 on average might be out of line compared to actual risk aversion if we measure it.</p>
+<p>We have also seen that the share invested in stocks increases with savings, which violates the prediction of the simple unless risk aversion declines with savings in the data (those who are most risk averse accumulate more savings). This is a point forcelly made by <a class="reference external" href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1542-4774.2011.01046.x">Chiappori and Paiella (2011)</a> who argue that it difficult to test whether risk aversion decreases with wealth using cross-sectional revealed preferences data since the observed relationship can be explained by both declining risk aversion as a function of wealth as well as a joint distribution of wealth and preferences. When using changes in wealth and the share invested in stocks, they cannot reject the null that the share invested in stock does not respond to changes in wealth.</p>
 </div>
-<div class="section" id="efficient-portfolios-and-dversification">
-<h3>Efficient portfolios and Dversification<a class="headerlink" href="#efficient-portfolios-and-dversification" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="section" id="risk-aversion">
+<h2>Risk Aversion<a class="headerlink" href="#risk-aversion" title="Lien permanent vers ce titre">¶</a></h2>
+<p>How do we know if a value of 4.4 for <cite>:math:gamma</cite> is a reasonable value? Turns out there is a large literature trying to elicit values of risk aversion using experimental methods. One of the most famous study was conducted by <a class="reference external" href="https://www.aeaweb.org/articles?id=10.1257/000282802762024700">Holt and Laury (2002)</a> using Multiple price lists. Below is a Table showing the lotteries agents are presented.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/lotteries.png"><img alt="_images/lotteries.png" src="_images/lotteries.png" style="width: 461.0px; height: 209.0px;" /></a>
 </div>
-<div class="section" id="trading-overconfidence-and-biases">
-<h3>Trading, Overconfidence and Biases<a class="headerlink" href="#trading-overconfidence-and-biases" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Source: <a class="reference external" href="https://www.aeaweb.org/articles?id=10.1257/000282802762024700">Holt and Laury (2002)</a></p>
+<p>Subjects will switch from lottery A to B as one progresses trough the table. The reason is that the expected gain difference between B and A grows as we proceed downward. At some point, subjects prefer the more risky lottery because they are compensated with a higher expected gain. In the last choice, one gets with probability one a higher payoff with B than A. In that paper, the authors assess the effect of paying subjects rather than presenting hypothetical lotteries. They also assess the effect of the scale of the gambles to see whether high stakes changes inferences. The next Table shows the results across the different experimental arms:</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/choices.png"><img alt="_images/choices.png" src="_images/choices.png" style="width: 487.0px; height: 232.0px;" /></a>
 </div>
+<p>Source: <a class="reference external" href="https://www.aeaweb.org/articles?id=10.1257/000282802762024700">Holt and Laury (2002)</a></p>
+<p>In terms of hypothetical vs. real incentives, they show that there is a higher prevalence of risk loving subjects when using hypothetical lotteries. There is also more risk aversion when the real incentives are larger.</p>
+<p>Values from Holt and Laury appear lower than the 4.4 value for <span class="math notranslate nohighlight">\(\gamma\)</span> needed to match the observed share invested in stocks. Boyer, d’Astous and Michaud (forthcoming) perform a preference elicitation exercise as in Holt and Laury with small real payoffs. The RSI dataset we used above to compute facts contains an estimate of relative risk aversion from this proceduce for each respondent. The average estimate of <span class="math notranslate nohighlight">\(\gamma\)</span> is 0.6. At this level of risk aversion, the predicted share is well above one and suggest that respondents should even be willing to borrow to invest with this risk premium on stocks. Hence, the expected utility model with CRRA preferences could not explain the facts we obtained from the data.</p>
+<p>The equity premium puzzle follows from the fact that given a reasonable level of risk aversion, we should observe more much investment in risky assets. The puzzle was first discussed in <a class="reference external" href="https://www.sciencedirect.com/science/article/abs/pii/0304393285900613">Mehra and Prescott (1985)</a>. It has lead to a very large literature which we will not cover. But we will look at two important behavioral explanations for this puzzle.</p>
+<p>Another interesting puzzle is that the fact that the share of stocks increases sharply with total savings does not appear to be due to decreasing risk aversion, or at least that this can explain very little of what we find in the survey. The next figure shows the average estimate of risk aversion by savings quintile. While there is some evidence of a decline, this decline is relately small and estimates are relatively flat starting in the 4th decile. Hence, the increase in the share of risky assets apparent in the data does not appear to be due to declining risk aversion.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/sigma-gradient.png"><img alt="_images/sigma-gradient.png" src="_images/sigma-gradient.png" style="width: 432.0px; height: 288.0px;" /></a>
 </div>
-<div class="section" id="interventions">
-<h2>Interventions<a class="headerlink" href="#interventions" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Source: <a class="reference external" href="https://dataverse.scholarsportal.info/dataset.xhtml?persistentId=doi:10.5683/SP2/UTJDYA">RSI Survey on Retirement Savings Vehicles</a>, Quebec and Ontario age 35-55. This extract contains data from 1305 respondents with positive savings in RRSP, TFSA or other taxable accounts.</p>
+<div class="section" id="participation-costs-and-the-equity-premium-puzzle">
+<h3>Participation Costs and the Equity Premium Puzzle<a class="headerlink" href="#participation-costs-and-the-equity-premium-puzzle" title="Lien permanent vers ce titre">¶</a></h3>
+<p>One way of explaining the behavior of those who do not invest anything in stocks is to introduce participation costs. These can be real (cost of opening a trading account, etc) or psychological, perhaps due to present-bias. <a class="reference external" href="https://www-nber-org.proxy2.hec.ca/papers/w8884">Vissing-Jorgensen (2002)</a> explores this idea and shows small participation costs can make a large difference.</p>
+<p>We can adapt our framework to seek the participation costs that would act as a lower bound that rationalizes the decision of our respondents. A respondent is indifferent between participating in stocks and not participating provided</p>
+<div class="math notranslate nohighlight">
+\[u_i(w_i(1+r_s)) = E_r u_i(w_i(1+r_s) + \alpha_i (\tilde{r}-r_s) - \tau_i)\]</div>
+<p>Conditional on participating, the optimal share is <span class="math notranslate nohighlight">\(\alpha_i = w_i\)</span> given what the risk aversion parameters we observe. Hence, the idea is to solve for <span class="math notranslate nohighlight">\(\tau_i\)</span>, the participation cost that make this an equality for those who do not invest in stocks. One way to do this is to use a normal distributions for returns. The notebook computes estimates of participation costs. Only a quarter of non-participants have costs lower than 150$, half lower than 755$. Hence, more than half require participation costs larger than 1000$ to rationalize their choices. Given how easy it is these days to buy an ETF fund using internet platforms for free, these participation costs remain a puzzle.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/participation_costs.png"><img alt="_images/participation_costs.png" src="_images/participation_costs.png" style="width: 432.0px; height: 288.0px;" /></a>
+</div>
+<p>Source: <a class="reference external" href="https://dataverse.scholarsportal.info/dataset.xhtml?persistentId=doi:10.5683/SP2/UTJDYA">RSI Survey on Retirement Savings Vehicles</a>, Quebec and Ontario age 35-55. This extract contains data from 1305 respondents with positive savings in RRSP, TFSA or other taxable accounts. Here only those with no stocks are included.</p>
+<p>An important problem with this explanation is that participation costs cannot explain sub-optimal allocation to risky assets conditional on participating.</p>
+</div>
+<div class="section" id="ambiguity-aversion">
+<h3>Ambiguity Aversion<a class="headerlink" href="#ambiguity-aversion" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Turns out few of us know the distribution of returns and there is uncertainty about that distribution, in particular prospectively. The Ellsberg paradox shows that subjects dislike ambiguity, or the fact that probability distributions over states of the world are uncertain. When this happens, an action that involves an increase in ambiguity about the distribution of wealth will be of low value to that investor.</p>
+<p>Here is how the Ellsberg paradox is shown. An urn consist 90 balls. 30 are red. The other 60 are either black or white. The proportion of white and black balls is not know. We ask you to make a choice between these lotteries:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 39%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Lotteries</p></td>
+<td><p>red</p></td>
+<td><p>black</p></td>
+<td><p>white</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(L_1\)</span></p></td>
+<td><p>50</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(L_2\)</span></p></td>
+<td><p>0</p></td>
+<td><p>50</p></td>
+<td><p>0</p></td>
+</tr>
+</tbody>
+</table>
+<p>Do the same in this context.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 39%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Lotteries</p></td>
+<td><p>red</p></td>
+<td><p>black</p></td>
+<td><p>white</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(L_3\)</span></p></td>
+<td><p>50</p></td>
+<td><p>0</p></td>
+<td><p>50</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(L_4\)</span></p></td>
+<td><p>0</p></td>
+<td><p>50</p></td>
+<td><p>50</p></td>
+</tr>
+</tbody>
+</table>
+<p>In the lab, lots will prefer L1 to L2 and then L4 to L3. But this is a violation of expected utility for any prior someone might have about the proportion of white and black balls. Both L1 and L4 have no ambiguity regarding payoffs while both L2 and L3 do. Hence, subjects exhibit ambiguity aversion.</p>
+<p>One way to account for ambiguity aversion is to consider so-called multiple-prior models (Gilboa and Schmeider, 1989). In such models, agents are not sure what the distribution of risk is. For each state <span class="math notranslate nohighlight">\(s\)</span> the probability could take <span class="math notranslate nohighlight">\(M\)</span> possible values, <span class="math notranslate nohighlight">\(P^m = {p_s^m}_{m=1,...,M}\)</span>. They attach a probability <span class="math notranslate nohighlight">\(q_m\)</span> that each distribution is the correct one. Under expected utility, this uncertainty does not matter because this is nothing else than a compound lottery. Hence, choices should still respect axioms of expected utility. An extreme form of ambiguity aversion preferences takes the form,</p>
+<div class="math notranslate nohighlight">
+\[V = \min_{m=1}^M \sum_{s=1}^S p_s^m u(w_s)\]</div>
+<p>These are called maximin preferences. The investor considers the worst possible distribution in terms of expected utility. One can easily show that these can explain the pattern L1 preferred to L2 and L4 to L3 above. A smooth version of ambiguity aversion was proposed by <a class="reference external" href="https://www-jstor-org.proxy2.hec.ca/stable/3598753?seq=1#metadata_info_tab_contents">Kilbanoff, Marinacci and Mukerji (KMM) (2005)</a>. If an investor has such preferences, the end result is that the investor is less likely to participate in the stock market if his priors are diffuse (the worst distribution is pretty bad in terms of investment results).</p>
+<p>But how to measure ambiguity aversion? <a class="reference external" href="https://www-sciencedirect-com.proxy2.hec.ca/science/article/pii/S0304405X16000040">Dimmock et al. (2016)</a> propose a matching probability strategy. They provide subjects with a choice between,</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/matching.png"><img alt="_images/matching.png" src="_images/matching.png" style="width: 633.0px; height: 514.0px;" /></a>
+</div>
+<p>Source:<a class="reference external" href="https://www-sciencedirect-com.proxy2.hec.ca/science/article/pii/S0304405X16000040">Dimmock et al. (2016)</a></p>
+<p>If the subject picks K in the first round, they lower the probability of winning from 50%. If the subject picks U in the first round, they increase this probability. They iterate until they find the probability that makes them indifferent. If the matching probability remains 50%, they are ambiguity neutral. If it is lower than 50%, the subject is ambiguity averse. The degree is ambiguity aversion is defined as 50% - q where q is the matching probability.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/ambiguity-stats.png"><img alt="_images/ambiguity-stats.png" src="_images/ambiguity-stats.png" style="width: 479.0px; height: 475.0px;" /></a>
+</div>
+<p>Source:<a class="reference external" href="https://www-sciencedirect-com.proxy2.hec.ca/science/article/pii/S0304405X16000040">Dimmock et al. (2016)</a></p>
+<p>They tend regress stock market participation on their measure of ambiguity aversion and other controls. The next table shows the results. They find that ambiguity aversion reduces stock market participation.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/ambiguity-participate.png"><img alt="_images/ambiguity-participate.png" src="_images/ambiguity-participate.png" style="width: 311.0px; height: 358.0px;" /></a>
+</div>
+<p>Source:<a class="reference external" href="https://www-sciencedirect-com.proxy2.hec.ca/science/article/pii/S0304405X16000040">Dimmock et al. (2016)</a></p>
+</div>
+<div class="section" id="myopic-loss-aversion">
+<h3>Myopic Loss Aversion<a class="headerlink" href="#myopic-loss-aversion" title="Lien permanent vers ce titre">¶</a></h3>
+<p><a class="reference external" href="https://www-jstor-org.proxy2.hec.ca/stable/2118511?seq=1#metadata_info_tab_contents">Benartzi and Thaler (1995)</a> provide a very interesting explanation to <em>solve</em> the equity premium puzzle. They combine loss aversion from prospect theory proposed by <a class="reference external" href="https://www-jstor-org.proxy2.hec.ca/stable/1914185?seq=1#metadata_info_tab_contents">Kahneman and Tversky (1979)</a> with mental accounting, as proposed by <a class="reference external" href="https://www-jstor-org.proxy2.hec.ca/stable/183904?seq=1#metadata_info_tab_contents">Thaler (1985)</a>.
+The first observation is that subjects in experiments tend to value gains and losses differently relative to a reference point. This is called loss aversion and is a key ingredient of prospect theory. A common utility function used is given by</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}u(w) = \begin{cases}
+ w^{\gamma} &amp;, \text{if} \quad x&gt;0 \\
+-\lambda (-w)^{\gamma} &amp;, \text{if} \quad x&lt;0
+\end{cases}\end{split}\]</div>
+<p>where <span class="math notranslate nohighlight">\(w\)</span> is now wealth relative to the reference point, <span class="math notranslate nohighlight">\(w_0(1+r_s)\)</span>.  KT estimate <span class="math notranslate nohighlight">\(\gamma\)</span> to be roughly 0.88, while <span class="math notranslate nohighlight">\(\lambda\)</span> is close to 2.25. Hence, subjects tend to weight losses twice as large as gains. This may lower their demand for risky assets.</p>
+<p>This tendency to weight losses more heavily than gains can be traced to particular regions of the brain. <a class="reference external" href="https://science.sciencemag.org/content/315/5811/515">Tom et al. (2007)</a> perform a loss aversion experiment by presenting subjects lotteries while the brain is being scanned. They vary the gains and losses presented and record both choices as well as brain activity. Results look like this:</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/tom_choices.png"><img alt="_images/tom_choices.png" src="_images/tom_choices.png" style="width: 366.0px; height: 382.0px;" /></a>
+</div>
+<p>Source:<a class="reference external" href="https://science.sciencemag.org/content/315/5811/515">Tom et al. (2007)</a></p>
+<p>From these choices, they also estimate that the relative sensitivity of choice to losses was twice as large as for gains, consisstent with evidence from KT. When they look at regions of the brain that are responsible for the sensitivity to gains and losses, they find, perhaps contrary to what some might expect, that it is roughly the same regions of the brain which react. Hence, loss aversion is not the result of emotions such as fear (disconfort or vigilence).</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/tom_scans.png"><img alt="_images/tom_scans.png" src="_images/tom_scans.png" style="width: 356.0px; height: 195.0px;" /></a>
+</div>
+<p>Source:<a class="reference external" href="https://science.sciencemag.org/content/315/5811/515">Tom et al. (2007)</a></p>
+<p>They estimate a similar relative sensitivity using neurological data (close to 2) which suggest that loss aversion emerges from a stronger rational or calculated sensitivity to losses than to gains.</p>
+<p>Provided loss aversion is relatively strong, it could therefore explain low stock ownership.</p>
+<p>But Benartzi and Thaler also raise an important issue in that one also needs individuals to be myopic in order for loss aversion to really bite. With loss aversion, the frequency at which utility is realized matters. The intuition is that if one only experiences utility 10 years from now relative to today’s wealth, then the distribution of gains and losses is different. If on the other hand, one experiences utility every month (checks on the market value of his savings), then he is likely to experience the loss domain more frequently. This breaks the invariance to the horizon which is present in long-term investing. When investors face iid returns, the sum of the returns over <span class="math notranslate nohighlight">\(n\)</span> periods is <span class="math notranslate nohighlight">\(n\)</span> times the variance of the one period returns. Hence, it is not true that the horizon lowers risk, something which Samuelson calls the time diversification fallacy.</p>
+<p>Investors are likely to seek longer horizons, because they want to integrate losses and gains before experiencing utility, a mental accounting exercise first discussed by Thaler (1985). Waiting a long time means suffering from a huge loss only once. But that may be difficult to do with investing, when it is so easy to consult the market value of one’s portfolio. Therefore they may invest less in stocks than they would normally do. Benartzi and Thaler (1995) propose myopic loss aversion, the combination of loss aversion and short evaluation horizons as an explanation for the equity premium puzzle.</p>
+<p>They simulate returns and evaluated utility at different horizons using loss aversion. The actual prospective utility function they use also take into account probability weighting and rank ordering which is also present in prospect theory (KT, 1979). The figure below shows that at evaluation frequency of less than 12 months, bonds dominate stocks while the opposite occurs when evaluation is infrequent. They also show that a mix of 50% stocks and 50% bonds appears to maximize roughly utility when prospective utility (with loss aversion) is used (at frequency of 12 months).</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/myopic-frequency.png"><img alt="_images/myopic-frequency.png" src="_images/myopic-frequency.png" style="width: 419.0px; height: 247.0px;" /></a>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/loss-aversion-share.png"><img alt="_images/loss-aversion-share.png" src="_images/loss-aversion-share.png" style="width: 418.0px; height: 298.0px;" /></a>
+</div>
+<p>Source: Benartzi and Thaler (1995).</p>
+</div>
+<div class="section" id="efficient-portfolios-and-diversification">
+<h3>Efficient portfolios and diversification<a class="headerlink" href="#efficient-portfolios-and-diversification" title="Lien permanent vers ce titre">¶</a></h3>
+<p>So far, we have investigated the decision to purchase risky assets. The expected return on the risky asset did not depend on invesment choices. Turns out investment choices can impact the expected return <span class="math notranslate nohighlight">\(\mu_r\)</span> as well as the standard deviation of the portfolio <span class="math notranslate nohighlight">\(\sigma_r\)</span>. While it is obvious why the expected return matters, it is less obvious  why the standard deviation does and how one can reduce it. In fact, risk averse investors collect benefits from diversification, which is akin to the saying that one should not put all his eggs in the same basked. To understand diversification, cinsider the same framework as above but with two assets with returns <span class="math notranslate nohighlight">\(\tilde{r}_1\)</span> and <span class="math notranslate nohighlight">\(\tilde{r}_2\)</span> with identical expected returns <span class="math notranslate nohighlight">\(mu_r\)</span> and standard deviation <span class="math notranslate nohighlight">\(\sigma_r\)</span>. The consumer aims to decide how much to invest in the first asset,</p>
+<div class="math notranslate nohighlight">
+\[\max_{\alpha} E_r u(w+\alpha \tilde{r}_1 + (w-\alpha) \tilde{r}_2)\]</div>
+<p>The first order condition is</p>
+<div class="math notranslate nohighlight">
+\[E_r \tilde{r}_1 u'(w+\alpha \tilde{r_1} + (w-\alpha)\tilde{r}_2) = E_r \tilde{r}_2 u'(w+\alpha \tilde{r_1} + (w-\alpha)\tilde{r}_2)\]</div>
+<p>which yields the solution <span class="math notranslate nohighlight">\(\alpha^* = \frac{w}{2}\)</span>. While the expected return of the portfolio is <span class="math notranslate nohighlight">\(\mu_r\)</span>, the standard deviation is now <span class="math notranslate nohighlight">\(\frac{\sigma_r}{2}\)</span>. Since the returns are iid, the variance of the portfolio is reduced by diversification. When expected returns and standard deviations differ across assets, diversification benefits still occur but the optimal solution will be slightly more complicated. Returns may also be correlated.</p>
+<p>One of the most celebrated model of portfolio choice is the mean-variance model which highlights the return - risk tradeoff. Depsite its simplicity it is still one of the workhorse model of portfolio theory.</p>
+<p>Consider <span class="math notranslate nohighlight">\(K\)</span> risky assets and the return on each of these <span class="math notranslate nohighlight">\(\tilde{r}_k\)</span> and a safe asset with return <span class="math notranslate nohighlight">\(r_s\)</span>. The expected return of each is <span class="math notranslate nohighlight">\(\mu_k\)</span> while the covariance between two assets <span class="math notranslate nohighlight">\((j,k)\)</span> is <span class="math notranslate nohighlight">\(\omega_{i,j}\)</span>. The covariance matrix is <span class="math notranslate nohighlight">\(\Omega\)</span>. Wealth is therefore given by</p>
+<div class="math notranslate nohighlight">
+\[\tilde{w} = w_0 (1 + r_s + \sum_{k=1}^K \alpha_k (\tilde{r}_k - r_s))\]</div>
+<p>The portfolio share for the safe asset is <span class="math notranslate nohighlight">\(1-\sum_{k=1}^K \alpha_k\)</span>. Let us assume the agent picks these portfolio weights so that</p>
+<div class="math notranslate nohighlight">
+\[\max_{\mathbf{\alpha}} E_r \tilde{w} - \frac{1}{2}A(w_0)V_r \tilde{w}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\mathbf{\alpha} = (\alpha_1,...,\alpha_K)\)</span>, <span class="math notranslate nohighlight">\(A(w_0) = - \frac{u''(w_0)'}{u'(w_0)}\)</span> is absolute risk aversion and <span class="math notranslate nohighlight">\(V_r\tilde{w}\)</span> is the variance of wealth. For CRRA utility, <span class="math notranslate nohighlight">\(A(w_0) = \frac{\gamma}{w_0}\)</span></p>
+<p>We have that</p>
+<div class="math notranslate nohighlight">
+\[E_r \tilde{w} = w_0(1+r_s + \sum_{k=1}^K (\mu_k-r_s))\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[V_r \tilde{w} = \sum_{k=1}^K \sum_{j=1}^K \alpha_k \alpha_j \omega_{j,k} w_0^2\]</div>
+<p>Hence, the first order conditions for this problem yield:</p>
+<div class="math notranslate nohighlight">
+\[(\mu_k - r_s)w_0 - \frac{\gamma}{w_0}\sum_{j=1}^K \alpha_{j}^* \omega_{j,k}w_0^2 = 0\]</div>
+<p>Wealth <span class="math notranslate nohighlight">\(w_0\)</span> cancels out. It is useful to rewrite in matrix form,</p>
+<div class="math notranslate nohighlight">
+\[\mu - r_s = \gamma \alpha^* \Omega\]</div>
+<p>which can be solved to obtain,</p>
+<div class="math notranslate nohighlight">
+\[\alpha^* = \frac{1}{\gamma}\Omega^{-1}(\mu - r_s)\]</div>
+<p>and the share in the safe asset is <span class="math notranslate nohighlight">\(1-\sum_{k=1}^K \alpha^*_k\)</span>. Two important observations: 1) risk aversion impacts the fraction of risky assets in the portfolio but not the allocation of wealth across risky assets. The same factor <span class="math notranslate nohighlight">\(\frac{1}{\gamma}\)</span> appears for each risky asset. 2) The optimal allocation of risky asset depends on the returns and covariance matrix of returns only. Take the case where returns are independent. Then the optimal share of risky asset <span class="math notranslate nohighlight">\(k\)</span> is <span class="math notranslate nohighlight">\(\frac{1}{\gamma}\frac{\mu_k - r_s}{\omega_{k,k}}\)</span>. The optimal share depends on the risk premium, <span class="math notranslate nohighlight">\(mu_k - r_s\)</span> and negatively on the variance of the risky asset. Overall the composition of the portfolio does not depend on preference. There is an optimal mix, or mutual fund that agents can pick and only the decision of how much to allocate to this fund depends on preferences. This result is often referred to as the two-fund separation theorem.</p>
+<p>The following notebook computes optimal weights for a given set of assets, which includes a safe asset. It considers the SP TSX composite index and the MSCI world index. Hence, these are two diversified indices. When considered jointly, the investor is willing to invest most of his wealth in such a portfolio, achieves higher returns and higher utility. When we restrict only to the SP TSX, the investor has lower utility and in this case lower returns. Hence, even tough the two indices are quite correlated (correlation at monthly level = 0.6), there are still benefits to diversification. The home equity bias is that investors appear to disproportionally prefer home stocks. Using the mean variance model, one can compute the expected return that would be needed to rationalize observed allocations. From the table below, we can see that we would need much higher home returns.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/implied-home-bias.png"><img alt="_images/implied-home-bias.png" src="_images/implied-home-bias.png" style="width: 361.25px; height: 356.25px;" /></a>
+</div>
+<p>Source: <a class="reference external" href="https://www-jstor-org.proxy2.hec.ca/stable/pdf/2006858.pdf?refreqid=excelsior%3A0aaba7660352cf1d0501fe73d9aecf72">French and Poterba (1991)</a>.</p>
+<p>Explaining the lack of diversification in portfolios, in particular home bias, can be done in several ways. One is ambiguity aversion. Knowning the returns on certain costs better than others certainly tilts the portfolio towards those. Another is simply that the computational cost is high and cognitive skills may be at play. Finally, financial literaty can also explain the lack of diversification. <a class="reference external" href="https://onlinelibrary.wiley.com/doi/abs/10.1111/jofi.12231">van Gaudecker (2014)</a> shows that those with much higher financial literacy do better but that those with low financial literacy who trust their own abilities tend to do much worse.</p>
+<p>Investors have a hard time dealing with fees which are involved when investing in mutual funds. In one important study, <a class="reference external" href="https://academic.oup.com/rfs/article/23/4/1405/1591053?login=true">Choi et al. (2010)</a> show that more than 80% of subjects in an experiment fail to minimize fees when picking mutual funds. Financial literacy lowers fees paid.</p>
+<p><a class="reference external" href="https://www.cambridge.org/core/journals/journal-of-pension-economics-and-finance/article/financial-knowledge-and-401k-investment-performance-a-case-study/F27E6C83BA1DFD263BC2FD706084F8DD">Clark et al. (2015)</a> show that those with higher financial literacy obtained higher returns on the savings, and had less idiosynchratic risk in their investment choices suggesting they diversify better.</p>
+</div>
 </div>
 </div>
 
