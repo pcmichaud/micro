@@ -51,6 +51,7 @@ Pierre-Carl Michaud, Professeur titulaire HEC Montréal
    anomalies.rst
    annuities.rst
    savings.rst
+   invest.rst
   
 Index
 =====
