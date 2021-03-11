@@ -142,7 +142,7 @@ The share is constant and does not depend on wealth. The share invested in the r
 We have also seen that the share invested in stocks increases with savings, which violates the prediction of the simple unless risk aversion declines with savings in the data (those who are most risk averse accumulate more savings). This is a point forcelly made by `Chiappori and Paiella (2011) <https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1542-4774.2011.01046.x>`_ who argue that it difficult to test whether risk aversion decreases with wealth using cross-sectional revealed preferences data since the observed relationship can be explained by both declining risk aversion as a function of wealth as well as a joint distribution of wealth and preferences. When using changes in wealth and the share invested in stocks, they cannot reject the null that the share invested in stock does not respond to changes in wealth.   
 
 Risk Aversion
-+++++++++++++
+~~~~~~~~~~~~~
 
 How do we know if a value of 4.4 for `:math:\gamma` is a reasonable value? Turns out there is a large literature trying to elicit values of risk aversion using experimental methods. One of the most famous study was conducted by `Holt and Laury (2002) <https://www.aeaweb.org/articles?id=10.1257/000282802762024700>`_ using Multiple price lists. Below is a Table showing the lotteries agents are presented. 
 
@@ -177,8 +177,8 @@ Another interesting puzzle is that the fact that the share of stocks increases s
 Source: `RSI Survey on Retirement Savings Vehicles <https://dataverse.scholarsportal.info/dataset.xhtml?persistentId=doi:10.5683/SP2/UTJDYA>`_, Quebec and Ontario age 35-55. This extract contains data from 1305 respondents with positive savings in RRSP, TFSA or other taxable accounts. 
 
 
-Participation Costs and the Equity Premium Puzzle
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Participation Costs 
+~~~~~~~~~~~~~~~~~~~
 
 One way of explaining the behavior of those who do not invest anything in stocks is to introduce participation costs. These can be real (cost of opening a trading account, etc) or psychological, perhaps due to present-bias. `Vissing-Jorgensen (2002) <https://www-nber-org.proxy2.hec.ca/papers/w8884>`_ explores this idea and shows small participation costs can make a large difference. 
 
@@ -307,8 +307,8 @@ They simulate returns and evaluated utility at different horizons using loss ave
 Source: Benartzi and Thaler (1995). 
 
 
-Efficient portfolios and diversification
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Diversification
+~~~~~~~~~~~~~~~
 
 So far, we have investigated the decision to purchase risky assets. The expected return on the risky asset did not depend on invesment choices. Turns out investment choices can impact the expected return :math:`\mu_r` as well as the standard deviation of the portfolio :math:`\sigma_r`. While it is obvious why the expected return matters, it is less obvious  why the standard deviation does and how one can reduce it. In fact, risk averse investors collect benefits from diversification, which is akin to the saying that one should not put all his eggs in the same basked. To understand diversification, cinsider the same framework as above but with two assets with returns :math:`\tilde{r}_1` and :math:`\tilde{r}_2` with identical expected returns :math:`mu_r` and standard deviation :math:`\sigma_r`. The consumer aims to decide how much to invest in the first asset, 
 
@@ -386,6 +386,9 @@ Source: `French and Poterba (1991) <https://www-jstor-org.proxy2.hec.ca/stable/p
 Explaining the lack of diversification in portfolios, in particular home bias, can be done in several ways. One is ambiguity aversion. Knowning the returns on certain costs better than others certainly tilts the portfolio towards those. Another is simply that the computational cost is high and cognitive skills may be at play. Finally, financial literaty can also explain the lack of diversification. `van Gaudecker (2014) <https://onlinelibrary.wiley.com/doi/abs/10.1111/jofi.12231>`_ shows that those with much higher financial literacy do better but that those with low financial literacy who trust their own abilities tend to do much worse. Decision aids which help with figuring out the effect of diversification may be particularly effective. 
 
 The opposite mistake is also common, i.e. over diversification. In particular, `Benartzi and Thaler (2001) <https://www-jstor-org.proxy2.hec.ca/stable/2677899?seq=6#metadata_info_tab_contents>`_ show that many use a simple heuristic, :math:`1/K` where :math:`K` is the number of choices in the plan. As a result, the fraction invested in stocks increases in plans where there are more options. Again, decision aids could help investors avoid the use of such heuristics.   
+
+Other Issues
+~~~~~~~~~~~~
 
 Investors have a hard time dealing with fees which are involved when investing in mutual funds. In one important study, `Choi et al. (2010) <https://academic.oup.com/rfs/article/23/4/1405/1591053?login=true>`_ show that more than 80% of subjects in an experiment fail to minimize fees when picking mutual funds. Financial literacy lowers fees paid. Fee disclosure is now common in many countries. But even when they are disclosed investors do not always minimize fees or know how to integrate this information into their decision making. 
 

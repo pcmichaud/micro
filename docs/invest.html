@@ -121,12 +121,13 @@
 <li class="toctree-l1"><a class="reference internal" href="savings.html">Savings</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Investing</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#facts">Facts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#theory">Theory</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#risk-aversion">Risk Aversion</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#participation-costs-and-the-equity-premium-puzzle">Participation Costs and the Equity Premium Puzzle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#theory">Theory</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#risk-aversion">Risk Aversion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#participation-costs">Participation Costs</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#ambiguity-aversion">Ambiguity Aversion</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#myopic-loss-aversion">Myopic Loss Aversion</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#efficient-portfolios-and-diversification">Efficient portfolios and diversification</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#diversification">Diversification</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#other-issues">Other Issues</a></li>
 </ul>
 </li>
 </ul>
@@ -275,9 +276,8 @@
 \[\frac{\alpha^*}{w} \approx \frac{\mu_r - r_s}{\sigma_r^2}\frac{1}{\gamma}.\]</div>
 <p>The share is constant and does not depend on wealth. The share invested in the risky asset is inversely related to relative risk aversion <span class="math notranslate nohighlight">\(\gamma\)</span> and proportional to the risk premium (standardized using the variance of returns). This formula is simple to bring to data. From the historical data above, we had that <span class="math notranslate nohighlight">\(\mu_r \approx 0.098\)</span>, <span class="math notranslate nohighlight">\(r_s \approx 0.035\)</span> and <span class="math notranslate nohighlight">\(\sigma_r \approx = 0.17\)</span>. For a value of the share of wealth invested in the risky asset of approximately 50% as in the RSI data, one would need <span class="math notranslate nohighlight">\(\gamma\)</span> to be 4.4. In terms of the cross-section, this simple theory is problematic since those who do not invest in stocks would need infinite risk aversion. Furthermore, a value of 4.4 on average might be out of line compared to actual risk aversion if we measure it.</p>
 <p>We have also seen that the share invested in stocks increases with savings, which violates the prediction of the simple unless risk aversion declines with savings in the data (those who are most risk averse accumulate more savings). This is a point forcelly made by <a class="reference external" href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1542-4774.2011.01046.x">Chiappori and Paiella (2011)</a> who argue that it difficult to test whether risk aversion decreases with wealth using cross-sectional revealed preferences data since the observed relationship can be explained by both declining risk aversion as a function of wealth as well as a joint distribution of wealth and preferences. When using changes in wealth and the share invested in stocks, they cannot reject the null that the share invested in stock does not respond to changes in wealth.</p>
-</div>
 <div class="section" id="risk-aversion">
-<h2>Risk Aversion<a class="headerlink" href="#risk-aversion" title="Lien permanent vers ce titre">¶</a></h2>
+<h3>Risk Aversion<a class="headerlink" href="#risk-aversion" title="Lien permanent vers ce titre">¶</a></h3>
 <p>How do we know if a value of 4.4 for <cite>:math:gamma</cite> is a reasonable value? Turns out there is a large literature trying to elicit values of risk aversion using experimental methods. One of the most famous study was conducted by <a class="reference external" href="https://www.aeaweb.org/articles?id=10.1257/000282802762024700">Holt and Laury (2002)</a> using Multiple price lists. Below is a Table showing the lotteries agents are presented.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/lotteries.png"><img alt="_images/lotteries.png" src="_images/lotteries.png" style="width: 461.0px; height: 209.0px;" /></a>
@@ -296,8 +296,9 @@
 <a class="reference internal image-reference" href="_images/sigma-gradient.png"><img alt="_images/sigma-gradient.png" src="_images/sigma-gradient.png" style="width: 432.0px; height: 288.0px;" /></a>
 </div>
 <p>Source: <a class="reference external" href="https://dataverse.scholarsportal.info/dataset.xhtml?persistentId=doi:10.5683/SP2/UTJDYA">RSI Survey on Retirement Savings Vehicles</a>, Quebec and Ontario age 35-55. This extract contains data from 1305 respondents with positive savings in RRSP, TFSA or other taxable accounts.</p>
-<div class="section" id="participation-costs-and-the-equity-premium-puzzle">
-<h3>Participation Costs and the Equity Premium Puzzle<a class="headerlink" href="#participation-costs-and-the-equity-premium-puzzle" title="Lien permanent vers ce titre">¶</a></h3>
+</div>
+<div class="section" id="participation-costs">
+<h3>Participation Costs<a class="headerlink" href="#participation-costs" title="Lien permanent vers ce titre">¶</a></h3>
 <p>One way of explaining the behavior of those who do not invest anything in stocks is to introduce participation costs. These can be real (cost of opening a trading account, etc) or psychological, perhaps due to present-bias. <a class="reference external" href="https://www-nber-org.proxy2.hec.ca/papers/w8884">Vissing-Jorgensen (2002)</a> explores this idea and shows small participation costs can make a large difference.</p>
 <p>We can adapt our framework to seek the participation costs that would act as a lower bound that rationalizes the decision of our respondents. A respondent is indifferent between participating in stocks and not participating provided</p>
 <div class="math notranslate nohighlight">
@@ -418,8 +419,8 @@ The first observation is that subjects in experiments tend to value gains and lo
 </div>
 <p>Source: Benartzi and Thaler (1995).</p>
 </div>
-<div class="section" id="efficient-portfolios-and-diversification">
-<h3>Efficient portfolios and diversification<a class="headerlink" href="#efficient-portfolios-and-diversification" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="section" id="diversification">
+<h3>Diversification<a class="headerlink" href="#diversification" title="Lien permanent vers ce titre">¶</a></h3>
 <p>So far, we have investigated the decision to purchase risky assets. The expected return on the risky asset did not depend on invesment choices. Turns out investment choices can impact the expected return <span class="math notranslate nohighlight">\(\mu_r\)</span> as well as the standard deviation of the portfolio <span class="math notranslate nohighlight">\(\sigma_r\)</span>. While it is obvious why the expected return matters, it is less obvious  why the standard deviation does and how one can reduce it. In fact, risk averse investors collect benefits from diversification, which is akin to the saying that one should not put all his eggs in the same basked. To understand diversification, cinsider the same framework as above but with two assets with returns <span class="math notranslate nohighlight">\(\tilde{r}_1\)</span> and <span class="math notranslate nohighlight">\(\tilde{r}_2\)</span> with identical expected returns <span class="math notranslate nohighlight">\(mu_r\)</span> and standard deviation <span class="math notranslate nohighlight">\(\sigma_r\)</span>. The consumer aims to decide how much to invest in the first asset,</p>
 <div class="math notranslate nohighlight">
 \[\max_{\alpha} E_r u(w+\alpha \tilde{r}_1 + (w-\alpha) \tilde{r}_2)\]</div>
@@ -462,6 +463,9 @@ The first observation is that subjects in experiments tend to value gains and lo
 <p>Source: <a class="reference external" href="https://www-jstor-org.proxy2.hec.ca/stable/pdf/2006858.pdf?refreqid=excelsior%3A0aaba7660352cf1d0501fe73d9aecf72">French and Poterba (1991)</a>.</p>
 <p>Explaining the lack of diversification in portfolios, in particular home bias, can be done in several ways. One is ambiguity aversion. Knowning the returns on certain costs better than others certainly tilts the portfolio towards those. Another is simply that the computational cost is high and cognitive skills may be at play. Finally, financial literaty can also explain the lack of diversification. <a class="reference external" href="https://onlinelibrary.wiley.com/doi/abs/10.1111/jofi.12231">van Gaudecker (2014)</a> shows that those with much higher financial literacy do better but that those with low financial literacy who trust their own abilities tend to do much worse. Decision aids which help with figuring out the effect of diversification may be particularly effective.</p>
 <p>The opposite mistake is also common, i.e. over diversification. In particular, <a class="reference external" href="https://www-jstor-org.proxy2.hec.ca/stable/2677899?seq=6#metadata_info_tab_contents">Benartzi and Thaler (2001)</a> show that many use a simple heuristic, <span class="math notranslate nohighlight">\(1/K\)</span> where <span class="math notranslate nohighlight">\(K\)</span> is the number of choices in the plan. As a result, the fraction invested in stocks increases in plans where there are more options. Again, decision aids could help investors avoid the use of such heuristics.</p>
+</div>
+<div class="section" id="other-issues">
+<h3>Other Issues<a class="headerlink" href="#other-issues" title="Lien permanent vers ce titre">¶</a></h3>
 <p>Investors have a hard time dealing with fees which are involved when investing in mutual funds. In one important study, <a class="reference external" href="https://academic.oup.com/rfs/article/23/4/1405/1591053?login=true">Choi et al. (2010)</a> show that more than 80% of subjects in an experiment fail to minimize fees when picking mutual funds. Financial literacy lowers fees paid. Fee disclosure is now common in many countries. But even when they are disclosed investors do not always minimize fees or know how to integrate this information into their decision making.</p>
 <p><a class="reference external" href="https://www.cambridge.org/core/journals/journal-of-pension-economics-and-finance/article/financial-knowledge-and-401k-investment-performance-a-case-study/F27E6C83BA1DFD263BC2FD706084F8DD">Clark et al. (2015)</a> show that those with higher financial literacy obtained higher returns on the savings, and had less idiosynchratic risk in their investment choices suggesting they diversify better.</p>
 </div>
