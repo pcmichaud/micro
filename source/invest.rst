@@ -40,6 +40,7 @@ To look yourself at the variation in returns over a long period and across count
 .. |ImageLink| image:: https://colab.research.google.com/assets/colab-badge.svg
 .. _ImageLink: https://drive.google.com/file/d/1T7x8bBfUcJVuP5Ye88znC39ITli0myGM/view?usp=sharing
 
+For the data, you can download it `here <https://drive.google.com/file/d/1JLPHtOWwJNU9y5n_oV__oXGqd-kOLgPY/view?usp=sharing>`_
 
 Turns out lots of people do not invest in stocks. We can make use of data collected by the Retirement Savings Institute in 2018 to look into this. The next histogram shows among respondents age 35-55 in Quebec and Ontario the fraction of total savings in RRSP, TFSA and other taxable accounts which is invested in stocks. As one can see there is a significant group who do not put anything in stocks. There is also a sizeable group which puts everything in stocks. The distribution is relatively uniform within these bounds, with peaks at 20, 50 and 80%.  
 
@@ -68,6 +69,7 @@ You can investigate these differences using this notebook,
 .. |ImageLink2| image:: https://colab.research.google.com/assets/colab-badge.svg
 .. _ImageLink2: https://drive.google.com/file/d/19skw2D7aNR_0N09FAhUGnSajgA1uB-0f/view?usp=sharing 
 
+You can download the data `here <https://drive.google.com/file/d/16slgVaDELOig5pXHWdX6MgxsGaOsv4v5/view?usp=sharing>`_
 
 It is worth asking why only half of savings, and for some even less, is invested in stocks given much higher returns. Obviously, risk aversion could play a role, but how much? This will be one of the topic below.
 
@@ -361,7 +363,18 @@ which can be solved to obtain,
 
 and the share in the safe asset is :math:`1-\sum_{k=1}^K \alpha^*_k`. Two important observations: 1) risk aversion impacts the fraction of risky assets in the portfolio but not the allocation of wealth across risky assets. The same factor :math:`\frac{1}{\gamma}` appears for each risky asset. 2) The optimal allocation of risky asset depends on the returns and covariance matrix of returns only. Take the case where returns are independent. Then the optimal share of risky asset :math:`k` is :math:`\frac{1}{\gamma}\frac{\mu_k - r_s}{\omega_{k,k}}`. The optimal share depends on the risk premium, :math:`mu_k - r_s` and negatively on the variance of the risky asset. Overall the composition of the portfolio does not depend on preference. There is an optimal mix, or mutual fund that agents can pick and only the decision of how much to allocate to this fund depends on preferences. This result is often referred to as the two-fund separation theorem.
 
-The following notebook computes optimal weights for a given set of assets, which includes a safe asset. It considers the SP TSX composite index and the MSCI world index. Hence, these are two diversified indices. When considered jointly, the investor is willing to invest most of his wealth in such a portfolio, achieves higher returns and higher utility. When we restrict only to the SP TSX, the investor has lower utility and in this case lower returns. Hence, even tough the two indices are quite correlated (correlation at monthly level = 0.6), there are still benefits to diversification. The home equity bias is that investors appear to disproportionally prefer home stocks. Using the mean variance model, one can compute the expected return that would be needed to rationalize observed allocations. From the table below, we can see that we would need much higher home returns.  
+The following notebook computes optimal weights for a given set of assets, which includes a safe asset. It considers the SP TSX composite index and the MSCI world index. Hence, these are two diversified indices. When considered jointly, the investor is willing to invest most of his wealth in such a portfolio, achieves higher returns and higher utility. When we restrict only to the SP TSX, the investor has lower utility and in this case lower returns. Hence, even tough the two indices are quite correlated (correlation at monthly level = 0.6), there are still benefits to diversification. 
+
+For the notebook, you can open it here 
+
+|ImageLink3|_
+
+.. |ImageLink3| image:: https://colab.research.google.com/assets/colab-badge.svg
+.. _ImageLink3: https://colab.research.google.com/drive/1WupmSPB1VVFSUCEyoUEk8hNR8Hiqa0Lh?usp=sharing 
+
+You can download the data `here <https://drive.google.com/file/d/1eChtG7thdw8oHymGPev5OcWTy7IBavCM/view?usp=sharing>`_
+
+The home equity bias states that investors appear to disproportionally prefer home stocks. Using the mean variance model, one can compute the expected return that would be needed to rationalize observed allocations. From the table below taken from French and Poterba (1991), we can see that we would need much higher home returns.  
 
 .. figure:: /images/implied-home-bias.png 
    :scale: 125
