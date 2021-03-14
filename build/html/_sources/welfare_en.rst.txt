@@ -4,8 +4,7 @@ Welfare
 We can look at efficiency to look at a policy: does it target the right group, does it have the intended effect and how much does it cost? For example, we could evaluate a policy that increases air quality and leads people to changer their behavior. The economic cost per unit of improvement in air quality may be large. But what can we compare it to? What is the threshold above which the policy does not increase welfare. 
 
 
-Air quality is valued by consumers. Therefore, we can measure benefits from preferences. While many limit themselves to economic and fiscal impacts, benefits may go beyond what we observe in markets. For example, lockdown policies during the pandemic save lives. People value extending life. 
-
+While many limit themselves to economic and fiscal impacts, benefits may go beyond what we observe in markets. Air quality is valued by consumers. Poor air quality lead to health problems, makes our life more difficult. We want to measure benefits from preferences but these are not directly observable This is the fundamental problem of welfare analysis.
 
 Three popular approaches are used  to measure up welfare impacts of policies (benefits and costs): a utilitarian, hicksian and finally one based on self-reported hapinness. 
 
@@ -30,15 +29,15 @@ Recall that :math:`U_1` represents preferences of citizen :math:`1`, but :math:`
 
 The ranking of policies is therefore ambiguous: we can have :math:`\mathcal P_0` ranked better if  :math:`W = U_1 + U_2` while  :math:`\mathcal P_1` is better if we use :math:`W = 2U_1 + U_2`.
 
-In the end, welfare should depend on preferences and not on  :math:`U`. But utilities remain useful in some more restricted capacity.  We can for example define a  **Pareto Improvement**, if utility of all consumers is at least equal to their level before a change in policy, but stricly higher for at least one consumer. If no one looses, and some win, this situation is an improvement in a `Pareto <https://fr.wikipedia.org/wiki/Vilfredo_Pareto>`_ sense. Pareto improvements respect the fact that utility is ordinal.  
+In the end, welfare should depend on preferences and not on  :math:`U`. But utilities remain useful in some more restricted capacity.  We can for example define a  **Pareto Improvement**, if utility of all consumers is at least equal to their level before a change in policy, but stricly higher for at least one consumer. If no one looses, and some win, this situation is an improvement in a `Pareto <https://fr.wikipedia.org/wiki/Vilfredo_Pareto>`_ sense. Pareto improvements respect the fact that utility is ordinal. This is progress on our quest... 
 
 Compensating Variation
 ++++++++++++++++++++++
 
-A promising approach is to quantify welfare in monetary terms using preferences.  `John Hicks <https://fr.wikipedia.org/wiki/John_Hicks>`_ has proposed to use compensating variations. 
+A promising approach is to quantify welfare in monetary terms using preferences.  `John Hicks <https://fr.wikipedia.org/wiki/John_Hicks>`_ has proposed to use compensating variation. Let's see how this works. 
 
 
-For the consumer, what is a policy? A policy  :math:`\mathcal P` affects the budget constraint :math:`C_i(\mathcal P,I_i)` of consumer  :math:`i` (where :math:`I_i` is income).
+We first define what a policy is. For the consumer, what is a policy? A policy  :math:`\mathcal P` affects the budget constraint :math:`C_i(\mathcal P,I_i)` of consumer  :math:`i` (where :math:`I_i` is income).
 
 
 We can use indirect utility as a starting point. The highest level of utility a consumer  :math:`i` can obtain given his budget constraint is:
@@ -50,7 +49,9 @@ Example: Two goods  :math:`X` and :math:`Y`. Utility is :math:`U(X,Y) = \log X +
 .. math::
    U_i^*(\mathcal P,I) = \max_{X,Y} \left[\log X + \log Y: p_X  X + p_Y(1 + \tau) Y \leq I \right]
      
-Denote :math:`\mathcal P_0` the status quo le statut quo and consider implementing a policy  :math:`\mathcal P`. We can define the compensating variation as the amount of money On peut définir la variation :math:`\Delta I^{CV}` such that
+So this is the maximum utility that can be reached with a particular policy. If we assume agents optimize, this is the level of utility reached by consumers with this policy. 
+
+Denote :math:`\mathcal P_0` the status quo le statut quo and consider implementing a policy  :math:`\mathcal P`. We can define the compensating variation as the amount of money :math:`\Delta I^{CV}` such that
 
    .. math::
 
@@ -61,8 +62,9 @@ It is the amount of money we must take away from the consumer to keep his utilit
 Note: we use the sign convention  :math:`\Delta I^{CV}>0` when the policy is *beneficial*, for example a tax rebate, an increase in transfers, an increase in air quality or health.  
 
 **Exercise A**: Find the expression of compensating variation for
-:math:`U = XY` and a tax :math:`\tau` on good  :math:`Y`.
+:math:`U = XY` and a multiplicative tax :math:`\tau` on good  :math:`Y`.
 
+The compensating variation is invariant to monotone transformation of the utility functions, unlike the utilitarism criteria.
 
 :math:`\Delta I^{CV}` only depends on preferences
 
@@ -81,11 +83,11 @@ For any function :math:`f`,
 Special case
 ++++++++++++
 
-Consider preferences for a good :math:`X` and cash :math:`Y`. Preferences are represented by  :math:`U(X,Y) = V(X) + Y`. 
+Consider preferences for a good :math:`X` and cash :math:`Y`. Preferences are represented by  :math:`U(X,Y) = V(X) + Y`. We call those quasi-linear preferences. Since :math:`Y` is cash, we normalize :math:`p_Y=1`.  
 
 The policy in the status quo is :math:`\mathcal P_0`. The consumer picks the allocation  :math:`(X_0, Y_0)`. Now, consider the change  :math:`\mathcal P`. The new optimal choice is  :math:`(X_1, Y_1)`.
 
-In this case, the compensating variation is :math:`\Delta I^{CV}` 
+In this case, the compensating variation is :math:`\Delta I^{CV}`. It implies a loss in cash :math:`Y`.  
 
 .. math::
 
@@ -95,36 +97,36 @@ In this case, the compensating variation is :math:`\Delta I^{CV}`
    \Delta I^{CV} &= V(X_1) + Y_1 - V(X_0) - Y_0 \\
    \Delta I^{CV} &= U(X_1,Y_1) - U(X_0,Y_0)\end{aligned}
 
-The compensating variation is equal to a change in utility. Because of the linearity of utility in cash, utility is in dollars. The MRS is given by: 
+The compensating variation is equal to a change in utility. Because of the linearity of utility in cash, utility is in dollars. Another interesting property is that the MRS, the value of :math:`X` is therefore in dollars and  given by: 
 
 .. math::
-   TMS = \frac{dY}{dX} = - \frac{V'(X)}{1} = -V'(X)
+   MRS = - \frac{V'(X)}{1} = -V'(X)
 
-Since :math:`p_Y=1` in the case where :math:`Y` is cash, :math:`V'(X)` represents the willingness to pay (in dollars) for an additional unit of  :math:`X`.
+Since :math:`p_Y=1` in the case where :math:`Y` is cash, :math:`V'(X)` represents the willingness to pay (in dollars) for an additional unit of  :math:`X`. It defines the inverse demand function since when the consumer optimizes, we have the FOC, :math:`p_X = V'(X)`. 
 
 Consumer Surplus
 ++++++++++++++++
 
-Consider the case of quasi-linear preferences for the good  :math:`X` and cash  :math:`Y`, :math:`U(X,Y) = V(X) + Y`. Let us assume that  :math:`V` is concave (:math:`dV/dX` decreases in :math:`X`). 
+We want to define the value of being able to consume a level of :math:`X` given some price :math:`p_X`. Consider the case of quasi-linear preferences for the good  :math:`X` and cash  :math:`Y`, :math:`U(X,Y) = V(X) + Y`. Let us assume that  :math:`V` is concave (:math:`V'(X)` decreases in :math:`X`). 
 
-The status quo is a situation where the good   :math:`X` cannot be purchased, :math:`\mathcal P_0` and an alternative where :math:`\mathcal P` allows to purchase :math:`X` at price :math:`p_X`. The problem is given by
+The status quo is a situation where the good  :math:`X` cannot be purchased, :math:`\mathcal P_0` and an alternative where :math:`\mathcal P` allows to purchase :math:`X` at price :math:`p_X`. The problem is given by
 
 .. math::
-   \max_{X,Y} U(X,Y) \quad s.t. \quad p_X X + Y = I
+   \max_{X,Y} U(X,Y) \quad s.t. \quad p_X X + Y \leq I
 
-We can substitute the constraint to obtain :math:`\max_{X} V(X) + I - p_X X`. The FOC 
+Since :math:`U` is increasing in both goods, we can substitute the constraint to obtain :math:`\max_{X} V(X) + I - p_X X`. The FOC 
 
 .. math::
    \frac{dV}{dX} =  p_X
 
-which allows to find demand :math:`X^*(p_X)`. Denote :math:`p_X(X^*) = \frac{dV}{dX}`, the inverse demand function. A point on this inverse demand reads as the willingness to pay for an additional unit of :math:`X`.
+which allows to find demand :math:`X^*(p_X)`. Denote :math:`p_X(X) = V'(X)`, the inverse demand function. A point on this inverse demand reads as the willingness to pay for an additional unit of :math:`X`.
 
-In the case of a new product, the compensating variation from  :math:`\mathcal P_0` to :math:`\mathcal P` is consumer surplus.
+In the case of a new product, the compensating variation from  :math:`\mathcal P_0` to :math:`\mathcal P` is defined as consumer surplus:
 
 .. math::
 
    \begin{aligned}
-   \Delta I^{CV} &=& V[X^*(p_X) + I - p_X X^*(p_X)] - [V(0) + I] \\
+   \Delta I^{CV} &=& V(X^*(p_X)) + I - p_X X^*(p_X) - V(0) + I \\
    &=& V(X^*(p_X)) - V(0) - p_X X^*(p_X)\end{aligned}
 
 The first term is the area under the inverse demand curve, from zero to the quantity demanded:
@@ -149,8 +151,7 @@ Welfare and Taxation
 
 Taxation impacts the price paid by the consumer. Therefore, it has effects on welfare (since higher prices lower welfare). Compensated income will help quantify the welfare loss from higher prices (or taxes). 
 
-
-Consider eliminating a tax, the price decreases from  :math:`p_X = p+t` to :math:`p_X = p` . We have :math:`X^*(p) > X^*(p+t)` (we are not in a  *Giffen* good situation). Income from the tax is :math:`T= t X^*(p+t)`. When the government collects a tax, we assume that the revenues are distributed lump-sum (an amount for each consumer, not dependent on actions). From a welfare point of view, revenue collected from the government is not loss (implicitely it funds services, etc). Here we recognize its cash value.
+Consider eliminating a tax, the price decreases from :math:`p_X = p+t` to :math:`p_X = p` . We have :math:`X^*(p) > X^*(p+t)` (we are not in a  *Giffen* good situation). Income from the tax is :math:`T= t X^*(p+t)`. When the government collects a tax, we assume that the revenues are distributed lump-sum (an amount for each consumer, not dependent on actions). From a welfare point of view, revenue collected from the government is not lost (implicitely it funds services, etc). Here we recognize its cash value.
 
 In terms of compensating variation, we have 
 
@@ -174,7 +175,7 @@ Generally, consumers have a positive preference for air quality.
 
 There is no market for air quality. With the  *Clean Air Act* (1977), the American government has put in place a number of regulations which reduce pollution and improve air quality.  
 
-Consider a policy change from :math:`\mathcal P_0`: no control and costs, to :math:`\mathcal P`: pollution controls and costs. The compensating variation should be positrive for consumers if they value air quality. 
+Consider a policy change from :math:`\mathcal P_0`: no control and costs, to :math:`\mathcal P`: pollution controls and costs. The compensating variation should be positive for consumers if they value air quality. 
 
 Empirically, how can recover such a preference?
 
@@ -192,7 +193,7 @@ With this utility function, :math:`V'(X)` represents a willingness to pay for ai
 .. figure:: /images/chay.png
    :scale: 50
 
-Now, how do we evaluate a policy with these informations? The government implements :math:`X_{GOV}`. The total cost of these measures is  :math:`c X_{GOV}` with :math:`c>1` is the marginal cost, including the welfare loss from raising this amount of revenue to fund these measures. 
+Now, how do we evaluate a policy with this information? The government implements :math:`X_{GOV}`. The total cost of these measures is  :math:`c X_{GOV}` where :math:`c>1` is the marginal cost, including the welfare loss from raising this amount of revenue to fund these measures. 
 
 The policy change is from  :math:`(0,0)` to :math:`(X_{GOV}, - c X_{GOV})`. Consumer surplus is the compensating variation:
 

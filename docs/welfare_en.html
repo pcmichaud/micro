@@ -1,7 +1,8 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="fr" >
+<!--[if IE 8]><html class="no-js lt-ie9" lang="fr" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   
@@ -11,18 +12,12 @@
   
 
   
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-
-  
   
   
   
 
   
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -31,12 +26,16 @@
         <script src="_static/doctools.js"></script>
         <script src="_static/language_data.js"></script>
         <script src="_static/translations.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script type="text/x-mathjax-config">MathJax.Hub.Config({"extensions": ["tex2jax.js"], "jax": ["input/TeX", "output/HTML-CSS"], "availableFonts": ["Neo-Euler", "TeX"], "preferredFont": ["Neo-Euler"], "scale": 60})</script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Recherche" href="search.html" />
     <link rel="next" title="Exchange" href="echange_en.html" />
@@ -54,7 +53,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Micro Notes
+            <a href="index.html" class="icon icon-home"> Micro Notes
           
 
           
@@ -68,7 +67,7 @@
           
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Rechercher docs" />
+    <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -77,7 +76,6 @@
           
         </div>
 
-        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -130,12 +128,12 @@
 <li class="toctree-l1"><a class="reference internal" href="anomalies.html">Anomalies</a></li>
 <li class="toctree-l1"><a class="reference internal" href="annuities.html">Annuities</a></li>
 <li class="toctree-l1"><a class="reference internal" href="savings.html">Savings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="invest.html">Investing</a></li>
 </ul>
 
             
           
         </div>
-        
       </div>
     </nav>
 
@@ -174,7 +172,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><a href="index.html">Docs</a> &raquo;</li>
         
       <li>Welfare</li>
     
@@ -182,7 +180,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/welfare_en.rst.txt" rel="nofollow"> Afficher la source de la page</a>
+            <a href="_sources/welfare_en.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -198,7 +196,7 @@
   <div class="section" id="welfare">
 <h1>Welfare<a class="headerlink" href="#welfare" title="Lien permanent vers ce titre">¶</a></h1>
 <p>We can look at efficiency to look at a policy: does it target the right group, does it have the intended effect and how much does it cost? For example, we could evaluate a policy that increases air quality and leads people to changer their behavior. The economic cost per unit of improvement in air quality may be large. But what can we compare it to? What is the threshold above which the policy does not increase welfare.</p>
-<p>Air quality is valued by consumers. Therefore, we can measure benefits from preferences. While many limit themselves to economic and fiscal impacts, benefits may go beyond what we observe in markets. For example, lockdown policies during the pandemic save lives. People value extending life.</p>
+<p>While many limit themselves to economic and fiscal impacts, benefits may go beyond what we observe in markets. Air quality is valued by consumers. Poor air quality lead to health problems, makes our life more difficult. We want to measure benefits from preferences but these are not directly observable This is the fundamental problem of welfare analysis.</p>
 <p>Three popular approaches are used  to measure up welfare impacts of policies (benefits and costs): a utilitarian, hicksian and finally one based on self-reported hapinness.</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="_images/happy.jpeg"><img alt="_images/happy.jpeg" src="_images/happy.jpeg" style="width: 281.0px; height: 180.0px;" /></a>
@@ -212,12 +210,12 @@
 <p>This approach is problematic. It assumes that utility levels are comparable across consumers. But we saw that these are ordinal, that the absolute level has no meaning.
 Recall that <span class="math notranslate nohighlight">\(U_1\)</span> represents preferences of citizen <span class="math notranslate nohighlight">\(1\)</span>, but <span class="math notranslate nohighlight">\(f(U_1)\)</span> represents the same preference for any strictly increasing function <span class="math notranslate nohighlight">\(f\)</span>. There exist an infinite number of utility functions which represent the same preferences. For example, we could rescale utility as  <span class="math notranslate nohighlight">\(2\times U_1\)</span>, which could create an advantage for a policy of this policy is favorable to a particular citizen.</p>
 <p>The ranking of policies is therefore ambiguous: we can have <span class="math notranslate nohighlight">\(\mathcal P_0\)</span> ranked better if  <span class="math notranslate nohighlight">\(W = U_1 + U_2\)</span> while  <span class="math notranslate nohighlight">\(\mathcal P_1\)</span> is better if we use <span class="math notranslate nohighlight">\(W = 2U_1 + U_2\)</span>.</p>
-<p>In the end, welfare should depend on preferences and not on  <span class="math notranslate nohighlight">\(U\)</span>. But utilities remain useful in some more restricted capacity.  We can for example define a  <strong>Pareto Improvement</strong>, if utility of all consumers is at least equal to their level before a change in policy, but stricly higher for at least one consumer. If no one looses, and some win, this situation is an improvement in a <a class="reference external" href="https://fr.wikipedia.org/wiki/Vilfredo_Pareto">Pareto</a> sense. Pareto improvements respect the fact that utility is ordinal.</p>
+<p>In the end, welfare should depend on preferences and not on  <span class="math notranslate nohighlight">\(U\)</span>. But utilities remain useful in some more restricted capacity.  We can for example define a  <strong>Pareto Improvement</strong>, if utility of all consumers is at least equal to their level before a change in policy, but stricly higher for at least one consumer. If no one looses, and some win, this situation is an improvement in a <a class="reference external" href="https://fr.wikipedia.org/wiki/Vilfredo_Pareto">Pareto</a> sense. Pareto improvements respect the fact that utility is ordinal. This is progress on our quest…</p>
 </div>
 <div class="section" id="compensating-variation">
 <h2>Compensating Variation<a class="headerlink" href="#compensating-variation" title="Lien permanent vers ce titre">¶</a></h2>
-<p>A promising approach is to quantify welfare in monetary terms using preferences.  <a class="reference external" href="https://fr.wikipedia.org/wiki/John_Hicks">John Hicks</a> has proposed to use compensating variations.</p>
-<p>For the consumer, what is a policy? A policy  <span class="math notranslate nohighlight">\(\mathcal P\)</span> affects the budget constraint <span class="math notranslate nohighlight">\(C_i(\mathcal P,I_i)\)</span> of consumer  <span class="math notranslate nohighlight">\(i\)</span> (where <span class="math notranslate nohighlight">\(I_i\)</span> is income).</p>
+<p>A promising approach is to quantify welfare in monetary terms using preferences.  <a class="reference external" href="https://fr.wikipedia.org/wiki/John_Hicks">John Hicks</a> has proposed to use compensating variation. Let’s see how this works.</p>
+<p>We first define what a policy is. For the consumer, what is a policy? A policy  <span class="math notranslate nohighlight">\(\mathcal P\)</span> affects the budget constraint <span class="math notranslate nohighlight">\(C_i(\mathcal P,I_i)\)</span> of consumer  <span class="math notranslate nohighlight">\(i\)</span> (where <span class="math notranslate nohighlight">\(I_i\)</span> is income).</p>
 <p>We can use indirect utility as a starting point. The highest level of utility a consumer  <span class="math notranslate nohighlight">\(i\)</span> can obtain given his budget constraint is:</p>
 <blockquote>
 <div><div class="math notranslate nohighlight">
@@ -226,7 +224,8 @@ Recall that <span class="math notranslate nohighlight">\(U_1\)</span> represents
 <p>Example: Two goods  <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span>. Utility is <span class="math notranslate nohighlight">\(U(X,Y) = \log X + \log Y\)</span>. A policy <span class="math notranslate nohighlight">\(\mathcal P\)</span>: implements a multiplicative tax <span class="math notranslate nohighlight">\(\tau\)</span> on the price of <span class="math notranslate nohighlight">\(Y\)</span>. Indirect utility is given by:</p>
 <div class="math notranslate nohighlight">
 \[U_i^*(\mathcal P,I) = \max_{X,Y} \left[\log X + \log Y: p_X  X + p_Y(1 + \tau) Y \leq I \right]\]</div>
-<p>Denote <span class="math notranslate nohighlight">\(\mathcal P_0\)</span> the status quo le statut quo and consider implementing a policy  <span class="math notranslate nohighlight">\(\mathcal P\)</span>. We can define the compensating variation as the amount of money On peut définir la variation <span class="math notranslate nohighlight">\(\Delta I^{CV}\)</span> such that</p>
+<p>So this is the maximum utility that can be reached with a particular policy. If we assume agents optimize, this is the level of utility reached by consumers with this policy.</p>
+<p>Denote <span class="math notranslate nohighlight">\(\mathcal P_0\)</span> the status quo le statut quo and consider implementing a policy  <span class="math notranslate nohighlight">\(\mathcal P\)</span>. We can define the compensating variation as the amount of money <span class="math notranslate nohighlight">\(\Delta I^{CV}\)</span> such that</p>
 <blockquote>
 <div><div class="math notranslate nohighlight">
 \[U^*(\mathcal P_0,I) = U^*(\mathcal P,I - \Delta I^{CV})\]</div>
@@ -234,7 +233,8 @@ Recall that <span class="math notranslate nohighlight">\(U_1\)</span> represents
 <p>It is the amount of money we must take away from the consumer to keep his utility constant at the level found under the status quo.</p>
 <p>Note: we use the sign convention  <span class="math notranslate nohighlight">\(\Delta I^{CV}&gt;0\)</span> when the policy is <em>beneficial</em>, for example a tax rebate, an increase in transfers, an increase in air quality or health.</p>
 <p><strong>Exercise A</strong>: Find the expression of compensating variation for
-<span class="math notranslate nohighlight">\(U = XY\)</span> and a tax <span class="math notranslate nohighlight">\(\tau\)</span> on good  <span class="math notranslate nohighlight">\(Y\)</span>.</p>
+<span class="math notranslate nohighlight">\(U = XY\)</span> and a multiplicative tax <span class="math notranslate nohighlight">\(\tau\)</span> on good  <span class="math notranslate nohighlight">\(Y\)</span>.</p>
+<p>The compensating variation is invariant to monotone transformation of the utility functions, unlike the utilitarism criteria.</p>
 <p><span class="math notranslate nohighlight">\(\Delta I^{CV}\)</span> only depends on preferences</p>
 <blockquote>
 <div><div class="math notranslate nohighlight">
@@ -250,34 +250,34 @@ Recall that <span class="math notranslate nohighlight">\(U_1\)</span> represents
 </div>
 <div class="section" id="special-case">
 <h2>Special case<a class="headerlink" href="#special-case" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Consider preferences for a good <span class="math notranslate nohighlight">\(X\)</span> and cash <span class="math notranslate nohighlight">\(Y\)</span>. Preferences are represented by  <span class="math notranslate nohighlight">\(U(X,Y) = V(X) + Y\)</span>.</p>
+<p>Consider preferences for a good <span class="math notranslate nohighlight">\(X\)</span> and cash <span class="math notranslate nohighlight">\(Y\)</span>. Preferences are represented by  <span class="math notranslate nohighlight">\(U(X,Y) = V(X) + Y\)</span>. We call those quasi-linear preferences. Since <span class="math notranslate nohighlight">\(Y\)</span> is cash, we normalize <span class="math notranslate nohighlight">\(p_Y=1\)</span>.</p>
 <p>The policy in the status quo is <span class="math notranslate nohighlight">\(\mathcal P_0\)</span>. The consumer picks the allocation  <span class="math notranslate nohighlight">\((X_0, Y_0)\)</span>. Now, consider the change  <span class="math notranslate nohighlight">\(\mathcal P\)</span>. The new optimal choice is  <span class="math notranslate nohighlight">\((X_1, Y_1)\)</span>.</p>
-<p>In this case, the compensating variation is <span class="math notranslate nohighlight">\(\Delta I^{CV}\)</span></p>
+<p>In this case, the compensating variation is <span class="math notranslate nohighlight">\(\Delta I^{CV}\)</span>. It implies a loss in cash <span class="math notranslate nohighlight">\(Y\)</span>.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
 U(X_0,Y_0) &amp;= U(X_1, Y_1- \Delta I^{CV}) \\
 V(X_0) + Y_0 &amp;= V(X_1) + Y_1 - \Delta I^{CV} \\
 \Delta I^{CV} &amp;= V(X_1) + Y_1 - V(X_0) - Y_0 \\
 \Delta I^{CV} &amp;= U(X_1,Y_1) - U(X_0,Y_0)\end{aligned}\end{split}\]</div>
-<p>The compensating variation is equal to a change in utility. Because of the linearity of utility in cash, utility is in dollars. The MRS is given by:</p>
+<p>The compensating variation is equal to a change in utility. Because of the linearity of utility in cash, utility is in dollars. Another interesting property is that the MRS, the value of <span class="math notranslate nohighlight">\(X\)</span> is therefore in dollars and  given by:</p>
 <div class="math notranslate nohighlight">
-\[TMS = \frac{dY}{dX} = - \frac{V'(X)}{1} = -V'(X)\]</div>
-<p>Since <span class="math notranslate nohighlight">\(p_Y=1\)</span> in the case where <span class="math notranslate nohighlight">\(Y\)</span> is cash, <span class="math notranslate nohighlight">\(V'(X)\)</span> represents the willingness to pay (in dollars) for an additional unit of  <span class="math notranslate nohighlight">\(X\)</span>.</p>
+\[MRS = - \frac{V'(X)}{1} = -V'(X)\]</div>
+<p>Since <span class="math notranslate nohighlight">\(p_Y=1\)</span> in the case where <span class="math notranslate nohighlight">\(Y\)</span> is cash, <span class="math notranslate nohighlight">\(V'(X)\)</span> represents the willingness to pay (in dollars) for an additional unit of  <span class="math notranslate nohighlight">\(X\)</span>. It defines the inverse demand function since when the consumer optimizes, we have the FOC, <span class="math notranslate nohighlight">\(p_X = V'(X)\)</span>.</p>
 </div>
 <div class="section" id="consumer-surplus">
 <h2>Consumer Surplus<a class="headerlink" href="#consumer-surplus" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Consider the case of quasi-linear preferences for the good  <span class="math notranslate nohighlight">\(X\)</span> and cash  <span class="math notranslate nohighlight">\(Y\)</span>, <span class="math notranslate nohighlight">\(U(X,Y) = V(X) + Y\)</span>. Let us assume that  <span class="math notranslate nohighlight">\(V\)</span> is concave (<span class="math notranslate nohighlight">\(dV/dX\)</span> decreases in <span class="math notranslate nohighlight">\(X\)</span>).</p>
-<p>The status quo is a situation where the good   <span class="math notranslate nohighlight">\(X\)</span> cannot be purchased, <span class="math notranslate nohighlight">\(\mathcal P_0\)</span> and an alternative where <span class="math notranslate nohighlight">\(\mathcal P\)</span> allows to purchase <span class="math notranslate nohighlight">\(X\)</span> at price <span class="math notranslate nohighlight">\(p_X\)</span>. The problem is given by</p>
+<p>We want to define the value of being able to consume a level of <span class="math notranslate nohighlight">\(X\)</span> given some price <span class="math notranslate nohighlight">\(p_X\)</span>. Consider the case of quasi-linear preferences for the good  <span class="math notranslate nohighlight">\(X\)</span> and cash  <span class="math notranslate nohighlight">\(Y\)</span>, <span class="math notranslate nohighlight">\(U(X,Y) = V(X) + Y\)</span>. Let us assume that  <span class="math notranslate nohighlight">\(V\)</span> is concave (<span class="math notranslate nohighlight">\(V'(X)\)</span> decreases in <span class="math notranslate nohighlight">\(X\)</span>).</p>
+<p>The status quo is a situation where the good  <span class="math notranslate nohighlight">\(X\)</span> cannot be purchased, <span class="math notranslate nohighlight">\(\mathcal P_0\)</span> and an alternative where <span class="math notranslate nohighlight">\(\mathcal P\)</span> allows to purchase <span class="math notranslate nohighlight">\(X\)</span> at price <span class="math notranslate nohighlight">\(p_X\)</span>. The problem is given by</p>
 <div class="math notranslate nohighlight">
-\[\max_{X,Y} U(X,Y) \quad s.t. \quad p_X X + Y = I\]</div>
-<p>We can substitute the constraint to obtain <span class="math notranslate nohighlight">\(\max_{X} V(X) + I - p_X X\)</span>. The FOC</p>
+\[\max_{X,Y} U(X,Y) \quad s.t. \quad p_X X + Y \leq I\]</div>
+<p>Since <span class="math notranslate nohighlight">\(U\)</span> is increasing in both goods, we can substitute the constraint to obtain <span class="math notranslate nohighlight">\(\max_{X} V(X) + I - p_X X\)</span>. The FOC</p>
 <div class="math notranslate nohighlight">
 \[\frac{dV}{dX} =  p_X\]</div>
-<p>which allows to find demand <span class="math notranslate nohighlight">\(X^*(p_X)\)</span>. Denote <span class="math notranslate nohighlight">\(p_X(X^*) = \frac{dV}{dX}\)</span>, the inverse demand function. A point on this inverse demand reads as the willingness to pay for an additional unit of <span class="math notranslate nohighlight">\(X\)</span>.</p>
-<p>In the case of a new product, the compensating variation from  <span class="math notranslate nohighlight">\(\mathcal P_0\)</span> to <span class="math notranslate nohighlight">\(\mathcal P\)</span> is consumer surplus.</p>
+<p>which allows to find demand <span class="math notranslate nohighlight">\(X^*(p_X)\)</span>. Denote <span class="math notranslate nohighlight">\(p_X(X) = V'(X)\)</span>, the inverse demand function. A point on this inverse demand reads as the willingness to pay for an additional unit of <span class="math notranslate nohighlight">\(X\)</span>.</p>
+<p>In the case of a new product, the compensating variation from  <span class="math notranslate nohighlight">\(\mathcal P_0\)</span> to <span class="math notranslate nohighlight">\(\mathcal P\)</span> is defined as consumer surplus:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
-\Delta I^{CV} &amp;=&amp; V[X^*(p_X) + I - p_X X^*(p_X)] - [V(0) + I] \\
+\Delta I^{CV} &amp;=&amp; V(X^*(p_X)) + I - p_X X^*(p_X) - V(0) + I \\
 &amp;=&amp; V(X^*(p_X)) - V(0) - p_X X^*(p_X)\end{aligned}\end{split}\]</div>
 <p>The first term is the area under the inverse demand curve, from zero to the quantity demanded:</p>
 <div class="math notranslate nohighlight">
@@ -295,7 +295,7 @@ V(X_0) + Y_0 &amp;= V(X_1) + Y_1 - \Delta I^{CV} \\
 <a class="reference internal image-reference" href="_images/tax.jpeg"><img alt="_images/tax.jpeg" src="_images/tax.jpeg" style="width: 182.5px; height: 69.0px;" /></a>
 </div>
 <p>Taxation impacts the price paid by the consumer. Therefore, it has effects on welfare (since higher prices lower welfare). Compensated income will help quantify the welfare loss from higher prices (or taxes).</p>
-<p>Consider eliminating a tax, the price decreases from  <span class="math notranslate nohighlight">\(p_X = p+t\)</span> to <span class="math notranslate nohighlight">\(p_X = p\)</span> . We have <span class="math notranslate nohighlight">\(X^*(p) &gt; X^*(p+t)\)</span> (we are not in a  <em>Giffen</em> good situation). Income from the tax is <span class="math notranslate nohighlight">\(T= t X^*(p+t)\)</span>. When the government collects a tax, we assume that the revenues are distributed lump-sum (an amount for each consumer, not dependent on actions). From a welfare point of view, revenue collected from the government is not loss (implicitely it funds services, etc). Here we recognize its cash value.</p>
+<p>Consider eliminating a tax, the price decreases from <span class="math notranslate nohighlight">\(p_X = p+t\)</span> to <span class="math notranslate nohighlight">\(p_X = p\)</span> . We have <span class="math notranslate nohighlight">\(X^*(p) &gt; X^*(p+t)\)</span> (we are not in a  <em>Giffen</em> good situation). Income from the tax is <span class="math notranslate nohighlight">\(T= t X^*(p+t)\)</span>. When the government collects a tax, we assume that the revenues are distributed lump-sum (an amount for each consumer, not dependent on actions). From a welfare point of view, revenue collected from the government is not lost (implicitely it funds services, etc). Here we recognize its cash value.</p>
 <p>In terms of compensating variation, we have</p>
 <blockquote>
 <div><div class="math notranslate nohighlight">
@@ -312,7 +312,7 @@ V(X_0) + Y_0 &amp;= V(X_1) + Y_1 - \Delta I^{CV} \\
 <a class="reference internal image-reference" href="_images/china_pollution.jpg"><img alt="_images/china_pollution.jpg" src="_images/china_pollution.jpg" style="width: 330.0px; height: 185.5px;" /></a>
 </div>
 <p>There is no market for air quality. With the  <em>Clean Air Act</em> (1977), the American government has put in place a number of regulations which reduce pollution and improve air quality.</p>
-<p>Consider a policy change from <span class="math notranslate nohighlight">\(\mathcal P_0\)</span>: no control and costs, to <span class="math notranslate nohighlight">\(\mathcal P\)</span>: pollution controls and costs. The compensating variation should be positrive for consumers if they value air quality.</p>
+<p>Consider a policy change from <span class="math notranslate nohighlight">\(\mathcal P_0\)</span>: no control and costs, to <span class="math notranslate nohighlight">\(\mathcal P\)</span>: pollution controls and costs. The compensating variation should be positive for consumers if they value air quality.</p>
 <p>Empirically, how can recover such a preference?</p>
 <p>We can aim to find a situation where consumers had to face a trade-off between pollution and income (wealth). For example, the decision to purchase a home may depend on the price of the home but also air quality of the neighborhood. Price and air quality vary inside a city. In a market, prices should be higher if air quality is higher if consumers value air quality.</p>
 <p>Using data from real estate transactions, we can determine the value given to air quality. Define <span class="math notranslate nohighlight">\(X\)</span> as air quality,  (e.g. air particule concentration) We might want to assume preferences are given by:</p>
@@ -323,7 +323,7 @@ V(X_0) + Y_0 &amp;= V(X_1) + Y_1 - \Delta I^{CV} \\
 <div class="figure align-default">
 <a class="reference internal image-reference" href="_images/chay.png"><img alt="_images/chay.png" src="_images/chay.png" style="width: 514.0px; height: 581.0px;" /></a>
 </div>
-<p>Now, how do we evaluate a policy with these informations? The government implements <span class="math notranslate nohighlight">\(X_{GOV}\)</span>. The total cost of these measures is  <span class="math notranslate nohighlight">\(c X_{GOV}\)</span> with <span class="math notranslate nohighlight">\(c&gt;1\)</span> is the marginal cost, including the welfare loss from raising this amount of revenue to fund these measures.</p>
+<p>Now, how do we evaluate a policy with this information? The government implements <span class="math notranslate nohighlight">\(X_{GOV}\)</span>. The total cost of these measures is  <span class="math notranslate nohighlight">\(c X_{GOV}\)</span> where <span class="math notranslate nohighlight">\(c&gt;1\)</span> is the marginal cost, including the welfare loss from raising this amount of revenue to fund these measures.</p>
 <p>The policy change is from  <span class="math notranslate nohighlight">\((0,0)\)</span> to <span class="math notranslate nohighlight">\((X_{GOV}, - c X_{GOV})\)</span>. Consumer surplus is the compensating variation:</p>
 <div class="math notranslate nohighlight">
 \[\Delta I^{CV} =  V(X_{GOV}) - V(0) - c X_{GOV} .\]</div>
@@ -376,10 +376,10 @@ Proceedings</a></span><a class="headerlink" href="#id2" title="Lien permanent ve
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="echange_en.html" class="btn btn-neutral float-right" title="Exchange" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="echange_en.html" class="btn btn-neutral float-right" title="Exchange" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="labor_en.html" class="btn btn-neutral float-left" title="Labor Supply" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Précédent</a>
+        <a href="labor_en.html" class="btn btn-neutral float-left" title="Labor Supply" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -388,19 +388,11 @@ Proceedings</a></span><a class="headerlink" href="#id2" title="Lien permanent ve
 
   <div role="contentinfo">
     <p>
-        
         &copy; Copyright 2020, Pierre-Carl Michaud
 
     </p>
   </div>
-    
-    
-    
-    Compilé avec <a href="http://sphinx-doc.org/">Sphinx</a> en utilisant un
-    
-    <a href="https://github.com/rtfd/sphinx_rtd_theme">thème</a>
-    
-    fourni par <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -411,6 +403,7 @@ Proceedings</a></span><a class="headerlink" href="#id2" title="Lien permanent ve
 
   </div>
   
+
 
   <script type="text/javascript">
       jQuery(function () {
