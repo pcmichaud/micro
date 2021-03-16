@@ -1,10 +1,10 @@
 Welfare
 -------
 
-We can look at efficiency to look at a policy: does it target the right group, does it have the intended effect and how much does it cost? For example, we could evaluate a policy that increases air quality and leads people to changer their behavior. The economic cost per unit of improvement in air quality may be large. But what can we compare it to? What is the threshold above which the policy does not increase welfare. 
+We can look at a policy using efficiency: does it target the right group, does it have the intended effect and how much does it cost? For example, we could evaluate a policy that increases air quality and leads people to changer their behavior. The economic cost per unit of improvement in air quality may be large. But what can we compare it to? What is the threshold above which the policy does not increase welfare. 
 
 
-While many limit themselves to economic and fiscal impacts, benefits may go beyond what we observe in markets. Air quality is valued by consumers. Poor air quality lead to health problems, makes our life more difficult. We want to measure benefits from preferences but these are not directly observable This is the fundamental problem of welfare analysis.
+While many limit themselves to economic and fiscal impacts, benefits may go beyond what we observe in markets. Air quality is valued by consumers. Poor air quality lead to health problems, makes our life more difficult. We want to measure benefits from preferences but these are not directly observable. This is the fundamental problem of welfare analysis.
 
 Three popular approaches are used  to measure up welfare impacts of policies (benefits and costs): a utilitarian, hicksian and finally one based on self-reported hapinness. 
 
@@ -126,7 +126,7 @@ In the case of a new product, the compensating variation from  :math:`\mathcal P
 .. math::
 
    \begin{aligned}
-   \Delta I^{CV} &=& V(X^*(p_X)) + I - p_X X^*(p_X) - V(0) + I \\
+   \Delta I^{CV} &=& V(X^*(p_X)) + I - p_X X^*(p_X) - V(0) - I \\
    &=& V(X^*(p_X)) - V(0) - p_X X^*(p_X)\end{aligned}
 
 The first term is the area under the inverse demand curve, from zero to the quantity demanded:
