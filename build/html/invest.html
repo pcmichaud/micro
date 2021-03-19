@@ -1,8 +1,7 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="fr" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
+<html class="writer-html5" lang="fr" >
 <head>
   <meta charset="utf-8">
   
@@ -12,12 +11,18 @@
   
 
   
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
   
   
   
 
   
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -26,16 +31,12 @@
         <script src="_static/doctools.js"></script>
         <script src="_static/language_data.js"></script>
         <script src="_static/translations.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script type="text/x-mathjax-config">MathJax.Hub.Config({"extensions": ["tex2jax.js"], "jax": ["input/TeX", "output/HTML-CSS"], "availableFonts": ["Neo-Euler", "TeX"], "preferredFont": ["Neo-Euler"], "scale": 60})</script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Recherche" href="search.html" />
     <link rel="prev" title="Savings" href="savings.html" /> 
@@ -52,7 +53,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home"> Micro Notes
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Micro Notes
           
 
           
@@ -66,7 +67,7 @@
           
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Rechercher docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -75,6 +76,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -135,6 +137,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -173,7 +176,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html">Docs</a> &raquo;</li>
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
       <li>Investing</li>
     
@@ -181,7 +184,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/invest.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/invest.rst.txt" rel="nofollow"> Afficher la source de la page</a>
           
         
       </li>
@@ -275,7 +278,7 @@
 <p>We have also seen that the share invested in stocks increases with savings, which violates the prediction of the simple unless risk aversion declines with savings in the data (those who are most risk averse accumulate more savings). This is a point forcelly made by <a class="reference external" href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1542-4774.2011.01046.x">Chiappori and Paiella (2011)</a> who argue that it difficult to test whether risk aversion decreases with wealth using cross-sectional revealed preferences data since the observed relationship can be explained by both declining risk aversion as a function of wealth as well as a joint distribution of wealth and preferences. When using changes in wealth and the share invested in stocks, they cannot reject the null that the share invested in stock does not respond to changes in wealth.</p>
 <div class="section" id="risk-aversion">
 <h3>Risk Aversion<a class="headerlink" href="#risk-aversion" title="Lien permanent vers ce titre">¶</a></h3>
-<p>How do we know if a value of 4.4 for <cite>:math:gamma</cite> is a reasonable value? Turns out there is a large literature trying to elicit values of risk aversion using experimental methods. One of the most famous study was conducted by <a class="reference external" href="https://www.aeaweb.org/articles?id=10.1257/000282802762024700">Holt and Laury (2002)</a> using Multiple price lists. Below is a Table showing the lotteries agents are presented.</p>
+<p>How do we know if a value of 4.4 for <span class="math notranslate nohighlight">\(\gamma\)</span> is a reasonable value? Turns out there is a large literature trying to elicit values of risk aversion using experimental methods. One of the most famous study was conducted by <a class="reference external" href="https://www.aeaweb.org/articles?id=10.1257/000282802762024700">Holt and Laury (2002)</a> using Multiple price lists. Below is a Table showing the lotteries agents are presented.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/lotteries.png"><img alt="_images/lotteries.png" src="_images/lotteries.png" style="width: 461.0px; height: 209.0px;" /></a>
 </div>
@@ -287,8 +290,8 @@
 <p>Source: <a class="reference external" href="https://www.aeaweb.org/articles?id=10.1257/000282802762024700">Holt and Laury (2002)</a></p>
 <p>In terms of hypothetical vs. real incentives, they show that there is a higher prevalence of risk loving subjects when using hypothetical lotteries. There is also more risk aversion when the real incentives are larger.</p>
 <p>Values from Holt and Laury appear lower than the 4.4 value for <span class="math notranslate nohighlight">\(\gamma\)</span> needed to match the observed share invested in stocks. Boyer, d’Astous and Michaud (forthcoming) perform a preference elicitation exercise as in Holt and Laury with small real payoffs. The RSI dataset we used above to compute facts contains an estimate of relative risk aversion from this proceduce for each respondent. The average estimate of <span class="math notranslate nohighlight">\(\gamma\)</span> is 0.6. At this level of risk aversion, the predicted share is well above one and suggest that respondents should even be willing to borrow to invest with this risk premium on stocks. Hence, the expected utility model with CRRA preferences could not explain the facts we obtained from the data.</p>
-<p>The equity premium puzzle follows from the fact that given a reasonable level of risk aversion, we should observe more much investment in risky assets. The puzzle was first discussed in <a class="reference external" href="https://www.sciencedirect.com/science/article/abs/pii/0304393285900613">Mehra and Prescott (1985)</a>. It has lead to a very large literature which we will not cover. But we will look at two important behavioral explanations for this puzzle.</p>
-<p>Another interesting puzzle is that the fact that the share of stocks increases sharply with total savings does not appear to be due to decreasing risk aversion, or at least that this can explain very little of what we find in the survey. The next figure shows the average estimate of risk aversion by savings quintile. While there is some evidence of a decline, this decline is relately small and estimates are relatively flat starting in the 4th decile. Hence, the increase in the share of risky assets apparent in the data does not appear to be due to declining risk aversion.</p>
+<p>The equity premium puzzle follows from the fact that given a reasonable level of risk aversion, we should observe more much investment in risky assets. The puzzle was first discussed in <a class="reference external" href="https://www.sciencedirect.com/science/article/abs/pii/0304393285900613">Mehra and Prescott (1985)</a>. It has lead to a very large literature which we will not have space to cover. But we will look at two important behavioral explanations for this puzzle.</p>
+<p>Finally, another interesting puzzle is that the fact that the share of stocks increases sharply with total savings does not appear to be due to decreasing risk aversion, or at least that this can explain very little of what we find in the survey. The next figure shows the average estimate of risk aversion by savings quintile. While there is some evidence of a decline, this decline is relately small and estimates are relatively flat starting in the 4th decile. Hence, the increase in the share of risky assets apparent in the data does not appear to be due to declining risk aversion.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/sigma-gradient.png"><img alt="_images/sigma-gradient.png" src="_images/sigma-gradient.png" style="width: 432.0px; height: 288.0px;" /></a>
 </div>
@@ -296,21 +299,21 @@
 </div>
 <div class="section" id="participation-costs">
 <h3>Participation Costs<a class="headerlink" href="#participation-costs" title="Lien permanent vers ce titre">¶</a></h3>
-<p>One way of explaining the behavior of those who do not invest anything in stocks is to introduce participation costs. These can be real (cost of opening a trading account, etc) or psychological, perhaps due to present-bias. <a class="reference external" href="https://www-nber-org.proxy2.hec.ca/papers/w8884">Vissing-Jorgensen (2002)</a> explores this idea and shows small participation costs can make a large difference.</p>
+<p>One way of explaining the behavior of those who do not invest anything in stocks is to introduce participation costs. These can be real (cost of opening a trading account, etc) or psychological, perhaps due to present-bias. <a class="reference external" href="https://www-nber-org.proxy2.hec.ca/papers/w8884">Vissing-Jorgensen (2002)</a> explores this idea and shows small participation costs can explain non-participation.</p>
 <p>We can adapt our framework to seek the participation costs that would act as a lower bound that rationalizes the decision of our respondents. A respondent is indifferent between participating in stocks and not participating provided</p>
 <div class="math notranslate nohighlight">
 \[u_i(w_i(1+r_s)) = E_r u_i(w_i(1+r_s) + \alpha_i (\tilde{r}-r_s) - \tau_i)\]</div>
-<p>Conditional on participating, the optimal share is <span class="math notranslate nohighlight">\(\alpha_i = w_i\)</span> given what the risk aversion parameters we observe. Hence, the idea is to solve for <span class="math notranslate nohighlight">\(\tau_i\)</span>, the participation cost that make this an equality for those who do not invest in stocks. One way to do this is to use a normal distributions for returns. The notebook computes estimates of participation costs. Only a quarter of non-participants have costs lower than 150$, half lower than 755$. Hence, more than half require participation costs larger than 1000$ to rationalize their choices. Given how easy it is these days to buy an ETF fund using internet platforms for free, these participation costs remain a puzzle.</p>
+<p>where <span class="math notranslate nohighlight">\(\tau_i\)</span> is a participation cost.  Conditional on participating, the optimal share is <span class="math notranslate nohighlight">\(\alpha_i = w_i\)</span> given what the risk aversion parameters we observe. Hence, the idea is to solve for <span class="math notranslate nohighlight">\(\tau_i\)</span>, the participation cost that make this an equality for those who do not invest in stocks. One way to do this is to use a normal distributions for returns. The notebook below computes estimates of participation costs. Only a quarter of non-participants have costs lower than 150$, half lower than 755$. Hence, more than half require participation costs larger than 1000$ to rationalize their choices. Given how easy it is these days to buy an ETF fund using internet platforms for free, these participation costs remain a puzzle for this group.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/participation_costs.png"><img alt="_images/participation_costs.png" src="_images/participation_costs.png" style="width: 432.0px; height: 288.0px;" /></a>
 </div>
 <p>Source: <a class="reference external" href="https://dataverse.scholarsportal.info/dataset.xhtml?persistentId=doi:10.5683/SP2/UTJDYA">RSI Survey on Retirement Savings Vehicles</a>, Quebec and Ontario age 35-55. This extract contains data from 1305 respondents with positive savings in RRSP, TFSA or other taxable accounts. Here only those with no stocks are included.</p>
-<p>An important problem with this explanation is that participation costs cannot explain sub-optimal allocation to risky assets conditional on participating.</p>
+<p>An important problem with this explanation is that participation costs cannot explain sub-optimal allocation to risky assets conditional on participating. Overall, while appealing, participation costs are a bit of a black box explanation for non-participation and not a good explanation for weights observed in the data.</p>
 </div>
 <div class="section" id="ambiguity-aversion">
 <h3>Ambiguity Aversion<a class="headerlink" href="#ambiguity-aversion" title="Lien permanent vers ce titre">¶</a></h3>
 <p>Turns out few of us know the distribution of returns and there is uncertainty about that distribution, in particular prospectively. The Ellsberg paradox shows that subjects dislike ambiguity, or the fact that probability distributions over states of the world are uncertain. When this happens, an action that involves an increase in ambiguity about the distribution of wealth will be of low value to that investor.</p>
-<p>Here is how the Ellsberg paradox is shown. An urn consist 90 balls. 30 are red. The other 60 are either black or white. The proportion of white and black balls is not know. We ask you to make a choice between these lotteries:</p>
+<p>Here is how the Ellsberg paradox was shown. An urn consist 90 balls. 30 are red. The other 60 are either black or white. The proportion of white and black balls is not know. We ask you to make a choice between these lotteries:</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 39%" />
@@ -362,11 +365,11 @@
 </tr>
 </tbody>
 </table>
-<p>In the lab, lots will prefer L1 to L2 and then L4 to L3. But this is a violation of expected utility for any prior someone might have about the proportion of white and black balls. Both L1 and L4 have no ambiguity regarding payoffs while both L2 and L3 do. Hence, subjects exhibit ambiguity aversion.</p>
-<p>One way to account for ambiguity aversion is to consider so-called multiple-prior models (Gilboa and Schmeider, 1989). In such models, agents are not sure what the distribution of risk is. For each state <span class="math notranslate nohighlight">\(s\)</span> the probability could take <span class="math notranslate nohighlight">\(M\)</span> possible values, <span class="math notranslate nohighlight">\(P^m = {p_s^m}_{m=1,...,M}\)</span>. They attach a probability <span class="math notranslate nohighlight">\(q_m\)</span> that each distribution is the correct one. Under expected utility, this uncertainty does not matter because this is nothing else than a compound lottery. Hence, choices should still respect axioms of expected utility. An extreme form of ambiguity aversion preferences takes the form,</p>
+<p>In the lab, lots will prefer L1 to L2 and then L4 to L3. But this is a violation of expected utility for any prior someone might have about the proportion of white and black balls (you can verify this easily). Both L1 and L4 have no ambiguity regarding payoffs while both L2 and L3 do. Hence, subjects exhibit ambiguity aversion.</p>
+<p>One way to account for ambiguity aversion is to consider so-called multiple-prior models (Gilboa and Schmeider, 1989). In such models, agents are not sure what the distribution of risk is. For each state <span class="math notranslate nohighlight">\(s\)</span> the probability could take <span class="math notranslate nohighlight">\(M\)</span> possible values, <span class="math notranslate nohighlight">\(P^m = {p_s^m}_{m=1,...,M}\)</span>. They attach a probability <span class="math notranslate nohighlight">\(q_m\)</span> that each distribution is the correct one. Under expected utility, this uncertainty does not matter because this is nothing else than a compound lottery and expected utility is linear in the probabilities. Hence, this just leads to a different weighting of the same final utilities in each states of the world.  Hence, choices should still respect axioms of expected utility. An extreme form of ambiguity aversion preferences takes the form,</p>
 <div class="math notranslate nohighlight">
 \[V = \min_{m=1}^M \sum_{s=1}^S p_s^m u(w_s)\]</div>
-<p>These are called maximin preferences. The investor considers the worst possible distribution in terms of expected utility. One can easily show that these can explain the pattern L1 preferred to L2 and L4 to L3 above. A smooth version of ambiguity aversion was proposed by <a class="reference external" href="https://www-jstor-org.proxy2.hec.ca/stable/3598753?seq=1#metadata_info_tab_contents">Kilbanoff, Marinacci and Mukerji (KMM) (2005)</a>. If an investor has such preferences, the end result is that the investor is less likely to participate in the stock market if his priors are diffuse (the worst distribution is pretty bad in terms of investment results).</p>
+<p>These are called maximin preferences. The investor considers the worst possible distribution in terms of expected utility. One can easily show that these can explain the pattern L1 preferred to L2 and L4 to L3 above. A smooth version of ambiguity aversion was proposed by <a class="reference external" href="https://www-jstor-org.proxy2.hec.ca/stable/3598753?seq=1#metadata_info_tab_contents">Kilbanoff, Marinacci and Mukerji (KMM) (2005)</a>. If an investor has such preferences, the end result is that the investor is less likely to participate in the stock market if his priors are diffuse (the worst distribution is pretty bad in terms of investment results). She will also invest less in stocks.</p>
 <p>But how to measure ambiguity aversion? <a class="reference external" href="https://www-sciencedirect-com.proxy2.hec.ca/science/article/pii/S0304405X16000040">Dimmock et al. (2016)</a> propose a matching probability strategy. They provide subjects with a choice between,</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/matching.png"><img alt="_images/matching.png" src="_images/matching.png" style="width: 633.0px; height: 514.0px;" /></a>
@@ -382,6 +385,7 @@
 <a class="reference internal image-reference" href="_images/ambiguity-participate.png"><img alt="_images/ambiguity-participate.png" src="_images/ambiguity-participate.png" style="width: 311.0px; height: 358.0px;" /></a>
 </div>
 <p>Source:<a class="reference external" href="https://www-sciencedirect-com.proxy2.hec.ca/science/article/pii/S0304405X16000040">Dimmock et al. (2016)</a></p>
+<p>This theory shows promise to explain the puzzle. Many unexplored avenues for research exist in this stream. For example, one could elicit multiple priors from respondents. Another interesting avenue would be to relate ambiguity aversion to financial literacy. Perhaps one of the function of financial literacy is to reduce ambiguity.</p>
 </div>
 <div class="section" id="myopic-loss-aversion">
 <h3>Myopic Loss Aversion<a class="headerlink" href="#myopic-loss-aversion" title="Lien permanent vers ce titre">¶</a></h3>
@@ -478,7 +482,7 @@ The first observation is that subjects in experiments tend to value gains and lo
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
       
-        <a href="savings.html" class="btn btn-neutral float-left" title="Savings" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="savings.html" class="btn btn-neutral float-left" title="Savings" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Précédent</a>
       
     </div>
   
@@ -487,11 +491,19 @@ The first observation is that subjects in experiments tend to value gains and lo
 
   <div role="contentinfo">
     <p>
+        
         &copy; Copyright 2020, Pierre-Carl Michaud
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Compilé avec <a href="http://sphinx-doc.org/">Sphinx</a> en utilisant un
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">thème</a>
+    
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -502,7 +514,6 @@ The first observation is that subjects in experiments tend to value gains and lo
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

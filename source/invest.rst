@@ -144,7 +144,7 @@ We have also seen that the share invested in stocks increases with savings, whic
 Risk Aversion
 ~~~~~~~~~~~~~
 
-How do we know if a value of 4.4 for `:math:\gamma` is a reasonable value? Turns out there is a large literature trying to elicit values of risk aversion using experimental methods. One of the most famous study was conducted by `Holt and Laury (2002) <https://www.aeaweb.org/articles?id=10.1257/000282802762024700>`_ using Multiple price lists. Below is a Table showing the lotteries agents are presented. 
+How do we know if a value of 4.4 for :math:`\gamma` is a reasonable value? Turns out there is a large literature trying to elicit values of risk aversion using experimental methods. One of the most famous study was conducted by `Holt and Laury (2002) <https://www.aeaweb.org/articles?id=10.1257/000282802762024700>`_ using Multiple price lists. Below is a Table showing the lotteries agents are presented. 
 
 .. figure:: /images/lotteries.png
    :scale: 50
@@ -165,9 +165,9 @@ In terms of hypothetical vs. real incentives, they show that there is a higher p
 
 Values from Holt and Laury appear lower than the 4.4 value for :math:`\gamma` needed to match the observed share invested in stocks. Boyer, d'Astous and Michaud (forthcoming) perform a preference elicitation exercise as in Holt and Laury with small real payoffs. The RSI dataset we used above to compute facts contains an estimate of relative risk aversion from this proceduce for each respondent. The average estimate of :math:`\gamma` is 0.6. At this level of risk aversion, the predicted share is well above one and suggest that respondents should even be willing to borrow to invest with this risk premium on stocks. Hence, the expected utility model with CRRA preferences could not explain the facts we obtained from the data.  
 
-The equity premium puzzle follows from the fact that given a reasonable level of risk aversion, we should observe more much investment in risky assets. The puzzle was first discussed in `Mehra and Prescott (1985) <https://www.sciencedirect.com/science/article/abs/pii/0304393285900613>`_. It has lead to a very large literature which we will not cover. But we will look at two important behavioral explanations for this puzzle.  
+The equity premium puzzle follows from the fact that given a reasonable level of risk aversion, we should observe more much investment in risky assets. The puzzle was first discussed in `Mehra and Prescott (1985) <https://www.sciencedirect.com/science/article/abs/pii/0304393285900613>`_. It has lead to a very large literature which we will not have space to cover. But we will look at two important behavioral explanations for this puzzle.  
 
-Another interesting puzzle is that the fact that the share of stocks increases sharply with total savings does not appear to be due to decreasing risk aversion, or at least that this can explain very little of what we find in the survey. The next figure shows the average estimate of risk aversion by savings quintile. While there is some evidence of a decline, this decline is relately small and estimates are relatively flat starting in the 4th decile. Hence, the increase in the share of risky assets apparent in the data does not appear to be due to declining risk aversion.   
+Finally, another interesting puzzle is that the fact that the share of stocks increases sharply with total savings does not appear to be due to decreasing risk aversion, or at least that this can explain very little of what we find in the survey. The next figure shows the average estimate of risk aversion by savings quintile. While there is some evidence of a decline, this decline is relately small and estimates are relatively flat starting in the 4th decile. Hence, the increase in the share of risky assets apparent in the data does not appear to be due to declining risk aversion.   
 
 
 .. figure:: /images/sigma-gradient.png 
@@ -176,18 +176,17 @@ Another interesting puzzle is that the fact that the share of stocks increases s
 
 Source: `RSI Survey on Retirement Savings Vehicles <https://dataverse.scholarsportal.info/dataset.xhtml?persistentId=doi:10.5683/SP2/UTJDYA>`_, Quebec and Ontario age 35-55. This extract contains data from 1305 respondents with positive savings in RRSP, TFSA or other taxable accounts. 
 
-
 Participation Costs 
 ~~~~~~~~~~~~~~~~~~~
 
-One way of explaining the behavior of those who do not invest anything in stocks is to introduce participation costs. These can be real (cost of opening a trading account, etc) or psychological, perhaps due to present-bias. `Vissing-Jorgensen (2002) <https://www-nber-org.proxy2.hec.ca/papers/w8884>`_ explores this idea and shows small participation costs can make a large difference. 
+One way of explaining the behavior of those who do not invest anything in stocks is to introduce participation costs. These can be real (cost of opening a trading account, etc) or psychological, perhaps due to present-bias. `Vissing-Jorgensen (2002) <https://www-nber-org.proxy2.hec.ca/papers/w8884>`_ explores this idea and shows small participation costs can explain non-participation. 
 
 We can adapt our framework to seek the participation costs that would act as a lower bound that rationalizes the decision of our respondents. A respondent is indifferent between participating in stocks and not participating provided 
 
 .. math::
    u_i(w_i(1+r_s)) = E_r u_i(w_i(1+r_s) + \alpha_i (\tilde{r}-r_s) - \tau_i)
 
-Conditional on participating, the optimal share is :math:`\alpha_i = w_i` given what the risk aversion parameters we observe. Hence, the idea is to solve for :math:`\tau_i`, the participation cost that make this an equality for those who do not invest in stocks. One way to do this is to use a normal distributions for returns. The notebook computes estimates of participation costs. Only a quarter of non-participants have costs lower than 150$, half lower than 755$. Hence, more than half require participation costs larger than 1000$ to rationalize their choices. Given how easy it is these days to buy an ETF fund using internet platforms for free, these participation costs remain a puzzle.  
+where :math:`\tau_i` is a participation cost.  Conditional on participating, the optimal share is :math:`\alpha_i = w_i` given what the risk aversion parameters we observe. Hence, the idea is to solve for :math:`\tau_i`, the participation cost that make this an equality for those who do not invest in stocks. One way to do this is to use a normal distributions for returns. The notebook below computes estimates of participation costs. Only a quarter of non-participants have costs lower than 150$, half lower than 755$. Hence, more than half require participation costs larger than 1000$ to rationalize their choices. Given how easy it is these days to buy an ETF fund using internet platforms for free, these participation costs remain a puzzle for this group.  
 
 .. figure:: /images/participation_costs.png 
    :scale: 100
@@ -195,15 +194,14 @@ Conditional on participating, the optimal share is :math:`\alpha_i = w_i` given 
 
 Source: `RSI Survey on Retirement Savings Vehicles <https://dataverse.scholarsportal.info/dataset.xhtml?persistentId=doi:10.5683/SP2/UTJDYA>`_, Quebec and Ontario age 35-55. This extract contains data from 1305 respondents with positive savings in RRSP, TFSA or other taxable accounts. Here only those with no stocks are included.  
 
-
-An important problem with this explanation is that participation costs cannot explain sub-optimal allocation to risky assets conditional on participating. 
+An important problem with this explanation is that participation costs cannot explain sub-optimal allocation to risky assets conditional on participating. Overall, while appealing, participation costs are a bit of a black box explanation for non-participation and not a good explanation for weights observed in the data. 
 
 Ambiguity Aversion
 ~~~~~~~~~~~~~~~~~~
 
 Turns out few of us know the distribution of returns and there is uncertainty about that distribution, in particular prospectively. The Ellsberg paradox shows that subjects dislike ambiguity, or the fact that probability distributions over states of the world are uncertain. When this happens, an action that involves an increase in ambiguity about the distribution of wealth will be of low value to that investor.
 
-Here is how the Ellsberg paradox is shown. An urn consist 90 balls. 30 are red. The other 60 are either black or white. The proportion of white and black balls is not know. We ask you to make a choice between these lotteries: 
+Here is how the Ellsberg paradox was shown. An urn consist 90 balls. 30 are red. The other 60 are either black or white. The proportion of white and black balls is not know. We ask you to make a choice between these lotteries: 
 
 =========== ===== ===== =======
 Lotteries   red   black white
@@ -219,15 +217,15 @@ Lotteries   red   black white
 :math:`L_4` 0     50    50
 =========== ===== ===== =======
 
-In the lab, lots will prefer L1 to L2 and then L4 to L3. But this is a violation of expected utility for any prior someone might have about the proportion of white and black balls. Both L1 and L4 have no ambiguity regarding payoffs while both L2 and L3 do. Hence, subjects exhibit ambiguity aversion. 
+In the lab, lots will prefer L1 to L2 and then L4 to L3. But this is a violation of expected utility for any prior someone might have about the proportion of white and black balls (you can verify this easily). Both L1 and L4 have no ambiguity regarding payoffs while both L2 and L3 do. Hence, subjects exhibit ambiguity aversion. 
 
-One way to account for ambiguity aversion is to consider so-called multiple-prior models (Gilboa and Schmeider, 1989). In such models, agents are not sure what the distribution of risk is. For each state :math:`s` the probability could take :math:`M` possible values, :math:`P^m = {p_s^m}_{m=1,...,M}`. They attach a probability :math:`q_m` that each distribution is the correct one. Under expected utility, this uncertainty does not matter because this is nothing else than a compound lottery. Hence, choices should still respect axioms of expected utility. An extreme form of ambiguity aversion preferences takes the form, 
+One way to account for ambiguity aversion is to consider so-called multiple-prior models (Gilboa and Schmeider, 1989). In such models, agents are not sure what the distribution of risk is. For each state :math:`s` the probability could take :math:`M` possible values, :math:`P^m = {p_s^m}_{m=1,...,M}`. They attach a probability :math:`q_m` that each distribution is the correct one. Under expected utility, this uncertainty does not matter because this is nothing else than a compound lottery and expected utility is linear in the probabilities. Hence, this just leads to a different weighting of the same final utilities in each states of the world.  Hence, choices should still respect axioms of expected utility. An extreme form of ambiguity aversion preferences takes the form, 
 
 .. math::
 
    V = \min_{m=1}^M \sum_{s=1}^S p_s^m u(w_s)
 
-These are called maximin preferences. The investor considers the worst possible distribution in terms of expected utility. One can easily show that these can explain the pattern L1 preferred to L2 and L4 to L3 above. A smooth version of ambiguity aversion was proposed by `Kilbanoff, Marinacci and Mukerji (KMM) (2005) <https://www-jstor-org.proxy2.hec.ca/stable/3598753?seq=1#metadata_info_tab_contents>`_. If an investor has such preferences, the end result is that the investor is less likely to participate in the stock market if his priors are diffuse (the worst distribution is pretty bad in terms of investment results).   
+These are called maximin preferences. The investor considers the worst possible distribution in terms of expected utility. One can easily show that these can explain the pattern L1 preferred to L2 and L4 to L3 above. A smooth version of ambiguity aversion was proposed by `Kilbanoff, Marinacci and Mukerji (KMM) (2005) <https://www-jstor-org.proxy2.hec.ca/stable/3598753?seq=1#metadata_info_tab_contents>`_. If an investor has such preferences, the end result is that the investor is less likely to participate in the stock market if his priors are diffuse (the worst distribution is pretty bad in terms of investment results). She will also invest less in stocks.    
 
 But how to measure ambiguity aversion? `Dimmock et al. (2016) <https://www-sciencedirect-com.proxy2.hec.ca/science/article/pii/S0304405X16000040>`_ propose a matching probability strategy. They provide subjects with a choice between, 
 
@@ -253,6 +251,8 @@ They tend regress stock market participation on their measure of ambiguity avers
    :align: center
 
 Source:`Dimmock et al. (2016) <https://www-sciencedirect-com.proxy2.hec.ca/science/article/pii/S0304405X16000040>`_
+
+This theory shows promise to explain the puzzle. Many unexplored avenues for research exist in this stream. For example, one could elicit multiple priors from respondents. Another interesting avenue would be to relate ambiguity aversion to financial literacy. Perhaps one of the function of financial literacy is to reduce ambiguity. 
 
 Myopic Loss Aversion
 ~~~~~~~~~~~~~~~~~~~~
