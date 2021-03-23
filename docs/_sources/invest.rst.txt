@@ -196,6 +196,8 @@ Source: `RSI Survey on Retirement Savings Vehicles <https://dataverse.scholarspo
 
 An important problem with this explanation is that participation costs cannot explain sub-optimal allocation to risky assets conditional on participating. Overall, while appealing, participation costs are a bit of a black box explanation for non-participation and not a good explanation for weights observed in the data. 
 
+
+
 Ambiguity Aversion
 ~~~~~~~~~~~~~~~~~~
 
@@ -393,6 +395,16 @@ Other Issues
 Investors have a hard time dealing with fees which are involved when investing in mutual funds. In one important study, `Choi et al. (2010) <https://academic.oup.com/rfs/article/23/4/1405/1591053?login=true>`_ show that more than 80% of subjects in an experiment fail to minimize fees when picking mutual funds. Financial literacy lowers fees paid. Fee disclosure is now common in many countries. But even when they are disclosed investors do not always minimize fees or know how to integrate this information into their decision making. 
 
 `Clark et al. (2015) <https://www.cambridge.org/core/journals/journal-of-pension-economics-and-finance/article/financial-knowledge-and-401k-investment-performance-a-case-study/F27E6C83BA1DFD263BC2FD706084F8DD>`_ show that those with higher financial literacy obtained higher returns on the savings, and had less idiosynchratic risk in their investment choices suggesting they diversify better.  
+
+Interventions
++++++++++++++
+
+Financial advice 
+
+Education
+
+Decision Aids
+
 
 
 
