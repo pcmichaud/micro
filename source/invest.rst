@@ -400,10 +400,15 @@ Interventions
 +++++++++++++
 
 Financial advice 
+~~~~~~~~~~~~~~~~
 
-Education
+In principle, advisors could be a substitute for financial literacy and investment knowledge. They could help investors get better returns. The extent to which they will do so depends on their compensation structure, or incentives more generally. 
 
-Decision Aids
+A good survey of the literature on modelling and regulation is provided by `Inderst and Ottaviani (2012) <https://pubs.aeaweb.org/doi/pdfplus/10.1257/jel.50.2.494>`_. Studies on the value of financial advice and its effects are rare and only starting to emerge. 
+
+`Hackethal et al. (2012) <https://www-sciencedirect-com.proxy2.hec.ca/science/article/pii/S0378426611002548>`_ show that advised accounts at a large broker firm reach lower net returns and inferior risk-return tradeoffs compared to self-managed accounts. On the other hand, Bluethgen et al. (2007) `<https://papers.ssrn.com/sol3/papers.cfm?abstract_id=968197>`_ find that advised clients are more diversified but pay higher fees. 
+
+A famous study which demonstrates that conflict of interest likely decreases the efficiency of financial advice is `Mullainathan et al. (2012) <https://www-nber-org.proxy2.hec.ca/papers/w17929>`_. They use an audit study to show that often advisors re-inforce biases of their clients in a way that is profitable to them. When there is asymetric information, there is the potential for investors to not be able to distinguish between high and low quality advisors. They consider four scenarios: a return chasing scenario, a company stock scenario, a well-diversified scenario and finally a control group where the investor only has cash. These scenario are randomized. Advisors are much more sympathetic to the return chasing scenario (which increases their compensation from frequent trades), less sympathetic to the company stock (which minimizes transactions). Interestingly, they are unsupportive of the well-diversified efficient portfolio. Advice favoring stocks was more likely for higher income investors. But they adviced against more equity exposure as the amount invested increased.  
 
 
 
