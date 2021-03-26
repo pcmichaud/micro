@@ -397,6 +397,12 @@ Explaining the lack of diversification in portfolios, in particular home bias, c
 
 The opposite mistake is also common, i.e. over diversification. In particular, `Benartzi and Thaler (2001) <https://www-jstor-org.proxy2.hec.ca/stable/2677899?seq=6#metadata_info_tab_contents>`_ show that many use a simple heuristic, :math:`1/K` where :math:`K` is the number of choices in the plan. As a result, the fraction invested in stocks increases in plans where there are more options (more generally is a function of the menu). Again, decision aids could help investors avoid the use of such heuristics.   
 
+.. figure:: /images/one-over-n.png 
+   :scale:100
+   :align: center 
+
+Source: `Benartzi and Thaler (2001) <https://www-jstor-org.proxy2.hec.ca/stable/2677899?seq=6#metadata_info_tab_contents>`_
+
 Other Issues
 ~~~~~~~~~~~~
 
