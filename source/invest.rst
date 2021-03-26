@@ -271,7 +271,7 @@ The first observation is that subjects in experiments tend to value gains and lo
 where :math:`w` is now wealth relative to the reference point, :math:`w_0(1+r_s)`.  KT estimate :math:`\gamma` to be roughly 0.88, while :math:`\lambda` is close to 2.25. Hence, subjects tend to weight losses twice as large as gains. This may lower their demand for risky assets. This leads to a utility function of this sort. 
 
 .. figure:: /images/loss-aversion.png
-   :scale: 75
+   :scale: 100
    :align: center
 
 Source: `Kahneman and Tversky (1979) <https://www-jstor-org.proxy2.hec.ca/stable/1914185?seq=1#metadata_info_tab_contents>`_
