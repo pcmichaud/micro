@@ -393,16 +393,16 @@ The home equity bias states that investors appear to disproportionally prefer ho
 
 Source: `French and Poterba (1991) <https://www-jstor-org.proxy2.hec.ca/stable/pdf/2006858.pdf?refreqid=excelsior%3A0aaba7660352cf1d0501fe73d9aecf72>`_. 
 
-Explaining the lack of diversification in portfolios, in particular home bias, can be done in several ways. One is ambiguity aversion. Knowning the returns on certain costs better than others certainly tilts the portfolio towards those. Another is simply that the computational cost is high and cognitive skills may be at play. Finally, financial literaty can also explain the lack of diversification. `van Gaudecker (2014) <https://onlinelibrary.wiley.com/doi/abs/10.1111/jofi.12231>`_ shows that those with much higher financial literacy do better but that those with low financial literacy who trust their own abilities tend to do much worse. Decision aids which help with figuring out the effect of diversification may be particularly effective. 
+Explaining the lack of diversification in portfolios, in particular home bias, can be done in several ways. One is ambiguity aversion. Knowning the returns on certain costs better than others certainly tilts the portfolio towards those. Maybe investors know home stocks better than international ones. Another is simply that the computational cost is high and cognitive skills may be at play. Finally, financial literaty can also explain the lack of diversification. `van Gaudecker (2014) <https://onlinelibrary.wiley.com/doi/abs/10.1111/jofi.12231>`_ shows that those with much higher financial literacy do better but that those with low financial literacy who trust their own abilities tend to do much worse. Decision aids which help with figuring out the effect of diversification may be particularly effective. 
 
-The opposite mistake is also common, i.e. over diversification. In particular, `Benartzi and Thaler (2001) <https://www-jstor-org.proxy2.hec.ca/stable/2677899?seq=6#metadata_info_tab_contents>`_ show that many use a simple heuristic, :math:`1/K` where :math:`K` is the number of choices in the plan. As a result, the fraction invested in stocks increases in plans where there are more options. Again, decision aids could help investors avoid the use of such heuristics.   
+The opposite mistake is also common, i.e. over diversification. In particular, `Benartzi and Thaler (2001) <https://www-jstor-org.proxy2.hec.ca/stable/2677899?seq=6#metadata_info_tab_contents>`_ show that many use a simple heuristic, :math:`1/K` where :math:`K` is the number of choices in the plan. As a result, the fraction invested in stocks increases in plans where there are more options (more generally is a function of the menu). Again, decision aids could help investors avoid the use of such heuristics.   
 
 Other Issues
 ~~~~~~~~~~~~
 
 Investors have a hard time dealing with fees which are involved when investing in mutual funds. In one important study, `Choi et al. (2010) <https://academic.oup.com/rfs/article/23/4/1405/1591053?login=true>`_ show that more than 80% of subjects in an experiment fail to minimize fees when picking mutual funds. Financial literacy lowers fees paid. Fee disclosure is now common in many countries. But even when they are disclosed investors do not always minimize fees or know how to integrate this information into their decision making. 
 
-`Clark et al. (2015) <https://www.cambridge.org/core/journals/journal-of-pension-economics-and-finance/article/financial-knowledge-and-401k-investment-performance-a-case-study/F27E6C83BA1DFD263BC2FD706084F8DD>`_ show that those with higher financial literacy obtained higher returns on the savings, and had less idiosynchratic risk in their investment choices suggesting they diversify better.  
+`Clark et al. (2015) <https://www.cambridge.org/core/journals/journal-of-pension-economics-and-finance/article/financial-knowledge-and-401k-investment-performance-a-case-study/F27E6C83BA1DFD263BC2FD706084F8DD>`_ show that those with higher financial literacy obtained higher returns on the savings, and had less idiosynchratic risk in their investment choices suggesting they diversify better. This could suggest that interventions aiming to increase financial literacy may help with diversification.   
 
 Interventions
 +++++++++++++
@@ -410,17 +410,19 @@ Interventions
 Financial advice 
 ~~~~~~~~~~~~~~~~
 
-In principle, advisors could be a substitute for financial literacy and investment knowledge. They could help investors get better returns. The extent to which they will do so depends on their compensation structure, or incentives more generally. 
+In principle, advisors could be a substitute for financial literacy and investment knowledge. They could help investors get better returns. In a world where advisors are benovolent and there is no asymetric information, this could certainly be the case. The extent to which they will do so depends on the compensation structure of advisors, or incentives more generally. 
 
 A good survey of the literature on modelling and regulation is provided by `Inderst and Ottaviani (2012) <https://pubs.aeaweb.org/doi/pdfplus/10.1257/jel.50.2.494>`_. Studies on the value of financial advice and its effects are rare and only starting to emerge. 
 
-`Hackethal et al. (2012) <https://www-sciencedirect-com.proxy2.hec.ca/science/article/pii/S0378426611002548>`_ show that advised accounts at a large broker firm reach lower net returns and inferior risk-return tradeoffs compared to self-managed accounts. On the other hand, Bluethgen et al. (2007) `<https://papers.ssrn.com/sol3/papers.cfm?abstract_id=968197>`_ find that advised clients are more diversified but pay higher fees. 
+`Hackethal et al. (2012) <https://www-sciencedirect-com.proxy2.hec.ca/science/article/pii/S0378426611002548>`_ show that advised accounts at a large broker firm reach lower net returns and inferior risk-return tradeoffs compared to self-managed accounts. On the other hand, Bluethgen et al. (2007) `<https://papers.ssrn.com/sol3/papers.cfm?abstract_id=968197>`_ find that advised clients are more diversified but pay higher fees. Hence, this remains an open question. 
 
 A famous study which demonstrates that conflict of interest likely decreases the efficiency of financial advice is `Mullainathan et al. (2012) <https://www-nber-org.proxy2.hec.ca/papers/w17929>`_. They use an audit study to show that often advisors re-inforce biases of their clients in a way that is profitable to them. When there is asymetric information, there is the potential for investors to not be able to distinguish between high and low quality advisors. They consider four scenarios: a return chasing scenario, a company stock scenario, a well-diversified scenario and finally a control group where the investor only has cash. These scenario are randomized. Advisors are much more sympathetic to the return chasing scenario (which increases their compensation from frequent trades), less sympathetic to the company stock (which minimizes transactions). Interestingly, they are unsupportive of the well-diversified efficient portfolio. Advice favoring stocks was more likely for higher income investors. But they adviced against more equity exposure as the amount invested increased.  
 
+.. figure:: /images/advisors.png 
+   :scale: 75
+   :align: center
 
-
-
+Source: `Mullainathan et al. (2012) <https://www-nber-org.proxy2.hec.ca/papers/w17929>`_
 
 
 
