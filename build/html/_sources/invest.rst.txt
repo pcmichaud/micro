@@ -268,7 +268,15 @@ The first observation is that subjects in experiments tend to value gains and lo
    -\lambda (-w)^{\gamma} &, \text{if} \quad x<0
    \end{cases}
 
-where :math:`w` is now wealth relative to the reference point, :math:`w_0(1+r_s)`.  KT estimate :math:`\gamma` to be roughly 0.88, while :math:`\lambda` is close to 2.25. Hence, subjects tend to weight losses twice as large as gains. This may lower their demand for risky assets. 
+where :math:`w` is now wealth relative to the reference point, :math:`w_0(1+r_s)`.  KT estimate :math:`\gamma` to be roughly 0.88, while :math:`\lambda` is close to 2.25. Hence, subjects tend to weight losses twice as large as gains. This may lower their demand for risky assets. This leads to a utility function of this sort. 
+
+.. figure:: /images/loss-aversion.png
+   :scale: 75
+   :align: center
+
+Source: `Kahneman and Tversky (1979) <https://www-jstor-org.proxy2.hec.ca/stable/1914185?seq=1#metadata_info_tab_contents>`_
+
+
 
 This tendency to weight losses more heavily than gains can be traced to particular regions of the brain. `Tom et al. (2007) <https://science.sciencemag.org/content/315/5811/515>`_ perform a loss aversion experiment by presenting subjects lotteries while the brain is being scanned. They vary the gains and losses presented and record both choices as well as brain activity. Results look like this: 
 
