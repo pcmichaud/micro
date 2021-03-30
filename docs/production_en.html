@@ -253,7 +253,7 @@
 <p>Given a production level <span class="math notranslate nohighlight">\(Y\)</span>, what is the best choice of inputs?</p>
 <div class="math notranslate nohighlight">
 \[\min_{X,Z} \{ p_X X + p_Z Z : F(X,Z) \ge Y \}\]</div>
-<p>Write the langrangian:</p>
+<p>Write the lagrangian:</p>
 <div class="math notranslate nohighlight">
 \[L(X,Z,\mu) = p_X X + p_Z Z + \mu(Y - F(X,Z))\]</div>
 <p>The FOCs are:</p>
@@ -268,10 +268,13 @@
 \[\frac{p_X}{p_Z} = \frac{F'_X(X,Z)}{F'_Z(X,Z)}\]</div>
 <div class="math notranslate nohighlight">
 \[F(X,Z) = Y\]</div>
-<p>The first equation gives the optimal  <em>mix</em> of inputs. This mix has to be such that the <span class="math notranslate nohighlight">\(MRST\)</span> is equal to the relative price of inputs. The relative price gives the cost, in units of <span class="math notranslate nohighlight">\(Y\)</span> of a unit of <span class="math notranslate nohighlight">\(X\)</span>. If this cost is smaller than the savings we make by increasing <span class="math notranslate nohighlight">\(X\)</span>, we can increase <span class="math notranslate nohighlight">\(X\)</span> and reduce costs. One can do this up to the point where <span class="math notranslate nohighlight">\(TMST\)</span> is equal to the relative price of inputs. There is then no more savings to do, we have minimized costs.</p>
+<p>The first equation gives the optimal  <em>mix</em> of inputs. This mix has to be such that the <span class="math notranslate nohighlight">\(MRST\)</span> is equal to the relative price of inputs. The relative price gives the cost, in units of <span class="math notranslate nohighlight">\(Y\)</span> of a unit of <span class="math notranslate nohighlight">\(X\)</span>. If this cost is smaller than the savings we make by increasing <span class="math notranslate nohighlight">\(X\)</span>, we can increase <span class="math notranslate nohighlight">\(X\)</span> and reduce costs. One can do this up to the point where <span class="math notranslate nohighlight">\(MRST\)</span> is equal to the relative price of inputs. There is then no more savings to do, we have minimized costs!</p>
 <p>The second constraint uses this optimal <em>mix</em> of inputs found with the first and pins the levels by using the fixed level of production <span class="math notranslate nohighlight">\(Y\)</span>. The solution to this system of equations is a pair of conditional demand functions for inputs</p>
 <div class="math notranslate nohighlight">
-\[X(p_X,p_Z,Y),Z(p_X,p_Z,Y)\]</div>
+\[X(p_X,p_Z,Y)\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[Z(p_X,p_Z,Y)\]</div>
 <p>We denote those as <em>conditional</em> because they depend on a fixed output level.</p>
 <p><strong>Exercise C</strong>: Find the conditional demand functions for
 <span class="math notranslate nohighlight">\(Y=X^{1/2} Z^{1/4}\)</span>.</p>
@@ -280,7 +283,7 @@
 <li><p>They are homogeneous of degree zero in <span class="math notranslate nohighlight">\((p_X,p_Z)\)</span></p></li>
 <li><p>They are symmetric:
 <span class="math notranslate nohighlight">\(\frac{\partial X(p_X,p_Z,Y)}{\partial p_Z} = \frac{\partial Z(p_X,p_Z,Y)}{\partial p_X}\)</span></p></li>
-<li><p>Negative price effects: <span class="math notranslate nohighlight">\(\frac{\partial X(p_X,p_Z,Y)}{\partial p_X}&lt;0\)</span>.</p></li>
+<li><p>They depend negatively on own price: <span class="math notranslate nohighlight">\(\frac{\partial X(p_X,p_Z,Y)}{\partial p_X}&lt;0\)</span>.</p></li>
 </ul>
 </div>
 <div class="section" id="cost-functions">
@@ -302,8 +305,8 @@
 <p>An interesting result is that</p>
 <div class="math notranslate nohighlight">
 \[\frac{\partial C(p_X,p_Z,Y)}{\partial p_X} = X^*(p_X,p_Z,Y)\]</div>
-<p>This result can be useful to find conditional demands.</p>
-<p><strong>Exercise E</strong>: Show that this is true to find <span class="math notranslate nohighlight">\(X^*\)</span> using the production function <span class="math notranslate nohighlight">\(Y=X^{1/2} Z^{1/4}\)</span>.</p>
+<p>This result can be useful to find conditional demands. Note that we need to assume the firm minimizes costs in order to use this Lemma.</p>
+<p><strong>Exercise E</strong>: Show that this is true to find <span class="math notranslate nohighlight">\(X(p_X,p_Z,Y)\)</span> using the production function <span class="math notranslate nohighlight">\(Y=X^{1/2} Z^{1/4}\)</span>.</p>
 </div>
 <div class="section" id="marginal-cost">
 <h2>Marginal Cost<a class="headerlink" href="#marginal-cost" title="Lien permanent vers ce titre">¶</a></h2>
@@ -440,7 +443,7 @@ Y^{C2,d} = \frac{\alpha}{1+\alpha} \frac{I_2}{p}\end{split}\]</div>
 </div>
 <div class="section" id="python-example">
 <h2>Python example<a class="headerlink" href="#python-example" title="Lien permanent vers ce titre">¶</a></h2>
-<p><a class="reference external" href="https://colab.research.google.com/github/pcmichaud/micro/blob/master/notebooks/EquilibreProduction.ipynb"><img alt="ImageLink" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
+<p><a class="reference external" href="https://colab.research.google.com/github/pcmichaud/micro/blob/master/notebooks/Production.ipynb"><img alt="ImageLink" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
 </div>
 </div>
 

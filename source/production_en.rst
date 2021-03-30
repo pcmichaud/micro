@@ -74,7 +74,7 @@ Given a production level :math:`Y`, what is the best choice of inputs?
 
 .. math:: \min_{X,Z} \{ p_X X + p_Z Z : F(X,Z) \ge Y \}
 
-Write the langrangian:
+Write the lagrangian:
 
 .. math:: L(X,Z,\mu) = p_X X + p_Z Z + \mu(Y - F(X,Z))
 
@@ -92,11 +92,15 @@ We can simplify to obtain:
 
 .. math:: F(X,Z) = Y
 
-The first equation gives the optimal  *mix* of inputs. This mix has to be such that the :math:`MRST` is equal to the relative price of inputs. The relative price gives the cost, in units of :math:`Y` of a unit of :math:`X`. If this cost is smaller than the savings we make by increasing :math:`X`, we can increase :math:`X` and reduce costs. One can do this up to the point where :math:`TMST` is equal to the relative price of inputs. There is then no more savings to do, we have minimized costs.
+The first equation gives the optimal  *mix* of inputs. This mix has to be such that the :math:`MRST` is equal to the relative price of inputs. The relative price gives the cost, in units of :math:`Y` of a unit of :math:`X`. If this cost is smaller than the savings we make by increasing :math:`X`, we can increase :math:`X` and reduce costs. One can do this up to the point where :math:`MRST` is equal to the relative price of inputs. There is then no more savings to do, we have minimized costs!
 
 The second constraint uses this optimal *mix* of inputs found with the first and pins the levels by using the fixed level of production :math:`Y`. The solution to this system of equations is a pair of conditional demand functions for inputs
 
-.. math:: X(p_X,p_Z,Y),Z(p_X,p_Z,Y)
+.. math:: X(p_X,p_Z,Y)
+
+and 
+
+.. math:: Z(p_X,p_Z,Y)
 
 We denote those as *conditional* because they depend on a fixed output level.
 
@@ -110,7 +114,7 @@ What are the properties of these functions?
 -  They are symmetric:
    :math:`\frac{\partial X(p_X,p_Z,Y)}{\partial p_Z} = \frac{\partial Z(p_X,p_Z,Y)}{\partial p_X}`
 
--  Negative price effects: :math:`\frac{\partial X(p_X,p_Z,Y)}{\partial p_X}<0`.
+-  They depend negatively on own price: :math:`\frac{\partial X(p_X,p_Z,Y)}{\partial p_X}<0`.
 
 
 Cost Functions
@@ -139,9 +143,9 @@ An interesting result is that
 
 .. math:: \frac{\partial C(p_X,p_Z,Y)}{\partial p_X} = X^*(p_X,p_Z,Y)
 
-This result can be useful to find conditional demands. 
+This result can be useful to find conditional demands. Note that we need to assume the firm minimizes costs in order to use this Lemma. 
 
-**Exercise E**: Show that this is true to find :math:`X^*` using the production function :math:`Y=X^{1/2} Z^{1/4}`.
+**Exercise E**: Show that this is true to find :math:`X(p_X,p_Z,Y)` using the production function :math:`Y=X^{1/2} Z^{1/4}`.
 
 Marginal Cost 
 +++++++++++++
@@ -151,7 +155,6 @@ The marginal cost of producing an output (while minimizing costs) is given by:
 .. math:: c(p_X,p_Z,Y) = \frac{\partial C(p_X,p_Z,Y)}{\partial Y} 
 
 We use the convention of using lower case :math:`c` to denote marginal cost while upper case C for total costs. 
-
 
 Using the enveloppe theorem we can show that
 
@@ -326,5 +329,5 @@ Python example
 |ImageLink|_
 
 .. |ImageLink| image:: https://colab.research.google.com/assets/colab-badge.svg
-.. _ImageLink: https://colab.research.google.com/github/pcmichaud/micro/blob/master/notebooks/EquilibreProduction.ipynb
+.. _ImageLink: https://colab.research.google.com/github/pcmichaud/micro/blob/master/notebooks/Production.ipynb
 
