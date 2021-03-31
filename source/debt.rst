@@ -22,29 +22,176 @@ Source: `Zinman (2015) <https://www.annualreviews.org/doi/abs/10.1146/annurev-ec
 
 Various measures of debt can be computed depending on what one is trying to measure. A debt to income measure, or debt service to income measure focuses on ability to re-pay. Another measure is to look at debt relative to assets, which is perhaps more relevant to talk about solvency risk. 
 
-Using the 2016 SFS, we can paint a portrait of household debt in Canada. 
 
-Debt to income
+Trends
+~~~~~~
 
-Payment to income
+.. figure:: /images/debt-trends.png
+   :scale: 100
+   :align: center
 
-Debt to assets
+Source: `Morrissette (2019) <https://www150.statcan.gc.ca/n1/pub/11-626-x/11-626-x2019005-eng.htm>`_
 
-Composition of debt
+.. figure:: /images/debt-income-old.png
+   :scale: 100
+   :align: center
 
-Mortgages
-
-Credit cards 
-
-Rates on credit cards
-
-Payday loans
+Source: `Bédard and Michaud (2021) <https://creei.ca/wp-content/uploads/2019/08/cahier_18_14_playing_fire_debt_near_retirement_canada.pdf>`_
 
 
-Trends in debt
+.. figure:: /images/debt-trends-composition.png
+   :scale: 100
+   :align: center
+
+Source: `Bédard and Michaud (2021) <https://creei.ca/wp-content/uploads/2019/08/cahier_18_14_playing_fire_debt_near_retirement_canada.pdf>`_
+
+
+.. figure:: /images/asset-debt-trends.png
+   :scale: 100
+   :align: center
+
+Source: `Bédard and Michaud (2021) <https://creei.ca/wp-content/uploads/2019/08/cahier_18_14_playing_fire_debt_near_retirement_canada.pdf>`_
+
+Composition 
+~~~~~~~~~~~
+
+.. figure:: /images/debt-holdings.png
+   :scale: 100
+   :align: center
+
+Source: `FCAC (2021) <https://www.canada.ca/content/dam/fcac-acfc/documents/programs/research-surveys-studies-reports/canadian-financial-capability-survey-2019.pdf>`_
+
+.. figure:: /images/debt-types.png
+   :scale: 100
+   :align: center
+
+Source: `FCAC (2021) <https://www.canada.ca/content/dam/fcac-acfc/documents/programs/research-surveys-studies-reports/canadian-financial-capability-survey-2019.pdf>`_
+
+Mortgage Debt
+~~~~~~~~~~~~~
+
+.. figure:: /images/mortgage-balance.png
+   :scale: 100
+   :align: center
+
+Source: `FCAC (2021) <https://www.canada.ca/content/dam/fcac-acfc/documents/programs/research-surveys-studies-reports/canadian-financial-capability-survey-2019.pdf>`_
+
+.. figure:: /images/house-prices.png
+   :scale: 100
+   :align: center
+
+Source: `Bédard and Michaud (2021) <https://creei.ca/wp-content/uploads/2019/08/cahier_18_14_playing_fire_debt_near_retirement_canada.pdf>`_
+
+.. figure:: /images/payment-trends.png
+   :scale: 100
+   :align: center
+
+Source: `Bédard and Michaud (2021) <https://creei.ca/wp-content/uploads/2019/08/cahier_18_14_playing_fire_debt_near_retirement_canada.pdf>`_
+
+Lines of Credit
+~~~~~~~~~~~~~~~
+
+.. figure:: /images/heloc-balances.png
+   :scale: 100
+   :align: center
+
+Source: `FCAC (2021) <https://www.canada.ca/content/dam/fcac-acfc/documents/programs/research-surveys-studies-reports/canadian-financial-capability-survey-2019.pdf>`_
+
+Credit Cards
+~~~~~~~~~~~~
+
+
+.. figure:: /images/ccard-reasons.png
+   :scale: 100
+   :align: center
+
+Source: `FCAC (2021) <https://www.canada.ca/content/dam/fcac-acfc/documents/programs/research-surveys-studies-reports/canadian-financial-capability-survey-2019.pdf>`_
+
+.. figure:: /images/ccard-repayment.png
+   :scale: 100
+   :align: center
+
+Source: `FCAC (2021) <https://www.canada.ca/content/dam/fcac-acfc/documents/programs/research-surveys-studies-reports/canadian-financial-capability-survey-2019.pdf>`_
+
+.. figure:: /images/bill-strugle.png
+   :scale: 100
+   :align: center
+
+Source: `FCAC (2021) <https://www.canada.ca/content/dam/fcac-acfc/documents/programs/research-surveys-studies-reports/canadian-financial-capability-survey-2019.pdf>`_
+
+.. figure:: /images/ccard-budget.png
+   :scale: 100
+   :align: center
+
+Source: `FCAC (2021) <https://www.canada.ca/content/dam/fcac-acfc/documents/programs/research-surveys-studies-reports/canadian-financial-capability-survey-2019.pdf>`_
+
+Student Loans
+~~~~~~~~~~~~~
+
+.. figure:: /images/student-loans.png
+   :scale: 100
+   :align: center
+
+Source: `FCAC (2021) <https://www.canada.ca/content/dam/fcac-acfc/documents/programs/research-surveys-studies-reports/canadian-financial-capability-survey-2019.pdf>`_
+
+Payday Loans
+~~~~~~~~~~~~
+
+2-4%
+
+.. figure:: /images/payday-age.png
+   :scale: 100
+   :align: center
+
+Source: `FCAC (2017) <https://www.canada.ca/en/financial-consumer-agency/programs/research/payday-loans-market-trends.html>`_
+
+.. figure:: /images/payday-income.png
+   :scale: 100
+   :align: center
+
+Source: `FCAC (2017) <https://www.canada.ca/en/financial-consumer-agency/programs/research/payday-loans-market-trends.html>`_
+
+.. figure:: /images/payday-cost.png
+   :scale: 100
+   :align: center
+
+Source: `FCAC (2017) <https://www.canada.ca/en/financial-consumer-agency/programs/research/payday-loans-market-trends.html>`_
+
+
+.. figure:: /images/payday-reasons.png
+   :scale: 100
+   :align: center
+
+Source: `FCAC (2017) <https://www.canada.ca/en/financial-consumer-agency/programs/research/payday-loans-market-trends.html>`_
+
+
+.. figure:: /images/payday-size.png
+   :scale: 100
+   :align: center
+
+Source: `FCAC (2017) <https://www.canada.ca/en/financial-consumer-agency/programs/research/payday-loans-market-trends.html>`_
+
+
+.. figure:: /images/payday-perception.png
+   :scale: 100
+   :align: center
+
+Source: `FCAC (2017) <https://www.canada.ca/en/financial-consumer-agency/programs/research/payday-loans-market-trends.html>`_
+
+Insolvency
+~~~~~~~~~~
+
+.. figure:: /images/insolvency-rates.png
+   :scale: 100
+   :align: center
+
+Source: `Office of the Superintendent of Bankruptcy Canada <https://www.ic.gc.ca/eic/site/bsf-osb.nsf/eng/br03805.html>`_
+
 
 Theory
 ++++++
+
+`Zinman (2015) <https://www.annualreviews.org/doi/abs/10.1146/annurev-economics-080614-115640>`_ provides a comprehensive survey of research on debt. 
 
 Life-cycle borrowing
 ~~~~~~~~~~~~~~~~~~~~
@@ -52,20 +199,42 @@ Life-cycle borrowing
 Credit card puzzle
 ~~~~~~~~~~~~~~~~~~
 
-Present-bias 
+`Gross and Souleles (2002) <https://www.jstor.org/stable/2696485?seq=1>`_
+
+
+Gorbachev and Luengo-Prado (2019) <https://direct.mit.edu/rest/article/101/2/294/58511/The-Credit-Card-Debt-Puzzle-The-Role-of>`_
+
+Present-Bias
 ~~~~~~~~~~~~
+
+`Meier and Sprenger (2009) <https://www.aeaweb.org/articles?id=10.1257/app.2.1.193>`_
+
+`Angeletos et al. (2001) <https://www.aeaweb.org/articles?id=10.1257/jep.15.3.47>`_
 
 Temptation
 ~~~~~~~~~~
 
+`Nakajima (2011) <https://onlinelibrary.wiley.com/doi/pdf/10.3982/QE87>`_
+
+
 Exponential Growth Bias
 ~~~~~~~~~~~~~~~~~~~~~~~
+
+`Stango and Zinman (2009) <https://www.jstor.org/stable/27735191?seq=1>`_
+
+`Levy and Tasoff <https://onlinelibrary.wiley.com/doi/abs/10.1111/jeea.12149>`_
+
 
 Minimizing Borrowing Costs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+`Agarwal, Skiba and Tobacman (2009) <https://www.jstor.org/stable/25592433?seq=1>`_
+
+
 Cognitive Decline
 ~~~~~~~~~~~~~~~~~
+
+Agarwal 
 
 
 Interventions
