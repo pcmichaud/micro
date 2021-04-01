@@ -52,6 +52,7 @@ Pierre-Carl Michaud, Professeur titulaire HEC Montréal
    annuities.rst
    savings.rst
    invest.rst
+   debt.rst
   
 Index
 =====
