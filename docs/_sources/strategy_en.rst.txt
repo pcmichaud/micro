@@ -51,6 +51,21 @@ But a second term is present on the left-hand side. There is an *infra-marginal*
 
 **Exercise C** : In exercise B, find the expression for the equilibrium price as a function of the price elasticity of demand. Analyze that situation. 
 
+**The Inverse Problem** It is also possible to write the strategic price manipulation problem in terms of a choice over price rather than quantity. This leads to the same result but viewed from the explicit choice of prices. For example, let :math:`X(p)` be demand (instead of inverse demand). With constant marginal cost, we get 
+
+.. math::
+
+   \max_{p} p X(p) - c X(p)
+
+The FOC is 
+
+.. math::
+
+   X(p) + p X'(p) = cX'(p)
+
+which can be solve for the optimal price given a demand function :math:`X(p)`. 
+
+
 A few market configurations are associated with market power and therefore strategic behavior. 
 
 Monopoly
