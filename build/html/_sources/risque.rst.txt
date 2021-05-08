@@ -328,7 +328,7 @@ Expérience de choix I
 On tire un nombre entier entre 0 et 99 avec probabilité 1/100 pour chaque nombre entier:
 
 =========== == ==== =====
-Loteries   0  1-10 11-99
+Loteries    0  1-10 11-99
 :math:`L_1` 50 50   50
 :math:`L_2` 0  250  50
 =========== == ==== =====
@@ -338,7 +338,7 @@ Expérience de choix II
 Maintenant, on considère une autre paire avec les mêmes règles de tirages. 
 
 =========== == ==== =====
-Loteries   0  1-10 11-99
+Loteries    0  1-10 11-99
 :math:`L_3` 50 50   0
 :math:`L_4` 0  250  0
 =========== == ==== =====
