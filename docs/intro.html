@@ -269,14 +269,12 @@ f(x) - f(x_0) \simeq f'(x_0) (x-x_0)  \\
 </ul>
 <div class="admonition-todo admonition" id="id1">
 <p class="admonition-title">À faire</p>
-<p><strong>Exercice A</strong>: Trouvez les dérivées de :</p>
+<p><strong>Exercice A</strong>: Trouvez les dérivées de <span class="math notranslate nohighlight">\(f(x)=\sqrt{x},\frac{x}{1+x},\frac{1}{2}x^2 + 2x-10,(1+\frac{x}{2})^2\)</span>.</p>
 </div>
-<p><span class="math notranslate nohighlight">\(f(x)=\sqrt{x},\frac{x}{1+x},\frac{1}{2}x^2 + 2x-10,(1+\frac{x}{2})^2\)</span> sur papier et ensuite en utilisant SymPy.</p>
 <div class="admonition-todo admonition" id="id2">
 <p class="admonition-title">À faire</p>
-<p><strong>Exercice B</strong>: Faire une approximation de premier ordre pour :</p>
+<p><strong>Exercice B</strong>: Faire une approximation de premier ordre pour <span class="math notranslate nohighlight">\(f(x)=\sqrt{x}\)</span>.</p>
 </div>
-<p><span class="math notranslate nohighlight">\(f(x)=\sqrt{x}\)</span> sur papier et ensuite en utilisant SymPy.</p>
 <p><strong>Approximations d’ordres supérieurs</strong></p>
 <p>Si la fonction a des dérivées supérieures non nulles, ou bien <span class="math notranslate nohighlight">\(x\)</span> est loin de <span class="math notranslate nohighlight">\(x_0\)</span>, l’approximation de premier ordre que nous avons vu produira une approximation assez mauvaise… Par ailleurs, on veut peut-être aussi caractériser des fonctions par autre chose que seulement leur pente. (est-ce une courbe, etc?).</p>
 <p>On peut pousser plus loin le concept d’approximation,</p>
@@ -322,14 +320,16 @@ augmente <span class="math notranslate nohighlight">\(f\)</span></p></li>
 <span class="math notranslate nohighlight">\(\Delta x&gt;0\)</span>.</p></li>
 </ul>
 <p>On peut trouver le maximum (minimum) d’une fonction en Python numériquement ou avec SymPy.</p>
-<p><strong>Exercice C</strong>: Trouvez l’optimum de la fonction <span class="math notranslate nohighlight">\(f(x) = x(10-x)\)</span> sur papier et en utilisant SymPy.</p>
+<div class="admonition-todo admonition" id="id3">
+<p class="admonition-title">À faire</p>
+<p><strong>Exercice C</strong>: Trouvez l’optimum de la fonction <span class="math notranslate nohighlight">\(f(x) = x(10-x)\)</span>.</p>
+</div>
 </div>
 <div class="section" id="derivee-partielle">
 <h3>Dérivée partielle<a class="headerlink" href="#derivee-partielle" title="Lien permanent vers ce titre">¶</a></h3>
 <p>Supposons la fonction <span class="math notranslate nohighlight">\(f(x,y)\)</span>. La dérivée partielle se fait en
 gardant fixes (ou exogènes) les autres variables:
 <span class="math notranslate nohighlight">\(f'_x(x,y) = \frac{\partial f(x,y)}{\partial x}\)</span>.</p>
-<p>En Sympy, c’est déjà ce qu’on fait avec <code class="code docutils literal notranslate"><span class="pre">diff()</span></code>, on garde fixe les autres variables.</p>
 </div>
 <div class="section" id="theoreme-de-lenveloppe">
 <span id="envelop"></span><h3>Théorème de l’enveloppe<a class="headerlink" href="#theoreme-de-lenveloppe" title="Lien permanent vers ce titre">¶</a></h3>
@@ -345,8 +345,10 @@ gardant fixes (ou exogènes) les autres variables:
 <p>Ainsi, le premier terme de <span class="math notranslate nohighlight">\(V'(p)\)</span> est zéro.</p>
 <p>On obtient <span class="math notranslate nohighlight">\(V'(p) = f'_p(x^*(p),p)\)</span>.</p>
 <p>Ceci implique que la dérivée de la valeur maximale par rapport à une variable exogène est la dérivée de la fonction objective par rapport à cette variable exogène, sans utiliser la règle de chaine (sans changer la solution optimale). C’est un raccourci (approximation) qui sera utile à plusieurs moments dans le cours.</p>
-<p><strong>Exercice D</strong>: Trouvez la forme de <span class="math notranslate nohighlight">\(V'(p)\)</span> pour la
-fonction <span class="math notranslate nohighlight">\(V(p) = (10 - p\frac{x^*(p)}{2})x^*(p)\)</span> où <span class="math notranslate nohighlight">\(x^*(p) = \arg \max_x f(x,p)\)</span> et <span class="math notranslate nohighlight">\(f(x,p) =(10 - p\frac{x}{2})x\)</span>.</p>
+<div class="admonition-todo admonition" id="id4">
+<p class="admonition-title">À faire</p>
+<p><strong>Exercice D</strong>: Trouvez la forme de <span class="math notranslate nohighlight">\(V'(p)\)</span> pour la fonction <span class="math notranslate nohighlight">\(V(p) = (10 - p\frac{x^*(p)}{2})x^*(p)\)</span> où <span class="math notranslate nohighlight">\(x^*(p) = \arg \max_x f(x,p)\)</span> et <span class="math notranslate nohighlight">\(f(x,p) =(10 - p\frac{x}{2})x\)</span>.</p>
+</div>
 </div>
 <div class="section" id="la-differentielle-totale">
 <h3>La différentielle totale<a class="headerlink" href="#la-differentielle-totale" title="Lien permanent vers ce titre">¶</a></h3>
@@ -362,8 +364,10 @@ df(x,y) = f'_x(x,y)dx + f'_y(x,y)dy\end{aligned}\]</div>
 <div class="math notranslate nohighlight">
 \[\frac{dy}{dx}\Bigr|_{df=0} = -\frac{f'_x(x,y)}{f'_y(x,y)}\]</div>
 <p>On qualifie la dérivée par le <span class="math notranslate nohighlight">\(df=0\)</span> pour indiquer que c’est une dérivée obtenue en contraignant la valeur de la fonction à être constante.</p>
-<p><strong>Exercice E</strong>: Trouvez <span class="math notranslate nohighlight">\(\frac{dy}{dx}\Bigr|_{df=0}\)</span> par
-différentielle totale pour <span class="math notranslate nohighlight">\(f(x,y)=\log(xy)\)</span>. Faire sur papier et par SymPy.</p>
+<div class="admonition-todo admonition" id="id5">
+<p class="admonition-title">À faire</p>
+<p><strong>Exercice E</strong>: Trouvez <span class="math notranslate nohighlight">\(\frac{dy}{dx}\Bigr|_{df=0}\)</span> par différentielle totale pour <span class="math notranslate nohighlight">\(f(x,y)=\log(xy)\)</span>. Faire sur papier et par SymPy.</p>
+</div>
 </div>
 <div class="section" id="homogeneite-d-une-fonction">
 <h3>Homogénéité d’une fonction<a class="headerlink" href="#homogeneite-d-une-fonction" title="Lien permanent vers ce titre">¶</a></h3>
@@ -375,8 +379,10 @@ différentielle totale pour <span class="math notranslate nohighlight">\(f(x,y)=
 <p>Théorème d’Euler: Si une fonction est homogène de degré <span class="math notranslate nohighlight">\(r\)</span>, alors:</p>
 <div class="math notranslate nohighlight">
 \[r f(x_1,x_2,...,x_n) = \sum_{i=1}^n \frac{\partial f}{\partial x_i}x_i.\]</div>
-<p><strong>Exercice F</strong>: Trouvez le degré d’homogénéité de la fonction
-<span class="math notranslate nohighlight">\(f(x,y)=x^\alpha y^\beta\)</span> des deux façons.</p>
+<div class="admonition-todo admonition" id="id6">
+<p class="admonition-title">À faire</p>
+<p><strong>Exercice F</strong>: Trouvez le degré d’homogénéité de la fonction <span class="math notranslate nohighlight">\(f(x,y)=x^\alpha y^\beta\)</span> des deux façons.</p>
+</div>
 </div>
 <div class="section" id="approximation-et-maximum">
 <h3>Approximation et maximum<a class="headerlink" href="#approximation-et-maximum" title="Lien permanent vers ce titre">¶</a></h3>
@@ -408,8 +414,10 @@ de :</p>
 <p>La CPO est <span class="math notranslate nohighlight">\(f'_x(x,q(x,m)) + f'_y(x,q(x,m))q'(x,m) = 0\)</span>. On peut
 résoudre pour <span class="math notranslate nohighlight">\(x^*\)</span> et utiliser <span class="math notranslate nohighlight">\(y=q(x)\)</span> pour trouver
 <span class="math notranslate nohighlight">\(y^*\)</span>.</p>
-<p><strong>Exercice G</strong>: Maximisez la fonction <span class="math notranslate nohighlight">\(f(x,y) = \log x + \log y\)</span>
-sous la contrainte <span class="math notranslate nohighlight">\(x+y \le m\)</span>.</p>
+<div class="admonition-todo admonition" id="id7">
+<p class="admonition-title">À faire</p>
+<p><strong>Exercice G</strong>: Maximisez la fonction <span class="math notranslate nohighlight">\(f(x,y) = \log x + \log y\)</span> sous la contrainte <span class="math notranslate nohighlight">\(x+y \le m\)</span>.</p>
+</div>
 <p>Avec plusieurs variables et contraintes, cette approche n’est pas très pratique…</p>
 <p><strong>Le lagrangien</strong></p>
 <p>La méthode de <a class="reference external" href="https://fr.wikipedia.org/wiki/Joseph-Louis_Lagrange">Lagrange</a> consiste à résoudre pour <span class="math notranslate nohighlight">\((x,y)\)</span>,</p>
@@ -424,8 +432,10 @@ g(x,y) = m\end{aligned}\end{split}\]</div>
 \[\begin{aligned}
     \max_{x,y,\lambda} L(x,y,\lambda) = f(x,y) - \lambda (g(x,y)-m)\end{aligned}\]</div>
 <p>Le lagrangien <span class="math notranslate nohighlight">\(L(x,y,\lambda)\)</span> est une fonction objective modifiée qui permet de pénaliser la maximisation pour la contrainte (pour s’assurer qu’elle soit respectée). On remarque que si <span class="math notranslate nohighlight">\(\lambda = 0\)</span>, on a les deux CPO non-contraintes <span class="math notranslate nohighlight">\(f'_x(x,y)=0\)</span> et <span class="math notranslate nohighlight">\(f'_y(x,y)=0\)</span> qui donnent une solution optimale sans avoir besoin de la troisième. Seulement si la contrainte est <em>mordante</em> (si <span class="math notranslate nohighlight">\(\lambda \neq 0\)</span>) aurons-nous une solution différente…</p>
-<p><strong>Exercice H</strong>: Maximisez la fonction <span class="math notranslate nohighlight">\(f(x,y) = \log x + \log y\)</span>
-sous la contrainte <span class="math notranslate nohighlight">\(x+y \le m\)</span> par la méthode du lagrangien.</p>
+<div class="admonition-todo admonition" id="id8">
+<p class="admonition-title">À faire</p>
+<p><strong>Exercice H</strong>: Maximisez la fonction <span class="math notranslate nohighlight">\(f(x,y) = \log x + \log y\)</span> sous la contrainte <span class="math notranslate nohighlight">\(x+y \le m\)</span> par la méthode du lagrangien.</p>
+</div>
 <p><strong>L’interprétation du multiplicateur</strong></p>
 <p>Il n’est pas nécessaire de résoudre pour la valeur de <span class="math notranslate nohighlight">\(\lambda\)</span> afin de trouver les
 valeurs optimales de <span class="math notranslate nohighlight">\(x\)</span> et <span class="math notranslate nohighlight">\(y\)</span>. Mais, si on le fait, <span class="math notranslate nohighlight">\(\lambda\)</span> a une
@@ -434,12 +444,17 @@ interprétation utile pour certaines applications que nous verrons.</p>
 <div class="math notranslate nohighlight">
 \[V(m) = \max_{x,y,\lambda} f(x,y) - \lambda (g(x,y)-m)\]</div>
 <p>alors <span class="math notranslate nohighlight">\(V'(m) = \lambda\)</span>. La valeur maximale augmente de <span class="math notranslate nohighlight">\(\lambda\)</span> quand on augmente (marginalement) <span class="math notranslate nohighlight">\(m\)</span> (quand on relâche la contrainte).</p>
-<p><strong>Exercice I</strong>: Démontrez dans le problème précédent (H) qu’une augmentation
-marginale de <span class="math notranslate nohighlight">\(m\)</span> a pour effet d’augmenter le maximum de <span class="math notranslate nohighlight">\(\lambda\)</span>. Pour ce faire résoudre les CPO du lagrangien pour <span class="math notranslate nohighlight">\(x,y,\lambda\)</span>, remplacez ces expressions dans <span class="math notranslate nohighlight">\(f(x,y)\)</span> et prendre la dérivée par rapport à  <span class="math notranslate nohighlight">\(m\)</span>. Montrez que cette dérivée est égale à la valeur de <span class="math notranslate nohighlight">\(\lambda\)</span>.</p>
+<div class="admonition-todo admonition" id="id9">
+<p class="admonition-title">À faire</p>
+<p><strong>Exercice I</strong>: Démontrez dans le problème précédent (H) qu’une augmentation marginale de <span class="math notranslate nohighlight">\(m\)</span> a pour effet d’augmenter le maximum de <span class="math notranslate nohighlight">\(\lambda\)</span>. Pour ce faire résoudre les CPO du lagrangien pour <span class="math notranslate nohighlight">\(x,y,\lambda\)</span>, remplacez ces expressions dans <span class="math notranslate nohighlight">\(f(x,y)\)</span> et prendre la dérivée par rapport à  <span class="math notranslate nohighlight">\(m\)</span>. Montrez que cette dérivée est égale à la valeur de <span class="math notranslate nohighlight">\(\lambda\)</span>.</p>
+</div>
 </div>
 <div class="section" id="note-sur-les-logarithmes">
 <h3>Note sur les logarithmes<a class="headerlink" href="#note-sur-les-logarithmes" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>Dans les notes, nous utiliserons <span class="math notranslate nohighlight">\(\log\)</span> en base <span class="math notranslate nohighlight">\(e=2.718281828459\)</span> et non en base 10. Donc, il s’agit du logarithme naturel (<span class="math notranslate nohighlight">\(\ln = \log_e\)</span>). Python utilise aussi la base exponentielle.</p>
+</div>
 </div>
 </div>
 </div>

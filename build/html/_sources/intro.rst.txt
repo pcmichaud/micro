@@ -108,14 +108,12 @@ La dérivée
 -  Règle d'addition (et soustraction): :math:`f(x) = a(x) + b(x)`, :math:`f'(x) = a'(x) + b'(x)`.
 
 
-.. todo:: **Exercice A**: Trouvez les dérivées de :
-:math:`f(x)=\sqrt{x},\frac{x}{1+x},\frac{1}{2}x^2 + 2x-10,(1+\frac{x}{2})^2` sur papier et ensuite en utilisant SymPy.
+.. todo:: **Exercice A**: Trouvez les dérivées de :math:`f(x)=\sqrt{x},\frac{x}{1+x},\frac{1}{2}x^2 + 2x-10,(1+\frac{x}{2})^2`.
 
 
 
 
-.. todo:: **Exercice B**: Faire une approximation de premier ordre pour :
-:math:`f(x)=\sqrt{x}` sur papier et ensuite en utilisant SymPy. 
+.. todo:: **Exercice B**: Faire une approximation de premier ordre pour :math:`f(x)=\sqrt{x}`. 
 
 
 
@@ -188,10 +186,7 @@ Pour un maximum (local), il faut que :math:`f'(x_0)=0` (condition de premier ord
 
 On peut trouver le maximum (minimum) d'une fonction en Python numériquement ou avec SymPy. 
 
-**Exercice C**: Trouvez l'optimum de la fonction :math:`f(x) = x(10-x)` sur papier et en utilisant SymPy.
-
-
-
+.. todo:: **Exercice C**: Trouvez l'optimum de la fonction :math:`f(x) = x(10-x)`.
 
 
 Dérivée partielle
@@ -200,8 +195,6 @@ Dérivée partielle
 Supposons la fonction :math:`f(x,y)`. La dérivée partielle se fait en
 gardant fixes (ou exogènes) les autres variables:
 :math:`f'_x(x,y) = \frac{\partial f(x,y)}{\partial x}`.
-
-En Sympy, c'est déjà ce qu'on fait avec :code:`diff()`, on garde fixe les autres variables.
 
 
 .. _envelop:
@@ -232,8 +225,7 @@ On obtient :math:`V'(p) = f'_p(x^*(p),p)`.
 
 Ceci implique que la dérivée de la valeur maximale par rapport à une variable exogène est la dérivée de la fonction objective par rapport à cette variable exogène, sans utiliser la règle de chaine (sans changer la solution optimale). C'est un raccourci (approximation) qui sera utile à plusieurs moments dans le cours. 
 
-**Exercice D**: Trouvez la forme de :math:`V'(p)` pour la
-fonction :math:`V(p) = (10 - p\frac{x^*(p)}{2})x^*(p)` où :math:`x^*(p) = \arg \max_x f(x,p)` et :math:`f(x,p) =(10 - p\frac{x}{2})x`.
+.. todo:: **Exercice D**: Trouvez la forme de :math:`V'(p)` pour la fonction :math:`V(p) = (10 - p\frac{x^*(p)}{2})x^*(p)` où :math:`x^*(p) = \arg \max_x f(x,p)` et :math:`f(x,p) =(10 - p\frac{x}{2})x`.
 
 
 
@@ -261,8 +253,7 @@ Si on pose :math:`df(x,y)=0`, on peut réarranger pour obtenir
 
 On qualifie la dérivée par le :math:`df=0` pour indiquer que c'est une dérivée obtenue en contraignant la valeur de la fonction à être constante.
 
-**Exercice E**: Trouvez :math:`\frac{dy}{dx}\Bigr|_{df=0}` par
-différentielle totale pour :math:`f(x,y)=\log(xy)`. Faire sur papier et par SymPy. 
+.. todo:: **Exercice E**: Trouvez :math:`\frac{dy}{dx}\Bigr|_{df=0}` par différentielle totale pour :math:`f(x,y)=\log(xy)`. Faire sur papier et par SymPy. 
 
 
 
@@ -284,11 +275,7 @@ Théorème d'Euler: Si une fonction est homogène de degré :math:`r`, alors:
 
    r f(x_1,x_2,...,x_n) = \sum_{i=1}^n \frac{\partial f}{\partial x_i}x_i.
 
-**Exercice F**: Trouvez le degré d’homogénéité de la fonction
-:math:`f(x,y)=x^\alpha y^\beta` des deux façons.
-
-
-
+.. todo:: **Exercice F**: Trouvez le degré d’homogénéité de la fonction :math:`f(x,y)=x^\alpha y^\beta` des deux façons.
 
 Approximation et maximum
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -334,15 +321,11 @@ La CPO est :math:`f'_x(x,q(x,m)) + f'_y(x,q(x,m))q'(x,m) = 0`. On peut
 résoudre pour :math:`x^*` et utiliser :math:`y=q(x)` pour trouver
 :math:`y^*`. 
 
-**Exercice G**: Maximisez la fonction :math:`f(x,y) = \log x + \log y`
-sous la contrainte :math:`x+y \le m`.
-
-
+.. todo:: **Exercice G**: Maximisez la fonction :math:`f(x,y) = \log x + \log y` sous la contrainte :math:`x+y \le m`.
 
 Avec plusieurs variables et contraintes, cette approche n'est pas très pratique...
 
 **Le lagrangien**
-
 
 La méthode de `Lagrange <https://fr.wikipedia.org/wiki/Joseph-Louis_Lagrange>`_ consiste à résoudre pour :math:`(x,y)`,
 
@@ -364,10 +347,7 @@ Ces trois équations sont les CPO du lagrangien:
 
 Le lagrangien :math:`L(x,y,\lambda)` est une fonction objective modifiée qui permet de pénaliser la maximisation pour la contrainte (pour s'assurer qu'elle soit respectée). On remarque que si :math:`\lambda = 0`, on a les deux CPO non-contraintes :math:`f'_x(x,y)=0` et :math:`f'_y(x,y)=0` qui donnent une solution optimale sans avoir besoin de la troisième. Seulement si la contrainte est *mordante* (si :math:`\lambda \neq 0`) aurons-nous une solution différente... 
 
-**Exercice H**: Maximisez la fonction :math:`f(x,y) = \log x + \log y`
-sous la contrainte :math:`x+y \le m` par la méthode du lagrangien.
-
-
+.. todo:: **Exercice H**: Maximisez la fonction :math:`f(x,y) = \log x + \log y` sous la contrainte :math:`x+y \le m` par la méthode du lagrangien.
 
 **L’interprétation du multiplicateur**
 
@@ -381,15 +361,11 @@ Par le théorème de l’enveloppe, si
 
 alors :math:`V'(m) = \lambda`. La valeur maximale augmente de :math:`\lambda` quand on augmente (marginalement) :math:`m` (quand on relâche la contrainte).
 
-**Exercice I**: Démontrez dans le problème précédent (H) qu’une augmentation
-marginale de :math:`m` a pour effet d'augmenter le maximum de :math:`\lambda`. Pour ce faire résoudre les CPO du lagrangien pour :math:`x,y,\lambda`, remplacez ces expressions dans :math:`f(x,y)` et prendre la dérivée par rapport à  :math:`m`. Montrez que cette dérivée est égale à la valeur de :math:`\lambda`. 
-
-
-
+.. todo:: **Exercice I**: Démontrez dans le problème précédent (H) qu’une augmentation marginale de :math:`m` a pour effet d'augmenter le maximum de :math:`\lambda`. Pour ce faire résoudre les CPO du lagrangien pour :math:`x,y,\lambda`, remplacez ces expressions dans :math:`f(x,y)` et prendre la dérivée par rapport à  :math:`m`. Montrez que cette dérivée est égale à la valeur de :math:`\lambda`. 
 
 Note sur les logarithmes
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Dans les notes, nous utiliserons :math:`\log` en base :math:`e=2.718281828459` et non en base 10. Donc, il s'agit du logarithme naturel (:math:`\ln = \log_e`). Python utilise aussi la base exponentielle. 
+.. note:: Dans les notes, nous utiliserons :math:`\log` en base :math:`e=2.718281828459` et non en base 10. Donc, il s'agit du logarithme naturel (:math:`\ln = \log_e`). Python utilise aussi la base exponentielle. 
 
 
