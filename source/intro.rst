@@ -11,7 +11,7 @@ Théorie et données
    :align: middle
    :scale: 25%
 
-Le site `missingprofits.world <https://missingprofits.world/>`_ calcule ce que perd chaque pays aux paradis fiscaux. Mais comment rappatrier ces profits? Quel effet aurait une taxe sur la richese pour réduire les inégalités? On a besoin de la théorie pour comprendre l'effet potentiel des incitatifs. Ensuite, les données pour estimer ces effets. Les économistes Emmanuel Saez et Gabriel Zucman s'intéresse à cette question avec théorie et données. 
+Le site `missingprofits.world <https://missingprofits.world/>`_ calcule ce que perd chaque pays aux paradis fiscaux. Mais comment rapatrier ces profits? Quel effet aurait une taxe sur la richesse pour réduire les inégalités? On a besoin de la théorie pour comprendre l'effet potentiel des incitatifs. Ensuite, les données pour estimer ces effets. Les économistes Emmanuel Saez et Gabriel Zucman s'intéressent à cette question avec théorie et données. 
 
 |logo1|
 
@@ -19,11 +19,11 @@ Le site `missingprofits.world <https://missingprofits.world/>`_ calcule ce que p
    :align: middle
    :scale: 25%
    
-Une taxe sur le carbone pourrait être un bon moyen de lutter contre le réchauffement climatique. Mais quelles sont les effets d'une telle taxe sur l'économie? En 2019, le Directeur parlementaire du Budget du Canada dans un `rapport <https://www.pbo-dpb.gc.ca/web/default/files/Documents/Reports/2019/Paris_Target/Paris_Target_FR.pdf>`_ utilise un modèle d'équilibre général pour calculer ces effets. Le modèle utilise données et théorie. 
+Une taxe sur le carbone pourrait être un bon moyen de lutter contre le réchauffement climatique. Mais quels sont les effets d'une telle taxe sur l'économie? En 2019, le Directeur parlementaire du Budget du Canada dans un `rapport <https://www.pbo-dpb.gc.ca/web/default/files/Documents/Reports/2019/Paris_Target/Paris_Target_FR.pdf>`_ utilise un modèle d'équilibre général pour calculer ces effets. Le modèle utilise données et théorie. 
 
 |logo2|
 
-Comment structurer le marché de la publicité sur internet? Quel est le prix de l'information? Comment rénumérer le classement dans les moteurs de recherche? Hal Varian est l’économiste en chef chez Google. Il est l'auteur d'un livre de théorie très populaire en microéconomie mais aussi quelqu'un qui conjuge au quotidien données et théorie pour aider les entreprises de la nouvelle économie. Voir cette `entrevue <https://www.youtube.com/watch?v=aUl3OVgT64Y>`_ avec lui.
+Comment structurer le marché de la publicité sur internet? Quel est le prix de l'information? Comment rémunérer le classement dans les moteurs de recherche? Hal Varian est l’économiste en chef chez Google. Il est l'auteur d'un livre de théorie très populaire en microéconomie, mais aussi quelqu'un qui conjugue au quotidien données et théorie pour aider les entreprises de la nouvelle économie. Voir cette `entrevue <https://www.youtube.com/watch?v=aUl3OVgT64Y>`_ avec lui.
 
 .. |logo3| image:: /images/rules.jpeg
    :align: middle
@@ -42,15 +42,15 @@ Les données sont partout. La théorie aide à en faire du sens:
 
 Cet `article <https://www.quantamagazine.org/to-build-truly-intelligent-machines-teach-them-cause-and-effect-20180515/>`_ de Judea Pearl, pourtant un des pionniers de l'intelligence articifielle, met en garde contre une utilisation des données sans cadre théorique. 
 
-Rappel Mathématique
+Rappel mathématique
 +++++++++++++++++++
 
-Les mathématiques sont essentielles, en particulier le calcul différentiel, afin d'analyser le comportement, mesurer l'effet de changements dans l'environnement (prix, taxes). Voici un (rappel) des concepts qui sont important pour le cours.  
+Les mathématiques sont essentielles, en particulier le calcul différentiel, afin d'analyser le comportement, mesurer l'effet de changements dans l'environnement (prix, taxes). Voici un (rappel) des concepts qui sont importants pour le cours.  
 
 L’analyse marginale et les approximations
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Comment décrire une fonction, :math:`f(x)`?
+Comment décrire une fonction :math:`f(x)`?
 
 -  Fonctions généralement compliquées, fonctions linéaires simples...
 
@@ -121,7 +121,7 @@ La dérivée
 
 -  :math:`f(x) = x^a`: :math:`f'(x) = a x^{a-1}`
 
-La librairie SymPy permet de prendre la dérivée de fonctions. Par exemple, essayez
+La librairie SymPy permet de prendre la dérivée de fonctions. Par exemple, essayez.
 
 .. code-block:: python 
    
@@ -161,7 +161,7 @@ La librairie SymPy permet de prendre la dérivée de fonctions. Par exemple, ess
 
 **Approximations d’ordres supérieurs**
 
-Si la fonction a des dérivées supérieures non-nulles, ou bien :math:`x` est loin de :math:`x_0`, l'approximation de premier ordre que nous avons vu produira une approximation assez mauvaise... Par ailleurs, on veut peut-être aussi caractériser des fonctions par autre chose que seulement leur pente. (est-ce une courbe, etc?). 
+Si la fonction a des dérivées supérieures non nulles, ou bien :math:`x` est loin de :math:`x_0`, l'approximation de premier ordre que nous avons vu produira une approximation assez mauvaise... Par ailleurs, on veut peut-être aussi caractériser des fonctions par autre chose que seulement leur pente. (est-ce une courbe, etc?). 
 
 On peut pousser plus loin le concept d'approximation,
 
@@ -220,7 +220,7 @@ Considérons l’approximation de deuxième ordre pour voir si elle est suffisan
 Pour un maximum (local), il faut que :math:`f'(x_0)=0` (condition de premier ordre, CPO) et
 :math:`f''(x_0)<0` (condition de deuxième ordre, CDO). Observons que:
 
--  Si :math:`f'(x_0) = 0` mais :math:`f''(x_0)>0`, alors
+-  Si :math:`f'(x_0) = 0`, mais :math:`f''(x_0)>0`, alors
    :math:`f(x_0+\Delta x) > f(x_0)`.
 
 -  f’(x) doit être positif quand :math:`\Delta x <0` et négatif quand
@@ -243,7 +243,7 @@ Dérivée partielle
 ^^^^^^^^^^^^^^^^^
 
 Supposons la fonction :math:`f(x,y)`. La dérivée partielle se fait en
-gardant fixe (ou exogène) les autres variables:
+gardant fixes (ou exogènes) les autres variables:
 :math:`f'_x(x,y) = \frac{\partial f(x,y)}{\partial x}`.
 
 En Sympy, c'est déjà ce qu'on fait avec :code:`diff()`, on garde fixe les autres variables.
@@ -273,7 +273,7 @@ On a par définition :math:`x^*(p)` maximisant :math:`f(x,p)`. Donc, :math:`f'_x
 
 Ainsi, le premier terme de :math:`V'(p)` est zéro. 
 
-On obtient, :math:`V'(p) = f'_p(x^*(p),p)`.
+On obtient :math:`V'(p) = f'_p(x^*(p),p)`.
 
 Ceci implique que la dérivée de la valeur maximale par rapport à une variable exogène est la dérivée de la fonction objective par rapport à cette variable exogène, sans utiliser la règle de chaine (sans changer la solution optimale). C'est un raccourci (approximation) qui sera utile à plusieurs moments dans le cours. 
 
@@ -295,7 +295,7 @@ peuvent être trouvées en inversant la fonction, :math:`y=g(x,\overline{f})`.
 Mais on peut décrire ces combinaisons en utilisant la
 différentielle totale (une approximation linéaire):
 
-On peut décrire la forme d'une fonction à un point donnée par:
+On peut décrire la forme d'une fonction à un point donné par:
 
 .. math::
 
@@ -365,7 +365,7 @@ Condition pour un maximum:
 -  Suffisante:
    :math:`\frac{1}{2}f''_{xx}(x_0,y_0)(x-x_0)^2  + \frac{1}{2}f''_{yy}(x_0,y_0)(y-y_0)^2 +f''_{xy}(x_0,y_0)(x-x_0)(y-y_0)<0`
 
-La condition suffisante est reliée au déterminant du Hessien de la fonction (un concept qui nous n'utiliserons pas en classe mais qui devrait rappeler des souvenirs). 
+La condition suffisante est reliée au déterminant du Hessien de la fonction (un concept qui nous n'utiliserons pas en classe, mais qui devrait rappeler des souvenirs). 
 
 Maximisation avec contrainte
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -403,7 +403,7 @@ sous la contrainte :math:`x+y \le m`.
 
 Avec plusieurs variables et contraintes, cette approche n'est pas très pratique...
 
-**Le Lagrangien**
+**Le lagrangien**
 
 
 La méthode de `Lagrange <https://fr.wikipedia.org/wiki/Joseph-Louis_Lagrange>`_ consiste à résoudre pour :math:`(x,y)`,
@@ -417,17 +417,17 @@ La méthode de `Lagrange <https://fr.wikipedia.org/wiki/Joseph-Louis_Lagrange>`_
 
 où :math:`\lambda` est un multiplicateur de Lagrange. 
 
-Ces trois équations sont les CPO du Lagrangien:
+Ces trois équations sont les CPO du lagrangien:
 
 .. math::
 
    \begin{aligned}
        \max_{x,y,\lambda} L(x,y,\lambda) = f(x,y) - \lambda (g(x,y)-m)\end{aligned}
 
-Le Lagrangien :math:`L(x,y,\lambda)` est une fonction objective modifiée qui permet de pénaliser la maximisation pour la contrainte (pour s'assurer qu'elle soit respectée). On remarque que si :math:`\lambda = 0`, on a les deux CPO non-contraintes, :math:`f'_x(x,y)=0` et :math:`f'_y(x,y)=0` qui donnent une solution optimale sans avoir besoin de la troisième. Seulement si la contrainte est *mordante* (si :math:`\lambda \neq 0`) aurons-nous une solution différente... 
+Le lagrangien :math:`L(x,y,\lambda)` est une fonction objective modifiée qui permet de pénaliser la maximisation pour la contrainte (pour s'assurer qu'elle soit respectée). On remarque que si :math:`\lambda = 0`, on a les deux CPO non-contraintes :math:`f'_x(x,y)=0` et :math:`f'_y(x,y)=0` qui donnent une solution optimale sans avoir besoin de la troisième. Seulement si la contrainte est *mordante* (si :math:`\lambda \neq 0`) aurons-nous une solution différente... 
 
 **Exercice H**: Maximisez la fonction :math:`f(x,y) = \log x + \log y`
-sous la contrainte :math:`x+y \le m` par la méthode du Lagrangien.
+sous la contrainte :math:`x+y \le m` par la méthode du lagrangien.
 
 .. raw:: html
 
@@ -466,7 +466,7 @@ Dans les notes, nous utiliserons :math:`\log` en base :math:`e=2.718281828459` e
 Notebook Python
 +++++++++++++++
 
-Pour faire les exercices ici-haut dans Python, vous pouvez ouvrir ce notebook dans google collab et y rajouter vos calculs. 
+Pour faire les exercices ici haut dans Python, vous pouvez ouvrir ce notebook dans google collab et y rajouter vos calculs. 
 
 |ImageLink|_
 

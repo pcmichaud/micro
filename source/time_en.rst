@@ -23,7 +23,7 @@ Empirical evidence suggest that the origin of preferences can be traced to child
 Discounted Utility
 ++++++++++++++++++
 
-In his book *The Theory of Interest* in 1930, `Irving Fisher <https://fr.wikipedia.org/wiki/Irving_Fisher>`_ presents a simple theory which is the fundation to modern finance and macro. Preferences are represented using discounted utility. 
+In his book *The Theory of Interest* in 1930, `Irving Fisher <https://fr.wikipedia.org/wiki/Irving_Fisher>`_ presents a simple theory which is the foundation to modern finance and macro. Preferences are represented using discounted utility. 
 
 If :math:`u(C_t)` denotes utility of consuming in period :math:`t`, discounted utility for a consumption plan :math:`\textbf{C} = (C_1,...,C_T)` is :
 
@@ -79,7 +79,7 @@ Resources originate from:
 
 -  Initial wealth: :math:`W_0`.
 
--  Income during both periods, :math:`Y_1`, :math:`Y_2`.
+-  Income during both periods :math:`Y_1`, :math:`Y_2`.
 
 The present value (PV) of these resources :
 
@@ -147,7 +147,7 @@ The problem is (fix :math:`W_0=0` to simplify):
 
 Two approaches:
 
-#. Direct approach (substitution of constraint)
+#. Direct approach (substitution of constraints)
 
 #. Lagrangian
 
@@ -166,7 +166,7 @@ With (1) and (2) we get :
 
 .. math:: \frac{u'(C_1)}{\delta u'(C_2)} = 1+r
 
-We can re-arrange, fixing :math:`R=1+r`, to obtain the **Euler** equation:
+We can rearrange, fixing :math:`R=1+r`, to obtain the **Euler** equation:
 
 .. math:: u'(C_1) = R\delta u'(C_2)
 
@@ -217,13 +217,13 @@ Conclusions are sometimes surprising compared to what we hear in the media. A va
 Present bias
 ++++++++++++
 
-As we have seen, individuals can be very impatient. But their preferences may still fit discounted utility theory. There is no contradiction. But, there exist violations of discounted utility which have to do with the way people discount the very short term and the medium and long-term. If the discount function is not exponential, but rather hyperbolic for example, then individuals make inconsistent plans which they will not follow upon. 
+As we have seen, individuals can be very impatient. But their preferences may still fit discounted utility theory. There is no contradiction. But there exist violations of discounted utility which have to do with the way people discount the very short term and the medium and long-term. If the discount function is not exponential, but rather hyperbolic for example, then individuals make inconsistent plans which they will not follow upon. 
 
 *Example*: Picking a movie
 
 You have to pick one movie to watch today and one you will watch next week:
 
-Assume `Mommy <https://www.youtube.com/watch?v=d7rtSqI0ZeA>`_  has an immediate benefit of 4 and also a future benefit of 4 but that `Les Boys <https://www.youtube.com/watch?v=OFl0fuIRl9A>`_ has an immediate benefit of 7 (but no future benefit).
+Assume, `Mommy <https://www.youtube.com/watch?v=d7rtSqI0ZeA>`_  has an immediate benefit of 4 and also a future benefit of 4 but that `Les Boys <https://www.youtube.com/watch?v=OFl0fuIRl9A>`_ has an immediate benefit of 7 (but no future benefit).
 
 **Exercise F**: What is your discounted utility if you pick a movie today and  :math:`\delta=1`. What happens if we delay movie watching to next week but you have to pick today?
 
@@ -231,7 +231,7 @@ Assume `Mommy <https://www.youtube.com/watch?v=d7rtSqI0ZeA>`_  has an immediate 
 What is likely to happen when next week comes? Do you follow up with the plan in Exercise F?
 
 
-Empirical evidence suggest that in such choice situations, lots of people will pick Les Boys if they watch tonight. If they pick for next week today, they will pick Mommy. Discounted utility does not allow for such choice reversals, what is often called dynamic inconsistency.  
+Empirical evidence suggests that in such choice situations, lots of people will pick Les Boys if they watch tonight. If they pick for next week today, they will pick Mommy. Discounted utility does not allow for such choice reversals, what is often called dynamic inconsistency.  
 
 **Present-Bias and Quasi-Hyperbolic Preferences**
 
@@ -250,16 +250,16 @@ Using the two movie example, assume now :math:`\beta=0.5`.
 
 *Example*: Who buys Annual Gym memberships?
 
-`Della Vigna et Malmendier (2006) <https://www.aeaweb.org/articles?id=10.1257/aer.96.3.694>`_ study the choice between taking an annual membership to a Gym vs. purchasing individual passes valid for one visit to the Guym. An daily pass costs 10$. But given how rarely some people go to the gym, those who purchase an annual membership often end up paying much more per visit. Why do they buy the membership? Don't they know that they may suffer from present-bias? 
+`Della Vigna et Malmendier (2006) <https://www.aeaweb.org/articles?id=10.1257/aer.96.3.694>`_ study the choice between taking an annual membership to a Gym vs. purchasing individual passes valid for one visit to the Gym. An daily pass costs 10$. But given how rarely some people go to the gym, those who purchase an annual membership often end up paying much more per visit. Why do they buy the membership? Don't they know that they may suffer from present-bias? 
 
 .. figure:: /images/Gym.png
     :alt: Della Vigna et Malmendier (2006)
 
-There is evidence that many under-estimate their degree of present bias. Some models have been constructed to capture this degree of naiveté. 
+There is evidence that many underestimate their degree of present bias. Some models have been constructed to capture this degree of naiveté. 
 
 Example: How do we help people to save?
 
--  Saving is, in some respect, similar to going to the Gym: costly in the short-term (sacrifice consumption), benefits in the long-term (future consumption).
+-  Saving is, in some respects, similar to going to the Gym: costly in the short-term (sacrifice consumption), benefits in the long-term (future consumption).
 
 -  To help people with these biases, nudges can be used. Turns out that making people do something by default increases retention into a particular behavior. 
 

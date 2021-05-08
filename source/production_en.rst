@@ -1,12 +1,12 @@
 Production
 ----------
 
-In the exchange economy, endownments were given. In the real world, they do not fall from the sky. They are often produced. Often, goods are produced from other goods by firms. Firms are owned by consumers. Why do firms exist? `Ronald Coase <https://fr.wikipedia.org/wiki/Ronald_Coase>`_ proposed a simple explanation: firms are there to internalize transactions costs in order to produce goods.Without these organizations, difficult to produce at low cost things like laptops, furniture. There are returns to scale which makes it possible for firms to produce on a great scale at low cost. Organizations also promote innovation by bringing together people who make share ideas and develop new products and services. We will present how economists think of decisions make by firms in a production context. This will lead us back to general equilibrium.
+In the exchange economy, endowments were given. In the real world, they do not fall from the sky. They are often produced. Often, goods are produced from other goods by firms. Firms are owned by consumers. Why do firms exist? `Ronald Coase <https://fr.wikipedia.org/wiki/Ronald_Coase>`_ proposed a simple explanation: firms are there to internalize transactions costs in order to produce goods.Without these organizations, difficult to produce at low-cost things like laptops, furniture. There are returns to scale which makes it possible for firms to produce on a great scale at low cost. Organizations also promote innovation by bringing together people who make share ideas and develop new products and services. We will present how economists think of decisions make by firms in a production context. This will lead us back to general equilibrium.
 
 Production Function
 +++++++++++++++++++
 
-We will think of a simple firm who produces an output from potentially multiple inputs. This process is represented by a production function :math:`F(\cdot)`. The production function can be estimated using econometric methods, in collaboration perhaps with engineers who know a lot about the production process.
+We will think of a simple firm that produces an output from potentially multiple inputs. This process is represented by a production function :math:`F(\cdot)`. The production function can be estimated using econometric methods, in collaboration perhaps with engineers who know a lot about the production process.
 
 **Example: one input and output**
 
@@ -56,7 +56,7 @@ It is the quantity of :math:`Z` that we can save if we increase  :math:`X` margi
 Returns to scale
 ++++++++++++++++
 
-The factory manager wishes to double production. He is asking you in which proportion he should increase his purchases of inputs. The marginal productivity is not useful for this purpose as it is a concept that looks at how much production increases when one input increases and the others are constant. Second, this is not a marginal change, since we are looking to double production. Turns out we can look at returns to scale of a production function. A function has returns to scale which are:
+The factory manager hopes to double production. He is asking you in which proportion he should increase his purchases of inputs. The marginal productivity is not useful for this purpose as it is a concept that looks at how much production increases when one input increases and the others are constant. Second, this is not a marginal change, since we are looking to double production. Turns out we can look at returns to scale of a production function. A function has returns to scale which are:
 
 -  constant: if :math:`F(X,Z)` is homgeneous of degree 1
 
@@ -156,7 +156,7 @@ The marginal cost of producing an output (while minimizing costs) is given by:
 
 We use the convention of using lower case :math:`c` to denote marginal cost while upper case C for total costs. 
 
-Using the enveloppe theorem we can show that
+Using the envelope theorem, we can show that
 
 .. math:: \frac{\partial C(p_X,p_Z,Y)}{\partial Y} = \mu
 
@@ -232,7 +232,7 @@ Consider a situation with two goods: :math:`X` and :math:`Y`. The firm has a pro
 -  Preferences of consumers are represented by :math:`U_1(X, Y)` and
    :math:`U_2(X,Y)`
 
--  Consumer 1 has endownments :math:`(X^{C1,e},
+-  Consumer 1 has endowments :math:`(X^{C1,e},
    Y^{C1,e})` while consumer 2 has :math:`(X^{C2,e}, Y^{C2,e})`
 
 -  Each consumer gets a share of profits from the firm :math:`\rho_{1}` and
@@ -317,13 +317,13 @@ If we summarize the method
 
 -  Given prices, profit maximization gives input demands and supply of the firm. We can compute the profits.
 
--  Given prices, endownments and profits, we can compute income and consumer demands.
+-  Given prices, endowments and profits, we can compute income and consumer demands.
   
 -  From excess demand functions, we can find the equilibrium price. 
 
-Welfare theorems apply. The firm needs to be a price-taker. 
+Welfare theorems apply. The firm needs to be a price taker. 
 
-Python example 
+Python Example 
 ++++++++++++++
 
 |ImageLink|_

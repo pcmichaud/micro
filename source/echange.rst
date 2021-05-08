@@ -1,7 +1,7 @@
 Échange
 -------
 
-Pourquoi échanger entre consommateur? par quel moyen? Par le troc, un marché ou bien en nommant quelqu'un qui se chargera de partager les biens entre les personnes. Quel mécanisme fera le mieux? 
+Pourquoi échanger entre consommateurs? Par quel moyen? Par le troc, un marché ou bien en nommant quelqu'un qui se chargera de partager les biens entre les personnes. Quel mécanisme fera le mieux? 
 
 .. figure:: /images/barter.jpeg
    :scale: 100
@@ -9,7 +9,7 @@ Pourquoi échanger entre consommateur? par quel moyen? Par le troc, un marché o
 
 Nous verrons qu'il existe généralement des gains à l'échange. L'échange peut seulement être bénéfique. Si ce ne l'est pas, les individus n'échangent pas. Donc permettre l'échange ne peut nuire. Le meilleur résultat peut être atteint de différentes façons (marché, planificateur central, troc) si certaines conditions sont respectées. 
 
-Débutons avec un cadre simple, qui ne restraint pas la généralité des résultats plus tard:
+Débutons avec un cadre simple, qui ne restreint pas la généralité des résultats plus tard:
 
 -  Considérons une situation avec deux consommateurs (1 et 2) et deux biens
    (:math:`X` and :math:`Y`)
@@ -25,16 +25,16 @@ Exemples
 
 -  Deux pays: Le pays 1 a une dotation de pétrole, le pays 2 de la machinerie industrielle. 
 
-- Deux consommateurs sur kijiji ou Ebay: un a une canot et l'autre un ordinateur portable
+- Deux consommateurs sur kijiji ou Ebay: l’un a un canot et l'autre un ordinateur portable
 
 D'où viennent ces dotations? Pour le moment, de la nature (ressources naturelles ou héritage?). Plus tard, ces dotations proviendront des profits provenant de la production d'un bien à l'aide d'autres biens dans l'économie. 
 
 Équilibre de marché
 +++++++++++++++++++
 
-Le marché est une forme d'échange très répandue. En terme de modélisation, le marché est résumé par un vecteur de prix (s'il y a plusieurs biens) et un système légal qui encadre les transactions. 
+Le marché est une forme d'échange très répandue. En termes de modélisation, le marché est résumé par un vecteur de prix (s'il y a plusieurs biens) et un système légal qui encadre les transactions. 
 
-Si chaque consommateur a une dotation et une demande individuelle pour les biens en fonction des prix, on peut assez facilement trouver un équilibre de marché, içi d'échange, puisqu'il n'y a pas de production. Pensez à `Kijiji <https://www.kijiji.ca/>`_.  
+Si chaque consommateur a une dotation et une demande individuelle pour les biens en fonction des prix, on peut assez facilement trouver un équilibre de marché, ici d'échange, puisqu'il n'y a pas de production. Pensez à `Kijiji <https://www.kijiji.ca/>`_.  
 
 Pour ce qui est des demandes individuelles, 
 
@@ -47,7 +47,7 @@ Pour ce qui est des demandes individuelles,
 -  Les prix sont déterminés en équilibre. 
 
 
-Réalisons d'abord que ce n'est que le prix relatif qui est important pour l'équilibre. Nous avons deux prix inconnues, :math:`p_X` et :math:`p_Y`. La contrainte budgétaire peut être ré-écrite  
+Réalisons d'abord que ce n'est que le prix relatif qui est important pour l'équilibre. Nous avons deux prix inconnus :math:`p_X` et :math:`p_Y`. La contrainte budgétaire peut être ré-écrite  
 
    .. math:: X_1^c + \frac{p_Y}{p_X} Y_1^c  =   X_1^e + \frac{p_Y}{p_X} Y_1^e
 
@@ -60,7 +60,7 @@ Comment trouver le prix relatif d'équilibre?
 .. math::
    \max_{X_1,Y_1} \left[U_1 : X_1^c + p Y_1^c  \leq   X_1^e + p Y_1^e\right]
 
-On obtient :math:`X_1^c(p)` et :math:`Y_1^c(p)` par le Lagrangien. 
+On obtient :math:`X_1^c(p)` et :math:`Y_1^c(p)` par le lagrangien. 
 
 -  Étape 2: Le prix :math:`p^*` est un prix d'équilibre si à :math:`p^*` la demande agrégée est égale à l'offre agrégée. On cherche donc :math:`p^*` tel que: 
 
@@ -68,15 +68,15 @@ On obtient :math:`X_1^c(p)` et :math:`Y_1^c(p)` par le Lagrangien.
       X_1^c(p^*)+X_2^c(p^*) = X_1^e + X_2^e \quad
       et \quad Y_1^c(p^*)+Y_2^c(p^*) = Y_1^e + Y_2^e
 
-Le quantité de :math:`X` échangée est donnée par :math:`X_1^c(p^*) - X_1^e =X_2^e - X_2^c(p^*)`. Si :math:`X_1^c - X_1^e < 0`, le consommateur 1 est offreur de :math:`X` (le consommateur 2 demandeur).
+La quantité de :math:`X` échangée est donnée par :math:`X_1^c(p^*) - X_1^e =X_2^e - X_2^c(p^*)`. Si :math:`X_1^c - X_1^e < 0`, le consommateur 1 est offreur de :math:`X` (le consommateur 2 demandeur).
 
 Hypothèses importantes:
 
--  Le marché est compétitif: Le consommateur prend le prix comme donné. Il est **prenneur de prix**.
+-  Le marché est compétitif: Le consommateur prend le prix comme donné. Il est **preneur de prix**.
 
--  Tous les biens sont homogènes (identitiques) et perçus de la même façon par l'acheteur et le vendeur. 
+-  Tous les biens sont homogènes (identiques) et perçus de la même façon par l'acheteur et le vendeur. 
 
--  L'utilité du consommateur 1 ne dépend pas des actions des autres consommateurs: **aucune externalités**
+-  L'utilité du consommateur 1 ne dépend pas des actions des autres consommateurs: **aucune externalité**
 
 Regardons un exemple. Considérons :math:`U_1(X,Y) = U_2(X,Y) = \log X + \alpha \log Y`. Fixons :math:`p_X= 1`, et donc :math:`p_Y = p`. Les dotations sont données par :math:`(X_1^e, Y_1^e, X_2^e, Y_2^e)`. La solution pour les demandes est:
 
@@ -100,14 +100,14 @@ Le marché pour :math:`Y` est aussi en équilibre au prix d'équilibre :math:`p`
 Loi de Walras
 +++++++++++++
 
-On a une seule inconnue, :math:`p` mais deux équations... L'équilibre sur un marché implique l'équilibre sur l'autre. Regardons les deux contraintes budgétaires: 
+On a une seule inconnue :math:`p` mais deux équations... L'équilibre sur un marché implique l'équilibre sur l'autre. Regardons les deux contraintes budgétaires: 
 
    .. math::
 
       X_1^c + p Y_1^c  =   X_1^e + p Y_1^e \quad et \quad
       X_2^c + p Y_2^c  =   X_2^e + p Y_2^e
 
-Si on additionne les deux contraintes on obtient: 
+Si on additionne les deux contraintes, on obtient: 
 
    .. math::
 
@@ -131,14 +131,14 @@ Le prix d'équilibre sera fonction des préférences des agents. Dans notre exem
 
 Donc le prix de :math:`Y` augmente avec la préférence relative pour :math:`Y`, donnée par :math:`\alpha`. L'offre étant fixe, si la demande est élevée, le prix d'équilibre devra être plus élevé pour retrouver un équilibre. Si le bien :math:`Y` est rare, c'est-à-dire que :math:`Y_1^e + Y_2^e` est faible, le prix d'équilibre sera plus élevé. 
 
-Le prix est un signal des préférences et de la rareté relative des biens. Est-ce que l'équilibre de marché garantie le niveau de bien-être le plus élevé que peuvent obtenir les deux agents? Afin de juger de l'allocation de marché, nous devons faire un pas de côté pour définir une allocation optimale, sans le recours au marché. 
+Le prix est un signal des préférences et de la rareté relative des biens. Est-ce que l'équilibre de marché garantit le niveau de bien-être le plus élevé que peuvent obtenir les deux agents? Afin de juger de l'allocation de marché, nous devons faire un pas de côté pour définir une allocation optimale, sans le recours au marché. 
 
 Allocation Pareto-efficace
 ++++++++++++++++++++++++++
 
 On a déjà vu qu'une amélioration de Pareto est possible quand aucun des deux agents ne perd en utilité et qu'au moins un gagne. Quand il n'existe plus d'amélioration au sens de Pareto, on dit que l'allocation est Pareto optimale ou efficace. Nous allons maintenant appliquer ce principe aux allocations de biens. 
 
-Pour ce faire, on aura besoin d'une boîte d'Edgeworth, un outil très utile. C'est en fait un système de coordonées qui permet de tracer en deux dimensions un problème qui en a 4 (les quantités des biens :math:`X` et :math:`Y` pour les consommateurs 1 et 2). Pour ce faire, on utilise le fait qu'il existe une quantité totale fixe des biens X et Y.  L'exercice A vous apprendra à construire une boîte d'Edgeworth. 
+Pour ce faire, on aura besoin d'une boîte d'Edgeworth, un outil très utile. C'est en fait un système de coordonnées qui permet de tracer en deux dimensions un problème qui en a 4 (les quantités des biens :math:`X` et :math:`Y` pour les consommateurs 1 et 2). Pour ce faire, on utilise le fait qu'il existe une quantité totale fixe des biens X et Y.  L'exercice A vous apprendra à construire une boîte d'Edgeworth. 
 
 .. figure:: /images/endow.png
    :scale: 35
@@ -167,7 +167,7 @@ D'abord, un point dans une boite d'Edgeworth ou deux courbes d'indifférence se 
 
 Quand le noyau est vide, l'allocation est Pareto efficiente ou optimale. Ceci implique que les courbes d'indifférences doivent être tangentes. 
 
-La courbe des contrats est la courbe qui passe par toutes les allocations Pareto efficiente. La frontière de Pareto est la courbe dans l'espace :math:`(U_1,U_2)` qui indique toutes les allocations optimales au sens de Pareto. 
+La courbe des contrats est la courbe qui passe par toutes les allocations Pareto efficientes. La frontière de Pareto est la courbe dans l'espace :math:`(U_1,U_2)` qui indique toutes les allocations optimales au sens de Pareto. 
 
 .. figure:: /images/contract.png
    :scale: 35
@@ -193,7 +193,7 @@ sujet à :
    X_1 + X_2 \le X_e \\
    Y_1 + Y_2 \le Y_e\end{aligned}
 
-On applique la technique du Lagrangien mais cette fois avec trois contraintes. Voici le Lagrangien: 
+On applique la technique du lagrangien, mais cette fois avec trois contraintes. Voici le lagrangien: 
 
 .. math::
    \begin{split}
@@ -248,7 +248,7 @@ La contrainte budgétaire dépend des dotations et indique les allocations qui s
 
 Considérons le prix d'équilibre: :math:`p^*` et les quantités consommées par le consommateur 1: :math:`X^c_1 = X^c_1(p^*)` et :math:`Y^c_1 = Y^c_1(p^*)`. On a que :math:`U_1(X^c_1, Y^c_1) \geq U_1(X^e_1, Y^e_1)`
 
-Pourquoi? Au prix :math:`p^*`, le panier de dotations :math:`B^e_1 = (X^e_1,Y^e_1)` est disponible mais le consommateur préfère :math:`B^c_1=(X^c_1, Y^c_1)`. Donc, les préférences révèlent que :math:`U_1(X^c_1, Y^c_1) \geq U_1(X^e_1, Y^e_1)`. 
+Pourquoi? Au prix :math:`p^*`, le panier de dotations :math:`B^e_1 = (X^e_1,Y^e_1)` est disponible, mais le consommateur préfère :math:`B^c_1=(X^c_1, Y^c_1)`. Donc, les préférences révèlent que :math:`U_1(X^c_1, Y^c_1) \geq U_1(X^e_1, Y^e_1)`. 
 
 
 Théorème du bien-être
@@ -266,9 +266,9 @@ Pourquoi ce résultat? À l'allocation d'équilibre :math:`X^c_1(p^*),Y^c_1(p^*)
 
 -  On peut obtenir n'importe quelle allocation Pareto optimale par un équilibre de marché où on devra redistribuer les dotations. 
 
-Ceci nécessite la possibilité d'imposer des taxes, ou confisquer des dotations: paiments ou taxes dites *lump-sum*. On dit alors que l'allocation des ressources est décentralisée (le fruit d'un équilibre de marché et de redistribution des dotations). 
+Ceci nécessite la possibilité d'imposer des taxes, ou confisquer des dotations: paiements ou taxes dites *lump-sum*. On dit alors que l'allocation des ressources est décentralisée (le fruit d'un équilibre de marché et de redistribution des dotations). 
 
-Pourquoi ca fonctionne?
+Pourquoi ça fonctionne?
 
 Pour toute allocation :math:`(X_1^*,Y_1^*)`, et valeurs conséquentes pour :math:`(X_2^*,Y_2^*)`,  les courbes d'indifférence sont tangentes. À cette ligne de tangence, on peut redistribuer les dotations pour trouver un point sur cette ligne. N'importe quelle dotation finale (après transfert) sur cette ligne, mène à un équilibre de marché avec :math:`(X^*,Y^*)`.
 
@@ -297,24 +297,24 @@ Les premier et deuxième théorèmes établissent que
 
 C'est un résultat important en économie: l'économie décentralisée permet d'obtenir ce que le planificateur aurait pu faire sans sacrifier la liberté des agents économiques. 
 
-Un équilibre de marché nécessite seulement que les agents connaissent leur propre préférence. Il n'y a pas de besoin pour un planificateur central qui connait les préférences de tous. Selon `Hayek <https://fr.wikipedia.org/wiki/Friedrich_Hayek>`_, les marchés sont des aggrégateurs d'information. Les économies planifiées perdent cette information (sans mentionner le coût énorme de réussir à connaître les préférences de tous les citoyens). 
+Un équilibre de marché nécessite seulement que les agents connaissent leur propre préférence. Il n'y a pas de besoin pour un planificateur central qui connait les préférences de tous. Selon `Hayek <https://fr.wikipedia.org/wiki/Friedrich_Hayek>`_, les marchés sont des agrégateurs d'information. Les économies planifiées perdent cette information (sans mentionner le coût énorme de réussir à connaître les préférences de tous les citoyens). 
 
 Limitations
 +++++++++++
 
-Ces résultats encourageant reposent cependant sur des hypothèses très fortes: 
+Ces résultats encourageants reposent cependant sur des hypothèses très fortes: 
 
--  Marchés sont compétitifs (on a des prenneurs de prix)
+-  Marchés sont compétitifs (on a des preneurs de prix)
 
 -  Les biens sont homogènes (on sait ce qu'on achète)
 
--  Aucune externalités
+-  Aucune externalité
 
 -  On peut imposer des taxes *lump-sum* (pour le 2e théorème)
 
-Même si son cadre est simpliste, et certains diront que peu de marchés remplissent ces conditions, il s'agit d'un modèle qui permet de fixer un *benchmark*, ou un contre-factuel, afin de réflechir aux failles de marchés de manière précise et structuré. 
+Même si son cadre est simpliste, et certains diront que peu de marchés remplissent ces conditions, il s'agit d'un modèle qui permet de fixer un *benchmark*, ou un contre-factuel, afin de réfléchir aux failles de marchés de manière précis et structuré. 
 
-La théorie de l'équilibre générale a eu un impact certain sur l'économie: en particulier en macroéconomie et pour les marchés financiers. Comme nous le verrons plus tard, les gouvernements mais aussi d'autres organisations, utilisent ces modèles pour prédire l'effet de différentes politiques, notamment en ce qui attrait au climat. 
+La théorie de l'équilibre générale a eu un impact certain sur l'économie: en particulier en macroéconomie et pour les marchés financiers. Comme nous le verrons plus tard, les gouvernements, mais aussi d'autres organisations utilisent ces modèles pour prédire l'effet de différentes politiques, notamment en ce qui a trait au climat. 
 
 Un peu d'histoire
 +++++++++++++++++

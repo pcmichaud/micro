@@ -10,9 +10,9 @@ Perfect Competition
 +++++++++++++++++++
 
 
-General equilibrium with production, the topic of the previous lecture, assumes that firms are price takers. This leads to a market equilibrium with the first welfare theorem applying. It is a Pareto optimium. This assumption of price-taking behavior works well when a very large number of firms are present. Firms cannot impact the market price by their actions. We will see that it is the possibility of affecting the market price which confers to the firm market power.  
+General equilibrium with production, the topic of the previous lecture, assumes that firms are price takers. This leads to a market equilibrium with the first welfare theorem applying. It is a Pareto optimum. This assumption of price-taking behavior works well when a very large number of firms are present. Firms cannot impact the market price by their actions. We will see that it is the possibility of affecting the market price which confers to the firm market power.  
 
-Consider the example of an economy for a good :math:`X` and a  *numéraire* good :math:`M` (with a normalized price to one). Utility is quasi-linear :math:`U(X,M) = V(X) + M`, with :math:`V(X)` concave, :math:`V'(0) = + \infty`. Endownments are :math:`I_0` of :math:`M`, the good :math:`X` is produced by one firm at price :math:`p`. The firm is producing :math:`X` with a cost function :math:`C(X)`. Assume :math:`C'(0) = 0`.
+Consider the example of an economy for a good :math:`X` and a  *numéraire* good :math:`M` (with a normalized price to one). Utility is quasi-linear :math:`U(X,M) = V(X) + M`, with :math:`V(X)` concave, :math:`V'(0) = + \infty`. Endowments are :math:`I_0` of :math:`M`, the good :math:`X` is produced by one firm at price :math:`p`. The firm is producing :math:`X` with a cost function :math:`C(X)`. Assume :math:`C'(0) = 0`.
 
 **Exercise A** Find the equilibrium price if the firm is a  *price taker*
 and :math:`V(X) = \sqrt{X}`, :math:`C(X) = X^2`.
@@ -73,7 +73,7 @@ Monopoly
 
 A monopoly exists when one firm is in a market. If demand is not perfectly elastic, the monopoly can manipulate the price strategically by changing its production level and increase profits.  
 
-At the optimal level of produciton :math:`X_{PM}` we have 
+At the optimal level of production :math:`X_{PM}` we have 
 
    .. math:: p(X_{PM}) + p'(X_{PM})X_{PM} = C'(X_{PM})
 
@@ -88,7 +88,7 @@ To perform weflare analysis, we first have to ask why the monopoly exists. He ca
 
 Other situations are more complicated. Take electricity. Because of large fixed costs, there are important returns to scale in producing electricity. These efficiency gains from granting a monopoly need to be compared to the loss from market power and other disincentives which may be present with monopolies not facing  competition (e.g. innovation or cost control).
 
-In the case of an articial monopoly, it potentially makes abnormal profits, called rents. These profits are given by
+In the case of an artificial monopoly, it potentially makes abnormal profits, called rents. These profits are given by
 
    .. math:: \Pi_{PM} = (p(X_{PM}) - p(X_{PT})) X_{PM}
 
@@ -168,7 +168,7 @@ In the example, we have
 
    .. math:: X^*_A =  \frac{D_0 - c - \alpha X_B^*}{ 2 \alpha} \quad et \quad  X^*_B = \frac{D_0 - c -  \alpha X_A^*}{2 \alpha}
 
-Since we have symmetry, :math:`X^*_A = X^*_B = X^*` and therefore
+Since we have symmetry :math:`X^*_A = X^*_B = X^*` and therefore
 
    .. math:: X^*_A = X^*_B = X^* = \frac{D_0 - c}{3\alpha}.
 
@@ -229,7 +229,7 @@ Consider the case :math:`p_i = c \quad \forall i`. If one firm :math:`j` deviate
 
 The Nash equilibrium is therefore :math:`p_i=c \quad \forall i`. Hence, even if two firms, we get the Pareto optimal outcome equivalent to perfect competition. 
 
-The most important assumption for this result to arise is that prices can be observed across all firms without cost. The goods are also homgeneous.
+The most important assumption for this result to arise is that prices can be observed across all firms without cost. The goods are also homogeneous.
 
 In real life situations, price comparisons are sometimes costly which leads to price variation across competitors in equilibrium. 
 

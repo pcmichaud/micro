@@ -4,9 +4,9 @@ Welfare
 We can look at a policy using efficiency: does it target the right group, does it have the intended effect and how much does it cost? For example, we could evaluate a policy that increases air quality and leads people to changer their behavior. The economic cost per unit of improvement in air quality may be large. But what can we compare it to? What is the threshold above which the policy does not increase welfare. 
 
 
-While many limit themselves to economic and fiscal impacts, benefits may go beyond what we observe in markets. Air quality is valued by consumers. Poor air quality lead to health problems, makes our life more difficult. We want to measure benefits from preferences but these are not directly observable. This is the fundamental problem of welfare analysis.
+While many limit themselves to economic and fiscal impacts, benefits may go beyond what we observe in markets. Air quality is valued by consumers. Poor air quality lead to health problems makes our life more difficult. We want to measure benefits from preferences but these are not directly observable. This is the fundamental problem of welfare analysis.
 
-Three popular approaches are used  to measure up welfare impacts of policies (benefits and costs): a utilitarian, hicksian and finally one based on self-reported hapinness. 
+Three popular approaches are used  to measure up welfare impacts of policies (benefits and costs): a utilitarian, hicksian and finally one based on self-reported happiness. 
 
 .. figure:: /images/happy.jpeg
    :scale: 100
@@ -29,7 +29,7 @@ Recall that :math:`U_1` represents preferences of citizen :math:`1`, but :math:`
 
 The ranking of policies is therefore ambiguous: we can have :math:`\mathcal P_0` ranked better if  :math:`W = U_1 + U_2` while  :math:`\mathcal P_1` is better if we use :math:`W = 2U_1 + U_2`.
 
-In the end, welfare should depend on preferences and not on  :math:`U`. But utilities remain useful in some more restricted capacity.  We can for example define a  **Pareto Improvement**, if utility of all consumers is at least equal to their level before a change in policy, but stricly higher for at least one consumer. If no one looses, and some win, this situation is an improvement in a `Pareto <https://fr.wikipedia.org/wiki/Vilfredo_Pareto>`_ sense. Pareto improvements respect the fact that utility is ordinal. This is progress on our quest... 
+In the end, welfare should depend on preferences and not on  :math:`U`. But utilities remain useful in some more restricted capacity.  We can for example define a  **Pareto Improvement**, if utility of all consumers is at least equal to their level before a change in policy, but strictly higher for at least one consumer. If no one loses, and some win, this situation is an improvement in a `Pareto <https://fr.wikipedia.org/wiki/Vilfredo_Pareto>`_ sense. Pareto improvements respect the fact that utility is ordinal. This is progress on our quest... 
 
 Compensating Variation
 ++++++++++++++++++++++
@@ -51,7 +51,7 @@ Example: Two goods  :math:`X` and :math:`Y`. Utility is :math:`U(X,Y) = \log X +
      
 So this is the maximum utility that can be reached with a particular policy. If we assume agents optimize, this is the level of utility reached by consumers with this policy. 
 
-Denote :math:`\mathcal P_0` the status quo le statut quo and consider implementing a policy  :math:`\mathcal P`. We can define the compensating variation as the amount of money :math:`\Delta I^{CV}` such that
+Denote :math:`\mathcal P_0` the status quo le status quo and consider implementing a policy  :math:`\mathcal P`. We can define the compensating variation as the amount of money :math:`\Delta I^{CV}` such that
 
    .. math::
 
@@ -109,7 +109,7 @@ Consumer Surplus
 
 We want to define the value of being able to consume a level of :math:`X` given some price :math:`p_X`. Consider the case of quasi-linear preferences for the good  :math:`X` and cash  :math:`Y`, :math:`U(X,Y) = V(X) + Y`. Let us assume that  :math:`V` is concave (:math:`V'(X)` decreases in :math:`X`). 
 
-The status quo is a situation where the good  :math:`X` cannot be purchased, :math:`\mathcal P_0` and an alternative where :math:`\mathcal P` allows to purchase :math:`X` at price :math:`p_X`. The problem is given by
+The status quo is a situation where the good  :math:`X` cannot be purchased :math:`\mathcal P_0` and an alternative where :math:`\mathcal P` allows to purchase :math:`X` at price :math:`p_X`. The problem is given by
 
 .. math::
    \max_{X,Y} U(X,Y) \quad s.t. \quad p_X X + Y \leq I
@@ -134,7 +134,7 @@ The first term is the area under the inverse demand curve, from zero to the quan
 .. math::
    \int_{0}^{X^*} V'(i)di = V(X^*) - V(0)
 
-It amounts to the sum of willigness to pay for each unit of  :math:`X`. The second term is the cost of purchasing quantity  :math:`X^*`. The surplus is due to the fact that the consumer values each unit that he purchases at price  :math:`p_X` more than the price he paid :math:`p_X`.  
+It amounts to the sum of willingness to pay for each unit of  :math:`X`. The second term is the cost of purchasing quantity  :math:`X^*`. The surplus is due to the fact that the consumer values each unit that he purchases at price  :math:`p_X` more than the price he paid :math:`p_X`.  
 
 .. figure:: /images/surplus.png
    :scale: 75
@@ -151,7 +151,7 @@ Welfare and Taxation
 
 Taxation impacts the price paid by the consumer. Therefore, it has effects on welfare (since higher prices lower welfare). Compensated income will help quantify the welfare loss from higher prices (or taxes). 
 
-Consider eliminating a tax, the price decreases from :math:`p_X = p+t` to :math:`p_X = p` . We have :math:`X^*(p) > X^*(p+t)` (we are not in a  *Giffen* good situation). Income from the tax is :math:`T= t X^*(p+t)`. When the government collects a tax, we assume that the revenues are distributed lump-sum (an amount for each consumer, not dependent on actions). From a welfare point of view, revenue collected from the government is not lost (implicitely it funds services, etc). Here we recognize its cash value.
+Consider eliminating a tax, the price decreases from :math:`p_X = p+t` to :math:`p_X = p` . We have :math:`X^*(p) > X^*(p+t)` (we are not in a  *Giffen* good situation). Income from the tax is :math:`T= t X^*(p+t)`. When the government collects a tax, we assume that the revenues are distributed lump-sum (an amount for each consumer, not dependent on actions). From a welfare point of view, revenue collected from the government is not lost (implicitly it funds services, etc). Here we recognize its cash value.
 
 In terms of compensating variation, we have 
 
@@ -160,7 +160,7 @@ In terms of compensating variation, we have
 
 We obtain that :math:`\Delta I^{CV} > T`: The consumer is willing to pay an amount which is superior to the revenue generated by the tax. Hence, eliminating the tax is beneficial. 
 
-The welfare gain associated with eliminating the tax is therefore  :math:`\Delta W = \Delta I^{CV} - T`. Why is  :math:`T` substracted? Removing the tax, the government cannot redistribute anymore the proceeds lump-sum. Hence, we have to substract it from the change in consumer surplus. If we introduce a tax, we have  :math:`\Delta W = \Delta I^{CV} + T` since we need to redistribute the tax proceeds lump-sum, which is gain for consumers.   
+The welfare gain associated with eliminating the tax is therefore  :math:`\Delta W = \Delta I^{CV} - T`. Why is  :math:`T` subtracted? Removing the tax, the government cannot redistribute anymore the proceeds lump-sum. Hence, we have to subtract it from the change in consumer surplus. If we introduce a tax, we have  :math:`\Delta W = \Delta I^{CV} + T` since we need to redistribute the tax proceeds lump-sum, which is gained for consumers.   
 
 **Exercise C**: If :math:`V(X) = 10 X - \frac{1}{2}X^2`, find the welfare loss associated with a new tax  :math:`t` on good  :math:`X`. Show this loss graphically.  
 
@@ -186,9 +186,9 @@ Using data from real estate transactions, we can determine the value given to ai
 .. math:: 
    U(X, Y) = V(X) + Y = \alpha X + \beta X^2 +Y
 
-With this utility function, :math:`V'(X)` represents a willingness to pay for air quality. Running a linear regression real estate transaction amounts on  :math:`X` controlling for other factors, we obtain an estimate of :math:`V'(X)`. 
+With this utility function :math:`V'(X)` represents a willingness to pay for air quality. Running a linear regression real estate transaction amounts on  :math:`X` controlling for other factors, we obtain an estimate of :math:`V'(X)`. 
 
-`Chay et Greenstone (2005) <https://www.jstor.org/stable/10.1086/427462>`_ obtain a price-particule elasticity between  -0.2 and -0.35. 
+`Chay et Greenstone (2005) <https://www.jstor.org/stable/10.1086/427462>`_ obtain a price-particle elasticity between  -0.2 and -0.35. 
 
 .. figure:: /images/chay.png
    :scale: 50
@@ -202,7 +202,7 @@ The policy change is from  :math:`(0,0)` to :math:`(X_{GOV}, - c X_{GOV})`. Cons
 
 This serves as a basis for performing cost-benefit analysis. Once this analysis is done, a follow-up question to ask is: what is the optimal amount of air quality? 
 
-Optimal air quality is the level which maximizes: 
+Optimal air quality is the level which maximizes 
 
 .. math:: 
    U(X) = V(X) + I - c X 
@@ -218,15 +218,15 @@ We can therefore find out this optimal level once we know these qualities.
 This approach is used a lot. It does not require per se knowledge of preference. However, it raises a number of distributive issues if preferences differ across consumers. When the benefits are larger than the cost, but some loose from the policy, we say that the policy is potentially beneficial, implying that compensation may need to take place. 
 
 
-Self-reported Hapiness
-++++++++++++++++++++++
+Self-Reported Happiness
++++++++++++++++++++++++
 
 Why not simply ask consumers of they are happy, or happier after a policy change? On a scale of 1 to 10, are you happy? This avoids making assumptions about preferences, utility.  It is an approach that has gained credibility with  `the 2019 budget in New Zealand <https://www.weforum.org/agenda/2019/05/new-zealand-is-publishing-its-first-well-being-budget/>`_.  `Richard Easterlin <https://fr.wikipedia.org/wiki/Richard_Easterlin>`__ is generally credited with making these measures popular. The Easterlin paradox has attracted a lot of attention.
 
 .. figure:: /images/easterlin.png
    :scale: 50
 
-This would suggest that we are not happier with more income: money does not buy hapiness. But later, with more data, the expected relationship was shown to hold, in particular for low levels of income. 
+This would suggest that we are not happier with more income: money does not buy happiness. But later, with more data, the expected relationship was shown to hold, in particular for low levels of income. 
 
 .. figure:: /images/wolfers.png
    :scale: 50

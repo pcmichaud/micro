@@ -16,16 +16,16 @@ Preferences
 
 -  Basket: vector of quantities :math:`x = (x_1, x_2,\cdots,x_n)`.
 
--  For any baskets :math:`A` and :math:`B`, preferences dictate which one is prefered. 
+-  For any baskets :math:`A` and :math:`B`, preferences dictate which one is preferred. 
 
--  Preferences are just like wishlists. They ignore prices and resources. 
+-  Preferences are just like wish lists. They ignore prices and resources. 
 
 -  Preference relations are denoted
    :math:`\succ,\succeq,\sim`.
 
 **Important assumptions about preferences**
 
-Assumptions (or axioms as they are called) on preferences are necessary to yield a theory of how consumers behavior. These axioms yield predictions. Among the most important we have that they should be: 
+Assumptions (or axioms as they are called) on preferences are necessary to yield a theory of how consumers behavior. These axioms yield predictions. Among the most important, we have that they should be: 
 
 *Exhaustive*
 
@@ -41,7 +41,7 @@ Is it restrictive?
 
 -  Yes, e.g.: ice cream vs. soup (one prefers ice cream in summer but soup in winter). 
 
--  But we can accomodate: include circumstances in the preferences (the season)
+-  But we can accommodate include circumstances in the preferences (the season)
 
 -  Baskets are now (ice cream, summer), (ice cream, winter, (soup, winter), (soup, summer). The preference relation may now be stable and exhaustive. 
 
@@ -51,19 +51,19 @@ Is it restrictive?
 
 Given three baskets A, B, C such that :math:`A\succ B`, :math:`B \succ C`, then if transitivity holds he also prefers A to C (:math:`A \succ C`).
 
-This assumption appears logical. But it sometimes fail. In particular when uncertainty is present. Yet, we will keep it as it is very important for what follows. 
+This assumption appears logical. But it sometimes fails. In particular when uncertainty is present. Yet, we will keep it as it is very important for what follows. 
 
 *Non-satiation*
 
-In its simplest form, this assumptions implies that
+In its simplest form, this assumption implies that
 
--  If A has the same quantity of each good as basket B, but stricly more of one good, then :math:`A \succ B`.
+-  If A has the same quantity of each good as basket B, but strictly more of one good, then :math:`A \succ B`.
 
 -  Weaker version (:math:`A \succeq B`,indifference or preference) is reasonable. 
 
--  Putting labels on goods so non-satiation makes sense: goods are typically labelled as desirable (air quality instead of pollution).  
+-  Putting labels on goods so non-satiation makes sense: goods are typically labeled as desirable (air quality instead of pollution).  
 
-It is  not practical to use wishlists to model behavior. For example, how do we predict how consumers react to price changes using a wish list? We will want to get closer to marginal analaysis to make this more practical. 
+It is  not practical to use wish lists to model behavior. For example, how do we predict how consumers react to price changes using a wish list? We will want to get closer to marginal analysis to make this more practical. 
 
 Finally, it is important to note that preferences are very different across consumers.  `Falk et al. (2018) <https://academic.oup.com/qje/article/133/4/1645/5025666>`_ have analyzed this heterogeneity in 76 countries. 
 
@@ -71,11 +71,11 @@ Finally, it is important to note that preferences are very different across cons
 Indifference Curves
 +++++++++++++++++++
 
-One of the first tool we can construct is indifference curves. 
+One of the first tools we can construct is indifference curves. 
 
 For any two goods :math:`X,Y`:
 
--  Starting from a basket :math:`(X_0,Y_0)`, find combinations of :math:`(X,Y)` such that consumer is indifferent between :math:`(X,Y)` and
+-  Starting from a basket :math:`(X_0,Y_0)`, find combinations of :math:`(X,Y)` such that the consumer is indifferent between :math:`(X,Y)` and
    :math:`(X_0,Y_0)`
 
 -  In the plane (:math:`X,Y`), higher indifference curves indicate a preference.  
@@ -104,26 +104,26 @@ These indifference curves contain more information than we think ...
 
 If the quantity of :math:`X` increases, how does the MRS for :math:`X` changes?
 
-It decreases generally. This implies convex indifference curves. Even if there is non-satiation, we generally accept that the intensity of preferences decreases as more of a good is consumed.  
+It decreases generally. This implies convex indifference curves. Even if there is non-satiation, we generally accept that the intensity of preference decreases as the quantity consumed increases.  
 
 Utility
 +++++++
 
-Indifference curves allow us to move away from wish lists to a function. On an indifference curve, each basket gives the same level of satisfaction to the consumer (he is indifferent). Let's fix that level to some arbitrary number, called utility. Jumping from one indifference curve to another changes the level of satisfaction. Hence, indifference curves are like level curves on a topological map, they do not cross.  The main insight is that we can construct a function :math:`U(X,Y)` which represent these preferences. The value of this function is ordinal, it allows to rank the different indifference curves. It is only this order that counts. 
+Indifference curves allow us to move away from wish lists to a function. On an indifference curve, each basket gives the same level of satisfaction to the consumer (he is indifferent). Let's fix that level to some arbitrary number, called utility. Jumping from one indifference curve to another change the level of satisfaction. Hence, indifference curves are like level curves on a topological map, they do not cross.  The main insight is that we can construct a function :math:`U(X,Y)` which represent these preferences. The value of this function is ordinal, it allows to rank the different indifference curves. It is only this order that counts. 
 
 Utility function: assigns a value to each basket. :math:`U` represents these preferences if :math:`A \succ B \Rightarrow U(A) > U(B)` and :math:`U(A) > U(B)   \Rightarrow A \succ B` for any two baskets. 
 
 This has a number of implications. The main one is that there are many utility functions that represent the same preferences... 
 
-If :math:`f` is a stricly increasing transformation (function) and :math:`U` represents some preferences, then :math:`V(X) = f(U(X))` represents the same preferences.
+If :math:`f` is a strictly increasing transformation (function) and :math:`U` represents some preferences, then :math:`V(X) = f(U(X))` represents the same preferences.
 
    .. math:: U(X) > U(Y) \iff f(U(X)) > f(U(Y))
 
-In other words, the value attached to utility does not have a real interpretation, it is the ranking of baskets trough the level of these utility levels which matters.
+In other words, the value attached to utility does not have a real interpretation, it is the ranking of baskets through the level of these utility levels which matters.
 
 Example: :math:`U(X,Y) = \log X + \log Y` and :math:`V(X,Y) = XY` represent the same preferences. 
 
-*Exercise B*: Show that :math:`U` and :math:`V` if this example have the same preferences by finding the transformation :math:`V=f(U)`.
+*Exercise B*: Show that :math:`U` and :math:`V` in this example have the same preferences by finding the transformation :math:`V=f(U)`.
 
 
 How to find the MRS from utility?
@@ -155,7 +155,7 @@ Set :math:`dU = 0`. Then
 Budget Constraint
 +++++++++++++++++
 
-Until now, the consumer has available all baskets and he has preferences over those. In practice, he is limited by the resources he has, each time he has to purchase goods, at some price. Hence, those actions have an opportunity costs. 
+Until now, the consumer has available all baskets and he has preferences over those. In practice, he is limited by the resources he has, each time he has to purchase goods, at some price. Hence, those actions have an opportunity cost. 
 
 -  One cannot spend more than income (or wealth) :math:`I`
 
@@ -208,7 +208,7 @@ Consumer choice
    :scale: 75
    :align: center
 
-   The points A, C et D are possible given the constraint. Therefore, point B can be elimited even if the MRS (slope at  B) is close to the price ratio. Point D can also be elimited because the consumer does not spend all his budget. He can jump on a higher indifference curve by increasing consumption of each good. Bundles A and C spend exhaust the budget. But C is not optimal. In absolute terms, the MRS is larger than the opportunity cost (price ratio) of consuming another unit of X. Therefore, she can increase X and reduce Y yielding higher utility. Point A is optimal: MRS is equal to the price ratio. 
+   The points A, C et D are possible given the constraint. Therefore, point B can be eliminated even if the MRS (slope at  B) is close to the price ratio. Point D can also be eliminated because the consumer does not spend all his budget. He can jump on a higher indifference curve by increasing consumption of each good. Bundles A and C spend exhaust the budget. But C is not optimal. In absolute terms, the MRS is larger than the opportunity cost (price ratio) of consuming another unit of X. Therefore, she can increase X and reduce Y yielding higher utility. Point A is optimal: MRS is equal to the price ratio. 
 
 **Direct approach**
 
@@ -288,7 +288,7 @@ Hence, the derivative with respect to :math:`I` is
 
 .. math:: V_I(p_X,p_Y,I) = U_X X_I^* + U_Y Y_I^* - \lambda (p_X X_I^* + p_Y Y_I^*-1)
 
-where I subindices denote partial derivatives and we omit arguments for brievety. We can collect terms to get 
+where I subindices denote partial derivatives and we omit arguments for brevity. We can collect terms to get 
 
 .. math:: V_I(p_X,p_Y,I) = (U_X - p_X \lambda) X_I^*(p_X,p_Y,I) + (U_Y - p_Y \lambda) Y_I^*(p_X,p_Y,I) + \lambda 
 
@@ -296,7 +296,7 @@ Now from the FOC to the Lagrangian, the first and second terms are zero at the o
 
 .. math:: V_I(p_X,p_Y,I) =  \lambda 
 
-The marginal utility of income in a static consumer choice problem is the Lagrange multiplier. An important mathetimatical note: the result above where the two terms involving the FOC cancel out is due to a well-known theorem in constrained optimization: the envelop theorem. We will refer to it a few times. In words, it states that when evaluating the derivative of the objective function at the optimum with respect to one of the exogeneous variables (say a price or income), one does not need to look at re-optimization (the fact that the optimal decisions change). Only the enveloppe matters: how the function changes directly as a function of the exogeneous variables. The logic is simple: Given a derivative looks at a very small change, the induced change to the optimal solution has an effect on the objective function that is small and zero by the FOC. This only works for small changes. 
+The marginal utility of income in a static consumer choice problem is the Lagrange multiplier. An important mathematical note: the result above where the two terms involving the FOC cancel out is due to a well-known theorem in constrained optimization: the envelope theorem. We will refer to it a few times. In words, it states that when evaluating the derivative of the objective function at the optimum with respect to one of the exogenous variables (say a price or income), one does not need to look at re-optimization (the fact that the optimal decisions change). Only the envelope matters: how the function changes directly as a function of the exogenous variables. The logic is simple: Given a derivative look at a very small change, the induced change to the optimal solution has an effect on the objective function that is small and zero by the FOC. This only works for small changes. 
 
 Roy Identity
 ++++++++++++
@@ -305,7 +305,7 @@ Given the indirect utility function :math:`V(p_X,p_Y,I)` we can retrieve demand 
 
 .. math:: X^*(p_X,p_Y,I) = -\frac{\partial{V(p_X,p_Y,I)}/\partial{p_X}}{\partial{V(p_X,p_Y,I)}/\partial{I}}
 
-*Exercice G*: Show that this is true using the envelop theorem.
+*Exercice G*: Show that this is true using the envelope theorem.
 
 Consumer Demand Example 
 +++++++++++++++++++++++
