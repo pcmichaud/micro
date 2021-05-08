@@ -7,13 +7,14 @@ Théorie et données
 ++++++++++++++++++
 
 
-.. |logo1| image:: /images/justice.png
-   :align: middle
-   :scale: 25%
+
 
 Le site `missingprofits.world <https://missingprofits.world/>`_ calcule ce que perd chaque pays aux paradis fiscaux. Mais comment rapatrier ces profits? Quel effet aurait une taxe sur la richesse pour réduire les inégalités? On a besoin de la théorie pour comprendre l'effet potentiel des incitatifs. Ensuite, les données pour estimer ces effets. Les économistes Emmanuel Saez et Gabriel Zucman s'intéressent à cette question avec théorie et données. 
 
-|logo1|
+.. image:: /images/justice.png
+   :align: center
+   :scale: 25%
+
 
 .. |logo2| image:: /images/climat.png
    :align: middle
