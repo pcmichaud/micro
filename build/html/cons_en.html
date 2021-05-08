@@ -1,23 +1,31 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="fr" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
+<html class="writer-html5" lang="fr" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>Consumer Demand &mdash; Documentation Micro Notes </title>
   
 
   
-  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
   
   
 
   
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -26,16 +34,12 @@
         <script src="_static/doctools.js"></script>
         <script src="_static/language_data.js"></script>
         <script src="_static/translations.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script type="text/x-mathjax-config">MathJax.Hub.Config({"extensions": ["tex2jax.js"], "jax": ["input/TeX", "output/HTML-CSS"], "availableFonts": ["Neo-Euler", "TeX"], "preferredFont": ["Neo-Euler"], "scale": 60})</script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Recherche" href="search.html" />
     <link rel="next" title="Price and Income Effects" href="effets_en.html" />
@@ -67,7 +71,7 @@
           
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Rechercher docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -76,6 +80,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -135,6 +140,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -169,19 +175,21 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html">Docs</a> &raquo;</li>
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
       <li>Consumer Demand</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
-            
-            <a href="_sources/cons_en.rst.txt" rel="nofollow"> View page source</a>
+          
+            <a href="_sources/cons_en.rst.txt" rel="nofollow"> Afficher la source de la page</a>
           
         
       </li>
@@ -205,13 +213,13 @@
 <p><strong>Preferences are defined over baskets of goods and services</strong></p>
 <ul class="simple">
 <li><p>Basket: vector of quantities <span class="math notranslate nohighlight">\(x = (x_1, x_2,\cdots,x_n)\)</span>.</p></li>
-<li><p>For any baskets <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>, preferences dictate which one is prefered.</p></li>
-<li><p>Preferences are just like wishlists. They ignore prices and resources.</p></li>
+<li><p>For any baskets <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>, preferences dictate which one is preferred.</p></li>
+<li><p>Preferences are just like wish lists. They ignore prices and resources.</p></li>
 <li><p>Preference relations are denoted
 <span class="math notranslate nohighlight">\(\succ,\succeq,\sim\)</span>.</p></li>
 </ul>
 <p><strong>Important assumptions about preferences</strong></p>
-<p>Assumptions (or axioms as they are called) on preferences are necessary to yield a theory of how consumers behavior. These axioms yield predictions. Among the most important we have that they should be:</p>
+<p>Assumptions (or axioms as they are called) on preferences are necessary to yield a theory of how consumers behavior. These axioms yield predictions. Among the most important, we have that they should be:</p>
 <p><em>Exhaustive</em></p>
 <p>For any two baskets A and B, either the consumer:</p>
 <ul class="simple">
@@ -222,28 +230,28 @@
 <p>Is it restrictive?</p>
 <ul class="simple">
 <li><p>Yes, e.g.: ice cream vs. soup (one prefers ice cream in summer but soup in winter).</p></li>
-<li><p>But we can accomodate: include circumstances in the preferences (the season)</p></li>
+<li><p>But we can accommodate include circumstances in the preferences (the season)</p></li>
 <li><p>Baskets are now (ice cream, summer), (ice cream, winter, (soup, winter), (soup, summer). The preference relation may now be stable and exhaustive.</p></li>
 </ul>
 <p><em>Transitivity</em></p>
 <p>Given three baskets A, B, C such that <span class="math notranslate nohighlight">\(A\succ B\)</span>, <span class="math notranslate nohighlight">\(B \succ C\)</span>, then if transitivity holds he also prefers A to C (<span class="math notranslate nohighlight">\(A \succ C\)</span>).</p>
-<p>This assumption appears logical. But it sometimes fail. In particular when uncertainty is present. Yet, we will keep it as it is very important for what follows.</p>
+<p>This assumption appears logical. But it sometimes fails. In particular when uncertainty is present. Yet, we will keep it as it is very important for what follows.</p>
 <p><em>Non-satiation</em></p>
-<p>In its simplest form, this assumptions implies that</p>
+<p>In its simplest form, this assumption implies that</p>
 <ul class="simple">
-<li><p>If A has the same quantity of each good as basket B, but stricly more of one good, then <span class="math notranslate nohighlight">\(A \succ B\)</span>.</p></li>
+<li><p>If A has the same quantity of each good as basket B, but strictly more of one good, then <span class="math notranslate nohighlight">\(A \succ B\)</span>.</p></li>
 <li><p>Weaker version (<span class="math notranslate nohighlight">\(A \succeq B\)</span>,indifference or preference) is reasonable.</p></li>
-<li><p>Putting labels on goods so non-satiation makes sense: goods are typically labelled as desirable (air quality instead of pollution).</p></li>
+<li><p>Putting labels on goods so non-satiation makes sense: goods are typically labeled as desirable (air quality instead of pollution).</p></li>
 </ul>
-<p>It is  not practical to use wishlists to model behavior. For example, how do we predict how consumers react to price changes using a wish list? We will want to get closer to marginal analaysis to make this more practical.</p>
+<p>It is  not practical to use wish lists to model behavior. For example, how do we predict how consumers react to price changes using a wish list? We will want to get closer to marginal analysis to make this more practical.</p>
 <p>Finally, it is important to note that preferences are very different across consumers.  <a class="reference external" href="https://academic.oup.com/qje/article/133/4/1645/5025666">Falk et al. (2018)</a> have analyzed this heterogeneity in 76 countries.</p>
 </div>
 <div class="section" id="indifference-curves">
 <h2>Indifference Curves<a class="headerlink" href="#indifference-curves" title="Lien permanent vers ce titre">¶</a></h2>
-<p>One of the first tool we can construct is indifference curves.</p>
+<p>One of the first tools we can construct is indifference curves.</p>
 <p>For any two goods <span class="math notranslate nohighlight">\(X,Y\)</span>:</p>
 <ul class="simple">
-<li><p>Starting from a basket <span class="math notranslate nohighlight">\((X_0,Y_0)\)</span>, find combinations of <span class="math notranslate nohighlight">\((X,Y)\)</span> such that consumer is indifferent between <span class="math notranslate nohighlight">\((X,Y)\)</span> and
+<li><p>Starting from a basket <span class="math notranslate nohighlight">\((X_0,Y_0)\)</span>, find combinations of <span class="math notranslate nohighlight">\((X,Y)\)</span> such that the consumer is indifferent between <span class="math notranslate nohighlight">\((X,Y)\)</span> and
 <span class="math notranslate nohighlight">\((X_0,Y_0)\)</span></p></li>
 <li><p>In the plane (<span class="math notranslate nohighlight">\(X,Y\)</span>), higher indifference curves indicate a preference.</p></li>
 </ul>
@@ -263,21 +271,21 @@
 </ul>
 <p><strong>Convexity of indifference curves</strong></p>
 <p>If the quantity of <span class="math notranslate nohighlight">\(X\)</span> increases, how does the MRS for <span class="math notranslate nohighlight">\(X\)</span> changes?</p>
-<p>It decreases generally. This implies convex indifference curves. Even if there is non-satiation, we generally accept that the intensity of preferences decreases as more of a good is consumed.</p>
+<p>It decreases generally. This implies convex indifference curves. Even if there is non-satiation, we generally accept that the intensity of preference decreases as the quantity consumed increases.</p>
 </div>
 <div class="section" id="utility">
 <h2>Utility<a class="headerlink" href="#utility" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Indifference curves allow us to move away from wish lists to a function. On an indifference curve, each basket gives the same level of satisfaction to the consumer (he is indifferent). Let’s fix that level to some arbitrary number, called utility. Jumping from one indifference curve to another changes the level of satisfaction. Hence, indifference curves are like level curves on a topological map, they do not cross.  The main insight is that we can construct a function <span class="math notranslate nohighlight">\(U(X,Y)\)</span> which represent these preferences. The value of this function is ordinal, it allows to rank the different indifference curves. It is only this order that counts.</p>
+<p>Indifference curves allow us to move away from wish lists to a function. On an indifference curve, each basket gives the same level of satisfaction to the consumer (he is indifferent). Let’s fix that level to some arbitrary number, called utility. Jumping from one indifference curve to another change the level of satisfaction. Hence, indifference curves are like level curves on a topological map, they do not cross.  The main insight is that we can construct a function <span class="math notranslate nohighlight">\(U(X,Y)\)</span> which represent these preferences. The value of this function is ordinal, it allows to rank the different indifference curves. It is only this order that counts.</p>
 <p>Utility function: assigns a value to each basket. <span class="math notranslate nohighlight">\(U\)</span> represents these preferences if <span class="math notranslate nohighlight">\(A \succ B \Rightarrow U(A) &gt; U(B)\)</span> and <span class="math notranslate nohighlight">\(U(A) &gt; U(B)   \Rightarrow A \succ B\)</span> for any two baskets.</p>
 <p>This has a number of implications. The main one is that there are many utility functions that represent the same preferences…</p>
-<p>If <span class="math notranslate nohighlight">\(f\)</span> is a stricly increasing transformation (function) and <span class="math notranslate nohighlight">\(U\)</span> represents some preferences, then <span class="math notranslate nohighlight">\(V(X) = f(U(X))\)</span> represents the same preferences.</p>
+<p>If <span class="math notranslate nohighlight">\(f\)</span> is a strictly increasing transformation (function) and <span class="math notranslate nohighlight">\(U\)</span> represents some preferences, then <span class="math notranslate nohighlight">\(V(X) = f(U(X))\)</span> represents the same preferences.</p>
 <blockquote>
 <div><div class="math notranslate nohighlight">
 \[U(X) &gt; U(Y) \iff f(U(X)) &gt; f(U(Y))\]</div>
 </div></blockquote>
-<p>In other words, the value attached to utility does not have a real interpretation, it is the ranking of baskets trough the level of these utility levels which matters.</p>
+<p>In other words, the value attached to utility does not have a real interpretation, it is the ranking of baskets through the level of these utility levels which matters.</p>
 <p>Example: <span class="math notranslate nohighlight">\(U(X,Y) = \log X + \log Y\)</span> and <span class="math notranslate nohighlight">\(V(X,Y) = XY\)</span> represent the same preferences.</p>
-<p><em>Exercise B</em>: Show that <span class="math notranslate nohighlight">\(U\)</span> and <span class="math notranslate nohighlight">\(V\)</span> if this example have the same preferences by finding the transformation <span class="math notranslate nohighlight">\(V=f(U)\)</span>.</p>
+<p><em>Exercise B</em>: Show that <span class="math notranslate nohighlight">\(U\)</span> and <span class="math notranslate nohighlight">\(V\)</span> in this example have the same preferences by finding the transformation <span class="math notranslate nohighlight">\(V=f(U)\)</span>.</p>
 <p>How to find the MRS from utility?</p>
 <ul class="simple">
 <li><p>Two goods, <span class="math notranslate nohighlight">\(X\)</span>, <span class="math notranslate nohighlight">\(Y\)</span>. Preferences are represented by <span class="math notranslate nohighlight">\(U(X,Y)\)</span></p></li>
@@ -298,7 +306,7 @@ dU = \frac{\partial U}{\partial X}dX + \frac{\partial U}{\partial Y}dY\end{align
 </div>
 <div class="section" id="budget-constraint">
 <h2>Budget Constraint<a class="headerlink" href="#budget-constraint" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Until now, the consumer has available all baskets and he has preferences over those. In practice, he is limited by the resources he has, each time he has to purchase goods, at some price. Hence, those actions have an opportunity costs.</p>
+<p>Until now, the consumer has available all baskets and he has preferences over those. In practice, he is limited by the resources he has, each time he has to purchase goods, at some price. Hence, those actions have an opportunity cost.</p>
 <ul>
 <li><p>One cannot spend more than income (or wealth) <span class="math notranslate nohighlight">\(I\)</span></p></li>
 <li><div class="line-block">
@@ -343,7 +351,7 @@ gives the highest feasible level of utility.</p></li>
 </ul>
 <div class="figure align-center" id="id2">
 <a class="reference internal image-reference" href="_images/choice_cons.png"><img alt="_images/choice_cons.png" src="_images/choice_cons.png" style="width: 458.25px; height: 363.75px;" /></a>
-<p class="caption"><span class="caption-text">The points A, C et D are possible given the constraint. Therefore, point B can be elimited even if the MRS (slope at  B) is close to the price ratio. Point D can also be elimited because the consumer does not spend all his budget. He can jump on a higher indifference curve by increasing consumption of each good. Bundles A and C spend exhaust the budget. But C is not optimal. In absolute terms, the MRS is larger than the opportunity cost (price ratio) of consuming another unit of X. Therefore, she can increase X and reduce Y yielding higher utility. Point A is optimal: MRS is equal to the price ratio.</span><a class="headerlink" href="#id2" title="Lien permanent vers cette image">¶</a></p>
+<p class="caption"><span class="caption-text">The points A, C et D are possible given the constraint. Therefore, point B can be eliminated even if the MRS (slope at  B) is close to the price ratio. Point D can also be eliminated because the consumer does not spend all his budget. He can jump on a higher indifference curve by increasing consumption of each good. Bundles A and C spend exhaust the budget. But C is not optimal. In absolute terms, the MRS is larger than the opportunity cost (price ratio) of consuming another unit of X. Therefore, she can increase X and reduce Y yielding higher utility. Point A is optimal: MRS is equal to the price ratio.</span><a class="headerlink" href="#id2" title="Lien permanent vers cette image">¶</a></p>
 </div>
 <p><strong>Direct approach</strong></p>
 <p>The problem is</p>
@@ -399,20 +407,20 @@ p_X X + p_Y Y = I\end{aligned}\end{split}\]</div>
 <p>Hence, the derivative with respect to <span class="math notranslate nohighlight">\(I\)</span> is</p>
 <div class="math notranslate nohighlight">
 \[V_I(p_X,p_Y,I) = U_X X_I^* + U_Y Y_I^* - \lambda (p_X X_I^* + p_Y Y_I^*-1)\]</div>
-<p>where I subindices denote partial derivatives and we omit arguments for brievety. We can collect terms to get</p>
+<p>where I subindices denote partial derivatives and we omit arguments for brevity. We can collect terms to get</p>
 <div class="math notranslate nohighlight">
 \[V_I(p_X,p_Y,I) = (U_X - p_X \lambda) X_I^*(p_X,p_Y,I) + (U_Y - p_Y \lambda) Y_I^*(p_X,p_Y,I) + \lambda\]</div>
 <p>Now from the FOC to the Lagrangian, the first and second terms are zero at the optimum (<span class="math notranslate nohighlight">\(U_X - p_X \lambda=0\)</span> and <span class="math notranslate nohighlight">\(U_Y - p_Y \lambda=0\)</span>), yielding</p>
 <div class="math notranslate nohighlight">
 \[V_I(p_X,p_Y,I) =  \lambda\]</div>
-<p>The marginal utility of income in a static consumer choice problem is the Lagrange multiplier. An important mathetimatical note: the result above where the two terms involving the FOC cancel out is due to a well-known theorem in constrained optimization: the envelop theorem. We will refer to it a few times. In words, it states that when evaluating the derivative of the objective function at the optimum with respect to one of the exogeneous variables (say a price or income), one does not need to look at re-optimization (the fact that the optimal decisions change). Only the enveloppe matters: how the function changes directly as a function of the exogeneous variables. The logic is simple: Given a derivative looks at a very small change, the induced change to the optimal solution has an effect on the objective function that is small and zero by the FOC. This only works for small changes.</p>
+<p>The marginal utility of income in a static consumer choice problem is the Lagrange multiplier. An important mathematical note: the result above where the two terms involving the FOC cancel out is due to a well-known theorem in constrained optimization: the envelope theorem. We will refer to it a few times. In words, it states that when evaluating the derivative of the objective function at the optimum with respect to one of the exogenous variables (say a price or income), one does not need to look at re-optimization (the fact that the optimal decisions change). Only the envelope matters: how the function changes directly as a function of the exogenous variables. The logic is simple: Given a derivative look at a very small change, the induced change to the optimal solution has an effect on the objective function that is small and zero by the FOC. This only works for small changes.</p>
 </div>
 <div class="section" id="roy-identity">
 <h2>Roy Identity<a class="headerlink" href="#roy-identity" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Given the indirect utility function <span class="math notranslate nohighlight">\(V(p_X,p_Y,I)\)</span> we can retrieve demand functions using:</p>
 <div class="math notranslate nohighlight">
 \[X^*(p_X,p_Y,I) = -\frac{\partial{V(p_X,p_Y,I)}/\partial{p_X}}{\partial{V(p_X,p_Y,I)}/\partial{I}}\]</div>
-<p><em>Exercice G</em>: Show that this is true using the envelop theorem.</p>
+<p><em>Exercice G</em>: Show that this is true using the envelope theorem.</p>
 </div>
 <div class="section" id="consumer-demand-example">
 <h2>Consumer Demand Example<a class="headerlink" href="#consumer-demand-example" title="Lien permanent vers ce titre">¶</a></h2>
@@ -426,29 +434,29 @@ p_X X + p_Y Y = I\end{aligned}\end{split}\]</div>
            
           </div>
           <footer>
-  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="effets_en.html" class="btn btn-neutral float-right" title="Price and Income Effects" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="intro_en.html" class="btn btn-neutral float-left" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+        <a href="effets_en.html" class="btn btn-neutral float-right" title="Price and Income Effects" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="intro_en.html" class="btn btn-neutral float-left" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2020, Pierre-Carl Michaud
+        &#169; Copyright 2020, Pierre-Carl Michaud.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
-
         </div>
       </div>
 
@@ -456,7 +464,6 @@ p_X X + p_Y Y = I\end{aligned}\end{split}\]</div>
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

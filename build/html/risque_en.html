@@ -1,23 +1,31 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="fr" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
+<html class="writer-html5" lang="fr" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>Risk &mdash; Documentation Micro Notes </title>
   
 
   
-  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
   
   
 
   
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -26,16 +34,12 @@
         <script src="_static/doctools.js"></script>
         <script src="_static/language_data.js"></script>
         <script src="_static/translations.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script type="text/x-mathjax-config">MathJax.Hub.Config({"extensions": ["tex2jax.js"], "jax": ["input/TeX", "output/HTML-CSS"], "availableFonts": ["Neo-Euler", "TeX"], "preferredFont": ["Neo-Euler"], "scale": 60})</script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Recherche" href="search.html" />
     <link rel="next" title="Time" href="time_en.html" />
@@ -67,7 +71,7 @@
           
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Rechercher docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -76,6 +80,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -137,6 +142,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -171,19 +177,21 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html">Docs</a> &raquo;</li>
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
       <li>Risk</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
-            
-            <a href="_sources/risque_en.rst.txt" rel="nofollow"> View page source</a>
+          
+            <a href="_sources/risque_en.rst.txt" rel="nofollow"> Afficher la source de la page</a>
           
         
       </li>
@@ -259,7 +267,7 @@
 </tbody>
 </table>
 </div></blockquote>
-<p>Expected income is now higher than with plan A. If we keep increasing the upside level of income, you will at some point prefer the risky plan. Hence, preferences in risky situation are not only function of the expected gain but also risk (probabilities and payoffs). As of now, our theory does not cover these cases.</p>
+<p>Expected income is now higher than with plan A. If we keep increasing the upside level of income, you will at some point prefer the risky plan. Hence, preferences in risky situations are not only function of the expected gain but also risk (probabilities and payoffs). As of now, our theory does not cover these cases.</p>
 </div>
 <div class="section" id="expected-utility-eu">
 <h2>Expected Utility (EU)<a class="headerlink" href="#expected-utility-eu" title="Lien permanent vers ce titre">¶</a></h2>
@@ -291,7 +299,7 @@ u(Y)\]</div>
 <li><p><strong>Exercise B</strong> If the consumer has vNM preferences (expected utility), which lottery does he prefer?</p></li>
 <li><p><strong>Exercise C</strong>: Does the utility function <span class="math notranslate nohighlight">\(u(X) = X\)</span> give the same choice?</p></li>
 </ul>
-<p>In a situation with certainty, utility is ordinal: only the ordering matters. However, in a risky situation, expected utility is cardinal, because it depends linearly on probabilities. Hence, monotone transformation (stricly increasing) do not preserve preferences. However, affine transformations of the form  <span class="math notranslate nohighlight">\(\widehat u = a u +b\)</span> with <span class="math notranslate nohighlight">\(a&gt;0\)</span> yield the same preferences.</p>
+<p>In a situation with certainty, utility is ordinal: only the ordering matters. However, in a risky situation, expected utility is cardinal, because it depends linearly on probabilities. Hence, a monotone transformation (stricly increasing) does not preserve preferences. However, affine transformations of the form  <span class="math notranslate nohighlight">\(\widehat u = a u +b\)</span> with <span class="math notranslate nohighlight">\(a&gt;0\)</span> yield the same preferences.</p>
 <blockquote>
 <div><div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
@@ -327,13 +335,13 @@ to <span class="math notranslate nohighlight">\(\mathcal L\)</span>.</p></li>
 <div><div class="math notranslate nohighlight">
 \[u(Z) &gt; pu(X) + (1-p)u(Y).\]</div>
 </div></blockquote>
-<p>A function <span class="math notranslate nohighlight">\(u\)</span> which fits this inequality needs to be concave (see the math tools). In statistics, this result is Jensen’s inequality which arises when the function is concave. The risk loving case corresponds to a convex function.</p>
+<p>A function <span class="math notranslate nohighlight">\(u\)</span> which fits this inequality needs to be concave (see the math tools). In statistics, this result is Jensen’s inequality which arises when the function is concave. The risk-loving case corresponds to a convex function.</p>
 <div class="figure align-center" id="id1">
 <a class="reference internal image-reference" href="_images/risk_concave.png"><img alt="_images/risk_concave.png" src="_images/risk_concave.png" style="width: 529.5px; height: 372.0px;" /></a>
 <p class="caption"><span class="caption-text">In the wealth-utility space, consider a lottery on <span class="math notranslate nohighlight">\((X,Y)\)</span> with probability <span class="math notranslate nohighlight">\(p\)</span> that <span class="math notranslate nohighlight">\(X\)</span> is realized. Starting on the horizontal axis, expected wealth is between <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span> since <span class="math notranslate nohighlight">\(p\)</span> is between zero and one. On the vertical axis, we can also do the same thing for expected utility, with the same  <span class="math notranslate nohighlight">\(p\)</span>. Varying  <span class="math notranslate nohighlight">\(p\)</span>, we get the straight line that attaches points <span class="math notranslate nohighlight">\((X,Y)\)</span> to the utility function. Since the function is concave, this line (or cord) is below the function itself. So utility evaluated at expected wealth (point A) is always above expected utility (point B). This holds for all <span class="math notranslate nohighlight">\(p\)</span>.</span><a class="headerlink" href="#id1" title="Lien permanent vers cette image">¶</a></p>
 </div>
 <p><strong>Risk neutrality</strong></p>
-<p>If an individual is risk neutral, there is an indifference between</p>
+<p>If an individual is risk neutral, there is indifference between</p>
 <blockquote>
 <div><div class="math notranslate nohighlight">
 \[\mathcal L = (p, X\;; 1-p,Y) \quad and \quad  \mathcal L' = (1,Z)\]</div>
@@ -342,7 +350,7 @@ to <span class="math notranslate nohighlight">\(\mathcal L\)</span>.</p></li>
 </div>
 <div class="section" id="measuring-risk-aversion">
 <h2>Measuring Risk Aversion<a class="headerlink" href="#measuring-risk-aversion" title="Lien permanent vers ce titre">¶</a></h2>
-<p>How to measure risk aversion? How do we compare two individuals and say that one is more risk averse then the other? Two measures are useful for this purpose: the coefficient of absolute and relative risk aversion.</p>
+<p>How to measure risk aversion? How do we compare two individuals and say that one is more risk averse than the other? Two measures are useful for this purpose: the coefficient of absolute and relative risk aversion.</p>
 <p>Absolute risk aversion coefficient:</p>
 <blockquote>
 <div><div class="math notranslate nohighlight">
@@ -353,10 +361,10 @@ to <span class="math notranslate nohighlight">\(\mathcal L\)</span>.</p></li>
 <div><div class="math notranslate nohighlight">
 \[R(X) = -\frac{u''(X)X}{u'(X)}\]</div>
 </div></blockquote>
-<p>Why these two measures? Since risk aversion si related to concavity, both measures increase when the second derivative increases (there is a negative sign in front since second derivative is negative when function is concave). Then, we normalize by marginal utility <span class="math notranslate nohighlight">\(u'(X)\)</span>, to fix units since <span class="math notranslate nohighlight">\(u\)</span> is ordinal. Another way of thinking about it is that it is the percent change in the marginal utility.</p>
-<p>The absolute measure allows to look at risk aversion for lotteries involing absolute payoffs. The relative coefficient allows to look at the degree of risk aversion for a lottery which is proportional to wealth.</p>
+<p>Why these two measures? Since risk aversion si related to concavity, both measures increase when the second derivative increases (there is a negative sign in front since the second derivative is negative when function is concave). Then, we normalize by marginal utility <span class="math notranslate nohighlight">\(u'(X)\)</span>, to fix units since <span class="math notranslate nohighlight">\(u\)</span> is ordinal. Another way of thinking about it is that it is the percent change in the marginal utility.</p>
+<p>The absolute measure allows to look at risk aversion for lotteries involving absolute payoffs. The relative coefficient allows to look at the degree of risk aversion for a lottery which is proportional to wealth.</p>
 <p>How do we measure this coefficient? One method is the multiple price list (MPL). <a class="reference external" href="https://pubs.aeaweb.org/doi/pdfplus/10.1257/000282802762024700">Holt et Laury (2002)</a> have used MPLs to measure risk attitudes.</p>
-<p>A multiple price list presents two lotteries under different probability and payoff configuration. The respondant has to choose the loterry he prefers. There is often an incentive mechanism which rewards participants. Here is an example from Holt and Laury:</p>
+<p>A multiple price list presents two lotteries under different probabilities and payoff configuration. The respondent has to choose the lottery he prefers. There is often an incentive mechanism which rewards participants. Here is an example from Holt and Laury:</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/mpl.png"><img alt="_images/mpl.png" src="_images/mpl.png" style="width: 431.0px; height: 210.0px;" /></a>
 </div>
@@ -378,7 +386,7 @@ to <span class="math notranslate nohighlight">\(\mathcal L\)</span>.</p></li>
 </div>
 <p>In insurance, the risk premium is equivalent to the maximum willingness to pay of the agent to eliminate the risk since the default (no insurance) is risky while full insurance eliminates the risk. It is therefore the maximum price the agent is willing to pay.</p>
 <p><strong>Exercise E</strong>: An agent has preferences represented by <span class="math notranslate nohighlight">\(u(X)=\log X\)</span>. Her initial wealth is <span class="math notranslate nohighlight">\(X_0 = 100\)</span> and she faces the risk of loosing 50 with probability 0.5 and win 50 with probability 0.5. What is the maximum price she is willing to pay for an insurance that eliminates the risk?</p>
-<p>An approximation to the risk premium exist for small risks. Denoting <span class="math notranslate nohighlight">\(\sigma^2\)</span> the variance of a small risk with mean zero, the risk premium for an agent with initial wealth <span class="math notranslate nohighlight">\(X_0\)</span> is well approximated by:</p>
+<p>An approximation to the risk premium exists for small risks. Denoting <span class="math notranslate nohighlight">\(\sigma^2\)</span> the variance of a small risk with mean zero, the risk premium for an agent with initial wealth <span class="math notranslate nohighlight">\(X_0\)</span> is well approximated by:</p>
 <div class="math notranslate nohighlight">
 \[\tilde\pi = \frac{1}{2}\sigma^2 A(X_0)\]</div>
 <p>The risk premium increases with risk aversion and with the variance of the risk.</p>
@@ -386,7 +394,7 @@ to <span class="math notranslate nohighlight">\(\mathcal L\)</span>.</p></li>
 </div>
 <div class="section" id="insurance">
 <h2>Insurance<a class="headerlink" href="#insurance" title="Lien permanent vers ce titre">¶</a></h2>
-<p>The insurance market exists in part because the population is generally risk averse. There exists insurance for pretty much every risks you can think of. Even our governments set up what are called social insurance program to help individuals when they face hardship (think of the Employment insurance system in Canada).</p>
+<p>The insurance market exists in part because the population is generally risk averse. There exists insurance for pretty much every risk you can think of. Even our governments set up what is called social insurance program to help individuals when they face hardship (think of the Employment insurance system in Canada).</p>
 <p>Take unemployment. Consider a simple example with two workers who can be in the following states:</p>
 <ul class="simple">
 <li><p>Employed with probability 0.5, income of 100</p></li>
@@ -404,7 +412,7 @@ to <span class="math notranslate nohighlight">\(\mathcal L\)</span>.</p></li>
 \[.25[u(0) + 2u(50) + u(100)] &gt; .5 [u(0) + u(100)]\]</div>
 </div></blockquote>
 <p>or if <span class="math notranslate nohighlight">\(u(50) &gt; .5[u(0)+u(100)]\)</span>. Hence, we need the utility function <span class="math notranslate nohighlight">\(u\)</span> to be concave or the agent to be risk averse (again Jensen’s inequality).</p>
-<p>In practice, employment insurance could be informal. But enforcing payments after risks are realized may be costly. The worker who did not loose his job may not want to share with the other. Hence, employment insurance schemes lower these costs but enforcing the payment of premiums and benefits. The same goes for other insurance markets.</p>
+<p>In practice, employment insurance could be informal. But enforcing payments after risks are realized may be costly. The worker who did not lose his job may not want to share with the other. Hence, employment insurance schemes lower these costs but enforcing the payment of premiums and benefits. The same goes for other insurance markets.</p>
 <p>The other advantage of having an insurer is that the benefit to consumers of insurance grows with the number of insured individuals. For this, we need to invoke the law of large numbers.</p>
 <p><strong>Law of Large Numbers</strong></p>
 <ul>
@@ -423,7 +431,7 @@ to <span class="math notranslate nohighlight">\(\mathcal L\)</span>.</p></li>
 <li><p>When a large number share the risk, risk is eliminated trough mutualization. The insured receive exactly the average.</p></li>
 <li><p>If agents are risk averse, this result is admirable.</p></li>
 </ul>
-<p>Insurers need to issue debt to finance their operation. This debt, often in the form of corporate bonds, needs to reward investors for the risk inherent to each insurer. Insurers who are more risky, perhaps because their portfolio is less diversified (smaller), will need to pay a premium on their debt. This in turn may translate into higher premiums.</p>
+<p>Insurers need to issue debt to finance their operation. This debt, often in the form of corporate bonds, needs to reward investors for the risk inherent to each insurer. Insurers who are riskier, perhaps because their portfolio is less diversified (smaller), will need to pay a premium on their debt. This in turn may translate into higher premiums.</p>
 </div>
 <div class="section" id="insurance-and-entrepreneurship">
 <h2>Insurance and Entrepreneurship<a class="headerlink" href="#insurance-and-entrepreneurship" title="Lien permanent vers ce titre">¶</a></h2>
@@ -439,10 +447,10 @@ to <span class="math notranslate nohighlight">\(\mathcal L\)</span>.</p></li>
 <li><p>The lottery is now <span class="math notranslate nohighlight">\(\mathcal L' = (.5,4.5 \;; .5,17)\)</span></p></li>
 <li><p><strong>Exercise H</strong>: What will be his choice?</p></li>
 </ul>
-<p>The show, <em>Les Dragons (Dragon’s Den)</em> from Radio-Canada and CBC provides a direct illustration of what is happening. Participation from one of the Dragon is always conditionnal to a share of the profits. Negociation takes place on the share of profits that the entrepreneur needs to give up in order to obtain an investment from the Dragon. Here is an example (in french) of two entrepreneurs who drove a hard bargain…</p>
+<p>The show, <em>Les Dragons (Dragon’s Den)</em> from Radio-Canada and CBC provides a direct illustration of what is happening. Participation from one of the Dragon is always conditional to a share of the profits. Negociation takes place on the share of profits that the entrepreneur needs to give up in order to obtain an investment from the dragon. Here is an example (in french) of two entrepreneurs who drove a hard bargain…</p>
 <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
     <iframe src="https://www.youtube.com/embed/ICyUEUUgq8Q" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-</div><p>In addition to private equity firms who provide this type of insurance, public organizations also do this, for example Investissement Québec, or unions, such as FTQ and Fondaction.</p>
+</div><p>In addition to private equity firms that provide this type of insurance, public organizations also do this, for example Investissement Québec, or unions, such as FTQ and Fondaction.</p>
 </div>
 <div class="section" id="critics-of-expected-utility">
 <h2>Critics of Expected Utility<a class="headerlink" href="#critics-of-expected-utility" title="Lien permanent vers ce titre">¶</a></h2>
@@ -452,7 +460,7 @@ to <span class="math notranslate nohighlight">\(\mathcal L\)</span>.</p></li>
 <li><p>Kahneman et Tversky: Perspectives</p></li>
 </ul>
 <p>Choice Experiment I</p>
-<p>Draw an integer number between 0 and 99 with probability 1/100 for each integer integer:</p>
+<p>Draw an integer number between 0 and 99 with probability 1/100 for each integer:</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 50%" />
@@ -513,7 +521,7 @@ to <span class="math notranslate nohighlight">\(\mathcal L\)</span>.</p></li>
 </div>
 <p>Read the story behind the paradox. <a class="reference external" href="https://pubs.aeaweb.org/doi/pdf/10.1257/jep.5.2.179">Munier (1991)</a></p>
 <p>Choice Experiment III</p>
-<p>An urn consist 90 balls. 30 are red. The other 60 are either black or white. The proportion of white and black balls is not know. We ask you to make a choice between these lotteries:</p>
+<p>An urn consists of 90 balls. 30 are red. The other 60 are either black or white. The proportion of white and black balls is not know. We ask you to make a choice between these lotteries:</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 39%" />
@@ -571,7 +579,7 @@ to <span class="math notranslate nohighlight">\(\mathcal L\)</span>.</p></li>
 <span class="math notranslate nohighlight">\(L_4 \succ L_3\)</span> is inconsistent with expected utility for any beliefs about the proportion of white or black balls.</p>
 <p>Mr. Ellsberg is well known for this paradox, but perhaps much more for his battles with the American government. <a class="reference external" href="https://fr.wikipedia.org/wiki/Daniel_Ellsberg">Pentagon Papers</a></p>
 <p>Kahneman and Tversky: Perspectives</p>
-<p>The authors, both receipients of a Nobel,  show that we are influenced by perspectives (often named framing) when we make choices, in particular when risk is involved:</p>
+<p>The authors, both recipients of a Nobel,  show that we are influenced by perspectives (often named framing) when we make choices, in particular when risk is involved:</p>
 <p>Imagine a new virus could kill 600 individuals. Two interventions are shown:</p>
 <ul class="simple">
 <li><p>(Positive perspective): A) 200 are saved, B) 1/3 probability that 600 are saved,
@@ -593,29 +601,29 @@ to <span class="math notranslate nohighlight">\(\mathcal L\)</span>.</p></li>
            
           </div>
           <footer>
-  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="time_en.html" class="btn btn-neutral float-right" title="Time" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="effets_en.html" class="btn btn-neutral float-left" title="Price and Income Effects" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+        <a href="time_en.html" class="btn btn-neutral float-right" title="Time" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="effets_en.html" class="btn btn-neutral float-left" title="Price and Income Effects" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2020, Pierre-Carl Michaud
+        &#169; Copyright 2020, Pierre-Carl Michaud.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
-
         </div>
       </div>
 
@@ -623,7 +631,6 @@ to <span class="math notranslate nohighlight">\(\mathcal L\)</span>.</p></li>
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

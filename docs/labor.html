@@ -1,23 +1,31 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="fr" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
+<html class="writer-html5" lang="fr" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>Le Travail &mdash; Documentation Micro Notes </title>
   
 
   
-  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
   
   
 
   
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -26,16 +34,12 @@
         <script src="_static/doctools.js"></script>
         <script src="_static/language_data.js"></script>
         <script src="_static/translations.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script type="text/x-mathjax-config">MathJax.Hub.Config({"extensions": ["tex2jax.js"], "jax": ["input/TeX", "output/HTML-CSS"], "availableFonts": ["Neo-Euler", "TeX"], "preferredFont": ["Neo-Euler"], "scale": 60})</script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Recherche" href="search.html" />
     <link rel="next" title="Bien-être" href="welfare.html" />
@@ -67,7 +71,7 @@
           
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Rechercher docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -76,6 +80,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -132,6 +137,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -166,19 +172,21 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html">Docs</a> &raquo;</li>
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
       <li>Le Travail</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
-            
-            <a href="_sources/labor.rst.txt" rel="nofollow"> View page source</a>
+          
+            <a href="_sources/labor.rst.txt" rel="nofollow"> Afficher la source de la page</a>
           
         
       </li>
@@ -199,12 +207,12 @@
 </div>
 <div class="section" id="offre-de-travail">
 <h2>Offre de Travail<a class="headerlink" href="#offre-de-travail" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Pour modéliser ce choix, nous allons introduire un nouveau bien, le temps de loisir, <span class="math notranslate nohighlight">\(L\)</span>. Le temps dans une journée (effectif en omettant le sommeil et soins personnels) est donné par <span class="math notranslate nohighlight">\(T\)</span>. Ainsi, le temps de travail est <span class="math notranslate nohighlight">\(H=T-L\)</span>. Içi, on suppose que les deux seules utilisations du temps sont le loisir et le travail. Il est possible d’introduire d’autres utilisations du temps. Le prix Nobel <a class="reference external" href="https://fr.wikipedia.org/wiki/Gary_Becker">Gary Becker</a> a été un des pionners dans <a class="reference external" href="https://www.jstor.org/stable/2228949?seq=1#metadata_info_tab_contents">l’analyse de l’allocation du temps</a>.</p>
+<p>Pour modéliser ce choix, nous allons introduire un nouveau bien, le temps de loisir <span class="math notranslate nohighlight">\(L\)</span>. Le temps dans une journée (effectif en omettant le sommeil et soins personnels) est donné par <span class="math notranslate nohighlight">\(T\)</span>. Ainsi, le temps de travail est <span class="math notranslate nohighlight">\(H=T-L\)</span>. Içi, on suppose que les deux seules utilisations du temps sont le loisir et le travail. Il est possible d’introduire d’autres utilisations du temps. Le prix Nobel <a class="reference external" href="https://fr.wikipedia.org/wiki/Gary_Becker">Gary Becker</a> a été un des pionners dans <a class="reference external" href="https://www.jstor.org/stable/2228949?seq=1#metadata_info_tab_contents">l’analyse de l’allocation du temps</a>.</p>
 <p>Le consommateur à des préférences pour <span class="math notranslate nohighlight">\((C,L)\)</span>, où <span class="math notranslate nohighlight">\(C\)</span> représente les dépenses de consommation (on normalise son prix à 1) et <span class="math notranslate nohighlight">\(L\)</span> le loisir compté en heures ou autre mesure du temps, représentées par la fonction d’utilité <span class="math notranslate nohighlight">\(u(C,L)\)</span>, généralement concave dans ses deux arguments. Ainsi le TMS entre la consommation et le loisir est donné par:</p>
 <div class="math notranslate nohighlight">
 \[TMS = \frac{dC}{dL}|_{dU=0} = - \frac{u'_L(C,L)}{u'_C(C,L)}\]</div>
-<p>et représente (en valeur absolue) la valeur accordée à une heure de loisir supplémentaire en terme de consommation. Ainsi, le loisir à une valeur positive.</p>
-<p>Quand il travaille, le consommateur a un salaire horaire de <span class="math notranslate nohighlight">\(w\)</span> et un revenu autre de <span class="math notranslate nohighlight">\(y\)</span>. S’il travaille <span class="math notranslate nohighlight">\(H=T\)</span> heures, il a le revenu maximum de <span class="math notranslate nohighlight">\(I = w T + y\)</span> (en anglais, <em>full income</em>). Ses dépenses sont faites en terme de deux biens, <span class="math notranslate nohighlight">\(C\)</span>, sa consommation et <span class="math notranslate nohighlight">\(L\)</span> le loisir dont le coût d’opportunité par heures travaillée est de <span class="math notranslate nohighlight">\(w\)</span>. Ainsi, la contrainte budgétaire est:</p>
+<p>et représente (en valeur absolue) la valeur accordée à une heure de loisir supplémentaire en termes de consommation. Ainsi, le loisir à une valeur positive.</p>
+<p>Quand il travaille, le consommateur a un salaire horaire de <span class="math notranslate nohighlight">\(w\)</span> et un revenu autre de <span class="math notranslate nohighlight">\(y\)</span>. S’il travaille <span class="math notranslate nohighlight">\(H=T\)</span> heures, il a le revenu maximum de <span class="math notranslate nohighlight">\(I = w T + y\)</span> (en anglais, <em>full income</em>). Ses dépenses sont faites en termes de deux biens <span class="math notranslate nohighlight">\(C\)</span>, sa consommation et <span class="math notranslate nohighlight">\(L\)</span> le loisir dont le coût d’opportunité par heures travaillées est de <span class="math notranslate nohighlight">\(w\)</span>. Ainsi, la contrainte budgétaire est:</p>
 <div class="math notranslate nohighlight">
 \[C + w L \leq I = w T + y\]</div>
 <p>Fait intéressant à noter, le revenu de l’agent est maintenant fonction du prix du loisir <span class="math notranslate nohighlight">\(w\)</span>. On peut écrire la contrainte, en notant que <span class="math notranslate nohighlight">\(H=T-L\)</span>:</p>
@@ -214,14 +222,14 @@
 <div class="figure align-default">
 <a class="reference internal image-reference" href="_images/budget_time.png"><img alt="_images/budget_time.png" src="_images/budget_time.png" style="width: 474.0px; height: 360.0px;" /></a>
 </div>
-<p>Le problème d’offre de travail peut donc être présenté sous la forme d’un langragien à maximiser:</p>
+<p>Le problème d’offre de travail peut donc être présenté sous la forme d’un lagrangien à maximiser:</p>
 <div class="math notranslate nohighlight">
 \[\max_{C,L,\lambda} u(C,L) - \lambda(C + wL - wT - y)\]</div>
 <p>Les CPO donnent:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\frac{u_L(C,L)}{u_C(C,L)} = w \\
 C + wL = wT + y\end{split}\]</div>
-<p>La première condition stipule que la valeur absolue du TMS (la valeur d’une heure de loisir) doit être égale à son coût d’opportunité (<span class="math notranslate nohighlight">\(w\)</span>). La deuxième condition est la contrainte budgétaire. La solution de ce système de deux équations donne en particulier <span class="math notranslate nohighlight">\(L^*(w,y)\)</span>, la demande marshalienne du loisir. L’offre de travail est donné par <span class="math notranslate nohighlight">\(H^*(w,y) = T - L^*(w,y)\)</span>.</p>
+<p>La première condition stipule que la valeur absolue du TMS (la valeur d’une heure de loisir) doit être égale à son coût d’opportunité (<span class="math notranslate nohighlight">\(w\)</span>). La deuxième condition est la contrainte budgétaire. La solution de ce système de deux équations donne en particulier <span class="math notranslate nohighlight">\(L^*(w,y)\)</span>, la demande marshalienne du loisir. L’offre de travail est donnée par <span class="math notranslate nohighlight">\(H^*(w,y) = T - L^*(w,y)\)</span>.</p>
 <p><em>Exercice A</em>: Trouvez la demande de loisir et l’offre de travail pour <span class="math notranslate nohighlight">\(u(C,L) = C^{\alpha}L^{1-\alpha}\)</span>.</p>
 <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
     <iframe src="https://www.youtube.com/embed/iKHLiFTiQxw" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
@@ -234,8 +242,8 @@ C + wL = wT + y\end{split}\]</div>
 </div>
 <div class="section" id="effets-substitution-et-revenu">
 <h2>Effets Substitution et Revenu<a class="headerlink" href="#effets-substitution-et-revenu" title="Lien permanent vers ce titre">¶</a></h2>
-<p>La présence de <span class="math notranslate nohighlight">\(w\)</span> dans le revenu maximal complique l’analyse d’un changement de salaire. En effet, un salaire qui augmente veut maintenant dire que le coût d’opportunité du loisir augmente (effet substitution) mais le revenu maximal augmente aussi, ce qui fait que le consommateur peut se permettre davantage de loisir (si le loisir est un bien normal).</p>
-<p>Pour comprendre ces effets, notons d’abord que le modèle ici-haut est en fait seulement fonction d’une variable, on peut substituter la contrainte budgétaire dans le problème de sorte que le problème dépend seulement du loisir:</p>
+<p>La présence de <span class="math notranslate nohighlight">\(w\)</span> dans le revenu maximal complique l’analyse d’un changement de salaire. En effet, un salaire qui augmente veut maintenant dire que le coût d’opportunité du loisir augmente (effet substitution), mais le revenu maximal augmente aussi, ce qui fait que le consommateur peut se permettre davantage de loisirs (si le loisir est un bien normal).</p>
+<p>Pour comprendre ces effets, notons d’abord que le modèle ici haut est en fait seulement fonction d’une variable, on peut substituer la contrainte budgétaire dans le problème de sorte que le problème dépend seulement du loisir:</p>
 <div class="math notranslate nohighlight">
 \[\max_L u(wT - wL + y,L)\]</div>
 <p>La condition de premier ordre est :</p>
@@ -246,26 +254,26 @@ C + wL = wT + y\end{split}\]</div>
 \[\frac{d L}{d w} = \frac{U_C}{\Delta} + h \frac{d L}{d y}\]</div>
 <p>où <span class="math notranslate nohighlight">\(\Delta\)</span> est un terme négatif si la solution n’est pas de coin (en fait la valeur de la dérivée seconde à la solution). Ainsi l’effet d’un changement de salaire sur le loisir est la somme d’un effet négatif (premier terme) et d’un deuxième terme positif si le loisir est un bien normal. Ainsi, l’effet d’une hausse de salaire sur le loisir est indéterminé et dépendra de la force relative de ces deux effets.</p>
 <p>On peut montrer que le premier terme est en fait l’effet substitution (ou compensé), <span class="math notranslate nohighlight">\(\frac{d L}{d w}|_{dU=0}\)</span>. Le deuxième terme est l’effet revenu.</p>
-<p>On peut écrire en terme d’offre de travail pour obtenir l’équation de Slutsky d’offre de travail:</p>
+<p>On peut écrire en termes d’offre de travail pour obtenir l’équation de Slutsky d’offre de travail:</p>
 <div class="math notranslate nohighlight">
 \[\frac{dH}{dw} = \frac{dH}{dw}|_{dU=0} + H \frac{dH}{dy}\]</div>
-<p>L’effet d’une hausse de salaire est la somme d’un effet substitution (compensé) positif et d’un effet revenu négatif (si loisir est un bien normal). En terme d’élasticité, on peut écrire:</p>
+<p>L’effet d’une hausse de salaire est la somme d’un effet substitution (compensé) positif et d’un effet revenu négatif (si loisir est un bien normal). En termes d’élasticité, on peut écrire:</p>
 <div class="math notranslate nohighlight">
 \[\eta_{w} = \eta^{cmp}_{w} + \frac{wH}{y} \eta_{Y}\]</div>
-<p>On peut estimer les élasticités salaire et revenu de différentes façons. Par exemple, <a class="reference external" href="https://www.aeaweb.org/articles?id=10.1257/aer.91.4.778">Imbens et al. (2001)</a> ont estimé l’effet de gagner la lotterie sur l’offre de travail des gagnants. Ceci nous renseigne sur <span class="math notranslate nohighlight">\(\eta_{Y}\)</span>. Ils trouvent une élasticité des revenus de travail de -0.05 à -0.1 de gagner la lotterie.</p>
+<p>On peut estimer les élasticités salaire et revenu de différentes façons. Par exemple, <a class="reference external" href="https://www.aeaweb.org/articles?id=10.1257/aer.91.4.778">Imbens et al. (2001)</a> ont estimé l’effet de gagner la loterie sur l’offre de travail des gagnants. Ceci nous renseigne sur <span class="math notranslate nohighlight">\(\eta_{Y}\)</span>. Ils trouvent une élasticité des revenus de travail de -0.05 à -0.1 de gagner la loterie.</p>
 <div class="figure align-default" id="id2">
 <a class="reference internal image-reference" href="_images/winners.png"><img alt="_images/winners.png" src="_images/winners.png" style="width: 563.0px; height: 270.0px;" /></a>
 <p class="caption"><span class="caption-text">Imbens et al. (2001)</span><a class="headerlink" href="#id2" title="Lien permanent vers cette image">¶</a></p>
 </div>
 <p>Concernant l’élasticité salaire, la littérature est vaste, et utilise un nombre important de méthodes. Généralement, l’élasticité est faible pour les hommes, plus forte pour les femmes, particulièrement pour ce qui est du choix de travailler ou non.</p>
-<p><em>Exercice B</em>: Trouvez les élasticités salaire et salaire compensée pour <span class="math notranslate nohighlight">\(u(C,H) = C - \frac{H^{1+\frac{1}{\epsilon}}}{1+\frac{1}{\epsilon}}\)</span>.</p>
+<p><em>Exercice B</em>: Trouvez les élasticités salaire et salaire compensé pour <span class="math notranslate nohighlight">\(u(C,H) = C - \frac{H^{1+\frac{1}{\epsilon}}}{1+\frac{1}{\epsilon}}\)</span>.</p>
 <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
     <iframe src="https://www.youtube.com/embed/XMiYOYv2cA4" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
 </div><p>Il est possible qu’une hausse de salaire horaire réduise l’offre de travail. Cet effet contre-intuitif est pourtant présent dans certaines professions. Un exemple souvent donné est celui des médecins au Québec qui ne semblent pas avoir augmenté leur offre de travail après l’énorme augmentation salariales consentie à la fin des années 2000. La part des médecins travaillant à temps partiel a aussi augmenté considérablement.</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="_images/medecins.png"><img alt="_images/medecins.png" src="_images/medecins.png" style="width: 433.5px; height: 339.5px;" /></a>
 </div>
-<p><strong>Question pour discussion</strong>: Dans l’optique d’augmenter les services à la population, devrait-on augmenter ou diminuer la rénumération à l’acte des médecins?</p>
+<p><strong>Question pour discussion</strong>: Dans l’optique d’augmenter les services à la population, devrait-on augmenter ou diminuer la rémunération à l’acte des médecins?</p>
 <p>Il est aussi possible que les individus visent un revenu cible (<em>income targeting</em>), et donc qu’ils ne réagissent pas à une hausse de salaire comme on pourrait se l’imaginer. Cette <a class="reference external" href="https://www.cmu.edu/dietrich/sds/docs/loewenstein/NYCCabdrivers.pdf">étude</a> sur les chauffeurs de taxi à New York en est un bon exemple. Le income targeting est un cas spécial de l’équation de Slutsky où les effets substitution et revenu s’annulent.</p>
 </div>
 <div class="section" id="la-taxation">
@@ -273,12 +281,12 @@ C + wL = wT + y\end{split}\]</div>
 <p>La taxation peut prendre plusieurs formes. Dans sa forme la plus simple, il s’agit d’un taux d’imposition <span class="math notranslate nohighlight">\(\tau\)</span> sur les revenus de travail. Si on regarde la contrainte budgétaire, on a :</p>
 <div class="math notranslate nohighlight">
 \[C \leq (1-\tau) w H + y\]</div>
-<p>Ainsi, l’augmentation d’une taxe est similaire à une diminution du salaire, ce qui mène à une perte de bien-être. Puisqu’on sait que l’effet d’une baisse de salaire est indéterminée sans connaître les préférences exactes, il n’est pas possible de dire si une augmentation de l’imposition réduit l’offre de travail.</p>
+<p>Ainsi, l’augmentation d’une taxe est similaire à une diminution du salaire, ce qui mène à une perte de bien-être. Puisqu’on sait que l’effet d’une baisse de salaire est indéterminé sans connaître les préférences exactes, il n’est pas possible de dire si une augmentation de l’imposition réduit l’offre de travail.</p>
 <div class="figure align-default" id="id3">
 <a class="reference internal image-reference" href="_images/labor_taxation.png"><img alt="_images/labor_taxation.png" src="_images/labor_taxation.png" style="width: 423.75px; height: 327.75px;" /></a>
-<p class="caption"><span class="caption-text">Par rapport à une situation de référence A, l’effet de la taxe dépendra de la forme des courbes d’indifférences. Il ests possible que le travailleur travaille moins (situation D, effet substitution domine) ou davantage (situation B, effet revenu domine).</span><a class="headerlink" href="#id3" title="Lien permanent vers cette image">¶</a></p>
+<p class="caption"><span class="caption-text">Par rapport à une situation de référence A, l’effet de la taxe dépendra de la forme des courbes d’indifférences. Il est possible que le travailleur travaille moins (situation D, effet substitution domine) ou davantage (situation B, effet revenu domine).</span><a class="headerlink" href="#id3" title="Lien permanent vers cette image">¶</a></p>
 </div>
-<p>De plus, l’implémentation de la taxe est importante. Plus elle est permanente, plus les travailleurs auront un effet revenu élevé tandis que si la taxe est transitoire, seul l’effet substitution sera à l’oeuvre. Finalement, si l’impôt est compensé pour certains ménages, c’est l’effet compensé qui devrait être utilisée pour estimer l’effet de la taxe sur les comportements de ces ménages. Ces subtilités compliquent l’analyse des effets désincitatifs de la taxation.  Ainsi la question à savoir si la taxation est un désincitatif au travail n’est pas simple…</p>
+<p>De plus, l’implémentation de la taxe est importante. Plus elle est permanente, plus les travailleurs auront un effet revenu élevé tandis que si la taxe est transitoire, seul l’effet substitution sera à l’oeuvre. Finalement, si l’impôt est compensé pour certains ménages, c’est l’effet compensé qui devrait être utilisé pour estimer l’effet de la taxe sur les comportements de ces ménages. Ces subtilités compliquent l’analyse des effets désincitatifs de la taxation.  Ainsi la question à savoir si la taxation est un désincitatif au travail n’est pas simple…</p>
 <p><strong>Exercice C</strong>: Dans le cas où les préférences sont données par <span class="math notranslate nohighlight">\(u(C,H) = C - \frac{H^{1+\frac{1}{\epsilon}}}{1+\frac{1}{\epsilon}}\)</span>, trouvez l’effet d’une taxe <span class="math notranslate nohighlight">\(\tau\)</span> sur l’offre de travail et la perte de bien-être associée à la taxation.</p>
 <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
     <iframe src="https://www.youtube.com/embed/iREGXgKZNSQ" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
@@ -292,7 +300,7 @@ C + wL = wT + y\end{split}\]</div>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="_images/taxman.jpeg"><img alt="_images/taxman.jpeg" src="_images/taxman.jpeg" style="width: 300.0px; height: 168.0px;" /></a>
 </div>
-<p>Une méthode intéressante pour estimer les effets de la taxation est de voir si les individus restraingnent de manière volontaire leurs revenus de travail afin de se situer juste en dessous des changements de taux d’imposition des paliers. L’étude américaine de <a class="reference external" href="https://www.aeaweb.org/articles?id=10.1257/pol.2.3.180">Saez (2010)</a> est une application de cette méthode dite de <em>bunching</em>. Ils trouve une forme de <em>bunching</em> au premier palier mais aucun bunching aux autres paliers.</p>
+<p>Une méthode intéressante pour estimer les effets de la taxation est de voir si les individus restreignent de manière volontaire leurs revenus de travail afin de se situer juste en dessous des changements de taux d’imposition des paliers. L’étude américaine de <a class="reference external" href="https://www.aeaweb.org/articles?id=10.1257/pol.2.3.180">Saez (2010)</a> est une application de cette méthode dite de <em>bunching</em>. Ils trouvent une forme de <em>dancing</em> au premier palier, mais aucun bunching aux autres paliers.</p>
 <div class="figure align-default" id="id4">
 <a class="reference internal image-reference" href="_images/bunching.png"><img alt="_images/bunching.png" src="_images/bunching.png" style="width: 457.0px; height: 281.0px;" /></a>
 <p class="caption"><span class="caption-text">Saez (2010)</span><a class="headerlink" href="#id4" title="Lien permanent vers cette image">¶</a></p>
@@ -300,9 +308,9 @@ C + wL = wT + y\end{split}\]</div>
 </div>
 <div class="section" id="transferts">
 <h2>Transferts<a class="headerlink" href="#transferts" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Les gouvernements procurent souvent des transferts aux individus avec des revenus faibles. Ces transferts agissent comme les revenu autres <span class="math notranslate nohighlight">\(y\)</span>. Donc a priori, ils n’ont qu’un effet revenu sur l’offre de travail et donc peuvent augmenter la probabilité d’une solution de coin surviennent (offre de travail de zéro).</p>
-<p>Par ailleurs, ils peuvent aussi mener à des effets substitutions s’ils sont récupérés en fonction des revenus de travail. Dans les faits, les gouvernements ne peuvent procurer à tous les individus, qu’ils soient riche ou pauvre un revenu minimum inconditionnel. Ainsi, les transferts sont généralement réduient en fonction des revenus de travail.</p>
-<p>Par exemple, l’aide sociale au Québec est réduite dollar pour dollar (donc 100% de taxe implicite). La prime au travaille augmente d’abord avec les revenus pour ensuite être récupérée. Le supplément de revenu garantie est récupéré à un taux au delà de 50% pour les travailleurs âgés.</p>
+<p>Les gouvernements procurent souvent des transferts aux individus avec des revenus faibles. Ces transferts agissent comme les revenus autres <span class="math notranslate nohighlight">\(y\)</span>. Donc a priori, ils n’ont qu’un effet revenu sur l’offre de travail et donc peuvent augmenter la probabilité d’une solution de coin surviennent (offre de travail de zéro).</p>
+<p>Par ailleurs, ils peuvent aussi mener à des effets substitutions s’ils sont récupérés en fonction des revenus de travail. Dans les faits, les gouvernements ne peuvent procurer à tous les individus, qu’ils soient riches ou pauvres un revenu minimum inconditionnel. Ainsi, les transferts sont généralement réduient en fonction des revenus de travail.</p>
+<p>Par exemple, l’aide sociale au Québec est réduite dollar pour dollar (donc 100% de taxe implicite). La prime au travail augmente d’abord avec les revenus pour ensuite être récupérée. Le supplément de revenu garanti est récupéré à un taux au-delà de 50% pour les travailleurs âgés.</p>
 <div class="figure align-default" id="id5">
 <a class="reference internal image-reference" href="_images/clawback.png"><img alt="_images/clawback.png" src="_images/clawback.png" style="width: 454.5px; height: 286.5px;" /></a>
 <p class="caption"><span class="caption-text">Source: Rapport final, <a class="reference external" href="https://www.mtess.gouv.qc.ca/grands-dossiers/revenu_min_garanti.asp">Comité sur le revenu minimum garanti</a>, Volumne 2.</span><a class="headerlink" href="#id5" title="Lien permanent vers cette image">¶</a></p>
@@ -311,7 +319,7 @@ C + wL = wT + y\end{split}\]</div>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="_images/labor_negtax.png"><img alt="_images/labor_negtax.png" src="_images/labor_negtax.png" style="width: 431.25px; height: 315.75px;" /></a>
 </div>
-<p>Si l’effet substitution domine, ceci aura pour effet de réduire encore plus l’offre de travail et créer ce qu’on appelle souvent une trappe de la pauvreté, i.e. la personne qui reçoit des transferts n’a pas beaucoup d’incitatif à sortir de cette situation. Les bougons, personnages de la populaire série, évoquent souvent cette trappe pour justifier leur recours à l’aide sociale.</p>
+<p>Si l’effet substitution domine, ceci a pour effet de réduire encore plus l’offre de travail et créer ce qu’on appelle souvent une trappe de la pauvreté, i.e. la personne qui reçoit des transferts n’a pas beaucoup d’incitatifs à sortir de cette situation. Les bougons, personnages de la populaire série, évoquent souvent cette trappe pour justifier leur recours à l’aide sociale.</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="_images/bougons.jpeg"><img alt="_images/bougons.jpeg" src="_images/bougons.jpeg" style="width: 300.0px; height: 168.0px;" /></a>
 </div>
@@ -334,29 +342,29 @@ C + wL = wT + y\end{split}\]</div>
            
           </div>
           <footer>
-  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="welfare.html" class="btn btn-neutral float-right" title="Bien-être" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="time.html" class="btn btn-neutral float-left" title="Le Temps" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+        <a href="welfare.html" class="btn btn-neutral float-right" title="Bien-être" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="time.html" class="btn btn-neutral float-left" title="Le Temps" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2020, Pierre-Carl Michaud
+        &#169; Copyright 2020, Pierre-Carl Michaud.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
-
         </div>
       </div>
 
@@ -364,7 +372,6 @@ C + wL = wT + y\end{split}\]</div>
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

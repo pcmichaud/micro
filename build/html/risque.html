@@ -1,23 +1,31 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="fr" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
+<html class="writer-html5" lang="fr" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>Le Risque &mdash; Documentation Micro Notes </title>
   
 
   
-  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
   
   
 
   
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -26,16 +34,12 @@
         <script src="_static/doctools.js"></script>
         <script src="_static/language_data.js"></script>
         <script src="_static/translations.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script type="text/x-mathjax-config">MathJax.Hub.Config({"extensions": ["tex2jax.js"], "jax": ["input/TeX", "output/HTML-CSS"], "availableFonts": ["Neo-Euler", "TeX"], "preferredFont": ["Neo-Euler"], "scale": 60})</script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Recherche" href="search.html" />
     <link rel="next" title="Le Temps" href="time.html" />
@@ -67,7 +71,7 @@
           
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Rechercher docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -76,6 +80,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -137,6 +142,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -171,19 +177,21 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html">Docs</a> &raquo;</li>
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
       <li>Le Risque</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
-            
-            <a href="_sources/risque.rst.txt" rel="nofollow"> View page source</a>
+          
+            <a href="_sources/risque.rst.txt" rel="nofollow"> Afficher la source de la page</a>
           
         
       </li>
@@ -205,7 +213,7 @@
 <p>Imaginez vous faire offrir à la retraite:</p>
 <ul>
 <li><p><strong>Plan A</strong>: un revenu certain de: 50 000/an</p></li>
-<li><p>Un revenu incertain à la retraite (dès suite de placements)</p>
+<li><p>Un revenu incertain à la retraite (des suites de placements)</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 50%" />
@@ -259,24 +267,24 @@
 </tbody>
 </table>
 </div></blockquote>
-<p>Le revenu moyen augmente et est plus élevé qu’avec le plan A.  À un moment, vous allez probablement choisir le placement risqué parce que le rendement espéré est plus élevé. Les préférences en situation de risque sont fonctions des gains mais aussi du risque (les probabilités et les gains). La théorie du consommateur que nous avons vu ne couvre pas cette situation. Il faudra l’élargir…</p>
+<p>Le revenu moyen augmente et est plus élevé qu’avec le plan A.  À un moment, vous allez probablement choisir le placement risqué parce que le rendement espéré est plus élevé. Les préférences en situation de risque sont fonction des gains, mais aussi du risque (les probabilités et les gains). La théorie du consommateur que nous avons vu ne couvre pas cette situation. Il faudra l’élargir…</p>
 </div>
 <div class="section" id="l-approche-d-esperance-d-utilite-eu">
 <h2>L’approche d’espérance d’utilité (EU)<a class="headerlink" href="#l-approche-d-esperance-d-utilite-eu" title="Lien permanent vers ce titre">¶</a></h2>
-<p><strong>Lotterie</strong></p>
+<p><strong>Loterie</strong></p>
 <ul>
-<li><p>Lotterie <span class="math notranslate nohighlight">\(\mathcal L = (p,X \;; 1-p,Y)\)</span> : avec probabilité
+<li><p>Loterie <span class="math notranslate nohighlight">\(\mathcal L = (p,X \;; 1-p,Y)\)</span> : avec probabilité
 <span class="math notranslate nohighlight">\(p\)</span> d’obtenir <span class="math notranslate nohighlight">\(X\)</span>, et probabilité <span class="math notranslate nohighlight">\(1-p\)</span> d’obtenir
-<span class="math notranslate nohighlight">\(Y\)</span>. L’espérance de la lotterie est <span class="math notranslate nohighlight">\(\mathbb{E}_{L} = pX + (1-p)Y\)</span>.</p></li>
+<span class="math notranslate nohighlight">\(Y\)</span>. L’espérance de la loterie est <span class="math notranslate nohighlight">\(\mathbb{E}_{L} = pX + (1-p)Y\)</span>.</p></li>
 <li><p>Pour représenter les préférences, l’espérance d’utilité semble naturelle</p>
 <div class="math notranslate nohighlight">
 \[\mathbb{E}_{{ \mathcal L}} (u) = p\times u(X) + (1-p) \times
 u(Y)\]</div>
 </li>
 </ul>
-<p><strong>Préférences sur des lotteries</strong></p>
+<p><strong>Préférences sur des loteries</strong></p>
 <ul>
-<li><p>Le consommateur préfère la lotterie <span class="math notranslate nohighlight">\(\mathcal L_1\)</span> à la lotterie <span class="math notranslate nohighlight">\(\mathcal L_2\)</span> si</p>
+<li><p>Le consommateur préfère la loterie <span class="math notranslate nohighlight">\(\mathcal L_1\)</span> à la loterie <span class="math notranslate nohighlight">\(\mathcal L_2\)</span> si</p>
 <div class="math notranslate nohighlight">
 \[\mathbb{E}_{{ \mathcal L_1}} (u) &gt; \mathbb{E}_{{ \mathcal L_2}} (u)\]</div>
 </li>
@@ -286,13 +294,13 @@ u(Y)\]</div>
 <p><strong>Exemple</strong></p>
 <p>Si <span class="math notranslate nohighlight">\(u(X) = \sqrt{X}\)</span> et le consommateur fait face aux lotteries <span class="math notranslate nohighlight">\(\mathcal L_1 = (0.5,0\;; 0.5,16)\)</span> et <span class="math notranslate nohighlight">\(\mathcal L_2 = (1,6)\)</span>.</p>
 <ul class="simple">
-<li><p><strong>Exercice A</strong>: Quel est le rendement espéré de chaque lotterie?</p></li>
-<li><p><strong>Exercice B</strong> Si le consommateur a des préférences vNM, laquelle des lotteries choisira-t-il?</p></li>
+<li><p><strong>Exercice A</strong>: Quel est le rendement espéré de chaque loterie?</p></li>
+<li><p><strong>Exercice B</strong> Si le consommateur a des préférences vNM, laquelle des loteries choisira-t-il?</p></li>
 <li><p><strong>Exercice C</strong>: Est-ce que la fonction d’utilité <span class="math notranslate nohighlight">\(u(X) = X\)</span> donne le même choix?</p></li>
 </ul>
 <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
     <iframe src="https://www.youtube.com/embed/0d2D_VJD9L4" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-</div><p>En situation de certitude, l’utilité est ordinale: seul l’ordre compte. Cependant, en situation de risque, l’utilité espérée à la vNM est cardinale, car elle dépend des probabilités qui sont ont une échelle (entre 0 et 1). Donc, les transformations monotones ne sont pas permises. Mais une transformation est permise: la transformation affine: <span class="math notranslate nohighlight">\(\widehat u = a u +b\)</span> avec <span class="math notranslate nohighlight">\(a&gt;0\)</span>. On peut montrer que cette transformation n’affecte pas les préférences</p>
+</div><p>En situation de certitude, l’utilité est ordinale: seul l’ordre compte. Cependant, en situation de risque, l’utilité espérée à la vNM est cardinale, car elle dépend des probabilités qui sont ont une échelle (entre 0 et 1). Donc, les transformations monotones ne sont pas permises. Mais une transformation est permise: la transformation affine: <span class="math notranslate nohighlight">\(\widehat u = a u +b\)</span> avec <span class="math notranslate nohighlight">\(a&gt;0\)</span>. On peut montrer que cette transformation n’affecte pas les préférences.</p>
 <blockquote>
 <div><div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
@@ -331,7 +339,7 @@ et on dénote <span class="math notranslate nohighlight">\(Z = p X + (1-p)Y\)</s
 <p>Une fonction <span class="math notranslate nohighlight">\(u\)</span> qui respecte cette inégalité est concave (voir rappel mathématique). Dans le domaine des statistiques, on réfère à ce résultat comme étant l’inégalité de Jensen. Le cas de la riscophilie correspond à une fonction d’utilité convexe.</p>
 <div class="figure align-default" id="id1">
 <a class="reference internal image-reference" href="_images/risk_concave.png"><img alt="_images/risk_concave.png" src="_images/risk_concave.png" style="width: 529.5px; height: 372.0px;" /></a>
-<p class="caption"><span class="caption-text">Dans l’espace richesse - utilité, nous considérons une lotterie sur <span class="math notranslate nohighlight">\((X,Y)\)</span> avec la probabilité <span class="math notranslate nohighlight">\(p\)</span> que <span class="math notranslate nohighlight">\(X\)</span> soit réalisé. En débutant sur l’axe horizontal, la richesse espérée se trouve entre <span class="math notranslate nohighlight">\(X\)</span> et <span class="math notranslate nohighlight">\(Y\)</span> puisque <span class="math notranslate nohighlight">\(p\)</span> est entre zéro et 1. Sur l’axe vertical, on peut faire la même chose en calculant l’utilité espérée, avec le même  <span class="math notranslate nohighlight">\(p\)</span>. En variant  <span class="math notranslate nohighlight">\(p\)</span>, on obtient la corde (ligne droite) qui relie les points <span class="math notranslate nohighlight">\((X,Y)\)</span> sur la fonction d’utilité. Puisque la fonction est concave, cette corde est toujours inférieure à la fonction d’utilité. Donc l’utilité évaluée à la richesse espérée (point A) est toujours supérieure à l’espérance d’utilité (point B). Et ce pour tout  <span class="math notranslate nohighlight">\(p\)</span>.</span><a class="headerlink" href="#id1" title="Lien permanent vers cette image">¶</a></p>
+<p class="caption"><span class="caption-text">Dans l’espace richesse - utilité, nous considérons une loterie sur <span class="math notranslate nohighlight">\((X,Y)\)</span> avec la probabilité <span class="math notranslate nohighlight">\(p\)</span> que <span class="math notranslate nohighlight">\(X\)</span> soit réalisé. En débutant sur l’axe horizontal, la richesse espérée se trouve entre <span class="math notranslate nohighlight">\(X\)</span> et <span class="math notranslate nohighlight">\(Y\)</span> puisque <span class="math notranslate nohighlight">\(p\)</span> est entre zéro et 1. Sur l’axe vertical, on peut faire la même chose en calculant l’utilité espérée, avec le même  <span class="math notranslate nohighlight">\(p\)</span>. En variant  <span class="math notranslate nohighlight">\(p\)</span>, on obtient la corde (ligne droite) qui relie les points <span class="math notranslate nohighlight">\((X,Y)\)</span> sur la fonction d’utilité. Puisque la fonction est concave, cette corde est toujours inférieure à la fonction d’utilité. Donc l’utilité évaluée à la richesse espérée (point A) est toujours supérieure à l’espérance d’utilité (point B). Et ce pour tout  <span class="math notranslate nohighlight">\(p\)</span>.</span><a class="headerlink" href="#id1" title="Lien permanent vers cette image">¶</a></p>
 </div>
 <p><strong>Neutralité au risque</strong></p>
 <p>Si l’individu est neutre face au risque, il y a indifférence entre</p>
@@ -344,7 +352,7 @@ et on dénote <span class="math notranslate nohighlight">\(Z = p X + (1-p)Y\)</s
 <div class="section" id="mesurer-l-aversion-au-risque">
 <h2>Mesurer l’aversion au risque<a class="headerlink" href="#mesurer-l-aversion-au-risque" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Comment mesurer le degré de riscophobie? Comment comparer deux individus et dire qu’un est plus riscophobe qu’un autre? Deux mesures sont bien utiles dans ce contexte, soit le coefficient d’aversion au risque absolue et le coefficient d’aversion au risque relatif.</p>
-<p>Coefficient absolue:</p>
+<p>Coefficient absolu:</p>
 <blockquote>
 <div><div class="math notranslate nohighlight">
 \[A(X) = -\frac{u''(X)}{u'(X)}\]</div>
@@ -355,10 +363,10 @@ et on dénote <span class="math notranslate nohighlight">\(Z = p X + (1-p)Y\)</s
 \[R(X) = -\frac{u''(X)X}{u'(X)}\]</div>
 </div></blockquote>
 <p>Pourquoi ces mesures? Puisque la riscophobie est reliée à la concavité, les deux mesures augmentent quand la deuxième dérivée augmente (elle est négative pour concave, d’où le signe moins devant pour avoir une mesure positive). Ensuite, on normalise par l’utilité marginale <span class="math notranslate nohighlight">\(u'(X)\)</span>, pour fixer les unités puisque <span class="math notranslate nohighlight">\(u\)</span> est ordinale.</p>
-<p>La mesure absolue permet de regarder le niveau de riscophobie pour une lotterie en montant absolue. Le coefficient relatif permet de regarder le degré de riscophobie pour une lotterie en proportion de la richesse.</p>
-<p>La distinction entre les deux est utile. Par exemple, on pourrait croire intuitif que la mesure absolue décroit dans la richesse (la lotterie devient sans importance quand la richesse augmente) tandis que le coefficient relatif devrait être relativement constant puisque la lotterie reste constante en proportion de la richesse. Donc, pour une décision d’investissement de portefeuille, où la taille du portefeuille est à peu près constante en proportion de la richesse, le coefficient relatif parait la bonne mesure. Pour un risque plus absolue, par exemple, une lotterie au casino, le coefficient absolue paraît plus utile.</p>
-<p>Comment mesurer ce coefficient? Une méthode très utilisée est la liste de prix multiples. <a class="reference external" href="https://pubs.aeaweb.org/doi/pdfplus/10.1257/000282802762024700">Holt et Laury (2002)</a> ont fait une application de ces listes à la mesure des attitudes façes au risque, qui démontre entre autre l’importance de donner des incitatifs financiers à ceux qui participent.</p>
-<p>Une liste de prix multiple présente deux lotteries sous différentes configurations. Le répondant doit choisir la lotterie qu’il préfère. Une lotterie sera choisie au hasard à la fin de l’expérience et sera jouée. Le répondant se verra payer le montant réalisé. Voici exemple tiré de Holt et Laury:</p>
+<p>La mesure absolue permet de regarder le niveau de riscophobie pour une loterie en montant absolue. Le coefficient relatif permet de regarder le degré de riscophobie pour une loterie en proportion de la richesse.</p>
+<p>La distinction entre les deux est utile. Par exemple, on pourrait croire intuitif que la mesure absolue décroisse dans la richesse (la loterie devient sans importance quand la richesse augmente) tandis que le coefficient relatif devrait être relativement constant puisque la loterie reste constante en proportion de la richesse. Donc, pour une décision d’investissement de portefeuille, où la taille du portefeuille est à peu près constante en proportion de la richesse, le coefficient relatif parait la bonne mesure. Pour un risque plus absolu, par exemple, une loterie au casino, le coefficient absolu parait plus utile.</p>
+<p>Comment mesurer ce coefficient? Une méthode très utilisée est la liste de prix multiples. <a class="reference external" href="https://pubs.aeaweb.org/doi/pdfplus/10.1257/000282802762024700">Holt et Laury (2002)</a> ont fait une application de ces listes à la mesure des attitudes face au risque, qui démontre entre autres l’importance de donner des incitatifs financiers à ceux qui participent.</p>
+<p>Une liste de prix multiple présente deux loteries sous différentes configurations. Le répondant doit choisir la loterie qu’il préfère. Une loterie sera choisie au hasard à la fin de l’expérience et sera jouée. Le répondant se verra payer le montant réalisé. Voici exemple tiré de Holt et Laury:</p>
 <a class="reference internal image-reference" href="_images/mpl.png"><img alt="_images/mpl.png" src="_images/mpl.png" style="width: 431.0px; height: 210.0px;" /></a>
 <p>On utilisera une fonction d’utilité de type,</p>
 <div class="math notranslate nohighlight">
@@ -370,18 +378,18 @@ et on dénote <span class="math notranslate nohighlight">\(Z = p X + (1-p)Y\)</s
 </div></div>
 <div class="section" id="prime-de-risque">
 <h2>Prime de risque<a class="headerlink" href="#prime-de-risque" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Considérons la lotterie  <span class="math notranslate nohighlight">\(\mathcal L =(p,X\;;1-p,Y)\)</span>. On dénote <span class="math notranslate nohighlight">\(Z\)</span> l’espèrance de la lotterie <span class="math notranslate nohighlight">\(Z = pX+ (1-p)Y\)</span>. On pourrait s’intéresser à <span class="math notranslate nohighlight">\(Z'\)</span> tel que</p>
+<p>Considérons la loterie  <span class="math notranslate nohighlight">\(\mathcal L =(p,X\;;1-p,Y)\)</span>. On dénote <span class="math notranslate nohighlight">\(Z\)</span> l’espérance de la loterie <span class="math notranslate nohighlight">\(Z = pX+ (1-p)Y\)</span>. On pourrait s’intéresser à <span class="math notranslate nohighlight">\(Z'\)</span> tel que</p>
 <div class="math notranslate nohighlight">
 \[u(Z') = pu(X) + (1-p)u(Y)\]</div>
 <p><span class="math notranslate nohighlight">\(Z'\)</span> est un équivalent certain pour <span class="math notranslate nohighlight">\(\mathcal L\)</span> étant donné les préférences représentées par <span class="math notranslate nohighlight">\(u\)</span>.</p>
 <p>Si l’agent est riscophobe, <span class="math notranslate nohighlight">\(Z' &lt; Z\)</span> et on dénote <span class="math notranslate nohighlight">\(\pi = Z-Z'\)</span> la prime de risque. Son interprétation dépend du contexte. Quand l’action concerne la prise de risque (par défaut l’individu est en situation de certitude), on l’interprète comme étant la compensation minimum demandée par l’agent pour prendre le risque. La prime de risque représente alors le montant minimal qu’il faut payer avec certitude à l’agent pour qu’il prenne le risque. En contexte d’investissement boursier, le rendement excédentaire requis par un investisseur riscophobe sera égal à cette prime de risque. Plus l’actif est risqué, plus il demandera une compensation (rendement) élevée.</p>
 <div class="figure align-default" id="id2">
 <a class="reference internal image-reference" href="_images/risk_premium.png"><img alt="_images/risk_premium.png" src="_images/risk_premium.png" style="width: 534.75px; height: 390.0px;" /></a>
-<p class="caption"><span class="caption-text">Dans l’espace richesse - utilité, nous considérons une lotterie sur <span class="math notranslate nohighlight">\((X,Y)\)</span> avec la probabilité <span class="math notranslate nohighlight">\(p\)</span> que <span class="math notranslate nohighlight">\(X\)</span> soit réalisé. Le point C donne la richesse équivalente certaine, puisqu’à cette richesse l’espérance d’utilité est égale à l’utilité certaine. Donc la richesse équivalente certaine est <span class="math notranslate nohighlight">\(Z' &lt; Z\)</span> et la prime de risque est <span class="math notranslate nohighlight">\(\pi = Z-Z'\)</span>.</span><a class="headerlink" href="#id2" title="Lien permanent vers cette image">¶</a></p>
+<p class="caption"><span class="caption-text">Dans l’espace richesse - utilité, nous considérons une loterie sur <span class="math notranslate nohighlight">\((X,Y)\)</span> avec la probabilité <span class="math notranslate nohighlight">\(p\)</span> que <span class="math notranslate nohighlight">\(X\)</span> soit réalisé. Le point C donne la richesse équivalente certaine, puisqu’à cette richesse l’espérance d’utilité est égale à l’utilité certaine. Donc la richesse équivalente certaine est <span class="math notranslate nohighlight">\(Z' &lt; Z\)</span> et la prime de risque est <span class="math notranslate nohighlight">\(\pi = Z-Z'\)</span>.</span><a class="headerlink" href="#id2" title="Lien permanent vers cette image">¶</a></p>
 </div>
-<p>En assurance, la prime de risque sera plutôt le montant maximal que l’agent est prêt à payer pour éliminer le risque puisque la situation sans action, est risquée, alors qu’une assurance complète élimine le risque. Il s’agit donc d’une disposition à payer pour éliminer un risque.</p>
+<p>En assurance, la prime de risque sera plutôt le montant maximal que l’agent est prêt à payer pour éliminer le risque puisque la situation sans action est risquée, alors qu’une assurance complète élimine le risque. Il s’agit donc d’une disposition à payer pour éliminer un risque.</p>
 <p><strong>Exercice E</strong>: Un agent a les préférences représentées par <span class="math notranslate nohighlight">\(u(X)=\log X\)</span>. Sa richesse initiale est <span class="math notranslate nohighlight">\(X_0 = 100\)</span> et il fait façe à un risque de perdre 50 avec probabilité 0.5 et gagner 50 avec une probabilité 0.5. Quel est le montant maximal qu’il est prêt à payer pour éliminer ce risque?</p>
-<p>Une approximation à la prime de risque existe pour un risque faible. Dénotant <span class="math notranslate nohighlight">\(\sigma^2\)</span> la variance d’un risque absolue avec moyenne zéro, la prime de risque pour un agent ayant une richesse initiale de <span class="math notranslate nohighlight">\(X\)</span> est bien approximée par:</p>
+<p>Une approximation à la prime de risque existe pour un risque faible. Dénotant <span class="math notranslate nohighlight">\(\sigma^2\)</span> la variance d’un risque absolu avec moyenne zéro, la prime de risque pour un agent ayant une richesse initiale de <span class="math notranslate nohighlight">\(X\)</span> est bien approximée par:</p>
 <div class="math notranslate nohighlight">
 \[\tilde\pi = \frac{1}{2}\sigma^2 A(X)\]</div>
 <p>On remarque que la prime augmente avec l’aversion au risque et la variance du risque. Une variante pour les risques relatifs prend une forme similaire.</p>
@@ -391,27 +399,27 @@ et on dénote <span class="math notranslate nohighlight">\(Z = p X + (1-p)Y\)</s
 </div></div>
 <div class="section" id="assurance">
 <h2>Assurance<a class="headerlink" href="#assurance" title="Lien permanent vers ce titre">¶</a></h2>
-<p>L’assurance est un marché qui existe parce que la population est riscophobe de manière générale. Il y a un marché pour l’assurance de biens (voitures, maisons, etc) mais aussi l’assurance des personnes (vie, rentes viagères, santé). Même nos gouvernements mettent en place des assurances, comme l’assurance-emploi (anciennement assurance-chômage).</p>
-<p>Prennons le cas du chômage. Considérons un exemple simple où deux individus peuvent être dans les états suivants:</p>
+<p>L’assurance est un marché qui existe parce que la population est riscophobe de manière générale. Il y a un marché pour l’assurance de biens (voitures, maisons, etc), mais aussi l’assurance des personnes (vie, rentes viagères, santé). Même nos gouvernements mettent en place des assurances, comme l’assurance-emploi (anciennement assurance-chômage).</p>
+<p>Prenons le cas du chômage. Considérons un exemple simple où deux individus peuvent être dans les états suivants:</p>
 <ul class="simple">
 <li><p>Employé avec probabilité 0.5, revenu de 100</p></li>
 <li><p>Au chômage avec probabilité 0.5, revenu de 0</p></li>
 </ul>
-<p>Dénotons les revenus réalisés des deux individus, <span class="math notranslate nohighlight">\(I_i\)</span> (<span class="math notranslate nohighlight">\(i=1,2\)</span>). Un programme d’assurance-emploi dicte plutôt que les deux individus reçoivent <span class="math notranslate nohighlight">\((I_1+I_2)/2\)</span> peu importe leur statut d’emploi.</p>
+<p>Dénotons les revenus réalisés des deux individus <span class="math notranslate nohighlight">\(I_i\)</span> (<span class="math notranslate nohighlight">\(i=1,2\)</span>). Un programme d’assurance-emploi dicte plutôt que les deux individus reçoivent <span class="math notranslate nohighlight">\((I_1+I_2)/2\)</span> peu importe leur statut d’emploi.</p>
 <p>L’assurance est bénéfique <em>ex ante</em> pour deux agents riscophobes (avant la réalisation du risque):</p>
 <ul class="simple">
 <li><p>Sans assurance: utilité espérée de chacun des agents est <span class="math notranslate nohighlight">\(.5 [u(0) + u(100)]\)</span></p></li>
-<li><p>Avec insurance, il 25 % de chance que les deux ont 0, 50% que 1 seul travaille, 25% que les deux travaillent. Donc l’espérance d’utilité de chacun des agents est <span class="math notranslate nohighlight">\(.25[u(0) + 2u(50) + u(100)]\)</span></p></li>
+<li><p>Avec assurance, il 25 % de chance que les deux ont 0, 50% que 1 seul travaille, 25% que les deux travaillent. Donc l’espérance d’utilité de chacun des agents est <span class="math notranslate nohighlight">\(.25[u(0) + 2u(50) + u(100)]\)</span></p></li>
 </ul>
 <p>Selon les préférence vNM, l’assurance est bénéfique si</p>
 <blockquote>
 <div><div class="math notranslate nohighlight">
 \[.25[u(0) + 2u(50) + u(100)] &gt; .5 [u(0) + u(100)]\]</div>
 </div></blockquote>
-<p>ou si <span class="math notranslate nohighlight">\(u(50) &gt; .5[u(0)+u(100)]\)</span>. Donc, ceci est vrai si <span class="math notranslate nohighlight">\(u\)</span> concave ou agent riscophobe (encore l’inégalité de Jensen).</p>
+<p>où si <span class="math notranslate nohighlight">\(u(50) &gt; .5[u(0)+u(100)]\)</span>. Donc, ceci est vrai si <span class="math notranslate nohighlight">\(u\)</span> concave ou agent riscophobe (encore l’inégalité de Jensen).</p>
 <p>En pratique, l’assurance-emploi pourrait être informelle entre les gens. Mais le problème est qu’après la réalisation du risque, l’individu qui a toujours un emploi ne veut plus partager. Une façon de voir un régime d’assurance, ou bien un assureur, est qu’il permet de sauver sur ces coûts de transaction (agence) entre les assurés dans la cas d’un sinistre.</p>
-<p>L’autre avantage est que l’assureur pourra mutualiser davantage d’agents au sein du régime. Pour le comprendre, il faut faire appel à la loi des grands nombre.</p>
-<p><strong>La loi des grands nombre</strong></p>
+<p>L’autre avantage est que l’assureur pourra mutualiser davantage d’agents au sein du régime. Pour le comprendre, il faut faire appel à la loi des grands nombres.</p>
+<p><strong>La loi des grands nombres</strong></p>
 <ul>
 <li><p>Considérons une variable aléatoire <span class="math notranslate nohighlight">\(Z\)</span> égale à <span class="math notranslate nohighlight">\(X\)</span> avec probabilité <span class="math notranslate nohighlight">\(p\)</span> et <span class="math notranslate nohighlight">\(Y\)</span> avec probabilité <span class="math notranslate nohighlight">\(1-p\)</span></p></li>
 <li><p>Si <span class="math notranslate nohighlight">\(Z_1,
@@ -433,14 +441,14 @@ et on dénote <span class="math notranslate nohighlight">\(Z = p X + (1-p)Y\)</s
 <h2>Assurance et entrepreneuriat<a class="headerlink" href="#assurance-et-entrepreneuriat" title="Lien permanent vers ce titre">¶</a></h2>
 <p><strong>Devenir entrepreneur</strong></p>
 <ul class="simple">
-<li><p>Un individu a une richesse de 9 et peut décider de la garder ou bien de l’utiliser pour démarrer une entreprise. Sa richesse finale, s’il démarre une entreprise est donnée par la lotterie suivante:    <span class="math notranslate nohighlight">\(\mathcal L = (.5,0 \;; .5,25)\)</span>. Ses préférences sont vMN avec <span class="math notranslate nohighlight">\(u(X) = \sqrt{X}\)</span>.</p></li>
+<li><p>Un individu a une richesse de 9 et peut décider de la garder ou bien de l’utiliser pour démarrer une entreprise. Sa richesse finale, s’il démarre une entreprise est donnée par la loterie suivante:    <span class="math notranslate nohighlight">\(\mathcal L = (.5,0 \;; .5,25)\)</span>. Ses préférences sont vMN avec <span class="math notranslate nohighlight">\(u(X) = \sqrt{X}\)</span>.</p></li>
 <li><p><strong>Exercice G</strong>: Est-ce qu’il démarre l’entreprise?</p></li>
 </ul>
 <p><strong>L’ange investisseur</strong></p>
 <ul class="simple">
 <li><p>Plutôt que d’investir seul, l’entrepreneur peut obtenir un financement d’un ange investisseur qui lui donne la moitié du capital pour la moitié du rendement.</p></li>
 <li><p>L’entrepreneur garde donc 4.5 avec certitude s’il démarre l’entreprise. Mais il doit donner la moitié des rendements.</p></li>
-<li><p>La lotterie est maintenant <span class="math notranslate nohighlight">\(\mathcal L' = (.5,4.5 \;; .5,17)\)</span></p></li>
+<li><p>La loterie est maintenant <span class="math notranslate nohighlight">\(\mathcal L' = (.5,4.5 \;; .5,17)\)</span></p></li>
 <li><p><strong>Exercice H</strong>: Quel sera son choix?</p></li>
 </ul>
 <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
@@ -459,58 +467,8 @@ et on dénote <span class="math notranslate nohighlight">\(Z = p X + (1-p)Y\)</s
 </ul>
 <p>Expérience de choix I</p>
 <p>On tire un nombre entier entre 0 et 99 avec probabilité 1/100 pour chaque nombre entier:</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 9%" />
-<col style="width: 18%" />
-<col style="width: 23%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>Lotteries</p></td>
-<td><p>0</p></td>
-<td><p>1-10</p></td>
-<td><p>11-99</p></td>
-</tr>
-<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(L_1\)</span></p></td>
-<td><p>50</p></td>
-<td><p>50</p></td>
-<td><p>50</p></td>
-</tr>
-<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(L_2\)</span></p></td>
-<td><p>0</p></td>
-<td><p>250</p></td>
-<td><p>50</p></td>
-</tr>
-</tbody>
-</table>
 <p>Expérience de choix II</p>
 <p>Maintenant, on considère une autre paire avec les mêmes règles de tirages.</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 9%" />
-<col style="width: 18%" />
-<col style="width: 23%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>Lotteries</p></td>
-<td><p>0</p></td>
-<td><p>1-10</p></td>
-<td><p>11-99</p></td>
-</tr>
-<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(L_3\)</span></p></td>
-<td><p>50</p></td>
-<td><p>50</p></td>
-<td><p>0</p></td>
-</tr>
-<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(L_4\)</span></p></td>
-<td><p>0</p></td>
-<td><p>250</p></td>
-<td><p>0</p></td>
-</tr>
-</tbody>
-</table>
 <p>Maurice Allais et son Paradoxe</p>
 <p><strong>Exercice I</strong>: Montrez que <span class="math notranslate nohighlight">\(L_1 \succ L_2\)</span> et
 <span class="math notranslate nohighlight">\(L_4 \succ L_3\)</span> sont des choix incohérents si les préférences sont représentées par l’espérance de l’utilité.</p>
@@ -522,58 +480,8 @@ et on dénote <span class="math notranslate nohighlight">\(Z = p X + (1-p)Y\)</s
 <p>Voir cet article pour toute l’histoire derrière le Paradoxe… <a class="reference external" href="https://pubs.aeaweb.org/doi/pdf/10.1257/jep.5.2.179">Munier (1991)</a></p>
 <p>Expérience de choix III</p>
 <p>Une urne contient 90 billes. 30 sont rouges. Les autres 60 sont soit noires ou blanches. La proportion de billes blanches ou noires n’est pas connue. On vous demande de faire un choix entre les deux configurations de paiements suivants (lotteries):</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 39%" />
-<col style="width: 18%" />
-<col style="width: 18%" />
-<col style="width: 25%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>Lotteries</p></td>
-<td><p>rouge</p></td>
-<td><p>noire</p></td>
-<td><p>blanche</p></td>
-</tr>
-<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(L_1\)</span></p></td>
-<td><p>50</p></td>
-<td><p>0</p></td>
-<td><p>0</p></td>
-</tr>
-<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(L_2\)</span></p></td>
-<td><p>0</p></td>
-<td><p>50</p></td>
-<td><p>0</p></td>
-</tr>
-</tbody>
-</table>
 <p>Expérience de choix IV</p>
-<p>Le même contexte pour ces deux lotteries.</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 39%" />
-<col style="width: 18%" />
-<col style="width: 18%" />
-<col style="width: 25%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>Lotteries</p></td>
-<td><p>rouge</p></td>
-<td><p>noire</p></td>
-<td><p>blanche</p></td>
-</tr>
-<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(L_3\)</span></p></td>
-<td><p>50</p></td>
-<td><p>0</p></td>
-<td><p>50</p></td>
-</tr>
-<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(L_4\)</span></p></td>
-<td><p>0</p></td>
-<td><p>50</p></td>
-<td><p>50</p></td>
-</tr>
-</tbody>
-</table>
+<p>Le même contexte pour ces deux loteries.</p>
 <p>Le Paradoxe d’Ellsberg</p>
 <p><strong>Exercice J</strong> Montrez que la combinaison de choix <span class="math notranslate nohighlight">\(L_1 \succ L_2\)</span> et
 <span class="math notranslate nohighlight">\(L_4 \succ L_3\)</span> ne peut survenir si l’agent a des préférences représentées par l’espérance d’utilité.</p>
@@ -584,13 +492,13 @@ et on dénote <span class="math notranslate nohighlight">\(Z = p X + (1-p)Y\)</s
 </ol>
 <p>Kahneman and Tversky: Les perspectives</p>
 <p>Ces auteurs, tous deux récipiendaires d’un Prix Nobel, montrent que nous sommes influencés par les perspectives (framing) quand nous faisons des choix en situation risquée:</p>
-<p>Imaginons qu’une nouveau virus pourrait tuer 600 personnes. Deux interventions sont présentées.</p>
+<p>Imaginons qu’un nouveau virus pourrait tuer 600 personnes. Deux interventions sont présentées.</p>
 <ul class="simple">
 <li><p>(Perspective positive): A) 200 sauvées, B) 1/3 probabilité que 600 sont sauvés,
 2/3 que personne n’est sauvé</p></li>
-<li><p>(Perspective négative): C) 400 vont mourrir, D) 1/3 probabilité que personne décède, 2/3 probabilité que tous décèdent.</p></li>
+<li><p>(Perspective négative): C) 400 vont mourir, D) 1/3 probabilité que personne ne décède, 2/3 probabilité que tous décèdent.</p></li>
 </ul>
-<p>En pratique, A est plus populaire que B, mais D est plus populaire que C. Or, en terme de personnes en vie, les deux choix mènent aux mêmes résultats.</p>
+<p>En pratique, A est plus populaire que B, mais D est plus populaire que C. Or, en termes de personnes en vie, les deux choix mènent aux mêmes résultats.</p>
 <p>Si les perspectives vous intéressent, allez lire ce classique: <a class="reference external" href="https://www.uzh.ch/cmsssl/suz/dam/jcr:00000000-64a0-5b1c-0000-00003b7ec704/10.05-kahneman-tversky-79.pdf">Khaneman et Tversky
 (1979)</a></p>
 </div>
@@ -607,29 +515,29 @@ et on dénote <span class="math notranslate nohighlight">\(Z = p X + (1-p)Y\)</s
            
           </div>
           <footer>
-  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="time.html" class="btn btn-neutral float-right" title="Le Temps" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="effets.html" class="btn btn-neutral float-left" title="Effets Prix et Revenu" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+        <a href="time.html" class="btn btn-neutral float-right" title="Le Temps" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="effets.html" class="btn btn-neutral float-left" title="Effets Prix et Revenu" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2020, Pierre-Carl Michaud
+        &#169; Copyright 2020, Pierre-Carl Michaud.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
-
         </div>
       </div>
 
@@ -637,7 +545,6 @@ et on dénote <span class="math notranslate nohighlight">\(Z = p X + (1-p)Y\)</s
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

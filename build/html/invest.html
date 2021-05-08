@@ -1,23 +1,31 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="fr" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
+<html class="writer-html5" lang="fr" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>Investing &mdash; Documentation Micro Notes </title>
   
 
   
-  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
   
   
 
   
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -26,16 +34,12 @@
         <script src="_static/doctools.js"></script>
         <script src="_static/language_data.js"></script>
         <script src="_static/translations.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script type="text/x-mathjax-config">MathJax.Hub.Config({"extensions": ["tex2jax.js"], "jax": ["input/TeX", "output/HTML-CSS"], "availableFonts": ["Neo-Euler", "TeX"], "preferredFont": ["Neo-Euler"], "scale": 60})</script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Recherche" href="search.html" />
     <link rel="next" title="Debt" href="debt.html" />
@@ -67,7 +71,7 @@
           
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Rechercher docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -76,6 +80,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -141,6 +146,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -175,19 +181,21 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html">Docs</a> &raquo;</li>
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
       <li>Investing</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
-            
-            <a href="_sources/invest.rst.txt" rel="nofollow"> View page source</a>
+          
+            <a href="_sources/invest.rst.txt" rel="nofollow"> Afficher la source de la page</a>
           
         
       </li>
@@ -210,12 +218,12 @@
 <p>Intuitively, financial wealth evolves according to</p>
 <div class="math notranslate nohighlight">
 \[w_{t+1} = w_{t} + r_t w_{t} + s_{t}\]</div>
-<p>where <span class="math notranslate nohighlight">\(w_{t}\)</span> is wealth, <span class="math notranslate nohighlight">\(s_{t}\)</span> is current savings (<span class="math notranslate nohighlight">\(y_t - c_t\)</span>) and <span class="math notranslate nohighlight">\(r_{t}\)</span> is the investment return on wealth. That return could explain lots of the variation in wealth we observe in the data, both because some are able to get better returns on average or they are better able to control variation of those returns and associated consequences. The figure below shows statistics on the return on wealth from administrative data in Norway <a class="reference external" href="https://onlinelibrary.wiley.com/doi/abs/10.3982/ECTA14835">(Fagereng et al., 2020)</a>. Variation can be substantial. A one percent permanent difference in returns yields over an horizon of 30 years, yields an additional 34% in the value of financial wealth from a given one time increase in savings.</p>
+<p>where <span class="math notranslate nohighlight">\(w_{t}\)</span> is wealth <span class="math notranslate nohighlight">\(s_{t}\)</span> is current savings (<span class="math notranslate nohighlight">\(y_t - c_t\)</span>) and <span class="math notranslate nohighlight">\(r_{t}\)</span> is the investment return on wealth. That return could explain lots of the variation in wealth we observe in the data, both because some are able to get better returns on average or they are better able to control variation of those returns and associated consequences. The figure below shows statistics on the return on wealth from administrative data in Norway <a class="reference external" href="https://onlinelibrary.wiley.com/doi/abs/10.3982/ECTA14835">(Fagereng et al., 2020)</a>. Variation can be substantial. A one percent permanent difference in returns yields over a horizon of 30 years, yields an additional 34% in the value of financial wealth from a given one time increase in savings.</p>
 <div class="figure align-center" id="id20">
 <a class="reference internal image-reference" href="_images/returns-norway.png"><img alt="_images/returns-norway.png" src="_images/returns-norway.png" style="width: 591.5px; height: 326.0px;" /></a>
 <p class="caption"><span class="caption-text">Source: <a class="reference external" href="https://onlinelibrary.wiley.com/doi/abs/10.3982/ECTA14835">Fagereng et al. (2020)</a></span><a class="headerlink" href="#id20" title="Lien permanent vers cette image">¶</a></p>
 </div>
-<p>The point is therefore that returns matter. But returns will be a function of investment choices made by savers. In this set of lectures, we are interested in decisions savers make regarding investment, how and when they invest, which are helpful to understand how these patterns arise.</p>
+<p>The point is therefore that returns matter. But returns will be a function of investment choices made by savers. In this set of lectures, we are interested in decision savers make regarding investment, how and when they invest, which are helpful to understand how these patterns arise.</p>
 <p>One of the obvious place to start is to look at stock market participation. Why? Because the stock market has done historically much better in terms of returns than forms of investment which have less risk (such as government bonds). Using data from the U.S., the next figure shows historical returns on Equity (stocks) from the U.S. compared to 1 year Treasury Bills in the U.S. which is often used as a proxy for the safe rate of return. Since 1970, the average (nominal) return on equity is 11.8% compared to 5.5% for T-bills, a difference of 6.3% in return. Of course, investing on equity is more risky. The standard deviation of returns in equity is 17% compared to 3.7% with bonds.</p>
 <div class="figure align-center" id="id21">
 <a class="reference internal image-reference" href="_images/returns.png"><img alt="_images/returns.png" src="_images/returns.png" style="width: 432.0px; height: 288.0px;" /></a>
@@ -240,19 +248,19 @@
 <p>You can investigate these differences using this notebook,</p>
 <p><a class="reference external" href="https://drive.google.com/file/d/19skw2D7aNR_0N09FAhUGnSajgA1uB-0f/view?usp=sharing"><img alt="ImageLink2" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
 <p>You can download the data <a class="reference external" href="https://drive.google.com/file/d/16slgVaDELOig5pXHWdX6MgxsGaOsv4v5/view?usp=sharing">here</a></p>
-<p>It is worth asking why only half of savings, and for some even less, is invested in stocks given much higher returns. Obviously, risk aversion could play a role, but how much? This will be one of the topic below.</p>
-<p>Turns out that when we look even within those who invest in stocks, there is substantial variation in returns as well as in risk in the portfolio held by investors. Lots of people are under diversified. The next figure from Campbell, Sodoni and Campbell (2007) shows just how under-diversified some investors are. Some obtain the same expected return but have portfolios with much larger standard deviation, which is of course not optimal if someone is risk averse. Seen in the other direction, some for the same amount of risk could increase their expected return by diversifying better. Diversification is a poorly understood concept. Even in our sample of investors, 14% of respondents judge a single company stock as risky as a mutual fund.</p>
+<p>It is worth asking why only half of savings, and for some even less, is invested in stocks given much higher returns. Obviously, risk aversion could play a role, but how much? This will be one of the topics below.</p>
+<p>Turns out that when we look even within those who invest in stocks, there is substantial variation in returns as well as in risk in the portfolio held by investors. Lots of people are under diversified. The next figure from Campbell, Sodoni and Campbell (2007) shows just how under-diversified some investors are. Some obtain the same expected return but have portfolios with much larger standard deviation, which is, of course, not optimal if someone is risk averse. Seen in the other direction, some for the same amount of risk could increase their expected return by diversifying better. Diversification is a poorly understood concept. Even in our sample of investors, 14% of respondents judge a single company stock as risky as a mutual fund.</p>
 <div class="figure align-center" id="id23">
 <a class="reference internal image-reference" href="_images/efficient.png"><img alt="_images/efficient.png" src="_images/efficient.png" style="width: 477.75px; height: 288.75px;" /></a>
 <p class="caption"><span class="caption-text">Source: <a class="reference external" href="https://www.journals.uchicago.edu/doi/abs/10.1086/524204">Calvet, Sodoni and Campbell (2007)</a>.</span><a class="headerlink" href="#id23" title="Lien permanent vers cette image">¶</a></p>
 </div>
-<p>This lack of diversification has welfare consequences. Another apparent puzzle is that despite large diversification benefits from buying international stocks within a portfolio, investors are biased towards domestic stocks, what is often called the home bias puzzle <a class="reference external" href="https://www-jstor-org.proxy2.hec.ca/stable/2006858?seq=1#metadata_info_tab_contents">French and Poterba (1991)</a>. Here is how portfolios look like in three countries:</p>
+<p>This lack of diversification has welfare consequences. Another apparent puzzle is that despite large diversification benefits from buying international stocks within a portfolio, investors are biased towards domestic stocks, what is often called the home bias puzzle <a class="reference external" href="https://www-jstor-org.proxy2.hec.ca/stable/2006858?seq=1#metadata_info_tab_contents">French and Poterba (1991)</a>. Here is what portfolios look like in three countries:</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/holdings-home-bias.png"><img alt="_images/holdings-home-bias.png" src="_images/holdings-home-bias.png" style="width: 347.5px; height: 320.0px;" /></a>
 </div>
 <p>Source: <a class="reference external" href="https://www-jstor-org.proxy2.hec.ca/stable/pdf/2006858.pdf?refreqid=excelsior%3A0aaba7660352cf1d0501fe73d9aecf72">French and Poterba (1991)</a>.</p>
-<p>A more subtle puzzle is that when asked in the lab to allocate across different risky assets, some investors use simple heuristics, in particular one which leads them potentially to over-diversify by simply allocating an equal share of the endownment to different stocks.</p>
-<p>In situations where taxes affect the rate of return on savings, some investors are better than other at taking into account tax considerations. This is the case for example in Canada with RRSP and TFSAs having different tax considerations and some investors suffer from important losses from not investing in the right tax-preferred saving vehicle (see <a class="reference external" href="https://www-mitpressjournals-org.proxy2.hec.ca/doi/abs/10.1162/rest_a_00973">Boyer, d’Astous and Michaud (forthcoming)</a>).</p>
+<p>A more subtle puzzle is that when asked in the lab to allocate across different risky assets, some investors use simple heuristics, in particular one which leads them potentially to over-diversify by simply allocating an equal share of the endowment to different stocks.</p>
+<p>In situations where taxes affect the rate of return on savings, some investors are better than others at taking into account tax considerations. This is the case for example in Canada with RRSP and TFSAs having different tax considerations and some investors suffer from important losses from not investing in the right tax-preferred saving vehicle (see <a class="reference external" href="https://www-mitpressjournals-org.proxy2.hec.ca/doi/abs/10.1162/rest_a_00973">Boyer, d’Astous and Michaud (forthcoming)</a>).</p>
 <p>If one invests in the wrong vehicle given marginal tax rates when contributing and withdrawing, mistakes can be substantial as the following figure shows. Hence, taxes matter.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/example.png"><img alt="_images/example.png" src="_images/example.png" style="width: 432.0px; height: 288.0px;" /></a>
@@ -311,12 +319,12 @@
 <a class="reference internal image-reference" href="_images/participation_costs.png"><img alt="_images/participation_costs.png" src="_images/participation_costs.png" style="width: 432.0px; height: 288.0px;" /></a>
 </div>
 <p>Source: <a class="reference external" href="https://dataverse.scholarsportal.info/dataset.xhtml?persistentId=doi:10.5683/SP2/UTJDYA">RSI Survey on Retirement Savings Vehicles</a>, Quebec and Ontario age 35-55. This extract contains data from 1305 respondents with positive savings in RRSP, TFSA or other taxable accounts. Here only those with no stocks are included.</p>
-<p>An important problem with this explanation is that participation costs cannot explain sub-optimal allocation to risky assets conditional on participating. Overall, while appealing, participation costs are a bit of a black box explanation for non-participation and not a good explanation for weights observed in the data.</p>
+<p>An important problem with this explanation is that participation costs cannot explain sub-optimal allocation to risky assets conditional on participating. Overall, while appealing, participation costs are a bit of a black box explanation for nonparticipation and not a good explanation for weights observed in the data.</p>
 </div>
 <div class="section" id="ambiguity-aversion">
 <h3>Ambiguity Aversion<a class="headerlink" href="#ambiguity-aversion" title="Lien permanent vers ce titre">¶</a></h3>
 <p>Turns out few of us know the distribution of returns and there is uncertainty about that distribution, in particular prospectively. The Ellsberg paradox shows that subjects dislike ambiguity, or the fact that probability distributions over states of the world are uncertain. When this happens, an action that involves an increase in ambiguity about the distribution of wealth will be of low value to that investor.</p>
-<p>Here is how the Ellsberg paradox was shown. An urn consist 90 balls. 30 are red. The other 60 are either black or white. The proportion of white and black balls is not know. We ask you to make a choice between these lotteries:</p>
+<p>Here is how the Ellsberg paradox was shown. An urn consists 90 balls. 30 are red. The other 60 are either black or white. The proportion of white and black balls is not know. We ask you to make a choice between these lotteries:</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 39%" />
@@ -369,7 +377,7 @@
 </tbody>
 </table>
 <p>In the lab, lots will prefer L1 to L2 and then L4 to L3. But this is a violation of expected utility for any prior someone might have about the proportion of white and black balls (you can verify this easily). Both L1 and L4 have no ambiguity regarding payoffs while both L2 and L3 do. Hence, subjects exhibit ambiguity aversion.</p>
-<p>One way to account for ambiguity aversion is to consider so-called multiple-prior models (Gilboa and Schmeider, 1989). In such models, agents are not sure what the distribution of risk is. For each state <span class="math notranslate nohighlight">\(s\)</span> the probability could take <span class="math notranslate nohighlight">\(M\)</span> possible values, <span class="math notranslate nohighlight">\(P^m = {p_s^m}_{m=1,...,M}\)</span>. They attach a probability <span class="math notranslate nohighlight">\(q_m\)</span> that each distribution is the correct one. Under expected utility, this uncertainty does not matter because this is nothing else than a compound lottery and expected utility is linear in the probabilities. Hence, this just leads to a different weighting of the same final utilities in each states of the world.  Hence, choices should still respect axioms of expected utility. An extreme form of ambiguity aversion preferences takes the form,</p>
+<p>One way to account for ambiguity aversion is to consider so-called multiple-prior models (Gilboa and Schmeider, 1989). In such models, agents are not sure what the distribution of risk is. For each state <span class="math notranslate nohighlight">\(s\)</span> the probability could take <span class="math notranslate nohighlight">\(M\)</span> possible values, <span class="math notranslate nohighlight">\(P^m = {p_s^m}_{m=1,...,M}\)</span>. They attach a probability <span class="math notranslate nohighlight">\(q_m\)</span> that each distribution is the correct one. Under expected utility, this uncertainty does not matter because this is nothing else than a compound lottery and expected utility is linear in the probabilities. Hence, this just leads to a different weighting of the same final utilities in each state of the world.  Hence, choices should still respect axioms of expected utility. An extreme form of ambiguity aversion preferences takes the form,</p>
 <div class="math notranslate nohighlight">
 \[V = \min_{m=1}^M \sum_{s=1}^S p_s^m u(w_s)\]</div>
 <p>These are called maximin preferences. The investor considers the worst possible distribution in terms of expected utility. One can easily show that these can explain the pattern L1 preferred to L2 and L4 to L3 above. A smooth version of ambiguity aversion was proposed by <a class="reference external" href="https://www-jstor-org.proxy2.hec.ca/stable/3598753?seq=1#metadata_info_tab_contents">Kilbanoff, Marinacci and Mukerji (KMM) (2005)</a>. If an investor has such preferences, the end result is that the investor is less likely to participate in the stock market if his priors are diffuse (the worst distribution is pretty bad in terms of investment results). She will also invest less in stocks.</p>
@@ -404,12 +412,12 @@ The first observation is that subjects in experiments tend to value gains and lo
 <a class="reference internal image-reference" href="_images/loss-aversion.png"><img alt="_images/loss-aversion.png" src="_images/loss-aversion.png" style="width: 391.0px; height: 300.0px;" /></a>
 </div>
 <p>Source: <a class="reference external" href="https://www-jstor-org.proxy2.hec.ca/stable/1914185?seq=1#metadata_info_tab_contents">Kahneman and Tversky (1979)</a></p>
-<p>This tendency to weight losses more heavily than gains can be traced to particular regions of the brain. <a class="reference external" href="https://science.sciencemag.org/content/315/5811/515">Tom et al. (2007)</a> perform a loss aversion experiment by presenting subjects lotteries while the brain is being scanned. They vary the gains and losses presented and record both choices as well as brain activity. Results look like this:</p>
+<p>This tendency to weight losses more heavily than gains can be traced to particular regions of the brain. <a class="reference external" href="https://science.sciencemag.org/content/315/5811/515">Tom et al. (2007)</a> perform a loss aversion experiment by presenting subject lotteries while the brain is being scanned. They vary the gains and losses presented and record both choices as well as brain activity. Results look like this:</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/tom_choices.png"><img alt="_images/tom_choices.png" src="_images/tom_choices.png" style="width: 366.0px; height: 382.0px;" /></a>
 </div>
 <p>Source:<a class="reference external" href="https://science.sciencemag.org/content/315/5811/515">Tom et al. (2007)</a></p>
-<p>From these choices, they also estimate that the relative sensitivity of choice to losses was twice as large as for gains, consisstent with evidence from KT. When they look at regions of the brain that are responsible for the sensitivity to gains and losses, they find, perhaps contrary to what some might expect, that it is roughly the same regions of the brain which react. Hence, loss aversion is not the result of emotions such as fear (disconfort or vigilence).</p>
+<p>From these choices, they also estimate that the relative sensitivity of choice to losses was twice as large as for gains, consistent with evidence from KT. When they look at regions of the brain that are responsible for the sensitivity to gains and losses, they find, perhaps contrary to what some might expect that it is roughly the same regions of the brain which react. Hence, loss aversion is not the result of emotions such as fear (discomfort or vigilance).</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/tom_scans.png"><img alt="_images/tom_scans.png" src="_images/tom_scans.png" style="width: 356.0px; height: 195.0px;" /></a>
 </div>
@@ -429,14 +437,14 @@ The first observation is that subjects in experiments tend to value gains and lo
 </div>
 <div class="section" id="diversification">
 <h3>Diversification<a class="headerlink" href="#diversification" title="Lien permanent vers ce titre">¶</a></h3>
-<p>So far, we have investigated the decision to purchase risky assets. The expected return on the risky asset did not depend on invesment choices. Turns out investment choices can impact the expected return <span class="math notranslate nohighlight">\(\mu_r\)</span> as well as the standard deviation of the portfolio <span class="math notranslate nohighlight">\(\sigma_r\)</span>. While it is obvious why the expected return matters, it is less obvious  why the standard deviation does and how one can reduce it. In fact, risk averse investors collect benefits from diversification, which is akin to the saying that one should not put all his eggs in the same basked. To understand diversification, cinsider the same framework as above but with two assets with returns <span class="math notranslate nohighlight">\(\tilde{r}_1\)</span> and <span class="math notranslate nohighlight">\(\tilde{r}_2\)</span> with identical expected returns <span class="math notranslate nohighlight">\(mu_r\)</span> and standard deviation <span class="math notranslate nohighlight">\(\sigma_r\)</span>. The consumer aims to decide how much to invest in the first asset,</p>
+<p>So far, we have investigated the decision to purchase risky assets. The expected return on the risky asset did not depend on investment choices. Turns out investment choices can impact the expected return <span class="math notranslate nohighlight">\(\mu_r\)</span> as well as the standard deviation of the portfolio <span class="math notranslate nohighlight">\(\sigma_r\)</span>. While it is obvious why the expected return matters, it is less obvious  why the standard deviation does and how one can reduce it. In fact, risk-averse investors collect benefits from diversification, which is akin to the saying that one should not put all his eggs in the same basked. To understand diversification, consider the same framework as above but with two assets with returns <span class="math notranslate nohighlight">\(\tilde{r}_1\)</span> and <span class="math notranslate nohighlight">\(\tilde{r}_2\)</span> with identical expected returns <span class="math notranslate nohighlight">\(mu_r\)</span> and standard deviation <span class="math notranslate nohighlight">\(\sigma_r\)</span>. The consumer aims to decide how much to invest in the first asset,</p>
 <div class="math notranslate nohighlight">
 \[\max_{\alpha} E_r u(w+\alpha \tilde{r}_1 + (w-\alpha) \tilde{r}_2)\]</div>
 <p>The first order condition is</p>
 <div class="math notranslate nohighlight">
 \[E_r \tilde{r}_1 u'(w+\alpha \tilde{r_1} + (w-\alpha)\tilde{r}_2) = E_r \tilde{r}_2 u'(w+\alpha \tilde{r_1} + (w-\alpha)\tilde{r}_2)\]</div>
 <p>which yields the solution <span class="math notranslate nohighlight">\(\alpha^* = \frac{w}{2}\)</span>. While the expected return of the portfolio is <span class="math notranslate nohighlight">\(\mu_r\)</span>, the standard deviation is now <span class="math notranslate nohighlight">\(\frac{\sigma_r}{2}\)</span>. Since the returns are iid, the variance of the portfolio is reduced by diversification. When expected returns and standard deviations differ across assets, diversification benefits still occur but the optimal solution will be slightly more complicated. Returns may also be correlated.</p>
-<p>One of the most celebrated model of portfolio choice is the mean-variance model which highlights the return - risk tradeoff. Depsite its simplicity it is still one of the workhorse model of portfolio theory.</p>
+<p>One of the most celebrated models of portfolio choice is the mean-variance model which highlights the return - risk tradeoff. Depsite its simplicity it is still one of the workhorse models of portfolio theory.</p>
 <p>Consider <span class="math notranslate nohighlight">\(K\)</span> risky assets and the return on each of these <span class="math notranslate nohighlight">\(\tilde{r}_k\)</span> and a safe asset with return <span class="math notranslate nohighlight">\(r_s\)</span>. The expected return of each is <span class="math notranslate nohighlight">\(\mu_k\)</span> while the covariance between two assets <span class="math notranslate nohighlight">\((j,k)\)</span> is <span class="math notranslate nohighlight">\(\omega_{i,j}\)</span>. The covariance matrix is <span class="math notranslate nohighlight">\(\Omega\)</span>. Wealth is therefore given by</p>
 <div class="math notranslate nohighlight">
 \[\tilde{w} = w_0 (1 + r_s + \sum_{k=1}^K \alpha_k (\tilde{r}_k - r_s))\]</div>
@@ -460,7 +468,7 @@ The first observation is that subjects in experiments tend to value gains and lo
 <div class="math notranslate nohighlight">
 \[\alpha^* = \frac{1}{\gamma}\Omega^{-1}(\mu - r_s)\]</div>
 <p>and the share in the safe asset is <span class="math notranslate nohighlight">\(1-\sum_{k=1}^K \alpha^*_k\)</span>. Two important observations: 1) risk aversion impacts the fraction of risky assets in the portfolio but not the allocation of wealth across risky assets. The same factor <span class="math notranslate nohighlight">\(\frac{1}{\gamma}\)</span> appears for each risky asset. 2) The optimal allocation of risky asset depends on the returns and covariance matrix of returns only. Take the case where returns are independent. Then the optimal share of risky asset <span class="math notranslate nohighlight">\(k\)</span> is <span class="math notranslate nohighlight">\(\frac{1}{\gamma}\frac{\mu_k - r_s}{\omega_{k,k}}\)</span>. The optimal share depends on the risk premium, <span class="math notranslate nohighlight">\(mu_k - r_s\)</span> and negatively on the variance of the risky asset. Overall the composition of the portfolio does not depend on preference. There is an optimal mix, or mutual fund that agents can pick and only the decision of how much to allocate to this fund depends on preferences. This result is often referred to as the two-fund separation theorem.</p>
-<p>The following notebook computes optimal weights for a given set of assets, which includes a safe asset. It considers the SP TSX composite index and the MSCI world index. Hence, these are two diversified indices. When considered jointly, the investor is willing to invest most of his wealth in such a portfolio, achieves higher returns and higher utility. When we restrict only to the SP TSX, the investor has lower utility and in this case lower returns. Hence, even tough the two indices are quite correlated (correlation at monthly level = 0.6), there are still benefits to diversification.</p>
+<p>The following notebook computes optimal weights for a given set of assets, which includes a safe asset. It considers the SP TSX composite index and the MSCI world index. Hence, these are two diversified indices. When considered jointly, the investor is willing to invest most of his wealth in such a portfolio, achieves higher returns and higher utility. When we restrict only to the SP TSX, the investor has lower utility and in this case lower returns. Hence, even though the two indices are quite correlated (correlation at monthly level = 0.6), there are still benefits to diversification.</p>
 <p>For the notebook, you can open it here</p>
 <p><a class="reference external" href="https://colab.research.google.com/drive/1WupmSPB1VVFSUCEyoUEk8hNR8Hiqa0Lh?usp=sharing"><img alt="ImageLink3" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
 <p>You can download the data <a class="reference external" href="https://drive.google.com/file/d/1eChtG7thdw8oHymGPev5OcWTy7IBavCM/view?usp=sharing">here</a></p>
@@ -469,7 +477,7 @@ The first observation is that subjects in experiments tend to value gains and lo
 <a class="reference internal image-reference" href="_images/implied-home-bias.png"><img alt="_images/implied-home-bias.png" src="_images/implied-home-bias.png" style="width: 361.25px; height: 356.25px;" /></a>
 </div>
 <p>Source: <a class="reference external" href="https://www-jstor-org.proxy2.hec.ca/stable/pdf/2006858.pdf?refreqid=excelsior%3A0aaba7660352cf1d0501fe73d9aecf72">French and Poterba (1991)</a>.</p>
-<p>Explaining the lack of diversification in portfolios, in particular home bias, can be done in several ways. One is ambiguity aversion. Knowning the returns on certain costs better than others certainly tilts the portfolio towards those. Maybe investors know home stocks better than international ones. Another is simply that the computational cost is high and cognitive skills may be at play. Finally, financial literaty can also explain the lack of diversification. <a class="reference external" href="https://onlinelibrary.wiley.com/doi/abs/10.1111/jofi.12231">van Gaudecker (2014)</a> shows that those with much higher financial literacy do better but that those with low financial literacy who trust their own abilities tend to do much worse. Decision aids which help with figuring out the effect of diversification may be particularly effective.</p>
+<p>Explaining the lack of diversification in portfolios, in particular home bias, can be done in several ways. One is ambiguity aversion. Knowning the returns on certain costs better than others certainly tilts the portfolio towards those. Maybe investors know home stocks better than international ones. Another is simply that the computational cost is high and cognitive skills may be at play. Finally, financial literacy can also explain the lack of diversification. <a class="reference external" href="https://onlinelibrary.wiley.com/doi/abs/10.1111/jofi.12231">van Gaudecker (2014)</a> shows that those with much higher financial literacy do better but that those with low financial literacy who trust their own abilities tend to do much worse. Decision aids which help with figuring out the effect of diversification may be particularly effective.</p>
 <p>The opposite mistake is also common, i.e. over diversification. In particular, <a class="reference external" href="https://www-jstor-org.proxy2.hec.ca/stable/2677899?seq=6#metadata_info_tab_contents">Benartzi and Thaler (2001)</a> show that many use a simple heuristic, <span class="math notranslate nohighlight">\(1/K\)</span> where <span class="math notranslate nohighlight">\(K\)</span> is the number of choices in the plan. As a result, the fraction invested in stocks increases in plans where there are more options (more generally is a function of the menu). Again, decision aids could help investors avoid the use of such heuristics.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/one-over-n.png"><img alt="_images/one-over-n.png" src="_images/one-over-n.png" style="width: 567.0px; height: 255.0px;" /></a>
@@ -479,17 +487,17 @@ The first observation is that subjects in experiments tend to value gains and lo
 <div class="section" id="other-issues">
 <h3>Other Issues<a class="headerlink" href="#other-issues" title="Lien permanent vers ce titre">¶</a></h3>
 <p>Investors have a hard time dealing with fees which are involved when investing in mutual funds. In one important study, <a class="reference external" href="https://academic.oup.com/rfs/article/23/4/1405/1591053?login=true">Choi et al. (2010)</a> show that more than 80% of subjects in an experiment fail to minimize fees when picking mutual funds. Financial literacy lowers fees paid. Fee disclosure is now common in many countries. But even when they are disclosed investors do not always minimize fees or know how to integrate this information into their decision making.</p>
-<p><a class="reference external" href="https://www.cambridge.org/core/journals/journal-of-pension-economics-and-finance/article/financial-knowledge-and-401k-investment-performance-a-case-study/F27E6C83BA1DFD263BC2FD706084F8DD">Clark et al. (2015)</a> show that those with higher financial literacy obtained higher returns on the savings, and had less idiosynchratic risk in their investment choices suggesting they diversify better. This could suggest that interventions aiming to increase financial literacy may help with diversification.</p>
+<p><a class="reference external" href="https://www.cambridge.org/core/journals/journal-of-pension-economics-and-finance/article/financial-knowledge-and-401k-investment-performance-a-case-study/F27E6C83BA1DFD263BC2FD706084F8DD">Clark et al. (2015)</a> show that those with higher financial literacy obtained higher returns on the savings, and had less idiosyncratic risk in their investment choices suggesting they diversify better. This could suggest that interventions aiming to increase financial literacy may help with diversification.</p>
 </div>
 </div>
 <div class="section" id="interventions">
 <h2>Interventions<a class="headerlink" href="#interventions" title="Lien permanent vers ce titre">¶</a></h2>
 <div class="section" id="financial-advice">
 <h3>Financial advice<a class="headerlink" href="#financial-advice" title="Lien permanent vers ce titre">¶</a></h3>
-<p>In principle, advisors could be a substitute for financial literacy and investment knowledge. They could help investors get better returns. In a world where advisors are benovolent and there is no asymetric information, this could certainly be the case. The extent to which they will do so depends on the compensation structure of advisors, or incentives more generally.</p>
-<p>A good survey of the literature on modelling and regulation is provided by <a class="reference external" href="https://pubs.aeaweb.org/doi/pdfplus/10.1257/jel.50.2.494">Inderst and Ottaviani (2012)</a>. Studies on the value of financial advice and its effects are rare and only starting to emerge.</p>
+<p>In principle, advisors could be a substitute for financial literacy and investment knowledge. They could help investors get better returns. In a world where advisors are benevolent and there is no asymmetric information, this could certainly be the case. The extent to which they will do so depends on the compensation structure of advisors, or incentives more generally.</p>
+<p>A good survey of the literature on modeling and regulation is provided by <a class="reference external" href="https://pubs.aeaweb.org/doi/pdfplus/10.1257/jel.50.2.494">Inderst and Ottaviani (2012)</a>. Studies on the value of financial advice and its effects are rare and only starting to emerge.</p>
 <p><a class="reference external" href="https://www-sciencedirect-com.proxy2.hec.ca/science/article/pii/S0378426611002548">Hackethal et al. (2012)</a> show that advised accounts at a large broker firm reach lower net returns and inferior risk-return tradeoffs compared to self-managed accounts. On the other hand, <a class="reference external" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=968197">Bluethgen et al. (2007)</a> find that advised clients are more diversified but pay higher fees. Hence, this remains an open question.</p>
-<p>A famous study which demonstrates that conflict of interest likely decreases the efficiency of financial advice is <a class="reference external" href="https://www-nber-org.proxy2.hec.ca/papers/w17929">Mullainathan et al. (2012)</a>. They use an audit study to show that often advisors re-inforce biases of their clients in a way that is profitable to them. When there is asymetric information, there is the potential for investors to not be able to distinguish between high and low quality advisors. They consider four scenarios: a return chasing scenario, a company stock scenario, a well-diversified scenario and finally a control group where the investor only has cash. These scenario are randomized. Advisors are much more sympathetic to the return chasing scenario (which increases their compensation from frequent trades), less sympathetic to the company stock (which minimizes transactions). Interestingly, they are unsupportive of the well-diversified efficient portfolio. Advice favoring stocks was more likely for higher income investors. But they adviced against more equity exposure as the amount invested increased.</p>
+<p>A famous study which demonstrates that conflict of interest likely decreases the efficiency of financial advice is <a class="reference external" href="https://www-nber-org.proxy2.hec.ca/papers/w17929">Mullainathan et al. (2012)</a>. They use an audit study to show that often advisors reinforce biases of their clients in a way that is profitable to them. When there is asymmetric information, there is the potential for investors to not be able to distinguish between high and low quality advisors. They consider four scenarios: a return chasing scenario, a company stock scenario, a well-diversified scenario and finally a control group where the investor only has cash. These scenarios are randomized. Advisors are much more sympathetic to the return chasing scenarios (which increases their compensation from frequent trades), less sympathetic to the company stock (which minimizes transactions). Interestingly, they are unsupportive of the well-diversified efficient portfolio. Advice favoring stocks was more likely for higher income investors. But they advised against more equity exposure as the amount invested increased.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/advisors.png"><img alt="_images/advisors.png" src="_images/advisors.png" style="width: 475.5px; height: 417.75px;" /></a>
 </div>
@@ -503,29 +511,29 @@ The first observation is that subjects in experiments tend to value gains and lo
            
           </div>
           <footer>
-  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="debt.html" class="btn btn-neutral float-right" title="Debt" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="savings.html" class="btn btn-neutral float-left" title="Savings" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+        <a href="debt.html" class="btn btn-neutral float-right" title="Debt" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="savings.html" class="btn btn-neutral float-left" title="Savings" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2020, Pierre-Carl Michaud
+        &#169; Copyright 2020, Pierre-Carl Michaud.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
-
         </div>
       </div>
 
@@ -533,7 +541,6 @@ The first observation is that subjects in experiments tend to value gains and lo
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

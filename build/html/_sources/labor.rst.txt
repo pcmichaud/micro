@@ -9,16 +9,16 @@ Le problème du choix du consommateur portait sur le panier de bien à consommer
 Offre de Travail
 ++++++++++++++++
 
-Pour modéliser ce choix, nous allons introduire un nouveau bien, le temps de loisir, :math:`L`. Le temps dans une journée (effectif en omettant le sommeil et soins personnels) est donné par :math:`T`. Ainsi, le temps de travail est :math:`H=T-L`. Içi, on suppose que les deux seules utilisations du temps sont le loisir et le travail. Il est possible d'introduire d'autres utilisations du temps. Le prix Nobel `Gary Becker <https://fr.wikipedia.org/wiki/Gary_Becker>`_ a été un des pionners dans `l'analyse de l'allocation du temps <https://www.jstor.org/stable/2228949?seq=1#metadata_info_tab_contents>`_. 
+Pour modéliser ce choix, nous allons introduire un nouveau bien, le temps de loisir :math:`L`. Le temps dans une journée (effectif en omettant le sommeil et soins personnels) est donné par :math:`T`. Ainsi, le temps de travail est :math:`H=T-L`. Içi, on suppose que les deux seules utilisations du temps sont le loisir et le travail. Il est possible d'introduire d'autres utilisations du temps. Le prix Nobel `Gary Becker <https://fr.wikipedia.org/wiki/Gary_Becker>`_ a été un des pionners dans `l'analyse de l'allocation du temps <https://www.jstor.org/stable/2228949?seq=1#metadata_info_tab_contents>`_. 
 
 Le consommateur à des préférences pour :math:`(C,L)`, où :math:`C` représente les dépenses de consommation (on normalise son prix à 1) et :math:`L` le loisir compté en heures ou autre mesure du temps, représentées par la fonction d'utilité :math:`u(C,L)`, généralement concave dans ses deux arguments. Ainsi le TMS entre la consommation et le loisir est donné par: 
 
 .. math:: 
    TMS = \frac{dC}{dL}|_{dU=0} = - \frac{u'_L(C,L)}{u'_C(C,L)}
 
-et représente (en valeur absolue) la valeur accordée à une heure de loisir supplémentaire en terme de consommation. Ainsi, le loisir à une valeur positive. 
+et représente (en valeur absolue) la valeur accordée à une heure de loisir supplémentaire en termes de consommation. Ainsi, le loisir à une valeur positive. 
 
-Quand il travaille, le consommateur a un salaire horaire de :math:`w` et un revenu autre de :math:`y`. S'il travaille :math:`H=T` heures, il a le revenu maximum de :math:`I = w T + y` (en anglais, *full income*). Ses dépenses sont faites en terme de deux biens, :math:`C`, sa consommation et :math:`L` le loisir dont le coût d'opportunité par heures travaillée est de :math:`w`. Ainsi, la contrainte budgétaire est: 
+Quand il travaille, le consommateur a un salaire horaire de :math:`w` et un revenu autre de :math:`y`. S'il travaille :math:`H=T` heures, il a le revenu maximum de :math:`I = w T + y` (en anglais, *full income*). Ses dépenses sont faites en termes de deux biens :math:`C`, sa consommation et :math:`L` le loisir dont le coût d'opportunité par heures travaillées est de :math:`w`. Ainsi, la contrainte budgétaire est: 
 
 .. math:: 
    C + w L \leq I = w T + y
@@ -33,7 +33,7 @@ La contrainte budgétaire, dans l'espace :math:`(C,L)` est coudée dès suite de
 .. figure:: /images/budget_time.png
    :scale: 75
 
-Le problème d'offre de travail peut donc être présenté sous la forme d'un langragien à maximiser: 
+Le problème d'offre de travail peut donc être présenté sous la forme d'un lagrangien à maximiser: 
 
 .. math:: 
    \max_{C,L,\lambda} u(C,L) - \lambda(C + wL - wT - y)
@@ -44,7 +44,7 @@ Les CPO donnent:
    \frac{u_L(C,L)}{u_C(C,L)} = w \\
    C + wL = wT + y
 
-La première condition stipule que la valeur absolue du TMS (la valeur d'une heure de loisir) doit être égale à son coût d'opportunité (:math:`w`). La deuxième condition est la contrainte budgétaire. La solution de ce système de deux équations donne en particulier :math:`L^*(w,y)`, la demande marshalienne du loisir. L'offre de travail est donné par :math:`H^*(w,y) = T - L^*(w,y)`. 
+La première condition stipule que la valeur absolue du TMS (la valeur d'une heure de loisir) doit être égale à son coût d'opportunité (:math:`w`). La deuxième condition est la contrainte budgétaire. La solution de ce système de deux équations donne en particulier :math:`L^*(w,y)`, la demande marshalienne du loisir. L'offre de travail est donnée par :math:`H^*(w,y) = T - L^*(w,y)`. 
 
 *Exercice A*: Trouvez la demande de loisir et l'offre de travail pour :math:`u(C,L) = C^{\alpha}L^{1-\alpha}`.
 
@@ -67,9 +67,9 @@ Le modèle d'offre de travail classique est très simple et peut être bonifié 
 Effets Substitution et Revenu
 +++++++++++++++++++++++++++++
 
-La présence de :math:`w` dans le revenu maximal complique l'analyse d'un changement de salaire. En effet, un salaire qui augmente veut maintenant dire que le coût d'opportunité du loisir augmente (effet substitution) mais le revenu maximal augmente aussi, ce qui fait que le consommateur peut se permettre davantage de loisir (si le loisir est un bien normal). 
+La présence de :math:`w` dans le revenu maximal complique l'analyse d'un changement de salaire. En effet, un salaire qui augmente veut maintenant dire que le coût d'opportunité du loisir augmente (effet substitution), mais le revenu maximal augmente aussi, ce qui fait que le consommateur peut se permettre davantage de loisirs (si le loisir est un bien normal). 
 
-Pour comprendre ces effets, notons d'abord que le modèle ici-haut est en fait seulement fonction d'une variable, on peut substituter la contrainte budgétaire dans le problème de sorte que le problème dépend seulement du loisir:
+Pour comprendre ces effets, notons d'abord que le modèle ici haut est en fait seulement fonction d'une variable, on peut substituer la contrainte budgétaire dans le problème de sorte que le problème dépend seulement du loisir:
 
 .. math:: 
    \max_L u(wT - wL + y,L)
@@ -88,17 +88,17 @@ où :math:`\Delta` est un terme négatif si la solution n'est pas de coin (en fa
 
 On peut montrer que le premier terme est en fait l'effet substitution (ou compensé), :math:`\frac{d L}{d w}|_{dU=0}`. Le deuxième terme est l'effet revenu. 
 
-On peut écrire en terme d'offre de travail pour obtenir l'équation de Slutsky d'offre de travail: 
+On peut écrire en termes d'offre de travail pour obtenir l'équation de Slutsky d'offre de travail: 
 
 .. math::
    \frac{dH}{dw} = \frac{dH}{dw}|_{dU=0} + H \frac{dH}{dy}
 
-L'effet d'une hausse de salaire est la somme d'un effet substitution (compensé) positif et d'un effet revenu négatif (si loisir est un bien normal). En terme d'élasticité, on peut écrire: 
+L'effet d'une hausse de salaire est la somme d'un effet substitution (compensé) positif et d'un effet revenu négatif (si loisir est un bien normal). En termes d'élasticité, on peut écrire: 
 
 .. math::
    \eta_{w} = \eta^{cmp}_{w} + \frac{wH}{y} \eta_{Y}
 
-On peut estimer les élasticités salaire et revenu de différentes façons. Par exemple, `Imbens et al. (2001) <https://www.aeaweb.org/articles?id=10.1257/aer.91.4.778>`_ ont estimé l'effet de gagner la lotterie sur l'offre de travail des gagnants. Ceci nous renseigne sur :math:`\eta_{Y}`. Ils trouvent une élasticité des revenus de travail de -0.05 à -0.1 de gagner la lotterie. 
+On peut estimer les élasticités salaire et revenu de différentes façons. Par exemple, `Imbens et al. (2001) <https://www.aeaweb.org/articles?id=10.1257/aer.91.4.778>`_ ont estimé l'effet de gagner la loterie sur l'offre de travail des gagnants. Ceci nous renseigne sur :math:`\eta_{Y}`. Ils trouvent une élasticité des revenus de travail de -0.05 à -0.1 de gagner la loterie. 
 
 .. figure:: /images/winners.png
    :scale: 100
@@ -107,7 +107,7 @@ On peut estimer les élasticités salaire et revenu de différentes façons. Par
 
 Concernant l'élasticité salaire, la littérature est vaste, et utilise un nombre important de méthodes. Généralement, l'élasticité est faible pour les hommes, plus forte pour les femmes, particulièrement pour ce qui est du choix de travailler ou non. 
 
-*Exercice B*: Trouvez les élasticités salaire et salaire compensée pour :math:`u(C,H) = C - \frac{H^{1+\frac{1}{\epsilon}}}{1+\frac{1}{\epsilon}}`.
+*Exercice B*: Trouvez les élasticités salaire et salaire compensé pour :math:`u(C,H) = C - \frac{H^{1+\frac{1}{\epsilon}}}{1+\frac{1}{\epsilon}}`.
 
 
 .. raw:: html
@@ -122,7 +122,7 @@ Il est possible qu'une hausse de salaire horaire réduise l'offre de travail. Ce
 .. figure:: /images/medecins.png
    :scale: 50
 
-**Question pour discussion**: Dans l'optique d'augmenter les services à la population, devrait-on augmenter ou diminuer la rénumération à l'acte des médecins?
+**Question pour discussion**: Dans l'optique d'augmenter les services à la population, devrait-on augmenter ou diminuer la rémunération à l'acte des médecins?
 
 Il est aussi possible que les individus visent un revenu cible (*income targeting*), et donc qu'ils ne réagissent pas à une hausse de salaire comme on pourrait se l'imaginer. Cette `étude <https://www.cmu.edu/dietrich/sds/docs/loewenstein/NYCCabdrivers.pdf>`_ sur les chauffeurs de taxi à New York en est un bon exemple. Le income targeting est un cas spécial de l'équation de Slutsky où les effets substitution et revenu s'annulent. 
 
@@ -134,14 +134,14 @@ La taxation peut prendre plusieurs formes. Dans sa forme la plus simple, il s'ag
 .. math:: 
    C \leq (1-\tau) w H + y
 
-Ainsi, l'augmentation d'une taxe est similaire à une diminution du salaire, ce qui mène à une perte de bien-être. Puisqu'on sait que l'effet d'une baisse de salaire est indéterminée sans connaître les préférences exactes, il n'est pas possible de dire si une augmentation de l'imposition réduit l'offre de travail. 
+Ainsi, l'augmentation d'une taxe est similaire à une diminution du salaire, ce qui mène à une perte de bien-être. Puisqu'on sait que l'effet d'une baisse de salaire est indéterminé sans connaître les préférences exactes, il n'est pas possible de dire si une augmentation de l'imposition réduit l'offre de travail. 
 
 .. figure:: /images/labor_taxation.png
    :scale: 75
 
-   Par rapport à une situation de référence A, l'effet de la taxe dépendra de la forme des courbes d'indifférences. Il ests possible que le travailleur travaille moins (situation D, effet substitution domine) ou davantage (situation B, effet revenu domine).  
+   Par rapport à une situation de référence A, l'effet de la taxe dépendra de la forme des courbes d'indifférences. Il est possible que le travailleur travaille moins (situation D, effet substitution domine) ou davantage (situation B, effet revenu domine).  
 
-De plus, l'implémentation de la taxe est importante. Plus elle est permanente, plus les travailleurs auront un effet revenu élevé tandis que si la taxe est transitoire, seul l'effet substitution sera à l'oeuvre. Finalement, si l'impôt est compensé pour certains ménages, c'est l'effet compensé qui devrait être utilisée pour estimer l'effet de la taxe sur les comportements de ces ménages. Ces subtilités compliquent l'analyse des effets désincitatifs de la taxation.  Ainsi la question à savoir si la taxation est un désincitatif au travail n'est pas simple...
+De plus, l'implémentation de la taxe est importante. Plus elle est permanente, plus les travailleurs auront un effet revenu élevé tandis que si la taxe est transitoire, seul l'effet substitution sera à l'oeuvre. Finalement, si l'impôt est compensé pour certains ménages, c'est l'effet compensé qui devrait être utilisé pour estimer l'effet de la taxe sur les comportements de ces ménages. Ces subtilités compliquent l'analyse des effets désincitatifs de la taxation.  Ainsi la question à savoir si la taxation est un désincitatif au travail n'est pas simple...
 
 **Exercice C**: Dans le cas où les préférences sont données par :math:`u(C,H) = C - \frac{H^{1+\frac{1}{\epsilon}}}{1+\frac{1}{\epsilon}}`, trouvez l'effet d'une taxe :math:`\tau` sur l'offre de travail et la perte de bien-être associée à la taxation. 
 
@@ -166,7 +166,7 @@ Le TEMI est très utile pour mesurer l'impôt effectif payé sur un changement d
 .. figure:: /images/taxman.jpeg
    :scale: 100
 
-Une méthode intéressante pour estimer les effets de la taxation est de voir si les individus restraingnent de manière volontaire leurs revenus de travail afin de se situer juste en dessous des changements de taux d'imposition des paliers. L'étude américaine de `Saez (2010) <https://www.aeaweb.org/articles?id=10.1257/pol.2.3.180>`_ est une application de cette méthode dite de *bunching*. Ils trouve une forme de *bunching* au premier palier mais aucun bunching aux autres paliers. 
+Une méthode intéressante pour estimer les effets de la taxation est de voir si les individus restreignent de manière volontaire leurs revenus de travail afin de se situer juste en dessous des changements de taux d'imposition des paliers. L'étude américaine de `Saez (2010) <https://www.aeaweb.org/articles?id=10.1257/pol.2.3.180>`_ est une application de cette méthode dite de *bunching*. Ils trouvent une forme de *dancing* au premier palier, mais aucun bunching aux autres paliers. 
 
 .. figure:: /images/bunching.png
    :scale: 100
@@ -176,11 +176,11 @@ Une méthode intéressante pour estimer les effets de la taxation est de voir si
 Transferts
 ++++++++++
 
-Les gouvernements procurent souvent des transferts aux individus avec des revenus faibles. Ces transferts agissent comme les revenu autres :math:`y`. Donc a priori, ils n'ont qu'un effet revenu sur l'offre de travail et donc peuvent augmenter la probabilité d'une solution de coin surviennent (offre de travail de zéro). 
+Les gouvernements procurent souvent des transferts aux individus avec des revenus faibles. Ces transferts agissent comme les revenus autres :math:`y`. Donc a priori, ils n'ont qu'un effet revenu sur l'offre de travail et donc peuvent augmenter la probabilité d'une solution de coin surviennent (offre de travail de zéro). 
 
-Par ailleurs, ils peuvent aussi mener à des effets substitutions s'ils sont récupérés en fonction des revenus de travail. Dans les faits, les gouvernements ne peuvent procurer à tous les individus, qu'ils soient riche ou pauvre un revenu minimum inconditionnel. Ainsi, les transferts sont généralement réduient en fonction des revenus de travail. 
+Par ailleurs, ils peuvent aussi mener à des effets substitutions s'ils sont récupérés en fonction des revenus de travail. Dans les faits, les gouvernements ne peuvent procurer à tous les individus, qu'ils soient riches ou pauvres un revenu minimum inconditionnel. Ainsi, les transferts sont généralement réduient en fonction des revenus de travail. 
 
-Par exemple, l'aide sociale au Québec est réduite dollar pour dollar (donc 100% de taxe implicite). La prime au travaille augmente d'abord avec les revenus pour ensuite être récupérée. Le supplément de revenu garantie est récupéré à un taux au delà de 50% pour les travailleurs âgés. 
+Par exemple, l'aide sociale au Québec est réduite dollar pour dollar (donc 100% de taxe implicite). La prime au travail augmente d'abord avec les revenus pour ensuite être récupérée. Le supplément de revenu garanti est récupéré à un taux au-delà de 50% pour les travailleurs âgés. 
 
 .. figure:: /images/clawback.png
    :scale: 75
@@ -193,7 +193,7 @@ En terme graphique, on se retrouve donc avec une contrainte budgétaire qui coud
 .. figure:: /images/labor_negtax.png
    :scale: 75
 
-Si l'effet substitution domine, ceci aura pour effet de réduire encore plus l'offre de travail et créer ce qu'on appelle souvent une trappe de la pauvreté, i.e. la personne qui reçoit des transferts n'a pas beaucoup d'incitatif à sortir de cette situation. Les bougons, personnages de la populaire série, évoquent souvent cette trappe pour justifier leur recours à l'aide sociale. 
+Si l'effet substitution domine, ceci a pour effet de réduire encore plus l'offre de travail et créer ce qu'on appelle souvent une trappe de la pauvreté, i.e. la personne qui reçoit des transferts n'a pas beaucoup d'incitatifs à sortir de cette situation. Les bougons, personnages de la populaire série, évoquent souvent cette trappe pour justifier leur recours à l'aide sociale. 
 
 .. figure:: /images/bougons.jpeg
    :scale: 100

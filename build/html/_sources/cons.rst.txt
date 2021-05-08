@@ -19,7 +19,7 @@ Préférences
 -  Pour deux paniers :math:`A` and :math:`B`, préférences dictent lequel
    est préféré
 
--  Préférences sont comme des listes de souhaits (hierarchisée): on ignore les
+-  Préférences sont comme des listes de souhaits (hiérarchisée): on ignore les
    prix et les ressources. 
 
 -  Les relations de préférences sont dénotées par
@@ -41,7 +41,7 @@ Pour tous paniers A et B soit le consommateur:
 
 Est-ce restrictif?
 
--  Oui, e.g.: crème glacée vs. soupe (on préfère la crème glacée en été mais la soupe en hiver). 
+-  Oui, e.g.: crème glacée vs. soupe (on préfère la crème glacée en été, mais la soupe en hiver). 
 
 -  Mais on peut s'en sortir: inclure les circonstances dans les paniers (la saison)
 
@@ -69,9 +69,9 @@ Cette hypothèse paraît logique. Mais elle n'est pas toujours vérifiée... Sur
 -  Étiquette des biens: les biens sont désirables (qualité air au lieu de
    pollution). 
 
-Il est peu pratique de fonctionner avec des listes de préférences pour modéliser les comportements. Par exemple, comment prédire l'effet d'un changement de prix avec une liste de préférence? On voudra se rapporcher de l'analyse marginale pour rendre ceci plus pratique. 
+Il est peu pratique de fonctionner avec des listes de préférences pour modéliser les comportements. Par exemple, comment prédire l'effet d'un changement de prix avec une liste de préférence? On voudra se rapprocher de l'analyse marginale pour rendre ceci plus pratique. 
 
-Par ailleurs, les préférences sont très différentes d'une personne à l'autre (et d'un pays à l'autre). `Falk et co-auteurs (2018) <https://academic.oup.com/qje/article/133/4/1645/5025666>`_ ont analysé les préférences dans 76 pays dans un nombre de domaine. 
+Par ailleurs, les préférences sont très différentes d'une personne à l'autre (et d'un pays à l'autre). `Falk et co-auteurs (2018) <https://academic.oup.com/qje/article/133/4/1645/5025666>`_ ont analysé les préférences dans 76 pays dans un nombre de domaines. 
 
 
 Courbes d’indifférence et TMS
@@ -88,7 +88,7 @@ Deux biens :math:`X,Y`:
 -  Courbe indifférence vers le haut indique niveau utilité plus élevé
    (non-satiation)
 
-Les courbes d’indifférence ne se croisent pas si elle respectve la transitivité.
+Les courbes d’indifférence ne se croisent pas si elles respectent la transitivité.
 
 .. image:: /images/indif.png
    :scale: 25%
@@ -121,7 +121,7 @@ Ces courbes d'indifférences contiennent plus d'information qu'on croit ...
 
 Si la quantité de nourriture (:math:`X`) augmente, comment le TMS de :math:`X` en fonction de :math:`Y` change?
 
-Il diminue généralement. Ceci est représenté par des courbes d’indifférences convexes. Même s'il y a non-satiation, on accepte généralement que l'intensité de la préférence associée à une unité additionelle est plus faible avec le nombre d'unités consommées. 
+Il diminue généralement. Ceci est représenté par des courbes d’indifférences convexes. Même s'il y a non-satiation, on accepte généralement que l'intensité de la préférence associée à une unité additionnelle soit plus faible avec le nombre d'unités consommées. 
 
 Utilité
 +++++++
@@ -138,14 +138,14 @@ Les préférences sont ordinales (hiérarchiques)
 
 -  Si :math:`f` est une fonction strictement croissante et :math:`U`
    représente des préférences, alors :math:`V(X) = f(U(X))` représente
-   les même préférences.
+   les mêmes préférences.
 
    .. math:: U(X) > U(Y) \iff f(U(X)) > f(U(Y))
 
 -  La valeur de l’utilité n’a pas de signification, l’ordonnancement des
    paniers est important.
 
--  Exemple: :math:`U(X,Y) = \log X + \log Y` et :math:`V(X,Y) = XY` représentent les
+-  Exemple: :math:`U(X,Y) = \log X + \log Y` et :math:`V(X,Y) = XY` représente les
    mêmes préférences
 
 *Exercice B*: Montrez que :math:`U` et :math:`V` dans l'exemple ont les mêmes
@@ -159,7 +159,7 @@ préférences en trouvant la transformation :math:`V=f(U)`.
 
 Comment trouver le TMS à partir de l'utilité?
 
--  Deux biens, :math:`X`, :math:`Y`. Préférences représentées par la
+-  Deux biens :math:`X`, :math:`Y`. Préférences représentées par la
    fonction d’utilité :math:`U(X,Y)`
 
 -  e.g. :math:`U(X,Y) = \log X + \log Y`
@@ -182,7 +182,7 @@ Calculer le TMS de :math:`X` en fonction de :math:`Y`
 
    .. math:: \Rightarrow \;\; TMS = \Delta Y/ \Delta X =  -\frac{\partial U}{\partial X}/ \frac{\partial U}{\partial Y}
 
-On réfère à :math:`\frac{\partial U}{\partial X}` comme étant l'utilité marginale de :math:`X` (et vice-versa pour :math:`Y`). L'utilité marginale est généralement décroissante mais positive (attention: l'utilité n'est pas décroissante, seule l'utilité marginale). 
+On réfère à :math:`\frac{\partial U}{\partial X}` comme étant l'utilité marginale de :math:`X` (et vice-versa pour :math:`Y`). L'utilité marginale est généralement décroissante, mais positive (attention: l'utilité n'est pas décroissante, seule l'utilité marginale). 
 
 Exemple:
 
@@ -217,21 +217,21 @@ On peut utiliser SymPy pour trouver le TMS:
 Contrainte budgétaire
 +++++++++++++++++++++
 
-Jusqu'içi, le consommateur a tous les paniers devant lui et a des préférences sur ceux-ci. Il peut tout avoir! En pratique, Il pourra acheter les biens, mais à un prix. Et ce prix est important parce qu'il a une richesse limitée pour consommer. Tout achat a un coût d'opportunité. 
+Jusqu'ici, le consommateur a tous les paniers devant lui et a des préférences sur ceux-ci. Il peut tout avoir! En pratique, Il pourra acheter les biens, mais à un prix. Et ce prix est important parce qu'il a une richesse limitée pour consommer. Tout achat a un coût d'opportunité. 
 
 -  On ne peut pas dépenser davantage que notre richesse :math:`I`
 
 -  | Deux biens :math:`X`, :math:`Y`: Contrainte:
      :math:`p_X X + p_Y Y \leq I`. Cette contrainte donne ce qui est abordable étant donné :math:`I`
 
--  | En posant l'égalité, on peut résoudre pour :math:`Y` en terme de :math:`X`:
+-  | En posant l'égalité, on peut résoudre pour :math:`Y` en termes de :math:`X`:
      :math:`Y = \frac{I - p_X X}{p_Y}`
    | Le prix relatif entre :math:`X` et :math:`Y` en respectant la
      contrainte est:
 
      .. math:: \frac{dY}{dX} = -\frac{p_X}{p_Y}
 
-Acheter une unité de :math:`X` implique un sacrifice de :math:`\frac{p_X}{p_Y}` unités de :math:`Y`. C'est le coût d'opportunité de :math:`X` en terme de :math:`Y`. 
+Acheter une unité de :math:`X` implique un sacrifice de :math:`\frac{p_X}{p_Y}` unités de :math:`Y`. C'est le coût d'opportunité de :math:`X` en termes de :math:`Y`. 
 
 
 .. figure:: /images/budget_cons.png
@@ -248,9 +248,9 @@ Acheter une unité de :math:`X` implique un sacrifice de :math:`\frac{p_X}{p_Y}`
 -  On peut acheter les mêmes biens.
 
 -  Normalisons :math:`p_Y = 1`. Alors :math:`Y = I - p_X X`. :math:`p_X`
-   est maintenant en terme de quantité de :math:`Y` (numéraire) et idem pour :math:`I`.
+   est maintenant en termes de quantité de :math:`Y` (numéraire) et idem pour :math:`I`.
 
-Seul les prix relatifs affectent l'allocation. 
+Seuls les prix relatifs affectent l'allocation. 
 
 *Exercice C*: Montrez qu’une contrainte budgétaire ne change pas si on
 multiplie prix et revenu par :math:`\lambda>0`.
@@ -278,7 +278,7 @@ Choix du consommateur
 .. figure:: /images/choice_cons.png
    :scale: 75
 
-   Les points A, C et D sont possibles étant donné la contrainte. Donc, le point B peut être éliminé même si le TMS (pente au point B) semble très près du rapport du prix. Le point D peut être éliminé parce que le consommateur ne consomme pas tout son budget. Il peut donc aller sur une autre courbe d'indifférence en augmentant sa consommation des deux biens. Les allocations A et C dépensent tout le budget. Mais C n'est pas optimal. En valeur absolue, le TMS est plus élevé que la coût d'opportunité de consommer une unité de X additionelle. Donc, on peut augmenter X et réduire Y tout en augmentant l'utilité. Le point A est optimal, le TMS est égale au rapport de prix. 
+   Les points A, C et D sont possibles étant donné la contrainte. Donc, le point B peut être éliminé même si le TMS (pente au point B) semble très près du rapport du prix. Le point D peut être éliminé parce que le consommateur ne consomme pas tout son budget. Il peut donc aller sur une autre courbe d'indifférence en augmentant sa consommation des deux biens. Les allocations A et C dépensent tout le budget. Mais C n'est pas optimal. En valeur absolue, le TMS est plus élevé que le coût d'opportunité de consommer une unité de X additionnel. Donc, on peut augmenter X et réduire Y tout en augmentant l'utilité. Le point A est optimal, le TMS est égal au rapport de prix. 
 
 **Approche Directe**
 

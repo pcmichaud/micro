@@ -1,23 +1,31 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="fr" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
+<html class="writer-html5" lang="fr" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>Concurrence imparfaite &mdash; Documentation Micro Notes </title>
   
 
   
-  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
   
   
 
   
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -26,16 +34,12 @@
         <script src="_static/doctools.js"></script>
         <script src="_static/language_data.js"></script>
         <script src="_static/translations.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script type="text/x-mathjax-config">MathJax.Hub.Config({"extensions": ["tex2jax.js"], "jax": ["input/TeX", "output/HTML-CSS"], "availableFonts": ["Neo-Euler", "TeX"], "preferredFont": ["Neo-Euler"], "scale": 60})</script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Recherche" href="search.html" />
     <link rel="next" title="Asymétrie d’information" href="information.html" />
@@ -67,7 +71,7 @@
           
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Rechercher docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -76,6 +80,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -136,6 +141,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -170,19 +176,21 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html">Docs</a> &raquo;</li>
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
       <li>Concurrence imparfaite</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
-            
-            <a href="_sources/strategy.rst.txt" rel="nofollow"> View page source</a>
+          
+            <a href="_sources/strategy.rst.txt" rel="nofollow"> Afficher la source de la page</a>
           
         
       </li>
@@ -204,10 +212,10 @@
 </div>
 <div class="section" id="concurrence-parfaite">
 <h2>Concurrence parfaite<a class="headerlink" href="#concurrence-parfaite" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Le cas de l’équilibre général en production suppose que les entreprises considère le prix fixe. Ceci mènera à une situation d’équilibre de marché où le premier théorème du bien-être s’applique. Il s’agit d’un optimum de Pareto.</p>
+<p>Le cas de l’équilibre général en production suppose que les entreprises considèrent le prix fixe. Ceci mènera à une situation d’équilibre de marché où le premier théorème du bien-être s’applique. Il s’agit d’un optimum de Pareto.</p>
 <p>Cette hypothèse de prix fixe fonctionne bien quand il y a un grand nombre de firmes, chacune étant petite. Ainsi, la firme ne peut affecter le prix du marché avec ses choix de production.</p>
-<p>Considérons l’exemple d’une économie pour un bien <span class="math notranslate nohighlight">\(X\)</span> et un <em>numéraire</em> <span class="math notranslate nohighlight">\(M\)</span> (dont le prix est normalisé à 1). L’utilité est quasi-linéaire <span class="math notranslate nohighlight">\(U(X,M) = V(X) + M\)</span>, avec <span class="math notranslate nohighlight">\(V(X)\)</span> concave, <span class="math notranslate nohighlight">\(V'(0) = + \infty\)</span>. Les dotations sont <span class="math notranslate nohighlight">\(I_0\)</span> de <span class="math notranslate nohighlight">\(M\)</span>, le bien <span class="math notranslate nohighlight">\(X\)</span> produit par une firme vendu au prix <span class="math notranslate nohighlight">\(p\)</span>. La firme produit <span class="math notranslate nohighlight">\(X\)</span> sous une fonction de coût <span class="math notranslate nohighlight">\(C(X)\)</span>. Supposons <span class="math notranslate nohighlight">\(C'(0) = 0\)</span>.</p>
-<p><strong>Exercice A</strong> Trouvez le prix d’équilibre si l’entreprise est <em>prenneur de prix</em>
+<p>Considérons l’exemple d’une économie pour un bien <span class="math notranslate nohighlight">\(X\)</span> et un <em>numéraire</em> <span class="math notranslate nohighlight">\(M\)</span> (dont le prix est normalisé à 1). L’utilité est quasi-linéaire <span class="math notranslate nohighlight">\(U(X,M) = V(X) + M\)</span>, avec <span class="math notranslate nohighlight">\(V(X)\)</span> concave, <span class="math notranslate nohighlight">\(V'(0) = + \infty\)</span>. Les dotations sont <span class="math notranslate nohighlight">\(I_0\)</span> de <span class="math notranslate nohighlight">\(M\)</span>, le bien <span class="math notranslate nohighlight">\(X\)</span> produit par une firme vendue au prix <span class="math notranslate nohighlight">\(p\)</span>. La firme produit <span class="math notranslate nohighlight">\(X\)</span> sous une fonction de coût <span class="math notranslate nohighlight">\(C(X)\)</span>. Supposons <span class="math notranslate nohighlight">\(C'(0) = 0\)</span>.</p>
+<p><strong>Exercice A</strong> Trouvez le prix d’équilibre si l’entreprise est <em>preneur de prix</em>
 et <span class="math notranslate nohighlight">\(V(X) = \sqrt{X}\)</span>, <span class="math notranslate nohighlight">\(C(X) = X^2\)</span>.</p>
 <p>Le surplus du producteur est donné par:</p>
 <div class="math notranslate nohighlight">
@@ -215,7 +223,7 @@ et <span class="math notranslate nohighlight">\(V(X) = \sqrt{X}\)</span>, <span 
 </div>
 <div class="section" id="manipulation-strategique-du-prix">
 <h2>Manipulation stratégique du prix<a class="headerlink" href="#manipulation-strategique-du-prix" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Une firme qui peut par son choix de production affecter le prix d’équilibre et faire un profit additionel a un pouvoir de marché. Elle peut réduire sa production, en dessous de  la quantité qui serait Pareto optimale en concurrence parfaite. Ceci mènera à un prix qui est au dessus du coût marginal et ainsi augmenter ses profits.</p>
+<p>Une firme qui peut par son choix de production affecter le prix d’équilibre et faire un profit additionnel a un pouvoir de marché. Elle peut réduire sa production, en dessous de  la quantité qui serait Pareto optimale en concurrence parfaite. Ceci mènera à un prix qui est au-dessus du coût marginal et ainsi la firme augmente ses profits.</p>
 <p>Pour comprendre la nature de cette stratégie, observons que l’entreprise choisie  <span class="math notranslate nohighlight">\(X\)</span> afin de maximiser</p>
 <blockquote>
 <div><div class="math notranslate nohighlight">
@@ -229,7 +237,7 @@ et <span class="math notranslate nohighlight">\(V(X) = \sqrt{X}\)</span>, <span 
 <p>Ceci mène à un choix <span class="math notranslate nohighlight">\(X_{PM}\)</span>  tel que</p>
 <div class="math notranslate nohighlight">
 \[p(X_{PM}) + p'(X_{PM}) X_{PM} = C'(X_{PM})\]</div>
-<p>Le premier terme à droite est l’effet <em>marginal</em> d’une augmentation de la quantité. L’unité supplémentaire rapporte <span class="math notranslate nohighlight">\(p(X_{PM})\)</span>. Cet effet est aussi présent quand la firme est <em>prenneur de prix</em>, la quantité est choisie tel que le prix (revenu marginal) est égal au coût marginal de produire cette unité.</p>
+<p>Le premier terme à droite est l’effet <em>marginal</em> d’une augmentation de la quantité. L’unité supplémentaire rapporte <span class="math notranslate nohighlight">\(p(X_{PM})\)</span>. Cet effet est aussi présent quand la firme est <em>preneur de prix</em>, la quantité est choisie telle que le prix (revenu marginal) est égal au coût marginal de produire cette unité.</p>
 <p>Un deuxième terme est présent à gauche. Il s’agit de l’effet <em>infra-marginal</em>. Quand la firme augmente sa quantité d’une unité, le prix baisse (pas de bien Giffen svp…). Ainsi, le revenu  qu’elle fait sur les <span class="math notranslate nohighlight">\(X_{PM}\)</span> est négatif). Ainsi, le revenu marginal est plus faible qu’en l’absence de manipulation stratégique. L’entreprise diminuera donc sa production jusqu’à rétablir cette égalité.</p>
 <p><strong>Exercice B</strong> Trouvez le prix d’équilibre si l’entreprise fait de la manipulation stratégique du prix et
 <span class="math notranslate nohighlight">\(V(X) = \sqrt{X}\)</span>, <span class="math notranslate nohighlight">\(C(X) = X^2\)</span>. Comparer graphiquement par rapport à la situation où la firme est <em>preneur de prix</em>.</p>
@@ -238,7 +246,7 @@ et <span class="math notranslate nohighlight">\(V(X) = \sqrt{X}\)</span>, <span 
 <div class="section" id="monopole">
 <h2>Monopole<a class="headerlink" href="#monopole" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Le monopole existe quand une seule firme est présente sur un marché. Si la demande n’est pas complètement élastique, elle va se prêter à la manipulation stratégique du prix d’équilibre.</p>
-<p>Puisque qu’au niveau de production optimal <span class="math notranslate nohighlight">\(X_{PM}\)</span> on a</p>
+<p>Puisque qu’au niveau de production optimale <span class="math notranslate nohighlight">\(X_{PM}\)</span> on a</p>
 <blockquote>
 <div><div class="math notranslate nohighlight">
 \[p(X_{PM}) + p'(X_{PM})X_{PM} = C'(X_{PM})\]</div>
@@ -248,7 +256,7 @@ et <span class="math notranslate nohighlight">\(V(X) = \sqrt{X}\)</span>, <span 
 <div class="figure align-default">
 <a class="reference internal image-reference" href="_images/monopoly.jpeg"><img alt="_images/monopoly.jpeg" src="_images/monopoly.jpeg" style="width: 304.5px; height: 240.0px;" /></a>
 </div>
-<p>Pour faire de l’analyse de bien-être concernant le monopole, il faut d’abord se demander pourquoi le monopole existe. Le monopole peut être artificiel parce que l’entreprise a crée des <em>barrières à l’entrée</em> sur le marché. Si ces barrières ne sont pas justifiées, par exemple, un cablo-distributeur qui empêche un autre d’utiliser les mêmes poteaux pour accéder aux clients, elles mèneront à une perte de bien-être pour le consommateur. La réglementation peut créer, de manière indirecte, une barrière à l’entrée. Pensons à la SAQ au Québec. Ces monopoles <em>articifiels</em> mènent généralement à une perte de bien-être.</p>
+<p>Pour faire de l’analyse de bien-être concernant le monopole, il faut d’abord se demander pourquoi le monopole existe. Le monopole peut être artificiel parce que l’entreprise a créé des <em>barrières à l’entrée</em> sur le marché. Si ces barrières ne sont pas justifiées, par exemple, un cablo-distributeur qui empêche un autre d’utiliser les mêmes poteaux pour accéder aux clients, elles mèneront à une perte de bien-être pour le consommateur. La réglementation peut créer, de manière indirecte, une barrière à l’entrée. Pensons à la SAQ au Québec. Ces monopoles <em>artificiels</em> mènent généralement à une perte de bien-être.</p>
 <p>D’autres situations sont plus compliquées. Par exemple, des coûts fixes importants, et donc des économies d’échelle importantes peuvent justifier un monopole, qui dit alors <em>naturel</em>. Un exemple souvent donné est celui d’Hydro-Québec. Avant la nationalisation de l’électricité, plusieurs petits producteurs existaient, avec des coûts de production élevés et donc des prix plus élevés.</p>
 <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
     <iframe src="https://www.youtube.com/embed/1zLxUzcKiEA" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
@@ -261,16 +269,16 @@ et <span class="math notranslate nohighlight">\(V(X) = \sqrt{X}\)</span>, <span 
 <div><div class="math notranslate nohighlight">
 \[\Pi_{PM} = (p(X_{PM}) - p(X_{PT})) X_{PM}\]</div>
 </div></blockquote>
-<p>Ces profits reduisent le surplus du consommateur sur les unités produites par le monopole. Mais cette <em>rente</em> ne consistue pas une perte de bien-être. Ce sont les unités qui ne sont pas produites qui mènent à une perte de bien-être. Le monopole mène à une perte de bien-être parce que <span class="math notranslate nohighlight">\(X_{PT}&gt;X_{PM}\)</span> et <span class="math notranslate nohighlight">\(V'(X)-C'(X)&gt;0\)</span> sur ces unités.</p>
+<p>Ces profits réduisent le surplus du consommateur sur les unités produites par le monopole. Mais cette <em>rente</em> ne consistue pas une perte de bien-être. Ce sont les unités qui ne sont pas produites qui mènent à une perte de bien-être. Le monopole mène à une perte de bien-être parce que <span class="math notranslate nohighlight">\(X_{PT}&gt;X_{PM}\)</span> et <span class="math notranslate nohighlight">\(V'(X)-C'(X)&gt;0\)</span> sur ces unités.</p>
 <p><strong>Exercice D</strong>: Montrez les profits et la rente du monopoleur dans le graphique fait à l’exercice B. Montrez la perte de bien-être.</p>
 </div>
 <div class="section" id="duopole">
 <h2>Duopole<a class="headerlink" href="#duopole" title="Lien permanent vers ce titre">¶</a></h2>
 <p>On utilise le terme <em>duopole</em> pour dénoter un marché avec deux firmes et <em>oligopole</em> pour un marché avec un faible nombre de firmes. Dans cette section, nous nous concentrerons sur une situation à deux firmes et discuterons du cas avec plusieurs firmes.</p>
-<p>Pour modéliser comment les deux firmes d’un <em>duopole</em> se comportent, on doit déterminer si celles-ci se font la compétition sur les quantités ou sur les prix. La distinction a des implications importantes. Dans une situation où la capacité est un enjeu, c’est-à-dire qu’une seule des firmes ne peut innonder le marché, ou des investissements sont importants pour bâtir un inventaire, on parlera de compétition sur les quantités, où à la <a class="reference external" href="https://fr.wikipedia.org/wiki/Antoine-Augustin_Cournot">Cournot</a>. Quand la production se fait rapidement, sans coûts fixes important, et que chacune des firmes est capable de fournir le marché, on parle plutôt de compétition sur les prix, où à la <a class="reference external" href="https://fr.wikipedia.org/wiki/Joseph_Bertrand">Bertrand</a>.</p>
+<p>Pour modéliser comment les deux firmes d’un <em>duopole</em> se comportent, on doit déterminer si celles-ci se font la compétition sur les quantités ou sur les prix. La distinction a des implications importantes. Dans une situation où la capacité est un enjeu, c’est-à-dire qu’une seule des firmes ne peut inonder le marché, ou des investissements sont importants pour bâtir un inventaire, on parlera de compétition sur les quantités, où à la <a class="reference external" href="https://fr.wikipedia.org/wiki/Antoine-Augustin_Cournot">Cournot</a>. Quand la production se fait rapidement, sans coûts fixes importants, et que chacune des firmes est capable de fournir le marché, on parle plutôt de compétition sur les prix, où à la <a class="reference external" href="https://fr.wikipedia.org/wiki/Joseph_Bertrand">Bertrand</a>.</p>
 <div class="section" id="id1">
 <h3>Cournot<a class="headerlink" href="#id1" title="Lien permanent vers ce titre">¶</a></h3>
-<p>La compétition à la Cournot se fait sur les quantités. Un exemple souvent donné est celui des avions commerciaux, où Boeing et Airbus se font concurrence. Produire un avion est coûteux et aucun des deux transporteurs peut ajuster rapidement sa production. La décision de production (et la vente) devient donc un enjeu stratégique.</p>
+<p>La compétition à la Cournot se fait sur les quantités. Un exemple souvent donné est celui des avions commerciaux, où Boeing et Airbus se font concurrence. Produire un avion est coûteux et aucun des deux transporteurs ne peut ajuster rapidement sa production. La décision de production (et la vente) devient donc un enjeu stratégique.</p>
 <div class="figure align-default" id="id3">
 <a class="reference internal image-reference" href="_images/cournot.jpeg"><img alt="_images/cournot.jpeg" src="_images/cournot.jpeg" style="width: 300.0px; height: 168.0px;" /></a>
 <p class="caption"><span class="caption-text">Source: The Wall Street Journal.</span><a class="headerlink" href="#id3" title="Lien permanent vers cette image">¶</a></p>
@@ -282,7 +290,7 @@ et <span class="math notranslate nohighlight">\(V(X) = \sqrt{X}\)</span>, <span 
 \[V(X) = D_0 X - \frac{\alpha}{2} X^2\]</div>
 </div></blockquote>
 <p>Les coûts des deux entreprises sont représentés par <span class="math notranslate nohighlight">\(C_A(X) = C_B(X)= c X\)</span>. On a déjà vu que dans le cas de préférences quasi-linéaire, la demande inverse est représentée par <span class="math notranslate nohighlight">\(P(X) = V'(X) = D_0 - \alpha X\)</span>.</p>
-<p>Avant d’analyser l’équilibre en duopole, on peut d’abord s’intérroger sur le <em>benchmark</em>, ce à quoi on va comparer la situation de duopole. Un choix naturel est la production efficiente au sens de Pareto, ce qui est obtenu si les deux entreprises sont <em>preneur de prix</em>.</p>
+<p>Avant d’analyser l’équilibre en duopole, on peut d’abord s’interroger sur le <em>benchmark</em>, ce à quoi on va comparer la situation de duopole. Un choix naturel est la production efficiente au sens de Pareto, ce qui est obtenu si les deux entreprises sont <em>preneur de prix</em>.</p>
 <p>Alors l’entreprise produit <span class="math notranslate nohighlight">\(X\)</span> tel que son coût marginal est égale à la disposition à payer marginale des consommateurs:</p>
 <blockquote>
 <div><div class="math notranslate nohighlight">
@@ -303,7 +311,7 @@ et <span class="math notranslate nohighlight">\(V(X) = \sqrt{X}\)</span>, <span 
 <div><div class="math notranslate nohighlight">
 \[X_{Mon} = \frac{D_0 - c}{2\alpha} = \frac{1}{2} X_{Pareto}\]</div>
 </div></blockquote>
-<p>On retrouve bien qu’il produit moins que la situation de concurrence parfaite (<em>preneur de prix</em>). Maintenant, tournons-nous vers une situation de duopole à la Cournot. Les deux entreprises voudront manipuler le prix, mais voilà, il y a une pièce manquante car elles ont une interaction stratégique. Puisque le revenu marginal de l’entreprise A est <span class="math notranslate nohighlight">\(D_0 -   \alpha(X_B + X_A) - \alpha X_A\)</span>, il dépend du choix de production de la firme B, et vice-versa. Donc, la décision de A affecte la décision de B. Si elles veulent agir stratégiquement, chaque entreprise doit prévoir ce que fera l’autre entreprise. Pour en arriver à un équilibre, il faudra donc introduire de nouveaux concepts provenant de la théorie des jeux, en particulier l’équilibre de <a class="reference external" href="https://fr.wikipedia.org/wiki/John_Forbes_Nash">Nash</a>.</p>
+<p>On retrouve bien qu’il produit moins que la situation de concurrence parfaite (<em>preneur de prix</em>). Maintenant, tournons-nous vers une situation de duopole à la Cournot. Les deux entreprises voudront manipuler le prix, mais voilà, il y a une pièce manquante, car elles ont une interaction stratégique. Puisque le revenu marginal de l’entreprise A est <span class="math notranslate nohighlight">\(D_0 -   \alpha(X_B + X_A) - \alpha X_A\)</span>, il dépend du choix de production de la firme B, et vice-versa. Donc, la décision de A affecte la décision de B. Si elles veulent agir stratégiquement, chaque entreprise doit prévoir ce que fera l’autre entreprise. Pour en arriver à un équilibre, il faudra donc introduire de nouveaux concepts provenant de la théorie des jeux, en particulier l’équilibre de <a class="reference external" href="https://fr.wikipedia.org/wiki/John_Forbes_Nash">Nash</a>.</p>
 <p>Plaçons-nous du point de vue de la firme B. Elle doit anticiper ce que fera la firme A étant donné son choix. Elle peut faire l’hypothèse que la firme A maximisera ses profits étant donné son choix <span class="math notranslate nohighlight">\(X_B\)</span>. Donc, quel est le choix optimal de production de la firme A étant donné le choix de la firme B. Elle a les profits,</p>
 <blockquote>
 <div><div class="math notranslate nohighlight">
@@ -319,7 +327,7 @@ et <span class="math notranslate nohighlight">\(V(X) = \sqrt{X}\)</span>, <span 
 <div><div class="math notranslate nohighlight">
 \[X_A = \frac{D_0 -  c - \alpha X_B}{ 2 \alpha} = \frac{D_0 - c}{2\alpha} - \frac{1}{2}X_B\]</div>
 </div></blockquote>
-<p>Ces fonctions de réponses sont symmétriques, puisque les firmes sont identiques. Donc,</p>
+<p>Ces fonctions de réponses sont symétriques, puisque les firmes sont identiques. Donc,</p>
 <blockquote>
 <div><div class="math notranslate nohighlight">
 \[X_B = \frac{D_0 -  c - \alpha X_A}{ 2 \alpha} = \frac{D_0 - c}{2\alpha} - \frac{1}{2}X_A\]</div>
@@ -330,7 +338,7 @@ et <span class="math notranslate nohighlight">\(V(X) = \sqrt{X}\)</span>, <span 
 <div><div class="math notranslate nohighlight">
 \[X^*_A =  \frac{D_0 - c - \alpha X_B^*}{ 2 \alpha} \quad et \quad  X^*_B = \frac{D_0 - c -  \alpha X_A^*}{2 \alpha}\]</div>
 </div></blockquote>
-<p>Puisque on  a la symmétrie, <span class="math notranslate nohighlight">\(X^*_A = X^*_B = X^*\)</span> et donc</p>
+<p>Puisqu’on  a la symétrie <span class="math notranslate nohighlight">\(X^*_A = X^*_B = X^*\)</span> et donc</p>
 <blockquote>
 <div><div class="math notranslate nohighlight">
 \[X^*_A = X^*_B = X^* = \frac{D_0 - c}{3\alpha}.\]</div>
@@ -340,7 +348,7 @@ et <span class="math notranslate nohighlight">\(V(X) = \sqrt{X}\)</span>, <span 
 <div><div class="math notranslate nohighlight">
 \[2 X^* = \frac{2}{3} \frac{D_0 - c}{\alpha}\]</div>
 </div></blockquote>
-<p>C’est plus qu’en monopole mais moins qu’en concurrence parfaite.</p>
+<p>C’est plus qu’en monopole, mais moins qu’en concurrence parfaite.</p>
 <p>Quelques exercices:</p>
 <div class="line-block">
 <div class="line"><strong>Exercice E</strong>: Faire un graphique des fonctions de meilleures réponses dans l’espace
@@ -348,7 +356,7 @@ et <span class="math notranslate nohighlight">\(V(X) = \sqrt{X}\)</span>, <span 
 </div>
 <div class="line-block">
 <div class="line"><strong>Exercice F</strong>: En débutant à <span class="math notranslate nohighlight">\(X_A = \frac{D_0 - c}{2\alpha}\)</span>,
-<span class="math notranslate nohighlight">\(D_0=10,c=1,\alpha=1\)</span>, montrez comment appliquer de manière séquentielle les fonctions de meilleures réponses amènent inévitablement à l’équilire de Nash.</div>
+<span class="math notranslate nohighlight">\(D_0=10,c=1,\alpha=1\)</span>, montrez comment appliquer de manière séquentielle les fonctions de meilleures réponses amène inévitablement à l’équilibre de Nash.</div>
 <div class="line"><strong>Exercice G</strong>: Supposons que la firme A a un coût marginal <span class="math notranslate nohighlight">\(c_A\)</span> et la firme
 B, <span class="math notranslate nohighlight">\(c_B\)</span>, avec <span class="math notranslate nohighlight">\(c_A=2&gt;c_B=1\)</span>. Aussi supposons
 <span class="math notranslate nohighlight">\(D_0=10,\alpha=1\)</span>. Trouvez les productions d’équilibre des deux firmes.</div>
@@ -366,7 +374,7 @@ B, <span class="math notranslate nohighlight">\(c_B\)</span>, avec <span class="
 </div></blockquote>
 <p><strong>Exercice H</strong>: Dérivez la fonction de meilleure réponse dans cet exemple.</p>
 <p>Dans un équilibre de Nash avec plusieurs firmes,</p>
-<p><span class="math notranslate nohighlight">\(X_1\)</span> optimal étant donné <span class="math notranslate nohighlight">\(X_2, X_3, \cdots, X_N\)</span>, et similairement pour chaque firme. En utilisant la symmétrie,</p>
+<p><span class="math notranslate nohighlight">\(X_1\)</span> optimal étant donné <span class="math notranslate nohighlight">\(X_2, X_3, \cdots, X_N\)</span>, et similairement pour chaque firme. En utilisant la symétrie,</p>
 <blockquote>
 <div><div class="math notranslate nohighlight">
 \[X_1^* = X_2^* = \cdots = X_N^* = \frac{D_0 - c}{(N+1) \alpha}\]</div>
@@ -377,21 +385,21 @@ B, <span class="math notranslate nohighlight">\(c_B\)</span>, avec <span class="
 \[\frac{N}{N+1} \frac{D_0 -c}{\alpha}\]</div>
 </div></blockquote>
 <p>On peut retrouver les quantités du monopole et du duopole par cette formule. On peut aussi voir que pour N grand, on obtient la quantité en concurrence parfaite.</p>
-<p>En terme de prix, on obtient,</p>
+<p>En termes de prix, on obtient,</p>
 <blockquote>
 <div><div class="math notranslate nohighlight">
 \[p_N = \frac{1}{N}D_0 +\frac{N}{N+1}c\]</div>
 </div></blockquote>
-<p>Ainsi, le prix est égale à <span class="math notranslate nohighlight">\(c\)</span> quand N devient grand et plus élevé quand on est en monopole.</p>
+<p>Ainsi, le prix est égal à <span class="math notranslate nohighlight">\(c\)</span> quand N devient grand et plus élevé quand on est en monopole.</p>
 <p>En concurrence (N très grand), les firmes deviennent en terme effectif des <em>preneurs de prix</em>, ce qui élimine les rentes de pouvoir de marché.</p>
 </div>
 <div class="section" id="id2">
 <h3>Bertrand<a class="headerlink" href="#id2" title="Lien permanent vers ce titre">¶</a></h3>
-<p>La situation de compétition par les prix est assez différente en terme d’implication mais utilise les mêmes concepts que la compétition à la Cournot. Prenons <span class="math notranslate nohighlight">\(N\)</span> firmes identiques avec coût marginal <span class="math notranslate nohighlight">\(c_i=c \quad \forall i=1,...,N\)</span>.</p>
-<p>Supposons, <span class="math notranslate nohighlight">\(p_i = c \quad \forall i\)</span>. Si une firme <span class="math notranslate nohighlight">\(j\)</span> essaie de dévier et annonce un prix <span class="math notranslate nohighlight">\(p_j&gt;c\)</span>, elle ne vendra plus rien. Si elle annonce, <span class="math notranslate nohighlight">\(p_j&lt;c\)</span>, elle fera une perte.</p>
+<p>La situation de compétition par les prix est assez différente en termes d’implication, mais utilise les mêmes concepts que la compétition à la Cournot. Prenons <span class="math notranslate nohighlight">\(N\)</span> firmes identiques avec coût marginal <span class="math notranslate nohighlight">\(c_i=c \quad \forall i=1,...,N\)</span>.</p>
+<p>Supposons <span class="math notranslate nohighlight">\(p_i = c \quad \forall i\)</span>. Si une firme <span class="math notranslate nohighlight">\(j\)</span> essaie de dévier et annonce un prix <span class="math notranslate nohighlight">\(p_j&gt;c\)</span>, elle ne vendra plus rien. Si elle annonce <span class="math notranslate nohighlight">\(p_j&lt;c\)</span>, elle fera une perte.</p>
 <p>L’équilibre de Nash est donc <span class="math notranslate nohighlight">\(p_i=c \quad \forall i\)</span>. Donc, même avec deux firmes seulement, on a le résultat de concurrence parfaite.</p>
 <p>L’hypothèse importante est que le consommateur peut observer les prix des compétiteurs sans aucun coût. Les biens sont aussi homogènes.</p>
-<p>On doit souligner qu’il y a plusieurs possibilités pour les firmes de faire de la collusion afin de soutenir un prix plus élevé. Ces ententes sont illégales mais ca ne veut pas dire qu’elles ne surviennent pas.</p>
+<p>On doit souligner qu’il y a plusieurs possibilités pour les firmes de faire de la collusion afin de soutenir un prix plus élevé. Ces ententes sont illégales, mais ça ne veut pas dire qu’elles ne surviennent pas.</p>
 </div>
 <div class="section" id="barriere-a-l-entree">
 <h3>Barrière à l’entrée<a class="headerlink" href="#barriere-a-l-entree" title="Lien permanent vers ce titre">¶</a></h3>
@@ -409,29 +417,29 @@ B, <span class="math notranslate nohighlight">\(c_B\)</span>, avec <span class="
            
           </div>
           <footer>
-  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="information.html" class="btn btn-neutral float-right" title="Asymétrie d’information" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="production.html" class="btn btn-neutral float-left" title="La Production" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+        <a href="information.html" class="btn btn-neutral float-right" title="Asymétrie d’information" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="production.html" class="btn btn-neutral float-left" title="La Production" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2020, Pierre-Carl Michaud
+        &#169; Copyright 2020, Pierre-Carl Michaud.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
-
         </div>
       </div>
 
@@ -439,7 +447,6 @@ B, <span class="math notranslate nohighlight">\(c_B\)</span>, avec <span class="
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

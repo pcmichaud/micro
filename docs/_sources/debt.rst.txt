@@ -128,7 +128,7 @@ In terms of bill payments, which includes credit card payments, close to two thi
 
 Source: `FCAC (2021) <https://www.canada.ca/content/dam/fcac-acfc/documents/programs/research-surveys-studies-reports/canadian-financial-capability-survey-2019.pdf>`_
 
-Budgeting may be related to credit card use. We see that among that the fraction who use credit cards because they are short of money runs at 21% among those who do not budget (they find it boring or have no time for it)  while the percentage is 3% among those who do budget.  
+Budgeting may be related to credit card use. We see that among that the fraction who use credit cards because they are short of money runs at 21% among those who do not budget (they find it boring or have no time for it)  while the percentage is 3% among those who do budgets.  
 
 .. figure:: /images/ccard-budget.png
    :align: center
@@ -207,7 +207,7 @@ The workhorse life-cycle model can help understand how debt can be useful for an
 .. math::
    w^*_2 = y_1 - c_1
 
-If :math:`w^*>0`, he earns interest such that wealth available at the beginning of period 2 is given by :math:`w = (1+r_s)w^*`. If :math:`w^*<0`, he needs to be interest on his debt, at a rate :math:`b`. Hence, the amount of debt that needs to be repaid is :math:`w = (1+r_b)w^*`. Typically we observe :math:`r_b>r_s`. Consumption in period 2 is :math:`c_2 = w + y_2`. 
+If :math:`w^*>0`, he earns interest such that wealth available at the beginning of period 2 is given by :math:`w = (1+r_s)w^*`. If :math:`w^*<0`, he needs to pay interest on his debt, at a rate :math:`b`. Hence, the amount of debt that needs to be repaid is :math:`w = (1+r_b)w^*`. Typically we observe :math:`r_b>r_s`. Consumption in period 2 is :math:`c_2 = w + y_2`. 
 
 The individual has a utility function :math:`DU(c_1,c_2) = u(c_1) + \delta u(c_2)` where :math:`\delta` is the subjective discount factor. If :math:`r_b=r_s=r`, we have the first-order condition, 
 

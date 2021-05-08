@@ -1,23 +1,31 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="fr" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
+<html class="writer-html5" lang="fr" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>Price and Income Effects &mdash; Documentation Micro Notes </title>
   
 
   
-  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
   
   
 
   
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -26,16 +34,12 @@
         <script src="_static/doctools.js"></script>
         <script src="_static/language_data.js"></script>
         <script src="_static/translations.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script type="text/x-mathjax-config">MathJax.Hub.Config({"extensions": ["tex2jax.js"], "jax": ["input/TeX", "output/HTML-CSS"], "availableFonts": ["Neo-Euler", "TeX"], "preferredFont": ["Neo-Euler"], "scale": 60})</script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Recherche" href="search.html" />
     <link rel="next" title="Risk" href="risque_en.html" />
@@ -67,7 +71,7 @@
           
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Rechercher docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -76,6 +80,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -140,6 +145,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -174,19 +180,21 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html">Docs</a> &raquo;</li>
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
       <li>Price and Income Effects</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
-            
-            <a href="_sources/effets_en.rst.txt" rel="nofollow"> View page source</a>
+          
+            <a href="_sources/effets_en.rst.txt" rel="nofollow"> Afficher la source de la page</a>
           
         
       </li>
@@ -202,12 +210,12 @@
   <div class="section" id="price-and-income-effects">
 <span id="effets"></span><h1>Price and Income Effects<a class="headerlink" href="#price-and-income-effects" title="Lien permanent vers ce titre">¶</a></h1>
 <p>Does a tax on gasoline decrease gas consumption and promotes public transportation?</p>
-<p>To answer a question like this, we need to study empirically how the demand for gasoline and public transportation respond to a tax. A tax results in a price change for the consumer. Hence, a prequisite is that we study how demand responds to price. Second, we may want to compensate individuals for the burden of the tax. For this, we need to know how demand changes as a function of income. Related to this is the question of whether or not such taxes are regressive or not.</p>
+<p>To answer a question like this, we need to study empirically how the demand for gasoline and public transportation respond to a tax. A tax results in a price change for the consumer. Hence, a prerequisite is that we study how demand responds to price. Second, we may want to compensate individuals for the burden of the tax. For this, we need to know how demand changes as a function of income. Related to this is the question of whether or not such taxes are regressive or not.</p>
 <div class="figure align-center" id="id1">
 <a class="reference internal image-reference" href="_images/gilets.jpeg"><img alt="_images/gilets.jpeg" src="_images/gilets.jpeg" style="width: 275.0px; height: 183.0px;" /></a>
 <p class="caption"><span class="caption-text">The <em>gilets jaunes</em> in France in part demonstrated because of new gasoline taxes which they argued reduced their purchasing power.</span><a class="headerlink" href="#id1" title="Lien permanent vers cette image">¶</a></p>
 </div>
-<p>Price and income elasticities can be estimated without theory. But theory is necessary to answer the more normative questions and to talk about compensation.</p>
+<p>Price and income elasticity can be estimated without theory. But theory is necessary to answer the more normative questions and to talk about compensation.</p>
 <div class="section" id="demand-and-preferences">
 <h2>Demand and Preferences<a class="headerlink" href="#demand-and-preferences" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Let us formalize the problem above:</p>
@@ -254,7 +262,7 @@ p_X X + p_Y Y = I\end{split}\]</div>
 <p>To quantify income effects, we can use an income elasticity defined as</p>
 <div class="math notranslate nohighlight">
 \[\eta_{X,I} = \frac{\partial X}{\partial I}\frac{I}{X}\]</div>
-<p>In practice, it is hard to observe the income elasticity because variation in income is rarely exogeneous. What sort of events could you exploit?</p>
+<p>In practice, it is hard to observe the income elasticity because variation in income is rarely exogenous. What sort of events could you exploit?</p>
 </div>
 <div class="section" id="price-effects">
 <h2>Price Effects<a class="headerlink" href="#price-effects" title="Lien permanent vers ce titre">¶</a></h2>
@@ -263,8 +271,8 @@ p_X X + p_Y Y = I\end{split}\]</div>
 <p>To quantify this margin, we may use a price elasticity of the form:</p>
 <div class="math notranslate nohighlight">
 \[\eta_{X,p} = \frac{\partial X}{\partial p_X}\frac{p_X}{X}\]</div>
-<p>This elasticity is invariant to monetary units. A challenge is to find an experiment where the price is varied exogeneously while other factors are kept constant. Taxation is one of the key margin exploited. Other examples include supply shocks.</p>
-<p>In Denmark, one <a class="reference external" href="https://www.sciencedirect.com/science/article/abs/pii/S0094119018300779">study</a> shows that the price elasticity varies alot across the country and in particular reacts to the distance people need to travel to work and transportation alternatives they face.</p>
+<p>This elasticity is invariant to monetary units. A challenge is to find an experiment where the price is varied exogenously while other factors are kept constant. Taxation is one of the key margins exploited. Other examples include supply shocks.</p>
+<p>In Denmark, one <a class="reference external" href="https://www.sciencedirect.com/science/article/abs/pii/S0094119018300779">study</a> shows that the price elasticity varies a lot across the country and in particular reacts to the distance people need to travel to work and transportation alternatives they face.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/elasticity_denmark.png"><img alt="_images/elasticity_denmark.png" src="_images/elasticity_denmark.png" style="width: 544.7px; height: 435.5px;" /></a>
 </div>
@@ -280,7 +288,7 @@ p_X X + p_Y Y = I\end{split}\]</div>
 <div class="math notranslate nohighlight">
 \[\frac{U'_X(X,Y)}{U'_Y(X,Y)} = \frac{p_X}{p_Y}\]</div>
 </li>
-<li><p>At current consumption, one needs more income to buy this basket at the new prices. Hence, the consumer needs to reduce his consumption: <em>income efect</em>.</p></li>
+<li><p>At current consumption, one needs more income to buy this basket at the new prices. Hence, the consumer needs to reduce his consumption: <em>income effect</em>.</p></li>
 </ul>
 <p>Compensation will be a function of income and substitution effects. Hence, our <strong>objective:</strong> is to identify these effects and see how they lead to the total price effect.</p>
 <div class="section" id="compensated-demand">
@@ -295,7 +303,7 @@ p_X X + p_Y Y = I\end{split}\]</div>
 <li><p>New Demand, <span class="math notranslate nohighlight">\(X(\hat p_X, p_Y, I)\)</span>, new indirect utility level
 <span class="math notranslate nohighlight">\(V(\hat p_X,p_Y,I)\)</span>.</p></li>
 </ul>
-<p>Compensated Income: income <span class="math notranslate nohighlight">\(I^{cmp}\)</span> such that we maintain utility at reference level despite facing  <strong>new prices</strong>.</p>
+<p>Compensated Income: income <span class="math notranslate nohighlight">\(I^{cmp}\)</span> such that we maintain utility at reference levels despite facing  <strong>new prices</strong>.</p>
 <blockquote>
 <div><div class="math notranslate nohighlight">
 \[V(p_X,p_Y, I) = V(\hat p_X, p_Y,  I^{cmp})\]</div>
@@ -328,7 +336,7 @@ p_X X + p_Y Y = I\end{split}\]</div>
 <blockquote>
 <div><p><span class="math notranslate nohighlight">\(X^* = X(p_X,p_X,I)\)</span>, <span class="math notranslate nohighlight">\(Y^* = Y(p_X,p_Y,I)\)</span></p>
 </div></blockquote>
-<p>The define <span class="math notranslate nohighlight">\(I^{cmp}= I + \Delta I^{cmp}\)</span>,
+<p>Then define <span class="math notranslate nohighlight">\(I^{cmp}= I + \Delta I^{cmp}\)</span>,
 <span class="math notranslate nohighlight">\(X^{cmp}= X^* + \Delta X^{cmp}\)</span> and
 <span class="math notranslate nohighlight">\(Y^{cmp}= Y^* + \Delta Y^{cmp}\)</span>.</p>
 <p>Therefore,</p>
@@ -359,7 +367,7 @@ I^{cmp}&amp; =  \hat p_X X^{cmp}+  p_Y Y^{cmp}\\
 </div>
 <div class="section" id="slutsky-equation">
 <h2>Slutsky Equation<a class="headerlink" href="#slutsky-equation" title="Lien permanent vers ce titre">¶</a></h2>
-<p>The <a class="reference external" href="https://fr.wikipedia.org/wiki/Eugen_Slutsky">Slutsky</a> equation allows to look the total price effect, the substitution effect and the income effect. The first and the last are observable given sufficient exogeneous variation. The second one is necessary to compute the compensation required.</p>
+<p>The <a class="reference external" href="https://fr.wikipedia.org/wiki/Eugen_Slutsky">Slutsky</a> equation allows to look the total price effect, the substitution effect and the income effect. The first and the last is observable given sufficient exogenous variation. The second one is necessary to compute the compensation required.</p>
 <p>To keep notation simple, consider</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
@@ -394,7 +402,7 @@ I^{cmp}&amp; =  \hat p_X X^{cmp}+  p_Y Y^{cmp}\\
 <li><p>Complements: If the cross-price effect is negative:
 <span class="math notranslate nohighlight">\(\frac{\partial X^{cmp}}{\partial p_Y} &lt;0\)</span></p></li>
 </ul>
-<p>What is your prior about the cross-price elasticity of public transporation? How would it factor into your analysis of a policy that taxes gasoline to reduce carbon emissions?</p>
+<p>What is your prior about the cross-price elasticity of public transportation? How would it factor into your analysis of a policy that taxes gasoline to reduce carbon emissions?</p>
 </div>
 <div class="section" id="properties-of-demand-functions">
 <h2>Properties of Demand Functions<a class="headerlink" href="#properties-of-demand-functions" title="Lien permanent vers ce titre">¶</a></h2>
@@ -428,21 +436,21 @@ I^{cmp}&amp; =  \hat p_X X^{cmp}+  p_Y Y^{cmp}\\
 <div><div class="math notranslate nohighlight">
 \[\pi_I =  \frac{I^{cmp}}{I}\]</div>
 </div></blockquote>
-<p>This will depend on preferences. It is possible that this Hicksian price index yield a different answer than the Laysperes price index. In particular, if the income share of a good decreases when its price increase, the Hicksian index often yields a lower increase in the cost-of-living than what the Laysperres index would suggest. We call this bias the substitution bias in price indices.</p>
-<p>Before the pandemia hit and a lockdown was imposed, gasoline consumption went down. The price of gas also decreased (for may reasons). Does a Laysperes index give a good indication of the change in purchasing power during this period? Thist <a class="reference external" href="https://www.nber.org/papers/w27352">article</a> does the computation for the U.S. and shows that inflation is under-estimated.</p>
+<p>This will depend on preferences. It is possible that this Hicksian price index yields a different answer than the Laysperes price index. In particular, if the income share of a good decrease when its price increase, the Hicksian index often yields a lower increase in the cost-of-living than what the Laysperres index would suggest. We call this bias the substitution bias in price indices.</p>
+<p>Before the pandemia hit and a lockdown was imposed, gasoline consumption went down. The price of gas also decreased (for may reason). Does a Laysperes index give a good indication of the change in purchasing power during this period? This <a class="reference external" href="https://www.nber.org/papers/w27352">article</a> does the computation for the U.S. and shows that inflation is underestimated.</p>
 </div>
 <div class="section" id="giffen-goods">
 <h2>Giffen Goods<a class="headerlink" href="#giffen-goods" title="Lien permanent vers ce titre">¶</a></h2>
 <p>There exist a type of good for which demand increases with the price! Look back at the Slutsky equation:</p>
 <div class="math notranslate nohighlight">
 \[\eta_{X,p} = \eta^{cmp}_{X,p}  - \eta_{X,I} \cdot s_X.\]</div>
-<p>The first term is always negative. This comes from the Law of compensated demand… To get a positive elasticity, we therefore need the second term to be negative (so that it becomes positive when substracted).</p>
+<p>The first term is always negative. This comes from the Law of compensated demand… To get a positive elasticity, we therefore need the second term to be negative (so that it becomes positive when subtracted).</p>
 <p>A necessary condition is therefore that the good is inferior <span class="math notranslate nohighlight">\(\eta_{X,I}&lt;0\)</span>. But to overcome the negative substitution effect, this is not sufficient. We need this negative income effect to be large and (or) the budget share to be large.</p>
-<p>So, it is possible that <span class="math notranslate nohighlight">\(\eta_{X,p}&gt;0\)</span>. But do we see this case in reality? (read the story behind Giffen goods on <a class="reference external" href="https://en.wikipedia.org/wiki/Giffen_good">wikipedia</a>). The best example we know comes from China. A subsidy program for rice was introduced, bringing down the price (<a class="reference external" href="https://www.aeaweb.org/articles?id=10.1257/aer.98.4.1553">Jensen et Miller (2008)</a>). This lead to a reduction in rice consumption.</p>
+<p>So, it is possible that <span class="math notranslate nohighlight">\(\eta_{X,p}&gt;0\)</span>. But do we see this case in reality? (read the story behind Giffen goods on <a class="reference external" href="https://en.wikipedia.org/wiki/Giffen_good">wikipedia</a>). The best example we know comes from China. A subsidy program for rice was introduced, bringing down the price (<a class="reference external" href="https://www.aeaweb.org/articles?id=10.1257/aer.98.4.1553">Jensen et Miller (2008)</a>). This leads to a reduction in rice consumption.</p>
 </div>
 <div class="section" id="firm-pricing-and-demand-analysis">
 <h2>Firm pricing and demand analysis<a class="headerlink" href="#firm-pricing-and-demand-analysis" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Why would a firm study properties of the demand it faces? Because it can potentially increase sales if it has market power, an ability to affect or manipulate the price on the market. Firms can also price discreminate: segment the market or offer bundles at different prices. The can exploit complementarities between goods to offer bundles.  All of this requires good knowledge of demand.</p>
+<p>Why would a firm study properties of the demand it faces? Because it can potentially increase sales if it has market power, an ability to affect or manipulate the price on the market. Firms can also price discriminate: segment the market or offer bundles at different prices. They can exploit complementarities between goods to offer bundles.  All of this requires good knowledge of demand.</p>
 <p>Econometric analysis can be used along with some theory, to extract information from firm and market data. In the retail industry, firms purchase for example scanner data to learn about consumers and their sensitivity to prices.</p>
 </div>
 <div class="section" id="python-example">
@@ -457,29 +465,29 @@ I^{cmp}&amp; =  \hat p_X X^{cmp}+  p_Y Y^{cmp}\\
            
           </div>
           <footer>
-  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="risque_en.html" class="btn btn-neutral float-right" title="Risk" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="cons_en.html" class="btn btn-neutral float-left" title="Consumer Demand" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+        <a href="risque_en.html" class="btn btn-neutral float-right" title="Risk" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="cons_en.html" class="btn btn-neutral float-left" title="Consumer Demand" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2020, Pierre-Carl Michaud
+        &#169; Copyright 2020, Pierre-Carl Michaud.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
-
         </div>
       </div>
 
@@ -487,7 +495,6 @@ I^{cmp}&amp; =  \hat p_X X^{cmp}+  p_Y Y^{cmp}\\
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

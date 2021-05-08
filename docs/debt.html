@@ -1,23 +1,31 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="fr" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
+<html class="writer-html5" lang="fr" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>Debt &mdash; Documentation Micro Notes </title>
   
 
   
-  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
   
   
 
   
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -26,16 +34,12 @@
         <script src="_static/doctools.js"></script>
         <script src="_static/language_data.js"></script>
         <script src="_static/translations.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script type="text/x-mathjax-config">MathJax.Hub.Config({"extensions": ["tex2jax.js"], "jax": ["input/TeX", "output/HTML-CSS"], "availableFonts": ["Neo-Euler", "TeX"], "preferredFont": ["Neo-Euler"], "scale": 60})</script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Recherche" href="search.html" />
     <link rel="prev" title="Investing" href="invest.html" /> 
@@ -66,7 +70,7 @@
           
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Rechercher docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -75,6 +79,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -148,6 +153,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -182,19 +188,21 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html">Docs</a> &raquo;</li>
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
       <li>Debt</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
-            
-            <a href="_sources/debt.rst.txt" rel="nofollow"> View page source</a>
+          
+            <a href="_sources/debt.rst.txt" rel="nofollow"> Afficher la source de la page</a>
           
         
       </li>
@@ -301,7 +309,7 @@
 <img alt="_images/bill-strugle.png" src="_images/bill-strugle.png" />
 </div>
 <p>Source: <a class="reference external" href="https://www.canada.ca/content/dam/fcac-acfc/documents/programs/research-surveys-studies-reports/canadian-financial-capability-survey-2019.pdf">FCAC (2021)</a></p>
-<p>Budgeting may be related to credit card use. We see that among that the fraction who use credit cards because they are short of money runs at 21% among those who do not budget (they find it boring or have no time for it)  while the percentage is 3% among those who do budget.</p>
+<p>Budgeting may be related to credit card use. We see that among that the fraction who use credit cards because they are short of money runs at 21% among those who do not budget (they find it boring or have no time for it)  while the percentage is 3% among those who do budgets.</p>
 <div class="figure align-center">
 <img alt="_images/ccard-budget.png" src="_images/ccard-budget.png" />
 </div>
@@ -358,7 +366,7 @@
 <p>The workhorse life-cycle model can help understand how debt can be useful for an individual. Consider the two period setup we used with savings. The individual has incomes <span class="math notranslate nohighlight">\(y_1\)</span> and <span class="math notranslate nohighlight">\(y_2\)</span>. To simplify he has no initial wealth. Hence if period wealth is given by</p>
 <div class="math notranslate nohighlight">
 \[w^*_2 = y_1 - c_1\]</div>
-<p>If <span class="math notranslate nohighlight">\(w^*&gt;0\)</span>, he earns interest such that wealth available at the beginning of period 2 is given by <span class="math notranslate nohighlight">\(w = (1+r_s)w^*\)</span>. If <span class="math notranslate nohighlight">\(w^*&lt;0\)</span>, he needs to be interest on his debt, at a rate <span class="math notranslate nohighlight">\(b\)</span>. Hence, the amount of debt that needs to be repaid is <span class="math notranslate nohighlight">\(w = (1+r_b)w^*\)</span>. Typically we observe <span class="math notranslate nohighlight">\(r_b&gt;r_s\)</span>. Consumption in period 2 is <span class="math notranslate nohighlight">\(c_2 = w + y_2\)</span>.</p>
+<p>If <span class="math notranslate nohighlight">\(w^*&gt;0\)</span>, he earns interest such that wealth available at the beginning of period 2 is given by <span class="math notranslate nohighlight">\(w = (1+r_s)w^*\)</span>. If <span class="math notranslate nohighlight">\(w^*&lt;0\)</span>, he needs to pay interest on his debt, at a rate <span class="math notranslate nohighlight">\(b\)</span>. Hence, the amount of debt that needs to be repaid is <span class="math notranslate nohighlight">\(w = (1+r_b)w^*\)</span>. Typically we observe <span class="math notranslate nohighlight">\(r_b&gt;r_s\)</span>. Consumption in period 2 is <span class="math notranslate nohighlight">\(c_2 = w + y_2\)</span>.</p>
 <p>The individual has a utility function <span class="math notranslate nohighlight">\(DU(c_1,c_2) = u(c_1) + \delta u(c_2)\)</span> where <span class="math notranslate nohighlight">\(\delta\)</span> is the subjective discount factor. If <span class="math notranslate nohighlight">\(r_b=r_s=r\)</span>, we have the first-order condition,</p>
 <div class="math notranslate nohighlight">
 \[u'(c_1) = (1+r)\delta u'(c_2)\]</div>
@@ -479,27 +487,28 @@
            
           </div>
           <footer>
-  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-      
-        <a href="invest.html" class="btn btn-neutral float-left" title="Investing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+        <a href="invest.html" class="btn btn-neutral float-left" title="Investing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2020, Pierre-Carl Michaud
+        &#169; Copyright 2020, Pierre-Carl Michaud.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
-
         </div>
       </div>
 
@@ -507,7 +516,6 @@
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

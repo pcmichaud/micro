@@ -7,12 +7,12 @@ Effets Prix et Revenu
 
 Est-ce qu'une taxe sur l'essence réduit la consommation d'essence et encourage le transport en commun?
 
-Pour le savoir, on doit étudier empiriquement comment la demande d'essence et de transport en commun réagit à une taxe sur l'essence. On veut peut-être aussi comprendre si cette taxe sera régressive (si elle aura un effet important sur le pouvoir d'achat des moins nantis). Si on veut les compenser, il faudra connaître les effets prix et revenu. 
+Pour le savoir, on doit étudier empiriquement comment la demande d'essence et de transport en commun réagit à une taxe sur l'essence. On veut peut-être aussi comprendre si cette taxe sera régressive (si elle aura un effet important sur le pouvoir d'achat des moins nantis). Si on veut les compenser, il faudra connaître les effets prix et revenus. 
 
 .. figure:: /images/gilets.jpeg
    :scale: 100
    
-   Les gilets jaunes en France ont manifesté entre autre parce que de nouvelles taxes sur le carburant réduisaient leur pouvoir d'achat. 
+   Les gilets jaunes en France ont manifesté entre autres parce que de nouvelles taxes sur le carburant réduisaient leur pouvoir d'achat. 
 
 Les élasticités prix et revenu peuvent être estimés sans théorie. Mais comment utiliser ces informations pour répondre aux questions plus normatives?
 
@@ -26,11 +26,11 @@ Demande et Préférences
 
 Formalisons cet exemple: 
 
--  Essense (:math:`X`) et Transport en commun (:math:`Y`)
+-  Essence (:math:`X`) et Transport en commun (:math:`Y`)
 
 -  Utilité :math:`U(X,Y)`
 
--  Contrainte Budgétaire: :math:`p_X Y+ p_Y Y \leq I`
+-  Contrainte budgétaire: :math:`p_X Y+ p_Y Y \leq I`
 
 Les fonctions de demande :math:`(X^*, Y^*)` sont telles que 
 
@@ -60,7 +60,7 @@ On utilise :math:`p_X X + p_Y Y =  I` ce qui permet d'obtenir
 
 Comment :math:`X^*` et :math:`Y^*` varient en fonction de :math:`I`?
 
-Effets revenu
+Effets revenus
 +++++++++++++
 
 **Courbe d'Engel**
@@ -70,7 +70,7 @@ Effets revenu
 -  La courbe d'Engel pour :math:`X`: Comment :math:`X^*` change quand
    :math:`I` change?
 
--  Proportion du budget dédiée à :math:`X`:
+-  Proportion du budget dédié à :math:`X`:
    :math:`s_X = \frac{p_X X}{I}`
 
 **Bien normal**
@@ -88,19 +88,19 @@ L'essence est-elle un bien inférieur ou normal? Une étude de James Porterba su
 .. |poterba| image:: /images/poterba.png 
    :scale: 40%
 
-Pour quantifier les effets revenu, on voudra utiliser une élasticité-revenu de la forme: 
+Pour quantifier les effets revenus, on voudra utiliser une élasticité-revenu de la forme: 
 
 .. math::
 
    \eta_{X,I} = \frac{\partial X}{\partial I}\frac{I}{X}
 
-En pratique, il n'est pas facile d'observer ces élasticités-revenu en s'assurant que le changement de revenu est *exogène*. Quel type d'évennement pourrait-on exploiter?
+En pratique, il n'est pas facile d'observer ces élasticités-revenu en s'assurant que le changement de revenu est *exogène*. Quel type d'événement pourrait-on exploiter?
 
 Effets Prix
 +++++++++++
 
 Comment les demandes :math:`X^*` et :math:`Y^*` changent si 
-:math:`p_Y` et :math:`I` restent constants mais que :math:`p_X` change?
+:math:`p_Y` et :math:`I` restent constants, mais que :math:`p_X` change?
 
 Pour décrire les changements de demande, on utilise l'élasticité: 
 
@@ -110,7 +110,7 @@ Pour décrire les changements de demande, on utilise l'élasticité:
 
 Ell est invariante aux unités monétaires. Encore une fois, un enjeu important est d'estimer cette élasticité dans un contexte où le changement de prix qui est *exogène*. Heureusement, il y a les taxes qui changent parfois pour des raisons indépendantes de la demande... Sinon, des chocs d'offre (manipulation du prix d'un cartel, désastre naturel). 
 
-Au Danemark, une `étude <https://www.sciencedirect.com/science/article/abs/pii/S0094119018300779>`_ montre que l'elasticité varie considérablement à travers le pays et en particulier dépendant de la distance qu'ont à faire les gens chaque jours. 
+Au Danemark, une `étude <https://www.sciencedirect.com/science/article/abs/pii/S0094119018300779>`_ montre que l'élasticité varie considérablement à travers le pays et en particulier dépendant de la distance qu'ont à faire les gens chaque jour. 
 
 .. image:: /images/elasticity_denmark.png
    :scale: 65%
@@ -129,9 +129,9 @@ Une hausse de prix (ou taxe) a l'effet direct de réduire le bien-être du conso
 
    .. math:: \frac{U'_X(X,Y)}{U'_Y(X,Y)} = \frac{p_X}{p_Y}
 
--  Besoin de plus de revenu pour acheter le même panier de référence (réduction pouvoir d'achat): *effet revenu*. 
+-  Besoin de plus de revenus pour acheter le même panier de référence (réduction pouvoir d'achat): *effet revenu*. 
 
-Notre **objectif:** Identifier les effets prix et revenus
+Notre **objectif:** identifier les effets prix et revenus
 
 Demande compensée
 ^^^^^^^^^^^^^^^^^
@@ -142,10 +142,10 @@ La demande compensée est un passage obligé. Elle permettra de séparer ces eff
 
 -  Prix de référence :math:`(p_X,p_Y)`, revenu de référence :math:`I`, nouveau prix :math:`(\hat p_X,p_Y)`
 
--  Demande de référence, :math:`X(p_X,p_Y,I)`, utilité indirecte de référence
+-  Demande de référence :math:`X(p_X,p_Y,I)`, utilité indirecte de référence
    :math:`V(p_X,p_Y,I)`
 
--  Nouvelle demande, :math:`X(\hat p_X, p_Y, I)`, nouvelle utilité indirecte
+-  Nouvelle demande :math:`X(\hat p_X, p_Y, I)`, nouvelle utilité indirecte
    :math:`V(\hat p_X,p_Y,I)`.
 
 Le concept de revenu compensé: revenu :math:`I^{cmp}` tel qu'on peut préserver le niveau d'utilité de référence **aux nouveaux prix**. 
@@ -235,7 +235,7 @@ Alors, :math:`p_X \Delta X^{cmp}+ p_Y \Delta Y^{cmp}= 0`.
 .. figure:: /images/price_change.png
    :scale: 75
 
-   Dans l'espace :math:`(X,Y)`, nous considérons une augmentation de prix du bien :math:`X`, L'indice 1 réfère à la situation de référence et l'indice 2 à la situation après le changement de prix. Le consommateur est au point A dans la situation de référence. Avec le changement de prix, la contrainte budgétaire a une pente plus forte. Après le changement de prix, le consommateur est au point C. Pour décomposer le changement de prix, on compense le consommateur aux nouveaux prix. Il choisi alors le point B, avec la même utilité que dans la situation de référence. Le passage du point A au point B est l'effet substitution. L'effet revenu se mesure du point B au point C. 
+   Dans l'espace :math:`(X,Y)`, nous considérons une augmentation de prix du bien :math:`X`, L'indice 1 réfère à la situation de référence et l'indice 2 à la situation après le changement de prix. Le consommateur est au point A dans la situation de référence. Avec le changement de prix, la contrainte budgétaire a une pente plus forte. Après le changement de prix, le consommateur est au point C. Pour décomposer le changement de prix, on compense le consommateur aux nouveaux prix. Il choisit alors le point B, avec la même utilité que dans la situation de référence. Le passage du point A au point B est l'effet substitution. L'effet revenu se mesure du point B au point C. 
 
 Équation de Slutsky
 +++++++++++++++++++
@@ -256,7 +256,7 @@ On obtient
    \begin{aligned}
    \underbrace{\Delta X^*}_{\text{Effet total}} = \underbrace{\Delta X^{cmp}}_{\text{Effet substitution}} + \underbrace{\Delta X^I}_{\text{Effet prix}}\end{aligned}
 
-**Exercice C**: Trouvez les effets revenu et prix de l'exercice B (:math:`\Delta p_X = 1`). 
+**Exercice C**: Trouvez les effets revenus et prix de l'exercice B (:math:`\Delta p_X = 1`). 
 
 .. raw:: html
 
@@ -275,7 +275,7 @@ Puisque
    \begin{aligned}
    \Delta X^* &=   \underbrace{\Delta X^{{cmp}}}_{\leq 0} -   \underbrace{\frac{\partial X}{\partial I}\times \Delta p_X X^*}_{\geq 0 \text{ si normal, } <0 \text{ si inférieur}} \end{aligned}
 
-En terme d'élasticités,
+En termes d'élasticités,
 
 .. math::
 
@@ -286,7 +286,7 @@ L'équation de Slutsky est donc:
 
 .. math:: \eta_{X,p} = \eta^{cmp}_{X,p}  - \eta_{X,I} \cdot s_X
 
-**Exercice D**: Pour les préférences Cobb-Douglas :math:`U(X,Y) = X^\alpha Y^{1-\alpha}`, calculez l'élasticité prix compensée à l'aide de l'équation de Slutsky. 
+**Exercice D**: Pour les préférences Cobb-Douglas :math:`U(X,Y) = X^\alpha Y^{1-\alpha}`, calculez l'élasticité prix compensé à l'aide de l'équation de Slutsky. 
 
 .. raw:: html
 
@@ -333,7 +333,7 @@ Pour mesurer un changement du coût de la vie (pouvoir d'achat), on utilise des 
 
 .. math:: \pi_L = \frac{\hat p_X  X + \hat p_Y Y}{p_X X + p_Y Y}
 
-Ainsi :math:`X` et :math:`Y`, consommé dans la situation de référence, sont aussi utilisées après le changement de prix. L'indice des prix à la consommation garde les quantités (part des dépenses) fixes dans le court terme (les changent mais pas très fréquemment). Plusieurs prestations gouvernementales sont indexées annuellement de la sorte afin de maintenir le pouvoir d'achat (pensions, crédit d'impôt, etc). Mais est-ce un bon indice pour mesurer une variation du coût de la vie?
+Ainsi :math:`X` et :math:`Y`, consommé dans la situation de référence, sont aussi utilisées après le changement de prix. L'indice des prix à la consommation garde les quantités (part des dépenses) fixes dans le court terme (les changent, mais pas très fréquemment). Plusieurs prestations gouvernementales sont indexées annuellement de la sorte afin de maintenir le pouvoir d'achat (pensions, crédit d'impôt, etc). Mais est-ce un bon indice pour mesurer une variation du coût de la vie?
 
 La théorie qu'on vient de voir indique qu'il faut tenir compte des réactions comportementales. Si le prix d'un bien augmente, il y aura substitution. Pour bien mesurer la consommation, on revient à la théorie:  
 
@@ -356,7 +356,7 @@ Il existe un type de bien pour lequel la demande augmente avec le prix! On peut 
 
 Le premier terme à droite est toujours négatif. C'est le résultat de la loi de la demande compensée. Il faut donc que le 2e terme soit négatif (puisqu'il est soustrait du premier terme). 
 
-On en déduit qu'une condition nécessaire est que le bien soit inférieur (demande diminue quand revenu augmente) et que le bien consitue une part importante du budget pour que ce deuxième terme soit suffisament élevé. 
+On en déduit qu'une condition nécessaire est que le bien soit inférieur (demande diminue quand revenu augmente) et que le bien constitue une part importante du budget pour que ce deuxième terme soit suffisamment élevé. 
 
 Ainsi, il est possible que :math:`\eta_{X,p}>0`. Mais est-ce que ce cas spécial existe?
 

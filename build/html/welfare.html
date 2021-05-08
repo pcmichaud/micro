@@ -1,23 +1,31 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="fr" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
+<html class="writer-html5" lang="fr" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>Bien-être &mdash; Documentation Micro Notes </title>
   
 
   
-  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
   
   
 
   
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -26,16 +34,12 @@
         <script src="_static/doctools.js"></script>
         <script src="_static/language_data.js"></script>
         <script src="_static/translations.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script type="text/x-mathjax-config">MathJax.Hub.Config({"extensions": ["tex2jax.js"], "jax": ["input/TeX", "output/HTML-CSS"], "availableFonts": ["Neo-Euler", "TeX"], "preferredFont": ["Neo-Euler"], "scale": 60})</script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Recherche" href="search.html" />
     <link rel="next" title="Échange" href="echange.html" />
@@ -67,7 +71,7 @@
           
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Rechercher docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -76,6 +80,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -135,6 +140,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -169,19 +175,21 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html">Docs</a> &raquo;</li>
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
       <li>Bien-être</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
-            
-            <a href="_sources/welfare.rst.txt" rel="nofollow"> View page source</a>
+          
+            <a href="_sources/welfare.rst.txt" rel="nofollow"> Afficher la source de la page</a>
           
         
       </li>
@@ -198,7 +206,7 @@
 <h1>Bien-être<a class="headerlink" href="#bien-etre" title="Lien permanent vers ce titre">¶</a></h1>
 <p>Pour bien évaluer une politique, on peut regarder son efficacité, c’est-à-dire cible-t-elle le groupe visé, est-ce qu’elle a l’effet attendu sur les comportements, et combien coûte-t-elle étant donné son efficacité?</p>
 <p>Par exemple, une réglementation sur la qualité de l’air peut inciter plusieurs individus à changer de comportement. Le coût par unité d’amélioration de la qualité de l’air peut être élevé. Comment statuer si la politique est désirable?</p>
-<p>En général, la qualité de l’air est valorisée par la population. Donc, on peut mesurer les bénéfices par les préférences. Au final, on peut savoir si la réglementation est bénéfique étant donné son coût. Alors qu’on s’arrête souvent aux retombés économiques ou fiscales d’une intervention, on oublie très souvent de compter les bénéfices en terme de bien-être.</p>
+<p>En général, la qualité de l’air est valorisée par la population. Donc, on peut mesurer les bénéfices par les préférences. Au final, on peut savoir si la réglementation est bénéfique étant donné son coût. Alors qu’on s’arrête souvent aux retombées économiques ou fiscales d’une intervention, on oublie très souvent de compter les bénéfices en termes de bien-être.</p>
 <p>Afin de répondre à ces question, et permettre de juger des politiques, il faut aller une étape plus loin que ce qu’on a fait et se demander comment on peut mesurer le bien-être par les préférences.</p>
 <p>Trois approches existent: une approche utilitarienne, une approche hicksienne et finalement une approche du bonheur rapporté.</p>
 <div class="figure align-default">
@@ -209,15 +217,15 @@
 <p>Pour chaque citoyen <span class="math notranslate nohighlight">\(i\in \{1,\ldots,N\}\)</span>, on peut construire une fonction d’utilité <span class="math notranslate nohighlight">\(U_i\)</span> qui représente ses préférences sur pour un panier de bien dans un ensemble <span class="math notranslate nohighlight">\(B\)</span>. Supposons que chaque citoyen obtient le panier <span class="math notranslate nohighlight">\(B_1\)</span>, <span class="math notranslate nohighlight">\(B_2\)</span>, …, <span class="math notranslate nohighlight">\(B_N\)</span>. Selon cette approche une mesure d’un bien-être est</p>
 <div class="math notranslate nohighlight">
 \[U_1(B_1) + U_2(B_2) + \ldots + U_N(B_N).\]</div>
-<p>Si on utilise ce critère de bien-être, alors une politique <span class="math notranslate nohighlight">\(\mathcal P_0\)</span> est mieux que l’alternative <span class="math notranslate nohighlight">\(\mathcal P_1\)</span> si la somme des utilités est plus élevée. Içi la fonction qui aggrège les utilités des différents citoyens est linéaire, tel que proposé par <a class="reference external" href="https://fr.wikipedia.org/wiki/Jeremy_Bentham">Bentham</a>, mais on peut aussi généraliser à d’autres formes, par exemple l’utilité minimale sous-jacente à la théorie de la justice sociale de (<a class="reference external" href="https://fr.wikipedia.org/wiki/John_Rawls">Rawls</a>).</p>
-<p>Cette approche est problématique et peu utilisée. Elle suppose des utilités cardinales alors que les utilités sont ordinales… On se rappelle que <span class="math notranslate nohighlight">\(U_1\)</span> represente les préférences du citoyen <span class="math notranslate nohighlight">\(1\)</span>, mais <span class="math notranslate nohighlight">\(f(U_1)\)</span> représente les mêmes préférences pour n’importe quelle fonction croissante <span class="math notranslate nohighlight">\(f\)</span>. Il existe un nombre infini de fonctions d’utilités qui représentent les mêmes préférences. Par exemple, on aurait pu prendre <span class="math notranslate nohighlight">\(2\times U_1\)</span>, ce qui peut affecter le choix de politique si une politique favorise davantage ce citoyen…</p>
-<p>Donc, le classement des politiques est ambigue: on peut avoir <span class="math notranslate nohighlight">\(\mathcal P_0\)</span> meilleure  si <span class="math notranslate nohighlight">\(W = U_1 + U_2\)</span> alors que <span class="math notranslate nohighlight">\(\mathcal P_1\)</span> est meilleure si on utilise <span class="math notranslate nohighlight">\(W = 2U_1 + U_2\)</span></p>
+<p>Si on utilise ce critère de bien-être, alors une politique <span class="math notranslate nohighlight">\(\mathcal P_0\)</span> est mieux que l’alternative <span class="math notranslate nohighlight">\(\mathcal P_1\)</span> si la somme des utilités est plus élevée. Ici la fonction qui agrège les utilités des différents citoyens est linéaire, tel que proposé par <a class="reference external" href="https://fr.wikipedia.org/wiki/Jeremy_Bentham">Bentham</a>, mais on peut aussi généraliser à d’autres formes, par exemple l’utilité minimale sous-jacente à la théorie de la justice sociale de (<a class="reference external" href="https://fr.wikipedia.org/wiki/John_Rawls">Rawls</a>).</p>
+<p>Cette approche est problématique et peu utilisée. Elle suppose des utilités cardinales alors que les utilités sont ordinales… On se rappelle que <span class="math notranslate nohighlight">\(U_1\)</span> représente les préférences du citoyen <span class="math notranslate nohighlight">\(1\)</span>, mais <span class="math notranslate nohighlight">\(f(U_1)\)</span> représente les mêmes préférences pour n’importe quelle fonction croissante <span class="math notranslate nohighlight">\(f\)</span>. Il existe un nombre infini de fonctions d’utilités qui représentent les mêmes préférences. Par exemple, on aurait pu prendre <span class="math notranslate nohighlight">\(2\times U_1\)</span>, ce qui peut affecter le choix de politique si une politique favorise davantage ce citoyen…</p>
+<p>Donc, le classement des politiques est ambigu: on peut avoir <span class="math notranslate nohighlight">\(\mathcal P_0\)</span> meilleure  si <span class="math notranslate nohighlight">\(W = U_1 + U_2\)</span> alors que <span class="math notranslate nohighlight">\(\mathcal P_1\)</span> est meilleure si on utilise <span class="math notranslate nohighlight">\(W = 2U_1 + U_2\)</span></p>
 <p>En somme, le bien-être devrait dépendre des préférences et non de <span class="math notranslate nohighlight">\(U\)</span>. Il demeure que sans trahir l’ordinalité des préférences, les utilités demeurent utiles. On peut définir par exemple une <strong>amélioration au sens de Pareto</strong>, si l’utilité de tous les individus est au moins égale au niveau de référence avec un changement de politique. Si personne ne perd, et que certains gagnent, cette situation peut être considérée meilleure au sens de <a class="reference external" href="https://fr.wikipedia.org/wiki/Vilfredo_Pareto">Pareto</a>. L’amélioration au sens de Pareto est indépendante de l’échelle de l’utilité. C’est un concept ordinal.</p>
 </div>
 <div class="section" id="variation-compensatoire">
 <h2>Variation compensatoire<a class="headerlink" href="#variation-compensatoire" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Une approche plus prometteuse est de quantifier de façon monétaire le bien-être à l’aide des préférences. <a class="reference external" href="https://fr.wikipedia.org/wiki/John_Hicks">John Hicks</a> propose d’utiliser la variation compensatoire.</p>
-<p>Qu’est-ce qu’une politique dans le problème du consommateur? Une politique <span class="math notranslate nohighlight">\(\mathcal P\)</span> définie une contrainte budgétaire <span class="math notranslate nohighlight">\(C_i(\mathcal P,I_i)\)</span> pour le citoyen <span class="math notranslate nohighlight">\(i\)</span> (où <span class="math notranslate nohighlight">\(I_i\)</span> est le revenu).</p>
+<p>Qu’est-ce qu’une politique dans le problème du consommateur? Une politique <span class="math notranslate nohighlight">\(\mathcal P\)</span> défini une contrainte budgétaire <span class="math notranslate nohighlight">\(C_i(\mathcal P,I_i)\)</span> pour le citoyen <span class="math notranslate nohighlight">\(i\)</span> (où <span class="math notranslate nohighlight">\(I_i\)</span> est le revenu).</p>
 <p>On peut utiliser l’utilité indirecte comme point de départ. L’utilité maximale du citoyen <span class="math notranslate nohighlight">\(i\)</span> étant donné sa contrainte est:</p>
 <blockquote>
 <div><div class="math notranslate nohighlight">
@@ -226,12 +234,12 @@
 <p>Exemple: Deux biens <span class="math notranslate nohighlight">\(X\)</span> et <span class="math notranslate nohighlight">\(Y\)</span>. Utilité <span class="math notranslate nohighlight">\(U(X,Y) = \log X + \log Y\)</span>. Une politique <span class="math notranslate nohighlight">\(\mathcal P\)</span>: avec une taxe multiplicative <span class="math notranslate nohighlight">\(\tau\)</span> sur le prix de <span class="math notranslate nohighlight">\(Y\)</span>. Alors l’utilité indirecte est donnée par:</p>
 <div class="math notranslate nohighlight">
 \[U_i^*(\mathcal P,I) = \max_{X,Y} \left[\log X + \log Y: p_X  X + p_Y(1 + \tau) Y \leq I \right]\]</div>
-<p>Dénotons <span class="math notranslate nohighlight">\(\mathcal P_0\)</span> le statut quo et considèrons l’implémentation de la politique <span class="math notranslate nohighlight">\(\mathcal P\)</span>. On peut définir la variation compensatoire comme étant le montant <span class="math notranslate nohighlight">\(\Delta I^{CV}\)</span> tel que</p>
+<p>Dénotons <span class="math notranslate nohighlight">\(\mathcal P_0\)</span> le statu quo et considérons l’implémentation de la politique <span class="math notranslate nohighlight">\(\mathcal P\)</span>. On peut définir la variation compensatoire comme étant le montant <span class="math notranslate nohighlight">\(\Delta I^{CV}\)</span> tel que</p>
 <blockquote>
 <div><div class="math notranslate nohighlight">
 \[U^*(\mathcal P_0,I) = U^*(\mathcal P,I - \Delta I^{CV})\]</div>
 </div></blockquote>
-<p>C’est le montant qu’on doit retirer au consommateur pour garder son bien-être constant au niveau du statut quo.</p>
+<p>C’est le montant qu’on doit retirer au consommateur pour garder son bien-être constant au niveau du statu quo.</p>
 <p>Note: on utilise une convention de signe telle que <span class="math notranslate nohighlight">\(\Delta I^{CV}&gt;0\)</span> quand le changement de politique est <em>bénéfique</em>. Par exemple, une baisse de taxe, une hausse des transferts, une baisse de prix.</p>
 <p><strong>Exercice A</strong>: Trouvez l’expression de la variation compensatoire pour
 <span class="math notranslate nohighlight">\(U = XY\)</span> et une taxe <span class="math notranslate nohighlight">\(\tau\)</span> sur le bien <span class="math notranslate nohighlight">\(Y\)</span>.</p>
@@ -267,13 +275,13 @@ V(X_0) + Y_0 &amp;= V(X_1) + Y_1 - \Delta I^{CV} \\
 <div class="section" id="surplus-du-consommateur">
 <h2>Surplus du consommateur<a class="headerlink" href="#surplus-du-consommateur" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Supposons le cas de préférences représentées par l’utilité quasi-linéaire pour le bien <span class="math notranslate nohighlight">\(X\)</span> et l’argent <span class="math notranslate nohighlight">\(Y\)</span>. <span class="math notranslate nohighlight">\(U(X,Y) = V(X) + Y\)</span>. Supposons que <span class="math notranslate nohighlight">\(V\)</span> est concave (<span class="math notranslate nohighlight">\(dV/dX\)</span> diminue en <span class="math notranslate nohighlight">\(X\)</span>).</p>
-<p>Considérons une situation où le bien <span class="math notranslate nohighlight">\(X\)</span> ne peut être acheté, <span class="math notranslate nohighlight">\(\mathcal P_0\)</span> et une alternative où <span class="math notranslate nohighlight">\(\mathcal P\)</span> permet d’acheter le bien <span class="math notranslate nohighlight">\(X\)</span> au prix <span class="math notranslate nohighlight">\(p_X\)</span>. Le problème est donné par</p>
+<p>Considérons une situation où le bien <span class="math notranslate nohighlight">\(X\)</span> ne peut être acheté <span class="math notranslate nohighlight">\(\mathcal P_0\)</span> et une alternative où <span class="math notranslate nohighlight">\(\mathcal P\)</span> permet d’acheter le bien <span class="math notranslate nohighlight">\(X\)</span> au prix <span class="math notranslate nohighlight">\(p_X\)</span>. Le problème est donné par</p>
 <div class="math notranslate nohighlight">
 \[\max_{X,Y} U(X,Y) \quad s.c. \quad p_X X + Y = I\]</div>
 <p>On peut substituer la contrainte pour obtenir <span class="math notranslate nohighlight">\(\max_{X} V(X) + I - p_X X\)</span>. La CPO est</p>
 <div class="math notranslate nohighlight">
 \[\frac{dV}{dX} =  p_X\]</div>
-<p>ce qui permet de trouver la demande <span class="math notranslate nohighlight">\(X^*(p_X)\)</span>. Dénotons <span class="math notranslate nohighlight">\(p_X(X^*) = \frac{dV}{dX}\)</span>, la fonction de demande inverse. Ainsi un point sur cette demande inverse donne la disposition à payer pour une unité de <span class="math notranslate nohighlight">\(X\)</span>.</p>
+<p>Ce qui permet de trouver la demande <span class="math notranslate nohighlight">\(X^*(p_X)\)</span>. Dénotons <span class="math notranslate nohighlight">\(p_X(X^*) = \frac{dV}{dX}\)</span>, la fonction de demande inverse. Ainsi un point sur cette demande inverse donne la disposition à payer pour une unité de <span class="math notranslate nohighlight">\(X\)</span>.</p>
 <p>Dans le cas d’un nouveau produit, la variation compensatoire de <span class="math notranslate nohighlight">\(\mathcal P_0\)</span> à <span class="math notranslate nohighlight">\(\mathcal P\)</span> est le surplus du consommateur.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
@@ -296,13 +304,13 @@ V(X_0) + Y_0 &amp;= V(X_1) + Y_1 - \Delta I^{CV} \\
 </div>
 <p>La taxation affecte le prix payé par le consommateur. Donc, elle a des effets sur le bien-être. Dans la théorie du consommateur, nous avons déjà vu qu’une hausse de prix réduit le bien-être du consommateur. Nous avons qu’à appliquer le concept de revenu compensé à l’analyse des taxes.</p>
 <p>Considérons l’élimination d’une taxe, le prix passant de <span class="math notranslate nohighlight">\(p_X = p+t\)</span> à <span class="math notranslate nohighlight">\(p_X = p\)</span> . On a <span class="math notranslate nohighlight">\(X^*(p) &gt; X^*(p+t)\)</span> (le bien n’est pas <em>Giffen</em>). Le revenu de la taxe est <span class="math notranslate nohighlight">\(T= t X^*(p+t)\)</span>. Quand le gouvernement collecte une taxe, il faut implicitement faire comme si les revenus seront redistribués de manière forfaitaire. Du point de vue du bien-être, l’argent collecté par le gouvernement n’est pas perdu…</p>
-<p>En terme de variation compensatoire, on a</p>
+<p>En termes de variation compensatoire, on a</p>
 <blockquote>
 <div><div class="math notranslate nohighlight">
 \[\Delta I^{CV} =  U[X^*(p), I - pX^*(p)] - U[X^*(p+t), I - (p+t) X^*(p+t)] &gt; 0\]</div>
 </div></blockquote>
 <p>On obtient que <span class="math notranslate nohighlight">\(\Delta I^{CV} &gt; T\)</span>: Le consommateur est prêt à payer un montant supérieur au revenu généré par la taxe pour le gouvernement. Donc, l’élimination de la taxe lui est bénéfique.</p>
-<p>Le gain de bien-être associée à l’élimination de la  taxe est donc <span class="math notranslate nohighlight">\(\Delta W = \Delta I^{CV} - T\)</span>. Pourquoi le <span class="math notranslate nohighlight">\(T\)</span> est soustrait? En enlevant la taxe, le gouvernement ne peut plus destribuer de manière forfaitaire les revenus de la taxe. Donc, il faut l’enlever du changement de surplus du consommateur.  Si on introduit une taxe, on a plutôt,  <span class="math notranslate nohighlight">\(\Delta W = \Delta I^{CV} + T\)</span> parce qu’on doit redistribuer de manière forfaitaire les revenus de la taxe, ce qui est un gain pour le consommateur.</p>
+<p>Le gain de bien-être associé à l’élimination de la  taxe est donc <span class="math notranslate nohighlight">\(\Delta W = \Delta I^{CV} - T\)</span>. Pourquoi le <span class="math notranslate nohighlight">\(T\)</span> est soustrait? En enlevant la taxe, le gouvernement ne peut plus distribuer de manière forfaitaire les revenus de la taxe. Donc, il faut l’enlever du changement de surplus du consommateur.  Si on introduit une taxe, on a plutôt,  <span class="math notranslate nohighlight">\(\Delta W = \Delta I^{CV} + T\)</span> parce qu’on doit redistribuer de manière forfaitaire les revenus de la taxe, ce qui est un gain pour le consommateur.</p>
 <p><strong>Exercice C</strong>: Si <span class="math notranslate nohighlight">\(V(X) = 10 X - \frac{1}{2}X^2\)</span>, trouvez la perte de bien-être associée à une nouvelle taxe <span class="math notranslate nohighlight">\(t\)</span> sur le bien <span class="math notranslate nohighlight">\(X\)</span>. Montrez graphiquement cette perte.</p>
 </div>
 <div class="section" id="bien-etre-et-environnement">
@@ -311,23 +319,23 @@ V(X_0) + Y_0 &amp;= V(X_1) + Y_1 - \Delta I^{CV} \\
 <div class="figure align-default">
 <a class="reference internal image-reference" href="_images/china_pollution.jpg"><img alt="_images/china_pollution.jpg" src="_images/china_pollution.jpg" style="width: 330.0px; height: 185.5px;" /></a>
 </div>
-<p>Il n’y a pas de marché pour la qualité de l’air. Avec le <em>Clean Air Act</em> (1977), le gouvernement Americain a mis en place un nombre important de mesures pour réduire la pollution. Les lois sont couteuses à implémenter et faire respecter. Pour justifier ces lois, on doit montrer que les bénéfices sont élevés.</p>
+<p>Il n’y a pas de marché pour la qualité de l’air. Avec le <em>Clean Air Act</em> (1977), le gouvernement américain a mis en place un nombre important de mesures pour réduire la pollution. Les lois sont couteuses à implémenter et faire respecter. Pour justifier ces lois, on doit montrer que les bénéfices sont élevés.</p>
 <p>Considérons un changement de politique <span class="math notranslate nohighlight">\(\mathcal P_0\)</span>: aucun contrôle, aucun coût, à <span class="math notranslate nohighlight">\(\mathcal P\)</span>: contrôle de la pollution, ce qui implique des coûts. La variation compensatoire devrait être positive si les citoyens valorisent la qualité de l’air.</p>
 <p>Empiriquement, comment faire pour estimer les préférences?</p>
-<p>On peut trouver une situation où des gens ont du faire un arbitrage entre pollution et leur richesse financière. Par exemple, l’achat d’une maison dépend bien sur du prix mais aussi de l’environnement, etc. Les prix et la qualité de l’air varient à l’intérieur d’une ville. Dans un marché, les prix devraient être plus élevés quand la qualité de l’air est plus élevée si les acheteurs valorisent la qualité de l’air.</p>
-<p>En utilisant des données provenant de transactions immobilières on peut déterminer la valeur accordée à la qualité de l’air.  Définir <span class="math notranslate nohighlight">\(X\)</span> comme étant mesure de la qualité de l’air,  (e.g. concentration de particules) On peut postuler une fonction d’utilité quasi-linéaire:</p>
+<p>On peut trouver une situation où des gens ont dû faire un arbitrage entre pollution et leur richesse financière. Par exemple, l’achat d’une maison dépend bien sûr du prix, mais aussi de l’environnement, etc. Les prix et la qualité de l’air varient à l’intérieur d’une ville. Dans un marché, les prix devraient être plus élevés quand la qualité de l’air est plus élevée si les acheteurs valorisent la qualité de l’air.</p>
+<p>En utilisant des données provenant de transactions immobilières, on peut déterminer la valeur accordée à la qualité de l’air.  Définir <span class="math notranslate nohighlight">\(X\)</span> comme étant mesure de la qualité de l’air,  (e.g. concentration de particules) On peut postuler une fonction d’utilité quasi-linéaire:</p>
 <div class="math notranslate nohighlight">
 \[U(X, Y) = V(X) + Y = \alpha X + \beta X^2 +Y\]</div>
-<p>Avec cette fonction d’utilité, <span class="math notranslate nohighlight">\(V'(X)\)</span> représente la disposition à payer pour la qualité de l’air. En régressant le prix des transactions sur <span class="math notranslate nohighlight">\(X\)</span> et en controllant pour d’autres facteurs affectant le prix des transactions, on obtient un estimé de <span class="math notranslate nohighlight">\(V'(X)\)</span>.</p>
+<p>Avec cette fonction d’utilité <span class="math notranslate nohighlight">\(V'(X)\)</span> représente la disposition à payer pour la qualité de l’air. En régressant le prix des transactions sur <span class="math notranslate nohighlight">\(X\)</span> et en contrôlant pour d’autres facteurs affectant le prix des transactions, on obtient un estimé de <span class="math notranslate nohighlight">\(V'(X)\)</span>.</p>
 <p><a class="reference external" href="https://www.jstor.org/stable/10.1086/427462">Chay et Greenstone (2005)</a> obtiennent des estimés de l’élasticité prix-particule (entre -0.2 et -0.35).</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="_images/chay.png"><img alt="_images/chay.png" src="_images/chay.png" style="width: 514.0px; height: 581.0px;" /></a>
 </div>
-<p>Maintenant, comment évaluer une politique avec ces informations? Le gouvernment dépense <span class="math notranslate nohighlight">\(X_{GOV}\)</span>. Le coût pour financer ces dépenses est <span class="math notranslate nohighlight">\(c X_{GOV}\)</span> avec <span class="math notranslate nohighlight">\(c&gt;1\)</span> est le coût incluant la perte de bien-être dû à la taxation nécessaire.</p>
+<p>Maintenant, comment évaluer une politique avec ces informations? Le gouvernement dépense <span class="math notranslate nohighlight">\(X_{GOV}\)</span>. Le coût pour financer ces dépenses est <span class="math notranslate nohighlight">\(c X_{GOV}\)</span> avec <span class="math notranslate nohighlight">\(c&gt;1\)</span> est le coût incluant la perte de bien-être dû à la taxation nécessaire.</p>
 <p>La politique change de  <span class="math notranslate nohighlight">\((0,0)\)</span> à <span class="math notranslate nohighlight">\((X_{GOV}, - c X_{GOV})\)</span>. Le surplus du consommateur est la variation compensatoire:</p>
 <div class="math notranslate nohighlight">
 \[\Delta I^{CV} =  V(X_{GOV}) - V(0) - c X_{GOV} .\]</div>
-<p>Une fois l’analyse faite, on peut aussi se demander quelle serait la qualité de l’air optimale afin de voir s’il est encore possible de resserer les restrictions.</p>
+<p>Une fois l’analyse faite, on peut aussi se demander quelle serait la qualité de l’air optimale afin de voir s’il est encore possible de resserrer les restrictions.</p>
 <p>La pollution optimale est le niveau de pollution qui maximise:</p>
 <div class="math notranslate nohighlight">
 \[U(X) = V(X) + I - c X\]</div>
@@ -340,26 +348,26 @@ V(X_0) + Y_0 &amp;= V(X_1) + Y_1 - \Delta I^{CV} \\
 <p><strong>Exercice D</strong>: Pollution par le bruit. L’élasticité prix des maisons à la pollution par le bruit est -0.2. Le gouvernement considère réduire le niveau de pollution de 10% près d’une autoroute. Les ingénieurs nous disent que la technologie nécessaire coûtera 1000$ pour chaque propriété. La politique est financée par une taxe qui mène à une perte de bien être de 43 cents pour chaque dollar à financer. Est-ce que cette politique augmente le bien-être?</p>
 <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
     <iframe src="https://www.youtube.com/embed/ud9JiRUpcfg" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-</div><p>Cette approche est très utilisée. Même si a priori, ces problèmes semblent dépendre de la spécification des préférences, ce n’est pas toujours le cas, comme le montre l’exercice D (on a besoin que de l’élasticité prix dans l’exercice). Une autre enjeu est la possibilité que certains aient une variation compensatoire négative alors que pour d’autres celles-ci sont positives. A moins de spécifier un mécanisme pour aggréger les variations compensatoires (une somme?), ce qui n’est pas neutre d’un point de vue de l’équité, l’approche la plus commune sera de parler d’amélioration potentielle de Pareto si la somme des variations compensatoires est positive et où une forme de compensation pourrait être prévue pour ceux qui y perdent. La pluspart des politiques font des perdants. Il est donc tout aussi important de statuer sur la désirabilité de la politique que d’identifier les perdants afin de les compenser.</p>
+</div><p>Cette approche est très utilisée. Même si a priori, ces problèmes semblent dépendre de la spécification des préférences, ce n’est pas toujours le cas, comme le montre l’exercice D (on a besoin que de l’élasticité prix dans l’exercice). Un autre enjeu est la possibilité que certains aient une variation compensatoire négative alors que pour d’autres celles-ci sont positives. À moins de spécifier un mécanisme pour agréger les variations compensatoires (une somme?), ce qui n’est pas neutre d’un point de vue de l’équité, l’approche la plus commune sera de parler d’amélioration potentielle de Pareto si la somme des variations compensatoires est positive et une forme de compensation pourrait être prévue pour ceux qui y perdent. La plupart des politiques font des perdants. Il est donc tout aussi important de statuer sur la désirabilité de la politique que d’identifier les perdants afin de les compenser.</p>
 </div>
 <div class="section" id="approche-bonheur-rapporte">
 <h2>Approche bonheur rapporté<a class="headerlink" href="#approche-bonheur-rapporte" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Pourquoi ne pas simplement demander aux gens s’ils sont heureux? Sur une échelle allant de 1 à 10, ête-vous heureux? Ceci évite d’avoir à spécifier les préférences.  C’est une approche qui gagne une certaine crédibilité avec <a class="reference external" href="https://www.weforum.org/agenda/2019/05/new-zealand-is-publishing-its-first-well-being-budget/">le budget 2019 en Nouvelle-Zélande</a>. C’est <a class="reference external" href="https://fr.wikipedia.org/wiki/Richard_Easterlin">Richard Easterlin</a> qui a beaucoup popularisé l’utilisation de mesures directes du bien-être. Le Paradox de Easterlin a longtemps suscité de l’intérêt:</p>
+<p>Pourquoi ne pas simplement demander aux gens s’ils sont heureux? Sur une échelle allant de 1 à 10, êtes-vous heureux? Ceci évite d’avoir à spécifier les préférences.  C’est une approche qui gagne une certaine crédibilité avec <a class="reference external" href="https://www.weforum.org/agenda/2019/05/new-zealand-is-publishing-its-first-well-being-budget/">le budget 2019 en Nouvelle-Zélande</a>. C’est <a class="reference external" href="https://fr.wikipedia.org/wiki/Richard_Easterlin">Richard Easterlin</a> qui a beaucoup popularisé l’utilisation de mesures directes du bien-être. Le Paradox de Easterlin a longtemps suscité de l’intérêt:</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="_images/easterlin.png"><img alt="_images/easterlin.png" src="_images/easterlin.png" style="width: 633.0px; height: 391.0px;" /></a>
 </div>
-<p>Donc, on ne serait pas plus heureux avec davantage de revenu, un résultat contre-intuitif: l’argent ne fait pas le bonheur. Mais plus tard, on a montré que ce Paradoxe ne tenait plus:</p>
+<p>Donc, on ne serait pas plus heureux avec davantage de revenus, un résultat contre-intuitif: l’argent ne fait pas le bonheur. Mais plus tard, on a montré que ce Paradoxe ne tenait plus:</p>
 <div class="figure align-default" id="id2">
 <a class="reference internal image-reference" href="_images/wolfers.png"><img alt="_images/wolfers.png" src="_images/wolfers.png" style="width: 493.0px; height: 614.0px;" /></a>
 <p class="caption"><span class="caption-text"><a class="reference external" href="http://users.nber.org/~jwolfers/papers/Satiation(AER).pdf">Stevenson and Wolfers (2013), AER: Papers and
 Proceedings</a></span><a class="headerlink" href="#id2" title="Lien permanent vers cette image">¶</a></p>
 </div>
-<p>Il n’en demeure pas moins, que ces mesures peuvent être utile puisque le bonheur, c’est plus qu’un portefeuille bien garnie. Pourquoi ne pas utiliser les mesures directes du bien-être pour évaluer les politiques?</p>
+<p>Il n’en demeure pas moins, que ces mesures peuvent être utiles puisque le bonheur, c’est plus qu’un portefeuille bien garni. Pourquoi ne pas utiliser les mesures directes du bien-être pour évaluer les politiques?</p>
 <ul class="simple">
 <li><p>Avantages: méthode directe sans avoir besoin d’un modèle qui prend en compte toutes les dimensions du bien-être.</p></li>
 <li><p>Inconvénients: On peut mesurer le bien-être de différentes façons et les gens ont des manières différentes de répondre. Plusieurs biais psychologiques en jeu.</p></li>
 </ul>
-<p>Très peu d’études utilisent ces mesures pour évaluater des politiques. Mais il y a beaucoup d’intérêt, pour de bonnes raisons.</p>
+<p>Très peu d’études utilisent ces mesures pour évaluer des politiques. Mais il y a beaucoup d’intérêt, pour de bonnes raisons.</p>
 <p>Pour ceux qui veulent approfondir, voici une entrevue avec Angus Deaton sur la mesure du bonheur:</p>
 <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
     <iframe src="https://www.youtube.com/embed/pfHcdee4R3M" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
@@ -377,29 +385,29 @@ Proceedings</a></span><a class="headerlink" href="#id2" title="Lien permanent ve
            
           </div>
           <footer>
-  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="echange.html" class="btn btn-neutral float-right" title="Échange" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="labor.html" class="btn btn-neutral float-left" title="Le Travail" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+        <a href="echange.html" class="btn btn-neutral float-right" title="Échange" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="labor.html" class="btn btn-neutral float-left" title="Le Travail" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2020, Pierre-Carl Michaud
+        &#169; Copyright 2020, Pierre-Carl Michaud.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
-
         </div>
       </div>
 
@@ -407,7 +415,6 @@ Proceedings</a></span><a class="headerlink" href="#id2" title="Lien permanent ve
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

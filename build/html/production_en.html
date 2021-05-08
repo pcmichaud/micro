@@ -1,23 +1,31 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="fr" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
+<html class="writer-html5" lang="fr" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>Production &mdash; Documentation Micro Notes </title>
   
 
   
-  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
   
   
 
   
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -26,16 +34,12 @@
         <script src="_static/doctools.js"></script>
         <script src="_static/language_data.js"></script>
         <script src="_static/translations.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script type="text/x-mathjax-config">MathJax.Hub.Config({"extensions": ["tex2jax.js"], "jax": ["input/TeX", "output/HTML-CSS"], "availableFonts": ["Neo-Euler", "TeX"], "preferredFont": ["Neo-Euler"], "scale": 60})</script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Recherche" href="search.html" />
     <link rel="next" title="Imperfect Competition" href="strategy_en.html" />
@@ -67,7 +71,7 @@
           
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Rechercher docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -76,6 +80,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -119,7 +124,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#marginal-cost">Marginal Cost</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#profit-maximization">Profit Maximization</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#production-economy">Production Economy</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#python-example">Python example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#python-example">Python Example</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="strategy_en.html">Imperfect Competition</a></li>
@@ -137,6 +142,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -171,19 +177,21 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html">Docs</a> &raquo;</li>
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
       <li>Production</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
-            
-            <a href="_sources/production_en.rst.txt" rel="nofollow"> View page source</a>
+          
+            <a href="_sources/production_en.rst.txt" rel="nofollow"> Afficher la source de la page</a>
           
         
       </li>
@@ -198,10 +206,10 @@
             
   <div class="section" id="production">
 <h1>Production<a class="headerlink" href="#production" title="Lien permanent vers ce titre">¶</a></h1>
-<p>In the exchange economy, endownments were given. In the real world, they do not fall from the sky. They are often produced. Often, goods are produced from other goods by firms. Firms are owned by consumers. Why do firms exist? <a class="reference external" href="https://fr.wikipedia.org/wiki/Ronald_Coase">Ronald Coase</a> proposed a simple explanation: firms are there to internalize transactions costs in order to produce goods.Without these organizations, difficult to produce at low cost things like laptops, furniture. There are returns to scale which makes it possible for firms to produce on a great scale at low cost. Organizations also promote innovation by bringing together people who make share ideas and develop new products and services. We will present how economists think of decisions make by firms in a production context. This will lead us back to general equilibrium.</p>
+<p>In the exchange economy, endowments were given. In the real world, they do not fall from the sky. They are often produced. Often, goods are produced from other goods by firms. Firms are owned by consumers. Why do firms exist? <a class="reference external" href="https://fr.wikipedia.org/wiki/Ronald_Coase">Ronald Coase</a> proposed a simple explanation: firms are there to internalize transactions costs in order to produce goods.Without these organizations, difficult to produce at low-cost things like laptops, furniture. There are returns to scale which makes it possible for firms to produce on a great scale at low cost. Organizations also promote innovation by bringing together people who make share ideas and develop new products and services. We will present how economists think of decisions make by firms in a production context. This will lead us back to general equilibrium.</p>
 <div class="section" id="production-function">
 <h2>Production Function<a class="headerlink" href="#production-function" title="Lien permanent vers ce titre">¶</a></h2>
-<p>We will think of a simple firm who produces an output from potentially multiple inputs. This process is represented by a production function <span class="math notranslate nohighlight">\(F(\cdot)\)</span>. The production function can be estimated using econometric methods, in collaboration perhaps with engineers who know a lot about the production process.</p>
+<p>We will think of a simple firm that produces an output from potentially multiple inputs. This process is represented by a production function <span class="math notranslate nohighlight">\(F(\cdot)\)</span>. The production function can be estimated using econometric methods, in collaboration perhaps with engineers who know a lot about the production process.</p>
 <p><strong>Example: one input and output</strong></p>
 <ul class="simple">
 <li><p>e.g. Iron Ore Mine  — input: work  <span class="math notranslate nohighlight">\(L\)</span>, output: iron
@@ -237,7 +245,7 @@
 </div>
 <div class="section" id="returns-to-scale">
 <h2>Returns to scale<a class="headerlink" href="#returns-to-scale" title="Lien permanent vers ce titre">¶</a></h2>
-<p>The factory manager wishes to double production. He is asking you in which proportion he should increase his purchases of inputs. The marginal productivity is not useful for this purpose as it is a concept that looks at how much production increases when one input increases and the others are constant. Second, this is not a marginal change, since we are looking to double production. Turns out we can look at returns to scale of a production function. A function has returns to scale which are:</p>
+<p>The factory manager hopes to double production. He is asking you in which proportion he should increase his purchases of inputs. The marginal productivity is not useful for this purpose as it is a concept that looks at how much production increases when one input increases and the others are constant. Second, this is not a marginal change, since we are looking to double production. Turns out we can look at returns to scale of a production function. A function has returns to scale which are:</p>
 <ul class="simple">
 <li><p>constant: if <span class="math notranslate nohighlight">\(F(X,Z)\)</span> is homgeneous of degree 1</p></li>
 <li><p>increasing: if <span class="math notranslate nohighlight">\(F(X,Z)\)</span> is homgeneous of degree greater than 1.</p></li>
@@ -312,7 +320,7 @@
 <div class="math notranslate nohighlight">
 \[c(p_X,p_Z,Y) = \frac{\partial C(p_X,p_Z,Y)}{\partial Y}\]</div>
 <p>We use the convention of using lower case <span class="math notranslate nohighlight">\(c\)</span> to denote marginal cost while upper case C for total costs.</p>
-<p>Using the enveloppe theorem we can show that</p>
+<p>Using the envelope theorem, we can show that</p>
 <div class="math notranslate nohighlight">
 \[\frac{\partial C(p_X,p_Z,Y)}{\partial Y} = \mu\]</div>
 <p><span class="math notranslate nohighlight">\(\mu\)</span> is therefore the marginal cost at the optimum.</p>
@@ -372,7 +380,7 @@
 <li><p>Consider two consumers C1 and C2</p></li>
 <li><p>Preferences of consumers are represented by <span class="math notranslate nohighlight">\(U_1(X, Y)\)</span> and
 <span class="math notranslate nohighlight">\(U_2(X,Y)\)</span></p></li>
-<li><p>Consumer 1 has endownments <span class="math notranslate nohighlight">\((X^{C1,e},
+<li><p>Consumer 1 has endowments <span class="math notranslate nohighlight">\((X^{C1,e},
 Y^{C1,e})\)</span> while consumer 2 has <span class="math notranslate nohighlight">\((X^{C2,e}, Y^{C2,e})\)</span></p></li>
 <li><p>Each consumer gets a share of profits from the firm <span class="math notranslate nohighlight">\(\rho_{1}\)</span> and
 <span class="math notranslate nohighlight">\(\rho_2 = 1- \rho_1\)</span>.</p></li>
@@ -434,13 +442,13 @@ Y^{C2,d} = \frac{\alpha}{1+\alpha} \frac{I_2}{p}\end{split}\]</div>
 <p>If we summarize the method</p>
 <ul class="simple">
 <li><p>Given prices, profit maximization gives input demands and supply of the firm. We can compute the profits.</p></li>
-<li><p>Given prices, endownments and profits, we can compute income and consumer demands.</p></li>
+<li><p>Given prices, endowments and profits, we can compute income and consumer demands.</p></li>
 <li><p>From excess demand functions, we can find the equilibrium price.</p></li>
 </ul>
-<p>Welfare theorems apply. The firm needs to be a price-taker.</p>
+<p>Welfare theorems apply. The firm needs to be a price taker.</p>
 </div>
 <div class="section" id="python-example">
-<h2>Python example<a class="headerlink" href="#python-example" title="Lien permanent vers ce titre">¶</a></h2>
+<h2>Python Example<a class="headerlink" href="#python-example" title="Lien permanent vers ce titre">¶</a></h2>
 <p><a class="reference external" href="https://colab.research.google.com/github/pcmichaud/micro/blob/master/notebooks/Production.ipynb"><img alt="ImageLink" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
 </div>
 </div>
@@ -450,29 +458,29 @@ Y^{C2,d} = \frac{\alpha}{1+\alpha} \frac{I_2}{p}\end{split}\]</div>
            
           </div>
           <footer>
-  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="strategy_en.html" class="btn btn-neutral float-right" title="Imperfect Competition" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="echange_en.html" class="btn btn-neutral float-left" title="Exchange" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+        <a href="strategy_en.html" class="btn btn-neutral float-right" title="Imperfect Competition" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="echange_en.html" class="btn btn-neutral float-left" title="Exchange" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2020, Pierre-Carl Michaud
+        &#169; Copyright 2020, Pierre-Carl Michaud.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
-
         </div>
       </div>
 
@@ -480,7 +488,6 @@ Y^{C2,d} = \frac{\alpha}{1+\alpha} \frac{I_2}{p}\end{split}\]</div>
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

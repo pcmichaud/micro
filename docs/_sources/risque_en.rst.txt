@@ -37,7 +37,7 @@ or even Plan D,
    \                      50% chance 150 000/yr
    ====================== ======================
 
-Expected income is now higher than with plan A. If we keep increasing the upside level of income, you will at some point prefer the risky plan. Hence, preferences in risky situation are not only function of the expected gain but also risk (probabilities and payoffs). As of now, our theory does not cover these cases. 
+Expected income is now higher than with plan A. If we keep increasing the upside level of income, you will at some point prefer the risky plan. Hence, preferences in risky situations are not only function of the expected gain but also risk (probabilities and payoffs). As of now, our theory does not cover these cases. 
 
 Expected Utility (EU)
 +++++++++++++++++++++
@@ -80,7 +80,7 @@ If :math:`u(X) = \sqrt{X}` and the consumer faces lotteries :math:`\mathcal L_1 
 
 -  **Exercise C**: Does the utility function :math:`u(X) = X` give the same choice?
 
-In a situation with certainty, utility is ordinal: only the ordering matters. However, in a risky situation, expected utility is cardinal, because it depends linearly on probabilities. Hence, monotone transformation (stricly increasing) do not preserve preferences. However, affine transformations of the form  :math:`\widehat u = a u +b` with :math:`a>0` yield the same preferences.
+In a situation with certainty, utility is ordinal: only the ordering matters. However, in a risky situation, expected utility is cardinal, because it depends linearly on probabilities. Hence, a monotone transformation (stricly increasing) does not preserve preferences. However, affine transformations of the form  :math:`\widehat u = a u +b` with :math:`a>0` yield the same preferences.
 
    .. math::
 
@@ -124,7 +124,7 @@ Risk aversion implies
    .. math::
       u(Z) > pu(X) + (1-p)u(Y). 
 
-A function :math:`u` which fits this inequality needs to be concave (see the math tools). In statistics, this result is Jensen's inequality which arises when the function is concave. The risk loving case corresponds to a convex function.  
+A function :math:`u` which fits this inequality needs to be concave (see the math tools). In statistics, this result is Jensen's inequality which arises when the function is concave. The risk-loving case corresponds to a convex function.  
 
 .. figure:: /images/risk_concave.png
    :scale: 75
@@ -134,7 +134,7 @@ A function :math:`u` which fits this inequality needs to be concave (see the mat
 
 **Risk neutrality**
 
-If an individual is risk neutral, there is an indifference between
+If an individual is risk neutral, there is indifference between
 
    .. math:: \mathcal L = (p, X\;; 1-p,Y) \quad and \quad  \mathcal L' = (1,Z)
 
@@ -143,7 +143,7 @@ The utility function is therefore constrained to be linear in wealth :math:`u(X)
 Measuring Risk Aversion
 +++++++++++++++++++++++
 
-How to measure risk aversion? How do we compare two individuals and say that one is more risk averse then the other? Two measures are useful for this purpose: the coefficient of absolute and relative risk aversion. 
+How to measure risk aversion? How do we compare two individuals and say that one is more risk averse than the other? Two measures are useful for this purpose: the coefficient of absolute and relative risk aversion. 
 
 Absolute risk aversion coefficient: 
 
@@ -155,13 +155,13 @@ Relative risk aversion coefficient:
    .. math::
       R(X) = -\frac{u''(X)X}{u'(X)} 
 
-Why these two measures? Since risk aversion si related to concavity, both measures increase when the second derivative increases (there is a negative sign in front since second derivative is negative when function is concave). Then, we normalize by marginal utility :math:`u'(X)`, to fix units since :math:`u` is ordinal. Another way of thinking about it is that it is the percent change in the marginal utility. 
+Why these two measures? Since risk aversion si related to concavity, both measures increase when the second derivative increases (there is a negative sign in front since the second derivative is negative when function is concave). Then, we normalize by marginal utility :math:`u'(X)`, to fix units since :math:`u` is ordinal. Another way of thinking about it is that it is the percent change in the marginal utility. 
 
-The absolute measure allows to look at risk aversion for lotteries involing absolute payoffs. The relative coefficient allows to look at the degree of risk aversion for a lottery which is proportional to wealth. 
+The absolute measure allows to look at risk aversion for lotteries involving absolute payoffs. The relative coefficient allows to look at the degree of risk aversion for a lottery which is proportional to wealth. 
 
 How do we measure this coefficient? One method is the multiple price list (MPL). `Holt et Laury (2002) <https://pubs.aeaweb.org/doi/pdfplus/10.1257/000282802762024700>`__ have used MPLs to measure risk attitudes.
 
-A multiple price list presents two lotteries under different probability and payoff configuration. The respondant has to choose the loterry he prefers. There is often an incentive mechanism which rewards participants. Here is an example from Holt and Laury: 
+A multiple price list presents two lotteries under different probabilities and payoff configuration. The respondent has to choose the lottery he prefers. There is often an incentive mechanism which rewards participants. Here is an example from Holt and Laury: 
 
 
 .. figure:: /images/mpl.png
@@ -199,7 +199,7 @@ In insurance, the risk premium is equivalent to the maximum willingness to pay o
 
 **Exercise E**: An agent has preferences represented by :math:`u(X)=\log X`. Her initial wealth is :math:`X_0 = 100` and she faces the risk of loosing 50 with probability 0.5 and win 50 with probability 0.5. What is the maximum price she is willing to pay for an insurance that eliminates the risk?
 
-An approximation to the risk premium exist for small risks. Denoting :math:`\sigma^2` the variance of a small risk with mean zero, the risk premium for an agent with initial wealth :math:`X_0` is well approximated by: 
+An approximation to the risk premium exists for small risks. Denoting :math:`\sigma^2` the variance of a small risk with mean zero, the risk premium for an agent with initial wealth :math:`X_0` is well approximated by: 
 
 .. math::
    \tilde\pi = \frac{1}{2}\sigma^2 A(X_0)
@@ -211,7 +211,7 @@ The risk premium increases with risk aversion and with the variance of the risk.
 Insurance
 +++++++++
 
-The insurance market exists in part because the population is generally risk averse. There exists insurance for pretty much every risks you can think of. Even our governments set up what are called social insurance program to help individuals when they face hardship (think of the Employment insurance system in Canada). 
+The insurance market exists in part because the population is generally risk averse. There exists insurance for pretty much every risk you can think of. Even our governments set up what is called social insurance program to help individuals when they face hardship (think of the Employment insurance system in Canada). 
 
 Take unemployment. Consider a simple example with two workers who can be in the following states:
 
@@ -236,7 +236,7 @@ According to vNM preferences, insurance is beneficial if
 
 or if :math:`u(50) > .5[u(0)+u(100)]`. Hence, we need the utility function :math:`u` to be concave or the agent to be risk averse (again Jensen's inequality). 
 
-In practice, employment insurance could be informal. But enforcing payments after risks are realized may be costly. The worker who did not loose his job may not want to share with the other. Hence, employment insurance schemes lower these costs but enforcing the payment of premiums and benefits. The same goes for other insurance markets.   
+In practice, employment insurance could be informal. But enforcing payments after risks are realized may be costly. The worker who did not lose his job may not want to share with the other. Hence, employment insurance schemes lower these costs but enforcing the payment of premiums and benefits. The same goes for other insurance markets.   
 
 The other advantage of having an insurer is that the benefit to consumers of insurance grows with the number of insured individuals. For this, we need to invoke the law of large numbers. 
 
@@ -261,7 +261,7 @@ The other advantage of having an insurer is that the benefit to consumers of ins
 
 -  If agents are risk averse, this result is admirable. 
 
-Insurers need to issue debt to finance their operation. This debt, often in the form of corporate bonds, needs to reward investors for the risk inherent to each insurer. Insurers who are more risky, perhaps because their portfolio is less diversified (smaller), will need to pay a premium on their debt. This in turn may translate into higher premiums.
+Insurers need to issue debt to finance their operation. This debt, often in the form of corporate bonds, needs to reward investors for the risk inherent to each insurer. Insurers who are riskier, perhaps because their portfolio is less diversified (smaller), will need to pay a premium on their debt. This in turn may translate into higher premiums.
 
 Insurance and Entrepreneurship
 ++++++++++++++++++++++++++++++
@@ -283,7 +283,7 @@ Insurance and Entrepreneurship
 -  **Exercise H**: What will be his choice?
 
 
-The show, *Les Dragons (Dragon's Den)* from Radio-Canada and CBC provides a direct illustration of what is happening. Participation from one of the Dragon is always conditionnal to a share of the profits. Negociation takes place on the share of profits that the entrepreneur needs to give up in order to obtain an investment from the Dragon. Here is an example (in french) of two entrepreneurs who drove a hard bargain... 
+The show, *Les Dragons (Dragon's Den)* from Radio-Canada and CBC provides a direct illustration of what is happening. Participation from one of the Dragon is always conditional to a share of the profits. Negociation takes place on the share of profits that the entrepreneur needs to give up in order to obtain an investment from the dragon. Here is an example (in french) of two entrepreneurs who drove a hard bargain... 
 
 .. raw:: html
 
@@ -291,7 +291,7 @@ The show, *Les Dragons (Dragon's Den)* from Radio-Canada and CBC provides a dire
         <iframe src="https://www.youtube.com/embed/ICyUEUUgq8Q" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
     </div>
 
-In addition to private equity firms who provide this type of insurance, public organizations also do this, for example Investissement Québec, or unions, such as FTQ and Fondaction. 
+In addition to private equity firms that provide this type of insurance, public organizations also do this, for example Investissement Québec, or unions, such as FTQ and Fondaction. 
 
 Critics of Expected Utility
 +++++++++++++++++++++++++++
@@ -304,7 +304,7 @@ Critics of Expected Utility
 
 Choice Experiment I
 
-Draw an integer number between 0 and 99 with probability 1/100 for each integer integer:
+Draw an integer number between 0 and 99 with probability 1/100 for each integer:
 
 =========== == ==== =====
 Lotteries   0  1-10 11-99
@@ -335,7 +335,7 @@ Read the story behind the paradox. `Munier (1991) <https://pubs.aeaweb.org/doi/p
 
 Choice Experiment III
 
-An urn consist 90 balls. 30 are red. The other 60 are either black or white. The proportion of white and black balls is not know. We ask you to make a choice between these lotteries: 
+An urn consists of 90 balls. 30 are red. The other 60 are either black or white. The proportion of white and black balls is not know. We ask you to make a choice between these lotteries: 
 
 =========== ===== ===== =======
 Lotteries   red   black white
@@ -363,7 +363,7 @@ Mr. Ellsberg is well known for this paradox, but perhaps much more for his battl
 
 Kahneman and Tversky: Perspectives
 
-The authors, both receipients of a Nobel,  show that we are influenced by perspectives (often named framing) when we make choices, in particular when risk is involved: 
+The authors, both recipients of a Nobel,  show that we are influenced by perspectives (often named framing) when we make choices, in particular when risk is involved: 
 
 Imagine a new virus could kill 600 individuals. Two interventions are shown:
 

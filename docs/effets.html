@@ -1,23 +1,31 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="fr" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
+<html class="writer-html5" lang="fr" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>Effets Prix et Revenu &mdash; Documentation Micro Notes </title>
   
 
   
-  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
   
   
 
   
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -26,16 +34,12 @@
         <script src="_static/doctools.js"></script>
         <script src="_static/language_data.js"></script>
         <script src="_static/translations.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script type="text/x-mathjax-config">MathJax.Hub.Config({"extensions": ["tex2jax.js"], "jax": ["input/TeX", "output/HTML-CSS"], "availableFonts": ["Neo-Euler", "TeX"], "preferredFont": ["Neo-Euler"], "scale": 60})</script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Recherche" href="search.html" />
     <link rel="next" title="Le Risque" href="risque.html" />
@@ -67,7 +71,7 @@
           
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Rechercher docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -76,6 +80,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -90,7 +95,7 @@
 <li class="toctree-l1"><a class="reference internal" href="cons.html">Consommateur</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Effets Prix et Revenu</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#demande-et-preferences">Demande et Préférences</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#effets-revenu">Effets revenu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#effets-revenus">Effets revenus</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#effets-prix">Effets Prix</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#demande-compensee">Demande compensée</a></li>
 </ul>
@@ -140,6 +145,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -174,19 +180,21 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html">Docs</a> &raquo;</li>
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
       <li>Effets Prix et Revenu</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
-            
-            <a href="_sources/effets.rst.txt" rel="nofollow"> View page source</a>
+          
+            <a href="_sources/effets.rst.txt" rel="nofollow"> Afficher la source de la page</a>
           
         
       </li>
@@ -202,10 +210,10 @@
   <div class="section" id="effets-prix-et-revenu">
 <span id="effets"></span><h1>Effets Prix et Revenu<a class="headerlink" href="#effets-prix-et-revenu" title="Lien permanent vers ce titre">¶</a></h1>
 <p>Est-ce qu’une taxe sur l’essence réduit la consommation d’essence et encourage le transport en commun?</p>
-<p>Pour le savoir, on doit étudier empiriquement comment la demande d’essence et de transport en commun réagit à une taxe sur l’essence. On veut peut-être aussi comprendre si cette taxe sera régressive (si elle aura un effet important sur le pouvoir d’achat des moins nantis). Si on veut les compenser, il faudra connaître les effets prix et revenu.</p>
+<p>Pour le savoir, on doit étudier empiriquement comment la demande d’essence et de transport en commun réagit à une taxe sur l’essence. On veut peut-être aussi comprendre si cette taxe sera régressive (si elle aura un effet important sur le pouvoir d’achat des moins nantis). Si on veut les compenser, il faudra connaître les effets prix et revenus.</p>
 <div class="figure align-default" id="id1">
 <a class="reference internal image-reference" href="_images/gilets.jpeg"><img alt="_images/gilets.jpeg" src="_images/gilets.jpeg" style="width: 275.0px; height: 183.0px;" /></a>
-<p class="caption"><span class="caption-text">Les gilets jaunes en France ont manifesté entre autre parce que de nouvelles taxes sur le carburant réduisaient leur pouvoir d’achat.</span><a class="headerlink" href="#id1" title="Lien permanent vers cette image">¶</a></p>
+<p class="caption"><span class="caption-text">Les gilets jaunes en France ont manifesté entre autres parce que de nouvelles taxes sur le carburant réduisaient leur pouvoir d’achat.</span><a class="headerlink" href="#id1" title="Lien permanent vers cette image">¶</a></p>
 </div>
 <p>Les élasticités prix et revenu peuvent être estimés sans théorie. Mais comment utiliser ces informations pour répondre aux questions plus normatives?</p>
 <p>La théorie sur le choix du consommateur nous fournira un bon nombre d’outils …</p>
@@ -213,9 +221,9 @@
 <h2>Demande et Préférences<a class="headerlink" href="#demande-et-preferences" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Formalisons cet exemple:</p>
 <ul class="simple">
-<li><p>Essense (<span class="math notranslate nohighlight">\(X\)</span>) et Transport en commun (<span class="math notranslate nohighlight">\(Y\)</span>)</p></li>
+<li><p>Essence (<span class="math notranslate nohighlight">\(X\)</span>) et Transport en commun (<span class="math notranslate nohighlight">\(Y\)</span>)</p></li>
 <li><p>Utilité <span class="math notranslate nohighlight">\(U(X,Y)\)</span></p></li>
-<li><p>Contrainte Budgétaire: <span class="math notranslate nohighlight">\(p_X Y+ p_Y Y \leq I\)</span></p></li>
+<li><p>Contrainte budgétaire: <span class="math notranslate nohighlight">\(p_X Y+ p_Y Y \leq I\)</span></p></li>
 </ul>
 <p>Les fonctions de demande <span class="math notranslate nohighlight">\((X^*, Y^*)\)</span> sont telles que</p>
 <div class="math notranslate nohighlight">
@@ -234,14 +242,14 @@ réduire <span class="math notranslate nohighlight">\(X\)</span> pour augmenter 
 \[X^* = \frac{I}{3p_X}  \quad, Y^* = \frac{2I}{3p_Y}\]</div>
 <p>Comment <span class="math notranslate nohighlight">\(X^*\)</span> et <span class="math notranslate nohighlight">\(Y^*\)</span> varient en fonction de <span class="math notranslate nohighlight">\(I\)</span>?</p>
 </div>
-<div class="section" id="effets-revenu">
-<h2>Effets revenu<a class="headerlink" href="#effets-revenu" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="effets-revenus">
+<h2>Effets revenus<a class="headerlink" href="#effets-revenus" title="Lien permanent vers ce titre">¶</a></h2>
 <p><strong>Courbe d’Engel</strong></p>
 <ul class="simple">
 <li><p>Le consommateur demande <span class="math notranslate nohighlight">\(X(p_X,p_Y,I)\)</span> et <span class="math notranslate nohighlight">\(Y(p_X,p_Y,I)\)</span>.</p></li>
 <li><p>La courbe d’Engel pour <span class="math notranslate nohighlight">\(X\)</span>: Comment <span class="math notranslate nohighlight">\(X^*\)</span> change quand
 <span class="math notranslate nohighlight">\(I\)</span> change?</p></li>
-<li><p>Proportion du budget dédiée à <span class="math notranslate nohighlight">\(X\)</span>:
+<li><p>Proportion du budget dédié à <span class="math notranslate nohighlight">\(X\)</span>:
 <span class="math notranslate nohighlight">\(s_X = \frac{p_X X}{I}\)</span></p></li>
 </ul>
 <p><strong>Bien normal</strong></p>
@@ -250,20 +258,20 @@ réduire <span class="math notranslate nohighlight">\(X\)</span> pour augmenter 
 <p>Un bien est inférieur si sa demande diminue quand le revenu augmente (à prix constant)</p>
 <p>L’essence est-elle un bien inférieur ou normal? Une étude de James Porterba suggère que même si on pourrait croire que l’essence est un bien inférieur, ceci dépend si on mesure en proportion du revenu ou des dépenses <a class="reference external" href="http://www.nber.org/chapters/c11271">(Poterba, 1991)</a>? Pourquoi pensez-vous?</p>
 <p><a class="reference internal" href="_images/poterba.png"><img alt="poterba" src="_images/poterba.png" style="width: 527.2px; height: 444.0px;" /></a></p>
-<p>Pour quantifier les effets revenu, on voudra utiliser une élasticité-revenu de la forme:</p>
+<p>Pour quantifier les effets revenus, on voudra utiliser une élasticité-revenu de la forme:</p>
 <div class="math notranslate nohighlight">
 \[\eta_{X,I} = \frac{\partial X}{\partial I}\frac{I}{X}\]</div>
-<p>En pratique, il n’est pas facile d’observer ces élasticités-revenu en s’assurant que le changement de revenu est <em>exogène</em>. Quel type d’évennement pourrait-on exploiter?</p>
+<p>En pratique, il n’est pas facile d’observer ces élasticités-revenu en s’assurant que le changement de revenu est <em>exogène</em>. Quel type d’événement pourrait-on exploiter?</p>
 </div>
 <div class="section" id="effets-prix">
 <h2>Effets Prix<a class="headerlink" href="#effets-prix" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Comment les demandes <span class="math notranslate nohighlight">\(X^*\)</span> et <span class="math notranslate nohighlight">\(Y^*\)</span> changent si
-<span class="math notranslate nohighlight">\(p_Y\)</span> et <span class="math notranslate nohighlight">\(I\)</span> restent constants mais que <span class="math notranslate nohighlight">\(p_X\)</span> change?</p>
+<span class="math notranslate nohighlight">\(p_Y\)</span> et <span class="math notranslate nohighlight">\(I\)</span> restent constants, mais que <span class="math notranslate nohighlight">\(p_X\)</span> change?</p>
 <p>Pour décrire les changements de demande, on utilise l’élasticité:</p>
 <div class="math notranslate nohighlight">
 \[\eta_{X,p} = \frac{\partial X}{\partial p_X}\frac{p_X}{X}\]</div>
 <p>Ell est invariante aux unités monétaires. Encore une fois, un enjeu important est d’estimer cette élasticité dans un contexte où le changement de prix qui est <em>exogène</em>. Heureusement, il y a les taxes qui changent parfois pour des raisons indépendantes de la demande… Sinon, des chocs d’offre (manipulation du prix d’un cartel, désastre naturel).</p>
-<p>Au Danemark, une <a class="reference external" href="https://www.sciencedirect.com/science/article/abs/pii/S0094119018300779">étude</a> montre que l’elasticité varie considérablement à travers le pays et en particulier dépendant de la distance qu’ont à faire les gens chaque jours.</p>
+<p>Au Danemark, une <a class="reference external" href="https://www.sciencedirect.com/science/article/abs/pii/S0094119018300779">étude</a> montre que l’élasticité varie considérablement à travers le pays et en particulier dépendant de la distance qu’ont à faire les gens chaque jour.</p>
 <a class="reference internal image-reference" href="_images/elasticity_denmark.png"><img alt="_images/elasticity_denmark.png" src="_images/elasticity_denmark.png" style="width: 544.7px; height: 435.5px;" /></a>
 <p>Au États-Unis, une autre <a class="reference external" href="https://www.aeaweb.org/articles?id=10.1257/pol.6.4.302">analyse</a> montre qu’il faut faire la distinction entre l’effet d’un changement de prix et une taxe. L’effet d’une taxe est plus important? Pourquoi?</p>
 <a class="reference internal image-reference" href="_images/elasticity_tax_price.png"><img alt="_images/elasticity_tax_price.png" src="_images/elasticity_tax_price.png" style="width: 678.6px; height: 639.0px;" /></a>
@@ -274,18 +282,18 @@ réduire <span class="math notranslate nohighlight">\(X\)</span> pour augmenter 
 <div class="math notranslate nohighlight">
 \[\frac{U'_X(X,Y)}{U'_Y(X,Y)} = \frac{p_X}{p_Y}\]</div>
 </li>
-<li><p>Besoin de plus de revenu pour acheter le même panier de référence (réduction pouvoir d’achat): <em>effet revenu</em>.</p></li>
+<li><p>Besoin de plus de revenus pour acheter le même panier de référence (réduction pouvoir d’achat): <em>effet revenu</em>.</p></li>
 </ul>
-<p>Notre <strong>objectif:</strong> Identifier les effets prix et revenus</p>
+<p>Notre <strong>objectif:</strong> identifier les effets prix et revenus</p>
 <div class="section" id="demande-compensee">
 <h3>Demande compensée<a class="headerlink" href="#demande-compensee" title="Lien permanent vers ce titre">¶</a></h3>
 <p>La demande compensée est un passage obligé. Elle permettra de séparer ces effets.</p>
 <p><strong>Contexte</strong></p>
 <ul class="simple">
 <li><p>Prix de référence <span class="math notranslate nohighlight">\((p_X,p_Y)\)</span>, revenu de référence <span class="math notranslate nohighlight">\(I\)</span>, nouveau prix <span class="math notranslate nohighlight">\((\hat p_X,p_Y)\)</span></p></li>
-<li><p>Demande de référence, <span class="math notranslate nohighlight">\(X(p_X,p_Y,I)\)</span>, utilité indirecte de référence
+<li><p>Demande de référence <span class="math notranslate nohighlight">\(X(p_X,p_Y,I)\)</span>, utilité indirecte de référence
 <span class="math notranslate nohighlight">\(V(p_X,p_Y,I)\)</span></p></li>
-<li><p>Nouvelle demande, <span class="math notranslate nohighlight">\(X(\hat p_X, p_Y, I)\)</span>, nouvelle utilité indirecte
+<li><p>Nouvelle demande <span class="math notranslate nohighlight">\(X(\hat p_X, p_Y, I)\)</span>, nouvelle utilité indirecte
 <span class="math notranslate nohighlight">\(V(\hat p_X,p_Y,I)\)</span>.</p></li>
 </ul>
 <p>Le concept de revenu compensé: revenu <span class="math notranslate nohighlight">\(I^{cmp}\)</span> tel qu’on peut préserver le niveau d’utilité de référence <strong>aux nouveaux prix</strong>.</p>
@@ -350,7 +358,7 @@ I^{cmp}&amp; =  \hat p_X X^{cmp}+  p_Y Y^{cmp}\\
     <iframe src="https://www.youtube.com/embed/Ovjh0AhL6mY" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
 </div><div class="figure align-default" id="id2">
 <a class="reference internal image-reference" href="_images/price_change.png"><img alt="_images/price_change.png" src="_images/price_change.png" style="width: 594.0px; height: 412.5px;" /></a>
-<p class="caption"><span class="caption-text">Dans l’espace <span class="math notranslate nohighlight">\((X,Y)\)</span>, nous considérons une augmentation de prix du bien <span class="math notranslate nohighlight">\(X\)</span>, L’indice 1 réfère à la situation de référence et l’indice 2 à la situation après le changement de prix. Le consommateur est au point A dans la situation de référence. Avec le changement de prix, la contrainte budgétaire a une pente plus forte. Après le changement de prix, le consommateur est au point C. Pour décomposer le changement de prix, on compense le consommateur aux nouveaux prix. Il choisi alors le point B, avec la même utilité que dans la situation de référence. Le passage du point A au point B est l’effet substitution. L’effet revenu se mesure du point B au point C.</span><a class="headerlink" href="#id2" title="Lien permanent vers cette image">¶</a></p>
+<p class="caption"><span class="caption-text">Dans l’espace <span class="math notranslate nohighlight">\((X,Y)\)</span>, nous considérons une augmentation de prix du bien <span class="math notranslate nohighlight">\(X\)</span>, L’indice 1 réfère à la situation de référence et l’indice 2 à la situation après le changement de prix. Le consommateur est au point A dans la situation de référence. Avec le changement de prix, la contrainte budgétaire a une pente plus forte. Après le changement de prix, le consommateur est au point C. Pour décomposer le changement de prix, on compense le consommateur aux nouveaux prix. Il choisit alors le point B, avec la même utilité que dans la situation de référence. Le passage du point A au point B est l’effet substitution. L’effet revenu se mesure du point B au point C.</span><a class="headerlink" href="#id2" title="Lien permanent vers cette image">¶</a></p>
 </div>
 </div>
 </div>
@@ -365,7 +373,7 @@ I^{cmp}&amp; =  \hat p_X X^{cmp}+  p_Y Y^{cmp}\\
 <div class="math notranslate nohighlight">
 \[\begin{aligned}
 \underbrace{\Delta X^*}_{\text{Effet total}} = \underbrace{\Delta X^{cmp}}_{\text{Effet substitution}} + \underbrace{\Delta X^I}_{\text{Effet prix}}\end{aligned}\]</div>
-<p><strong>Exercice C</strong>: Trouvez les effets revenu et prix de l’exercice B (<span class="math notranslate nohighlight">\(\Delta p_X = 1\)</span>).</p>
+<p><strong>Exercice C</strong>: Trouvez les effets revenus et prix de l’exercice B (<span class="math notranslate nohighlight">\(\Delta p_X = 1\)</span>).</p>
 <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
     <iframe src="https://www.youtube.com/embed/04cuRQMZi5c" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
 </div><p>Puisque</p>
@@ -374,14 +382,14 @@ I^{cmp}&amp; =  \hat p_X X^{cmp}+  p_Y Y^{cmp}\\
 <div class="math notranslate nohighlight">
 \[\begin{aligned}
 \Delta X^* &amp;=   \underbrace{\Delta X^{{cmp}}}_{\leq 0} -   \underbrace{\frac{\partial X}{\partial I}\times \Delta p_X X^*}_{\geq 0 \text{ si normal, } &lt;0 \text{ si inférieur}} \end{aligned}\]</div>
-<p>En terme d’élasticités,</p>
+<p>En termes d’élasticités,</p>
 <div class="math notranslate nohighlight">
 \[\begin{aligned}
 \frac{\Delta X^*}{\Delta p_X}\frac{p_X}{X^*} &amp; = \frac{\Delta X^{cmp}}{\Delta p_X}\frac{p_X}{X^*} - \frac{\partial X}{\partial I} \Delta p_X X^*\times\frac{p_X}{\Delta p_X X^*}\frac{I}{I} \end{aligned}\]</div>
 <p>L’équation de Slutsky est donc:</p>
 <div class="math notranslate nohighlight">
 \[\eta_{X,p} = \eta^{cmp}_{X,p}  - \eta_{X,I} \cdot s_X\]</div>
-<p><strong>Exercice D</strong>: Pour les préférences Cobb-Douglas <span class="math notranslate nohighlight">\(U(X,Y) = X^\alpha Y^{1-\alpha}\)</span>, calculez l’élasticité prix compensée à l’aide de l’équation de Slutsky.</p>
+<p><strong>Exercice D</strong>: Pour les préférences Cobb-Douglas <span class="math notranslate nohighlight">\(U(X,Y) = X^\alpha Y^{1-\alpha}\)</span>, calculez l’élasticité prix compensé à l’aide de l’équation de Slutsky.</p>
 <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
     <iframe src="https://www.youtube.com/embed/si2THh8yqRI" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
 </div></div>
@@ -422,7 +430,7 @@ I^{cmp}&amp; =  \hat p_X X^{cmp}+  p_Y Y^{cmp}\\
 <p>Pour mesurer un changement du coût de la vie (pouvoir d’achat), on utilise des indices de prix à la consommation. Un indice souvent utilisé est l’indice de Laspeyres:</p>
 <div class="math notranslate nohighlight">
 \[\pi_L = \frac{\hat p_X  X + \hat p_Y Y}{p_X X + p_Y Y}\]</div>
-<p>Ainsi <span class="math notranslate nohighlight">\(X\)</span> et <span class="math notranslate nohighlight">\(Y\)</span>, consommé dans la situation de référence, sont aussi utilisées après le changement de prix. L’indice des prix à la consommation garde les quantités (part des dépenses) fixes dans le court terme (les changent mais pas très fréquemment). Plusieurs prestations gouvernementales sont indexées annuellement de la sorte afin de maintenir le pouvoir d’achat (pensions, crédit d’impôt, etc). Mais est-ce un bon indice pour mesurer une variation du coût de la vie?</p>
+<p>Ainsi <span class="math notranslate nohighlight">\(X\)</span> et <span class="math notranslate nohighlight">\(Y\)</span>, consommé dans la situation de référence, sont aussi utilisées après le changement de prix. L’indice des prix à la consommation garde les quantités (part des dépenses) fixes dans le court terme (les changent, mais pas très fréquemment). Plusieurs prestations gouvernementales sont indexées annuellement de la sorte afin de maintenir le pouvoir d’achat (pensions, crédit d’impôt, etc). Mais est-ce un bon indice pour mesurer une variation du coût de la vie?</p>
 <p>La théorie qu’on vient de voir indique qu’il faut tenir compte des réactions comportementales. Si le prix d’un bien augmente, il y aura substitution. Pour bien mesurer la consommation, on revient à la théorie:</p>
 <ul>
 <li><p>Après une augmentation de prix du bien <span class="math notranslate nohighlight">\(X\)</span>, la compensation nécessaire pour garder le bien-être constant est:</p>
@@ -440,7 +448,7 @@ I^{cmp}&amp; =  \hat p_X X^{cmp}+  p_Y Y^{cmp}\\
 <div class="math notranslate nohighlight">
 \[\eta_{X,p} = \eta^{cmp}_{X,p}  - \eta_{X,I} \cdot s_X.\]</div>
 <p>Le premier terme à droite est toujours négatif. C’est le résultat de la loi de la demande compensée. Il faut donc que le 2e terme soit négatif (puisqu’il est soustrait du premier terme).</p>
-<p>On en déduit qu’une condition nécessaire est que le bien soit inférieur (demande diminue quand revenu augmente) et que le bien consitue une part importante du budget pour que ce deuxième terme soit suffisament élevé.</p>
+<p>On en déduit qu’une condition nécessaire est que le bien soit inférieur (demande diminue quand revenu augmente) et que le bien constitue une part importante du budget pour que ce deuxième terme soit suffisamment élevé.</p>
 <p>Ainsi, il est possible que <span class="math notranslate nohighlight">\(\eta_{X,p}&gt;0\)</span>. Mais est-ce que ce cas spécial existe?</p>
 <p>L’exemple classique donné est le cas des pommes de terre en Irlande, même si des doutes existent sur cet exemple (voir ce résumé de l’histoire derrière les biens Giffen <a class="reference external" href="https://en.wikipedia.org/wiki/Giffen_good">wikipedia</a>). Un meilleur exemple est donné par l’analyse d’un programme implanté en Chine qui donnait une subvention pour la consommation de riz (<a class="reference external" href="https://www.aeaweb.org/articles?id=10.1257/aer.98.4.1553">Jensen et Miller (2008)</a>). La subvention (baisse de prix) a mené à une diminution de la consommation de riz. Les auteurs ne trouvent pas la même chose pour le blé… Donc, la preuve d’existence de Biens Giffen demeure fragile…</p>
 </div>
@@ -467,29 +475,29 @@ I^{cmp}&amp; =  \hat p_X X^{cmp}+  p_Y Y^{cmp}\\
            
           </div>
           <footer>
-  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="risque.html" class="btn btn-neutral float-right" title="Le Risque" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="cons.html" class="btn btn-neutral float-left" title="Consommateur" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+        <a href="risque.html" class="btn btn-neutral float-right" title="Le Risque" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="cons.html" class="btn btn-neutral float-left" title="Consommateur" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2020, Pierre-Carl Michaud
+        &#169; Copyright 2020, Pierre-Carl Michaud.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
-
         </div>
       </div>
 
@@ -497,7 +505,6 @@ I^{cmp}&amp; =  \hat p_X X^{cmp}+  p_Y Y^{cmp}\\
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

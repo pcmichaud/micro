@@ -7,7 +7,7 @@ Price and Income Effects
 
 Does a tax on gasoline decrease gas consumption and promotes public transportation? 
 
-To answer a question like this, we need to study empirically how the demand for gasoline and public transportation respond to a tax. A tax results in a price change for the consumer. Hence, a prequisite is that we study how demand responds to price. Second, we may want to compensate individuals for the burden of the tax. For this, we need to know how demand changes as a function of income. Related to this is the question of whether or not such taxes are regressive or not. 
+To answer a question like this, we need to study empirically how the demand for gasoline and public transportation respond to a tax. A tax results in a price change for the consumer. Hence, a prerequisite is that we study how demand responds to price. Second, we may want to compensate individuals for the burden of the tax. For this, we need to know how demand changes as a function of income. Related to this is the question of whether or not such taxes are regressive or not. 
 
 .. figure:: /images/gilets.jpeg
    :scale: 100
@@ -15,7 +15,7 @@ To answer a question like this, we need to study empirically how the demand for 
    
    The *gilets jaunes* in France in part demonstrated because of new gasoline taxes which they argued reduced their purchasing power. 
 
-Price and income elasticities can be estimated without theory. But theory is necessary to answer the more normative questions and to talk about compensation. 
+Price and income elasticity can be estimated without theory. But theory is necessary to answer the more normative questions and to talk about compensation. 
 
 Demand and Preferences
 ++++++++++++++++++++++
@@ -92,7 +92,7 @@ To quantify income effects, we can use an income elasticity defined as
 
    \eta_{X,I} = \frac{\partial X}{\partial I}\frac{I}{X}
 
-In practice, it is hard to observe the income elasticity because variation in income is rarely exogeneous. What sort of events could you exploit? 
+In practice, it is hard to observe the income elasticity because variation in income is rarely exogenous. What sort of events could you exploit? 
 
 Price Effects
 +++++++++++++
@@ -106,9 +106,9 @@ To quantify this margin, we may use a price elasticity of the form:
 
    \eta_{X,p} = \frac{\partial X}{\partial p_X}\frac{p_X}{X}
 
-This elasticity is invariant to monetary units. A challenge is to find an experiment where the price is varied exogeneously while other factors are kept constant. Taxation is one of the key margin exploited. Other examples include supply shocks. 
+This elasticity is invariant to monetary units. A challenge is to find an experiment where the price is varied exogenously while other factors are kept constant. Taxation is one of the key margins exploited. Other examples include supply shocks. 
 
-In Denmark, one `study <https://www.sciencedirect.com/science/article/abs/pii/S0094119018300779>`_ shows that the price elasticity varies alot across the country and in particular reacts to the distance people need to travel to work and transportation alternatives they face.
+In Denmark, one `study <https://www.sciencedirect.com/science/article/abs/pii/S0094119018300779>`_ shows that the price elasticity varies a lot across the country and in particular reacts to the distance people need to travel to work and transportation alternatives they face.
 
 .. figure:: /images/elasticity_denmark.png
    :scale: 65%
@@ -130,7 +130,7 @@ There are two forces:
 
    .. math:: \frac{U'_X(X,Y)}{U'_Y(X,Y)} = \frac{p_X}{p_Y}
 
--  At current consumption, one needs more income to buy this basket at the new prices. Hence, the consumer needs to reduce his consumption: *income efect*. 
+-  At current consumption, one needs more income to buy this basket at the new prices. Hence, the consumer needs to reduce his consumption: *income effect*. 
 
 Compensation will be a function of income and substitution effects. Hence, our **objective:** is to identify these effects and see how they lead to the total price effect. 
 
@@ -151,7 +151,7 @@ Compensated demand allows to separate substitution and income effects.
 -  New Demand, :math:`X(\hat p_X, p_Y, I)`, new indirect utility level
    :math:`V(\hat p_X,p_Y,I)`.
 
-Compensated Income: income :math:`I^{cmp}` such that we maintain utility at reference level despite facing  **new prices**. 
+Compensated Income: income :math:`I^{cmp}` such that we maintain utility at reference levels despite facing  **new prices**. 
 
    .. math:: V(p_X,p_Y, I) = V(\hat p_X, p_Y,  I^{cmp})
 
@@ -191,7 +191,7 @@ To keep notation light, denote
 
   :math:`X^* = X(p_X,p_X,I)`, :math:`Y^* = Y(p_X,p_Y,I)`
 
-The define :math:`I^{cmp}= I + \Delta I^{cmp}`,
+Then define :math:`I^{cmp}= I + \Delta I^{cmp}`,
 :math:`X^{cmp}= X^* + \Delta X^{cmp}` and
 :math:`Y^{cmp}= Y^* + \Delta Y^{cmp}`.
 
@@ -231,7 +231,7 @@ Therefore, :math:`p_X \Delta X^{cmp}+ p_Y \Delta Y^{cmp}= 0`.
 Slutsky Equation 
 ++++++++++++++++
 
-The `Slutsky <https://fr.wikipedia.org/wiki/Eugen_Slutsky>`_ equation allows to look the total price effect, the substitution effect and the income effect. The first and the last are observable given sufficient exogeneous variation. The second one is necessary to compute the compensation required.  
+The `Slutsky <https://fr.wikipedia.org/wiki/Eugen_Slutsky>`_ equation allows to look the total price effect, the substitution effect and the income effect. The first and the last is observable given sufficient exogenous variation. The second one is necessary to compute the compensation required.  
 
 To keep notation simple, consider 
 
@@ -286,7 +286,7 @@ Let us first talk about the nature of goods, complements or substitutes. Turns o
 -  Complements: If the cross-price effect is negative:
    :math:`\frac{\partial X^{cmp}}{\partial p_Y} <0`
 
-What is your prior about the cross-price elasticity of public transporation? How would it factor into your analysis of a policy that taxes gasoline to reduce carbon emissions?
+What is your prior about the cross-price elasticity of public transportation? How would it factor into your analysis of a policy that taxes gasoline to reduce carbon emissions?
 
 Properties of Demand Functions
 ++++++++++++++++++++++++++++++
@@ -320,9 +320,9 @@ For an increase in the price of :math:`X`, the effect on purchasing power can be
 
    .. math:: \pi_I =  \frac{I^{cmp}}{I}
 
-This will depend on preferences. It is possible that this Hicksian price index yield a different answer than the Laysperes price index. In particular, if the income share of a good decreases when its price increase, the Hicksian index often yields a lower increase in the cost-of-living than what the Laysperres index would suggest. We call this bias the substitution bias in price indices. 
+This will depend on preferences. It is possible that this Hicksian price index yields a different answer than the Laysperes price index. In particular, if the income share of a good decrease when its price increase, the Hicksian index often yields a lower increase in the cost-of-living than what the Laysperres index would suggest. We call this bias the substitution bias in price indices. 
 
-Before the pandemia hit and a lockdown was imposed, gasoline consumption went down. The price of gas also decreased (for may reasons). Does a Laysperes index give a good indication of the change in purchasing power during this period? Thist `article <https://www.nber.org/papers/w27352>`_ does the computation for the U.S. and shows that inflation is under-estimated.  
+Before the pandemia hit and a lockdown was imposed, gasoline consumption went down. The price of gas also decreased (for may reason). Does a Laysperes index give a good indication of the change in purchasing power during this period? This `article <https://www.nber.org/papers/w27352>`_ does the computation for the U.S. and shows that inflation is underestimated.  
 
 Giffen Goods
 ++++++++++++
@@ -331,16 +331,16 @@ There exist a type of good for which demand increases with the price! Look back 
 
 .. math:: \eta_{X,p} = \eta^{cmp}_{X,p}  - \eta_{X,I} \cdot s_X.
 
-The first term is always negative. This comes from the Law of compensated demand... To get a positive elasticity, we therefore need the second term to be negative (so that it becomes positive when substracted). 
+The first term is always negative. This comes from the Law of compensated demand... To get a positive elasticity, we therefore need the second term to be negative (so that it becomes positive when subtracted). 
 
 A necessary condition is therefore that the good is inferior :math:`\eta_{X,I}<0`. But to overcome the negative substitution effect, this is not sufficient. We need this negative income effect to be large and (or) the budget share to be large. 
 
-So, it is possible that :math:`\eta_{X,p}>0`. But do we see this case in reality? (read the story behind Giffen goods on `wikipedia <https://en.wikipedia.org/wiki/Giffen_good>`_). The best example we know comes from China. A subsidy program for rice was introduced, bringing down the price (`Jensen et Miller (2008) <https://www.aeaweb.org/articles?id=10.1257/aer.98.4.1553>`_). This lead to a reduction in rice consumption.
+So, it is possible that :math:`\eta_{X,p}>0`. But do we see this case in reality? (read the story behind Giffen goods on `wikipedia <https://en.wikipedia.org/wiki/Giffen_good>`_). The best example we know comes from China. A subsidy program for rice was introduced, bringing down the price (`Jensen et Miller (2008) <https://www.aeaweb.org/articles?id=10.1257/aer.98.4.1553>`_). This leads to a reduction in rice consumption.
 
 Firm pricing and demand analysis
 ++++++++++++++++++++++++++++++++
 
-Why would a firm study properties of the demand it faces? Because it can potentially increase sales if it has market power, an ability to affect or manipulate the price on the market. Firms can also price discreminate: segment the market or offer bundles at different prices. The can exploit complementarities between goods to offer bundles.  All of this requires good knowledge of demand. 
+Why would a firm study properties of the demand it faces? Because it can potentially increase sales if it has market power, an ability to affect or manipulate the price on the market. Firms can also price discriminate: segment the market or offer bundles at different prices. They can exploit complementarities between goods to offer bundles.  All of this requires good knowledge of demand. 
 
 Econometric analysis can be used along with some theory, to extract information from firm and market data. In the retail industry, firms purchase for example scanner data to learn about consumers and their sensitivity to prices. 
 

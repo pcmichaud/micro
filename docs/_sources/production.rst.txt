@@ -1,7 +1,7 @@
 La Production
 -------------
 
-Les dotations ne tombent pas du ciel. De plus, plusieurs biens doivent être produit à l'aide d'autres biens. L'économie est constituée de consommateurs, certes, mais aussi d'entreprises. Pourquoi les entreprises existent-elles? `Ronald Coase <https://fr.wikipedia.org/wiki/Ronald_Coase>`_ propose une explication simple: les entreprises sont des organisations qui servent à *internaliser* les coûts de transaction pour produire des biens, ou donner des services. Sans ces organisations, difficile de produire à faible coût des ordinateurs portables, des meubles. Il existe des rendements à l'échelle qui font en sorte que les entreprises peuvent produire des grandes quantités de biens à faible coûts. Elles permettent aussi l'innovation, en réunissant ensemble les cerveaux. Dans cette séance, nous abordons les décisions de l'entreprise (plutôt que le consommateur). L'entreprise produit un bien (ou plusieurs) qu'elle vend sur les marchés (offre). Elle demande des inputs pour produire ce bien. Finalement, dans un équilibre général avec production, extension naturelle de l'équilibre général d'échange, elle est détenue par certains consommateurs, qui tirent un revenu provenant de ses profits. En somme, l'entreprise n'est qu'un intermédiaire.  
+Les dotations ne tombent pas du ciel. De plus, plusieurs biens doivent être produits à l'aide d'autres biens. L'économie est constituée de consommateurs, certes, mais aussi d'entreprises. Pourquoi les entreprises existent-elles? `Ronald Coase <https://fr.wikipedia.org/wiki/Ronald_Coase>`_ propose une explication simple: les entreprises sont des organisations qui servent à *internaliser* les coûts de transaction pour produire des biens, ou donner des services. Sans ces organisations, difficile de produire à faible coût des ordinateurs portables, des meubles. Il existe des rendements à l'échelle qui fait en sorte que les entreprises peuvent produire de grandes quantités de biens à faibles coûts. Elles permettent aussi l'innovation, en réunissant ensemble les cerveaux. Dans cette séance, nous abordons les décisions de l'entreprise (plutôt que le consommateur). L'entreprise produit un bien (ou plusieurs) qu'elle vend sur les marchés (offre). Elle demande des inputs pour produire ce bien. Finalement, dans un équilibre général avec production, extension naturelle de l'équilibre général d'échange, elle est détenue par certains consommateurs, qui tirent un revenu provenant de ses profits. En somme, l'entreprise n'est qu'un intermédiaire.  
 
 
 La fonction de production
@@ -38,11 +38,11 @@ Taux marginal de substitution technique
 
 Il y a pénurie d'un input :math:`Z`. Le directeur de l'usine vous demande combien de :math:`X` de plus aura-t-on besoin pour palier à la baisse de :math:`Z` tout en gardant la production de :math:`Y` constante. 
 
-Considérons la fonction de production :math:`Y = F(X,Z)`. Prennons la différentielle totale:
+Considérons la fonction de production :math:`Y = F(X,Z)`. Prenons la différentielle totale:
 
 .. math:: dY = F'_X(X,Z)dX + F'_Z(X,Z)dZ
 
-La productivité marginale de chacun des inputs est donné par :math:`F'_i(X,Z)` pour :math:`i=X,Z`. Elle donne la production de :math:`Y` qu'on obtient en augmentant marginalement un input et en *gardant les autres constants*. 
+La productivité marginale de chacun des inputs est donnée par :math:`F'_i(X,Z)` pour :math:`i=X,Z`. Elle donne la production de :math:`Y` qu'on obtient en augmentant marginalement un input et en *gardant les autres constants*. 
 
 Fixons :math:`dY = 0`. On obtient le **taux marginal de substitution technique**:
 
@@ -68,7 +68,7 @@ Une fonction de production a des rendements à l'échelle:
 -  décroissant: si :math:`F(X,Z)` est homogène d'un degré plus petit que 1
 
 **Exercice B**: Considérez la fonction
-:math:`Y=F(X,Z)=A X^\alpha Z^\beta`. Quelles sont les rendements à l'échelle de la fonction?
+:math:`Y=F(X,Z)=A X^\alpha Z^\beta`. Quels sont les rendements à l'échelle de la fonction?
 
 Minimisation des coûts
 ++++++++++++++++++++++
@@ -98,9 +98,9 @@ On peut simplifier pour obtenir les deux équations:
 
 .. math:: F(X,Z) = Y
 
-La première équation nous donne le *mix* des inputs qui est optimal. Il doit être tel que le :math:`TMST` est égal au prix relatifs des inputs. Le prix relatif donne ce que coûte en unité de :math:`Y` une unité de :math:`X`. Si ce coût est plus faible que l'économie que l'on fait en augmentant :math:`X`, on peut augmenter :math:`X` et réduire les coûts totaux. Au point où le :math:`TMST` est égal au prix relatifs des inputs, il n'y a plus d'économie à faire. On a minimisé les coûts. 
+La première équation nous donne le *mix* des inputs qui est optimal. Il doit être tel que le :math:`TMST` est égal au prix relatifs des inputs. Le prix relatif donne ce que coûte en unité de :math:`Y` une unité de :math:`X`. Si ce coût est plus faible que l'économie que l'on fait en augmentant :math:`X`, on peut augmenter :math:`X` et réduire les coûts totaux. Au point où le :math:`TMST` est égal au prix relatif des inputs, il n'y a plus d'économie à faire. On a minimisé les coûts. 
 
-La deuxième contrainte vient appliquer le *mix* des inputs trouvés avec la première équation au niveau de production choisi en terme de :math:`Y`. C'est là que peuvent intervenir les rendements à l'échelle.  
+La deuxième contrainte vient appliquer le *mix* des inputs trouvé avec la première équation au niveau de production choisi en terme de :math:`Y`. C'est là que peuvent intervenir les rendements à l'échelle.  
 
 La solution à ce système d'équation est une paire de demandes conditionelles pour les inputs
 
@@ -128,7 +128,7 @@ En substituant les demandes condionnelles on peut obtenir la fonction de coûts:
 
 .. math:: C(p_X,p_Z,Y) = p_X X(p_X,p_Z,Y) + p_Z Z(p_X,p_Z,Y)
 
-Cette fonction nous donne pour des prix et une quantité d'output donné, le coût total qui minimise les coûts. 
+Cette fonction nous donne pour des prix et une quantité d'output donnée, le coût total qui minimise les coûts. 
 
 Propriétés:
 
@@ -206,7 +206,7 @@ où :math:`R` représente les revenus et :math:`C`, les coûts. Étant donné un
 
 L'offre de la firme est donnée par :math:`Y^* = F(X^*)`. 
 
-**Exercise H** Supposons que :math:`F(X) = \sqrt X`, trouvez l'offre de l'entreprise
+**Exercise H** supposons que :math:`F(X) = \sqrt X`, trouvez l'offre de l'entreprise
 pour :math:`Y`.
 
 Quand on a deux inputs et un output, on peut procéder de la façon suivante: 
@@ -323,13 +323,13 @@ Donc, le prix d'équilibre est la solution à :math:`\alpha p +p\log p = 3 \alph
 
 Si on résume la méthode pour trouver un équilibre de production (peu importe le nombre de consommateurs, etc): 
 
--  Étant donné les prix, la maximisation des profits donne les demandes d'inputs et l'offre d'output de la firme. On retrouve donc aussi les profits à re-distribuer. 
+-  Étant donné les prix, la maximisation des profits donne les demandes d'inputs et l'offre d'output de la firme. On retrouve donc aussi les profits à redistribuer. 
 
 -  Étant donné les prix, les dotations et les profits de l'entreprise, on peut calculer le revenu et les demandes de chaque consommateur.
 
 -  Des équations d'équilibre des marchés, on trouve la solution pour les prix d'équilibre. 
 
-Les théorèmes du bien-être s'appliquent, tout comme en échange. Une condition clé est que l'entreprise est prenneur de prix concernant son output et de ses inputs. Elle n'est pas stratégique. Il existe des situations, comme nous le verrons, où l'entreprise peut tirer profit de la manipulation des prix.
+Les théorèmes du bien-être s'appliquent, tout comme en échange. Une condition clé est que l'entreprise est preneur de prix concernant son output et de ses inputs. Elle n'est pas stratégique. Il existe des situations, comme nous le verrons, où l'entreprise peut tirer profit de la manipulation des prix.
 
 Exemple Python 
 ++++++++++++++

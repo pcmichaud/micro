@@ -11,14 +11,14 @@ See ZoneCours for evaluation methods and other instructions such other reference
    :scale: 10%
 .. _Slack: https://join.slack.com/t/micro20851/shared_invite/zt-gnkwmqsn-usBbmWhsuTmmp3nLs6LaSg
 
-A slack channel has been setup for class communication and other interactions. Make sure to click on the link above and download the app. 
+A slack channel has been set up for class communication and other interactions. Make sure to click on the link above and download the app. 
 
 We will use Zoom for class meetings. The link for each session is on ZoneCours. 
 
 Programming
 +++++++++++
 
-Python has rapidly become one of the key langages to start learning how to program, as this graph shows. 
+Python has rapidly become one of the key languages to start learning how to program, as this graph shows. 
 
 .. |Python| image:: /images/python_economist.png
    :scale: 35%

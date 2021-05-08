@@ -12,7 +12,7 @@ Les individus préfèrent généralement un bénéfice le plus tôt possible et 
 
 -  Épargner aujourd'hui pour dépenser demain?
 
-L'évidence empirique indique que l'origine de ces préférences peut-être traçée à l'enfance...
+L'évidence empirique indique que l'origine de ces préférences peut-être tracée à l'enfance...
 
 .. raw:: html
 
@@ -74,7 +74,7 @@ Les résultats montrent une grande dispersion et des taux d'escompte élevés, b
 La contrainte intertemporelle
 +++++++++++++++++++++++++++++
 
-**Marché financiers et intérêt**
+**Marché financier et intérêt**
 
 Institution financière offre :math:`r_S` pour chaque dollar déposé
 (épargne). Elle nous demande :math:`r_D` pour chaque dollar prêté
@@ -115,11 +115,11 @@ Ainsi,
 -  L'individu qui épargne en première période, peut consommer plus que son revenu en 2e période. 
 -  L'individu qui emprunte en première période, doit consommer moins que son revenu en 2e période. 
 
-Visualement, on a
+Visuellement, on a
 
 |image_budget|
 
-*Exemple*: Un régime de retraite à prestation déterminé force l'individu à épargner dans la première période et donne un revenu additionel dans la deuxième.
+*Exemple*: Un régime de retraite à prestation déterminé force l'individu à épargner dans la première période et donne un revenu additionnel dans la deuxième.
 
 -  Revenu en 2e période est :math:`Y_2 = \phi Y_1` avec un taux de remplacement
    :math:`\phi \in [0,1]`.
@@ -185,11 +185,11 @@ On peut réarranger et en fixant :math:`R=1+r`, on obtient l'équation de **Eule
 
 .. math:: u'(C_1) = R\delta u'(C_2)
 
-Visualement
+Visuellement
 
  |image_optimal|
 
-Cette théorie serviva de fondation pour la théorie du cycle de vie (*the Life-Cycle Hypothesis*), proposée par `Franco Modigliani <https://en.wikipedia.org/wiki/Franco_Modigliani>`_, qui permettra de comprendre les choix en fonction de l'âge d'un agent. L'équation de Euler dérivée ici-haut suggère qu'un individu aime lisser sa consommation sur le cycle de vie, et par conséquent, s'il fait face à des revenus élevés durant sa carrière et faible plus tard, il épargnera quand il est jeune et consomme cette épargne quand il est plus vieux. Ceci servira de fondation pour l'étude de l'épargne, de l'assurance-vie, de l'immobilier et d'un tas d'autres décisions financières. 
+Cette théorie serviva de fondation pour la théorie du cycle de vie (*the Life-Cycle Hypothesis*), proposée par `Franco Modigliani <https://en.wikipedia.org/wiki/Franco_Modigliani>`_, qui permettra de comprendre les choix en fonction de l'âge d'un agent. L'équation de Euler dérivée ici-haut suggère qu'un individu aime lisser sa consommation sur le cycle de vie, et par conséquent, s'il fait face à des revenus élevés durant sa carrière et faibles plus tard, il épargnera quand il est jeune et consomme cette épargne quand il est plus vieux. Ceci servira de fondation pour l'étude de l'épargne, de l'assurance-vie, de l'immobilier et d'un tas d'autres décisions financières. 
 
 **Exercice D**: Trouvez le choix optimal de :math:`C_1` et
 :math:`C_2` si :math:`u(C)=\frac{C^{1-\sigma}}{1-\sigma}` et avec une contrainte budgétaire classique. 
@@ -210,7 +210,7 @@ Une question très présente dans le débat public.
 
    Le Conseiller, Globe and Mail, L’Actualité
 
-On peut simuler des taux de remplacement effectif avec des modèles sophistiqués mais difficile de dire ce qui est assez ou non...
+On peut simuler des taux de remplacement effectif avec des modèles sophistiqués, mais difficiles de dire ce qui est assez ou non...
 
 .. figure:: /images/mckinsey.png
    :alt: McKinsey (2015)
@@ -252,7 +252,7 @@ Comme nous l'avons vu, les gens peuvent être très impatients. Mais leur préf�
 Vous devez choisir un film à regarder aujourd'hui et un la semaine prochaine:
 
 
-Supposons que `Mommy <https://www.youtube.com/watch?v=d7rtSqI0ZeA>`_  a un bénéfice immédiat de 4 et un bénéfice futur de 4 mais que `Les Boys <https://www.youtube.com/watch?v=OFl0fuIRl9A>`_ a un bénéfice immédiat de 7 (aucun bénéfice futur).
+Supposons que `Mommy <https://www.youtube.com/watch?v=d7rtSqI0ZeA>`_  a un bénéfice immédiat de 4 et un bénéfice futur de 4, mais que `Les Boys <https://www.youtube.com/watch?v=OFl0fuIRl9A>`_ a un bénéfice immédiat de 7 (aucun bénéfice futur).
 
 **Exercice F**: Quel est l'utilité escomptée is vous choisissez aujourd'hui et :math:`\delta=1`. Que se passe-t-il si vous choisissez plutôt pour la semaine prochaine (et la suivante, donc vous ne regardez rien cette semaine)?
 
@@ -263,7 +263,7 @@ Supposons que `Mommy <https://www.youtube.com/watch?v=d7rtSqI0ZeA>`_  a un bén�
     </div>
 
 
-L'évidence empirique montre que les gens préfèrent les Boys si le choix se fait aujourd'hui mais Mommy si le choix est fait pour la semaine prochaine. L'utilité escomptée ne permet pas d'expliquer que le choix dépend de l'horizon. Cet exemple est un parmi d'autres d'incohérence intertemporelle.  
+L'évidence empirique montre que les gens préfèrent les Boys si le choix se fait aujourd'hui, mais Mommy si le choix est fait pour la semaine prochaine. L'utilité escomptée ne permet pas d'expliquer que le choix dépend de l'horizon. Cet exemple est un parmi d'autres d'incohérence intertemporelle.  
 
 **Biais pour le présent**
 
@@ -271,7 +271,7 @@ Laibson (1997, QJE) propose une modification assez simple aux préférences esco
 
 .. math:: QH(\mathbf{c}) = u(C_1) + \beta \sum_{t=2}^T \delta^{t-1} u(C_t)
 
-Le paramètre :math:`\beta` agit comme paramètre de biais pour le présent (facteur d'escompte à court terme) alors que :math:`\delta` contrôle l'impatience à long-terme. Ces préférences dépendent maintenant de l'horizon...
+Le paramètre :math:`\beta` agit comme paramètre de biais pour le présent (facteur d'escompte à court terme) alors que :math:`\delta` contrôle l'impatience à long terme. Ces préférences dépendent maintenant de l'horizon...
 
 **Exercice G**: Quel est le TMS entre les consommations :math:`C_1` et
 :math:`C_2`? Et :math:`C_2` vs. :math:`C_3`? Comparez avec l'espérance d'utilité.
@@ -293,32 +293,32 @@ Les préférence quasi-hyperboliques capturent bien ce pattern de choix.
 
 *Exemple*: Qui s'abonne au Gym?
 
-Dans un article intéressant,  `Della Vigna et Malmendier (2006) <https://www.aeaweb.org/articles?id=10.1257/aer.96.3.694>`_ étudie le choix de prendre un abonnement au Gym plutôt que d'acheter des passes individuelles. Une passe d'une visite coûte 10$. Le coût par visite des gens qui s'abonne est beaucoup plus élevé que 10$. Pourquoi les gens achètent-ils un abonnement? Sont-ils naifs par rapport au fait qu'ils ont des préférences quasi-hyperboliques?
+Dans un article intéressant,  `Della Vigna et Malmendier (2006) <https://www.aeaweb.org/articles?id=10.1257/aer.96.3.694>`_ étudie le choix de prendre un abonnement au Gym plutôt que d'acheter des passes individuelles. Une passe d'une visite coûte 10$. Le coût par visite des gens qui s'abonne est beaucoup plus élevé que 10$. Pourquoi les gens achètent-ils un abonnement? Sont-ils naïfs par rapport au fait qu'ils ont des préférences quasi-hyperboliques?
 
 .. figure:: /images/Gym.png
     :alt: Della Vigna et Malmendier (2006)
 
 
-Il y a évidence que certains sous-estiment leur degré de biais pour le présent. Ils sont naif par rapport à leur problème de biais pour le présent. 
+Il y a évidence que certains sous-estiment leur degré de biais pour le présent. Ils sont naïfs par rapport à leur problème de biais pour le présent. 
 
 Exemple: Comment aider les gens à épargner?
 
--  Épargner est similaire à aller au Gym: coûteux dans le court-terme (sacrifice de consommation), bénéfique à long-terme (consommation future).
+-  Épargner est similaire à aller au Gym: coûteux dans le court-terme (sacrifice de consommation), bénéfique à long terme (consommation future).
 
 -  Pour aider les gens avec ces biais, on pourrait décider de changer l'option de défaut: opt-in vs. opt-out. Au lieu de devoir décider d'épargner (défaut = n'épargne pas), on peut par défaut forcer les gens à épargner et ils peuvent arrêter s'ils le veulent (défaut = épargne) ... Ce petit changement a de gros impacts. 
 
--  Shea et Madrian (2001, QJE) montre que l'épargne, à court-terme pour les entreprises qui changent le défault, augmente. 
+-  Shea et Madrian (2001, QJE) montrent que l'épargne, à court terme pour les entreprises qui changent le défaut, augmente. 
 
 .. figure:: /images/shea.png
    :alt: Shea et Madrian (2001, QJE)
 
    `Shea et Madrian (2001, QJE) <https://academic.oup.com/qje/article-abstract/116/4/1149/1903159?redirectedFrom=fulltext>`_
 
-Moins évident à long-terme...
+Moins évident à long terme...
 
 **Engagement**
 
-Les gens au prise avec un problème de la sorte, pourrait vouloir, rationellement, qu'on limite leur choix. Par exemple, en ne leur permettant pas de succomber à la temptation à court-terme *dans leur propre intérêt*. David Laibson de Harvard, et plusieurs autres, étudient des mécanismes de la sorte, appliquées à la santé et l'épargne par exemple. Il semblerait qu'il y a une demande pour ces mécanismes (*demand for commitment*). 
+Les gens aux prises avec un problème de la sorte pourraient vouloir, rationnellement, qu'on limite leur choix. Par exemple, en ne leur permettant pas de succomber à la temptation à court terme *dans leur propre intérêt*. David Laibson de Harvard, et plusieurs autres étudient des mécanismes de la sorte, appliquées à la santé et l'épargne par exemple. Il semblerait qu'il y a une demande pour ces mécanismes (*demand for commitment*). 
 
 .. raw:: html
 
