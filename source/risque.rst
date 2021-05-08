@@ -365,7 +365,7 @@ Expérience de choix III
 Une urne contient 90 billes. 30 sont rouges. Les autres 60 sont soit noires ou blanches. La proportion de billes blanches ou noires n'est pas connue. On vous demande de faire un choix entre les deux configurations de paiements suivants (lotteries): 
 
 =========== ===== ===== =======
-Loteries   rouge noire blanche
+Loteries    rouge noire blanche
 :math:`L_1` 50    0     0
 :math:`L_2` 0     50    0
 =========== ===== ===== =======
@@ -375,7 +375,7 @@ Expérience de choix IV
 Le même contexte pour ces deux loteries. 
 
 =========== ===== ===== =======
-Loteries   rouge noire blanche
+Loteries    rouge noire blanche
 :math:`L_3` 50    0     50
 :math:`L_4` 0     50    50
 =========== ===== ===== =======

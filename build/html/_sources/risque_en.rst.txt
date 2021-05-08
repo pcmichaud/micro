@@ -338,7 +338,7 @@ Choice Experiment III
 An urn consists of 90 balls. 30 are red. The other 60 are either black or white. The proportion of white and black balls is not know. We ask you to make a choice between these lotteries: 
 
 =========== ===== ===== =======
-Lotteries   red   black white
+Loteries    red   black white
 :math:`L_1` 50    0     0
 :math:`L_2` 0     50    0
 =========== ===== ===== =======
@@ -348,7 +348,7 @@ Choice Experiment IV
 Do the same in this context. 
 
 =========== ===== ===== =======
-Lotteries   red   black white
+Loteries    red   black white
 :math:`L_3` 50    0     50
 :math:`L_4` 0     50    50
 =========== ===== ===== =======
