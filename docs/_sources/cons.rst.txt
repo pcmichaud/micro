@@ -96,12 +96,6 @@ Les courbes d’indifférence ne se croisent pas si elles respectent la transiti
 *Exercice A*: Montrez que des courbes d’indifférence qui se croisent
 ne respectent pas la transitivité.
 
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/P44fP8dFZxM" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>
-
 
 **Taux marginal de substitution (TMS)**
 
@@ -151,12 +145,6 @@ Les préférences sont ordinales (hiérarchiques)
 *Exercice B*: Montrez que :math:`U` et :math:`V` dans l'exemple ont les mêmes
 préférences en trouvant la transformation :math:`V=f(U)`.
 
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/wsPBuGGIBLE" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>
-
 Comment trouver le TMS à partir de l'utilité?
 
 -  Deux biens :math:`X`, :math:`Y`. Préférences représentées par la
@@ -203,16 +191,6 @@ Posons :math:`dU = 0`, alors
 
    \frac{dY}{dX}\bigg\rvert_{dU=0} = -\frac{\partial U}{\partial X}/ \frac{\partial U}{\partial Y}
 
-On peut utiliser SymPy pour trouver le TMS:
-
-.. code:: Python
-
-   import simpy as sp 
-   x,y,a = sp.symbols('x y a')
-   u = x**a * y**(1-a)
-   umx = diff(u,x)
-   umy = diff(u,y)
-   tms = umx/umy
 
 Contrainte budgétaire
 +++++++++++++++++++++
@@ -255,11 +233,7 @@ Seuls les prix relatifs affectent l'allocation.
 *Exercice C*: Montrez qu’une contrainte budgétaire ne change pas si on
 multiplie prix et revenu par :math:`\lambda>0`.
 
-.. raw:: html
 
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/Bcz1ECmSiDs" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>
 
 Choix du consommateur
 +++++++++++++++++++++
@@ -308,28 +282,9 @@ La CPO:
 
 -TMS sur la courbe d’indifférence = Pente de la contrainte budgétaire
 
-On peut faire ce travail par SymPy: 
-
-.. code:: Python
-
-   import sympy as sp 
-   x,y,a, p_x, p_y, I = sp.symbols('x y a p_x p_y I')
-   u = x**a * y**(1-a)
-   budget = sp.Eq(p_x*x + p_y*y,I)
-   yx = sp.solve(budget,y)[0]
-   ux = u.subs(y,yx)
-   cpo = sp.Eq(sp.diff(ux,x),0)
-   xstar = sp.solve(cpo,x)[0]
-
 
 *Exercice D*: Trouvez les demandes pour :math:`u(x,y) = XY` sous la
 contrainte :math:`p_X X + p_Y Y \le I`.
-
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/gKWqAtD9ttw" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>
 
 
 On peut poser le lagrangien:
@@ -357,11 +312,6 @@ En prenant le ratio des deux premières CPO, on a:
 *Exercice E*: Trouvez les demandes pour :math:`u(X,Y) = XY` comme
 précédement mais par le lagrangien.
 
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/cbpdV7mBVaQ" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>
 
 Les demandes :math:`X^*(p_X,p_Y,I)` et :math:`Y^*(p_X,p_Y,I)` sont appelées demandes marshalliennes (`Alfred Marshall <https://fr.wikipedia.org/wiki/Alfred_Marshall>`_). Nous étudierons leurs propriétés dans le prochain cours. Elles seront très utiles pour étudier le comportement et les politiques publiques (e.g. taxation). Ces demandes sont observables, contrairement à l'utilité. On apprendra sur l'utilité par ces demandes.    
 
@@ -377,11 +327,6 @@ atteint avec les prix :math:`(p_X,p_Y)` et le revenu :math:`I`,
 :math:`\frac{\partial V}{\partial I} = \lambda` où :math:`V` est l’utilité
 indirecte.
 
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/YSyHk5wacoc" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>
 
 Identité de Roy
 +++++++++++++++
@@ -394,12 +339,6 @@ retrouver les demandes par l’identité de Roy:
 *Exercice G*: Montrez que ceci est vrai en utilisant le théorème de
 l’enveloppe.
 
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/KX0-XtNgH6g" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>
-
 
 
 Exemple Consommateur
@@ -411,9 +350,3 @@ Voir ce notebook pour un bel exemple qui utilise Python pour résoudre le probl�
 
 .. |ImageLink| image:: https://colab.research.google.com/assets/colab-badge.svg
 .. _ImageLink: https://colab.research.google.com/github/pcmichaud/micro/blob/master/notebooks/Consommateur.ipynb
-
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/h6ApeaFMBqs" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>

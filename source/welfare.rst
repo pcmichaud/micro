@@ -211,12 +211,6 @@ Il est donc possible de quantifier ceci une fois tous les paramètres connus.
 **Exercice D**: Pollution par le bruit. L'élasticité prix des maisons à la pollution par le bruit est -0.2. Le gouvernement considère réduire le niveau de pollution de 10% près d'une autoroute. Les ingénieurs nous disent que la technologie nécessaire coûtera 1000$ pour chaque propriété. La politique est financée par une taxe qui mène à une perte de bien être de 43 cents pour chaque dollar à financer. Est-ce que cette politique augmente le bien-être?
 
 
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/ud9JiRUpcfg" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>
-
 Cette approche est très utilisée. Même si a priori, ces problèmes semblent dépendre de la spécification des préférences, ce n'est pas toujours le cas, comme le montre l'exercice D (on a besoin que de l'élasticité prix dans l'exercice). Un autre enjeu est la possibilité que certains aient une variation compensatoire négative alors que pour d'autres celles-ci sont positives. À moins de spécifier un mécanisme pour agréger les variations compensatoires (une somme?), ce qui n'est pas neutre d'un point de vue de l'équité, l'approche la plus commune sera de parler d'amélioration potentielle de Pareto si la somme des variations compensatoires est positive et une forme de compensation pourrait être prévue pour ceux qui y perdent. La plupart des politiques font des perdants. Il est donc tout aussi important de statuer sur la désirabilité de la politique que d'identifier les perdants afin de les compenser. 
 
 Approche bonheur rapporté
@@ -259,9 +253,4 @@ Exemple Python Bien-être
 .. |ImageLink| image:: https://colab.research.google.com/assets/colab-badge.svg
 .. _ImageLink: https://colab.research.google.com/github/pcmichaud/micro/blob/master/notebooks/Welfare.ipynb
 
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/Diiljk3X1iE" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>
 

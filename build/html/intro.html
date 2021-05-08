@@ -105,7 +105,6 @@
 <li class="toctree-l3"><a class="reference internal" href="#note-sur-les-logarithmes">Note sur les logarithmes</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#notebook-python">Notebook Python</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="cons.html">Consommateur</a></li>
@@ -117,7 +116,6 @@
 <li class="toctree-l1"><a class="reference internal" href="echange.html">Échange</a></li>
 <li class="toctree-l1"><a class="reference internal" href="production.html">La Production</a></li>
 <li class="toctree-l1"><a class="reference internal" href="strategy.html">Concurrence imparfaite</a></li>
-<li class="toctree-l1"><a class="reference internal" href="information.html">Asymétrie d’information</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Microeconomics (20-851A):</span></p>
 <ul>
@@ -251,26 +249,6 @@ pour <span class="math notranslate nohighlight">\(x\)</span> près de <span clas
 f(x) - f(x_0) \simeq f'(x_0) (x-x_0)  \\
 \Delta f \simeq f'(x_0) \Delta x\end{split}\]</div>
 <p>Si on veut prédire le changement dans la valeur d’une fonction, la dérivée est très utile!</p>
-<p>Le module Sympy de Python permet d’écrire des fonctions symboliques (si vous n’avez pas encore fait le <a class="reference external" href="https://colab.research.google.com/github/pcmichaud/micro/blob/master/notebooks/DebutPython.ipynb">tutorial python</a>, allez le faire avant de passer à ceci). Il sera très utile. Voici comment on écrit une fonction:</p>
-<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sympy</span> <span class="k">as</span> <span class="nn">sp</span>
-<span class="n">x</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;x a b&#39;</span><span class="p">)</span>
-<span class="n">f</span> <span class="o">=</span> <span class="n">a</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="n">b</span>
-</pre></div>
-</div>
-<p>Python permet aussi d’écrire des fonctions pour évaluation rapide. On peut le faire directement en python de la façon suivante:</p>
-<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
-   <span class="k">return</span> <span class="n">a</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="n">b</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>On peut finalement passer de SymPy à python avec Lambdify:</p>
-<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sympy</span> <span class="k">as</span> <span class="nn">sp</span>
-<span class="n">x</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;x a b&#39;</span><span class="p">)</span>
-<span class="n">f</span> <span class="o">=</span> <span class="n">a</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="n">b</span>
-
-<span class="n">my_func</span> <span class="o">=</span> <span class="n">lambdify</span><span class="p">((</span><span class="n">x</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">),</span><span class="n">f</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>Pour faire les exercices ici-bas avec Python, voir le notebook à la fin.</p>
 </div>
 <div class="section" id="la-derivee">
 <h3>La dérivée<a class="headerlink" href="#la-derivee" title="Lien permanent vers ce titre">¶</a></h3>
@@ -281,11 +259,6 @@ f(x) - f(x_0) \simeq f'(x_0) (x-x_0)  \\
 <li><p><span class="math notranslate nohighlight">\(f(x) = e^{ax}\)</span>: <span class="math notranslate nohighlight">\(f'(x) = ae^{ax}\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(f(x) = x^a\)</span>: <span class="math notranslate nohighlight">\(f'(x) = a x^{a-1}\)</span></p></li>
 </ul>
-<p>La librairie SymPy permet de prendre la dérivée de fonctions. Par exemple, essayez.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="n">e</span><span class="o">**</span><span class="p">(</span><span class="n">a</span><span class="o">*</span><span class="n">x</span><span class="p">)</span>
-<span class="n">diff</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">x</span><span class="p">)</span>
-</pre></div>
-</div>
 <p><strong>Avec des fonctions</strong></p>
 <ul class="simple">
 <li><p>Règle du produit: <span class="math notranslate nohighlight">\(f(x) = a(x)b(x)\)</span>, <span class="math notranslate nohighlight">\(f'(x) = a'(x)b(x) + a(x)b'(x)\)</span></p></li>
@@ -296,13 +269,9 @@ f(x) - f(x_0) \simeq f'(x_0) (x-x_0)  \\
 </ul>
 <p><strong>Exercice A</strong>: Trouvez les dérivées de :
 <span class="math notranslate nohighlight">\(f(x)=\sqrt{x},\frac{x}{1+x},\frac{1}{2}x^2 + 2x-10,(1+\frac{x}{2})^2\)</span> sur papier et ensuite en utilisant SymPy.</p>
-<div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-    <iframe src="https://www.youtube.com/embed/twgmlJWvqT8" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-</div><p><strong>Exercice B</strong>: Faire une approximation de premier ordre pour :
+<p><strong>Exercice B</strong>: Faire une approximation de premier ordre pour :
 <span class="math notranslate nohighlight">\(f(x)=\sqrt{x}\)</span> sur papier et ensuite en utilisant SymPy.</p>
-<div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-    <iframe src="https://www.youtube.com/embed/AWRiUu4q8kg" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-</div><p><strong>Approximations d’ordres supérieurs</strong></p>
+<p><strong>Approximations d’ordres supérieurs</strong></p>
 <p>Si la fonction a des dérivées supérieures non nulles, ou bien <span class="math notranslate nohighlight">\(x\)</span> est loin de <span class="math notranslate nohighlight">\(x_0\)</span>, l’approximation de premier ordre que nous avons vu produira une approximation assez mauvaise… Par ailleurs, on veut peut-être aussi caractériser des fonctions par autre chose que seulement leur pente. (est-ce une courbe, etc?).</p>
 <p>On peut pousser plus loin le concept d’approximation,</p>
 <ul class="simple">
@@ -348,9 +317,7 @@ augmente <span class="math notranslate nohighlight">\(f\)</span></p></li>
 </ul>
 <p>On peut trouver le maximum (minimum) d’une fonction en Python numériquement ou avec SymPy.</p>
 <p><strong>Exercice C</strong>: Trouvez l’optimum de la fonction <span class="math notranslate nohighlight">\(f(x) = x(10-x)\)</span> sur papier et en utilisant SymPy.</p>
-<div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-    <iframe src="https://www.youtube.com/embed/cMS3Gs6-kbM" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-</div></div>
+</div>
 <div class="section" id="derivee-partielle">
 <h3>Dérivée partielle<a class="headerlink" href="#derivee-partielle" title="Lien permanent vers ce titre">¶</a></h3>
 <p>Supposons la fonction <span class="math notranslate nohighlight">\(f(x,y)\)</span>. La dérivée partielle se fait en
@@ -374,9 +341,7 @@ gardant fixes (ou exogènes) les autres variables:
 <p>Ceci implique que la dérivée de la valeur maximale par rapport à une variable exogène est la dérivée de la fonction objective par rapport à cette variable exogène, sans utiliser la règle de chaine (sans changer la solution optimale). C’est un raccourci (approximation) qui sera utile à plusieurs moments dans le cours.</p>
 <p><strong>Exercice D</strong>: Trouvez la forme de <span class="math notranslate nohighlight">\(V'(p)\)</span> pour la
 fonction <span class="math notranslate nohighlight">\(V(p) = (10 - p\frac{x^*(p)}{2})x^*(p)\)</span> où <span class="math notranslate nohighlight">\(x^*(p) = \arg \max_x f(x,p)\)</span> et <span class="math notranslate nohighlight">\(f(x,p) =(10 - p\frac{x}{2})x\)</span>.</p>
-<div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-    <iframe src="https://www.youtube.com/embed/4F663J3yNyE" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-</div></div>
+</div>
 <div class="section" id="la-differentielle-totale">
 <h3>La différentielle totale<a class="headerlink" href="#la-differentielle-totale" title="Lien permanent vers ce titre">¶</a></h3>
 <p>Les combinaisons de <span class="math notranslate nohighlight">\(x,y\)</span> telles que <span class="math notranslate nohighlight">\(f(x,y) = \overline{f}\)</span>)
@@ -393,9 +358,7 @@ df(x,y) = f'_x(x,y)dx + f'_y(x,y)dy\end{aligned}\]</div>
 <p>On qualifie la dérivée par le <span class="math notranslate nohighlight">\(df=0\)</span> pour indiquer que c’est une dérivée obtenue en contraignant la valeur de la fonction à être constante.</p>
 <p><strong>Exercice E</strong>: Trouvez <span class="math notranslate nohighlight">\(\frac{dy}{dx}\Bigr|_{df=0}\)</span> par
 différentielle totale pour <span class="math notranslate nohighlight">\(f(x,y)=\log(xy)\)</span>. Faire sur papier et par SymPy.</p>
-<div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-    <iframe src="https://www.youtube.com/embed/cQ5U5hFl6Qo" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-</div></div>
+</div>
 <div class="section" id="homogeneite-d-une-fonction">
 <h3>Homogénéité d’une fonction<a class="headerlink" href="#homogeneite-d-une-fonction" title="Lien permanent vers ce titre">¶</a></h3>
 <p>La dérivée partielle informe sur le comportement de la fonction quand un des arguments varie alors que les autres demeurent constants. Mais on pourrait aussi s’intéresser au comportement d’une fonction quand tous les arguments augmentent (ou diminuent) d’une même proportion. On utilise le concept d’homogénéité. Il y a deux façons de s’y prendre:</p>
@@ -408,9 +371,7 @@ différentielle totale pour <span class="math notranslate nohighlight">\(f(x,y)=
 \[r f(x_1,x_2,...,x_n) = \sum_{i=1}^n \frac{\partial f}{\partial x_i}x_i.\]</div>
 <p><strong>Exercice F</strong>: Trouvez le degré d’homogénéité de la fonction
 <span class="math notranslate nohighlight">\(f(x,y)=x^\alpha y^\beta\)</span> des deux façons.</p>
-<div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-    <iframe src="https://www.youtube.com/embed/V3cSniJhhuU" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-</div></div>
+</div>
 <div class="section" id="approximation-et-maximum">
 <h3>Approximation et maximum<a class="headerlink" href="#approximation-et-maximum" title="Lien permanent vers ce titre">¶</a></h3>
 <div class="math notranslate nohighlight">
@@ -443,9 +404,7 @@ résoudre pour <span class="math notranslate nohighlight">\(x^*\)</span> et util
 <span class="math notranslate nohighlight">\(y^*\)</span>.</p>
 <p><strong>Exercice G</strong>: Maximisez la fonction <span class="math notranslate nohighlight">\(f(x,y) = \log x + \log y\)</span>
 sous la contrainte <span class="math notranslate nohighlight">\(x+y \le m\)</span>.</p>
-<div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-    <iframe src="https://www.youtube.com/embed/o_YgiZvNmx8" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-</div><p>Avec plusieurs variables et contraintes, cette approche n’est pas très pratique…</p>
+<p>Avec plusieurs variables et contraintes, cette approche n’est pas très pratique…</p>
 <p><strong>Le lagrangien</strong></p>
 <p>La méthode de <a class="reference external" href="https://fr.wikipedia.org/wiki/Joseph-Louis_Lagrange">Lagrange</a> consiste à résoudre pour <span class="math notranslate nohighlight">\((x,y)\)</span>,</p>
 <div class="math notranslate nohighlight">
@@ -461,9 +420,7 @@ g(x,y) = m\end{aligned}\end{split}\]</div>
 <p>Le lagrangien <span class="math notranslate nohighlight">\(L(x,y,\lambda)\)</span> est une fonction objective modifiée qui permet de pénaliser la maximisation pour la contrainte (pour s’assurer qu’elle soit respectée). On remarque que si <span class="math notranslate nohighlight">\(\lambda = 0\)</span>, on a les deux CPO non-contraintes <span class="math notranslate nohighlight">\(f'_x(x,y)=0\)</span> et <span class="math notranslate nohighlight">\(f'_y(x,y)=0\)</span> qui donnent une solution optimale sans avoir besoin de la troisième. Seulement si la contrainte est <em>mordante</em> (si <span class="math notranslate nohighlight">\(\lambda \neq 0\)</span>) aurons-nous une solution différente…</p>
 <p><strong>Exercice H</strong>: Maximisez la fonction <span class="math notranslate nohighlight">\(f(x,y) = \log x + \log y\)</span>
 sous la contrainte <span class="math notranslate nohighlight">\(x+y \le m\)</span> par la méthode du lagrangien.</p>
-<div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-    <iframe src="https://www.youtube.com/embed/UxbZ9rwdHDg" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-</div><p><strong>L’interprétation du multiplicateur</strong></p>
+<p><strong>L’interprétation du multiplicateur</strong></p>
 <p>Il n’est pas nécessaire de résoudre pour la valeur de <span class="math notranslate nohighlight">\(\lambda\)</span> afin de trouver les
 valeurs optimales de <span class="math notranslate nohighlight">\(x\)</span> et <span class="math notranslate nohighlight">\(y\)</span>. Mais, si on le fait, <span class="math notranslate nohighlight">\(\lambda\)</span> a une
 interprétation utile pour certaines applications que nous verrons.</p>
@@ -473,24 +430,12 @@ interprétation utile pour certaines applications que nous verrons.</p>
 <p>alors <span class="math notranslate nohighlight">\(V'(m) = \lambda\)</span>. La valeur maximale augmente de <span class="math notranslate nohighlight">\(\lambda\)</span> quand on augmente (marginalement) <span class="math notranslate nohighlight">\(m\)</span> (quand on relâche la contrainte).</p>
 <p><strong>Exercice I</strong>: Démontrez dans le problème précédent (H) qu’une augmentation
 marginale de <span class="math notranslate nohighlight">\(m\)</span> a pour effet d’augmenter le maximum de <span class="math notranslate nohighlight">\(\lambda\)</span>. Pour ce faire résoudre les CPO du lagrangien pour <span class="math notranslate nohighlight">\(x,y,\lambda\)</span>, remplacez ces expressions dans <span class="math notranslate nohighlight">\(f(x,y)\)</span> et prendre la dérivée par rapport à  <span class="math notranslate nohighlight">\(m\)</span>. Montrez que cette dérivée est égale à la valeur de <span class="math notranslate nohighlight">\(\lambda\)</span>.</p>
-<div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-    <iframe src="https://www.youtube.com/embed/jewTrwjTksU" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-</div></div>
+</div>
 <div class="section" id="note-sur-les-logarithmes">
 <h3>Note sur les logarithmes<a class="headerlink" href="#note-sur-les-logarithmes" title="Lien permanent vers ce titre">¶</a></h3>
 <p>Dans les notes, nous utiliserons <span class="math notranslate nohighlight">\(\log\)</span> en base <span class="math notranslate nohighlight">\(e=2.718281828459\)</span> et non en base 10. Donc, il s’agit du logarithme naturel (<span class="math notranslate nohighlight">\(\ln = \log_e\)</span>). Python utilise aussi la base exponentielle.</p>
 </div>
 </div>
-<div class="section" id="notebook-python">
-<h2>Notebook Python<a class="headerlink" href="#notebook-python" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Pour faire les exercices ici haut dans Python, vous pouvez ouvrir ce notebook dans google collab et y rajouter vos calculs.</p>
-<p><a class="reference external" href="https://colab.research.google.com/github/pcmichaud/micro/blob/master/notebooks/DebutOptim.ipynb"><img alt="ImageLink" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
-<div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-    <iframe src="https://www.youtube.com/embed/j7w4Hy-MK4M" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-</div><p>Pour apprendre comment écrire des équations en LaTeX à l’intérieur d’un notebook Python, voir cette vidéo:</p>
-<div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-    <iframe src="https://www.youtube.com/embed/TME08FQDxxw" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-</div></div>
 </div>
 
 

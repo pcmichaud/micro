@@ -81,33 +81,6 @@ où :math:`f'(\cdot)` est la dérivée première de la fonction :math:`f(\cdot)`
 
 Si on veut prédire le changement dans la valeur d'une fonction, la dérivée est très utile!
 
-Le module Sympy de Python permet d'écrire des fonctions symboliques (si vous n'avez pas encore fait le `tutorial python <https://colab.research.google.com/github/pcmichaud/micro/blob/master/notebooks/DebutPython.ipynb>`_, allez le faire avant de passer à ceci). Il sera très utile. Voici comment on écrit une fonction:  
-
-.. code-block:: ipython
-   
-   import sympy as sp
-   x, a, b = sp.symbols('x a b')
-   f = a*x**b
-
-Python permet aussi d'écrire des fonctions pour évaluation rapide. On peut le faire directement en python de la façon suivante: 
-
-.. code-block:: ipython
-   
-   def f(x,a,b):
-      return a*(x**b)
-
-On peut finalement passer de SymPy à python avec Lambdify: 
-
-.. code-block:: ipython
-   
-   import sympy as sp
-   x, a, b = sp.symbols('x a b')
-   f = a*x**b
-   
-   my_func = lambdify((x,a,b),f)
-
-Pour faire les exercices ici-bas avec Python, voir le notebook à la fin.
-
 La dérivée
 ^^^^^^^^^^
 
@@ -121,12 +94,7 @@ La dérivée
 
 -  :math:`f(x) = x^a`: :math:`f'(x) = a x^{a-1}`
 
-La librairie SymPy permet de prendre la dérivée de fonctions. Par exemple, essayez.
 
-.. code-block:: python 
-   
-   f = e**(a*x)
-   diff(f,x)
 
 **Avec des fonctions**
 
@@ -144,20 +112,12 @@ La librairie SymPy permet de prendre la dérivée de fonctions. Par exemple, ess
 :math:`f(x)=\sqrt{x},\frac{x}{1+x},\frac{1}{2}x^2 + 2x-10,(1+\frac{x}{2})^2` sur papier et ensuite en utilisant SymPy.
 
 
-.. raw:: html
 
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/twgmlJWvqT8" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>
 
 **Exercice B**: Faire une approximation de premier ordre pour :
 :math:`f(x)=\sqrt{x}` sur papier et ensuite en utilisant SymPy. 
 
-.. raw:: html
 
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/AWRiUu4q8kg" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>
 
 **Approximations d’ordres supérieurs**
 
@@ -231,11 +191,6 @@ On peut trouver le maximum (minimum) d'une fonction en Python numériquement ou 
 **Exercice C**: Trouvez l'optimum de la fonction :math:`f(x) = x(10-x)` sur papier et en utilisant SymPy.
 
 
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/cMS3Gs6-kbM" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>
 
 
 
@@ -280,11 +235,7 @@ Ceci implique que la dérivée de la valeur maximale par rapport à une variable
 **Exercice D**: Trouvez la forme de :math:`V'(p)` pour la
 fonction :math:`V(p) = (10 - p\frac{x^*(p)}{2})x^*(p)` où :math:`x^*(p) = \arg \max_x f(x,p)` et :math:`f(x,p) =(10 - p\frac{x}{2})x`.
 
-.. raw:: html
 
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/4F663J3yNyE" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>
 
 
 La différentielle totale
@@ -313,11 +264,6 @@ On qualifie la dérivée par le :math:`df=0` pour indiquer que c'est une dériv�
 **Exercice E**: Trouvez :math:`\frac{dy}{dx}\Bigr|_{df=0}` par
 différentielle totale pour :math:`f(x,y)=\log(xy)`. Faire sur papier et par SymPy. 
 
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/cQ5U5hFl6Qo" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>
 
 
 Homogénéité d'une fonction
@@ -341,11 +287,7 @@ Théorème d'Euler: Si une fonction est homogène de degré :math:`r`, alors:
 **Exercice F**: Trouvez le degré d’homogénéité de la fonction
 :math:`f(x,y)=x^\alpha y^\beta` des deux façons.
 
-.. raw:: html
 
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/V3cSniJhhuU" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>
 
 
 Approximation et maximum
@@ -395,11 +337,7 @@ résoudre pour :math:`x^*` et utiliser :math:`y=q(x)` pour trouver
 **Exercice G**: Maximisez la fonction :math:`f(x,y) = \log x + \log y`
 sous la contrainte :math:`x+y \le m`.
 
-.. raw:: html
 
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/o_YgiZvNmx8" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>
 
 Avec plusieurs variables et contraintes, cette approche n'est pas très pratique...
 
@@ -429,11 +367,6 @@ Le lagrangien :math:`L(x,y,\lambda)` est une fonction objective modifiée qui pe
 **Exercice H**: Maximisez la fonction :math:`f(x,y) = \log x + \log y`
 sous la contrainte :math:`x+y \le m` par la méthode du lagrangien.
 
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/UxbZ9rwdHDg" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>
 
 
 **L’interprétation du multiplicateur**
@@ -451,11 +384,7 @@ alors :math:`V'(m) = \lambda`. La valeur maximale augmente de :math:`\lambda` qu
 **Exercice I**: Démontrez dans le problème précédent (H) qu’une augmentation
 marginale de :math:`m` a pour effet d'augmenter le maximum de :math:`\lambda`. Pour ce faire résoudre les CPO du lagrangien pour :math:`x,y,\lambda`, remplacez ces expressions dans :math:`f(x,y)` et prendre la dérivée par rapport à  :math:`m`. Montrez que cette dérivée est égale à la valeur de :math:`\lambda`. 
 
-.. raw:: html
 
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/jewTrwjTksU" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>
 
 
 Note sur les logarithmes
@@ -463,26 +392,4 @@ Note sur les logarithmes
 
 Dans les notes, nous utiliserons :math:`\log` en base :math:`e=2.718281828459` et non en base 10. Donc, il s'agit du logarithme naturel (:math:`\ln = \log_e`). Python utilise aussi la base exponentielle. 
 
-Notebook Python
-+++++++++++++++
 
-Pour faire les exercices ici haut dans Python, vous pouvez ouvrir ce notebook dans google collab et y rajouter vos calculs. 
-
-|ImageLink|_
-
-.. |ImageLink| image:: https://colab.research.google.com/assets/colab-badge.svg
-.. _ImageLink: https://colab.research.google.com/github/pcmichaud/micro/blob/master/notebooks/DebutOptim.ipynb
-
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/j7w4Hy-MK4M" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>
-
-Pour apprendre comment écrire des équations en LaTeX à l'intérieur d'un notebook Python, voir cette vidéo: 
-
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/TME08FQDxxw" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>

@@ -111,7 +111,6 @@
 <li class="toctree-l1"><a class="reference internal" href="echange.html">Échange</a></li>
 <li class="toctree-l1"><a class="reference internal" href="production.html">La Production</a></li>
 <li class="toctree-l1"><a class="reference internal" href="strategy.html">Concurrence imparfaite</a></li>
-<li class="toctree-l1"><a class="reference internal" href="information.html">Asymétrie d’information</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Microeconomics (20-851A):</span></p>
 <ul>
@@ -271,9 +270,7 @@ que le consommateur est indifférent entre <span class="math notranslate nohighl
 <a class="reference internal image-reference" href="_images/indif.png"><img alt="_images/indif.png" src="_images/indif.png" style="width: 450.0px; height: 300.0px;" /></a>
 <p><em>Exercice A</em>: Montrez que des courbes d’indifférence qui se croisent
 ne respectent pas la transitivité.</p>
-<div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-    <iframe src="https://www.youtube.com/embed/P44fP8dFZxM" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-</div><p><strong>Taux marginal de substitution (TMS)</strong></p>
+<p><strong>Taux marginal de substitution (TMS)</strong></p>
 <p>Ces courbes d’indifférences contiennent plus d’information qu’on croit …</p>
 <ul class="simple">
 <li><p>Pour un panier <span class="math notranslate nohighlight">\((X_0, Y_0)\)</span>, TMS de <span class="math notranslate nohighlight">\(X\)</span> en fonction de
@@ -312,9 +309,7 @@ mêmes préférences</p></li>
 </ul>
 <p><em>Exercice B</em>: Montrez que <span class="math notranslate nohighlight">\(U\)</span> et <span class="math notranslate nohighlight">\(V\)</span> dans l’exemple ont les mêmes
 préférences en trouvant la transformation <span class="math notranslate nohighlight">\(V=f(U)\)</span>.</p>
-<div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-    <iframe src="https://www.youtube.com/embed/wsPBuGGIBLE" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-</div><p>Comment trouver le TMS à partir de l’utilité?</p>
+<p>Comment trouver le TMS à partir de l’utilité?</p>
 <ul class="simple">
 <li><p>Deux biens <span class="math notranslate nohighlight">\(X\)</span>, <span class="math notranslate nohighlight">\(Y\)</span>. Préférences représentées par la
 fonction d’utilité <span class="math notranslate nohighlight">\(U(X,Y)\)</span></p></li>
@@ -352,15 +347,6 @@ dU = \frac{\partial U}{\partial X}dX + \frac{\partial U}{\partial Y}dY\end{align
 <p>Posons <span class="math notranslate nohighlight">\(dU = 0\)</span>, alors</p>
 <div class="math notranslate nohighlight">
 \[\frac{dY}{dX}\bigg\rvert_{dU=0} = -\frac{\partial U}{\partial X}/ \frac{\partial U}{\partial Y}\]</div>
-<p>On peut utiliser SymPy pour trouver le TMS:</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">simpy</span> <span class="k">as</span> <span class="nn">sp</span>
-<span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">a</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;x y a&#39;</span><span class="p">)</span>
-<span class="n">u</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="n">a</span> <span class="o">*</span> <span class="n">y</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">a</span><span class="p">)</span>
-<span class="n">umx</span> <span class="o">=</span> <span class="n">diff</span><span class="p">(</span><span class="n">u</span><span class="p">,</span><span class="n">x</span><span class="p">)</span>
-<span class="n">umy</span> <span class="o">=</span> <span class="n">diff</span><span class="p">(</span><span class="n">u</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
-<span class="n">tms</span> <span class="o">=</span> <span class="n">umx</span><span class="o">/</span><span class="n">umy</span>
-</pre></div>
-</div>
 </div>
 <div class="section" id="contrainte-budgetaire">
 <h2>Contrainte budgétaire<a class="headerlink" href="#contrainte-budgetaire" title="Lien permanent vers ce titre">¶</a></h2>
@@ -400,9 +386,7 @@ est maintenant en termes de quantité de <span class="math notranslate nohighlig
 <p>Seuls les prix relatifs affectent l’allocation.</p>
 <p><em>Exercice C</em>: Montrez qu’une contrainte budgétaire ne change pas si on
 multiplie prix et revenu par <span class="math notranslate nohighlight">\(\lambda&gt;0\)</span>.</p>
-<div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-    <iframe src="https://www.youtube.com/embed/Bcz1ECmSiDs" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-</div></div>
+</div>
 <div class="section" id="choix-du-consommateur">
 <h2>Choix du consommateur<a class="headerlink" href="#choix-du-consommateur" title="Lien permanent vers ce titre">¶</a></h2>
 <ul class="simple">
@@ -442,22 +426,9 @@ donne le meilleur niveau de bien-être possible</p></li>
 \[\iff \frac{dU}{dX}\Bigg/\frac{dU}{dY} = \frac{p_X}{p_Y}\]</div>
 </div></blockquote>
 <p>-TMS sur la courbe d’indifférence = Pente de la contrainte budgétaire</p>
-<p>On peut faire ce travail par SymPy:</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sympy</span> <span class="k">as</span> <span class="nn">sp</span>
-<span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">a</span><span class="p">,</span> <span class="n">p_x</span><span class="p">,</span> <span class="n">p_y</span><span class="p">,</span> <span class="n">I</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;x y a p_x p_y I&#39;</span><span class="p">)</span>
-<span class="n">u</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="n">a</span> <span class="o">*</span> <span class="n">y</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">a</span><span class="p">)</span>
-<span class="n">budget</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">Eq</span><span class="p">(</span><span class="n">p_x</span><span class="o">*</span><span class="n">x</span> <span class="o">+</span> <span class="n">p_y</span><span class="o">*</span><span class="n">y</span><span class="p">,</span><span class="n">I</span><span class="p">)</span>
-<span class="n">yx</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">budget</span><span class="p">,</span><span class="n">y</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">ux</span> <span class="o">=</span> <span class="n">u</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">y</span><span class="p">,</span><span class="n">yx</span><span class="p">)</span>
-<span class="n">cpo</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">Eq</span><span class="p">(</span><span class="n">sp</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">ux</span><span class="p">,</span><span class="n">x</span><span class="p">),</span><span class="mi">0</span><span class="p">)</span>
-<span class="n">xstar</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">cpo</span><span class="p">,</span><span class="n">x</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
-</pre></div>
-</div>
 <p><em>Exercice D</em>: Trouvez les demandes pour <span class="math notranslate nohighlight">\(u(x,y) = XY\)</span> sous la
 contrainte <span class="math notranslate nohighlight">\(p_X X + p_Y Y \le I\)</span>.</p>
-<div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-    <iframe src="https://www.youtube.com/embed/gKWqAtD9ttw" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-</div><p>On peut poser le lagrangien:</p>
+<p>On peut poser le lagrangien:</p>
 <div class="math notranslate nohighlight">
 \[L(X,Y,\lambda) = U(X,Y) - \lambda (p_X X + p_Y Y - I)\]</div>
 <p>Si on maximise: <span class="math notranslate nohighlight">\(\max_{X,Y,\lambda} L(X,Y,\lambda)\)</span>, les CPO sont</p>
@@ -472,9 +443,7 @@ p_X X + p_Y Y = I\end{split}\]</div>
 p_X X + p_Y Y = I\end{aligned}\end{split}\]</div>
 <p><em>Exercice E</em>: Trouvez les demandes pour <span class="math notranslate nohighlight">\(u(X,Y) = XY\)</span> comme
 précédement mais par le lagrangien.</p>
-<div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-    <iframe src="https://www.youtube.com/embed/cbpdV7mBVaQ" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-</div><p>Les demandes <span class="math notranslate nohighlight">\(X^*(p_X,p_Y,I)\)</span> et <span class="math notranslate nohighlight">\(Y^*(p_X,p_Y,I)\)</span> sont appelées demandes marshalliennes (<a class="reference external" href="https://fr.wikipedia.org/wiki/Alfred_Marshall">Alfred Marshall</a>). Nous étudierons leurs propriétés dans le prochain cours. Elles seront très utiles pour étudier le comportement et les politiques publiques (e.g. taxation). Ces demandes sont observables, contrairement à l’utilité. On apprendra sur l’utilité par ces demandes.</p>
+<p>Les demandes <span class="math notranslate nohighlight">\(X^*(p_X,p_Y,I)\)</span> et <span class="math notranslate nohighlight">\(Y^*(p_X,p_Y,I)\)</span> sont appelées demandes marshalliennes (<a class="reference external" href="https://fr.wikipedia.org/wiki/Alfred_Marshall">Alfred Marshall</a>). Nous étudierons leurs propriétés dans le prochain cours. Elles seront très utiles pour étudier le comportement et les politiques publiques (e.g. taxation). Ces demandes sont observables, contrairement à l’utilité. On apprendra sur l’utilité par ces demandes.</p>
 </div>
 <div class="section" id="utilite-indirecte">
 <h2>Utilité Indirecte<a class="headerlink" href="#utilite-indirecte" title="Lien permanent vers ce titre">¶</a></h2>
@@ -485,9 +454,7 @@ atteint avec les prix <span class="math notranslate nohighlight">\((p_X,p_Y)\)</
 <p><em>Exercice F</em> : Montrez que
 <span class="math notranslate nohighlight">\(\frac{\partial V}{\partial I} = \lambda\)</span> où <span class="math notranslate nohighlight">\(V\)</span> est l’utilité
 indirecte.</p>
-<div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-    <iframe src="https://www.youtube.com/embed/YSyHk5wacoc" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-</div></div>
+</div>
 <div class="section" id="identite-de-roy">
 <h2>Identité de Roy<a class="headerlink" href="#identite-de-roy" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Si l’utilité indirecte est donnée par <span class="math notranslate nohighlight">\(V(p_X,p_Y,I)\)</span> alors on peut
@@ -496,16 +463,12 @@ retrouver les demandes par l’identité de Roy:</p>
 \[X^*(p_X,p_Y,I) = -\frac{\partial{V(p_X,p_Y,I)}/\partial{p_X}}{\partial{V(p_X,p_Y,I)}/\partial{I}}\]</div>
 <p><em>Exercice G</em>: Montrez que ceci est vrai en utilisant le théorème de
 l’enveloppe.</p>
-<div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-    <iframe src="https://www.youtube.com/embed/KX0-XtNgH6g" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-</div></div>
+</div>
 <div class="section" id="exemple-consommateur">
 <h2>Exemple Consommateur<a class="headerlink" href="#exemple-consommateur" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Voir ce notebook pour un bel exemple qui utilise Python pour résoudre le problème du consommateur avec fonction d’utilité CES (Constant Elasticity of Substitution)</p>
 <p><a class="reference external" href="https://colab.research.google.com/github/pcmichaud/micro/blob/master/notebooks/Consommateur.ipynb"><img alt="ImageLink" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
-<div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-    <iframe src="https://www.youtube.com/embed/h6ApeaFMBqs" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-</div></div>
+</div>
 </div>
 
 

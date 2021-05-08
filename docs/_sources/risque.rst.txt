@@ -78,11 +78,7 @@ Si :math:`u(X) = \sqrt{X}` et le consommateur fait face aux lotteries :math:`\ma
 -  **Exercice C**: Est-ce que la fonction d'utilité :math:`u(X) = X` donne le même choix?
 
 
-.. raw:: html
 
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/0d2D_VJD9L4" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>
 
 En situation de certitude, l'utilité est ordinale: seul l'ordre compte. Cependant, en situation de risque, l'utilité espérée à la vNM est cardinale, car elle dépend des probabilités qui sont ont une échelle (entre 0 et 1). Donc, les transformations monotones ne sont pas permises. Mais une transformation est permise: la transformation affine: :math:`\widehat u = a u +b` avec :math:`a>0`. On peut montrer que cette transformation n'affecte pas les préférences.
 
@@ -182,11 +178,7 @@ Dans ce cas, on peut montrer que :math:`R(X) = r`, d'où son nom, fonction d'uti
 
 **Exercice D**: En utilisant la fonction d'utilité CRRA, dans l'expérience par listes ici-haut, calculez l'interval dans lequel doit se trouver :math:`r` si l'individu choisi l'option A jusqu'au 7e choix et ensuite l'option B à partir du 8e choix?
 
-.. raw:: html
 
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/tEUxxgxm03Y" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>
 
 
 Prime de risque
@@ -219,11 +211,7 @@ On remarque que la prime augmente avec l'aversion au risque et la variance du ri
 
 **Exercice F**: Avec :math:`u(X) = \sqrt X`, la prime de risque est-elle plus faible que dans l'exercice précédent?
 
-.. raw:: html
 
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/um8t_1HnvEs" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>
 
 Assurance
 +++++++++
@@ -297,11 +285,7 @@ Assurance et entrepreneuriat
 
 -  **Exercice H**: Quel sera son choix?
 
-.. raw:: html
 
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/_cXjJyzut54" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>
 
 L'émission, *Les Dragons* de Radio-Canada est une application directe de cet exemple. La participation est toujours conditionnelle à une part des profits. La négociation porte donc sur la part des profits en rapport à la part de l'investissement initial. En voici un exemple ou les deux entrepreneurs ont négocié fort... 
 
@@ -348,11 +332,7 @@ Maurice Allais et son Paradoxe
 **Exercice I**: Montrez que :math:`L_1 \succ L_2` et
 :math:`L_4 \succ L_3` sont des choix incohérents si les préférences sont représentées par l'espérance de l'utilité.
 
-.. raw:: html
 
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/nM_R-796R0E" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>
 
 
 .. figure:: /images/allais.png
@@ -386,11 +366,7 @@ Le Paradoxe d'Ellsberg
 **Exercice J** Montrez que la combinaison de choix :math:`L_1 \succ L_2` et
 :math:`L_4 \succ L_3` ne peut survenir si l'agent a des préférences représentées par l'espérance d'utilité.
 
-.. raw:: html
 
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/U0rcjieEqg0" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>
    
 M. Ellsberg est bien connue pour ce Paradoxe, mais encore davantage pour ses mésaventures avec le gouvernement américain... `Pentagon Papers <https://fr.wikipedia.org/wiki/Daniel_Ellsberg>`__
 
@@ -418,8 +394,4 @@ Exemple Python risque
 .. |ImageLink| image:: https://colab.research.google.com/assets/colab-badge.svg
 .. _ImageLink: https://colab.research.google.com/github/pcmichaud/micro/blob/master/notebooks/AversionRisqueExemple.ipynb
 
-.. raw:: html
 
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/OE9ymCfWH4E" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>

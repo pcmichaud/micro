@@ -161,11 +161,6 @@ Le revenu compensé pour une hausse de prix est toujours plus élevé que le rev
 **Exercice A**: Calculez le revenu et la demande compensée pour
 :math:`X` si :math:`U(X,Y) = XY` et :math:`p_XX+p_YY \le I` pour un changement de prix :math:`\hat p_X > p_X`.
 
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/0dfoolULChE" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>
 
 Précisons maintenant davantage les effets substitutions et revenu. 
 
@@ -224,11 +219,7 @@ Alors, :math:`p_X \Delta X^{cmp}+ p_Y \Delta Y^{cmp}= 0`.
 :math:`\Delta p_X = 0.1` dans un 2e temps.
 
 
-.. raw:: html
 
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/Ovjh0AhL6mY" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>
 
 
 
@@ -258,11 +249,7 @@ On obtient
 
 **Exercice C**: Trouvez les effets revenus et prix de l'exercice B (:math:`\Delta p_X = 1`). 
 
-.. raw:: html
 
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/04cuRQMZi5c" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>
 
 Puisque
 
@@ -288,11 +275,7 @@ L'équation de Slutsky est donc:
 
 **Exercice D**: Pour les préférences Cobb-Douglas :math:`U(X,Y) = X^\alpha Y^{1-\alpha}`, calculez l'élasticité prix compensé à l'aide de l'équation de Slutsky. 
 
-.. raw:: html
 
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/si2THh8yqRI" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>
 
 Effets prix croisés
 +++++++++++++++++++
@@ -382,8 +365,4 @@ Voir ce notebook pour un exemple qui utilise Python pour calculez la compensatio
 .. |ImageLink| image:: https://colab.research.google.com/assets/colab-badge.svg
 .. _ImageLink: https://colab.research.google.com/github/pcmichaud/micro/blob/master/notebooks/PriceEffectTutorial.ipynb
 
-.. raw:: html
 
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/1Y7FVxKgIbg" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>

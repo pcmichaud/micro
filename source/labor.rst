@@ -110,12 +110,6 @@ Concernant l'élasticité salaire, la littérature est vaste, et utilise un nomb
 *Exercice B*: Trouvez les élasticités salaire et salaire compensé pour :math:`u(C,H) = C - \frac{H^{1+\frac{1}{\epsilon}}}{1+\frac{1}{\epsilon}}`.
 
 
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/XMiYOYv2cA4" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>
-
 
 Il est possible qu'une hausse de salaire horaire réduise l'offre de travail. Cet effet contre-intuitif est pourtant présent dans certaines professions. Un exemple souvent donné est celui des médecins au Québec qui ne semblent pas avoir augmenté leur offre de travail après l'énorme augmentation salariales consentie à la fin des années 2000. La part des médecins travaillant à temps partiel a aussi augmenté considérablement. 
 
@@ -145,11 +139,7 @@ De plus, l'implémentation de la taxe est importante. Plus elle est permanente, 
 
 **Exercice C**: Dans le cas où les préférences sont données par :math:`u(C,H) = C - \frac{H^{1+\frac{1}{\epsilon}}}{1+\frac{1}{\epsilon}}`, trouvez l'effet d'une taxe :math:`\tau` sur l'offre de travail et la perte de bien-être associée à la taxation. 
 
-.. raw:: html
 
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/iREGXgKZNSQ" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>
 
 Dans les faits, le système fiscal ne peut être résumé à un taux d'imposition uniforme, :math:`\tau`. D'abord, l'impôt est progressif et le taux change par palier d'imposition. Par ailleurs, des crédits d'impôt affectent le taux effectif d'imposition parce qu'ils sont fonction du revenu de travail (e.g. prime au travail québécoise, crédit pour frais de garde). Donc, plus généralement, les impôts à payer sont donnés par: :math:`\tau(wH,y)` qui dépend de la source des revenus et est généralement non-linéaire dans ces revenus. 
 
@@ -212,8 +202,3 @@ Exemple Python
 .. |ImageLink| image:: https://colab.research.google.com/assets/colab-badge.svg
 .. _ImageLink: https://colab.research.google.com/github/pcmichaud/micro/blob/master/notebooks/tax_example.ipynb
 
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/1tysJNiNmek" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>
