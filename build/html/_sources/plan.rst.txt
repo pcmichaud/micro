@@ -3,51 +3,21 @@ Plan de cours
 
 Ce cours vise deux objectifs. Le premier est de présenter aux étudiants les principes mathématiques de modélisation en microéconomie afin de pouvoir les appliquer en pratique. L'étude de ces modèles microéconomiques se fera à travers l'acquisition des outils d'analyse qu’est l'optimisation contrainte l'analyse différentielle. Un volet pratique utilisant la programmation permettra aux étudiants d'approfondir ces concepts. Le deuxième objectif est de confronter les étudiants aux imperfections de marché, leur permettant ainsi d'évaluer l'intervention gouvernementale par le biais de politiques publiques.  
 
-Les thèmes couverts
-+++++++++++++++++++
-
--  Les choix de consommation: statique, incertitude et temps
-
--  Modélisation d'équilibre de marché et bien-être
-
--  Choix de production des entreprises
-
--  Les comportements stratégiques des entreprises en concurrence imparfaite
-
--  L'asymétrie d'information. 
-
-Forme de l'enseignement
-+++++++++++++++++++++++
-
-Chaque cours, l'étudiant est responsable de venir préparé en ayant étudié le matériel de chaque section sur la page web du cours. Une capsule est disponible pour la solution aux exercices. Les cours sont enregistrés. La première portion du cours comporte une révision du matériel en groupe (sous forme de discussion), la deuxième portion du cours sera consacrée à des problèmes que nous ferons en petit groupe. Finalement une solution et synthèse du matériel sera faite en groupe.
-
-Évaluation
-++++++++++
-
--  Participation (10%)
--  3 devoirs en équipe de 3 (30%)
--  Intra et final (Meilleure note 35%,l'autre 25%)
-
 Enseignement
 ++++++++++++
 
 - Professeur: `Pierre-Carl Michaud <mailto:pierre-carl.michaud\@hec.ca>`_ 
-- Auxiliaire enseignement: `Aïssatou Ba <mailto:aissatou.2.ba@hec.ca>`_ 
+- Auxiliaire enseignement: À déterminer
 
-Périodes de consultation: Ba (Lundi 13:00-14:00 et Mardi 15:30-16:30), Michaud (Mercredi 15:30-16:30). 
-
-Mode d'interaction
-++++++++++++++++++
-
-Le cours est donné en mode co-modal, ce qui signifie qu'il y aura un cours présentiel tous les jeudis de 8:30 à 11:30 à la salle TD Assurance Monnex à moins d'avis contraire. Nous sommes restreints à 19 personnes en classe. Les autres pourront suivre le cours à distance et le cours sera diffusé sur Zoom et les étudiants pourront eux aussi interagir avec la classe. Donc, en principe, il n'y aura pas de différence pour ceux qui assistent en personne et en ligne. Un sondage sera effectué avant la première séance pour savoir qui voudrait être présent en salle de classe. 
+Périodes de consultation: À déterminer 
 
 |Slack|_ **Slack**
 
 .. |Slack| image:: /images/slack.png
    :scale: 10%
-.. _Slack: https://join.slack.com/t/micro20851/shared_invite/zt-gnkwmqsn-usBbmWhsuTmmp3nLs6LaSg
+.. _Slack: TBA
 
-Un site sur Slack a été mis en place pour les communications durant le cours. Vous pouvez le joindre en cliquant sur l'icone Slack. Je vous recommande de télécharger l'application Slack. Vous êtes responsable de consulter le site sur Slack pour les annonces concernant le cours. De manière générale, je vous conseille de garder cette application ouverte. Je ne répondrai pas aux courriels. Vous pouvez communiquer avec moi de manière privée (en message direct) par l'application. 
+Un site sur Slack a été mis en place pour les communications durant le cours. Vous pouvez le joindre en cliquant sur l'icone Slack. Je vous recommande de télécharger l'application Slack. Vous êtes responsable de consulter le site sur Slack pour les annonces concernant le cours. De manière générale, je vous conseille de garder cette application ouverte. Vous pouvez communiquer avec moi de manière privée (en message direct) par l'application. 
 
 |zoom| **Zoom**
 
@@ -77,16 +47,3 @@ Python est rapidement devenu un des langages de choix pour débuter en programma
 |Python|_
 
 Google met à la disposition de tous une plateforme pour travailler en Python à l'aide des Notebooks. Cette plateforme s'appelle Google Collab et ne requière qu'un compte google et google drive. 
-
-Accéder à ce notebook d'introduction vous permettra de vous familiariser avec Python et Google Collab. Cliquez sur l'icone s'il est présent dans une section du cours pour accéder à un notebook. |ImageLink|_
-
-.. |ImageLink| image:: https://colab.research.google.com/assets/colab-badge.svg
-.. _ImageLink: https://colab.research.google.com/github/pcmichaud/micro/blob/master/notebooks/DebutPython.ipynb
-
-Pour chaque notebook, une vidéo commentée est disponible. Dans le cas de ce notebook d'introduction, nous vous conseillons de le regarder en même temps que vous explorez pour la première fois. 
-
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/UNeVEIUdboY" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 50%; height: 50%;"></iframe>
-    </div>
