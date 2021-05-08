@@ -8,7 +8,7 @@ Théorie et données
 
 
 .. |logo1| image:: /images/justice.png
-   :align: center
+   :align: middle
    :scale: 25%
 
 Le site `missingprofits.world <https://missingprofits.world/>`_ calcule ce que perd chaque pays aux paradis fiscaux. Mais comment rapatrier ces profits? Quel effet aurait une taxe sur la richesse pour réduire les inégalités? On a besoin de la théorie pour comprendre l'effet potentiel des incitatifs. Ensuite, les données pour estimer ces effets. Les économistes Emmanuel Saez et Gabriel Zucman s'intéressent à cette question avec théorie et données. 
@@ -16,7 +16,7 @@ Le site `missingprofits.world <https://missingprofits.world/>`_ calcule ce que p
 |logo1|
 
 .. |logo2| image:: /images/climat.png
-   :align: center
+   :align: middle
    :scale: 25%
    
 Une taxe sur le carbone pourrait être un bon moyen de lutter contre le réchauffement climatique. Mais quels sont les effets d'une telle taxe sur l'économie? En 2019, le Directeur parlementaire du Budget du Canada dans un `rapport <https://www.pbo-dpb.gc.ca/web/default/files/Documents/Reports/2019/Paris_Target/Paris_Target_FR.pdf>`_ utilise un modèle d'équilibre général pour calculer ces effets. Le modèle utilise données et théorie. 
@@ -26,7 +26,7 @@ Une taxe sur le carbone pourrait être un bon moyen de lutter contre le réchauf
 Comment structurer le marché de la publicité sur internet? Quel est le prix de l'information? Comment rémunérer le classement dans les moteurs de recherche? Hal Varian est l’économiste en chef chez Google. Il est l'auteur d'un livre de théorie très populaire en microéconomie, mais aussi quelqu'un qui conjugue au quotidien données et théorie pour aider les entreprises de la nouvelle économie. Voir cette `entrevue <https://www.youtube.com/watch?v=aUl3OVgT64Y>`_ avec lui.
 
 .. |logo3| image:: /images/rules.jpeg
-   :align: center
+   :align: middle
    :scale: 75%
    
 |logo3|
