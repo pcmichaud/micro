@@ -28,8 +28,11 @@ author = 'Pierre-Carl Michaud'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = ["sphinx_rtd_theme","sphinx.ext.autodoc", "sphinx.ext.napoleon",
-              "sphinx.ext.mathjax",'sphinx.ext.autosectionlabel'
+              "sphinx.ext.mathjax",'sphinx.ext.autosectionlabel','sphinx.ext.todo'
 ]
+
+[extensions]
+todo_include_todos=True
 
 mathjax_config = {
     'extensions': ['tex2jax.js'],
