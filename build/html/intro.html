@@ -97,11 +97,11 @@
 <li class="toctree-l3"><a class="reference internal" href="#lanalyse-marginale-et-les-approximations">L’analyse marginale et les approximations</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#la-derivee">La dérivée</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#derivee-partielle">Dérivée partielle</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#theoreme-de-lenveloppe">Théorème de l’enveloppe</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#la-differentielle-totale">La différentielle totale</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#homogeneite-d-une-fonction">Homogénéité d’une fonction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#approximation-et-maximum">Approximation et maximum</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#maximisation-avec-contrainte">Maximisation avec contrainte</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#theoreme-de-l-envelope">Théorème de l’envelope</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#note-sur-les-logarithmes">Note sur les logarithmes</a></li>
 </ul>
 </li>
@@ -223,7 +223,10 @@
 sur des politiques</p></li>
 <li><p>Tarification et optimisation en entreprise</p></li>
 </ul>
+<div class="admonition seealso">
+<p class="admonition-title">Voir aussi</p>
 <p>Cet <a class="reference external" href="https://www.quantamagazine.org/to-build-truly-intelligent-machines-teach-them-cause-and-effect-20180515/">article</a> de Judea Pearl, pourtant un des pionniers de l’intelligence articifielle, met en garde contre une utilisation des données sans cadre théorique.</p>
+</div>
 </div>
 <div class="section" id="rappel-mathematique">
 <h2>Rappel mathématique<a class="headerlink" href="#rappel-mathematique" title="Lien permanent vers ce titre">¶</a></h2>
@@ -231,35 +234,61 @@ sur des politiques</p></li>
 <div class="section" id="lanalyse-marginale-et-les-approximations">
 <h3>L’analyse marginale et les approximations<a class="headerlink" href="#lanalyse-marginale-et-les-approximations" title="Lien permanent vers ce titre">¶</a></h3>
 <p>Comment décrire une fonction <span class="math notranslate nohighlight">\(f(x)\)</span>?</p>
-<ul class="simple">
-<li><p>Fonctions généralement compliquées, fonctions linéaires simples…</p></li>
-</ul>
+<p>Fonctions généralement compliquées, fonctions linéaires simples… En python, voici comment écrire une fonction.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-   <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span>
+  <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span>
 <span class="k">def</span> <span class="nf">g</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-   <span class="k">return</span> <span class="mi">1</span><span class="o">/</span><span class="n">x</span>
+  <span class="k">return</span> <span class="mi">1</span><span class="o">/</span><span class="n">x</span>
 </pre></div>
 </div>
-<ul>
-<li><p>Localement, on peut faire une approximation de toute fonction <em>lisse</em>
-pour <span class="math notranslate nohighlight">\(x\)</span> près de <span class="math notranslate nohighlight">\(x_0\)</span>:</p>
-<div class="math notranslate nohighlight">
+<p>Localement, on peut faire une approximation de toute fonction <em>lisse</em> pour <span class="math notranslate nohighlight">\(x\)</span> près de <span class="math notranslate nohighlight">\(x_0\)</span>:</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
 \[f(x) \simeq f(x_0) + \alpha (x-x_0)\]</div>
-</li>
-</ul>
+</div></blockquote>
+<p>Voici une approximation, pour un <span class="math notranslate nohighlight">\(\alpha\)</span> donné:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">fa</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">x0</span><span class="p">,</span><span class="n">alpha</span><span class="p">):</span>
+  <span class="k">return</span> <span class="n">f</span><span class="p">(</span><span class="n">x0</span><span class="p">)</span> <span class="o">+</span> <span class="n">alpha</span> <span class="o">*</span> <span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">x0</span><span class="p">)</span>
+</pre></div>
+</div>
 <p>Pour trouver le meilleur <span class="math notranslate nohighlight">\(\alpha\)</span>, on a que pour <span class="math notranslate nohighlight">\(x\)</span> près de <span class="math notranslate nohighlight">\(x_0\)</span></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}&amp;f(x) \simeq f(x_0) + \alpha (x-x_0) \\ \\ \iff &amp; f(x) -f(x_0) \simeq \alpha (x-x_0)\\\\
- \iff &amp; \alpha \simeq \frac{f(x) -f(x_0)}{x-x_0}  \simeq\; f'(x_0)\end{split}\]</div>
-<p>où <span class="math notranslate nohighlight">\(f'(\cdot)\)</span> est la dérivée première de la fonction <span class="math notranslate nohighlight">\(f(\cdot)\)</span>. Donc,</p>
+ \iff &amp; \alpha \simeq \frac{f(x) -f(x_0)}{x-x_0}\end{split}\]</div>
+<p>En python,</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">x0</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">alpha</span> <span class="o">=</span> <span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">-</span> <span class="n">f</span><span class="p">(</span><span class="n">x0</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="n">x0</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Une approximation est juste si la différence <span class="math notranslate nohighlight">\(\epsilon = x - x_0\)</span> est faible.</p>
+</div>
+<p>Donc, on peut définir</p>
+<div class="math notranslate nohighlight">
+\[f'(x_0) = \lim_{\epsilon \to 0} \frac{f(x_0+\epsilon) - f(x_0)}{\epsilon}\]</div>
+<p>On peut toujours calculer une dérivée numériquement en utilisant un <span class="math notranslate nohighlight">\(\epsilon\)</span> petit:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">fp</span><span class="p">(</span><span class="n">x0</span><span class="p">):</span>
+   <span class="n">eps</span> <span class="o">=</span> <span class="mf">1e-6</span>
+   <span class="k">return</span> <span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">x0</span><span class="o">+</span><span class="n">eps</span><span class="p">)</span> <span class="o">-</span> <span class="n">f</span><span class="p">(</span><span class="n">x0</span><span class="p">))</span><span class="o">/</span><span class="n">eps</span>
+</pre></div>
+</div>
+<p>et alors, l’approximation devient</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}f(x) \simeq f(x_0) + f'(x_0) (x-x_0)  \\
 f(x) - f(x_0) \simeq f'(x_0) (x-x_0)  \\
 \Delta f \simeq f'(x_0) \Delta x\end{split}\]</div>
-<p>Si on veut prédire le changement dans la valeur d’une fonction, la dérivée est très utile!</p>
+<p>En python, on peut écrire</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">fa</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">x0</span><span class="p">):</span>
+  <span class="k">return</span> <span class="n">f</span><span class="p">(</span><span class="n">x0</span><span class="p">)</span> <span class="o">+</span> <span class="n">fp</span><span class="p">(</span><span class="n">x0</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="n">x0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Si on veut prédire le changement dans la valeur d’une fonction, la dérivée est donc très utile! Pour plusieurs types de fonctions, on peut trouver l’expression de la dérivée sans faire un calcul numérique…</p>
 </div>
 <div class="section" id="la-derivee">
 <h3>La dérivée<a class="headerlink" href="#la-derivee" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Voici des recettes:</p>
 <p><strong>Avec des constantes</strong></p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(f(x) = b + ax\)</span>: <span class="math notranslate nohighlight">\(f'(x) = a\)</span></p></li>
@@ -303,6 +332,10 @@ dérivées d’ordres supérieurs d’une fonction:</p>
 \[f(\lambda x_1 + (1-\lambda) x_2) \geq \lambda f(x_1) + (1-\lambda)f(x_2)\]</div>
 <p>et convexe si faux. On dit strictement concave (ou convexe) si les inégalités
 sont strictes (n’incluent pas zéro).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>En d’autres termes, si pour toutes les pairs de points, la ligne qui les rejoints est en dessous de la fonction, la fonction est concave. Si c’est l’opposé, elle est convexe.</p>
+</div>
 <p><strong>Approximation et maximum (minimum)</strong></p>
 <p>Considérons l’approximation de premier ordre</p>
 <div class="math notranslate nohighlight">
@@ -327,7 +360,10 @@ augmente <span class="math notranslate nohighlight">\(f\)</span></p></li>
 <li><p>f’(x) doit être positif quand <span class="math notranslate nohighlight">\(\Delta x &lt;0\)</span> et négatif quand
 <span class="math notranslate nohighlight">\(\Delta x&gt;0\)</span>.</p></li>
 </ul>
-<p>On peut trouver le maximum (minimum) d’une fonction en Python numériquement ou avec SymPy.</p>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<p>La condition de premier ordre est nécessaire mais n’est pas suffisante. Une fonction qui a un point d’inflection, aura une CPO respectée sur le point de scelle sans pour autant que ce point soit un maximum. La CDO prévient de cas de figure.</p>
+</div>
 <div class="admonition-todo admonition" id="id3">
 <p class="admonition-title">À faire</p>
 <p><strong>Exercice C</strong>: Trouvez l’optimum de la fonction <span class="math notranslate nohighlight">\(f(x) = x(10-x)\)</span>.</p>
@@ -338,24 +374,9 @@ augmente <span class="math notranslate nohighlight">\(f\)</span></p></li>
 <p>Supposons la fonction <span class="math notranslate nohighlight">\(f(x,y)\)</span>. La dérivée partielle se fait en
 gardant fixes (ou exogènes) les autres variables:
 <span class="math notranslate nohighlight">\(f'_x(x,y) = \frac{\partial f(x,y)}{\partial x}\)</span>.</p>
-</div>
-<div class="section" id="theoreme-de-lenveloppe">
-<span id="envelop"></span><h3>Théorème de l’enveloppe<a class="headerlink" href="#theoreme-de-lenveloppe" title="Lien permanent vers ce titre">¶</a></h3>
-<p>Considérons la fonction <span class="math notranslate nohighlight">\(f(x,p)\)</span> où <span class="math notranslate nohighlight">\(p\)</span> est hors de contrôle de l’agent qui optimise
-(exogène). On dénote:</p>
-<div class="math notranslate nohighlight">
-\[V(p) = \max_x f(x,p) , \quad x^*(p) = \arg \max_x f(x,p)\]</div>
-<p>La première fonction, <span class="math notranslate nohighlight">\(\max\)</span> retourne la valeur maximale de la fonction en choissant <span class="math notranslate nohighlight">\(x\)</span> et en gardant <span class="math notranslate nohighlight">\(p\)</span> constant. C’est une fonction qui dépend de <span class="math notranslate nohighlight">\(p\)</span> seulement (<span class="math notranslate nohighlight">\(x\)</span> a été choisi tel qu’il maximise la fonction). La deuxième retourne le <span class="math notranslate nohighlight">\(x\)</span> qui maximise <span class="math notranslate nohighlight">\(f(x,p)\)</span> en gardant encore une fois <span class="math notranslate nohighlight">\(p\)</span> constant. C’est donc une fonction de <span class="math notranslate nohighlight">\(p\)</span>.</p>
-<p>Un lien évident existe entre les deux <span class="math notranslate nohighlight">\(V(p) = f(x^*(p),p)\)</span>.  On peut utiliser ce lien pour étudier comment la valeur maximale de <span class="math notranslate nohighlight">\(f\)</span> change quand on change <span class="math notranslate nohighlight">\(p\)</span>:</p>
-<div class="math notranslate nohighlight">
-\[V'(p) = f'_x(x^*(p),p)x^{*'}(p) + f'_p(x^*(p),p)\]</div>
-<p>On a par définition <span class="math notranslate nohighlight">\(x^*(p)\)</span> maximisant <span class="math notranslate nohighlight">\(f(x,p)\)</span>. Donc, <span class="math notranslate nohighlight">\(f'_x(x^*(p),p) = 0\)</span> de par la CPO.</p>
-<p>Ainsi, le premier terme de <span class="math notranslate nohighlight">\(V'(p)\)</span> est zéro.</p>
-<p>On obtient <span class="math notranslate nohighlight">\(V'(p) = f'_p(x^*(p),p)\)</span>.</p>
-<p>Ceci implique que la dérivée de la valeur maximale par rapport à une variable exogène est la dérivée de la fonction objective par rapport à cette variable exogène, sans utiliser la règle de chaine (sans changer la solution optimale). C’est un raccourci (approximation) qui sera utile à plusieurs moments dans le cours.</p>
-<div class="admonition-todo admonition" id="id4">
-<p class="admonition-title">À faire</p>
-<p><strong>Exercice D</strong>: Trouvez la forme de <span class="math notranslate nohighlight">\(V'(p)\)</span> pour la fonction <span class="math notranslate nohighlight">\(V(p) = (10 - p\frac{x^*(p)}{2})x^*(p)\)</span> où <span class="math notranslate nohighlight">\(x^*(p) = \arg \max_x f(x,p)\)</span> et <span class="math notranslate nohighlight">\(f(x,p) =(10 - p\frac{x}{2})x\)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Une dérivée partielle ne représente donc pas de difficulté additionelle. On peut revoir le cas de figure ici-haut, <span class="math notranslate nohighlight">\(f(x) = ax\)</span> comme étant <span class="math notranslate nohighlight">\(g(x,a) = a x\)</span> et donc <span class="math notranslate nohighlight">\(g'_x(x,a) = f'(x) = a\)</span>.</p>
 </div>
 </div>
 <div class="section" id="la-differentielle-totale">
@@ -372,9 +393,9 @@ df(x,y) = f'_x(x,y)dx + f'_y(x,y)dy\end{aligned}\]</div>
 <div class="math notranslate nohighlight">
 \[\frac{dy}{dx}\Bigr|_{df=0} = -\frac{f'_x(x,y)}{f'_y(x,y)}\]</div>
 <p>On qualifie la dérivée par le <span class="math notranslate nohighlight">\(df=0\)</span> pour indiquer que c’est une dérivée obtenue en contraignant la valeur de la fonction à être constante.</p>
-<div class="admonition-todo admonition" id="id5">
+<div class="admonition-todo admonition" id="id4">
 <p class="admonition-title">À faire</p>
-<p><strong>Exercice E</strong>: Trouvez <span class="math notranslate nohighlight">\(\frac{dy}{dx}\Bigr|_{df=0}\)</span> par différentielle totale pour <span class="math notranslate nohighlight">\(f(x,y)=\log(xy)\)</span>. Faire sur papier et par SymPy.</p>
+<p><strong>Exercice D</strong>: Trouvez <span class="math notranslate nohighlight">\(\frac{dy}{dx}\Bigr|_{df=0}\)</span> par différentielle totale pour <span class="math notranslate nohighlight">\(f(x,y)=\log(xy)\)</span>. Faire sur papier et par SymPy.</p>
 </div>
 </div>
 <div class="section" id="homogeneite-d-une-fonction">
@@ -387,9 +408,9 @@ df(x,y) = f'_x(x,y)dx + f'_y(x,y)dy\end{aligned}\]</div>
 <p>Théorème d’Euler: Si une fonction est homogène de degré <span class="math notranslate nohighlight">\(r\)</span>, alors:</p>
 <div class="math notranslate nohighlight">
 \[r f(x_1,x_2,...,x_n) = \sum_{i=1}^n \frac{\partial f}{\partial x_i}x_i.\]</div>
-<div class="admonition-todo admonition" id="id6">
+<div class="admonition-todo admonition" id="id5">
 <p class="admonition-title">À faire</p>
-<p><strong>Exercice F</strong>: Trouvez le degré d’homogénéité de la fonction <span class="math notranslate nohighlight">\(f(x,y)=x^\alpha y^\beta\)</span> des deux façons.</p>
+<p><strong>Exercice E</strong>: Trouvez le degré d’homogénéité de la fonction <span class="math notranslate nohighlight">\(f(x,y)=x^\alpha y^\beta\)</span> des deux façons.</p>
 </div>
 </div>
 <div class="section" id="approximation-et-maximum">
@@ -404,7 +425,10 @@ df(x,y) = f'_x(x,y)dx + f'_y(x,y)dy\end{aligned}\]</div>
 <li><p>Suffisante:
 <span class="math notranslate nohighlight">\(\frac{1}{2}f''_{xx}(x_0,y_0)(x-x_0)^2  + \frac{1}{2}f''_{yy}(x_0,y_0)(y-y_0)^2 +f''_{xy}(x_0,y_0)(x-x_0)(y-y_0)&lt;0\)</span></p></li>
 </ul>
+<div class="admonition seealso">
+<p class="admonition-title">Voir aussi</p>
 <p>La condition suffisante est reliée au déterminant du Hessien de la fonction (un concept qui nous n’utiliserons pas en classe, mais qui devrait rappeler des souvenirs).</p>
+</div>
 </div>
 <div class="section" id="maximisation-avec-contrainte">
 <h3>Maximisation avec contrainte<a class="headerlink" href="#maximisation-avec-contrainte" title="Lien permanent vers ce titre">¶</a></h3>
@@ -422,9 +446,9 @@ de :</p>
 <p>La CPO est <span class="math notranslate nohighlight">\(f'_x(x,q(x,m)) + f'_y(x,q(x,m))q'(x,m) = 0\)</span>. On peut
 résoudre pour <span class="math notranslate nohighlight">\(x^*\)</span> et utiliser <span class="math notranslate nohighlight">\(y=q(x)\)</span> pour trouver
 <span class="math notranslate nohighlight">\(y^*\)</span>.</p>
-<div class="admonition-todo admonition" id="id7">
+<div class="admonition-todo admonition" id="id6">
 <p class="admonition-title">À faire</p>
-<p><strong>Exercice G</strong>: Maximisez la fonction <span class="math notranslate nohighlight">\(f(x,y) = \log x + \log y\)</span> sous la contrainte <span class="math notranslate nohighlight">\(x+y \le m\)</span>.</p>
+<p><strong>Exercice F</strong>: Maximisez la fonction <span class="math notranslate nohighlight">\(f(x,y) = \log x + \log y\)</span> sous la contrainte <span class="math notranslate nohighlight">\(x+y \le m\)</span>.</p>
 </div>
 <p>Avec plusieurs variables et contraintes, cette approche n’est pas très pratique…</p>
 <p><strong>Le lagrangien</strong></p>
@@ -440,9 +464,27 @@ g(x,y) = m\end{aligned}\end{split}\]</div>
 \[\begin{aligned}
     \max_{x,y,\lambda} L(x,y,\lambda) = f(x,y) - \lambda (g(x,y)-m)\end{aligned}\]</div>
 <p>Le lagrangien <span class="math notranslate nohighlight">\(L(x,y,\lambda)\)</span> est une fonction objective modifiée qui permet de pénaliser la maximisation pour la contrainte (pour s’assurer qu’elle soit respectée). On remarque que si <span class="math notranslate nohighlight">\(\lambda = 0\)</span>, on a les deux CPO non-contraintes <span class="math notranslate nohighlight">\(f'_x(x,y)=0\)</span> et <span class="math notranslate nohighlight">\(f'_y(x,y)=0\)</span> qui donnent une solution optimale sans avoir besoin de la troisième. Seulement si la contrainte est <em>mordante</em> (si <span class="math notranslate nohighlight">\(\lambda \neq 0\)</span>) aurons-nous une solution différente…</p>
+<div class="admonition-todo admonition" id="id7">
+<p class="admonition-title">À faire</p>
+<p><strong>Exercice G</strong>: Maximisez la fonction <span class="math notranslate nohighlight">\(f(x,y) = \log x + \log y\)</span> sous la contrainte <span class="math notranslate nohighlight">\(x+y \le m\)</span> par la méthode du lagrangien.</p>
+</div>
+</div>
+<div class="section" id="theoreme-de-l-envelope">
+<h3>Théorème de l’envelope<a class="headerlink" href="#theoreme-de-l-envelope" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Considérons la fonction <span class="math notranslate nohighlight">\(f(x,p)\)</span> où <span class="math notranslate nohighlight">\(p\)</span> est hors de contrôle de l’agent qui optimise (exogène). On dénote:</p>
+<div class="math notranslate nohighlight">
+\[V(p) = \max_x f(x,p) , \quad x^*(p) = \arg \max_x f(x,p)\]</div>
+<p>La première fonction, <span class="math notranslate nohighlight">\(\max\)</span> retourne la valeur maximale de la fonction en choissant <span class="math notranslate nohighlight">\(x\)</span> et en gardant <span class="math notranslate nohighlight">\(p\)</span> constant. C’est une fonction qui dépend de <span class="math notranslate nohighlight">\(p\)</span> seulement (<span class="math notranslate nohighlight">\(x\)</span> a été choisi tel qu’il maximise la fonction). La deuxième retourne le <span class="math notranslate nohighlight">\(x\)</span> qui maximise <span class="math notranslate nohighlight">\(f(x,p)\)</span> en gardant encore une fois <span class="math notranslate nohighlight">\(p\)</span> constant. C’est donc une fonction de <span class="math notranslate nohighlight">\(p\)</span>.</p>
+<p>Un lien évident existe entre les deux <span class="math notranslate nohighlight">\(V(p) = f(x^*(p),p)\)</span>.  On peut utiliser ce lien pour étudier comment la valeur maximale de <span class="math notranslate nohighlight">\(f\)</span> change quand on change <span class="math notranslate nohighlight">\(p\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[V'(p) = f'_x(x^*(p),p)x^{*'}(p) + f'_p(x^*(p),p)\]</div>
+<p>On a par définition <span class="math notranslate nohighlight">\(x^*(p)\)</span> maximisant <span class="math notranslate nohighlight">\(f(x,p)\)</span>. Donc, <span class="math notranslate nohighlight">\(f'_x(x^*(p),p) = 0\)</span> de par la CPO.</p>
+<p>Ainsi, le premier terme de <span class="math notranslate nohighlight">\(V'(p)\)</span> est zéro.</p>
+<p>On obtient <span class="math notranslate nohighlight">\(V'(p) = f'_p(x^*(p),p)\)</span>.</p>
+<p>Ceci implique que la dérivée de la valeur maximale par rapport à une variable exogène est la dérivée de la fonction objective par rapport à cette variable exogène, sans utiliser la règle de chaine (sans changer la solution optimale). C’est un raccourci (approximation) qui sera utile à plusieurs moments dans le cours.</p>
 <div class="admonition-todo admonition" id="id8">
 <p class="admonition-title">À faire</p>
-<p><strong>Exercice H</strong>: Maximisez la fonction <span class="math notranslate nohighlight">\(f(x,y) = \log x + \log y\)</span> sous la contrainte <span class="math notranslate nohighlight">\(x+y \le m\)</span> par la méthode du lagrangien.</p>
+<p><strong>Exercice H</strong>: Trouvez la forme de <span class="math notranslate nohighlight">\(V'(p)\)</span> pour la fonction <span class="math notranslate nohighlight">\(V(p) = (10 - p\frac{x^*(p)}{2})x^*(p)\)</span> où <span class="math notranslate nohighlight">\(x^*(p) = \arg \max_x f(x,p)\)</span> et <span class="math notranslate nohighlight">\(f(x,p) =(10 - p\frac{x}{2})x\)</span>.</p>
 </div>
 <p><strong>L’interprétation du multiplicateur</strong></p>
 <p>Il n’est pas nécessaire de résoudre pour la valeur de <span class="math notranslate nohighlight">\(\lambda\)</span> afin de trouver les

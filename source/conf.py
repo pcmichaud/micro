@@ -29,6 +29,7 @@ author = 'Pierre-Carl Michaud'
 # ones.
 extensions = ["sphinx_rtd_theme","sphinx.ext.autodoc", "sphinx.ext.napoleon",
               "sphinx.ext.mathjax",'sphinx.ext.autosectionlabel','sphinx.ext.todo'
+              
 ]
 
 [extensions]

@@ -39,7 +39,8 @@ Les données sont partout. La théorie aide à en faire du sens:
 
 -  Tarification et optimisation en entreprise
 
-Cet `article <https://www.quantamagazine.org/to-build-truly-intelligent-machines-teach-them-cause-and-effect-20180515/>`_ de Judea Pearl, pourtant un des pionniers de l'intelligence articifielle, met en garde contre une utilisation des données sans cadre théorique. 
+.. seealso:: 
+    Cet `article <https://www.quantamagazine.org/to-build-truly-intelligent-machines-teach-them-cause-and-effect-20180515/>`_ de Judea Pearl, pourtant un des pionniers de l'intelligence articifielle, met en garde contre une utilisation des données sans cadre théorique. 
 
 Rappel mathématique
 +++++++++++++++++++
@@ -51,23 +52,28 @@ L’analyse marginale et les approximations
 
 Comment décrire une fonction :math:`f(x)`?
 
--  Fonctions généralement compliquées, fonctions linéaires simples...
+Fonctions généralement compliquées, fonctions linéaires simples... En python, voici comment écrire une fonction.
 
 .. code-block::
 
-   def f(x):
+    def f(x):
       return x**2
-   def g(x):
+    def g(x):
       return 1/x
 
--  Localement, on peut faire une approximation de toute fonction *lisse*
-   pour :math:`x` près de :math:`x_0`:
+Localement, on peut faire une approximation de toute fonction *lisse* pour :math:`x` près de :math:`x_0`:
 
    .. math::
 
 
       f(x) \simeq f(x_0) + \alpha (x-x_0)  
 
+Voici une approximation, pour un :math:`\alpha` donné:
+
+.. code-block::
+    
+    def fa(x,x0,alpha):
+      return f(x0) + alpha * (x - x0)
 
 Pour trouver le meilleur :math:`\alpha`, on a que pour :math:`x` près de :math:`x_0`
 
@@ -75,9 +81,34 @@ Pour trouver le meilleur :math:`\alpha`, on a que pour :math:`x` près de :math:
 
    
    &f(x) \simeq f(x_0) + \alpha (x-x_0) \\ \\ \iff & f(x) -f(x_0) \simeq \alpha (x-x_0)\\\\
-    \iff & \alpha \simeq \frac{f(x) -f(x_0)}{x-x_0}  \simeq\; f'(x_0) 
+    \iff & \alpha \simeq \frac{f(x) -f(x_0)}{x-x_0} 
 
-où :math:`f'(\cdot)` est la dérivée première de la fonction :math:`f(\cdot)`. Donc,
+En python, 
+
+.. code-block::
+
+    x = 2
+    x0 = 1
+    alpha = (f(x) - f(x0))/(x-x0)
+
+.. important::
+   Une approximation est juste si la différence :math:`\epsilon = x - x_0` est faible.
+
+Donc, on peut définir
+
+.. math:: 
+   f'(x_0) = \lim_{\epsilon \to 0} \frac{f(x_0+\epsilon) - f(x_0)}{\epsilon}
+
+On peut toujours calculer une dérivée numériquement en utilisant un :math:`\epsilon` petit:
+
+.. code-block::
+
+   def fp(x0):
+      eps = 1e-6
+      return (f(x0+eps) - f(x0))/eps
+
+
+et alors, l'approximation devient 
 
 .. math::
 
@@ -85,10 +116,20 @@ où :math:`f'(\cdot)` est la dérivée première de la fonction :math:`f(\cdot)`
    f(x) - f(x_0) \simeq f'(x_0) (x-x_0)  \\ 
    \Delta f \simeq f'(x_0) \Delta x 
 
-Si on veut prédire le changement dans la valeur d'une fonction, la dérivée est très utile!
+En python, on peut écrire 
+
+.. code-block::
+
+    def fa(x,x0):
+      return f(x0) + fp(x0)*(x-x0)
+
+
+Si on veut prédire le changement dans la valeur d'une fonction, la dérivée est donc très utile! Pour plusieurs types de fonctions, on peut trouver l'expression de la dérivée sans faire un calcul numérique... 
 
 La dérivée
 ^^^^^^^^^^
+
+Voici des recettes: 
 
 **Avec des constantes**
 
@@ -99,8 +140,6 @@ La dérivée
 -  :math:`f(x) = e^{ax}`: :math:`f'(x) = ae^{ax}`
 
 -  :math:`f(x) = x^a`: :math:`f'(x) = a x^{a-1}`
-
-
 
 **Avec des fonctions**
 
@@ -152,6 +191,9 @@ Une fonction est concave si pour tout point :math:`(x_1,x_2)` et tout
 et convexe si faux. On dit strictement concave (ou convexe) si les inégalités
 sont strictes (n'incluent pas zéro).
 
+.. note:: 
+    En d'autres termes, si pour toutes les pairs de points, la ligne qui les rejoints est en dessous de la fonction, la fonction est concave. Si c'est l'opposé, elle est convexe. 
+
 **Approximation et maximum (minimum)**
 
 Considérons l’approximation de premier ordre
@@ -186,7 +228,8 @@ Pour un maximum (local), il faut que :math:`f'(x_0)=0` (condition de premier ord
 -  f’(x) doit être positif quand :math:`\Delta x <0` et négatif quand
    :math:`\Delta x>0`.
 
-On peut trouver le maximum (minimum) d'une fonction en Python numériquement ou avec SymPy. 
+.. warning:: 
+    La condition de premier ordre est nécessaire mais n'est pas suffisante. Une fonction qui a un point d'inflection, aura une CPO respectée sur le point de scelle sans pour autant que ce point soit un maximum. La CDO prévient de cas de figure. 
 
 .. todo:: **Exercice C**: Trouvez l'optimum de la fonction :math:`f(x) = x(10-x)`.
 
@@ -198,39 +241,8 @@ Supposons la fonction :math:`f(x,y)`. La dérivée partielle se fait en
 gardant fixes (ou exogènes) les autres variables:
 :math:`f'_x(x,y) = \frac{\partial f(x,y)}{\partial x}`.
 
-
-.. _envelop:
-
-Théorème de l’enveloppe
-^^^^^^^^^^^^^^^^^^^^^^^
-
-Considérons la fonction :math:`f(x,p)` où :math:`p` est hors de contrôle de l'agent qui optimise
-(exogène). On dénote:
-
-.. math::
-
-    V(p) = \max_x f(x,p) , \quad x^*(p) = \arg \max_x f(x,p)
-
-La première fonction, :math:`\max` retourne la valeur maximale de la fonction en choissant :math:`x` et en gardant :math:`p` constant. C'est une fonction qui dépend de :math:`p` seulement (:math:`x` a été choisi tel qu'il maximise la fonction). La deuxième retourne le :math:`x` qui maximise :math:`f(x,p)` en gardant encore une fois :math:`p` constant. C'est donc une fonction de :math:`p`. 
-
-Un lien évident existe entre les deux :math:`V(p) = f(x^*(p),p)`.  On peut utiliser ce lien pour étudier comment la valeur maximale de :math:`f` change quand on change :math:`p`:
-
-.. math::
-
-   V'(p) = f'_x(x^*(p),p)x^{*'}(p) + f'_p(x^*(p),p)
-   
-On a par définition :math:`x^*(p)` maximisant :math:`f(x,p)`. Donc, :math:`f'_x(x^*(p),p) = 0` de par la CPO. 
-
-Ainsi, le premier terme de :math:`V'(p)` est zéro. 
-
-On obtient :math:`V'(p) = f'_p(x^*(p),p)`.
-
-Ceci implique que la dérivée de la valeur maximale par rapport à une variable exogène est la dérivée de la fonction objective par rapport à cette variable exogène, sans utiliser la règle de chaine (sans changer la solution optimale). C'est un raccourci (approximation) qui sera utile à plusieurs moments dans le cours. 
-
-.. todo:: **Exercice D**: Trouvez la forme de :math:`V'(p)` pour la fonction :math:`V(p) = (10 - p\frac{x^*(p)}{2})x^*(p)` où :math:`x^*(p) = \arg \max_x f(x,p)` et :math:`f(x,p) =(10 - p\frac{x}{2})x`.
-
-
-
+.. note::
+    Une dérivée partielle ne représente donc pas de difficulté additionelle. On peut revoir le cas de figure ici-haut, :math:`f(x) = ax` comme étant :math:`g(x,a) = a x` et donc :math:`g'_x(x,a) = f'(x) = a`. 
 
 La différentielle totale
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -255,9 +267,7 @@ Si on pose :math:`df(x,y)=0`, on peut réarranger pour obtenir
 
 On qualifie la dérivée par le :math:`df=0` pour indiquer que c'est une dérivée obtenue en contraignant la valeur de la fonction à être constante.
 
-.. todo:: **Exercice E**: Trouvez :math:`\frac{dy}{dx}\Bigr|_{df=0}` par différentielle totale pour :math:`f(x,y)=\log(xy)`. Faire sur papier et par SymPy. 
-
-
+.. todo:: **Exercice D**: Trouvez :math:`\frac{dy}{dx}\Bigr|_{df=0}` par différentielle totale pour :math:`f(x,y)=\log(xy)`. Faire sur papier et par SymPy. 
 
 Homogénéité d'une fonction
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -277,7 +287,7 @@ Théorème d'Euler: Si une fonction est homogène de degré :math:`r`, alors:
 
    r f(x_1,x_2,...,x_n) = \sum_{i=1}^n \frac{\partial f}{\partial x_i}x_i.
 
-.. todo:: **Exercice F**: Trouvez le degré d’homogénéité de la fonction :math:`f(x,y)=x^\alpha y^\beta` des deux façons.
+.. todo:: **Exercice E**: Trouvez le degré d’homogénéité de la fonction :math:`f(x,y)=x^\alpha y^\beta` des deux façons.
 
 Approximation et maximum
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -296,7 +306,8 @@ Condition pour un maximum:
 -  Suffisante:
    :math:`\frac{1}{2}f''_{xx}(x_0,y_0)(x-x_0)^2  + \frac{1}{2}f''_{yy}(x_0,y_0)(y-y_0)^2 +f''_{xy}(x_0,y_0)(x-x_0)(y-y_0)<0`
 
-La condition suffisante est reliée au déterminant du Hessien de la fonction (un concept qui nous n'utiliserons pas en classe, mais qui devrait rappeler des souvenirs). 
+.. seealso:: 
+    La condition suffisante est reliée au déterminant du Hessien de la fonction (un concept qui nous n'utiliserons pas en classe, mais qui devrait rappeler des souvenirs). 
 
 Maximisation avec contrainte
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -323,7 +334,7 @@ La CPO est :math:`f'_x(x,q(x,m)) + f'_y(x,q(x,m))q'(x,m) = 0`. On peut
 résoudre pour :math:`x^*` et utiliser :math:`y=q(x)` pour trouver
 :math:`y^*`. 
 
-.. todo:: **Exercice G**: Maximisez la fonction :math:`f(x,y) = \log x + \log y` sous la contrainte :math:`x+y \le m`.
+.. todo:: **Exercice F**: Maximisez la fonction :math:`f(x,y) = \log x + \log y` sous la contrainte :math:`x+y \le m`.
 
 Avec plusieurs variables et contraintes, cette approche n'est pas très pratique...
 
@@ -349,7 +360,35 @@ Ces trois équations sont les CPO du lagrangien:
 
 Le lagrangien :math:`L(x,y,\lambda)` est une fonction objective modifiée qui permet de pénaliser la maximisation pour la contrainte (pour s'assurer qu'elle soit respectée). On remarque que si :math:`\lambda = 0`, on a les deux CPO non-contraintes :math:`f'_x(x,y)=0` et :math:`f'_y(x,y)=0` qui donnent une solution optimale sans avoir besoin de la troisième. Seulement si la contrainte est *mordante* (si :math:`\lambda \neq 0`) aurons-nous une solution différente... 
 
-.. todo:: **Exercice H**: Maximisez la fonction :math:`f(x,y) = \log x + \log y` sous la contrainte :math:`x+y \le m` par la méthode du lagrangien.
+.. todo:: **Exercice G**: Maximisez la fonction :math:`f(x,y) = \log x + \log y` sous la contrainte :math:`x+y \le m` par la méthode du lagrangien.
+
+
+Théorème de l'envelope
+^^^^^^^^^^^^^^^^^^^^^^
+
+Considérons la fonction :math:`f(x,p)` où :math:`p` est hors de contrôle de l'agent qui optimise (exogène). On dénote:
+
+.. math::
+
+    V(p) = \max_x f(x,p) , \quad x^*(p) = \arg \max_x f(x,p)
+
+La première fonction, :math:`\max` retourne la valeur maximale de la fonction en choissant :math:`x` et en gardant :math:`p` constant. C'est une fonction qui dépend de :math:`p` seulement (:math:`x` a été choisi tel qu'il maximise la fonction). La deuxième retourne le :math:`x` qui maximise :math:`f(x,p)` en gardant encore une fois :math:`p` constant. C'est donc une fonction de :math:`p`. 
+
+Un lien évident existe entre les deux :math:`V(p) = f(x^*(p),p)`.  On peut utiliser ce lien pour étudier comment la valeur maximale de :math:`f` change quand on change :math:`p`:
+
+.. math::
+
+   V'(p) = f'_x(x^*(p),p)x^{*'}(p) + f'_p(x^*(p),p)
+   
+On a par définition :math:`x^*(p)` maximisant :math:`f(x,p)`. Donc, :math:`f'_x(x^*(p),p) = 0` de par la CPO. 
+
+Ainsi, le premier terme de :math:`V'(p)` est zéro. 
+
+On obtient :math:`V'(p) = f'_p(x^*(p),p)`.
+
+Ceci implique que la dérivée de la valeur maximale par rapport à une variable exogène est la dérivée de la fonction objective par rapport à cette variable exogène, sans utiliser la règle de chaine (sans changer la solution optimale). C'est un raccourci (approximation) qui sera utile à plusieurs moments dans le cours. 
+
+.. todo:: **Exercice H**: Trouvez la forme de :math:`V'(p)` pour la fonction :math:`V(p) = (10 - p\frac{x^*(p)}{2})x^*(p)` où :math:`x^*(p) = \arg \max_x f(x,p)` et :math:`f(x,p) =(10 - p\frac{x}{2})x`.
 
 **L’interprétation du multiplicateur**
 
