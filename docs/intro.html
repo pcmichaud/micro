@@ -231,8 +231,16 @@ sur des politiques</p></li>
 <div class="section" id="lanalyse-marginale-et-les-approximations">
 <h3>L’analyse marginale et les approximations<a class="headerlink" href="#lanalyse-marginale-et-les-approximations" title="Lien permanent vers ce titre">¶</a></h3>
 <p>Comment décrire une fonction <span class="math notranslate nohighlight">\(f(x)\)</span>?</p>
-<ul>
+<ul class="simple">
 <li><p>Fonctions généralement compliquées, fonctions linéaires simples…</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+   <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span>
+<span class="k">def</span> <span class="nf">g</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+   <span class="k">return</span> <span class="mi">1</span><span class="o">/</span><span class="n">x</span>
+</pre></div>
+</div>
+<ul>
 <li><p>Localement, on peut faire une approximation de toute fonction <em>lisse</em>
 pour <span class="math notranslate nohighlight">\(x\)</span> près de <span class="math notranslate nohighlight">\(x_0\)</span>:</p>
 <div class="math notranslate nohighlight">

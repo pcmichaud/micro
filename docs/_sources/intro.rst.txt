@@ -53,6 +53,13 @@ Comment décrire une fonction :math:`f(x)`?
 
 -  Fonctions généralement compliquées, fonctions linéaires simples...
 
+.. code-block::
+
+   def f(x):
+      return x**2
+   def g(x):
+      return 1/x
+
 -  Localement, on peut faire une approximation de toute fonction *lisse*
    pour :math:`x` près de :math:`x_0`:
 
@@ -109,11 +116,7 @@ La dérivée
 
 .. todo:: **Exercice A**: Trouvez les dérivées de :math:`f(x)=\sqrt{x},\frac{x}{1+x},\frac{1}{2}x^2 + 2x-10,(1+\frac{x}{2})^2`.
 
-
-
-
 .. todo:: **Exercice B**: Faire une approximation de premier ordre pour :math:`f(x)=\sqrt{x}`. 
-
 
 
 **Approximations d’ordres supérieurs**
